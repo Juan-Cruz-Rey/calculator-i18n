@@ -1,0 +1,32 @@
+{
+  "site": {
+    "title": "Calculatrices en Ligne",
+    "description": "Collection de calculatrices gratuites et faciles à utiliser"
+  },
+  "nav": {
+    "home": "Accueil",
+    "calculators": "Calculatrices"
+  },
+  "common": {
+    "calculate": "Calculer",
+    "reset": "Réinitialiser",
+    "result": "Résultat",
+    "age": "Âge",
+    "gender": "Genre",
+    "male": "Homme",
+    "female": "Femme",
+    "height": "Taille",
+    "weight": "Poids",
+    "years": "ans"
+  },
+  "units": {
+    "metric": "Métrique",
+    "imperial": "Impérial",
+    "cm": "cm",
+    "m": "m",
+    "kg": "kg",
+    "ft": "pieds",
+    "in": "pouces",
+    "lbs": "lbs"
+  }
+}

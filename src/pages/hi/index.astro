@@ -4,28 +4,28 @@ import { t } from '@/utils/i18n';
 
 const calculators = [
   {
-    title: t('bmi.title', 'es'),
-    description: t('bmi.description', 'es'),
-    url: '/calculadoras/imc/',
-    category: t('categories.health', 'es'),
+    title: t('bmi.title', 'hi'),
+    description: t('bmi.description', 'hi'),
+    url: '/hi/calculators/bmi/',
+    category: t('categories.health', 'hi'),
     icon: '⚕️',
   },
 ];
 ---
 
 <BaseLayout
-  title={t('site.title', 'es')}
-  description={t('site.description', 'es')}
-  lang="es"
+  title={t('site.title', 'hi')}
+  description={t('site.description', 'hi')}
+  lang="hi"
 >
   <div class="container">
     <div class="hero">
-      <h1>{t('site.title', 'es')}</h1>
-      <p class="subtitle">{t('site.description', 'es')}</p>
+      <h1>{t('site.title', 'hi')}</h1>
+      <p class="subtitle">{t('site.description', 'hi')}</p>
     </div>
 
     <section class="calculators-grid">
-      <h2>Calculadoras Destacadas</h2>
+      <h2>Featured Calculators</h2>
       <div class="grid">
         {calculators.map((calc) => (
           <a href={calc.url} class="calculator-card">

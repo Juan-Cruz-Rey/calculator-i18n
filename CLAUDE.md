@@ -140,21 +140,85 @@ Each page sets:
 >
 ```
 
+## Supported Languages
+
+The project supports 7 languages covering Europe, Latin America, and India:
+
+- **Spanish (es)** - Default language (Spain, Latin America)
+- **English (en)** - International
+- **Portuguese (pt)** - Brazil, Portugal
+- **French (fr)** - France, French-speaking Europe
+- **Hindi (hi)** - India
+- **German (de)** - Germany, Austria
+- **Italian (it)** - Italy
+
+### URL Structure by Language
+
+- Spanish (default): `/`, `/calculadoras/imc/`
+- English: `/en/`, `/en/calculators/bmi/`
+- Portuguese: `/pt/`, `/pt/calculadoras/imc/`
+- French: `/fr/`, `/fr/calculatrices/imc/`
+- Hindi: `/hi/`, `/hi/calculators/bmi/`
+- German: `/de/`, `/de/rechner/bmi/`
+- Italian: `/it/`, `/it/calcolatrici/imc/`
+
+## Translation Structure
+
+Each calculator has its own translation file for better organization and scalability:
+
+```
+public/locales/
+├── es/
+│   ├── common.json          # Site-wide translations
+│   ├── categories.json      # Calculator categories
+│   └── calculators/
+│       └── bmi.json         # BMI calculator translations
+├── en/
+│   ├── common.json
+│   ├── categories.json
+│   └── calculators/
+│       └── bmi.json
+└── [pt, fr, hi, de, it]/   # Same structure for each language
+```
+
 ## Adding New Calculators
 
-1. Create calculation logic in `src/utils/calculators/{name}.ts`
-2. Create component in `src/components/calculators/{Name}Calculator.astro`
-3. Add translations to `public/locales/{lang}/calculators.json`
-4. Create pages in `src/pages/calculadoras/{name}.astro` and `src/pages/en/calculators/{name}.astro`
-5. Add route mapping to `astro-i18next.config.mjs`
-6. Update calculator listings in index pages
+1. **Create calculation logic** in `src/utils/calculators/{name}.ts`
+   - Pure TypeScript functions
+   - Type-safe interfaces for inputs/outputs
+   - Unit conversion utilities
+
+2. **Create component** in `src/components/calculators/{Name}Calculator.astro`
+   - Use `t('calculator-name:key', lang)` for translations
+   - Import calculation functions from utils
+
+3. **Add translations** for ALL languages in `public/locales/{lang}/calculators/{name}.json`
+   - es, en, pt, fr, hi, de, it
+   - Follow the structure from `bmi.json`
+
+4. **Update i18n system** in `src/utils/i18n.ts`
+   - Import the new calculator translations for all languages
+   - Add to translations object
+   - Add calculator paths to `getAlternatePath()` function
+
+5. **Create pages** for each language:
+   - `src/pages/calculadoras/{name}.astro` (Spanish)
+   - `src/pages/en/calculators/{name}.astro` (English)
+   - `src/pages/pt/calculadoras/{name}.astro` (Portuguese)
+   - `src/pages/fr/calculatrices/{name}.astro` (French)
+   - `src/pages/hi/calculators/{name}.astro` (Hindi)
+   - `src/pages/de/rechner/{name}.astro` (German)
+   - `src/pages/it/calcolatrici/{name}.astro` (Italian)
+
+6. **Update calculator listings** in index pages for all languages
 
 ## Current Calculators
 
-- **BMI Calculator** (`/calculadoras/imc`, `/en/calculators/bmi`)
+- **BMI Calculator** - Available in 7 languages
   - Supports metric and imperial units
   - Calculates: BMI, BMI Prime, Ponderal Index
   - Provides category and healthy weight range
+  - URLs: `/calculadoras/imc/` (es), `/en/calculators/bmi/`, `/pt/calculadoras/imc/`, etc.
 
 ## Future Expansion
 
@@ -163,3 +227,5 @@ The project is designed to scale to ~175-180 calculators from calculator.net acr
 - Financial (~50 calculators)
 - Math (~40 calculators)
 - Other (~50 calculators)
+
+Each calculator will be available in all 7 supported languages.

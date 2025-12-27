@@ -3,18 +3,18 @@ import BaseLayout from '@/layouts/BaseLayout.astro';
 import BMICalculator from '@/components/calculators/BMICalculator.astro';
 import { t } from '@/utils/i18n';
 
-const title = t('bmi.title', 'en') + ' - ' + t('site.title', 'en');
-const description = t('bmi.metaDescription', 'en');
+const title = t('bmi.title', 'hi') + ' - ' + t('site.title', 'hi');
+const description = t('bmi.metaDescription', 'hi');
 ---
 
-<BaseLayout title={title} description={description} lang="en">
+<BaseLayout title={title} description={description} lang="hi">
   <div class="container">
     <div class="page-header">
-      <h1>{t('bmi.title', 'en')}</h1>
-      <p class="page-description">{t('bmi.description', 'en')}</p>
+      <h1>{t('bmi.title', 'hi')}</h1>
+      <p class="page-description">{t('bmi.description', 'hi')}</p>
     </div>
 
-    <BMICalculator lang="en" />
+    <BMICalculator lang="hi" />
   </div>
 
   <style>

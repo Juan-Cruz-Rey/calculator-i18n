@@ -1,0 +1,36 @@
+{
+  "title": "Calcolatore IMC",
+  "description": "Calcola il tuo Indice di Massa Corporea",
+  "metaDescription": "Calcolatore IMC gratuito - Calcola il tuo indice di massa corporea usando il sistema metrico o imperiale. Conosci il tuo peso ideale sano.",
+  "form": {
+    "title": "Inserisci i tuoi dati",
+    "ageLabel": "Età",
+    "agePlaceholder": "Inserisci la tua età",
+    "genderLabel": "Genere",
+    "heightLabel": "Altezza",
+    "heightPlaceholder": "Inserisci la tua altezza",
+    "weightLabel": "Peso",
+    "weightPlaceholder": "Inserisci il tuo peso"
+  },
+  "results": {
+    "title": "I Tuoi Risultati",
+    "bmiValue": "Il Tuo IMC",
+    "bmiPrime": "IMC Prime",
+    "ponderalIndex": "Indice Ponderale",
+    "category": "Categoria",
+    "healthyRange": "Range IMC Sano",
+    "healthyWeight": "Range Peso Sano",
+    "categories": {
+      "underweight": "Sottopeso",
+      "normal": "Normale",
+      "overweight": "Sovrappeso",
+      "obese": "Obesità"
+    }
+  },
+  "info": {
+    "title": "Informazioni sull'IMC",
+    "description": "L'Indice di Massa Corporea (IMC) è una misura del peso corporeo basata sul peso e l'altezza di una persona. Si calcola dividendo il peso in chilogrammi per il quadrato dell'altezza in metri.",
+    "formula": "Formula: IMC = peso (kg) / altezza² (m)",
+    "limitations": "L'IMC è uno strumento di screening utile, ma non diagnostica il grasso corporeo o la salute di un individuo. Le persone con maggiore massa muscolare possono avere un IMC elevato senza grasso in eccesso."
+  }
+}

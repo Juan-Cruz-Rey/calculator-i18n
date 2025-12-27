@@ -6,7 +6,7 @@ const { lang } = Astro.props as { lang: Locale };
 
 <div class="bmi-calculator">
   <div class="calculator-form">
-    <h2>{t('calculators:bmi.form.title', lang)}</h2>
+    <h2>{t('bmi.form.title', lang)}</h2>
 
     <form id="bmi-form">
       <!-- Unit System Toggle -->
@@ -23,7 +23,7 @@ const { lang } = Astro.props as { lang: Locale };
 
       <!-- Age -->
       <div class="form-group">
-        <label for="age">{t('calculators:bmi.form.ageLabel', lang)}</label>
+        <label for="age">{t('bmi.form.ageLabel', lang)}</label>
         <input
           type="number"
           id="age"
@@ -31,14 +31,14 @@ const { lang } = Astro.props as { lang: Locale };
           min="2"
           max="120"
           required
-          placeholder={t('calculators:bmi.form.agePlaceholder', lang)}
+          placeholder={t('bmi.form.agePlaceholder', lang)}
         />
         <span class="unit">{t('common.years', lang)}</span>
       </div>
 
       <!-- Gender -->
       <div class="form-group">
-        <label for="gender">{t('calculators:bmi.form.genderLabel', lang)}</label>
+        <label for="gender">{t('bmi.form.genderLabel', lang)}</label>
         <select id="gender" name="gender" required>
           <option value="male">{t('common.male', lang)}</option>
           <option value="female">{t('common.female', lang)}</option>
@@ -47,7 +47,7 @@ const { lang } = Astro.props as { lang: Locale };
 
       <!-- Height (Metric) -->
       <div class="form-group height-metric">
-        <label for="height">{t('calculators:bmi.form.heightLabel', lang)}</label>
+        <label for="height">{t('bmi.form.heightLabel', lang)}</label>
         <input
           type="number"
           id="height"
@@ -56,14 +56,14 @@ const { lang } = Astro.props as { lang: Locale };
           max="250"
           step="0.1"
           required
-          placeholder={t('calculators:bmi.form.heightPlaceholder', lang)}
+          placeholder={t('bmi.form.heightPlaceholder', lang)}
         />
         <span class="unit">{t('units.cm', lang)}</span>
       </div>
 
       <!-- Height (Imperial) -->
       <div class="form-group height-imperial" style="display: none;">
-        <label for="heightFt">{t('calculators:bmi.form.heightLabel', lang)}</label>
+        <label for="heightFt">{t('bmi.form.heightLabel', lang)}</label>
         <div class="input-group">
           <input
             type="number"
@@ -88,7 +88,7 @@ const { lang } = Astro.props as { lang: Locale };
 
       <!-- Weight -->
       <div class="form-group">
-        <label for="weight">{t('calculators:bmi.form.weightLabel', lang)}</label>
+        <label for="weight">{t('bmi.form.weightLabel', lang)}</label>
         <input
           type="number"
           id="weight"
@@ -97,7 +97,7 @@ const { lang } = Astro.props as { lang: Locale };
           max="500"
           step="0.1"
           required
-          placeholder={t('calculators:bmi.form.weightPlaceholder', lang)}
+          placeholder={t('bmi.form.weightPlaceholder', lang)}
         />
         <span class="unit weight-unit">{t('units.kg', lang)}</span>
       </div>
@@ -111,39 +111,39 @@ const { lang } = Astro.props as { lang: Locale };
   </div>
 
   <div class="calculator-results" id="results" style="display: none;">
-    <h2>{t('calculators:bmi.results.title', lang)}</h2>
+    <h2>{t('bmi.results.title', lang)}</h2>
 
     <div class="result-card bmi-value">
-      <h3>{t('calculators:bmi.results.bmiValue', lang)}</h3>
+      <h3>{t('bmi.results.bmiValue', lang)}</h3>
       <p class="value" id="bmi-value">-</p>
       <p class="category" id="bmi-category">-</p>
     </div>
 
     <div class="result-grid">
       <div class="result-item">
-        <strong>{t('calculators:bmi.results.bmiPrime', lang)}:</strong>
+        <strong>{t('bmi.results.bmiPrime', lang)}:</strong>
         <span id="bmi-prime">-</span>
       </div>
       <div class="result-item">
-        <strong>{t('calculators:bmi.results.ponderalIndex', lang)}:</strong>
+        <strong>{t('bmi.results.ponderalIndex', lang)}:</strong>
         <span id="ponderal-index">-</span>
       </div>
       <div class="result-item">
-        <strong>{t('calculators:bmi.results.healthyRange', lang)}:</strong>
+        <strong>{t('bmi.results.healthyRange', lang)}:</strong>
         <span id="healthy-bmi">-</span>
       </div>
       <div class="result-item">
-        <strong>{t('calculators:bmi.results.healthyWeight', lang)}:</strong>
+        <strong>{t('bmi.results.healthyWeight', lang)}:</strong>
         <span id="healthy-weight">-</span>
       </div>
     </div>
   </div>
 
   <div class="calculator-info">
-    <h2>{t('calculators:bmi.info.title', lang)}</h2>
-    <p>{t('calculators:bmi.info.description', lang)}</p>
-    <p class="formula">{t('calculators:bmi.info.formula', lang)}</p>
-    <p class="limitations">{t('calculators:bmi.info.limitations', lang)}</p>
+    <h2>{t('bmi.info.title', lang)}</h2>
+    <p>{t('bmi.info.description', lang)}</p>
+    <p class="formula">{t('bmi.info.formula', lang)}</p>
+    <p class="limitations">{t('bmi.info.limitations', lang)}</p>
   </div>
 </div>
 

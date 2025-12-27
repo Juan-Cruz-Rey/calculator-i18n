@@ -8,8 +8,8 @@ const description = 'Explora nuestra colección completa de calculadoras gratuit
 const calculatorsByCategory = {
   health: [
     {
-      title: t('calculators:bmi.title', 'es'),
-      description: t('calculators:bmi.description', 'es'),
+      title: t('bmi.title', 'es'),
+      description: t('bmi.description', 'es'),
       url: '/calculadoras/imc/',
       icon: '⚕️',
     },
@@ -30,7 +30,7 @@ const calculatorsByCategory = {
     {Object.entries(calculatorsByCategory).map(([category, calculators]) => (
       calculators.length > 0 && (
         <section class="category-section">
-          <h2>{t(`calculators:categories.${category}`, 'es')}</h2>
+          <h2>{t(`categories.${category}`, 'es')}</h2>
           <div class="calculator-grid">
             {calculators.map((calc) => (
               <a href={calc.url} class="calculator-card">

@@ -2,15 +2,15 @@
 import BaseLayout from '@/layouts/BaseLayout.astro';
 import { t } from '@/utils/i18n';
 
-const title = 'All Calculators - ' + t('site.title', 'en');
-const description = 'Explore our complete collection of free calculators organized by category.';
+const title = 'Tutte le Calcolatrici - ' + t('site.title', 'it');
+const description = 'Esplora la nostra collezione completa di calcolatrici gratuite organizzate per categoria.';
 
 const calculatorsByCategory = {
   health: [
     {
-      title: t('bmi.title', 'en'),
-      description: t('bmi.description', 'en'),
-      url: '/en/calculators/bmi/',
+      title: t('bmi.title', 'it'),
+      description: t('bmi.description', 'it'),
+      url: '/it/calculators/bmi/',
       icon: '⚕️',
     },
   ],
@@ -20,17 +20,17 @@ const calculatorsByCategory = {
 };
 ---
 
-<BaseLayout title={title} description={description} lang="en">
+<BaseLayout title={title} description={description} lang="it">
   <div class="container">
     <div class="page-header">
-      <h1>All Calculators</h1>
+      <h1>Tutte le Calcolatrici</h1>
       <p class="page-description">{description}</p>
     </div>
 
     {Object.entries(calculatorsByCategory).map(([category, calculators]) => (
       calculators.length > 0 && (
         <section class="category-section">
-          <h2>{t(`categories.${category}`, 'en')}</h2>
+          <h2>{t(`categories.${category}`, 'it')}</h2>
           <div class="calculator-grid">
             {calculators.map((calc) => (
               <a href={calc.url} class="calculator-card">

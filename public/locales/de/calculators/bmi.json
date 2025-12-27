@@ -1,0 +1,36 @@
+{
+  "title": "BMI-Rechner",
+  "description": "Berechnen Sie Ihren Body-Mass-Index",
+  "metaDescription": "Kostenloser BMI-Rechner - Berechnen Sie Ihren Body-Mass-Index mit metrischem oder imperialem System. Erfahren Sie Ihr ideales gesundes Gewicht.",
+  "form": {
+    "title": "Geben Sie Ihre Daten ein",
+    "ageLabel": "Alter",
+    "agePlaceholder": "Geben Sie Ihr Alter ein",
+    "genderLabel": "Geschlecht",
+    "heightLabel": "Größe",
+    "heightPlaceholder": "Geben Sie Ihre Größe ein",
+    "weightLabel": "Gewicht",
+    "weightPlaceholder": "Geben Sie Ihr Gewicht ein"
+  },
+  "results": {
+    "title": "Ihre Ergebnisse",
+    "bmiValue": "Ihr BMI",
+    "bmiPrime": "BMI Prime",
+    "ponderalIndex": "Ponderal-Index",
+    "category": "Kategorie",
+    "healthyRange": "Gesunder BMI-Bereich",
+    "healthyWeight": "Gesunder Gewichtsbereich",
+    "categories": {
+      "underweight": "Untergewicht",
+      "normal": "Normal",
+      "overweight": "Übergewicht",
+      "obese": "Fettleibigkeit"
+    }
+  },
+  "info": {
+    "title": "Über den BMI",
+    "description": "Der Body-Mass-Index (BMI) ist ein Maß für das Körpergewicht basierend auf Gewicht und Größe einer Person. Er wird berechnet, indem das Gewicht in Kilogramm durch das Quadrat der Größe in Metern geteilt wird.",
+    "formula": "Formel: BMI = Gewicht (kg) / Größe² (m)",
+    "limitations": "Der BMI ist ein nützliches Screening-Tool, diagnostiziert aber nicht das Körperfett oder die Gesundheit einer Person. Menschen mit größerer Muskelmasse können einen hohen BMI ohne überschüssiges Fett haben."
+  }
+}

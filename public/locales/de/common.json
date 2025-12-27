@@ -1,0 +1,32 @@
+{
+  "site": {
+    "title": "Online Rechner",
+    "description": "Sammlung kostenloser und einfach zu bedienender Rechner"
+  },
+  "nav": {
+    "home": "Startseite",
+    "calculators": "Rechner"
+  },
+  "common": {
+    "calculate": "Berechnen",
+    "reset": "Zurücksetzen",
+    "result": "Ergebnis",
+    "age": "Alter",
+    "gender": "Geschlecht",
+    "male": "Männlich",
+    "female": "Weiblich",
+    "height": "Größe",
+    "weight": "Gewicht",
+    "years": "Jahre"
+  },
+  "units": {
+    "metric": "Metrisch",
+    "imperial": "Imperial",
+    "cm": "cm",
+    "m": "m",
+    "kg": "kg",
+    "ft": "Fuß",
+    "in": "Zoll",
+    "lbs": "Pfund"
+  }
+}
