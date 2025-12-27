@@ -1,0 +1,21 @@
+{
+  "name": "Online Calculators",
+  "short_name": "Calculators",
+  "description": "Collection of free and easy-to-use calculators",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#ffffff",
+  "theme_color": "#4CAF50",
+  "orientation": "portrait-primary",
+  "icons": [
+    {
+      "src": "/favicon.svg",
+      "sizes": "any",
+      "type": "image/svg+xml",
+      "purpose": "any maskable"
+    }
+  ],
+  "categories": ["health", "finance", "utilities", "education"],
+  "lang": "en",
+  "dir": "ltr"
+}
