@@ -22,10 +22,12 @@ const hreflangURLs = Object.fromEntries(
 
 // Get language-specific paths
 const homePathBase = languageConfig[lang as Locale].path;
-const homePath = homePathBase ? `${homePathBase}/` : '/';
+const homePath = homePathBase !== '' ? `${homePathBase}/` : '/';
 const calculatorsPath = lang === 'es'
-  ? '/calculadoras/'
-  : `${languageConfig[lang as Locale].path}/calculators/`;
+  ? '/es/calculadoras/'
+  : homePathBase !== ''
+  ? `${homePathBase}/calculators/`
+  : '/calculators/';
 
 // Translations for nav
 const navTranslations = {
@@ -60,7 +62,7 @@ const navText = navTranslations[lang as Locale] || navTranslations.es;
     <link rel="alternate" hreflang="hi" href={hreflangURLs.hi} />
     <link rel="alternate" hreflang="de" href={hreflangURLs.de} />
     <link rel="alternate" hreflang="it" href={hreflangURLs.it} />
-    <link rel="alternate" hreflang="x-default" href={hreflangURLs.es} />
+    <link rel="alternate" hreflang="x-default" href={hreflangURLs.en} />
 
     <!-- Open Graph / Facebook -->
     <meta property="og:type" content="website" />
