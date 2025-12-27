@@ -18,7 +18,9 @@
     "height": "Größe",
     "weight": "Gewicht",
     "years": "Jahre",
-    "week": "Woche"
+    "week": "Woche",
+    "search": "Rechner suchen...",
+    "noResults": "Keine Rechner gefunden, die Ihrer Suche entsprechen"
   },
   "units": {
     "metric": "Metrisch",

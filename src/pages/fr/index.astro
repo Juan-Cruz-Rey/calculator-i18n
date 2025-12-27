@@ -19,6 +19,16 @@ const calculators = [
   { title: t('carbohydrate.title', 'fr'), description: t('carbohydrate.description', 'fr'), url: '/fr/calculators/carbohydrate/', category: t('categories.health', 'fr'), icon: '🍞' },
   { title: t('leanBodyMass.title', 'fr'), description: t('leanBodyMass.description', 'fr'), url: '/fr/calculators/lean-body-mass/', category: t('categories.health', 'fr'), icon: '💪' },
   { title: t('healthyWeight.title', 'fr'), description: t('healthyWeight.description', 'fr'), url: '/fr/calculators/healthy-weight/', category: t('categories.health', 'fr'), icon: '✅' },
+  { title: t('protein.title', 'fr'), description: t('protein.description', 'fr'), url: '/fr/calculators/protein/', category: t('categories.health', 'fr'), icon: '🥩' },
+  { title: t('bodyType.title', 'fr'), description: t('bodyType.description', 'fr'), url: '/fr/calculators/body-type/', category: t('categories.health', 'fr'), icon: '🧍' },
+  { title: t('caloriesBurned.title', 'fr'), description: t('caloriesBurned.description', 'fr'), url: '/fr/calculators/calories-burned/', category: t('categories.health', 'fr'), icon: '🔥' },
+  { title: t('bsa.title', 'fr'), description: t('bsa.description', 'fr'), url: '/fr/calculators/bsa/', category: t('categories.health', 'fr'), icon: '📐' },
+  { title: t('bloodType.title', 'fr'), description: t('bloodType.description', 'fr'), url: '/fr/calculators/blood-type/', category: t('categories.health', 'fr'), icon: '🩸' },
+  { title: t('ovulation.title', 'fr'), description: t('ovulation.description', 'fr'), url: '/fr/calculators/ovulation/', category: t('categories.health', 'fr'), icon: '🥚' },
+  { title: t('period.title', 'fr'), description: t('period.description', 'fr'), url: '/fr/calculators/period/', category: t('categories.health', 'fr'), icon: '📅' },
+  { title: t('bodyFrame.title', 'fr'), description: t('bodyFrame.description', 'fr'), url: '/fr/calculators/body-frame/', category: t('categories.health', 'fr'), icon: '📏' },
+  { title: t('heartRate.title', 'fr'), description: t('heartRate.description', 'fr'), url: '/fr/calculators/heart-rate/', category: t('categories.health', 'fr'), icon: '💗' },
+  { title: t('waistHip.title', 'fr'), description: t('waistHip.description', 'fr'), url: '/fr/calculators/waist-hip/', category: t('categories.health', 'fr'), icon: '📊' },
 ];
 ---
 
@@ -35,9 +45,19 @@ const calculators = [
 
     <section class="calculators-grid">
       <h2>Calculatrices en Vedette</h2>
-      <div class="grid">
+
+      <div class="search-box">
+        <input
+          type="text"
+          id="search"
+          placeholder={t('common.search', 'fr')}
+          autocomplete="off"
+        />
+      </div>
+
+      <div class="grid" id="calculators-grid">
         {calculators.map((calc) => (
-          <a href={calc.url} class="calculator-card">
+          <a href={calc.url} class="calculator-card" data-title={calc.title.toLowerCase()} data-description={calc.description.toLowerCase()}>
             <div class="calculator-icon">{calc.icon}</div>
             <h3>{calc.title}</h3>
             <p>{calc.description}</p>
@@ -45,8 +65,43 @@ const calculators = [
           </a>
         ))}
       </div>
+
+      <p class="no-results" id="no-results" style="display: none;">
+        {t('common.noResults', 'fr')}
+      </p>
     </section>
   </div>
+
+  <script>
+    const searchInput = document.getElementById('search') as HTMLInputElement;
+    const calculatorsGrid = document.getElementById('calculators-grid') as HTMLElement;
+    const noResults = document.getElementById('no-results') as HTMLElement;
+    const cards = Array.from(calculatorsGrid.querySelectorAll('.calculator-card'));
+
+    searchInput?.addEventListener('input', (e) => {
+      const searchTerm = (e.target as HTMLInputElement).value.toLowerCase();
+      let visibleCount = 0;
+
+      cards.forEach((card) => {
+        const title = card.getAttribute('data-title') || '';
+        const description = card.getAttribute('data-description') || '';
+        const matches = title.includes(searchTerm) || description.includes(searchTerm);
+
+        if (matches) {
+          (card as HTMLElement).style.display = '';
+          visibleCount++;
+        } else {
+          (card as HTMLElement).style.display = 'none';
+        }
+      });
+
+      if (visibleCount === 0) {
+        noResults.style.display = 'block';
+      } else {
+        noResults.style.display = 'none';
+      }
+    });
+  </script>
 
   <style>
     .hero {
@@ -73,6 +128,31 @@ const calculators = [
       font-size: 2rem;
       margin-bottom: 2rem;
       color: #333;
+    }
+
+    .search-box {
+      margin-bottom: 2rem;
+    }
+
+    .search-box input {
+      width: 100%;
+      padding: 1rem;
+      font-size: 1rem;
+      border: 2px solid #e0e0e0;
+      border-radius: 8px;
+      transition: border-color 0.2s;
+    }
+
+    .search-box input:focus {
+      outline: none;
+      border-color: var(--primary-color);
+    }
+
+    .no-results {
+      text-align: center;
+      padding: 3rem;
+      color: #999;
+      font-size: 1.125rem;
     }
 
     .grid {

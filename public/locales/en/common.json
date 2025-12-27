@@ -18,7 +18,9 @@
     "height": "Height",
     "weight": "Weight",
     "years": "years",
-    "week": "week"
+    "week": "week",
+    "search": "Search calculators...",
+    "noResults": "No calculators found matching your search"
   },
   "units": {
     "metric": "Metric",

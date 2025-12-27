@@ -19,6 +19,16 @@ const calculators = [
   { title: t('carbohydrate.title', 'de'), description: t('carbohydrate.description', 'de'), url: '/de/calculators/carbohydrate/', category: t('categories.health', 'de'), icon: '🍞' },
   { title: t('leanBodyMass.title', 'de'), description: t('leanBodyMass.description', 'de'), url: '/de/calculators/lean-body-mass/', category: t('categories.health', 'de'), icon: '💪' },
   { title: t('healthyWeight.title', 'de'), description: t('healthyWeight.description', 'de'), url: '/de/calculators/healthy-weight/', category: t('categories.health', 'de'), icon: '✅' },
+  { title: t('protein.title', 'de'), description: t('protein.description', 'de'), url: '/de/calculators/protein/', category: t('categories.health', 'de'), icon: '🥩' },
+  { title: t('bodyType.title', 'de'), description: t('bodyType.description', 'de'), url: '/de/calculators/body-type/', category: t('categories.health', 'de'), icon: '🧍' },
+  { title: t('caloriesBurned.title', 'de'), description: t('caloriesBurned.description', 'de'), url: '/de/calculators/calories-burned/', category: t('categories.health', 'de'), icon: '🔥' },
+  { title: t('bsa.title', 'de'), description: t('bsa.description', 'de'), url: '/de/calculators/bsa/', category: t('categories.health', 'de'), icon: '📐' },
+  { title: t('bloodType.title', 'de'), description: t('bloodType.description', 'de'), url: '/de/calculators/blood-type/', category: t('categories.health', 'de'), icon: '🩸' },
+  { title: t('ovulation.title', 'de'), description: t('ovulation.description', 'de'), url: '/de/calculators/ovulation/', category: t('categories.health', 'de'), icon: '🥚' },
+  { title: t('period.title', 'de'), description: t('period.description', 'de'), url: '/de/calculators/period/', category: t('categories.health', 'de'), icon: '📅' },
+  { title: t('bodyFrame.title', 'de'), description: t('bodyFrame.description', 'de'), url: '/de/calculators/body-frame/', category: t('categories.health', 'de'), icon: '📏' },
+  { title: t('heartRate.title', 'de'), description: t('heartRate.description', 'de'), url: '/de/calculators/heart-rate/', category: t('categories.health', 'de'), icon: '💗' },
+  { title: t('waistHip.title', 'de'), description: t('waistHip.description', 'de'), url: '/de/calculators/waist-hip/', category: t('categories.health', 'de'), icon: '📊' },
 ];
 ---
 
@@ -35,9 +45,19 @@ const calculators = [
 
     <section class="calculators-grid">
       <h2>Empfohlene Rechner</h2>
-      <div class="grid">
+
+      <div class="search-box">
+        <input
+          type="text"
+          id="search"
+          placeholder={t('common.search', 'de')}
+          autocomplete="off"
+        />
+      </div>
+
+      <div class="grid" id="calculators-grid">
         {calculators.map((calc) => (
-          <a href={calc.url} class="calculator-card">
+          <a href={calc.url} class="calculator-card" data-title={calc.title.toLowerCase()} data-description={calc.description.toLowerCase()}>
             <div class="calculator-icon">{calc.icon}</div>
             <h3>{calc.title}</h3>
             <p>{calc.description}</p>
@@ -45,8 +65,43 @@ const calculators = [
           </a>
         ))}
       </div>
+
+      <p class="no-results" id="no-results" style="display: none;">
+        {t('common.noResults', 'de')}
+      </p>
     </section>
   </div>
+
+  <script>
+    const searchInput = document.getElementById('search') as HTMLInputElement;
+    const calculatorsGrid = document.getElementById('calculators-grid') as HTMLElement;
+    const noResults = document.getElementById('no-results') as HTMLElement;
+    const cards = Array.from(calculatorsGrid.querySelectorAll('.calculator-card'));
+
+    searchInput?.addEventListener('input', (e) => {
+      const searchTerm = (e.target as HTMLInputElement).value.toLowerCase();
+      let visibleCount = 0;
+
+      cards.forEach((card) => {
+        const title = card.getAttribute('data-title') || '';
+        const description = card.getAttribute('data-description') || '';
+        const matches = title.includes(searchTerm) || description.includes(searchTerm);
+
+        if (matches) {
+          (card as HTMLElement).style.display = '';
+          visibleCount++;
+        } else {
+          (card as HTMLElement).style.display = 'none';
+        }
+      });
+
+      if (visibleCount === 0) {
+        noResults.style.display = 'block';
+      } else {
+        noResults.style.display = 'none';
+      }
+    });
+  </script>
 
   <style>
     .hero {
@@ -73,6 +128,31 @@ const calculators = [
       font-size: 2rem;
       margin-bottom: 2rem;
       color: #333;
+    }
+
+    .search-box {
+      margin-bottom: 2rem;
+    }
+
+    .search-box input {
+      width: 100%;
+      padding: 1rem;
+      font-size: 1rem;
+      border: 2px solid #e0e0e0;
+      border-radius: 8px;
+      transition: border-color 0.2s;
+    }
+
+    .search-box input:focus {
+      outline: none;
+      border-color: var(--primary-color);
+    }
+
+    .no-results {
+      text-align: center;
+      padding: 3rem;
+      color: #999;
+      font-size: 1.125rem;
     }
 
     .grid {

@@ -18,7 +18,9 @@
     "height": "Altezza",
     "weight": "Peso",
     "years": "anni",
-    "week": "settimana"
+    "week": "settimana",
+    "search": "Cerca calcolatrici...",
+    "noResults": "Nessuna calcolatrice trovata corrispondente alla tua ricerca"
   },
   "units": {
     "metric": "Metrico",
