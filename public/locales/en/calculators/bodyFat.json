@@ -1,0 +1,56 @@
+{
+  "title": "Body Fat Calculator",
+  "description": "Calculate your body fat percentage",
+  "metaDescription": "Free body fat calculator - Estimate your body fat percentage using the U.S. Navy Method or BMI-based method.",
+  "form": {
+    "title": "Enter Your Information",
+    "methodLabel": "Calculation Method",
+    "ageLabel": "Age",
+    "agePlaceholder": "Enter your age (15-80)",
+    "genderLabel": "Gender",
+    "heightLabel": "Height",
+    "heightPlaceholder": "Enter your height",
+    "weightLabel": "Weight",
+    "weightPlaceholder": "Enter your weight",
+    "measurementsTitle": "Body Measurements",
+    "neckLabel": "Neck Circumference",
+    "neckPlaceholder": "Enter neck circumference",
+    "neckHelp": "Measure below the larynx, sloping downward",
+    "waistLabel": "Waist Circumference",
+    "waistPlaceholder": "Enter waist circumference",
+    "waistHelpMale": "Measure horizontally around the navel",
+    "waistHelpFemale": "Measure at the narrowest part of the torso",
+    "hipLabel": "Hip Circumference",
+    "hipPlaceholder": "Enter hip circumference",
+    "hipHelp": "Measure at the widest part of the hips"
+  },
+  "method": {
+    "navy": "U.S. Navy Method",
+    "bmi": "BMI Method",
+    "navyDesc": "Requires neck, waist, and hip (women) measurements",
+    "bmiDesc": "Estimation based on age, weight, and height"
+  },
+  "results": {
+    "title": "Your Results",
+    "bodyFatPercentage": "Body Fat Percentage",
+    "bodyFatMass": "Body Fat Mass",
+    "leanBodyMass": "Lean Body Mass",
+    "idealBodyFat": "Ideal Body Fat",
+    "fatToLose": "Fat to Lose",
+    "method": "Method Used"
+  },
+  "info": {
+    "title": "About the Body Fat Calculator",
+    "description": "This calculator estimates your body fat percentage using the U.S. Navy Method or BMI-based method. The Navy method uses body circumference measurements, while the BMI method is based on your age, weight, and height.",
+    "categoriesTitle": "Body Fat Categories (American Council on Exercise)",
+    "categoryLabel": "Category",
+    "menLabel": "Men",
+    "womenLabel": "Women",
+    "essentialFat": "Essential Fat",
+    "athletes": "Athletes",
+    "fitness": "Fitness",
+    "average": "Average",
+    "obese": "Obese",
+    "limitations": "These results are only an estimate. For more accurate body fat measurement, consider using instruments like bioelectric impedance analysis or consult with a healthcare professional."
+  }
+}

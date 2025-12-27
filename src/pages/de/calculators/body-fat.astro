@@ -1,0 +1,37 @@
+---
+import BaseLayout from '@/layouts/BaseLayout.astro';
+import BodyFatCalculator from '@/components/calculators/BodyFatCalculator.astro';
+import { t } from '@/utils/i18n';
+
+const title = t('bodyFat.title', 'de') + ' - ' + t('site.title', 'de');
+const description = t('bodyFat.metaDescription', 'de');
+---
+
+<BaseLayout title={title} description={description} lang="de" calculator="bodyFat">
+  <div class="container">
+    <div class="page-header">
+      <h1>{t('bodyFat.title', 'de')}</h1>
+      <p class="page-description">{t('bodyFat.description', 'de')}</p>
+    </div>
+
+    <BodyFatCalculator lang="de" />
+  </div>
+</BaseLayout>
+
+<style>
+  .page-header {
+    text-align: center;
+    padding: 2rem 0 1rem;
+  }
+
+  .page-header h1 {
+    font-size: 2.5rem;
+    color: #333;
+    margin-bottom: 0.5rem;
+  }
+
+  .page-description {
+    font-size: 1.25rem;
+    color: #666;
+  }
+</style>

@@ -1,0 +1,56 @@
+{
+  "title": "Körperfett-Rechner",
+  "description": "Berechnen Sie Ihren Körperfettanteil",
+  "metaDescription": "Kostenloser Körperfett-Rechner - Schätzen Sie Ihren Körperfettanteil mit der US-Navy-Methode oder der BMI-basierten Methode.",
+  "form": {
+    "title": "Geben Sie Ihre Informationen ein",
+    "methodLabel": "Berechnungsmethode",
+    "ageLabel": "Alter",
+    "agePlaceholder": "Geben Sie Ihr Alter ein (15-80)",
+    "genderLabel": "Geschlecht",
+    "heightLabel": "Größe",
+    "heightPlaceholder": "Geben Sie Ihre Größe ein",
+    "weightLabel": "Gewicht",
+    "weightPlaceholder": "Geben Sie Ihr Gewicht ein",
+    "measurementsTitle": "Körpermaße",
+    "neckLabel": "Halsumfang",
+    "neckPlaceholder": "Geben Sie den Halsumfang ein",
+    "neckHelp": "Unter dem Kehlkopf messen, nach unten geneigt",
+    "waistLabel": "Taillenumfang",
+    "waistPlaceholder": "Geben Sie den Taillenumfang ein",
+    "waistHelpMale": "Horizontal um den Bauchnabel messen",
+    "waistHelpFemale": "An der schmalsten Stelle des Oberkörpers messen",
+    "hipLabel": "Hüftumfang",
+    "hipPlaceholder": "Geben Sie den Hüftumfang ein",
+    "hipHelp": "An der breitesten Stelle der Hüften messen"
+  },
+  "method": {
+    "navy": "US-Navy-Methode",
+    "bmi": "BMI-Methode",
+    "navyDesc": "Erfordert Messungen von Hals, Taille und Hüfte (Frauen)",
+    "bmiDesc": "Schätzung basierend auf Alter, Gewicht und Größe"
+  },
+  "results": {
+    "title": "Ihre Ergebnisse",
+    "bodyFatPercentage": "Körperfettanteil",
+    "bodyFatMass": "Fettmasse",
+    "leanBodyMass": "Magere Körpermasse",
+    "idealBodyFat": "Ideales Körperfett",
+    "fatToLose": "Zu verlierendes Fett",
+    "method": "Verwendete Methode"
+  },
+  "info": {
+    "title": "Über den Körperfett-Rechner",
+    "description": "Dieser Rechner schätzt Ihren Körperfettanteil mit der US-Navy-Methode oder der BMI-basierten Methode. Die Navy-Methode verwendet Körperumfangsmessungen, während die BMI-Methode auf Ihrem Alter, Gewicht und Größe basiert.",
+    "categoriesTitle": "Körperfett-Kategorien (American Council on Exercise)",
+    "categoryLabel": "Kategorie",
+    "menLabel": "Männer",
+    "womenLabel": "Frauen",
+    "essentialFat": "Essentielles Fett",
+    "athletes": "Athleten",
+    "fitness": "Fitness",
+    "average": "Durchschnitt",
+    "obese": "Adipös",
+    "limitations": "Diese Ergebnisse sind nur eine Schätzung. Für eine genauere Körperfettmessung sollten Sie Instrumente wie die bioelektrische Impedanzanalyse verwenden oder einen Gesundheitsfachmann konsultieren."
+  }
+}

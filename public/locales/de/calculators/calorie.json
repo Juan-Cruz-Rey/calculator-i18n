@@ -1,0 +1,44 @@
+{
+  "title": "Kalorienrechner",
+  "description": "Berechnen Sie Ihren täglichen Kalorienbedarf",
+  "metaDescription": "Kostenloser Kalorienrechner - Berechnen Sie, wie viele Kalorien Sie täglich benötigen, basierend auf Alter, Gewicht, Größe und Aktivitätsniveau.",
+  "form": {
+    "title": "Geben Sie Ihre Daten ein",
+    "ageLabel": "Alter",
+    "agePlaceholder": "Geben Sie Ihr Alter ein (15-80)",
+    "genderLabel": "Geschlecht",
+    "heightLabel": "Größe",
+    "heightPlaceholder": "Geben Sie Ihre Größe ein",
+    "weightLabel": "Gewicht",
+    "weightPlaceholder": "Geben Sie Ihr Gewicht ein",
+    "activityLabel": "Aktivitätsniveau"
+  },
+  "activity": {
+    "sedentary": "Sitzend (wenig oder keine Bewegung)",
+    "light": "Leicht (1-3 Mal/Woche Bewegung)",
+    "moderate": "Mäßig (4-5 Mal/Woche Bewegung)",
+    "active": "Aktiv (tägliche Bewegung oder intensives Training 3-4 Mal/Woche)",
+    "veryActive": "Sehr aktiv (intensives Training 6-7 Mal/Woche)",
+    "extraActive": "Extrem aktiv (sehr intensives tägliches Training und körperliche Arbeit)"
+  },
+  "results": {
+    "title": "Ihr Kalorienbedarf",
+    "maintenance": "Erhaltung",
+    "maintenanceDesc": "Kalorien zur Aufrechterhaltung Ihres aktuellen Gewichts",
+    "goalsTitle": "Kalorien nach Ziel",
+    "weightLoss": "Gewichtsabnahme",
+    "weightGain": "Gewichtszunahme",
+    "mild": "Leicht",
+    "moderate": "Mäßig",
+    "extreme": "Extrem",
+    "bmr": "GU (Grundumsatz)",
+    "bmrDesc": "Kalorien, die Ihr Körper in Ruhe benötigt"
+  },
+  "info": {
+    "title": "Über den Kalorienrechner",
+    "description": "Dieser Rechner schätzt, wie viele tägliche Kalorien Sie benötigen, basierend auf Alter, Geschlecht, Gewicht, Größe und körperlicher Aktivität. Er verwendet die Mifflin-St Jeor-Gleichung, die als eine der genauesten zur Berechnung des Grundumsatzes (GU) gilt.",
+    "formulasTitle": "Verwendete Formeln",
+    "mifflinFormula": "Männer: GU = 10 × Gewicht(kg) + 6,25 × Größe(cm) - 5 × Alter + 5\nFrauen: GU = 10 × Gewicht(kg) + 6,25 × Größe(cm) - 5 × Alter - 161",
+    "limitations": "Diese Schätzungen sind allgemeine Richtlinien. Der individuelle Kalorienbedarf kann je nach Stoffwechsel, Körperzusammensetzung und anderen Gesundheitsfaktoren variieren. Konsultieren Sie einen Gesundheitsfachmann für einen personalisierten Plan."
+  }
+}

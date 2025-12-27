@@ -1,0 +1,44 @@
+{
+  "title": "Calorie Calculator",
+  "description": "Calculate your daily calorie needs",
+  "metaDescription": "Free calorie calculator - Calculate how many calories you need daily based on your age, weight, height, and activity level.",
+  "form": {
+    "title": "Enter Your Information",
+    "ageLabel": "Age",
+    "agePlaceholder": "Enter your age (15-80)",
+    "genderLabel": "Gender",
+    "heightLabel": "Height",
+    "heightPlaceholder": "Enter your height",
+    "weightLabel": "Weight",
+    "weightPlaceholder": "Enter your weight",
+    "activityLabel": "Activity Level"
+  },
+  "activity": {
+    "sedentary": "Sedentary (little or no exercise)",
+    "light": "Light (exercise 1-3 times/week)",
+    "moderate": "Moderate (exercise 4-5 times/week)",
+    "active": "Active (daily exercise or intense exercise 3-4 times/week)",
+    "veryActive": "Very Active (intense exercise 6-7 times/week)",
+    "extraActive": "Extra Active (very intense daily exercise & physical job)"
+  },
+  "results": {
+    "title": "Your Calorie Needs",
+    "maintenance": "Maintenance",
+    "maintenanceDesc": "Calories to maintain your current weight",
+    "goalsTitle": "Calories by Goal",
+    "weightLoss": "Weight Loss",
+    "weightGain": "Weight Gain",
+    "mild": "Mild",
+    "moderate": "Moderate",
+    "extreme": "Extreme",
+    "bmr": "BMR (Basal Metabolic Rate)",
+    "bmrDesc": "Calories your body needs at rest"
+  },
+  "info": {
+    "title": "About the Calorie Calculator",
+    "description": "This calculator estimates how many daily calories you need based on your age, gender, weight, height, and activity level. It uses the Mifflin-St Jeor equation, considered one of the most accurate for calculating basal metabolic rate (BMR).",
+    "formulasTitle": "Formulas Used",
+    "mifflinFormula": "Men: BMR = 10 × weight(kg) + 6.25 × height(cm) - 5 × age + 5\nWomen: BMR = 10 × weight(kg) + 6.25 × height(cm) - 5 × age - 161",
+    "limitations": "These estimates are general guidelines. Individual calorie needs may vary based on metabolism, body composition, and other health factors. Consult with a healthcare professional for a personalized plan."
+  }
+}

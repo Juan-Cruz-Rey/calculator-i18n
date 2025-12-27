@@ -1,0 +1,44 @@
+{
+  "title": "Calculadora de Calorías",
+  "description": "Calcula tus necesidades calóricas diarias",
+  "metaDescription": "Calculadora de calorías gratuita - Calcula cuántas calorías necesitas diariamente según tu edad, peso, altura y nivel de actividad física.",
+  "form": {
+    "title": "Ingresa tus datos",
+    "ageLabel": "Edad",
+    "agePlaceholder": "Ingresa tu edad (15-80)",
+    "genderLabel": "Género",
+    "heightLabel": "Altura",
+    "heightPlaceholder": "Ingresa tu altura",
+    "weightLabel": "Peso",
+    "weightPlaceholder": "Ingresa tu peso",
+    "activityLabel": "Nivel de Actividad"
+  },
+  "activity": {
+    "sedentary": "Sedentario (poco o ningún ejercicio)",
+    "light": "Ligero (ejercicio 1-3 veces/semana)",
+    "moderate": "Moderado (ejercicio 4-5 veces/semana)",
+    "active": "Activo (ejercicio diario o intenso 3-4 veces/semana)",
+    "veryActive": "Muy activo (ejercicio intenso 6-7 veces/semana)",
+    "extraActive": "Extremadamente activo (ejercicio muy intenso diario y trabajo físico)"
+  },
+  "results": {
+    "title": "Tus Necesidades Calóricas",
+    "maintenance": "Mantenimiento",
+    "maintenanceDesc": "Calorías para mantener tu peso actual",
+    "goalsTitle": "Calorías según tu objetivo",
+    "weightLoss": "Pérdida de Peso",
+    "weightGain": "Ganancia de Peso",
+    "mild": "Leve",
+    "moderate": "Moderado",
+    "extreme": "Extremo",
+    "bmr": "TMB (Tasa Metabólica Basal)",
+    "bmrDesc": "Calorías que tu cuerpo necesita en reposo"
+  },
+  "info": {
+    "title": "Sobre la Calculadora de Calorías",
+    "description": "Esta calculadora estima cuántas calorías diarias necesitas según tu edad, género, peso, altura y nivel de actividad física. Utiliza la ecuación de Mifflin-St Jeor, considerada una de las más precisas para calcular la tasa metabólica basal (TMB).",
+    "formulasTitle": "Fórmulas Utilizadas",
+    "mifflinFormula": "Hombres: TMB = 10 × peso(kg) + 6.25 × altura(cm) - 5 × edad + 5\nMujeres: TMB = 10 × peso(kg) + 6.25 × altura(cm) - 5 × edad - 161",
+    "limitations": "Estas estimaciones son guías generales. Las necesidades calóricas individuales pueden variar según el metabolismo, la composición corporal y otros factores de salud. Consulta con un profesional de la salud para un plan personalizado."
+  }
+}

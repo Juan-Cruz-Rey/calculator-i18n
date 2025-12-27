@@ -1,0 +1,551 @@
+---
+import { t, type Locale } from '@/utils/i18n';
+
+const { lang } = Astro.props as { lang: Locale };
+---
+
+<div class="calorie-calculator">
+  <div class="calculator-form">
+    <h2>{t('calorie.form.title', lang)}</h2>
+
+    <form id="calorie-form">
+      <!-- Unit System Toggle -->
+      <div class="form-group unit-toggle">
+        <label>
+          <input type="radio" name="unitSystem" value="metric" checked />
+          {t('units.metric', lang)}
+        </label>
+        <label>
+          <input type="radio" name="unitSystem" value="imperial" />
+          {t('units.imperial', lang)}
+        </label>
+      </div>
+
+      <!-- Age -->
+      <div class="form-group">
+        <label for="age">{t('calorie.form.ageLabel', lang)}</label>
+        <input
+          type="number"
+          id="age"
+          name="age"
+          min="15"
+          max="80"
+          required
+          placeholder={t('calorie.form.agePlaceholder', lang)}
+        />
+        <span class="unit">{t('common.years', lang)}</span>
+      </div>
+
+      <!-- Gender -->
+      <div class="form-group">
+        <label for="gender">{t('calorie.form.genderLabel', lang)}</label>
+        <select id="gender" name="gender" required>
+          <option value="male">{t('common.male', lang)}</option>
+          <option value="female">{t('common.female', lang)}</option>
+        </select>
+      </div>
+
+      <!-- Height (Metric) -->
+      <div class="form-group height-metric">
+        <label for="height">{t('calorie.form.heightLabel', lang)}</label>
+        <input
+          type="number"
+          id="height"
+          name="height"
+          min="100"
+          max="250"
+          step="0.1"
+          required
+          placeholder={t('calorie.form.heightPlaceholder', lang)}
+        />
+        <span class="unit">{t('units.cm', lang)}</span>
+      </div>
+
+      <!-- Height (Imperial) -->
+      <div class="form-group height-imperial" style="display: none;">
+        <label for="heightFt">{t('calorie.form.heightLabel', lang)}</label>
+        <div class="input-group">
+          <input
+            type="number"
+            id="heightFt"
+            name="heightFt"
+            min="3"
+            max="8"
+            placeholder="Feet"
+          />
+          <span class="unit">{t('units.ft', lang)}</span>
+          <input
+            type="number"
+            id="heightIn"
+            name="heightIn"
+            min="0"
+            max="11"
+            placeholder="Inches"
+          />
+          <span class="unit">{t('units.in', lang)}</span>
+        </div>
+      </div>
+
+      <!-- Weight -->
+      <div class="form-group">
+        <label for="weight">{t('calorie.form.weightLabel', lang)}</label>
+        <input
+          type="number"
+          id="weight"
+          name="weight"
+          min="30"
+          max="300"
+          step="0.1"
+          required
+          placeholder={t('calorie.form.weightPlaceholder', lang)}
+        />
+        <span class="unit weight-unit">{t('units.kg', lang)}</span>
+      </div>
+
+      <!-- Activity Level -->
+      <div class="form-group">
+        <label for="activityLevel">{t('calorie.form.activityLabel', lang)}</label>
+        <select id="activityLevel" name="activityLevel" required>
+          <option value="sedentary">{t('calorie.activity.sedentary', lang)}</option>
+          <option value="light">{t('calorie.activity.light', lang)}</option>
+          <option value="moderate">{t('calorie.activity.moderate', lang)}</option>
+          <option value="active">{t('calorie.activity.active', lang)}</option>
+          <option value="very-active">{t('calorie.activity.veryActive', lang)}</option>
+          <option value="extra-active">{t('calorie.activity.extraActive', lang)}</option>
+        </select>
+      </div>
+
+      <!-- Buttons -->
+      <div class="form-actions">
+        <button type="submit" class="btn-primary">{t('common.calculate', lang)}</button>
+        <button type="reset" class="btn-secondary">{t('common.reset', lang)}</button>
+      </div>
+    </form>
+  </div>
+
+  <div class="calculator-results" id="results" style="display: none;">
+    <h2>{t('calorie.results.title', lang)}</h2>
+
+    <div class="result-card maintenance">
+      <h3>{t('calorie.results.maintenance', lang)}</h3>
+      <p class="value" id="maintenance-value">-</p>
+      <p class="subtitle">{t('calorie.results.maintenanceDesc', lang)}</p>
+    </div>
+
+    <div class="goals-section">
+      <h3>{t('calorie.results.goalsTitle', lang)}</h3>
+
+      <div class="goal-category">
+        <h4>{t('calorie.results.weightLoss', lang)}</h4>
+        <div class="goal-grid">
+          <div class="goal-item">
+            <span class="goal-label">{t('calorie.results.mild', lang)} (0.25 kg/{t('common.week', lang)})</span>
+            <span class="goal-value" id="mild-loss">-</span>
+          </div>
+          <div class="goal-item">
+            <span class="goal-label">{t('calorie.results.moderate', lang)} (0.5 kg/{t('common.week', lang)})</span>
+            <span class="goal-value" id="weight-loss">-</span>
+          </div>
+          <div class="goal-item">
+            <span class="goal-label">{t('calorie.results.extreme', lang)} (1 kg/{t('common.week', lang)})</span>
+            <span class="goal-value" id="extreme-loss">-</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="goal-category">
+        <h4>{t('calorie.results.weightGain', lang)}</h4>
+        <div class="goal-grid">
+          <div class="goal-item">
+            <span class="goal-label">{t('calorie.results.mild', lang)} (0.25 kg/{t('common.week', lang)})</span>
+            <span class="goal-value" id="mild-gain">-</span>
+          </div>
+          <div class="goal-item">
+            <span class="goal-label">{t('calorie.results.moderate', lang)} (0.5 kg/{t('common.week', lang)})</span>
+            <span class="goal-value" id="weight-gain">-</span>
+          </div>
+          <div class="goal-item">
+            <span class="goal-label">{t('calorie.results.extreme', lang)} (1 kg/{t('common.week', lang)})</span>
+            <span class="goal-value" id="extreme-gain">-</span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="bmr-info">
+      <strong>{t('calorie.results.bmr', lang)}:</strong>
+      <span id="bmr-value">-</span>
+      <p class="bmr-desc">{t('calorie.results.bmrDesc', lang)}</p>
+    </div>
+  </div>
+
+  <div class="calculator-info">
+    <h2>{t('calorie.info.title', lang)}</h2>
+    <p>{t('calorie.info.description', lang)}</p>
+
+    <h3>{t('calorie.info.formulasTitle', lang)}</h3>
+    <div class="formula-box">
+      <strong>Mifflin-St Jeor:</strong>
+      <p class="formula">{t('calorie.info.mifflinFormula', lang)}</p>
+    </div>
+
+    <p class="limitations">{t('calorie.info.limitations', lang)}</p>
+  </div>
+</div>
+
+<style>
+  .calorie-calculator {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 2rem;
+  }
+
+  .calculator-form, .calculator-results, .calculator-info {
+    background: white;
+    border-radius: 8px;
+    padding: 2rem;
+    margin-bottom: 2rem;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+  }
+
+  h2 {
+    margin-top: 0;
+    color: #333;
+    font-size: 1.5rem;
+    margin-bottom: 1.5rem;
+  }
+
+  h3 {
+    color: #333;
+    font-size: 1.25rem;
+    margin-bottom: 1rem;
+  }
+
+  h4 {
+    color: #555;
+    font-size: 1.1rem;
+    margin-bottom: 0.75rem;
+  }
+
+  .form-group {
+    margin-bottom: 1.5rem;
+  }
+
+  .form-group label {
+    display: block;
+    margin-bottom: 0.5rem;
+    font-weight: 500;
+    color: #555;
+  }
+
+  .form-group input[type="number"],
+  .form-group select {
+    width: 100%;
+    padding: 0.75rem;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-size: 1rem;
+  }
+
+  .form-group input[type="number"]:focus,
+  .form-group select:focus {
+    outline: none;
+    border-color: #FF9800;
+  }
+
+  .unit {
+    display: inline-block;
+    margin-left: 0.5rem;
+    color: #888;
+    font-size: 0.9rem;
+  }
+
+  .unit-toggle {
+    display: flex;
+    gap: 1rem;
+    padding: 1rem;
+    background: #f5f5f5;
+    border-radius: 4px;
+  }
+
+  .unit-toggle label {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    cursor: pointer;
+    margin: 0;
+  }
+
+  .input-group {
+    display: flex;
+    gap: 0.5rem;
+    align-items: center;
+  }
+
+  .input-group input {
+    flex: 1;
+  }
+
+  .form-actions {
+    display: flex;
+    gap: 1rem;
+    margin-top: 2rem;
+  }
+
+  .btn-primary, .btn-secondary {
+    flex: 1;
+    padding: 0.875rem;
+    border: none;
+    border-radius: 4px;
+    font-size: 1rem;
+    font-weight: 500;
+    cursor: pointer;
+    transition: all 0.2s;
+  }
+
+  .btn-primary {
+    background: #FF9800;
+    color: white;
+  }
+
+  .btn-primary:hover {
+    background: #F57C00;
+  }
+
+  .btn-secondary {
+    background: #f5f5f5;
+    color: #333;
+  }
+
+  .btn-secondary:hover {
+    background: #e0e0e0;
+  }
+
+  .result-card {
+    text-align: center;
+    padding: 2rem;
+    background: linear-gradient(135deg, #FF9800 0%, #F57C00 100%);
+    color: white;
+    border-radius: 8px;
+    margin-bottom: 2rem;
+  }
+
+  .result-card h3 {
+    margin: 0 0 1rem 0;
+    font-size: 1.2rem;
+    color: white;
+  }
+
+  .result-card .value {
+    font-size: 3rem;
+    font-weight: bold;
+    margin: 0;
+  }
+
+  .result-card .subtitle {
+    font-size: 1rem;
+    margin: 0.5rem 0 0 0;
+    opacity: 0.9;
+  }
+
+  .goals-section {
+    margin: 2rem 0;
+  }
+
+  .goal-category {
+    margin-bottom: 2rem;
+  }
+
+  .goal-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 1rem;
+  }
+
+  .goal-item {
+    padding: 1rem;
+    background: #f9f9f9;
+    border-radius: 4px;
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+
+  .goal-label {
+    color: #666;
+    font-size: 0.9rem;
+  }
+
+  .goal-value {
+    color: #333;
+    font-size: 1.5rem;
+    font-weight: 600;
+  }
+
+  .bmr-info {
+    padding: 1.5rem;
+    background: #e3f2fd;
+    border-radius: 4px;
+    border-left: 4px solid #2196F3;
+  }
+
+  .bmr-info strong {
+    color: #1976D2;
+    font-size: 1.1rem;
+  }
+
+  .bmr-info span {
+    color: #333;
+    font-size: 1.3rem;
+    font-weight: 600;
+    margin-left: 0.5rem;
+  }
+
+  .bmr-desc {
+    margin: 0.5rem 0 0 0;
+    color: #555;
+    font-size: 0.9rem;
+  }
+
+  .calculator-info {
+    background: #f9f9f9;
+  }
+
+  .calculator-info p {
+    margin-bottom: 1rem;
+    line-height: 1.6;
+    color: #555;
+  }
+
+  .formula-box {
+    background: white;
+    padding: 1rem;
+    border-left: 4px solid #FF9800;
+    margin: 1rem 0;
+    border-radius: 4px;
+  }
+
+  .formula {
+    font-family: monospace;
+    margin: 0.5rem 0 0 0;
+    color: #333;
+  }
+
+  .limitations {
+    font-size: 0.9rem;
+    font-style: italic;
+    margin-top: 1.5rem;
+  }
+
+  @media (max-width: 768px) {
+    .goal-grid {
+      grid-template-columns: 1fr;
+    }
+  }
+</style>
+
+<script>
+  import type { CalorieInput, CalorieResult, Gender, ActivityLevel } from '@/utils/calculators/calorie';
+  import { calculateCalories, poundsToKg, feetInchesToCm } from '@/utils/calculators/calorie';
+
+  const form = document.getElementById('calorie-form') as HTMLFormElement;
+  const results = document.getElementById('results') as HTMLDivElement;
+  const unitSystemInputs = document.querySelectorAll('input[name="unitSystem"]');
+  const heightMetric = document.querySelector('.height-metric') as HTMLDivElement;
+  const heightImperial = document.querySelector('.height-imperial') as HTMLDivElement;
+  const weightUnit = document.querySelector('.weight-unit') as HTMLSpanElement;
+
+  // Handle unit system change
+  unitSystemInputs.forEach(input => {
+    input.addEventListener('change', (e) => {
+      const target = e.target as HTMLInputElement;
+      const isMetric = target.value === 'metric';
+
+      heightMetric.style.display = isMetric ? 'block' : 'none';
+      heightImperial.style.display = isMetric ? 'none' : 'block';
+
+      const heightInput = document.getElementById('height') as HTMLInputElement;
+      const heightFt = document.getElementById('heightFt') as HTMLInputElement;
+      const heightIn = document.getElementById('heightIn') as HTMLInputElement;
+
+      if (isMetric) {
+        heightInput.required = true;
+        heightFt.required = false;
+        heightIn.required = false;
+        weightUnit.textContent = 'kg';
+      } else {
+        heightInput.required = false;
+        heightFt.required = true;
+        heightIn.required = true;
+        weightUnit.textContent = 'lbs';
+      }
+    });
+  });
+
+  // Handle form submission
+  form.addEventListener('submit', (e) => {
+    e.preventDefault();
+
+    const formData = new FormData(form);
+    const unitSystem = formData.get('unitSystem') as string;
+    const age = parseInt(formData.get('age') as string);
+    const gender = formData.get('gender') as Gender;
+    const activityLevel = formData.get('activityLevel') as ActivityLevel;
+    let weight = parseFloat(formData.get('weight') as string);
+    let heightCm: number;
+
+    if (unitSystem === 'metric') {
+      heightCm = parseFloat(formData.get('height') as string);
+    } else {
+      const feet = parseInt(formData.get('heightFt') as string) || 0;
+      const inches = parseInt(formData.get('heightIn') as string) || 0;
+      heightCm = feetInchesToCm(feet, inches);
+      weight = poundsToKg(weight);
+    }
+
+    const input: CalorieInput = {
+      age,
+      gender,
+      heightCm,
+      weightKg: weight,
+      activityLevel,
+    };
+
+    try {
+      const result = calculateCalories(input);
+      displayResults(result);
+    } catch (error) {
+      alert('Error calculating calories. Please check your inputs.');
+      console.error(error);
+    }
+  });
+
+  function displayResults(result: CalorieResult) {
+    const maintenanceValue = document.getElementById('maintenance-value') as HTMLParagraphElement;
+    const bmrValue = document.getElementById('bmr-value') as HTMLSpanElement;
+    const mildLoss = document.getElementById('mild-loss') as HTMLSpanElement;
+    const weightLoss = document.getElementById('weight-loss') as HTMLSpanElement;
+    const extremeLoss = document.getElementById('extreme-loss') as HTMLSpanElement;
+    const mildGain = document.getElementById('mild-gain') as HTMLSpanElement;
+    const weightGain = document.getElementById('weight-gain') as HTMLSpanElement;
+    const extremeGain = document.getElementById('extreme-gain') as HTMLSpanElement;
+
+    maintenanceValue.textContent = `${result.maintenance} cal/day`;
+    bmrValue.textContent = `${result.bmr} cal/day`;
+    mildLoss.textContent = `${result.mildWeightLoss} cal/day`;
+    weightLoss.textContent = `${result.weightLoss} cal/day`;
+    extremeLoss.textContent = `${result.extremeWeightLoss} cal/day`;
+    mildGain.textContent = `${result.mildWeightGain} cal/day`;
+    weightGain.textContent = `${result.weightGain} cal/day`;
+    extremeGain.textContent = `${result.extremeWeightGain} cal/day`;
+
+    // Show results
+    results.style.display = 'block';
+    results.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
+  }
+
+  // Handle form reset
+  form.addEventListener('reset', () => {
+    results.style.display = 'none';
+  });
+</script>

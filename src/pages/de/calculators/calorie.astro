@@ -1,0 +1,37 @@
+---
+import BaseLayout from '@/layouts/BaseLayout.astro';
+import CalorieCalculator from '@/components/calculators/CalorieCalculator.astro';
+import { t } from '@/utils/i18n';
+
+const title = t('calorie.title', 'de') + ' - ' + t('site.title', 'de');
+const description = t('calorie.metaDescription', 'de');
+---
+
+<BaseLayout title={title} description={description} lang="de" calculator="calorie">
+  <div class="container">
+    <div class="page-header">
+      <h1>{t('calorie.title', 'de')}</h1>
+      <p class="page-description">{t('calorie.description', 'de')}</p>
+    </div>
+
+    <CalorieCalculator lang="de" />
+  </div>
+</BaseLayout>
+
+<style>
+  .page-header {
+    text-align: center;
+    padding: 2rem 0 1rem;
+  }
+
+  .page-header h1 {
+    font-size: 2.5rem;
+    color: #333;
+    margin-bottom: 0.5rem;
+  }
+
+  .page-description {
+    font-size: 1.25rem;
+    color: #666;
+  }
+</style>

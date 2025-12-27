@@ -1,0 +1,58 @@
+{
+  "title": "Calculatrice de DÉT",
+  "description": "Calculez votre Dépense Énergétique Totale quotidienne",
+  "metaDescription": "Calculatrice de DÉT gratuite - Calculez votre dépense énergétique totale quotidienne en fonction de l'âge, du poids, de la taille et du niveau d'activité pour atteindre vos objectifs.",
+  "form": {
+    "title": "Entrez vos informations",
+    "ageLabel": "Âge",
+    "agePlaceholder": "Entrez votre âge (15-80)",
+    "genderLabel": "Genre",
+    "heightLabel": "Taille",
+    "heightPlaceholder": "Entrez votre taille",
+    "weightLabel": "Poids",
+    "weightPlaceholder": "Entrez votre poids",
+    "activityLabel": "Niveau d'activité",
+    "bodyFatLabel": "Pourcentage de graisse corporelle",
+    "bodyFatPlaceholder": "Entrez votre % de graisse (5-50)"
+  },
+  "activity": {
+    "sedentary": "Sédentaire (peu ou pas d'exercice)",
+    "light": "Léger (exercice 1-3 fois/semaine)",
+    "moderate": "Modéré (exercice 4-5 fois/semaine)",
+    "active": "Actif (exercice quotidien ou exercice intense 3-4 fois/semaine)",
+    "veryActive": "Très actif (exercice intense 6-7 fois/semaine)",
+    "extraActive": "Extrêmement actif (exercice très intense quotidien et travail physique)"
+  },
+  "results": {
+    "title": "Votre Dépense Énergétique Totale",
+    "tdee": "DÉT Quotidienne",
+    "tdeeDesc": "Votre dépense énergétique totale quotidienne",
+    "goalsTitle": "Calories selon votre objectif",
+    "weightLoss": "Perte de poids",
+    "weightGain": "Prise de poids",
+    "mild": "Léger",
+    "moderate": "Modéré",
+    "extreme": "Extrême",
+    "bmr": "MB (Métabolisme de Base)",
+    "bmrDesc": "Calories dont votre corps a besoin au repos",
+    "macrosTitle": "Recommandations en macronutriments",
+    "protein": "Protéines",
+    "carbs": "Glucides",
+    "fats": "Lipides",
+    "macrosNote": "Répartition équilibrée : 30% protéines, 40% glucides, 30% lipides"
+  },
+  "info": {
+    "title": "À propos de la Calculatrice de DÉT",
+    "description": "La Dépense Énergétique Totale (DÉT) représente le nombre total de calories que votre corps brûle en une journée, y compris votre métabolisme de base (MB) et les calories brûlées par l'activité physique. Cette calculatrice utilise l'équation de Mifflin-St Jeor pour calculer votre MB et le multiplie par votre niveau d'activité.",
+    "formulasTitle": "Formules utilisées",
+    "mifflinFormula": "Hommes : MB = 10 × poids(kg) + 6.25 × taille(cm) - 5 × âge + 5\nFemmes : MB = 10 × poids(kg) + 6.25 × taille(cm) - 5 × âge - 161\nDÉT = MB × Facteur d'activité",
+    "activityTitle": "Niveaux d'activité",
+    "sedentaryDesc": "Peu ou pas d'exercice, travail de bureau",
+    "lightDesc": "Exercice léger 1-3 fois par semaine",
+    "moderateDesc": "Exercice modéré 4-5 fois par semaine",
+    "activeDesc": "Exercice quotidien ou exercice intense 3-4 fois par semaine",
+    "veryActiveDesc": "Exercice intense 6-7 fois par semaine",
+    "extraActiveDesc": "Exercice très intense quotidien plus travail physique ou entraînement deux fois par jour",
+    "limitations": "Ces estimations sont des lignes directrices générales. Les besoins énergétiques individuels peuvent varier en fonction du métabolisme, de la composition corporelle, de la génétique et d'autres facteurs de santé. Consultez un professionnel de la santé ou un nutritionniste pour un plan personnalisé."
+  }
+}

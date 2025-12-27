@@ -1,0 +1,37 @@
+---
+import BaseLayout from '@/layouts/BaseLayout.astro';
+import BMRCalculator from '@/components/calculators/BMRCalculator.astro';
+import { t } from '@/utils/i18n';
+
+const title = t('bmr.title', 'hi') + ' - ' + t('site.title', 'hi');
+const description = t('bmr.metaDescription', 'hi');
+---
+
+<BaseLayout title={title} description={description} lang="hi" calculator="bmr">
+  <div class="container">
+    <div class="page-header">
+      <h1>{t('bmr.title', 'hi')}</h1>
+      <p class="page-description">{t('bmr.description', 'hi')}</p>
+    </div>
+
+    <BMRCalculator lang="hi" />
+  </div>
+</BaseLayout>
+
+<style>
+  .page-header {
+    text-align: center;
+    padding: 2rem 0 1rem;
+  }
+
+  .page-header h1 {
+    font-size: 2.5rem;
+    color: #333;
+    margin-bottom: 0.5rem;
+  }
+
+  .page-description {
+    font-size: 1.25rem;
+    color: #666;
+  }
+</style>

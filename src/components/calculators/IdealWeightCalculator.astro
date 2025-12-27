@@ -1,0 +1,529 @@
+---
+import { t, type Locale } from '@/utils/i18n';
+
+const { lang } = Astro.props as { lang: Locale };
+---
+
+<div class="ideal-weight-calculator">
+  <div class="calculator-form">
+    <h2>{t('idealWeight.form.title', lang)}</h2>
+
+    <form id="ideal-weight-form">
+      <!-- Unit System Toggle -->
+      <div class="form-group unit-toggle">
+        <label>
+          <input type="radio" name="unitSystem" value="metric" checked />
+          {t('units.metric', lang)}
+        </label>
+        <label>
+          <input type="radio" name="unitSystem" value="imperial" />
+          {t('units.imperial', lang)}
+        </label>
+      </div>
+
+      <!-- Gender -->
+      <div class="form-group">
+        <label for="gender">{t('idealWeight.form.genderLabel', lang)}</label>
+        <select id="gender" name="gender" required>
+          <option value="male">{t('common.male', lang)}</option>
+          <option value="female">{t('common.female', lang)}</option>
+        </select>
+      </div>
+
+      <!-- Age (Optional, for context) -->
+      <div class="form-group">
+        <label for="age">{t('idealWeight.form.ageLabel', lang)} <span class="optional">({t('common.optional', lang)})</span></label>
+        <input
+          type="number"
+          id="age"
+          name="age"
+          min="2"
+          max="80"
+          placeholder={t('idealWeight.form.agePlaceholder', lang)}
+        />
+        <span class="unit">{t('common.years', lang)}</span>
+      </div>
+
+      <!-- Height (Metric) -->
+      <div class="form-group height-metric">
+        <label for="height">{t('idealWeight.form.heightLabel', lang)}</label>
+        <input
+          type="number"
+          id="height"
+          name="height"
+          min="100"
+          max="250"
+          step="0.1"
+          required
+          placeholder={t('idealWeight.form.heightPlaceholder', lang)}
+        />
+        <span class="unit">{t('units.cm', lang)}</span>
+      </div>
+
+      <!-- Height (Imperial) -->
+      <div class="form-group height-imperial" style="display: none;">
+        <label for="heightFt">{t('idealWeight.form.heightLabel', lang)}</label>
+        <div class="input-group">
+          <input
+            type="number"
+            id="heightFt"
+            name="heightFt"
+            min="3"
+            max="8"
+            placeholder="Feet"
+          />
+          <span class="unit">{t('units.ft', lang)}</span>
+          <input
+            type="number"
+            id="heightIn"
+            name="heightIn"
+            min="0"
+            max="11"
+            placeholder="Inches"
+          />
+          <span class="unit">{t('units.in', lang)}</span>
+        </div>
+      </div>
+
+      <!-- Buttons -->
+      <div class="form-actions">
+        <button type="submit" class="btn-primary">{t('common.calculate', lang)}</button>
+        <button type="reset" class="btn-secondary">{t('common.reset', lang)}</button>
+      </div>
+    </form>
+  </div>
+
+  <div class="calculator-results" id="results" style="display: none;">
+    <h2>{t('idealWeight.results.title', lang)}</h2>
+
+    <div class="result-card average">
+      <h3>{t('idealWeight.results.average', lang)}</h3>
+      <p class="value" id="average-value">-</p>
+      <p class="subtitle">{t('idealWeight.results.averageDesc', lang)}</p>
+    </div>
+
+    <div class="formulas-section">
+      <h3>{t('idealWeight.results.formulasTitle', lang)}</h3>
+
+      <div class="formula-grid">
+        <div class="formula-item">
+          <span class="formula-label">Robinson (1983)</span>
+          <span class="formula-value" id="robinson-value">-</span>
+        </div>
+        <div class="formula-item">
+          <span class="formula-label">Miller (1983)</span>
+          <span class="formula-value" id="miller-value">-</span>
+        </div>
+        <div class="formula-item">
+          <span class="formula-label">Devine (1974)</span>
+          <span class="formula-value" id="devine-value">-</span>
+        </div>
+        <div class="formula-item">
+          <span class="formula-label">Hamwi (1964)</span>
+          <span class="formula-value" id="hamwi-value">-</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="bmi-range-info">
+      <h3>{t('idealWeight.results.healthyRange', lang)}</h3>
+      <p class="range-desc">{t('idealWeight.results.healthyRangeDesc', lang)}</p>
+      <div class="range-values">
+        <span id="bmi-min">-</span>
+        <span class="range-separator">-</span>
+        <span id="bmi-max">-</span>
+      </div>
+    </div>
+  </div>
+
+  <div class="calculator-info">
+    <h2>{t('idealWeight.info.title', lang)}</h2>
+    <p>{t('idealWeight.info.description', lang)}</p>
+
+    <h3>{t('idealWeight.info.formulasTitle', lang)}</h3>
+
+    <div class="formula-box">
+      <strong>Robinson (1983):</strong>
+      <p class="formula">{t('idealWeight.info.robinsonFormula', lang)}</p>
+    </div>
+
+    <div class="formula-box">
+      <strong>Miller (1983):</strong>
+      <p class="formula">{t('idealWeight.info.millerFormula', lang)}</p>
+    </div>
+
+    <div class="formula-box">
+      <strong>Devine (1974):</strong>
+      <p class="formula">{t('idealWeight.info.devineFormula', lang)}</p>
+    </div>
+
+    <div class="formula-box">
+      <strong>Hamwi (1964):</strong>
+      <p class="formula">{t('idealWeight.info.hamwiFormula', lang)}</p>
+    </div>
+
+    <p class="limitations">{t('idealWeight.info.limitations', lang)}</p>
+  </div>
+</div>
+
+<style>
+  .ideal-weight-calculator {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 2rem;
+  }
+
+  .calculator-form, .calculator-results, .calculator-info {
+    background: white;
+    border-radius: 8px;
+    padding: 2rem;
+    margin-bottom: 2rem;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+  }
+
+  h2 {
+    margin-top: 0;
+    color: #333;
+    font-size: 1.5rem;
+    margin-bottom: 1.5rem;
+  }
+
+  h3 {
+    color: #333;
+    font-size: 1.25rem;
+    margin-bottom: 1rem;
+  }
+
+  .form-group {
+    margin-bottom: 1.5rem;
+  }
+
+  .form-group label {
+    display: block;
+    margin-bottom: 0.5rem;
+    font-weight: 500;
+    color: #555;
+  }
+
+  .optional {
+    font-weight: 400;
+    color: #888;
+    font-size: 0.9rem;
+  }
+
+  .form-group input[type="number"],
+  .form-group select {
+    width: 100%;
+    padding: 0.75rem;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-size: 1rem;
+  }
+
+  .form-group input[type="number"]:focus,
+  .form-group select:focus {
+    outline: none;
+    border-color: #4CAF50;
+  }
+
+  .unit {
+    display: inline-block;
+    margin-left: 0.5rem;
+    color: #888;
+    font-size: 0.9rem;
+  }
+
+  .unit-toggle {
+    display: flex;
+    gap: 1rem;
+    padding: 1rem;
+    background: #f5f5f5;
+    border-radius: 4px;
+  }
+
+  .unit-toggle label {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    cursor: pointer;
+    margin: 0;
+  }
+
+  .input-group {
+    display: flex;
+    gap: 0.5rem;
+    align-items: center;
+  }
+
+  .input-group input {
+    flex: 1;
+  }
+
+  .form-actions {
+    display: flex;
+    gap: 1rem;
+    margin-top: 2rem;
+  }
+
+  .btn-primary, .btn-secondary {
+    flex: 1;
+    padding: 0.875rem;
+    border: none;
+    border-radius: 4px;
+    font-size: 1rem;
+    font-weight: 500;
+    cursor: pointer;
+    transition: all 0.2s;
+  }
+
+  .btn-primary {
+    background: #4CAF50;
+    color: white;
+  }
+
+  .btn-primary:hover {
+    background: #45a049;
+  }
+
+  .btn-secondary {
+    background: #f5f5f5;
+    color: #333;
+  }
+
+  .btn-secondary:hover {
+    background: #e0e0e0;
+  }
+
+  .result-card {
+    text-align: center;
+    padding: 2rem;
+    background: linear-gradient(135deg, #4CAF50 0%, #45a049 100%);
+    color: white;
+    border-radius: 8px;
+    margin-bottom: 2rem;
+  }
+
+  .result-card h3 {
+    margin: 0 0 1rem 0;
+    font-size: 1.2rem;
+    color: white;
+  }
+
+  .result-card .value {
+    font-size: 3rem;
+    font-weight: bold;
+    margin: 0;
+  }
+
+  .result-card .subtitle {
+    font-size: 1rem;
+    margin: 0.5rem 0 0 0;
+    opacity: 0.9;
+  }
+
+  .formulas-section {
+    margin: 2rem 0;
+  }
+
+  .formula-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 1rem;
+  }
+
+  .formula-item {
+    padding: 1rem;
+    background: #f9f9f9;
+    border-radius: 4px;
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+
+  .formula-label {
+    color: #666;
+    font-size: 0.9rem;
+  }
+
+  .formula-value {
+    color: #333;
+    font-size: 1.5rem;
+    font-weight: 600;
+  }
+
+  .bmi-range-info {
+    padding: 1.5rem;
+    background: #e8f5e9;
+    border-radius: 4px;
+    border-left: 4px solid #4CAF50;
+  }
+
+  .bmi-range-info h3 {
+    color: #2e7d32;
+    font-size: 1.1rem;
+    margin: 0 0 0.5rem 0;
+  }
+
+  .range-desc {
+    color: #555;
+    font-size: 0.9rem;
+    margin: 0 0 1rem 0;
+  }
+
+  .range-values {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: #2e7d32;
+  }
+
+  .range-separator {
+    color: #888;
+  }
+
+  .calculator-info {
+    background: #f9f9f9;
+  }
+
+  .calculator-info p {
+    margin-bottom: 1rem;
+    line-height: 1.6;
+    color: #555;
+  }
+
+  .formula-box {
+    background: white;
+    padding: 1rem;
+    border-left: 4px solid #4CAF50;
+    margin: 1rem 0;
+    border-radius: 4px;
+  }
+
+  .formula {
+    font-family: monospace;
+    margin: 0.5rem 0 0 0;
+    color: #333;
+  }
+
+  .limitations {
+    font-size: 0.9rem;
+    font-style: italic;
+    margin-top: 1.5rem;
+  }
+
+  @media (max-width: 768px) {
+    .formula-grid {
+      grid-template-columns: 1fr;
+    }
+  }
+</style>
+
+<script>
+  import type { IdealWeightInput, IdealWeightResult, Gender } from '@/utils/calculators/idealWeight';
+  import { calculateIdealWeight, feetInchesToCm, kgToPounds } from '@/utils/calculators/idealWeight';
+
+  const form = document.getElementById('ideal-weight-form') as HTMLFormElement;
+  const results = document.getElementById('results') as HTMLDivElement;
+  const unitSystemInputs = document.querySelectorAll('input[name="unitSystem"]');
+  const heightMetric = document.querySelector('.height-metric') as HTMLDivElement;
+  const heightImperial = document.querySelector('.height-imperial') as HTMLDivElement;
+
+  let currentUnit: 'metric' | 'imperial' = 'metric';
+
+  // Handle unit system change
+  unitSystemInputs.forEach(input => {
+    input.addEventListener('change', (e) => {
+      const target = e.target as HTMLInputElement;
+      const isMetric = target.value === 'metric';
+      currentUnit = target.value as 'metric' | 'imperial';
+
+      heightMetric.style.display = isMetric ? 'block' : 'none';
+      heightImperial.style.display = isMetric ? 'none' : 'block';
+
+      const heightInput = document.getElementById('height') as HTMLInputElement;
+      const heightFt = document.getElementById('heightFt') as HTMLInputElement;
+      const heightIn = document.getElementById('heightIn') as HTMLInputElement;
+
+      if (isMetric) {
+        heightInput.required = true;
+        heightFt.required = false;
+        heightIn.required = false;
+      } else {
+        heightInput.required = false;
+        heightFt.required = true;
+        heightIn.required = true;
+      }
+    });
+  });
+
+  // Handle form submission
+  form.addEventListener('submit', (e) => {
+    e.preventDefault();
+
+    const formData = new FormData(form);
+    const unitSystem = formData.get('unitSystem') as string;
+    const gender = formData.get('gender') as Gender;
+    const ageStr = formData.get('age') as string;
+    const age = ageStr ? parseInt(ageStr) : undefined;
+    let heightCm: number;
+
+    if (unitSystem === 'metric') {
+      heightCm = parseFloat(formData.get('height') as string);
+    } else {
+      const feet = parseInt(formData.get('heightFt') as string) || 0;
+      const inches = parseInt(formData.get('heightIn') as string) || 0;
+      heightCm = feetInchesToCm(feet, inches);
+    }
+
+    const input: IdealWeightInput = {
+      heightCm,
+      gender,
+      age,
+    };
+
+    try {
+      const result = calculateIdealWeight(input);
+      displayResults(result, currentUnit);
+    } catch (error) {
+      alert('Error calculating ideal weight. Please check your inputs.');
+      console.error(error);
+    }
+  });
+
+  function displayResults(result: IdealWeightResult, unit: 'metric' | 'imperial') {
+    const averageValue = document.getElementById('average-value') as HTMLParagraphElement;
+    const robinsonValue = document.getElementById('robinson-value') as HTMLSpanElement;
+    const millerValue = document.getElementById('miller-value') as HTMLSpanElement;
+    const devineValue = document.getElementById('devine-value') as HTMLSpanElement;
+    const hamwiValue = document.getElementById('hamwi-value') as HTMLSpanElement;
+    const bmiMin = document.getElementById('bmi-min') as HTMLSpanElement;
+    const bmiMax = document.getElementById('bmi-max') as HTMLSpanElement;
+
+    const unitLabel = unit === 'metric' ? 'kg' : 'lbs';
+
+    const formatWeight = (kg: number) => {
+      const weight = unit === 'metric' ? kg : kgToPounds(kg);
+      return `${Math.round(weight * 10) / 10} ${unitLabel}`;
+    };
+
+    averageValue.textContent = formatWeight(result.average);
+    robinsonValue.textContent = formatWeight(result.robinson);
+    millerValue.textContent = formatWeight(result.miller);
+    devineValue.textContent = formatWeight(result.devine);
+    hamwiValue.textContent = formatWeight(result.hamwi);
+    bmiMin.textContent = formatWeight(result.bmiRange.min);
+    bmiMax.textContent = formatWeight(result.bmiRange.max);
+
+    // Show results
+    results.style.display = 'block';
+    results.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
+  }
+
+  // Handle form reset
+  form.addEventListener('reset', () => {
+    results.style.display = 'none';
+  });
+</script>

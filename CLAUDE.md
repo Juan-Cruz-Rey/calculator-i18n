@@ -229,3 +229,7 @@ The project is designed to scale to ~175-180 calculators from calculator.net acr
 - Other (~50 calculators)
 
 Each calculator will be available in all 7 supported languages.
+
+**Calculator Reference:**
+- The complete list of calculators to implement is available at: https://www.calculator.net/sitemap.html
+- Use this sitemap as the reference for identifying and prioritizing new calculators to add to the project

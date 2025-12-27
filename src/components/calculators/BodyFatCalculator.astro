@@ -1,0 +1,798 @@
+---
+import { t, type Locale } from '@/utils/i18n';
+
+const { lang } = Astro.props as { lang: Locale };
+---
+
+<div class="body-fat-calculator">
+  <div class="calculator-form">
+    <h2>{t('bodyFat.form.title', lang)}</h2>
+
+    <form id="body-fat-form">
+      <!-- Unit System Toggle -->
+      <div class="form-group unit-toggle">
+        <label>
+          <input type="radio" name="unitSystem" value="metric" checked />
+          {t('units.metric', lang)}
+        </label>
+        <label>
+          <input type="radio" name="unitSystem" value="imperial" />
+          {t('units.imperial', lang)}
+        </label>
+      </div>
+
+      <!-- Calculation Method -->
+      <div class="form-group">
+        <label for="method">{t('bodyFat.form.methodLabel', lang)}</label>
+        <select id="method" name="method" required>
+          <option value="navy">{t('bodyFat.method.navy', lang)}</option>
+          <option value="bmi">{t('bodyFat.method.bmi', lang)}</option>
+        </select>
+        <p class="help-text" id="method-help">{t('bodyFat.method.navyDesc', lang)}</p>
+      </div>
+
+      <!-- Age -->
+      <div class="form-group">
+        <label for="age">{t('bodyFat.form.ageLabel', lang)}</label>
+        <input
+          type="number"
+          id="age"
+          name="age"
+          min="15"
+          max="80"
+          required
+          placeholder={t('bodyFat.form.agePlaceholder', lang)}
+        />
+        <span class="unit">{t('common.years', lang)}</span>
+      </div>
+
+      <!-- Gender -->
+      <div class="form-group">
+        <label for="gender">{t('bodyFat.form.genderLabel', lang)}</label>
+        <select id="gender" name="gender" required>
+          <option value="male">{t('common.male', lang)}</option>
+          <option value="female">{t('common.female', lang)}</option>
+        </select>
+      </div>
+
+      <!-- Height (Metric) -->
+      <div class="form-group height-metric">
+        <label for="height">{t('bodyFat.form.heightLabel', lang)}</label>
+        <input
+          type="number"
+          id="height"
+          name="height"
+          min="100"
+          max="250"
+          step="0.1"
+          required
+          placeholder={t('bodyFat.form.heightPlaceholder', lang)}
+        />
+        <span class="unit">{t('units.cm', lang)}</span>
+      </div>
+
+      <!-- Height (Imperial) -->
+      <div class="form-group height-imperial" style="display: none;">
+        <label for="heightFt">{t('bodyFat.form.heightLabel', lang)}</label>
+        <div class="input-group">
+          <input
+            type="number"
+            id="heightFt"
+            name="heightFt"
+            min="3"
+            max="8"
+            placeholder="Feet"
+          />
+          <span class="unit">{t('units.ft', lang)}</span>
+          <input
+            type="number"
+            id="heightIn"
+            name="heightIn"
+            min="0"
+            max="11"
+            placeholder="Inches"
+          />
+          <span class="unit">{t('units.in', lang)}</span>
+        </div>
+      </div>
+
+      <!-- Weight -->
+      <div class="form-group">
+        <label for="weight">{t('bodyFat.form.weightLabel', lang)}</label>
+        <input
+          type="number"
+          id="weight"
+          name="weight"
+          min="30"
+          max="300"
+          step="0.1"
+          required
+          placeholder={t('bodyFat.form.weightPlaceholder', lang)}
+        />
+        <span class="unit weight-unit">{t('units.kg', lang)}</span>
+      </div>
+
+      <!-- Navy Method Measurements -->
+      <div id="navy-measurements">
+        <h3 class="measurements-title">{t('bodyFat.form.measurementsTitle', lang)}</h3>
+
+        <!-- Neck -->
+        <div class="form-group">
+          <label for="neck">{t('bodyFat.form.neckLabel', lang)}</label>
+          <input
+            type="number"
+            id="neck"
+            name="neck"
+            min="20"
+            max="60"
+            step="0.1"
+            placeholder={t('bodyFat.form.neckPlaceholder', lang)}
+          />
+          <span class="unit neck-unit">{t('units.cm', lang)}</span>
+          <p class="help-text">{t('bodyFat.form.neckHelp', lang)}</p>
+        </div>
+
+        <!-- Waist -->
+        <div class="form-group">
+          <label for="waist">{t('bodyFat.form.waistLabel', lang)}</label>
+          <input
+            type="number"
+            id="waist"
+            name="waist"
+            min="50"
+            max="200"
+            step="0.1"
+            placeholder={t('bodyFat.form.waistPlaceholder', lang)}
+          />
+          <span class="unit waist-unit">{t('units.cm', lang)}</span>
+          <p class="help-text" id="waist-help">{t('bodyFat.form.waistHelpMale', lang)}</p>
+        </div>
+
+        <!-- Hip (Females only) -->
+        <div class="form-group hip-group" style="display: none;">
+          <label for="hip">{t('bodyFat.form.hipLabel', lang)}</label>
+          <input
+            type="number"
+            id="hip"
+            name="hip"
+            min="50"
+            max="200"
+            step="0.1"
+            placeholder={t('bodyFat.form.hipPlaceholder', lang)}
+          />
+          <span class="unit hip-unit">{t('units.cm', lang)}</span>
+          <p class="help-text">{t('bodyFat.form.hipHelp', lang)}</p>
+        </div>
+      </div>
+
+      <!-- Buttons -->
+      <div class="form-actions">
+        <button type="submit" class="btn-primary">{t('common.calculate', lang)}</button>
+        <button type="reset" class="btn-secondary">{t('common.reset', lang)}</button>
+      </div>
+    </form>
+  </div>
+
+  <div class="calculator-results" id="results" style="display: none;">
+    <h2>{t('bodyFat.results.title', lang)}</h2>
+
+    <div class="result-card main-result">
+      <h3>{t('bodyFat.results.bodyFatPercentage', lang)}</h3>
+      <p class="value" id="body-fat-value">-</p>
+      <p class="category" id="category-value">-</p>
+    </div>
+
+    <div class="metrics-grid">
+      <div class="metric-item">
+        <h4>{t('bodyFat.results.bodyFatMass', lang)}</h4>
+        <p class="metric-value" id="fat-mass">-</p>
+      </div>
+      <div class="metric-item">
+        <h4>{t('bodyFat.results.leanBodyMass', lang)}</h4>
+        <p class="metric-value" id="lean-mass">-</p>
+      </div>
+      <div class="metric-item">
+        <h4>{t('bodyFat.results.idealBodyFat', lang)}</h4>
+        <p class="metric-value" id="ideal-fat">-</p>
+      </div>
+      <div class="metric-item">
+        <h4>{t('bodyFat.results.fatToLose', lang)}</h4>
+        <p class="metric-value" id="fat-to-lose">-</p>
+      </div>
+    </div>
+
+    <div class="method-info">
+      <strong>{t('bodyFat.results.method', lang)}:</strong>
+      <span id="method-used">-</span>
+    </div>
+  </div>
+
+  <div class="calculator-info">
+    <h2>{t('bodyFat.info.title', lang)}</h2>
+    <p>{t('bodyFat.info.description', lang)}</p>
+
+    <h3>{t('bodyFat.info.categoriesTitle', lang)}</h3>
+    <div class="categories-table">
+      <div class="category-row header">
+        <div class="category-name">{t('bodyFat.info.categoryLabel', lang)}</div>
+        <div class="category-range">{t('bodyFat.info.menLabel', lang)}</div>
+        <div class="category-range">{t('bodyFat.info.womenLabel', lang)}</div>
+      </div>
+      <div class="category-row">
+        <div class="category-name">{t('bodyFat.info.essentialFat', lang)}</div>
+        <div class="category-range">2-5%</div>
+        <div class="category-range">10-13%</div>
+      </div>
+      <div class="category-row">
+        <div class="category-name">{t('bodyFat.info.athletes', lang)}</div>
+        <div class="category-range">6-13%</div>
+        <div class="category-range">14-20%</div>
+      </div>
+      <div class="category-row">
+        <div class="category-name">{t('bodyFat.info.fitness', lang)}</div>
+        <div class="category-range">14-17%</div>
+        <div class="category-range">21-24%</div>
+      </div>
+      <div class="category-row">
+        <div class="category-name">{t('bodyFat.info.average', lang)}</div>
+        <div class="category-range">18-24%</div>
+        <div class="category-range">25-31%</div>
+      </div>
+      <div class="category-row">
+        <div class="category-name">{t('bodyFat.info.obese', lang)}</div>
+        <div class="category-range">25%+</div>
+        <div class="category-range">32%+</div>
+      </div>
+    </div>
+
+    <p class="limitations">{t('bodyFat.info.limitations', lang)}</p>
+  </div>
+</div>
+
+<style>
+  .body-fat-calculator {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 2rem;
+  }
+
+  .calculator-form, .calculator-results, .calculator-info {
+    background: white;
+    border-radius: 8px;
+    padding: 2rem;
+    margin-bottom: 2rem;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+  }
+
+  h2 {
+    margin-top: 0;
+    color: #333;
+    font-size: 1.5rem;
+    margin-bottom: 1.5rem;
+  }
+
+  h3 {
+    color: #333;
+    font-size: 1.25rem;
+    margin-bottom: 1rem;
+  }
+
+  h4 {
+    color: #555;
+    font-size: 1rem;
+    margin-bottom: 0.5rem;
+  }
+
+  .measurements-title {
+    margin-top: 2rem;
+    padding-top: 1.5rem;
+    border-top: 2px solid #e0e0e0;
+  }
+
+  .form-group {
+    margin-bottom: 1.5rem;
+  }
+
+  .form-group label {
+    display: block;
+    margin-bottom: 0.5rem;
+    font-weight: 500;
+    color: #555;
+  }
+
+  .form-group input[type="number"],
+  .form-group select {
+    width: 100%;
+    padding: 0.75rem;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-size: 1rem;
+  }
+
+  .form-group input[type="number"]:focus,
+  .form-group select:focus {
+    outline: none;
+    border-color: #0097A7;
+  }
+
+  .unit {
+    display: inline-block;
+    margin-left: 0.5rem;
+    color: #888;
+    font-size: 0.9rem;
+  }
+
+  .help-text {
+    margin: 0.5rem 0 0 0;
+    font-size: 0.85rem;
+    color: #777;
+    font-style: italic;
+  }
+
+  .unit-toggle {
+    display: flex;
+    gap: 1rem;
+    padding: 1rem;
+    background: #f5f5f5;
+    border-radius: 4px;
+  }
+
+  .unit-toggle label {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    cursor: pointer;
+    margin: 0;
+  }
+
+  .input-group {
+    display: flex;
+    gap: 0.5rem;
+    align-items: center;
+  }
+
+  .input-group input {
+    flex: 1;
+  }
+
+  .form-actions {
+    display: flex;
+    gap: 1rem;
+    margin-top: 2rem;
+  }
+
+  .btn-primary, .btn-secondary {
+    flex: 1;
+    padding: 0.875rem;
+    border: none;
+    border-radius: 4px;
+    font-size: 1rem;
+    font-weight: 500;
+    cursor: pointer;
+    transition: all 0.2s;
+  }
+
+  .btn-primary {
+    background: linear-gradient(135deg, #00ACC1 0%, #0097A7 100%);
+    color: white;
+  }
+
+  .btn-primary:hover {
+    background: linear-gradient(135deg, #0097A7 0%, #00838F 100%);
+  }
+
+  .btn-secondary {
+    background: #f5f5f5;
+    color: #333;
+  }
+
+  .btn-secondary:hover {
+    background: #e0e0e0;
+  }
+
+  .result-card {
+    text-align: center;
+    padding: 2rem;
+    background: linear-gradient(135deg, #00ACC1 0%, #0097A7 100%);
+    color: white;
+    border-radius: 8px;
+    margin-bottom: 2rem;
+  }
+
+  .result-card h3 {
+    margin: 0 0 1rem 0;
+    font-size: 1.2rem;
+    color: white;
+  }
+
+  .result-card .value {
+    font-size: 3rem;
+    font-weight: bold;
+    margin: 0;
+  }
+
+  .result-card .category {
+    font-size: 1.25rem;
+    margin: 0.5rem 0 0 0;
+    opacity: 0.95;
+    font-weight: 500;
+  }
+
+  .metrics-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 1rem;
+    margin: 2rem 0;
+  }
+
+  .metric-item {
+    padding: 1.5rem;
+    background: #f9f9f9;
+    border-radius: 4px;
+    text-align: center;
+  }
+
+  .metric-item h4 {
+    color: #555;
+    font-size: 0.9rem;
+    margin-bottom: 0.75rem;
+  }
+
+  .metric-value {
+    color: #333;
+    font-size: 1.5rem;
+    font-weight: 600;
+    margin: 0;
+  }
+
+  .method-info {
+    padding: 1.5rem;
+    background: #e1f5fe;
+    border-radius: 4px;
+    border-left: 4px solid #00ACC1;
+  }
+
+  .method-info strong {
+    color: #0097A7;
+    font-size: 1.1rem;
+  }
+
+  .method-info span {
+    color: #333;
+    font-size: 1.1rem;
+    margin-left: 0.5rem;
+  }
+
+  .calculator-info {
+    background: #f9f9f9;
+  }
+
+  .calculator-info p {
+    margin-bottom: 1rem;
+    line-height: 1.6;
+    color: #555;
+  }
+
+  .categories-table {
+    background: white;
+    border-radius: 4px;
+    overflow: hidden;
+    margin: 1rem 0;
+  }
+
+  .category-row {
+    display: grid;
+    grid-template-columns: 2fr 1fr 1fr;
+    gap: 1rem;
+    padding: 0.75rem 1rem;
+    border-bottom: 1px solid #e0e0e0;
+  }
+
+  .category-row:last-child {
+    border-bottom: none;
+  }
+
+  .category-row.header {
+    background: #00ACC1;
+    color: white;
+    font-weight: 600;
+  }
+
+  .category-name {
+    text-align: left;
+  }
+
+  .category-range {
+    text-align: center;
+  }
+
+  .limitations {
+    font-size: 0.9rem;
+    font-style: italic;
+    margin-top: 1.5rem;
+  }
+
+  @media (max-width: 768px) {
+    .metrics-grid {
+      grid-template-columns: 1fr;
+    }
+
+    .category-row {
+      grid-template-columns: 1fr;
+      gap: 0.5rem;
+    }
+
+    .category-row.header {
+      display: none;
+    }
+
+    .category-name::before {
+      content: '';
+    }
+
+    .category-range::before {
+      font-weight: 600;
+      color: #555;
+      margin-right: 0.5rem;
+    }
+
+    .category-row .category-range:first-of-type::before {
+      content: 'Men: ';
+    }
+
+    .category-row .category-range:last-of-type::before {
+      content: 'Women: ';
+    }
+  }
+</style>
+
+<script>
+  import type { BodyFatInput, BodyFatResult, Gender, CalculationMethod } from '@/utils/calculators/bodyFat';
+  import { calculateBodyFat, poundsToKg, feetInchesToCm, inchesToCm } from '@/utils/calculators/bodyFat';
+
+  const form = document.getElementById('body-fat-form') as HTMLFormElement;
+  const results = document.getElementById('results') as HTMLDivElement;
+  const unitSystemInputs = document.querySelectorAll('input[name="unitSystem"]');
+  const methodSelect = document.getElementById('method') as HTMLSelectElement;
+  const genderSelect = document.getElementById('gender') as HTMLSelectElement;
+  const heightMetric = document.querySelector('.height-metric') as HTMLDivElement;
+  const heightImperial = document.querySelector('.height-imperial') as HTMLDivElement;
+  const weightUnit = document.querySelector('.weight-unit') as HTMLSpanElement;
+  const navyMeasurements = document.getElementById('navy-measurements') as HTMLDivElement;
+  const hipGroup = document.querySelector('.hip-group') as HTMLDivElement;
+  const neckUnit = document.querySelector('.neck-unit') as HTMLSpanElement;
+  const waistUnit = document.querySelector('.waist-unit') as HTMLSpanElement;
+  const hipUnit = document.querySelector('.hip-unit') as HTMLSpanElement;
+  const methodHelp = document.getElementById('method-help') as HTMLParagraphElement;
+  const waistHelp = document.getElementById('waist-help') as HTMLParagraphElement;
+
+  // Get language from the page
+  const lang = document.documentElement.lang || 'es';
+
+  // Translation helpers
+  const translations: Record<string, Record<string, string>> = {
+    es: {
+      navyMethod: 'Método de la Marina de EE.UU.',
+      bmiMethod: 'Método basado en IMC',
+      navyDesc: 'Requiere medidas de cuello, cintura y cadera (mujeres)',
+      bmiDesc: 'Estimación basada en edad, peso y altura',
+      waistHelpMale: 'Medir horizontalmente alrededor del ombligo',
+      waistHelpFemale: 'Medir en la parte más estrecha del torso',
+    },
+    en: {
+      navyMethod: 'U.S. Navy Method',
+      bmiMethod: 'BMI Method',
+      navyDesc: 'Requires neck, waist, and hip (women) measurements',
+      bmiDesc: 'Estimation based on age, weight, and height',
+      waistHelpMale: 'Measure horizontally around the navel',
+      waistHelpFemale: 'Measure at the narrowest part of the torso',
+    },
+    pt: {
+      navyMethod: 'Método da Marinha dos EUA',
+      bmiMethod: 'Método baseado no IMC',
+      navyDesc: 'Requer medidas de pescoço, cintura e quadril (mulheres)',
+      bmiDesc: 'Estimativa baseada em idade, peso e altura',
+      waistHelpMale: 'Medir horizontalmente ao redor do umbigo',
+      waistHelpFemale: 'Medir na parte mais estreita do torso',
+    },
+    fr: {
+      navyMethod: 'Méthode de la Marine américaine',
+      bmiMethod: 'Méthode basée sur l\'IMC',
+      navyDesc: 'Nécessite des mesures du cou, de la taille et des hanches (femmes)',
+      bmiDesc: 'Estimation basée sur l\'âge, le poids et la taille',
+      waistHelpMale: 'Mesurer horizontalement autour du nombril',
+      waistHelpFemale: 'Mesurer à la partie la plus étroite du torse',
+    },
+    hi: {
+      navyMethod: 'यू.एस. नेवी विधि',
+      bmiMethod: 'बीएमआई विधि',
+      navyDesc: 'गर्दन, कमर और कूल्हे (महिलाओं) के माप की आवश्यकता है',
+      bmiDesc: 'आयु, वजन और ऊंचाई के आधार पर अनुमान',
+      waistHelpMale: 'नाभि के चारों ओर क्षैतिज रूप से मापें',
+      waistHelpFemale: 'धड़ के सबसे संकीर्ण भाग पर मापें',
+    },
+    de: {
+      navyMethod: 'US-Navy-Methode',
+      bmiMethod: 'BMI-Methode',
+      navyDesc: 'Erfordert Messungen von Hals, Taille und Hüfte (Frauen)',
+      bmiDesc: 'Schätzung basierend auf Alter, Gewicht und Größe',
+      waistHelpMale: 'Horizontal um den Bauchnabel messen',
+      waistHelpFemale: 'An der schmalsten Stelle des Oberkörpers messen',
+    },
+    it: {
+      navyMethod: 'Metodo della Marina degli Stati Uniti',
+      bmiMethod: 'Metodo basato sull\'IMC',
+      navyDesc: 'Richiede misure di collo, vita e fianchi (donne)',
+      bmiDesc: 'Stima basata su età, peso e altezza',
+      waistHelpMale: 'Misurare orizzontalmente intorno all\'ombelico',
+      waistHelpFemale: 'Misurare nella parte più stretta del busto',
+    },
+  };
+
+  function t(key: string): string {
+    return translations[lang]?.[key] || translations['en'][key] || key;
+  }
+
+  // Handle method change
+  methodSelect.addEventListener('change', () => {
+    const isNavy = methodSelect.value === 'navy';
+    navyMeasurements.style.display = isNavy ? 'block' : 'none';
+
+    const neckInput = document.getElementById('neck') as HTMLInputElement;
+    const waistInput = document.getElementById('waist') as HTMLInputElement;
+    const hipInput = document.getElementById('hip') as HTMLInputElement;
+
+    neckInput.required = isNavy;
+    waistInput.required = isNavy;
+
+    methodHelp.textContent = isNavy ? t('navyDesc') : t('bmiDesc');
+
+    // Update hip requirement based on gender
+    if (isNavy && genderSelect.value === 'female') {
+      hipInput.required = true;
+    } else {
+      hipInput.required = false;
+    }
+  });
+
+  // Handle gender change
+  genderSelect.addEventListener('change', () => {
+    const isFemale = genderSelect.value === 'female';
+    const isNavy = methodSelect.value === 'navy';
+
+    hipGroup.style.display = isFemale && isNavy ? 'block' : 'none';
+
+    const hipInput = document.getElementById('hip') as HTMLInputElement;
+    hipInput.required = isFemale && isNavy;
+
+    // Update waist help text
+    waistHelp.textContent = isFemale ? t('waistHelpFemale') : t('waistHelpMale');
+  });
+
+  // Handle unit system change
+  unitSystemInputs.forEach(input => {
+    input.addEventListener('change', (e) => {
+      const target = e.target as HTMLInputElement;
+      const isMetric = target.value === 'metric';
+
+      heightMetric.style.display = isMetric ? 'block' : 'none';
+      heightImperial.style.display = isMetric ? 'none' : 'block';
+
+      const heightInput = document.getElementById('height') as HTMLInputElement;
+      const heightFt = document.getElementById('heightFt') as HTMLInputElement;
+      const heightIn = document.getElementById('heightIn') as HTMLInputElement;
+
+      if (isMetric) {
+        heightInput.required = true;
+        heightFt.required = false;
+        heightIn.required = false;
+        weightUnit.textContent = 'kg';
+        neckUnit.textContent = 'cm';
+        waistUnit.textContent = 'cm';
+        hipUnit.textContent = 'cm';
+      } else {
+        heightInput.required = false;
+        heightFt.required = true;
+        heightIn.required = true;
+        weightUnit.textContent = 'lbs';
+        neckUnit.textContent = 'in';
+        waistUnit.textContent = 'in';
+        hipUnit.textContent = 'in';
+      }
+    });
+  });
+
+  // Handle form submission
+  form.addEventListener('submit', (e) => {
+    e.preventDefault();
+
+    const formData = new FormData(form);
+    const unitSystem = formData.get('unitSystem') as string;
+    const method = formData.get('method') as CalculationMethod;
+    const age = parseInt(formData.get('age') as string);
+    const gender = formData.get('gender') as Gender;
+    let weight = parseFloat(formData.get('weight') as string);
+    let heightCm: number;
+    let neckCm: number | undefined;
+    let waistCm: number | undefined;
+    let hipCm: number | undefined;
+
+    if (unitSystem === 'metric') {
+      heightCm = parseFloat(formData.get('height') as string);
+      if (method === 'navy') {
+        neckCm = parseFloat(formData.get('neck') as string);
+        waistCm = parseFloat(formData.get('waist') as string);
+        if (gender === 'female') {
+          hipCm = parseFloat(formData.get('hip') as string);
+        }
+      }
+    } else {
+      const feet = parseInt(formData.get('heightFt') as string) || 0;
+      const inches = parseInt(formData.get('heightIn') as string) || 0;
+      heightCm = feetInchesToCm(feet, inches);
+      weight = poundsToKg(weight);
+
+      if (method === 'navy') {
+        neckCm = inchesToCm(parseFloat(formData.get('neck') as string));
+        waistCm = inchesToCm(parseFloat(formData.get('waist') as string));
+        if (gender === 'female') {
+          hipCm = inchesToCm(parseFloat(formData.get('hip') as string));
+        }
+      }
+    }
+
+    const input: BodyFatInput = {
+      age,
+      gender,
+      heightCm,
+      weightKg: weight,
+      neckCm,
+      waistCm,
+      hipCm,
+      method,
+    };
+
+    try {
+      const result = calculateBodyFat(input);
+      displayResults(result);
+    } catch (error) {
+      alert('Error calculating body fat. Please check your inputs.');
+      console.error(error);
+    }
+  });
+
+  function displayResults(result: BodyFatResult) {
+    const bodyFatValue = document.getElementById('body-fat-value') as HTMLParagraphElement;
+    const categoryValue = document.getElementById('category-value') as HTMLParagraphElement;
+    const fatMass = document.getElementById('fat-mass') as HTMLParagraphElement;
+    const leanMass = document.getElementById('lean-mass') as HTMLParagraphElement;
+    const idealFat = document.getElementById('ideal-fat') as HTMLParagraphElement;
+    const fatToLose = document.getElementById('fat-to-lose') as HTMLParagraphElement;
+    const methodUsed = document.getElementById('method-used') as HTMLSpanElement;
+
+    bodyFatValue.textContent = `${result.bodyFatPercentage}%`;
+    categoryValue.textContent = result.category;
+    fatMass.textContent = `${result.bodyFatMass} kg`;
+    leanMass.textContent = `${result.leanBodyMass} kg`;
+    idealFat.textContent = `${result.idealBodyFat}%`;
+
+    if (result.fatToLose && result.fatToLose > 0) {
+      fatToLose.textContent = `${result.fatToLose} kg`;
+    } else {
+      fatToLose.textContent = '-';
+    }
+
+    methodUsed.textContent = result.method === 'navy' ? t('navyMethod') : t('bmiMethod');
+
+    // Show results
+    results.style.display = 'block';
+    results.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
+  }
+
+  // Handle form reset
+  form.addEventListener('reset', () => {
+    results.style.display = 'none';
+    navyMeasurements.style.display = 'block';
+    hipGroup.style.display = 'none';
+  });
+</script>

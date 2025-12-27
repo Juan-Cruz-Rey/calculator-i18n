@@ -1,0 +1,56 @@
+{
+  "title": "Calculateur de Graisse Corporelle",
+  "description": "Calculez votre pourcentage de graisse corporelle",
+  "metaDescription": "Calculateur de graisse corporelle gratuit - Estimez votre pourcentage de graisse corporelle en utilisant la méthode de la Marine américaine ou la méthode basée sur l'IMC.",
+  "form": {
+    "title": "Entrez vos informations",
+    "methodLabel": "Méthode de Calcul",
+    "ageLabel": "Âge",
+    "agePlaceholder": "Entrez votre âge (15-80)",
+    "genderLabel": "Genre",
+    "heightLabel": "Taille",
+    "heightPlaceholder": "Entrez votre taille",
+    "weightLabel": "Poids",
+    "weightPlaceholder": "Entrez votre poids",
+    "measurementsTitle": "Mesures Corporelles",
+    "neckLabel": "Circonférence du Cou",
+    "neckPlaceholder": "Entrez la circonférence du cou",
+    "neckHelp": "Mesurer sous le larynx, en descendant",
+    "waistLabel": "Circonférence de la Taille",
+    "waistPlaceholder": "Entrez la circonférence de la taille",
+    "waistHelpMale": "Mesurer horizontalement autour du nombril",
+    "waistHelpFemale": "Mesurer à la partie la plus étroite du torse",
+    "hipLabel": "Circonférence des Hanches",
+    "hipPlaceholder": "Entrez la circonférence des hanches",
+    "hipHelp": "Mesurer à la partie la plus large des hanches"
+  },
+  "method": {
+    "navy": "Méthode de la Marine américaine",
+    "bmi": "Méthode basée sur l'IMC",
+    "navyDesc": "Nécessite des mesures du cou, de la taille et des hanches (femmes)",
+    "bmiDesc": "Estimation basée sur l'âge, le poids et la taille"
+  },
+  "results": {
+    "title": "Vos Résultats",
+    "bodyFatPercentage": "Pourcentage de Graisse Corporelle",
+    "bodyFatMass": "Masse de Graisse",
+    "leanBodyMass": "Masse Maigre",
+    "idealBodyFat": "Graisse Corporelle Idéale",
+    "fatToLose": "Graisse à Perdre",
+    "method": "Méthode Utilisée"
+  },
+  "info": {
+    "title": "À Propos du Calculateur de Graisse Corporelle",
+    "description": "Ce calculateur estime votre pourcentage de graisse corporelle en utilisant la méthode de la Marine américaine ou la méthode basée sur l'IMC. La méthode de la Marine utilise des mesures de circonférence corporelle, tandis que la méthode de l'IMC est basée sur votre âge, votre poids et votre taille.",
+    "categoriesTitle": "Catégories de Graisse Corporelle (American Council on Exercise)",
+    "categoryLabel": "Catégorie",
+    "menLabel": "Hommes",
+    "womenLabel": "Femmes",
+    "essentialFat": "Graisse Essentielle",
+    "athletes": "Athlètes",
+    "fitness": "Fitness",
+    "average": "Moyenne",
+    "obese": "Obèse",
+    "limitations": "Ces résultats ne sont qu'une estimation. Pour une mesure plus précise de la graisse corporelle, envisagez d'utiliser des instruments comme l'analyse d'impédance bioélectrique ou consultez un professionnel de la santé."
+  }
+}

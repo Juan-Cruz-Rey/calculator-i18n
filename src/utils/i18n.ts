@@ -27,6 +27,46 @@ import hiBMI from '../../public/locales/hi/calculators/bmi.json';
 import deBMI from '../../public/locales/de/calculators/bmi.json';
 import itBMI from '../../public/locales/it/calculators/bmi.json';
 
+import esCalorie from '../../public/locales/es/calculators/calorie.json';
+import enCalorie from '../../public/locales/en/calculators/calorie.json';
+import ptCalorie from '../../public/locales/pt/calculators/calorie.json';
+import frCalorie from '../../public/locales/fr/calculators/calorie.json';
+import hiCalorie from '../../public/locales/hi/calculators/calorie.json';
+import deCalorie from '../../public/locales/de/calculators/calorie.json';
+import itCalorie from '../../public/locales/it/calculators/calorie.json';
+
+import esIdealWeight from '../../public/locales/es/calculators/idealWeight.json';
+import enIdealWeight from '../../public/locales/en/calculators/idealWeight.json';
+import ptIdealWeight from '../../public/locales/pt/calculators/idealWeight.json';
+import frIdealWeight from '../../public/locales/fr/calculators/idealWeight.json';
+import hiIdealWeight from '../../public/locales/hi/calculators/idealWeight.json';
+import deIdealWeight from '../../public/locales/de/calculators/idealWeight.json';
+import itIdealWeight from '../../public/locales/it/calculators/idealWeight.json';
+
+import esBodyFat from '../../public/locales/es/calculators/bodyFat.json';
+import enBodyFat from '../../public/locales/en/calculators/bodyFat.json';
+import ptBodyFat from '../../public/locales/pt/calculators/bodyFat.json';
+import frBodyFat from '../../public/locales/fr/calculators/bodyFat.json';
+import hiBodyFat from '../../public/locales/hi/calculators/bodyFat.json';
+import deBodyFat from '../../public/locales/de/calculators/bodyFat.json';
+import itBodyFat from '../../public/locales/it/calculators/bodyFat.json';
+
+import esBMR from '../../public/locales/es/calculators/bmr.json';
+import enBMR from '../../public/locales/en/calculators/bmr.json';
+import ptBMR from '../../public/locales/pt/calculators/bmr.json';
+import frBMR from '../../public/locales/fr/calculators/bmr.json';
+import hiBMR from '../../public/locales/hi/calculators/bmr.json';
+import deBMR from '../../public/locales/de/calculators/bmr.json';
+import itBMR from '../../public/locales/it/calculators/bmr.json';
+
+import esTDEE from '../../public/locales/es/calculators/tdee.json';
+import enTDEE from '../../public/locales/en/calculators/tdee.json';
+import ptTDEE from '../../public/locales/pt/calculators/tdee.json';
+import frTDEE from '../../public/locales/fr/calculators/tdee.json';
+import hiTDEE from '../../public/locales/hi/calculators/tdee.json';
+import deTDEE from '../../public/locales/de/calculators/tdee.json';
+import itTDEE from '../../public/locales/it/calculators/tdee.json';
+
 interface Translations {
   [key: string]: any;
 }
@@ -36,36 +76,71 @@ const translations: Record<Locale, Translations> = {
     ...esCommon,
     categories: esCategories,
     bmi: esBMI,
+    calorie: esCalorie,
+    idealWeight: esIdealWeight,
+    bodyFat: esBodyFat,
+    bmr: esBMR,
+    tdee: esTDEE,
   },
   en: {
     ...enCommon,
     categories: enCategories,
     bmi: enBMI,
+    calorie: enCalorie,
+    idealWeight: enIdealWeight,
+    bodyFat: enBodyFat,
+    bmr: enBMR,
+    tdee: enTDEE,
   },
   pt: {
     ...ptCommon,
     categories: ptCategories,
     bmi: ptBMI,
+    calorie: ptCalorie,
+    idealWeight: ptIdealWeight,
+    bodyFat: ptBodyFat,
+    bmr: ptBMR,
+    tdee: ptTDEE,
   },
   fr: {
     ...frCommon,
     categories: frCategories,
     bmi: frBMI,
+    calorie: frCalorie,
+    idealWeight: frIdealWeight,
+    bodyFat: frBodyFat,
+    bmr: frBMR,
+    tdee: frTDEE,
   },
   hi: {
     ...hiCommon,
     categories: hiCategories,
     bmi: hiBMI,
+    calorie: hiCalorie,
+    idealWeight: hiIdealWeight,
+    bodyFat: hiBodyFat,
+    bmr: hiBMR,
+    tdee: hiTDEE,
   },
   de: {
     ...deCommon,
     categories: deCategories,
     bmi: deBMI,
+    calorie: deCalorie,
+    idealWeight: deIdealWeight,
+    bodyFat: deBodyFat,
+    bmr: deBMR,
+    tdee: deTDEE,
   },
   it: {
     ...itCommon,
     categories: itCategories,
     bmi: itBMI,
+    calorie: itCalorie,
+    idealWeight: itIdealWeight,
+    bodyFat: itBodyFat,
+    bmr: itBMR,
+    tdee: itTDEE,
   },
 };
 
@@ -157,6 +232,51 @@ export function getAlternatePath(currentPath: string, targetLocale: Locale, calc
       hi: '/hi/calculators/bmi/',
       de: '/de/calculators/bmi/',
       it: '/it/calculators/bmi/',
+    },
+    calorie: {
+      es: '/calculadoras/calorias/',
+      en: '/en/calculators/calorie/',
+      pt: '/pt/calculators/calorie/',
+      fr: '/fr/calculators/calorie/',
+      hi: '/hi/calculators/calorie/',
+      de: '/de/calculators/calorie/',
+      it: '/it/calculators/calorie/',
+    },
+    idealWeight: {
+      es: '/calculadoras/peso-ideal/',
+      en: '/en/calculators/ideal-weight/',
+      pt: '/pt/calculators/ideal-weight/',
+      fr: '/fr/calculators/ideal-weight/',
+      hi: '/hi/calculators/ideal-weight/',
+      de: '/de/calculators/ideal-weight/',
+      it: '/it/calculators/ideal-weight/',
+    },
+    bodyFat: {
+      es: '/calculadoras/grasa-corporal/',
+      en: '/en/calculators/body-fat/',
+      pt: '/pt/calculators/body-fat/',
+      fr: '/fr/calculators/body-fat/',
+      hi: '/hi/calculators/body-fat/',
+      de: '/de/calculators/body-fat/',
+      it: '/it/calculators/body-fat/',
+    },
+    tdee: {
+      es: '/calculadoras/gect/',
+      en: '/en/calculators/tdee/',
+      pt: '/pt/calculators/tdee/',
+      fr: '/fr/calculators/tdee/',
+      hi: '/hi/calculators/tdee/',
+      de: '/de/calculators/tdee/',
+      it: '/it/calculators/tdee/',
+    },
+    bmr: {
+      es: '/calculadoras/tmb/',
+      en: '/en/calculators/bmr/',
+      pt: '/pt/calculators/bmr/',
+      fr: '/fr/calculators/bmr/',
+      hi: '/hi/calculators/bmr/',
+      de: '/de/calculators/bmr/',
+      it: '/it/calculators/bmr/',
     },
   };
 

@@ -1,0 +1,45 @@
+{
+  "title": "BMR Calculator (Basal Metabolic Rate)",
+  "description": "Calculate your basal metabolic rate",
+  "metaDescription": "Free BMR Calculator - Calculate your Basal Metabolic Rate (calories burned at rest) using Mifflin-St Jeor, Harris-Benedict, and Katch-McArdle formulas.",
+  "form": {
+    "title": "Enter your information",
+    "ageLabel": "Age",
+    "agePlaceholder": "Enter your age (15-80)",
+    "genderLabel": "Gender",
+    "heightLabel": "Height",
+    "heightPlaceholder": "Enter your height",
+    "weightLabel": "Weight",
+    "weightPlaceholder": "Enter your weight",
+    "bodyFatLabel": "Body Fat Percentage (Optional)",
+    "bodyFatPlaceholder": "e.g., 20",
+    "bodyFatHelp": "Optional: Enter your body fat % for a more accurate calculation"
+  },
+  "activity": {
+    "sedentary": "Sedentary (little or no exercise)",
+    "light": "Light (exercise 1-3 times/week)",
+    "moderate": "Moderate (exercise 4-5 times/week)",
+    "active": "Active (daily exercise or intense exercise 3-4 times/week)",
+    "veryActive": "Very active (intense exercise 6-7 times/week)",
+    "extraActive": "Extra active (very intense daily exercise & physical job)"
+  },
+  "results": {
+    "title": "Your Results",
+    "yourBMR": "Your BMR",
+    "bmrDesc": "Calories your body burns at rest",
+    "formulas": "Formula Comparison",
+    "calorieNeeds": "Calorie Needs by Activity Level",
+    "calorieNeedsDesc": "Daily calories needed based on your physical activity level"
+  },
+  "info": {
+    "title": "About the BMR Calculator",
+    "description": "Basal Metabolic Rate (BMR) is the amount of energy (calories) your body needs to function while at complete rest. It represents approximately 60-75% of your total daily energy expenditure. This calculator uses three scientifically validated formulas to estimate your BMR.",
+    "formulasTitle": "Formulas Used",
+    "recommended": "Recommended",
+    "mifflinFormula": "Men: BMR = 10 × weight(kg) + 6.25 × height(cm) - 5 × age + 5\nWomen: BMR = 10 × weight(kg) + 6.25 × height(cm) - 5 × age - 161",
+    "harrisFormula": "Men: BMR = 13.397 × weight(kg) + 4.799 × height(cm) - 5.677 × age + 88.362\nWomen: BMR = 9.247 × weight(kg) + 3.098 × height(cm) - 4.330 × age + 447.593",
+    "katchFormula": "BMR = 370 + 21.6 × lean body mass(kg)\nLean body mass = weight × (1 - body fat%/100)",
+    "katchNote": "Requires knowing your body fat percentage. More accurate for athletic individuals.",
+    "limitations": "These estimates are general guidelines. Individual metabolic needs can vary based on genetic factors, body composition, medications, and health conditions. Consult with a healthcare professional for a personalized plan."
+  }
+}

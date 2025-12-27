@@ -1,0 +1,44 @@
+{
+  "title": "Calcolatore di Calorie",
+  "description": "Calcola il tuo fabbisogno calorico giornaliero",
+  "metaDescription": "Calcolatore di calorie gratuito - Calcola quante calorie hai bisogno giornalmente in base a età, peso, altezza e livello di attività.",
+  "form": {
+    "title": "Inserisci i tuoi dati",
+    "ageLabel": "Età",
+    "agePlaceholder": "Inserisci la tua età (15-80)",
+    "genderLabel": "Sesso",
+    "heightLabel": "Altezza",
+    "heightPlaceholder": "Inserisci la tua altezza",
+    "weightLabel": "Peso",
+    "weightPlaceholder": "Inserisci il tuo peso",
+    "activityLabel": "Livello di Attività"
+  },
+  "activity": {
+    "sedentary": "Sedentario (poco o nessun esercizio)",
+    "light": "Leggero (esercizio 1-3 volte/settimana)",
+    "moderate": "Moderato (esercizio 4-5 volte/settimana)",
+    "active": "Attivo (esercizio quotidiano o intenso 3-4 volte/settimana)",
+    "veryActive": "Molto attivo (esercizio intenso 6-7 volte/settimana)",
+    "extraActive": "Estremamente attivo (esercizio molto intenso quotidiano e lavoro fisico)"
+  },
+  "results": {
+    "title": "Il Tuo Fabbisogno Calorico",
+    "maintenance": "Mantenimento",
+    "maintenanceDesc": "Calorie per mantenere il peso attuale",
+    "goalsTitle": "Calorie per Obiettivo",
+    "weightLoss": "Perdita di Peso",
+    "weightGain": "Aumento di Peso",
+    "mild": "Lieve",
+    "moderate": "Moderato",
+    "extreme": "Estremo",
+    "bmr": "MB (Metabolismo Basale)",
+    "bmrDesc": "Calorie di cui il corpo ha bisogno a riposo"
+  },
+  "info": {
+    "title": "Informazioni sul Calcolatore di Calorie",
+    "description": "Questo calcolatore stima quante calorie giornaliere hai bisogno in base a età, sesso, peso, altezza e livello di attività fisica. Utilizza l'equazione di Mifflin-St Jeor, considerata una delle più accurate per calcolare il metabolismo basale (MB).",
+    "formulasTitle": "Formule Utilizzate",
+    "mifflinFormula": "Uomini: MB = 10 × peso(kg) + 6,25 × altezza(cm) - 5 × età + 5\nDonne: MB = 10 × peso(kg) + 6,25 × altezza(cm) - 5 × età - 161",
+    "limitations": "Queste stime sono linee guida generali. Il fabbisogno calorico individuale può variare in base al metabolismo, alla composizione corporea e ad altri fattori di salute. Consultare un professionista della salute per un piano personalizzato."
+  }
+}

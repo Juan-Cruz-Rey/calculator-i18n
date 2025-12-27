@@ -1,0 +1,45 @@
+{
+  "title": "Calculadora de TMB (Taxa Metabólica Basal)",
+  "description": "Calcule sua taxa metabólica basal",
+  "metaDescription": "Calculadora de TMB gratuita - Calcule sua Taxa Metabólica Basal (calorias queimadas em repouso) usando as fórmulas de Mifflin-St Jeor, Harris-Benedict e Katch-McArdle.",
+  "form": {
+    "title": "Insira seus dados",
+    "ageLabel": "Idade",
+    "agePlaceholder": "Insira sua idade (15-80)",
+    "genderLabel": "Gênero",
+    "heightLabel": "Altura",
+    "heightPlaceholder": "Insira sua altura",
+    "weightLabel": "Peso",
+    "weightPlaceholder": "Insira seu peso",
+    "bodyFatLabel": "Percentual de Gordura Corporal (Opcional)",
+    "bodyFatPlaceholder": "ex: 20",
+    "bodyFatHelp": "Opcional: Insira seu % de gordura corporal para um cálculo mais preciso"
+  },
+  "activity": {
+    "sedentary": "Sedentário (pouco ou nenhum exercício)",
+    "light": "Leve (exercício 1-3 vezes/semana)",
+    "moderate": "Moderado (exercício 4-5 vezes/semana)",
+    "active": "Ativo (exercício diário ou intenso 3-4 vezes/semana)",
+    "veryActive": "Muito ativo (exercício intenso 6-7 vezes/semana)",
+    "extraActive": "Extremamente ativo (exercício muito intenso diário e trabalho físico)"
+  },
+  "results": {
+    "title": "Seus Resultados",
+    "yourBMR": "Sua TMB",
+    "bmrDesc": "Calorias que seu corpo queima em repouso",
+    "formulas": "Comparação de Fórmulas",
+    "calorieNeeds": "Necessidades Calóricas por Nível de Atividade",
+    "calorieNeedsDesc": "Calorias diárias necessárias baseadas no seu nível de atividade física"
+  },
+  "info": {
+    "title": "Sobre a Calculadora de TMB",
+    "description": "A Taxa Metabólica Basal (TMB) é a quantidade de energia (calorias) que seu corpo precisa para funcionar em repouso completo. Representa aproximadamente 60-75% do seu gasto energético diário total. Esta calculadora usa três fórmulas cientificamente validadas para estimar sua TMB.",
+    "formulasTitle": "Fórmulas Utilizadas",
+    "recommended": "Recomendada",
+    "mifflinFormula": "Homens: TMB = 10 × peso(kg) + 6.25 × altura(cm) - 5 × idade + 5\nMulheres: TMB = 10 × peso(kg) + 6.25 × altura(cm) - 5 × idade - 161",
+    "harrisFormula": "Homens: TMB = 13.397 × peso(kg) + 4.799 × altura(cm) - 5.677 × idade + 88.362\nMulheres: TMB = 9.247 × peso(kg) + 3.098 × altura(cm) - 4.330 × idade + 447.593",
+    "katchFormula": "TMB = 370 + 21.6 × massa magra(kg)\nMassa magra = peso × (1 - gordura corporal%/100)",
+    "katchNote": "Requer conhecer sua percentagem de gordura corporal. Mais precisa para indivíduos atléticos.",
+    "limitations": "Essas estimativas são diretrizes gerais. As necessidades metabólicas individuais podem variar com base em fatores genéticos, composição corporal, medicamentos e condições de saúde. Consulte um profissional de saúde para um plano personalizado."
+  }
+}

@@ -1,0 +1,58 @@
+{
+  "title": "Calculadora de GECT",
+  "description": "Calcule seu Gasto Energético Calórico Total diário",
+  "metaDescription": "Calculadora de GECT gratuita - Calcule seu gasto energético calórico total diário com base na idade, peso, altura e nível de atividade para atingir seus objetivos.",
+  "form": {
+    "title": "Insira seus dados",
+    "ageLabel": "Idade",
+    "agePlaceholder": "Insira sua idade (15-80)",
+    "genderLabel": "Gênero",
+    "heightLabel": "Altura",
+    "heightPlaceholder": "Insira sua altura",
+    "weightLabel": "Peso",
+    "weightPlaceholder": "Insira seu peso",
+    "activityLabel": "Nível de Atividade",
+    "bodyFatLabel": "Percentual de Gordura Corporal",
+    "bodyFatPlaceholder": "Insira seu % de gordura (5-50)"
+  },
+  "activity": {
+    "sedentary": "Sedentário (pouco ou nenhum exercício)",
+    "light": "Leve (exercício 1-3 vezes/semana)",
+    "moderate": "Moderado (exercício 4-5 vezes/semana)",
+    "active": "Ativo (exercício diário ou exercício intenso 3-4 vezes/semana)",
+    "veryActive": "Muito ativo (exercício intenso 6-7 vezes/semana)",
+    "extraActive": "Extremamente ativo (exercício muito intenso diário e trabalho físico)"
+  },
+  "results": {
+    "title": "Seu Gasto Energético Calórico Total",
+    "tdee": "GECT Diário",
+    "tdeeDesc": "Seu gasto energético calórico total diário",
+    "goalsTitle": "Calorias de acordo com seu objetivo",
+    "weightLoss": "Perda de Peso",
+    "weightGain": "Ganho de Peso",
+    "mild": "Leve",
+    "moderate": "Moderado",
+    "extreme": "Extremo",
+    "bmr": "TMB (Taxa Metabólica Basal)",
+    "bmrDesc": "Calorias que seu corpo precisa em repouso",
+    "macrosTitle": "Recomendações de Macronutrientes",
+    "protein": "Proteínas",
+    "carbs": "Carboidratos",
+    "fats": "Gorduras",
+    "macrosNote": "Distribuição balanceada: 30% proteínas, 40% carboidratos, 30% gorduras"
+  },
+  "info": {
+    "title": "Sobre a Calculadora de GECT",
+    "description": "O Gasto Energético Calórico Total (GECT) representa o número total de calorias que seu corpo queima em um dia, incluindo sua taxa metabólica basal (TMB) e as calorias queimadas por meio de atividade física. Esta calculadora usa a equação de Mifflin-St Jeor para calcular sua TMB e a multiplica pelo seu nível de atividade.",
+    "formulasTitle": "Fórmulas Utilizadas",
+    "mifflinFormula": "Homens: TMB = 10 × peso(kg) + 6.25 × altura(cm) - 5 × idade + 5\nMulheres: TMB = 10 × peso(kg) + 6.25 × altura(cm) - 5 × idade - 161\nGECT = TMB × Fator de Atividade",
+    "activityTitle": "Níveis de Atividade",
+    "sedentaryDesc": "Pouco ou nenhum exercício, trabalho de escritório",
+    "lightDesc": "Exercício leve 1-3 vezes por semana",
+    "moderateDesc": "Exercício moderado 4-5 vezes por semana",
+    "activeDesc": "Exercício diário ou exercício intenso 3-4 vezes por semana",
+    "veryActiveDesc": "Exercício intenso 6-7 vezes por semana",
+    "extraActiveDesc": "Exercício muito intenso diário mais trabalho físico ou treino duas vezes ao dia",
+    "limitations": "Essas estimativas são diretrizes gerais. As necessidades energéticas individuais podem variar com base no metabolismo, composição corporal, genética e outros fatores de saúde. Consulte um profissional de saúde ou nutricionista para um plano personalizado."
+  }
+}

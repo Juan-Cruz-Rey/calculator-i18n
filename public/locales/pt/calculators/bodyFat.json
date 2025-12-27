@@ -1,0 +1,56 @@
+{
+  "title": "Calculadora de Gordura Corporal",
+  "description": "Calcule sua porcentagem de gordura corporal",
+  "metaDescription": "Calculadora de gordura corporal gratuita - Estime sua porcentagem de gordura corporal usando o Método da Marinha dos EUA ou método baseado no IMC.",
+  "form": {
+    "title": "Insira suas informações",
+    "methodLabel": "Método de Cálculo",
+    "ageLabel": "Idade",
+    "agePlaceholder": "Digite sua idade (15-80)",
+    "genderLabel": "Gênero",
+    "heightLabel": "Altura",
+    "heightPlaceholder": "Digite sua altura",
+    "weightLabel": "Peso",
+    "weightPlaceholder": "Digite seu peso",
+    "measurementsTitle": "Medidas Corporais",
+    "neckLabel": "Circunferência do Pescoço",
+    "neckPlaceholder": "Digite a circunferência do pescoço",
+    "neckHelp": "Medir abaixo da laringe, inclinando para baixo",
+    "waistLabel": "Circunferência da Cintura",
+    "waistPlaceholder": "Digite a circunferência da cintura",
+    "waistHelpMale": "Medir horizontalmente ao redor do umbigo",
+    "waistHelpFemale": "Medir na parte mais estreita do torso",
+    "hipLabel": "Circunferência do Quadril",
+    "hipPlaceholder": "Digite a circunferência do quadril",
+    "hipHelp": "Medir na parte mais larga dos quadris"
+  },
+  "method": {
+    "navy": "Método da Marinha dos EUA",
+    "bmi": "Método baseado no IMC",
+    "navyDesc": "Requer medidas de pescoço, cintura e quadril (mulheres)",
+    "bmiDesc": "Estimativa baseada em idade, peso e altura"
+  },
+  "results": {
+    "title": "Seus Resultados",
+    "bodyFatPercentage": "Porcentagem de Gordura Corporal",
+    "bodyFatMass": "Massa de Gordura",
+    "leanBodyMass": "Massa Corporal Magra",
+    "idealBodyFat": "Gordura Corporal Ideal",
+    "fatToLose": "Gordura a Perder",
+    "method": "Método Utilizado"
+  },
+  "info": {
+    "title": "Sobre a Calculadora de Gordura Corporal",
+    "description": "Esta calculadora estima sua porcentagem de gordura corporal usando o Método da Marinha dos EUA ou método baseado no IMC. O método da Marinha usa medidas de circunferência corporal, enquanto o método do IMC é baseado em sua idade, peso e altura.",
+    "categoriesTitle": "Categorias de Gordura Corporal (American Council on Exercise)",
+    "categoryLabel": "Categoria",
+    "menLabel": "Homens",
+    "womenLabel": "Mulheres",
+    "essentialFat": "Gordura Essencial",
+    "athletes": "Atletas",
+    "fitness": "Fitness",
+    "average": "Média",
+    "obese": "Obeso",
+    "limitations": "Estes resultados são apenas uma estimativa. Para uma medição mais precisa da gordura corporal, considere usar instrumentos como análise de impedância bioelétrica ou consultar um profissional de saúde."
+  }
+}

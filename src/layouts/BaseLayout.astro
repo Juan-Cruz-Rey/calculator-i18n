@@ -3,9 +3,10 @@ interface Props {
   title: string;
   description: string;
   lang?: string;
+  calculator?: string;
 }
 
-const { title, description, lang = 'es' } = Astro.props;
+const { title, description, lang = 'es', calculator } = Astro.props;
 const canonicalURL = new URL(Astro.url.pathname, Astro.site);
 
 // Generate hreflang URLs

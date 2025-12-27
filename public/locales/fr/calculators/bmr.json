@@ -1,0 +1,45 @@
+{
+  "title": "Calculateur de MB (Métabolisme de Base)",
+  "description": "Calculez votre métabolisme de base",
+  "metaDescription": "Calculateur de MB gratuit - Calculez votre Métabolisme de Base (calories brûlées au repos) en utilisant les formules de Mifflin-St Jeor, Harris-Benedict et Katch-McArdle.",
+  "form": {
+    "title": "Entrez vos informations",
+    "ageLabel": "Âge",
+    "agePlaceholder": "Entrez votre âge (15-80)",
+    "genderLabel": "Sexe",
+    "heightLabel": "Taille",
+    "heightPlaceholder": "Entrez votre taille",
+    "weightLabel": "Poids",
+    "weightPlaceholder": "Entrez votre poids",
+    "bodyFatLabel": "Pourcentage de Graisse Corporelle (Optionnel)",
+    "bodyFatPlaceholder": "ex: 20",
+    "bodyFatHelp": "Optionnel : Entrez votre % de graisse corporelle pour un calcul plus précis"
+  },
+  "activity": {
+    "sedentary": "Sédentaire (peu ou pas d'exercice)",
+    "light": "Léger (exercice 1-3 fois/semaine)",
+    "moderate": "Modéré (exercice 4-5 fois/semaine)",
+    "active": "Actif (exercice quotidien ou intense 3-4 fois/semaine)",
+    "veryActive": "Très actif (exercice intense 6-7 fois/semaine)",
+    "extraActive": "Extrêmement actif (exercice très intense quotidien et travail physique)"
+  },
+  "results": {
+    "title": "Vos Résultats",
+    "yourBMR": "Votre MB",
+    "bmrDesc": "Calories que votre corps brûle au repos",
+    "formulas": "Comparaison des Formules",
+    "calorieNeeds": "Besoins Caloriques par Niveau d'Activité",
+    "calorieNeedsDesc": "Calories quotidiennes nécessaires selon votre niveau d'activité physique"
+  },
+  "info": {
+    "title": "À propos du Calculateur de MB",
+    "description": "Le Métabolisme de Base (MB) est la quantité d'énergie (calories) dont votre corps a besoin pour fonctionner au repos complet. Il représente environ 60-75% de votre dépense énergétique quotidienne totale. Ce calculateur utilise trois formules scientifiquement validées pour estimer votre MB.",
+    "formulasTitle": "Formules Utilisées",
+    "recommended": "Recommandée",
+    "mifflinFormula": "Hommes: MB = 10 × poids(kg) + 6.25 × taille(cm) - 5 × âge + 5\nFemmes: MB = 10 × poids(kg) + 6.25 × taille(cm) - 5 × âge - 161",
+    "harrisFormula": "Hommes: MB = 13.397 × poids(kg) + 4.799 × taille(cm) - 5.677 × âge + 88.362\nFemmes: MB = 9.247 × poids(kg) + 3.098 × taille(cm) - 4.330 × âge + 447.593",
+    "katchFormula": "MB = 370 + 21.6 × masse maigre(kg)\nMasse maigre = poids × (1 - graisse corporelle%/100)",
+    "katchNote": "Nécessite de connaître votre pourcentage de graisse corporelle. Plus précis pour les personnes athlétiques.",
+    "limitations": "Ces estimations sont des lignes directrices générales. Les besoins métaboliques individuels peuvent varier en fonction de facteurs génétiques, de la composition corporelle, des médicaments et des conditions de santé. Consultez un professionnel de la santé pour un plan personnalisé."
+  }
+}

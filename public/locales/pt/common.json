@@ -17,7 +17,8 @@
     "female": "Feminino",
     "height": "Altura",
     "weight": "Peso",
-    "years": "anos"
+    "years": "anos",
+    "week": "semana"
   },
   "units": {
     "metric": "Métrico",

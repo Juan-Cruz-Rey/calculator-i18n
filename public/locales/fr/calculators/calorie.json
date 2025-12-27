@@ -1,0 +1,44 @@
+{
+  "title": "Calculateur de Calories",
+  "description": "Calculez vos besoins caloriques quotidiens",
+  "metaDescription": "Calculateur de calories gratuit - Calculez combien de calories vous avez besoin quotidiennement selon votre âge, poids, taille et niveau d'activité.",
+  "form": {
+    "title": "Entrez vos informations",
+    "ageLabel": "Âge",
+    "agePlaceholder": "Entrez votre âge (15-80)",
+    "genderLabel": "Sexe",
+    "heightLabel": "Taille",
+    "heightPlaceholder": "Entrez votre taille",
+    "weightLabel": "Poids",
+    "weightPlaceholder": "Entrez votre poids",
+    "activityLabel": "Niveau d'Activité"
+  },
+  "activity": {
+    "sedentary": "Sédentaire (peu ou pas d'exercice)",
+    "light": "Léger (exercice 1-3 fois/semaine)",
+    "moderate": "Modéré (exercice 4-5 fois/semaine)",
+    "active": "Actif (exercice quotidien ou intense 3-4 fois/semaine)",
+    "veryActive": "Très actif (exercice intense 6-7 fois/semaine)",
+    "extraActive": "Extrêmement actif (exercice très intense quotidien et travail physique)"
+  },
+  "results": {
+    "title": "Vos Besoins Caloriques",
+    "maintenance": "Maintenance",
+    "maintenanceDesc": "Calories pour maintenir votre poids actuel",
+    "goalsTitle": "Calories selon l'objectif",
+    "weightLoss": "Perte de Poids",
+    "weightGain": "Prise de Poids",
+    "mild": "Léger",
+    "moderate": "Modéré",
+    "extreme": "Extrême",
+    "bmr": "MB (Métabolisme de Base)",
+    "bmrDesc": "Calories dont votre corps a besoin au repos"
+  },
+  "info": {
+    "title": "À propos du Calculateur de Calories",
+    "description": "Ce calculateur estime combien de calories quotidiennes vous avez besoin selon votre âge, sexe, poids, taille et niveau d'activité physique. Il utilise l'équation de Mifflin-St Jeor, considérée comme l'une des plus précises pour calculer le métabolisme de base (MB).",
+    "formulasTitle": "Formules Utilisées",
+    "mifflinFormula": "Hommes : MB = 10 × poids(kg) + 6,25 × taille(cm) - 5 × âge + 5\nFemmes : MB = 10 × poids(kg) + 6,25 × taille(cm) - 5 × âge - 161",
+    "limitations": "Ces estimations sont des lignes directrices générales. Les besoins caloriques individuels peuvent varier en fonction du métabolisme, de la composition corporelle et d'autres facteurs de santé. Consultez un professionnel de la santé pour un plan personnalisé."
+  }
+}

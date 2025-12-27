@@ -1,0 +1,31 @@
+{
+  "title": "Calculateur de Poids Idéal",
+  "description": "Calculez votre poids idéal en utilisant plusieurs formules scientifiques",
+  "metaDescription": "Calculateur de poids idéal gratuit - Calculez votre poids idéal en fonction de votre taille et de votre sexe en utilisant plusieurs formules : Robinson, Miller, Devine et Hamwi.",
+  "form": {
+    "title": "Entrez vos informations",
+    "genderLabel": "Sexe",
+    "ageLabel": "Âge",
+    "agePlaceholder": "Entrez votre âge (facultatif)",
+    "heightLabel": "Taille",
+    "heightPlaceholder": "Entrez votre taille"
+  },
+  "results": {
+    "title": "Votre Poids Idéal",
+    "average": "Poids Idéal Moyen",
+    "averageDesc": "Moyenne de toutes les formules scientifiques",
+    "formulasTitle": "Résultats par Formule",
+    "healthyRange": "Fourchette de Poids Santé (basée sur l'IMC)",
+    "healthyRangeDesc": "Basé sur un IMC sain de 18.5 - 25"
+  },
+  "info": {
+    "title": "À propos du Calculateur de Poids Idéal",
+    "description": "Ce calculateur estime votre poids idéal en fonction de votre taille et de votre sexe en utilisant quatre formules scientifiques reconnues : Robinson (1983), Miller (1983), Devine (1974) et Hamwi (1964). Il calcule également une fourchette de poids santé basée sur l'Indice de Masse Corporelle (IMC) recommandé par l'OMS.",
+    "formulasTitle": "Formules Utilisées",
+    "robinsonFormula": "Hommes : 52 kg + 1.9 kg par pouce au-dessus de 5 pieds\nFemmes : 49 kg + 1.7 kg par pouce au-dessus de 5 pieds",
+    "millerFormula": "Hommes : 56.2 kg + 1.41 kg par pouce au-dessus de 5 pieds\nFemmes : 53.1 kg + 1.36 kg par pouce au-dessus de 5 pieds",
+    "devineFormula": "Hommes : 50 kg + 2.3 kg par pouce au-dessus de 5 pieds\nFemmes : 45.5 kg + 2.3 kg par pouce au-dessus de 5 pieds",
+    "hamwiFormula": "Hommes : 48 kg + 2.7 kg par pouce au-dessus de 5 pieds\nFemmes : 45.5 kg + 2.2 kg par pouce au-dessus de 5 pieds",
+    "limitations": "Ces formules fournissent des estimations générales du poids idéal. Le poids idéal réel peut varier en fonction de la composition corporelle, de la structure osseuse, de la masse musculaire et d'autres facteurs individuels. Consultez un professionnel de la santé pour une évaluation personnalisée."
+  }
+}

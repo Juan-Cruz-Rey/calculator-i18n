@@ -1,0 +1,56 @@
+{
+  "title": "Calcolatore di Grasso Corporeo",
+  "description": "Calcola la tua percentuale di grasso corporeo",
+  "metaDescription": "Calcolatore di grasso corporeo gratuito - Stima la tua percentuale di grasso corporeo utilizzando il metodo della Marina degli Stati Uniti o il metodo basato sull'IMC.",
+  "form": {
+    "title": "Inserisci le tue informazioni",
+    "methodLabel": "Metodo di Calcolo",
+    "ageLabel": "Età",
+    "agePlaceholder": "Inserisci la tua età (15-80)",
+    "genderLabel": "Genere",
+    "heightLabel": "Altezza",
+    "heightPlaceholder": "Inserisci la tua altezza",
+    "weightLabel": "Peso",
+    "weightPlaceholder": "Inserisci il tuo peso",
+    "measurementsTitle": "Misure Corporee",
+    "neckLabel": "Circonferenza del Collo",
+    "neckPlaceholder": "Inserisci la circonferenza del collo",
+    "neckHelp": "Misurare sotto la laringe, inclinandosi verso il basso",
+    "waistLabel": "Circonferenza della Vita",
+    "waistPlaceholder": "Inserisci la circonferenza della vita",
+    "waistHelpMale": "Misurare orizzontalmente intorno all'ombelico",
+    "waistHelpFemale": "Misurare nella parte più stretta del busto",
+    "hipLabel": "Circonferenza dei Fianchi",
+    "hipPlaceholder": "Inserisci la circonferenza dei fianchi",
+    "hipHelp": "Misurare nella parte più larga dei fianchi"
+  },
+  "method": {
+    "navy": "Metodo della Marina degli Stati Uniti",
+    "bmi": "Metodo basato sull'IMC",
+    "navyDesc": "Richiede misure di collo, vita e fianchi (donne)",
+    "bmiDesc": "Stima basata su età, peso e altezza"
+  },
+  "results": {
+    "title": "I Tuoi Risultati",
+    "bodyFatPercentage": "Percentuale di Grasso Corporeo",
+    "bodyFatMass": "Massa di Grasso",
+    "leanBodyMass": "Massa Magra",
+    "idealBodyFat": "Grasso Corporeo Ideale",
+    "fatToLose": "Grasso da Perdere",
+    "method": "Metodo Utilizzato"
+  },
+  "info": {
+    "title": "Informazioni sul Calcolatore di Grasso Corporeo",
+    "description": "Questo calcolatore stima la tua percentuale di grasso corporeo utilizzando il metodo della Marina degli Stati Uniti o il metodo basato sull'IMC. Il metodo della Marina utilizza misure della circonferenza corporea, mentre il metodo dell'IMC si basa su età, peso e altezza.",
+    "categoriesTitle": "Categorie di Grasso Corporeo (American Council on Exercise)",
+    "categoryLabel": "Categoria",
+    "menLabel": "Uomini",
+    "womenLabel": "Donne",
+    "essentialFat": "Grasso Essenziale",
+    "athletes": "Atleti",
+    "fitness": "Fitness",
+    "average": "Media",
+    "obese": "Obeso",
+    "limitations": "Questi risultati sono solo una stima. Per una misurazione più accurata del grasso corporeo, considera l'utilizzo di strumenti come l'analisi dell'impedenza bioelettrica o consulta un professionista sanitario."
+  }
+}

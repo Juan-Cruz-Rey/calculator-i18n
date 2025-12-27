@@ -1,0 +1,31 @@
+{
+  "title": "Calculadora de Peso Ideal",
+  "description": "Calcule seu peso ideal usando múltiplas fórmulas científicas",
+  "metaDescription": "Calculadora de peso ideal gratuita - Calcule seu peso ideal com base na altura e gênero usando múltiplas fórmulas: Robinson, Miller, Devine e Hamwi.",
+  "form": {
+    "title": "Insira seus dados",
+    "genderLabel": "Gênero",
+    "ageLabel": "Idade",
+    "agePlaceholder": "Insira sua idade (opcional)",
+    "heightLabel": "Altura",
+    "heightPlaceholder": "Insira sua altura"
+  },
+  "results": {
+    "title": "Seu Peso Ideal",
+    "average": "Peso Ideal Médio",
+    "averageDesc": "Média de todas as fórmulas científicas",
+    "formulasTitle": "Resultados por Fórmula",
+    "healthyRange": "Faixa de Peso Saudável (baseado no IMC)",
+    "healthyRangeDesc": "Baseado em um IMC saudável de 18.5 - 25"
+  },
+  "info": {
+    "title": "Sobre a Calculadora de Peso Ideal",
+    "description": "Esta calculadora estima seu peso ideal com base na sua altura e gênero usando quatro fórmulas científicas reconhecidas: Robinson (1983), Miller (1983), Devine (1974) e Hamwi (1964). Também calcula uma faixa de peso saudável baseada no Índice de Massa Corporal (IMC) recomendado pela OMS.",
+    "formulasTitle": "Fórmulas Utilizadas",
+    "robinsonFormula": "Homens: 52 kg + 1.9 kg por polegada acima de 5 pés\nMulheres: 49 kg + 1.7 kg por polegada acima de 5 pés",
+    "millerFormula": "Homens: 56.2 kg + 1.41 kg por polegada acima de 5 pés\nMulheres: 53.1 kg + 1.36 kg por polegada acima de 5 pés",
+    "devineFormula": "Homens: 50 kg + 2.3 kg por polegada acima de 5 pés\nMulheres: 45.5 kg + 2.3 kg por polegada acima de 5 pés",
+    "hamwiFormula": "Homens: 48 kg + 2.7 kg por polegada acima de 5 pés\nMulheres: 45.5 kg + 2.2 kg por polegada acima de 5 pés",
+    "limitations": "Essas fórmulas fornecem estimativas gerais do peso ideal. O peso ideal real pode variar com base na composição corporal, estrutura óssea, massa muscular e outros fatores individuais. Consulte um profissional de saúde para uma avaliação personalizada."
+  }
+}

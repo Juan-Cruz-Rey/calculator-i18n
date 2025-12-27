@@ -1,0 +1,56 @@
+{
+  "title": "Calculadora de Grasa Corporal",
+  "description": "Calcula tu porcentaje de grasa corporal",
+  "metaDescription": "Calculadora de grasa corporal gratuita - Estima tu porcentaje de grasa corporal usando el método de la Marina de EE.UU. o el método basado en IMC.",
+  "form": {
+    "title": "Ingresa tus datos",
+    "methodLabel": "Método de Cálculo",
+    "ageLabel": "Edad",
+    "agePlaceholder": "Ingresa tu edad (15-80)",
+    "genderLabel": "Género",
+    "heightLabel": "Altura",
+    "heightPlaceholder": "Ingresa tu altura",
+    "weightLabel": "Peso",
+    "weightPlaceholder": "Ingresa tu peso",
+    "measurementsTitle": "Medidas Corporales",
+    "neckLabel": "Circunferencia del Cuello",
+    "neckPlaceholder": "Ingresa la circunferencia del cuello",
+    "neckHelp": "Medir debajo de la laringe, inclinándose hacia abajo",
+    "waistLabel": "Circunferencia de la Cintura",
+    "waistPlaceholder": "Ingresa la circunferencia de la cintura",
+    "waistHelpMale": "Medir horizontalmente alrededor del ombligo",
+    "waistHelpFemale": "Medir en la parte más estrecha del torso",
+    "hipLabel": "Circunferencia de la Cadera",
+    "hipPlaceholder": "Ingresa la circunferencia de la cadera",
+    "hipHelp": "Medir en la parte más ancha de las caderas"
+  },
+  "method": {
+    "navy": "Método de la Marina de EE.UU.",
+    "bmi": "Método basado en IMC",
+    "navyDesc": "Requiere medidas de cuello, cintura y cadera (mujeres)",
+    "bmiDesc": "Estimación basada en edad, peso y altura"
+  },
+  "results": {
+    "title": "Tus Resultados",
+    "bodyFatPercentage": "Porcentaje de Grasa Corporal",
+    "bodyFatMass": "Masa de Grasa",
+    "leanBodyMass": "Masa Corporal Magra",
+    "idealBodyFat": "Grasa Corporal Ideal",
+    "fatToLose": "Grasa a Perder",
+    "method": "Método Utilizado"
+  },
+  "info": {
+    "title": "Sobre la Calculadora de Grasa Corporal",
+    "description": "Esta calculadora estima tu porcentaje de grasa corporal usando el método de la Marina de EE.UU. o el método basado en IMC. El método de la Marina utiliza medidas de circunferencia corporal, mientras que el método del IMC se basa en tu edad, peso y altura.",
+    "categoriesTitle": "Categorías de Grasa Corporal (American Council on Exercise)",
+    "categoryLabel": "Categoría",
+    "menLabel": "Hombres",
+    "womenLabel": "Mujeres",
+    "essentialFat": "Grasa Esencial",
+    "athletes": "Atletas",
+    "fitness": "Fitness",
+    "average": "Promedio",
+    "obese": "Obeso",
+    "limitations": "Estos resultados son solo una estimación. Para una medición más precisa de la grasa corporal, considera usar instrumentos como el análisis de impedancia bioeléctrica o consultar con un profesional de la salud."
+  }
+}

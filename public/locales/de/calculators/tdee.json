@@ -1,0 +1,58 @@
+{
+  "title": "TGEE-Rechner",
+  "description": "Berechnen Sie Ihren täglichen Gesamt-Energiebedarf",
+  "metaDescription": "Kostenloser TGEE-Rechner - Berechnen Sie Ihren täglichen Gesamt-Energiebedarf basierend auf Alter, Gewicht, Größe und Aktivitätsniveau, um Ihre Fitnessziele zu erreichen.",
+  "form": {
+    "title": "Geben Sie Ihre Informationen ein",
+    "ageLabel": "Alter",
+    "agePlaceholder": "Geben Sie Ihr Alter ein (15-80)",
+    "genderLabel": "Geschlecht",
+    "heightLabel": "Größe",
+    "heightPlaceholder": "Geben Sie Ihre Größe ein",
+    "weightLabel": "Gewicht",
+    "weightPlaceholder": "Geben Sie Ihr Gewicht ein",
+    "activityLabel": "Aktivitätsniveau",
+    "bodyFatLabel": "Körperfettanteil",
+    "bodyFatPlaceholder": "Geben Sie Ihren Körperfett-% ein (5-50)"
+  },
+  "activity": {
+    "sedentary": "Sitzend (wenig oder keine Bewegung)",
+    "light": "Leicht (1-3 mal/Woche Sport)",
+    "moderate": "Mäßig (4-5 mal/Woche Sport)",
+    "active": "Aktiv (täglich Sport oder intensive Bewegung 3-4 mal/Woche)",
+    "veryActive": "Sehr aktiv (intensive Bewegung 6-7 mal/Woche)",
+    "extraActive": "Extrem aktiv (sehr intensive tägliche Bewegung und körperliche Arbeit)"
+  },
+  "results": {
+    "title": "Ihr täglicher Gesamt-Energiebedarf",
+    "tdee": "Täglicher TGEE",
+    "tdeeDesc": "Ihr täglicher Gesamt-Energiebedarf",
+    "goalsTitle": "Kalorien basierend auf Ihrem Ziel",
+    "weightLoss": "Gewichtsverlust",
+    "weightGain": "Gewichtszunahme",
+    "mild": "Mild",
+    "moderate": "Mäßig",
+    "extreme": "Extrem",
+    "bmr": "GU (Grundumsatz)",
+    "bmrDesc": "Kalorien, die Ihr Körper in Ruhe benötigt",
+    "macrosTitle": "Makronährstoff-Empfehlungen",
+    "protein": "Protein",
+    "carbs": "Kohlenhydrate",
+    "fats": "Fette",
+    "macrosNote": "Ausgewogene Aufteilung: 30% Protein, 40% Kohlenhydrate, 30% Fette"
+  },
+  "info": {
+    "title": "Über den TGEE-Rechner",
+    "description": "Der tägliche Gesamt-Energiebedarf (TGEE) stellt die Gesamtzahl der Kalorien dar, die Ihr Körper an einem Tag verbrennt, einschließlich Ihres Grundumsatzes (GU) und der durch körperliche Aktivität verbrannten Kalorien. Dieser Rechner verwendet die Mifflin-St Jeor-Gleichung zur Berechnung Ihres GU und multipliziert ihn mit Ihrem Aktivitätsniveau.",
+    "formulasTitle": "Verwendete Formeln",
+    "mifflinFormula": "Männer: GU = 10 × Gewicht(kg) + 6.25 × Größe(cm) - 5 × Alter + 5\nFrauen: GU = 10 × Gewicht(kg) + 6.25 × Größe(cm) - 5 × Alter - 161\nTGEE = GU × Aktivitätsfaktor",
+    "activityTitle": "Aktivitätsniveaus",
+    "sedentaryDesc": "Wenig oder keine Bewegung, Bürojob",
+    "lightDesc": "Leichte Bewegung 1-3 mal pro Woche",
+    "moderateDesc": "Mäßige Bewegung 4-5 mal pro Woche",
+    "activeDesc": "Tägliche Bewegung oder intensive Bewegung 3-4 mal pro Woche",
+    "veryActiveDesc": "Intensive Bewegung 6-7 mal pro Woche",
+    "extraActiveDesc": "Sehr intensive tägliche Bewegung plus körperliche Arbeit oder zweimaliges Training pro Tag",
+    "limitations": "Diese Schätzungen sind allgemeine Richtlinien. Der individuelle Energiebedarf kann je nach Stoffwechsel, Körperzusammensetzung, Genetik und anderen Gesundheitsfaktoren variieren. Konsultieren Sie einen Gesundheitsexperten oder Ernährungsberater für einen personalisierten Plan."
+  }
+}

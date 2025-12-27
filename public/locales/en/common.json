@@ -17,7 +17,8 @@
     "female": "Female",
     "height": "Height",
     "weight": "Weight",
-    "years": "years"
+    "years": "years",
+    "week": "week"
   },
   "units": {
     "metric": "Metric",
