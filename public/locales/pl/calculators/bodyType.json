@@ -1,0 +1,55 @@
+{
+  "title": "Kalkulator Typu Sylwetki",
+  "description": "Określ swój somatotyp",
+  "metaDescription": "Darmowy kalkulator typu sylwetki - Określ czy jesteś ektomorfem, mezomorfem czy endomorfem na podstawie pomiarów ciała i cech fizycznych.",
+  "form": {
+    "title": "Odpowiedz na pytania",
+    "question1": "Jak opisałbyś swoją naturalną budowę?",
+    "question2": "Jak łatwo przybierasz na wadze?",
+    "question3": "Jak łatwo budujesz mięśnie?",
+    "question4": "Jaki jest twój naturalny kształt ciała?",
+    "slim": "Szczupły, cienkie kości",
+    "average": "Przeciętny, średnia budowa",
+    "solid": "Silny, gruba kościec",
+    "hard": "Bardzo trudno",
+    "moderate": "Umiarkowanie",
+    "easy": "Łatwo",
+    "quickly": "Szybko i łatwo",
+    "moderately": "Stosunkowo łatwo",
+    "slowly": "Wolno i z trudnością",
+    "straight": "Prosty, mało krągłości",
+    "athletic": "Atletyczny, mięśnie widoczne",
+    "round": "Okrągły, miękki"
+  },
+  "results": {
+    "title": "Twój Typ Sylwetki",
+    "bodyType": "Dominujący typ",
+    "ectomorph": "Ektomorf",
+    "mesomorph": "Mezomorf",
+    "endomorph": "Endomorf",
+    "characteristics": "Charakterystyka",
+    "recommendations": "Zalecenia"
+  },
+  "types": {
+    "ectomorph": {
+      "desc": "Szczupły, szybki metabolizm, trudno buduje mięśnie",
+      "traits": "• Wąska budowa\n• Mało tkanki tłuszczowej\n• Trudno przybiera na wadze\n• Szybki metabolizm",
+      "recommendations": "• Skup się na treningu siłowym\n• Jedz częściej, większe porcje\n• Więcej złożonych węglowodanów\n• Krótsze, intensywne treningi kardio"
+    },
+    "mesomorph": {
+      "desc": "Atletyczny, łatwo buduje mięśnie, naturalne predyspozycje",
+      "traits": "• Silna, atletyczna budowa\n• Łatwo buduje mięśnie\n• Średni metabolizm\n• Skutecznie reaguje na trening",
+      "recommendations": "• Mieszaj trening siłowy i kardio\n• Zbilansowana dieta\n• Różnorodność ćwiczeń\n• Uważaj na przejadanie się"
+    },
+    "endomorph": {
+      "desc": "Okrągła budowa, łatwo przybiera na wadze, wolny metabolizm",
+      "traits": "• Większa budowa\n• Łatwo przybiera na wadze\n• Wolniejszy metabolizm\n• Przechowuje tłuszcz łatwiej",
+      "recommendations": "• Więcej treningu kardio\n• Kontroluj porcje\n• Ogranicz proste węglowodany\n• Trening siłowy dla metabolizmu"
+    }
+  },
+  "info": {
+    "title": "O Typach Sylwetki",
+    "description": "Typ sylwetki (somatotyp) opisuje naturalną tendencję ciała do przybierania wagi, budowania mięśni i przechowywania tłuszczu. Większość ludzi jest kombinacją tych typów.",
+    "note": "Pamiętaj, że typ sylwetki to tylko punkt wyjścia. Odpowiedni trening i dieta mogą znacząco zmienić wygląd ciała niezależnie od somatotypu."
+  }
+}

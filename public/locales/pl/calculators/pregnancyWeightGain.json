@@ -1,0 +1,33 @@
+{
+  "title": "Kalkulator Przyrostu Wagi w Ciąży",
+  "description": "Śledź przyrost wagi w ciąży",
+  "metaDescription": "Darmowy kalkulator przyrostu wagi w ciąży - Sprawdź czy przyrost wagi jest w zdrowym zakresie na podstawie BMI sprzed ciąży i aktualnego tygodnia.",
+  "form": {
+    "title": "Wprowadź swoje dane",
+    "heightLabel": "Wzrost",
+    "heightPlaceholder": "Wprowadź swój wzrost",
+    "prePregnancyWeightLabel": "Waga sprzed ciąży",
+    "prePregnancyWeightPlaceholder": "Waga przed ciążą",
+    "currentWeightLabel": "Obecna waga",
+    "currentWeightPlaceholder": "Obecna waga",
+    "currentWeekLabel": "Aktualny tydzień ciąży",
+    "currentWeekPlaceholder": "Tydzień (1-42)"
+  },
+  "results": {
+    "title": "Przyrost Wagi w Ciąży",
+    "currentGain": "Aktualny przyrost",
+    "recommendedRange": "Zalecany zakres",
+    "status": "Status",
+    "onTrack": "W NORMIE",
+    "underWeight": "PONIŻEJ NORMY",
+    "overWeight": "POWYŻEJ NORMY",
+    "totalRecommended": "Zalecany całkowity przyrost",
+    "remainingGain": "Pozostały zalecany przyrost"
+  },
+  "info": {
+    "title": "O Przyroście Wagi w Ciąży",
+    "description": "Odpowiedni przyrost wagi w ciąży jest ważny dla zdrowia matki i dziecka. Zalecany przyrost zależy od BMI sprzed ciąży.",
+    "guidelines": "Wytyczne przyrostu wagi (dla ciąży pojedynczej):\n• Niedowaga (BMI < 18,5): 12,5-18 kg\n• Normalna (BMI 18,5-24,9): 11,5-16 kg\n• Nadwaga (BMI 25-29,9): 7-11,5 kg\n• Otyłość (BMI ≥ 30): 5-9 kg",
+    "note": "Te wytyczne są dla ciąży pojedynczej. Ciąże bliźniacze i mnogie wymagają większego przyrostu wagi. Zawsze konsultuj się z lekarzem w sprawie indywidualnych celów."
+  }
+}

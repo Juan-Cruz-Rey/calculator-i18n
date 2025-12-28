@@ -1,0 +1,31 @@
+{
+  "title": "Kalkulator Owulacji",
+  "description": "Oblicz najbardziej płodne dni",
+  "metaDescription": "Darmowy kalkulator owulacji - Znajdź swoje najbardziej płodne dni i przewiduj owulację na podstawie cyklu menstruacyjnego.",
+  "form": {
+    "title": "Wprowadź dane cyklu",
+    "lastPeriodLabel": "Pierwszy dzień ostatniej miesiączki",
+    "cycleLengthLabel": "Średnia długość cyklu",
+    "cycleLengthHelper": "Liczba dni między miesiączkami (21-35)",
+    "lutealPhaseLabel": "Długość fazy lutealnej",
+    "lutealPhaseHelper": "Opcjonalnie (zwykle 14 dni)"
+  },
+  "results": {
+    "title": "Twój Kalendarz Owulacji",
+    "ovulationDay": "Przewidywany dzień owulacji",
+    "fertileWindow": "Okno płodności",
+    "bestDays": "Najlepsze dni na poczęcie",
+    "nextPeriod": "Następna oczekiwana miesiączka",
+    "chanceOfPregnancy": "Szansa zajścia w ciążę",
+    "high": "WYSOKA",
+    "medium": "ŚREDNIA",
+    "low": "NISKA"
+  },
+  "info": {
+    "title": "O Owulacji",
+    "description": "Owulacja to uwolnienie dojrzałej komórki jajowej z jajnika. Zwykle następuje około 14 dni przed rozpoczęciem następnej miesiączki. To najlepszy czas na poczęcie.",
+    "fertility": "Okno płodności:\n• Plemniki mogą przeżyć do 5 dni\n• Komórka jajowa żyje 12-24 godziny\n• Najwyższa płodność: 2-3 dni przed owulacją\n• Dobre szanse: 5 dni przed owulacją",
+    "signs": "Oznaki owulacji:\n• Wzrost temperatury ciała bazalnej\n• Zmiany w śluzie szyjkowym (przezroczysty, rozciągliwy)\n• Delikatny ból po jednej stronie\n• Zwiększone libido",
+    "tracking": "Dokładne śledzenie wymaga monitorowania przez kilka miesięcy. Rozważ użycie testów owulacji lub śledzenie temperatury bazalnej dla większej precyzji."
+  }
+}

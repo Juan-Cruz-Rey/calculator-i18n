@@ -1,0 +1,46 @@
+{
+  "title": "Kalkulator Makroskładników",
+  "description": "Oblicz swoje dzienne zapotrzebowanie na makroskładniki",
+  "metaDescription": "Darmowy kalkulator makroskładników - Oblicz dzienne zapotrzebowanie na białko, węglowodany i tłuszcze na podstawie celów zdrowotnych i fitness.",
+  "form": {
+    "title": "Wprowadź swoje dane",
+    "ageLabel": "Wiek",
+    "agePlaceholder": "Wprowadź swój wiek",
+    "genderLabel": "Płeć",
+    "heightLabel": "Wzrost",
+    "heightPlaceholder": "Wprowadź swój wzrost",
+    "weightLabel": "Waga",
+    "weightPlaceholder": "Wprowadź swoją wagę",
+    "activityLabel": "Poziom Aktywności",
+    "goalLabel": "Cel"
+  },
+  "goals": {
+    "maintain": "Utrzymanie wagi",
+    "lose": "Utrata wagi",
+    "gain": "Przyrost wagi"
+  },
+  "activity": {
+    "sedentary": "Siedzący tryb życia",
+    "light": "Lekka aktywność",
+    "moderate": "Umiarkowana aktywność",
+    "active": "Aktywny",
+    "veryActive": "Bardzo aktywny"
+  },
+  "results": {
+    "title": "Twoje Dzienne Makroskładniki",
+    "calories": "Całkowite kalorie",
+    "protein": "Białko",
+    "carbs": "Węglowodany",
+    "fat": "Tłuszcze",
+    "grams": "g",
+    "percentage": "% kalorii"
+  },
+  "info": {
+    "title": "O Makroskładnikach",
+    "description": "Makroskładniki to składniki odżywcze, których organizm potrzebuje w dużych ilościach: białko, węglowodany i tłuszcze. Każdy odgrywa ważną rolę w zdrowiu i wydajności.",
+    "protein": "Białko: Niezbędne do budowy i naprawy tkanek. 4 kalorie na gram.",
+    "carbs": "Węglowodany: Główne źródło energii dla organizmu. 4 kalorie na gram.",
+    "fats": "Tłuszcze: Niezbędne do funkcjonowania hormonów i wchłaniania witamin. 9 kalorii na gram.",
+    "balance": "Ten kalkulator zapewnia zbilansowany rozkład makroskładników, ale możesz dostosować go do swoich konkretnych potrzeb lub preferencji dietetycznych."
+  }
+}

@@ -1,0 +1,150 @@
+---
+import BaseLayout from '@/layouts/BaseLayout.astro';
+import { t } from '@/utils/i18n';
+
+const title = 'Wszystkie Kalkulatory - ' + t('site.title', 'pl');
+const description = 'Przeglądaj naszą kompletną kolekcję darmowych kalkulatorów zorganizowanych według kategorii.';
+
+const calculatorsByCategory = {
+  health: [
+    { title: t('bmi.title', 'pl'), description: t('bmi.description', 'pl'), url: '/pl/kalkulatory/bmi/', icon: '⚕️' },
+    { title: t('calorie.title', 'pl'), description: t('calorie.description', 'pl'), url: '/pl/kalkulatory/kalorie/', icon: '🔥' },
+    { title: t('idealWeight.title', 'pl'), description: t('idealWeight.description', 'pl'), url: '/pl/kalkulatory/idealna-waga/', icon: '🎯' },
+    { title: t('healthyWeight.title', 'pl'), description: t('healthyWeight.description', 'pl'), url: '/pl/kalkulatory/zdrowa-waga/', icon: '✅' },
+    { title: t('bodyFat.title', 'pl'), description: t('bodyFat.description', 'pl'), url: '/pl/kalkulatory/tluszcz/', icon: '📊' },
+    { title: t('bmr.title', 'pl'), description: t('bmr.description', 'pl'), url: '/pl/kalkulatory/bmr/', icon: '⚡' },
+    { title: t('tdee.title', 'pl'), description: t('tdee.description', 'pl'), url: '/pl/kalkulatory/tdee/', icon: '⚡' },
+    { title: t('leanBodyMass.title', 'pl'), description: t('leanBodyMass.description', 'pl'), url: '/pl/kalkulatory/beztluszczowa-masa/', icon: '💪' },
+    { title: t('pregnancy.title', 'pl'), description: t('pregnancy.description', 'pl'), url: '/pl/kalkulatory/ciaza/', icon: '🤰' },
+    { title: t('pregnancyWeightGain.title', 'pl'), description: t('pregnancyWeightGain.description', 'pl'), url: '/pl/kalkulatory/przybor-wagi-ciaza/', icon: '⚖️' },
+    { title: t('pregnancyConception.title', 'pl'), description: t('pregnancyConception.description', 'pl'), url: '/pl/kalkulatory/poczecie/', icon: '👶' },
+    { title: t('dueDate.title', 'pl'), description: t('dueDate.description', 'pl'), url: '/pl/kalkulatory/termin-porodu/', icon: '📅' },
+    { title: t('macro.title', 'pl'), description: t('macro.description', 'pl'), url: '/pl/kalkulatory/makro/', icon: '🍽️' },
+    { title: t('armyBodyFat.title', 'pl'), description: t('armyBodyFat.description', 'pl'), url: '/pl/kalkulatory/tluszcz-armia/', icon: '🎖️' },
+    { title: t('carbohydrate.title', 'pl'), description: t('carbohydrate.description', 'pl'), url: '/pl/kalkulatory/weglowodany/', icon: '🍞' },
+    { title: t('protein.title', 'pl'), description: t('protein.description', 'pl'), url: '/pl/kalkulatory/bialko/', icon: '🥩' },
+    { title: t('caloriesBurned.title', 'pl'), description: t('caloriesBurned.description', 'pl'), url: '/pl/kalkulatory/spalone-kalorie/', icon: '🔥' },
+    { title: t('pace.title', 'pl'), description: t('pace.description', 'pl'), url: '/pl/kalkulatory/tempo/', icon: '🏃' },
+    { title: t('bsa.title', 'pl'), description: t('bsa.description', 'pl'), url: '/pl/kalkulatory/bsa/', icon: '📐' },
+    { title: t('bloodType.title', 'pl'), description: t('bloodType.description', 'pl'), url: '/pl/kalkulatory/grupa-krwi/', icon: '🩸' },
+    { title: t('ovulation.title', 'pl'), description: t('ovulation.description', 'pl'), url: '/pl/kalkulatory/owulacja/', icon: '🥚' },
+    { title: t('period.title', 'pl'), description: t('period.description', 'pl'), url: '/pl/kalkulatory/okres/', icon: '📅' },
+    { title: t('bodyFrame.title', 'pl'), description: t('bodyFrame.description', 'pl'), url: '/pl/kalkulatory/budowa-ciala/', icon: '📏' },
+    { title: t('heartRate.title', 'pl'), description: t('heartRate.description', 'pl'), url: '/pl/kalkulatory/tetno/', icon: '💗' },
+    { title: t('waistHip.title', 'pl'), description: t('waistHip.description', 'pl'), url: '/pl/kalkulatory/talia-biodra/', icon: '📊' },
+    { title: t('bodyType.title', 'pl'), description: t('bodyType.description', 'pl'), url: '/pl/kalkulatory/typ-sylwetki/', icon: '🧍' },
+    { title: t('sleep.title', 'pl'), description: t('sleep.description', 'pl'), url: '/pl/kalkulatory/sen/', icon: '😴' },
+  ],
+  financial: [
+    { title: t('tip.title', 'pl'), description: t('tip.description', 'pl'), url: '/pl/kalkulatory/napiwek/', icon: '💰' },
+  ],
+  math: [
+    { title: t('percentage.title', 'pl'), description: t('percentage.description', 'pl'), url: '/pl/kalkulatory/procent/', icon: '%' },
+  ],
+  other: [
+    { title: t('age.title', 'pl'), description: t('age.description', 'pl'), url: '/pl/kalkulatory/wiek/', icon: '🎂' },
+    { title: t('date.title', 'pl'), description: t('date.description', 'pl'), url: '/pl/kalkulatory/data/', icon: '📅' },
+  ],
+};
+---
+
+<BaseLayout title={title} description={description} lang="pl">
+  <div class="container">
+    <div class="page-header">
+      <h1>Wszystkie Kalkulatory</h1>
+      <p class="page-description">{description}</p>
+    </div>
+
+    {Object.entries(calculatorsByCategory).map(([category, calculators]) => (
+      calculators.length > 0 && (
+        <section class="category-section">
+          <h2>{t(`categories.${category}`, 'pl')}</h2>
+          <div class="calculator-grid">
+            {calculators.map((calc) => (
+              <a href={calc.url} class="calculator-card">
+                <div class="calculator-icon">{calc.icon}</div>
+                <h3>{calc.title}</h3>
+                <p>{calc.description}</p>
+              </a>
+            ))}
+          </div>
+        </section>
+      )
+    ))}
+  </div>
+
+  <style>
+    .page-header {
+      text-align: center;
+      padding: 2rem 0 3rem;
+    }
+
+    .page-header h1 {
+      font-size: 2.5rem;
+      color: #333;
+      margin-bottom: 0.5rem;
+    }
+
+    .page-description {
+      font-size: 1.25rem;
+      color: #666;
+    }
+
+    .category-section {
+      margin-bottom: 3rem;
+    }
+
+    .category-section h2 {
+      font-size: 1.75rem;
+      color: #333;
+      margin-bottom: 1.5rem;
+      padding-bottom: 0.5rem;
+      border-bottom: 2px solid #4CAF50;
+    }
+
+    .calculator-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+      gap: 1.5rem;
+    }
+
+    .calculator-card {
+      background: white;
+      padding: 1.5rem;
+      border-radius: 8px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+      text-decoration: none;
+      color: inherit;
+      transition: transform 0.2s, box-shadow 0.2s;
+      display: flex;
+      flex-direction: column;
+    }
+
+    .calculator-card:hover {
+      transform: translateY(-4px);
+      box-shadow: 0 4px 16px rgba(0,0,0,0.15);
+    }
+
+    .calculator-icon {
+      font-size: 2.5rem;
+      margin-bottom: 0.75rem;
+    }
+
+    .calculator-card h3 {
+      font-size: 1.25rem;
+      margin-bottom: 0.5rem;
+      color: #333;
+    }
+
+    .calculator-card p {
+      color: #666;
+      font-size: 0.95rem;
+    }
+
+    @media (max-width: 768px) {
+      .calculator-grid {
+        grid-template-columns: 1fr;
+      }
+    }
+  </style>
+</BaseLayout>

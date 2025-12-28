@@ -1,0 +1,29 @@
+{
+  "title": "Kalkulator Zdrowej Wagi",
+  "description": "Znajdź swój zdrowy zakres wagi",
+  "metaDescription": "Darmowy kalkulator zdrowej wagi - Oblicz zalecany zakres wagi na podstawie wzrostu, wieku i płci używając wielu uznanych metod.",
+  "form": {
+    "title": "Wprowadź swoje dane",
+    "ageLabel": "Wiek",
+    "agePlaceholder": "Wprowadź swój wiek",
+    "genderLabel": "Płeć",
+    "heightLabel": "Wzrost",
+    "heightPlaceholder": "Wprowadź swój wzrost"
+  },
+  "results": {
+    "title": "Twój Zdrowy Zakres Wagi",
+    "healthyBMI": "Na podstawie zdrowego BMI (18,5-25)",
+    "idealWeight": "Idealna waga",
+    "currentWeight": "Obecna waga",
+    "difference": "Różnica",
+    "above": "powyżej",
+    "below": "poniżej",
+    "within": "w zakresie zdrowej wagi"
+  },
+  "info": {
+    "title": "O Zdrowej Wadze",
+    "description": "Zdrowa waga to zakres, w którym jesteś w najlepszym stanie zdrowia przy najmniejszym ryzyku rozwinięcia problemów zdrowotnych związanych z wagą. Zależy od wielu czynników, w tym wzrostu, wieku, płci i budowy ciała.",
+    "factors": "Czynniki wpływające na zdrową wagę:\n• Budowa ciała i rozmiar kości\n• Proporcja mięśni do tkanki tłuszczowej\n• Dystrybucja wagi\n• Ogólny stan zdrowia i historia rodzinna",
+    "note": "Pamiętaj, że liczby są tylko jednym wskaźnikiem zdrowia. Poziom energii, sprawność fizyczna i ogólne samopoczucie są równie ważne. Skonsultuj się z profesjonalistą medycznym w sprawie spersonalizowanych celów wagowych."
+  }
+}

@@ -1,0 +1,32 @@
+{
+  "title": "Kalkulator Wskaźnika Talia-Biodra",
+  "description": "Oblicz stosunek obwodu talii do bioder",
+  "metaDescription": "Darmowy kalkulator wskaźnika talia-biodra (WHR) - Oszacuj rozkład tkanki tłuszczowej i ryzyko zdrowotne na podstawie pomiarów talii i bioder.",
+  "form": {
+    "title": "Wprowadź pomiary",
+    "genderLabel": "Płeć",
+    "waistLabel": "Obwód talii",
+    "waistPlaceholder": "Zmierz w najwęższym miejscu",
+    "hipLabel": "Obwód bioder",
+    "hipPlaceholder": "Zmierz w najszerszym miejscu"
+  },
+  "results": {
+    "title": "Twój Wskaźnik Talia-Biodra",
+    "whr": "WHR",
+    "category": "Kategoria",
+    "healthRisk": "Ryzyko zdrowotne",
+    "bodyShape": "Kształt ciała",
+    "low": "Niskie",
+    "moderate": "Umiarkowane",
+    "high": "Wysokie",
+    "apple": "Jabłko (tłuszcz w talii)",
+    "pear": "Gruszka (tłuszcz w biodrach)"
+  },
+  "info": {
+    "title": "O Wskaźniku Talia-Biodra",
+    "description": "Wskaźnik talia-biodra (WHR) mierzy stosunek obwodu talii do obwodu bioder. Jest wskaźnikiem rozkładu tkanki tłuszczowej w ciele i może pomóc ocenić ryzyko zdrowotne.",
+    "health": "Znaczenie zdrowotne:\n• Wysokie WHR (kształt jabłka): Większe ryzyko chorób serca, cukrzycy\n• Niskie WHR (kształt gruszki): Niższe ryzyko problemów zdrowotnych\n• Tłuszcz w okolicy brzucha jest bardziej ryzykowny niż w biodrach",
+    "ranges": "Zdrowe zakresy:\n• Kobiety: poniżej 0,85\n• Mężczyźni: poniżej 0,90\n\nWysokie ryzyko:\n• Kobiety: powyżej 0,85\n• Mężczyźni: powyżej 1,0",
+    "measurement": "Jak mierzyć: Talia w najwęższym miejscu (zwykle tuż nad pępkiem), biodra w najszerszym miejscu. Mierz na odkrytej skórze, stojąc prosto."
+  }
+}

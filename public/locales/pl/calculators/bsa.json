@@ -1,0 +1,27 @@
+{
+  "title": "Kalkulator Powierzchni Ciała",
+  "description": "Oblicz powierzchnię ciała (BSA)",
+  "metaDescription": "Darmowy kalkulator powierzchni ciała - Oblicz powierzchnię ciała (BSA) używając wzorów Du Bois, Mosteller lub Haycock.",
+  "form": {
+    "title": "Wprowadź swoje dane",
+    "heightLabel": "Wzrost",
+    "heightPlaceholder": "Wprowadź swój wzrost",
+    "weightLabel": "Waga",
+    "weightPlaceholder": "Wprowadź swoją wagę"
+  },
+  "results": {
+    "title": "Twoja Powierzchnia Ciała",
+    "duBois": "Du Bois (1916)",
+    "mosteller": "Mosteller (1987)",
+    "haycock": "Haycock (1978)",
+    "average": "Średnia wszystkich metod",
+    "squareMeters": "m²"
+  },
+  "info": {
+    "title": "O Powierzchni Ciała",
+    "description": "Powierzchnia ciała (BSA) to zmierzona lub obliczona powierzchnia ciała ludzkiego. Jest używana w medycynie do obliczania dawek leków, oceny wskaźników metabolicznych i planowania leczenia.",
+    "formulas": "Wzory:\n• Du Bois: Najczęściej używany, standard medyczny\n• Mosteller: Prostszy wzór, łatwy do obliczenia\n• Haycock: Alternatywny wzór używany w pediatrii",
+    "usage": "Zastosowania BSA:\n• Dawkowanie chemioterapii\n• Obliczanie wskaźnika serca\n• Ocena funkcji nerek (GFR)\n• Ocena obszarów oparzeń\n• Planowanie płynów IV",
+    "note": "BSA jest bardziej precyzyjną miarą rozmiaru ciała niż sama waga, ponieważ uwzględnia zarówno wzrost, jak i wagę. Jest szczególnie przydatna w leczeniu medycznym."
+  }
+}

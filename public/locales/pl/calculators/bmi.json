@@ -1,0 +1,36 @@
+{
+  "title": "Kalkulator BMI",
+  "description": "Oblicz swój Wskaźnik Masy Ciała",
+  "metaDescription": "Darmowy kalkulator BMI - Oblicz swój wskaźnik masy ciała używając systemu metrycznego lub imperialnego. Poznaj swoją idealną wagę.",
+  "form": {
+    "title": "Wprowadź swoje dane",
+    "ageLabel": "Wiek",
+    "agePlaceholder": "Wprowadź swój wiek",
+    "genderLabel": "Płeć",
+    "heightLabel": "Wzrost",
+    "heightPlaceholder": "Wprowadź swój wzrost",
+    "weightLabel": "Waga",
+    "weightPlaceholder": "Wprowadź swoją wagę"
+  },
+  "results": {
+    "title": "Twoje Wyniki",
+    "bmiValue": "Twoje BMI",
+    "bmiPrime": "BMI Prime",
+    "ponderalIndex": "Wskaźnik Ponderala",
+    "category": "Kategoria",
+    "healthyRange": "Zdrowy zakres BMI",
+    "healthyWeight": "Zdrowy zakres wagi",
+    "categories": {
+      "underweight": "Niedowaga",
+      "normal": "Normalna",
+      "overweight": "Nadwaga",
+      "obese": "Otyłość"
+    }
+  },
+  "info": {
+    "title": "O wskaźniku BMI",
+    "description": "Wskaźnik Masy Ciała (BMI) to miara wagi ciała oparta na wadze i wzroście osoby. Oblicza się go dzieląc wagę w kilogramach przez kwadrat wzrostu w metrach.",
+    "formula": "Wzór: BMI = waga (kg) / wzrost² (m)",
+    "limitations": "BMI jest użytecznym narzędziem przesiewowym, ale nie diagnozuje tkanki tłuszczowej ani zdrowia osoby. Osoby o większej masie mięśniowej mogą mieć wysokie BMI bez nadmiaru tkanki tłuszczowej."
+  }
+}

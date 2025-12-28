@@ -1,0 +1,37 @@
+---
+import BaseLayout from '@/layouts/BaseLayout.astro';
+import PregnancyCalculator from '@/components/calculators/PregnancyCalculator.astro';
+import { t } from '@/utils/i18n';
+
+const title = t('pregnancy.title', 'pl') + ' - ' + t('site.title', 'pl');
+const description = t('pregnancy.metaDescription', 'pl');
+---
+
+<BaseLayout title={title} description={description} lang="pl" calculator="pregnancy">
+  <div class="container">
+    <div class="page-header">
+      <h1>{t('pregnancy.title', 'pl')}</h1>
+      <p class="page-description">{t('pregnancy.description', 'pl')}</p>
+    </div>
+
+    <PregnancyCalculator lang="pl" />
+  </div>
+</BaseLayout>
+
+<style>
+  .page-header {
+    text-align: center;
+    padding: 2rem 0 1rem;
+  }
+
+  .page-header h1 {
+    font-size: 2.5rem;
+    color: #333;
+    margin-bottom: 0.5rem;
+  }
+
+  .page-description {
+    font-size: 1.25rem;
+    color: #666;
+  }
+</style>

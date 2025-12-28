@@ -1,0 +1,45 @@
+{
+  "title": "Kalkulator Węglowodanów",
+  "description": "Oblicz dzienne zapotrzebowanie na węglowodany",
+  "metaDescription": "Darmowy kalkulator węglowodanów - Oblicz dzienne zapotrzebowanie na węglowodany na podstawie poziomu aktywności i celów zdrowotnych.",
+  "form": {
+    "title": "Wprowadź swoje dane",
+    "ageLabel": "Wiek",
+    "agePlaceholder": "Wprowadź swój wiek",
+    "genderLabel": "Płeć",
+    "heightLabel": "Wzrost",
+    "heightPlaceholder": "Wprowadź swój wzrost",
+    "weightLabel": "Waga",
+    "weightPlaceholder": "Wprowadź swoją wagę",
+    "activityLabel": "Poziom Aktywności",
+    "goalLabel": "Cel Dietetyczny"
+  },
+  "goals": {
+    "maintain": "Utrzymanie wagi",
+    "lose": "Utrata wagi",
+    "gain": "Przyrost wagi",
+    "lowCarb": "Niskotłuszczowa dieta",
+    "keto": "Dieta ketogeniczna"
+  },
+  "activity": {
+    "sedentary": "Siedzący tryb życia",
+    "light": "Lekka aktywność",
+    "moderate": "Umiarkowana aktywność",
+    "active": "Aktywny",
+    "veryActive": "Bardzo aktywny"
+  },
+  "results": {
+    "title": "Twoje Dzienne Węglowodany",
+    "totalCarbs": "Całkowite węglowodany",
+    "gramsPerDay": "g/dzień",
+    "percentOfCalories": "% dziennych kalorii",
+    "calories": "kalorii z węglowodanów",
+    "totalCalories": "Całkowite dzienne kalorie"
+  },
+  "info": {
+    "title": "O Węglowodanach",
+    "description": "Węglowodany są głównym źródłem energii dla organizmu. Zapewniają 4 kalorie na gram. Odpowiednie spożycie węglowodanów zależy od poziomu aktywności, celów zdrowotnych i preferencji osobistych.",
+    "types": "Typy węglowodanów:\n• Proste: Szybka energia (cukry)\n• Złożone: Wolne uwalnianie energii (skrobia, błonnik)\n• Błonnik: Niezbędny do trawienia i zdrowia jelit",
+    "recommendations": "Ogólne wytyczne:\n• Standard: 45-65% dziennych kalorii\n• Niska zawartość węglowodanów: 20-30%\n• Ketogeniczna: 5-10%\n• Wysoka zawartość węglowodanów (sportowcy): 60-70%"
+  }
+}

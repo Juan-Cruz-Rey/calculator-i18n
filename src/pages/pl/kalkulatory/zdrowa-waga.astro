@@ -1,0 +1,37 @@
+---
+import BaseLayout from '@/layouts/BaseLayout.astro';
+import HealthyWeightCalculator from '@/components/calculators/HealthyWeightCalculator.astro';
+import { t } from '@/utils/i18n';
+
+const title = t('healthyWeight.title', 'pl') + ' - ' + t('site.title', 'pl');
+const description = t('healthyWeight.metaDescription', 'pl');
+---
+
+<BaseLayout title={title} description={description} lang="pl" calculator="healthyWeight">
+  <div class="container">
+    <div class="page-header">
+      <h1>{t('healthyWeight.title', 'pl')}</h1>
+      <p class="page-description">{t('healthyWeight.description', 'pl')}</p>
+    </div>
+
+    <HealthyWeightCalculator lang="pl" />
+  </div>
+</BaseLayout>
+
+<style>
+  .page-header {
+    text-align: center;
+    padding: 2rem 0 1rem;
+  }
+
+  .page-header h1 {
+    font-size: 2.5rem;
+    color: #333;
+    margin-bottom: 0.5rem;
+  }
+
+  .page-description {
+    font-size: 1.25rem;
+    color: #666;
+  }
+</style>

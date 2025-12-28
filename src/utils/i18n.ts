@@ -1,4 +1,4 @@
-export type Locale = 'es' | 'en' | 'pt' | 'fr' | 'hi' | 'de' | 'it';
+export type Locale = 'es' | 'en' | 'pt' | 'fr' | 'hi' | 'de' | 'it' | 'pl';
 
 // Import common translations
 import esCommon from '../../public/locales/es/common.json';
@@ -8,6 +8,7 @@ import frCommon from '../../public/locales/fr/common.json';
 import hiCommon from '../../public/locales/hi/common.json';
 import deCommon from '../../public/locales/de/common.json';
 import itCommon from '../../public/locales/it/common.json';
+import plCommon from '../../public/locales/pl/common.json';
 
 // Import categories translations
 import esCategories from '../../public/locales/es/categories.json';
@@ -17,6 +18,7 @@ import frCategories from '../../public/locales/fr/categories.json';
 import hiCategories from '../../public/locales/hi/categories.json';
 import deCategories from '../../public/locales/de/categories.json';
 import itCategories from '../../public/locales/it/categories.json';
+import plCategories from '../../public/locales/pl/categories.json';
 
 // Import calculator-specific translations
 import esBMI from '../../public/locales/es/calculators/bmi.json';
@@ -257,6 +259,38 @@ import frPercentage from '../../public/locales/fr/calculators/percentage.json';
 import hiPercentage from '../../public/locales/hi/calculators/percentage.json';
 import dePercentage from '../../public/locales/de/calculators/percentage.json';
 import itPercentage from '../../public/locales/it/calculators/percentage.json';
+
+import plBMI from '../../public/locales/pl/calculators/bmi.json';
+import plCalorie from '../../public/locales/pl/calculators/calorie.json';
+import plIdealWeight from '../../public/locales/pl/calculators/idealWeight.json';
+import plBodyFat from '../../public/locales/pl/calculators/bodyFat.json';
+import plBMR from '../../public/locales/pl/calculators/bmr.json';
+import plTDEE from '../../public/locales/pl/calculators/tdee.json';
+import plArmyBodyFat from '../../public/locales/pl/calculators/armyBodyFat.json';
+import plPace from '../../public/locales/pl/calculators/pace.json';
+import plMacro from '../../public/locales/pl/calculators/macro.json';
+import plPregnancy from '../../public/locales/pl/calculators/pregnancy.json';
+import plPregnancyWeightGain from '../../public/locales/pl/calculators/pregnancyWeightGain.json';
+import plPregnancyConception from '../../public/locales/pl/calculators/pregnancyConception.json';
+import plDueDate from '../../public/locales/pl/calculators/dueDate.json';
+import plCarbohydrate from '../../public/locales/pl/calculators/carbohydrate.json';
+import plLeanBodyMass from '../../public/locales/pl/calculators/leanBodyMass.json';
+import plHealthyWeight from '../../public/locales/pl/calculators/healthyWeight.json';
+import plHeartRate from '../../public/locales/pl/calculators/heartRate.json';
+import plBodyType from '../../public/locales/pl/calculators/bodyType.json';
+import plProtein from '../../public/locales/pl/calculators/protein.json';
+import plCaloriesBurned from '../../public/locales/pl/calculators/caloriesBurned.json';
+import plBSA from '../../public/locales/pl/calculators/bsa.json';
+import plBloodType from '../../public/locales/pl/calculators/bloodType.json';
+import plOvulation from '../../public/locales/pl/calculators/ovulation.json';
+import plPeriod from '../../public/locales/pl/calculators/period.json';
+import plBodyFrame from '../../public/locales/pl/calculators/bodyFrame.json';
+import plWaistHip from '../../public/locales/pl/calculators/waistHip.json';
+import plAge from '../../public/locales/pl/calculators/age.json';
+import plTip from '../../public/locales/pl/calculators/tip.json';
+import plDate from '../../public/locales/pl/calculators/date.json';
+import plPercentage from '../../public/locales/pl/calculators/percentage.json';
+import plSleep from '../../public/locales/pl/calculators/sleep.json';
 
 interface Translations {
   [key: string]: any;
@@ -501,6 +535,41 @@ const translations: Record<Locale, Translations> = {
     date: itDate,
     percentage: itPercentage,
   },
+  pl: {
+    ...plCommon,
+    categories: plCategories,
+    bmi: plBMI,
+    calorie: plCalorie,
+    idealWeight: plIdealWeight,
+    bodyFat: plBodyFat,
+    bmr: plBMR,
+    tdee: plTDEE,
+    armyBodyFat: plArmyBodyFat,
+    pace: plPace,
+    macro: plMacro,
+    pregnancy: plPregnancy,
+    pregnancyWeightGain: plPregnancyWeightGain,
+    pregnancyConception: plPregnancyConception,
+    dueDate: plDueDate,
+    carbohydrate: plCarbohydrate,
+    leanBodyMass: plLeanBodyMass,
+    healthyWeight: plHealthyWeight,
+    heartRate: plHeartRate,
+    bodyType: plBodyType,
+    protein: plProtein,
+    caloriesBurned: plCaloriesBurned,
+    bsa: plBSA,
+    bloodType: plBloodType,
+    ovulation: plOvulation,
+    period: plPeriod,
+    bodyFrame: plBodyFrame,
+    waistHip: plWaistHip,
+    age: plAge,
+    tip: plTip,
+    date: plDate,
+    percentage: plPercentage,
+    sleep: plSleep,
+  },
 };
 
 /**
@@ -545,6 +614,7 @@ export const languageConfig: Record<Locale, { name: string; nativeName: string; 
   hi: { name: 'Hindi', nativeName: 'हिन्दी', path: '/hi' },
   de: { name: 'German', nativeName: 'Deutsch', path: '/de' },
   it: { name: 'Italian', nativeName: 'Italiano', path: '/it' },
+  pl: { name: 'Polish', nativeName: 'Polski', path: '/pl' },
 };
 
 /**
@@ -578,6 +648,7 @@ export function getAlternatePath(currentPath: string, targetLocale: Locale, calc
       hi: '/hi/',
       de: '/de/',
       it: '/it/',
+      pl: '/pl/',
     },
   };
 
@@ -591,6 +662,7 @@ export function getAlternatePath(currentPath: string, targetLocale: Locale, calc
       hi: '/hi/calculators/bmi/',
       de: '/de/calculators/bmi/',
       it: '/it/calculators/bmi/',
+      pl: '/pl/kalkulatory/bmi/',
     },
     calorie: {
       es: '/es/calculadoras/calorias/',
@@ -600,6 +672,7 @@ export function getAlternatePath(currentPath: string, targetLocale: Locale, calc
       hi: '/hi/calculators/calorie/',
       de: '/de/calculators/calorie/',
       it: '/it/calculators/calorie/',
+      pl: '/pl/kalkulatory/kalorie/',
     },
     idealWeight: {
       es: '/es/calculadoras/peso-ideal/',
@@ -609,6 +682,7 @@ export function getAlternatePath(currentPath: string, targetLocale: Locale, calc
       hi: '/hi/calculators/ideal-weight/',
       de: '/de/calculators/ideal-weight/',
       it: '/it/calculators/ideal-weight/',
+      pl: '/pl/kalkulatory/idealna-waga/',
     },
     bodyFat: {
       es: '/es/calculadoras/grasa-corporal/',
@@ -618,6 +692,7 @@ export function getAlternatePath(currentPath: string, targetLocale: Locale, calc
       hi: '/hi/calculators/body-fat/',
       de: '/de/calculators/body-fat/',
       it: '/it/calculators/body-fat/',
+      pl: '/pl/kalkulatory/tluszcz/',
     },
     tdee: {
       es: '/es/calculadoras/gect/',
@@ -627,6 +702,7 @@ export function getAlternatePath(currentPath: string, targetLocale: Locale, calc
       hi: '/hi/calculators/tdee/',
       de: '/de/calculators/tdee/',
       it: '/it/calculators/tdee/',
+      pl: '/pl/kalkulatory/tdee/',
     },
     bmr: {
       es: '/es/calculadoras/tmb/',
@@ -636,6 +712,7 @@ export function getAlternatePath(currentPath: string, targetLocale: Locale, calc
       hi: '/hi/calculators/bmr/',
       de: '/de/calculators/bmr/',
       it: '/it/calculators/bmr/',
+      pl: '/pl/kalkulatory/bmr/',
     },
     armyBodyFat: {
       es: '/es/calculadoras/grasa-corporal-ejercito/',
@@ -645,6 +722,7 @@ export function getAlternatePath(currentPath: string, targetLocale: Locale, calc
       hi: '/hi/calculators/army-body-fat/',
       de: '/de/calculators/army-body-fat/',
       it: '/it/calculators/army-body-fat/',
+      pl: '/pl/kalkulatory/tluszcz-armia/',
     },
     pregnancy: {
       es: '/es/calculadoras/embarazo/',
@@ -654,6 +732,7 @@ export function getAlternatePath(currentPath: string, targetLocale: Locale, calc
       hi: '/hi/calculators/pregnancy/',
       de: '/de/calculators/pregnancy/',
       it: '/it/calculators/pregnancy/',
+      pl: '/pl/kalkulatory/ciaza/',
     },
     pace: {
       es: '/es/calculadoras/ritmo/',
@@ -663,6 +742,7 @@ export function getAlternatePath(currentPath: string, targetLocale: Locale, calc
       hi: '/hi/calculators/pace/',
       de: '/de/calculators/pace/',
       it: '/it/calculators/pace/',
+      pl: '/pl/kalkulatory/tempo/',
     },
     macro: {
       es: '/es/calculadoras/macros/',
@@ -672,6 +752,7 @@ export function getAlternatePath(currentPath: string, targetLocale: Locale, calc
       hi: '/hi/calculators/macro/',
       de: '/de/calculators/macro/',
       it: '/it/calculators/macro/',
+      pl: '/pl/kalkulatory/makro/',
     },
     pregnancyWeightGain: {
       es: '/es/calculadoras/aumento-peso-embarazo/',
@@ -681,6 +762,7 @@ export function getAlternatePath(currentPath: string, targetLocale: Locale, calc
       hi: '/hi/calculators/pregnancy-weight-gain/',
       de: '/de/calculators/pregnancy-weight-gain/',
       it: '/it/calculators/pregnancy-weight-gain/',
+      pl: '/pl/kalkulatory/przybor-wagi-ciaza/',
     },
     pregnancyConception: {
       es: '/es/calculadoras/concepcion-embarazo/',
@@ -690,6 +772,7 @@ export function getAlternatePath(currentPath: string, targetLocale: Locale, calc
       hi: '/hi/calculators/pregnancy-conception/',
       de: '/de/calculators/pregnancy-conception/',
       it: '/it/calculators/pregnancy-conception/',
+      pl: '/pl/kalkulatory/poczecie/',
     },
     dueDate: {
       es: '/es/calculadoras/fecha-parto/',
@@ -699,6 +782,7 @@ export function getAlternatePath(currentPath: string, targetLocale: Locale, calc
       hi: '/hi/calculators/due-date/',
       de: '/de/calculators/due-date/',
       it: '/it/calculators/due-date/',
+      pl: '/pl/kalkulatory/termin-porodu/',
     },
     carbohydrate: {
       es: '/es/calculadoras/carbohidratos/',
@@ -708,6 +792,7 @@ export function getAlternatePath(currentPath: string, targetLocale: Locale, calc
       hi: '/hi/calculators/carbohydrate/',
       de: '/de/calculators/carbohydrate/',
       it: '/it/calculators/carbohydrate/',
+      pl: '/pl/kalkulatory/weglowodany/',
     },
     leanBodyMass: {
       es: '/es/calculadoras/masa-corporal-magra/',
@@ -717,6 +802,7 @@ export function getAlternatePath(currentPath: string, targetLocale: Locale, calc
       hi: '/hi/calculators/lean-body-mass/',
       de: '/de/calculators/lean-body-mass/',
       it: '/it/calculators/lean-body-mass/',
+      pl: '/pl/kalkulatory/beztluszczowa-masa/',
     },
     healthyWeight: {
       es: '/es/calculadoras/peso-saludable/',
@@ -726,6 +812,7 @@ export function getAlternatePath(currentPath: string, targetLocale: Locale, calc
       hi: '/hi/calculators/healthy-weight/',
       de: '/de/calculators/healthy-weight/',
       it: '/it/calculators/healthy-weight/',
+      pl: '/pl/kalkulatory/zdrowa-waga/',
     },
     heartRate: {
       es: '/es/calculadoras/frecuencia-cardiaca/',
@@ -735,6 +822,7 @@ export function getAlternatePath(currentPath: string, targetLocale: Locale, calc
       hi: '/hi/calculators/heart-rate/',
       de: '/de/calculators/heart-rate/',
       it: '/it/calculators/heart-rate/',
+      pl: '/pl/kalkulatory/tetno/',
     },
     bloodType: {
       es: '/es/calculadoras/tipo-sangre/',
@@ -744,6 +832,7 @@ export function getAlternatePath(currentPath: string, targetLocale: Locale, calc
       hi: '/hi/calculators/blood-type/',
       de: '/de/calculators/blood-type/',
       it: '/it/calculators/blood-type/',
+      pl: '/pl/kalkulatory/grupa-krwi/',
     },
     bsa: {
       es: '/es/calculadoras/superficie-corporal/',
@@ -753,6 +842,7 @@ export function getAlternatePath(currentPath: string, targetLocale: Locale, calc
       hi: '/hi/calculators/bsa/',
       de: '/de/calculators/bsa/',
       it: '/it/calculators/bsa/',
+      pl: '/pl/kalkulatory/bsa/',
     },
     bodyType: {
       es: '/es/calculadoras/tipo-cuerpo/',
@@ -762,6 +852,7 @@ export function getAlternatePath(currentPath: string, targetLocale: Locale, calc
       hi: '/hi/calculators/body-type/',
       de: '/de/calculators/body-type/',
       it: '/it/calculators/body-type/',
+      pl: '/pl/kalkulatory/typ-sylwetki/',
     },
     protein: {
       es: '/es/calculadoras/proteinas/',
@@ -771,6 +862,7 @@ export function getAlternatePath(currentPath: string, targetLocale: Locale, calc
       hi: '/hi/calculators/protein/',
       de: '/de/calculators/protein/',
       it: '/it/calculators/protein/',
+      pl: '/pl/kalkulatory/bialko/',
     },
     caloriesBurned: {
       es: '/es/calculadoras/calorias-quemadas/',
@@ -780,6 +872,7 @@ export function getAlternatePath(currentPath: string, targetLocale: Locale, calc
       hi: '/hi/calculators/calories-burned/',
       de: '/de/calculators/calories-burned/',
       it: '/it/calculators/calories-burned/',
+      pl: '/pl/kalkulatory/spalone-kalorie/',
     },
     ovulation: {
       es: '/es/calculadoras/ovulacion/',
@@ -789,6 +882,7 @@ export function getAlternatePath(currentPath: string, targetLocale: Locale, calc
       hi: '/hi/calculators/ovulation/',
       de: '/de/calculators/ovulation/',
       it: '/it/calculators/ovulation/',
+      pl: '/pl/kalkulatory/owulacja/',
     },
     period: {
       es: '/es/calculadoras/periodo/',
@@ -798,6 +892,7 @@ export function getAlternatePath(currentPath: string, targetLocale: Locale, calc
       hi: '/hi/calculators/period/',
       de: '/de/calculators/period/',
       it: '/it/calculators/period/',
+      pl: '/pl/kalkulatory/okres/',
     },
     bodyFrame: {
       es: '/es/calculadoras/estructura-corporal/',
@@ -807,6 +902,7 @@ export function getAlternatePath(currentPath: string, targetLocale: Locale, calc
       hi: '/hi/calculators/body-frame/',
       de: '/de/calculators/body-frame/',
       it: '/it/calculators/body-frame/',
+      pl: '/pl/kalkulatory/budowa-ciala/',
     },
     waistHip: {
       es: '/es/calculadoras/cintura-cadera/',
@@ -857,7 +953,8 @@ export function getAlternatePath(currentPath: string, targetLocale: Locale, calc
 
   // Check if it's a calculator page
   if (calculator && calculatorPaths[calculator as keyof typeof calculatorPaths]) {
-    return calculatorPaths[calculator as keyof typeof calculatorPaths][targetLocale];
+    const paths = calculatorPaths[calculator as keyof typeof calculatorPaths] as Record<Locale, string>;
+    return paths[targetLocale];
   }
 
   // Check base paths

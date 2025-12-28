@@ -1,0 +1,45 @@
+{
+  "title": "Kalkulator Procentów",
+  "description": "Oblicz procenty, zwiększ lub zmniejsz wartość o procent",
+  "metaDescription": "Darmowy kalkulator procentów - Oblicz procenty, zmiany procentowe, zwiększ lub zmniejsz wartość o procent. Proste obliczenia procentowe.",
+  "form": {
+    "title": "Wybierz rodzaj obliczeń",
+    "whatIs": "Ile to jest X% z Y?",
+    "xPercent": "Procent (X)",
+    "xPercentPlaceholder": "Wprowadź procent",
+    "ofValue": "z wartości (Y)",
+    "ofValuePlaceholder": "Wprowadź wartość",
+    "isWhat": "X to ile procent Y?",
+    "value1": "Wartość (X)",
+    "value1Placeholder": "Wprowadź wartość",
+    "value2": "z wartości (Y)",
+    "value2Placeholder": "Wprowadź wartość całkowitą",
+    "change": "Jaka jest zmiana procentowa z X na Y?",
+    "oldValue": "Stara wartość (X)",
+    "oldValuePlaceholder": "Wartość początkowa",
+    "newValue": "Nowa wartość (Y)",
+    "newValuePlaceholder": "Wartość końcowa"
+  },
+  "results": {
+    "title": "Wynik",
+    "result": "Wynik",
+    "calculation": "Obliczenie",
+    "percentageChange": "Zmiana procentowa",
+    "increase": "Wzrost",
+    "decrease": "Spadek"
+  },
+  "common": {
+    "title": "Typowe Obliczenia Procentowe",
+    "taxTip": "Podatek i Napiwek",
+    "discount": "Zniżka",
+    "markup": "Narzut",
+    "change": "Zmiana Procentowa"
+  },
+  "info": {
+    "title": "O Procentach",
+    "description": "Procent to sposób wyrażania liczby jako ułamka ze 100. Symbol % oznacza 'na 100'. Procenty są używane w życiu codziennym do zniżek, podatków, stóp procentowych i wielu innych.",
+    "formulas": "Podstawowe wzory:\n• X% z Y = (X/100) × Y\n• X to Y% z = (X/Y) × 100\n• Zmiana % = ((Nowe-Stare)/Stare) × 100",
+    "examples": "Przykłady:\n• 20% z 50 = 10\n• 30 to 60% z 50\n• Zmiana z 40 na 50 = wzrost o 25%",
+    "uses": "Typowe zastosowania:\n• Obliczanie zniżek przy zakupach\n• Obliczanie napiwków w restauracjach\n• Zrozumienie podatków\n• Analiza zwrotu z inwestycji\n• Porównywanie zmian w czasie"
+  }
+}

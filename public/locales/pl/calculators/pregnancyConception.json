@@ -1,0 +1,24 @@
+{
+  "title": "Kalkulator Poczęcia",
+  "description": "Oblicz możliwą datę poczęcia",
+  "metaDescription": "Darmowy kalkulator daty poczęcia - Oszacuj kiedy mogło nastąpić poczęcie na podstawie terminu porodu lub ostatniej miesiączki.",
+  "form": {
+    "title": "Wprowadź datę",
+    "dueDateLabel": "Termin porodu",
+    "dueDateHelper": "Jeśli znasz termin porodu",
+    "lmpLabel": "Pierwszy dzień ostatniej miesiączki",
+    "lmpHelper": "Lub wprowadź pierwszy dzień ostatniej miesiączki"
+  },
+  "results": {
+    "title": "Możliwa Data Poczęcia",
+    "conceptionDate": "Przybliżona data poczęcia",
+    "dateRange": "Prawdopodobny zakres dat",
+    "explanation": "Poczęcie najprawdopodobniej nastąpiło w ciągu tego zakresu dat"
+  },
+  "info": {
+    "title": "O Dacie Poczęcia",
+    "description": "Datę poczęcia trudno określić dokładnie, ponieważ plemniki mogą przeżyć w układzie rozrodczym do 5 dni, a jajeczko jest żywotne przez około 24 godziny po owulacji.",
+    "calculation": "Ten kalkulator szacuje datę poczęcia na podstawie przeciętnej długości ciąży i czasu owulacji. Zakłada, że poczęcie nastąpiło około 14 dni po pierwszym dniu ostatniej miesiączki.",
+    "accuracy": "Podane daty to oszacowania. Dokładna data poczęcia może być inna, szczególnie jeśli masz nieregularne cykle. Wczesne badanie USG może dostarczyć dokładniejszego oszacowania."
+  }
+}

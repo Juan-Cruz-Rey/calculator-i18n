@@ -1,0 +1,29 @@
+{
+  "title": "Kalkulator Terminu Porodu",
+  "description": "Oblicz przewidywany termin porodu",
+  "metaDescription": "Darmowy kalkulator terminu porodu - Oblicz przewidywany termin porodu na podstawie ostatniej miesiączki lub daty poczęcia.",
+  "form": {
+    "title": "Wybierz metodę obliczania",
+    "lmpMethod": "Ostatnia miesiączka",
+    "conceptionMethod": "Data poczęcia",
+    "lmpLabel": "Pierwszy dzień ostatniej miesiączki",
+    "conceptionLabel": "Data poczęcia",
+    "cycleLengthLabel": "Długość cyklu",
+    "cycleLengthHelper": "Średnia długość cyklu menstruacyjnego (dni)"
+  },
+  "results": {
+    "title": "Twój Termin Porodu",
+    "dueDate": "Przewidywany termin porodu",
+    "currentWeek": "Aktualny tydzień ciąży",
+    "daysPregnant": "Dni ciąży",
+    "daysRemaining": "Pozostałe dni",
+    "dateRange": "Prawdopodobny zakres dat",
+    "conceptionDate": "Przybliżona data poczęcia"
+  },
+  "info": {
+    "title": "O Terminie Porodu",
+    "description": "Termin porodu oblicza się dodając 280 dni (40 tygodni) do pierwszego dnia ostatniej miesiączki. To tzw. reguła Naegelego, standard w położnictwie.",
+    "accuracy": "Ważne jest zrozumienie, że tylko około 5% dzieci rodzi się dokładnie w przewidywanym terminie. Większość niemowląt rodzi się między 38 a 42 tygodniem ciąży.",
+    "variations": "Twój lekarz może dostosować termin porodu na podstawie badań USG, szczególnie jeśli masz nieregularne cykle lub nie pamiętasz dokładnej daty ostatniej miesiączki."
+  }
+}

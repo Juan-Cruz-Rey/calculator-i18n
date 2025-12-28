@@ -12,7 +12,7 @@ const { title, description, lang = 'es', calculator } = Astro.props;
 const canonicalURL = new URL(Astro.url.pathname, Astro.site);
 
 // Generate hreflang URLs for all languages
-const locales: Locale[] = ['es', 'en', 'pt', 'fr', 'hi', 'de', 'it'];
+const locales: Locale[] = ['es', 'en', 'pt', 'fr', 'hi', 'de', 'it', 'pl'];
 const hreflangURLs = Object.fromEntries(
   locales.map(locale => [
     locale,
@@ -38,6 +38,7 @@ const navTranslations = {
   hi: { home: 'होम', calculators: 'कैलकुलेटर', siteName: 'कैलकुलेटर' },
   de: { home: 'Startseite', calculators: 'Rechner', siteName: 'Rechner' },
   it: { home: 'Home', calculators: 'Calcolatrici', siteName: 'Calcolatrici' },
+  pl: { home: 'Start', calculators: 'Kalkulatory', siteName: 'Kalkulatory' },
 };
 const navText = navTranslations[lang as Locale] || navTranslations.es;
 ---
@@ -62,6 +63,7 @@ const navText = navTranslations[lang as Locale] || navTranslations.es;
     <link rel="alternate" hreflang="hi" href={hreflangURLs.hi} />
     <link rel="alternate" hreflang="de" href={hreflangURLs.de} />
     <link rel="alternate" hreflang="it" href={hreflangURLs.it} />
+    <link rel="alternate" hreflang="pl" href={hreflangURLs.pl} />
     <link rel="alternate" hreflang="x-default" href={hreflangURLs.en} />
 
     <!-- Open Graph / Facebook -->

@@ -1,0 +1,30 @@
+{
+  "title": "Kalkulator Tętna",
+  "description": "Oblicz maksymalne i docelowe tętno",
+  "metaDescription": "Darmowy kalkulator tętna - Oblicz maksymalne tętno i strefy docelowego tętna dla różnych intensywności ćwiczeń na podstawie wieku.",
+  "form": {
+    "title": "Wprowadź swój wiek",
+    "ageLabel": "Wiek",
+    "agePlaceholder": "Wprowadź swój wiek",
+    "restingHRLabel": "Tętno spoczynkowe",
+    "restingHRPlaceholder": "Opcjonalnie (w spoczynku)"
+  },
+  "results": {
+    "title": "Twoje Strefy Tętna",
+    "maxHeartRate": "Maksymalne tętno",
+    "restingHeartRate": "Tętno spoczynkowe",
+    "zones": "Strefy treningowe",
+    "warmup": "Rozgrzewka (50-60%)",
+    "fatBurn": "Spalanie tłuszczu (60-70%)",
+    "cardio": "Kardio (70-80%)",
+    "peak": "Maksymalna wydolność (80-90%)",
+    "bpm": "uderzeń/min"
+  },
+  "info": {
+    "title": "O Strefach Tętna",
+    "description": "Strefy tętna pomagają optymalizować treningi poprzez trening w określonych zakresach intensywności. Każda strefa ma inne korzyści dla kondycji i zdrowia.",
+    "zones": "Strefy treningowe:\n• Rozgrzewka (50-60%): Lekkie ćwiczenia, regeneracja\n• Spalanie tłuszczu (60-70%): Optymalne dla utraty wagi\n• Kardio (70-80%): Poprawia wydolność tlenową\n• Maksymalna (80-90%): Buduje moc i wydolność\n• Maksymalna intensywność (90-100%): Krótkie, intensywne wysiłki",
+    "maxHR": "Maksymalne tętno (MHR) oblicza się jako 220 minus wiek. To najprostsza metoda, choć rzeczywiste MHR może się różnić o ±10-20 uderzeń/min.",
+    "monitoring": "Monitoruj tętno podczas ćwiczeń za pomocą monitora tętna lub sprawdzaj puls ręcznie. Utrzymuj się w docelowej strefie dla swoich celów fitness."
+  }
+}

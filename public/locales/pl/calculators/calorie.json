@@ -1,0 +1,44 @@
+{
+  "title": "Kalkulator Kalorii",
+  "description": "Oblicz swoje dzienne zapotrzebowanie kaloryczne",
+  "metaDescription": "Darmowy kalkulator kalorii - Oblicz ile kalorii potrzebujesz dziennie na podstawie wieku, wagi, wzrostu i poziomu aktywności fizycznej.",
+  "form": {
+    "title": "Wprowadź swoje dane",
+    "ageLabel": "Wiek",
+    "agePlaceholder": "Wprowadź swój wiek (15-80)",
+    "genderLabel": "Płeć",
+    "heightLabel": "Wzrost",
+    "heightPlaceholder": "Wprowadź swój wzrost",
+    "weightLabel": "Waga",
+    "weightPlaceholder": "Wprowadź swoją wagę",
+    "activityLabel": "Poziom Aktywności"
+  },
+  "activity": {
+    "sedentary": "Siedzący tryb życia (mało lub brak ćwiczeń)",
+    "light": "Lekka aktywność (ćwiczenia 1-3 razy/tydzień)",
+    "moderate": "Umiarkowana aktywność (ćwiczenia 4-5 razy/tydzień)",
+    "active": "Aktywny (codzienne ćwiczenia lub intensywne 3-4 razy/tydzień)",
+    "veryActive": "Bardzo aktywny (intensywne ćwiczenia 6-7 razy/tydzień)",
+    "extraActive": "Ekstremalnie aktywny (bardzo intensywne codzienne ćwiczenia i praca fizyczna)"
+  },
+  "results": {
+    "title": "Twoje Zapotrzebowanie Kaloryczne",
+    "maintenance": "Utrzymanie",
+    "maintenanceDesc": "Kalorie na utrzymanie obecnej wagi",
+    "goalsTitle": "Kalorie według celu",
+    "weightLoss": "Utrata Wagi",
+    "weightGain": "Przyrost Wagi",
+    "mild": "Łagodny",
+    "moderate": "Umiarkowany",
+    "extreme": "Ekstremalny",
+    "bmr": "BMR (Podstawowa Przemiana Materii)",
+    "bmrDesc": "Kalorie potrzebne organizmowi w spoczynku"
+  },
+  "info": {
+    "title": "O Kalkulatorze Kalorii",
+    "description": "Ten kalkulator szacuje ile kalorii dziennie potrzebujesz na podstawie wieku, płci, wagi, wzrostu i poziomu aktywności fizycznej. Używa równania Mifflin-St Jeor, uznawanego za jedno z najdokładniejszych do obliczania podstawowej przemiany materii (BMR).",
+    "formulasTitle": "Użyte Wzory",
+    "mifflinFormula": "Mężczyźni: BMR = 10 × waga(kg) + 6,25 × wzrost(cm) - 5 × wiek + 5\nKobiety: BMR = 10 × waga(kg) + 6,25 × wzrost(cm) - 5 × wiek - 161",
+    "limitations": "Te szacunki są ogólnymi wytycznymi. Indywidualne zapotrzebowanie kaloryczne może się różnić w zależności od metabolizmu, składu ciała i innych czynników zdrowotnych. Skonsultuj się ze specjalistą ds. zdrowia w celu spersonalizowanego planu."
+  }
+}

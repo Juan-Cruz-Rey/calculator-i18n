@@ -1,0 +1,36 @@
+{
+  "title": "Kalkulator Dat",
+  "description": "Oblicz różnicę między datami i dodaj/odejmij dni",
+  "metaDescription": "Darmowy kalkulator dat - Oblicz dni, tygodnie, miesiące między datami. Dodaj lub odejmij dni od dowolnej daty.",
+  "form": {
+    "title": "Oblicz różnicę dat",
+    "startDateLabel": "Data początkowa",
+    "endDateLabel": "Data końcowa",
+    "addSubtractTitle": "Dodaj lub Odejmij Dni",
+    "dateLabel": "Data",
+    "daysLabel": "Liczba dni",
+    "daysPlaceholder": "Wprowadź liczbę dni",
+    "operation": "Operacja",
+    "add": "Dodaj dni",
+    "subtract": "Odejmij dni"
+  },
+  "results": {
+    "title": "Różnica Dat",
+    "difference": "Różnica",
+    "years": "lat",
+    "months": "miesięcy",
+    "days": "dni",
+    "totalDays": "Całkowicie dni",
+    "totalWeeks": "Całkowicie tygodni",
+    "totalMonths": "Całkowicie miesięcy",
+    "businessDays": "Dni robocze",
+    "weekends": "Weekendy",
+    "resultDate": "Data wynikowa"
+  },
+  "info": {
+    "title": "O Kalkulatorze Dat",
+    "description": "Ten kalkulator pomaga obliczyć różnicę między dwiema datami lub dodać/odjąć dni od konkretnej daty. Przydatne do planowania wydarzeń, obliczania terminów i zarządzania projektami.",
+    "features": "Funkcje:\n• Oblicz dni między datami\n• Dodaj lub odejmij dni od daty\n• Uwzględnij dni robocze\n• Licz tygodnie i miesiące\n• Uwzględnia lata przestępne",
+    "uses": "Typowe zastosowania:\n• Planowanie wydarzeń i terminów\n• Obliczanie okresów projektu\n• Śledzenie kamieni milowych\n• Zarządzanie urlopami\n• Obliczenia prawne i biznesowe"
+  }
+}

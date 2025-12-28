@@ -1,0 +1,31 @@
+{
+  "title": "Kalkulator Tempa Biegu",
+  "description": "Oblicz tempo biegu i prędkość",
+  "metaDescription": "Darmowy kalkulator tempa biegu - Oblicz tempo, prędkość i czas dla swoich biegów. Idealny dla biegaczy planujących treningi i wyścigi.",
+  "form": {
+    "title": "Wprowadź dane biegu",
+    "distanceLabel": "Dystans",
+    "distancePlaceholder": "Wprowadź dystans",
+    "timeLabel": "Czas",
+    "hoursPlaceholder": "Godziny",
+    "minutesPlaceholder": "Minuty",
+    "secondsPlaceholder": "Sekundy",
+    "paceLabel": "Tempo",
+    "paceMinutesPlaceholder": "Min",
+    "paceSecondsPlaceholder": "Sek"
+  },
+  "results": {
+    "title": "Twoje Wyniki Biegu",
+    "pace": "Tempo",
+    "speed": "Prędkość",
+    "time": "Czas",
+    "distance": "Dystans",
+    "splits": "Czasy pośrednie"
+  },
+  "info": {
+    "title": "O Tempie Biegu",
+    "description": "Tempo to czas potrzebny na przebiegnięcie określonego dystansu, zwykle wyrażany jako minuty na kilometr lub minuty na milę. Zrozumienie tempa pomoże Ci planować treningi i strategie wyścigowe.",
+    "usage": "Użyj tego kalkulatora do: planowania tempa treningowego, przewidywania czasów wyścigów, obliczania czasu ukończenia, lub analizowania wydajności biegu.",
+    "tips": "Pamiętaj, że tempo może się różnić w zależności od terenu, warunków pogodowych i poziomu zmęczenia. Zacznij zachowawczo i dostosuj na podstawie swojego samopoczucia podczas biegu."
+  }
+}

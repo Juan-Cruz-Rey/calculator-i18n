@@ -1,0 +1,31 @@
+{
+  "title": "Kalkulator BMR",
+  "description": "Oblicz swoją podstawową przemianę materii",
+  "metaDescription": "Darmowy kalkulator BMR - Oblicz swoją podstawową przemianę materii (BMR), liczbę kalorii, które Twój organizm spala w spoczynku.",
+  "form": {
+    "title": "Wprowadź swoje dane",
+    "ageLabel": "Wiek",
+    "agePlaceholder": "Wprowadź swój wiek",
+    "genderLabel": "Płeć",
+    "heightLabel": "Wzrost",
+    "heightPlaceholder": "Wprowadź swój wzrost",
+    "weightLabel": "Waga",
+    "weightPlaceholder": "Wprowadź swoją wagę"
+  },
+  "results": {
+    "title": "Twoja Podstawowa Przemiana Materii",
+    "mifflin": "Mifflin-St Jeor",
+    "harris": "Harris-Benedict (poprawiony)",
+    "katch": "Katch-McArdle",
+    "bodyFatLabel": "Procent tkanki tłuszczowej (dla Katch-McArdle)",
+    "bodyFatPlaceholder": "Opcjonalnie",
+    "calories": "kalorii/dzień"
+  },
+  "info": {
+    "title": "O Podstawowej Przemianie Materii",
+    "description": "Podstawowa Przemiana Materii (BMR) to liczba kalorii, które Twój organizm potrzebuje do utrzymania podstawowych funkcji życiowych w spoczynku. Obejmuje oddychanie, krążenie krwi, produkcję komórek i przetwarzanie składników odżywczych.",
+    "formulasTitle": "Równania BMR",
+    "formulasDescription": "Kalkulator używa trzech uznanych równań: Mifflin-St Jeor (najbardziej precyzyjny dla większości ludzi), Harris-Benedict (historyczny standard) i Katch-McArdle (wymaga procentu tkanki tłuszczowej, ale bardziej dokładny dla osób chudych).",
+    "usage": "Twoje BMR to punkt wyjścia dla obliczania dziennego zapotrzebowania kalorycznego. Pomnóż je przez współczynnik aktywności, aby znaleźć całkowite dzienne wydatki energii (TDEE)."
+  }
+}

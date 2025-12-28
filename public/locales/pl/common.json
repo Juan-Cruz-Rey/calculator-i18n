@@ -1,0 +1,40 @@
+{
+  "site": {
+    "title": "Kalkulatory Online",
+    "description": "Zbiór darmowych i łatwych w użyciu kalkulatorów"
+  },
+  "nav": {
+    "home": "Start",
+    "calculators": "Kalkulatory"
+  },
+  "common": {
+    "calculate": "Oblicz",
+    "reset": "Resetuj",
+    "result": "Wynik",
+    "age": "Wiek",
+    "gender": "Płeć",
+    "male": "Mężczyzna",
+    "female": "Kobieta",
+    "height": "Wzrost",
+    "weight": "Waga",
+    "years": "lat",
+    "week": "tydzień",
+    "search": "Szukaj kalkulatorów...",
+    "noResults": "Nie znaleziono kalkulatorów pasujących do wyszukiwania"
+  },
+  "units": {
+    "metric": "Metryczny",
+    "imperial": "Imperialny",
+    "cm": "cm",
+    "m": "m",
+    "km": "km",
+    "mi": "mile",
+    "yd": "jardy",
+    "kg": "kg",
+    "ft": "stopy",
+    "in": "cale",
+    "lbs": "funty",
+    "minPerKm": "min/km",
+    "minPerMi": "min/mila"
+  }
+}

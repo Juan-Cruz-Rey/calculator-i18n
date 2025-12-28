@@ -1,0 +1,31 @@
+{
+  "title": "Kalkulator Ciąży",
+  "description": "Śledź swoją ciążę tydzień po tygodniu",
+  "metaDescription": "Darmowy kalkulator ciąży - Oblicz termin porodu, aktualny tydzień ciąży i otrzymaj informacje o rozwoju dziecka przez cały okres ciąży.",
+  "form": {
+    "title": "Wprowadź dane",
+    "lmpLabel": "Pierwszy dzień ostatniej miesiączki",
+    "lmpHelper": "Wprowadź datę pierwszego dnia ostatniej miesiączki",
+    "conceptionLabel": "Data poczęcia",
+    "conceptionHelper": "Jeśli znasz datę poczęcia",
+    "dueDateLabel": "Termin porodu",
+    "dueDateHelper": "Jeśli znasz termin porodu"
+  },
+  "results": {
+    "title": "Twoja Ciąża",
+    "dueDate": "Termin porodu",
+    "currentWeek": "Aktualny tydzień",
+    "daysRemaining": "Pozostałe dni",
+    "trimester": "Trymestr",
+    "conceptionDate": "Przybliżona data poczęcia",
+    "first": "Pierwszy",
+    "second": "Drugi",
+    "third": "Trzeci"
+  },
+  "info": {
+    "title": "O Ciąży",
+    "description": "Ciąża trwa średnio 40 tygodni (280 dni) od pierwszego dnia ostatniej miesiączki. Jest podzielona na trzy trymestry, każdy z unikalnymi etapami rozwoju.",
+    "trimesters": "Pierwszy trymestr (tydzień 1-12): Rozwój głównych narządów. Drugi trymestr (tydzień 13-26): Szybki wzrost i rozwój. Trzeci trymestr (tydzień 27-40): Ostateczny wzrost i przygotowanie do porodu.",
+    "note": "Ta kalkulacja jest oszacowaniem. Tylko około 5% dzieci rodzi się dokładnie w terminie porodu. Większość rodzi się w ciągu dwóch tygodni przed lub po terminie."
+  }
+}

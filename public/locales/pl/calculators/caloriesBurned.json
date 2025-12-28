@@ -1,0 +1,45 @@
+{
+  "title": "Kalkulator Spalonych Kalorii",
+  "description": "Oblicz kalorie spalone podczas ćwiczeń",
+  "metaDescription": "Darmowy kalkulator spalonych kalorii - Oszacuj ile kalorii spalisz podczas różnych aktywności fizycznych na podstawie wagi i czasu trwania.",
+  "form": {
+    "title": "Wprowadź dane aktywności",
+    "weightLabel": "Waga",
+    "weightPlaceholder": "Wprowadź swoją wagę",
+    "activityLabel": "Rodzaj aktywności",
+    "durationLabel": "Czas trwania (minuty)",
+    "durationPlaceholder": "Wprowadź czas"
+  },
+  "activities": {
+    "walking": "Spacer (4 km/h)",
+    "walkingBrisk": "Szybki spacer (6 km/h)",
+    "jogging": "Jogging",
+    "running": "Bieganie (10 km/h)",
+    "cycling": "Jazda na rowerze (umiarkowana)",
+    "cyclingVigorous": "Jazda na rowerze (intensywna)",
+    "swimming": "Pływanie (umiarkowane)",
+    "swimmingVigorous": "Pływanie (intensywne)",
+    "yoga": "Joga",
+    "weightLifting": "Podnoszenie ciężarów",
+    "aerobics": "Aerobik",
+    "dancing": "Taniec",
+    "basketball": "Koszykówka",
+    "soccer": "Piłka nożna",
+    "tennis": "Tenis"
+  },
+  "results": {
+    "title": "Spalone Kalorie",
+    "caloriesBurned": "Całkowite spalone kalorie",
+    "caloriesPerMinute": "Kalorie na minutę",
+    "equivalents": "To odpowiada",
+    "burpees": "burpees",
+    "stairs": "pięter schodów",
+    "apples": "jabłek"
+  },
+  "info": {
+    "title": "O Spalonych Kaloriach",
+    "description": "Liczba spalonych kalorii podczas ćwiczeń zależy od wagi ciała, intensywności aktywności i czasu trwania. Ten kalkulator używa wartości MET (Metaboliczny Ekwiwalent Zadania) do oszacowania wydatku energii.",
+    "met": "Wartości MET reprezentują, ile energii wydatkujesz podczas aktywności w porównaniu do spoczynku. Wyższa wartość MET oznacza bardziej intensywną aktywność i więcej spalonych kalorii.",
+    "accuracy": "Te szacunki są przybliżone. Rzeczywiste spalone kalorie mogą się różnić w zależności od metabolizmu, poziomu sprawności, techniki ćwiczeń i innych czynników indywidualnych."
+  }
+}

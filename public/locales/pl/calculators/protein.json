@@ -1,0 +1,40 @@
+{
+  "title": "Kalkulator Białka",
+  "description": "Oblicz dzienne zapotrzebowanie na białko",
+  "metaDescription": "Darmowy kalkulator białka - Oblicz ile białka potrzebujesz dziennie na podstawie wagi, poziomu aktywności i celów fitness.",
+  "form": {
+    "title": "Wprowadź swoje dane",
+    "weightLabel": "Waga",
+    "weightPlaceholder": "Wprowadź swoją wagę",
+    "activityLabel": "Poziom Aktywności",
+    "goalLabel": "Cel Fitness"
+  },
+  "activity": {
+    "sedentary": "Siedzący tryb życia",
+    "light": "Lekka aktywność",
+    "moderate": "Umiarkowana aktywność",
+    "active": "Aktywny",
+    "veryActive": "Bardzo aktywny"
+  },
+  "goals": {
+    "maintain": "Utrzymanie wagi",
+    "lose": "Utrata wagi",
+    "gain": "Budowanie mięśni"
+  },
+  "results": {
+    "title": "Twoje Dzienne Zapotrzebowanie na Białko",
+    "proteinPerDay": "Białko dziennie",
+    "gramsPerKg": "g/kg masy ciała",
+    "caloriesFromProtein": "kalorii z białka",
+    "percentOfCalories": "% dziennych kalorii",
+    "meals": "W przeliczeniu na posiłki",
+    "perMeal": "na posiłek (3 posiłki)"
+  },
+  "info": {
+    "title": "O Białku",
+    "description": "Białko jest niezbędne do budowy i naprawy tkanek, wytwarzania enzymów i hormonów oraz utrzymania zdrowych mięśni, kości i skóry. Zapotrzebowanie na białko zależy od wagi ciała, poziomu aktywności i celów.",
+    "recommendations": "Ogólne zalecenia:\n• Siedzący tryb życia: 0,8 g/kg\n• Aktywny: 1,2-1,6 g/kg\n• Sportowcy wytrzymałościowi: 1,2-1,4 g/kg\n• Sportowcy siłowi: 1,6-2,2 g/kg\n• Utrata wagi: 1,6-2,4 g/kg",
+    "sources": "Dobre źródła białka:\n• Chude mięso i drób\n• Ryby i owoce morza\n• Jajka\n• Nabiał\n• Rośliny strączkowe (fasola, soczewica)\n• Orzechy i nasiona\n• Białka roślinne (tofu, tempeh)",
+    "timing": "Rozkładaj spożycie białka równomiernie na cały dzień. Staraj się spożywać 20-30 g białka na posiłek dla optymalnego wzrostu i regeneracji mięśni."
+  }
+}

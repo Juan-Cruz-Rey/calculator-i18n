@@ -1,0 +1,41 @@
+{
+  "title": "Kalkulator TDEE",
+  "description": "Oblicz całkowite dzienne wydatki energii",
+  "metaDescription": "Darmowy kalkulator TDEE - Oblicz całkowite dzienne wydatki energii na podstawie poziomu aktywności, aby poznać dzienne zapotrzebowanie kaloryczne.",
+  "form": {
+    "title": "Wprowadź swoje dane",
+    "ageLabel": "Wiek",
+    "agePlaceholder": "Wprowadź swój wiek",
+    "genderLabel": "Płeć",
+    "heightLabel": "Wzrost",
+    "heightPlaceholder": "Wprowadź swój wzrost",
+    "weightLabel": "Waga",
+    "weightPlaceholder": "Wprowadź swoją wagę",
+    "activityLabel": "Poziom Aktywności"
+  },
+  "activity": {
+    "sedentary": "Siedzący tryb życia (mało lub brak ćwiczeń)",
+    "light": "Lekka aktywność (ćwiczenia 1-3 dni/tydzień)",
+    "moderate": "Umiarkowana aktywność (ćwiczenia 3-5 dni/tydzień)",
+    "active": "Aktywny (ćwiczenia 6-7 dni/tydzień)",
+    "veryActive": "Bardzo aktywny (ciężkie ćwiczenia i praca fizyczna)"
+  },
+  "results": {
+    "title": "Twoje Całkowite Dzienne Wydatki Energii",
+    "tdee": "TDEE",
+    "bmr": "BMR",
+    "caloriesPerDay": "kalorii/dzień",
+    "maintenance": "Kalorie na utrzymanie wagi",
+    "weightLoss": "Utrata wagi",
+    "weightGain": "Przyrost wagi",
+    "mild": "Łagodna",
+    "moderate": "Umiarkowana",
+    "extreme": "Ekstremalna"
+  },
+  "info": {
+    "title": "O TDEE",
+    "description": "Całkowite Dzienne Wydatki Energii (TDEE) to szacunkowa liczba kalorii spalanych dziennie, uwzględniając Twoją podstawową przemianę materii (BMR) i poziom aktywności fizycznej.",
+    "calculation": "TDEE oblicza się mnożąc BMR przez współczynnik aktywności odpowiadający Twojemu poziomowi codziennej aktywności.",
+    "usage": "Znajomość TDEE pomoże Ci zarządzać wagą: jedz mniej niż TDEE, aby schudnąć, więcej, aby przybrać na wadze, lub mniej więcej tyle samo, aby utrzymać wagę."
+  }
+}

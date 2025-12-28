@@ -1,0 +1,42 @@
+{
+  "title": "Kalkulator Tkanki Tłuszczowej",
+  "description": "Oblicz procent tkanki tłuszczowej",
+  "metaDescription": "Darmowy kalkulator tkanki tłuszczowej - Oszacuj procent tkanki tłuszczowej w organizmie używając metody US Navy lub metody pomiarów skinfold.",
+  "form": {
+    "title": "Wprowadź swoje pomiary",
+    "ageLabel": "Wiek",
+    "agePlaceholder": "Wprowadź swój wiek",
+    "genderLabel": "Płeć",
+    "heightLabel": "Wzrost",
+    "heightPlaceholder": "Wprowadź swój wzrost",
+    "weightLabel": "Waga",
+    "weightPlaceholder": "Wprowadź swoją wagę",
+    "neckLabel": "Obwód szyi",
+    "neckPlaceholder": "Zmierz obwód szyi",
+    "waistLabel": "Obwód talii",
+    "waistPlaceholder": "Zmierz obwód talii",
+    "hipLabel": "Obwód bioder",
+    "hipPlaceholder": "Zmierz obwód bioder (tylko kobiety)"
+  },
+  "results": {
+    "title": "Twoje Wyniki",
+    "bodyFat": "Procent tkanki tłuszczowej",
+    "category": "Kategoria",
+    "fatMass": "Masa tłuszczu",
+    "leanMass": "Masa beztłuszczowa",
+    "categories": {
+      "essential": "Tłuszcz niezbędny",
+      "athletes": "Sportowcy",
+      "fitness": "Fitness",
+      "average": "Przeciętna",
+      "obese": "Otyłość"
+    }
+  },
+  "info": {
+    "title": "O Tkance Tłuszczowej",
+    "description": "Procent tkanki tłuszczowej w organizmie to całkowita masa tłuszczu podzielona przez całkowitą masę ciała, wyrażona w procentach. Zawiera tłuszcz niezbędny i tłuszcz magazynowy.",
+    "methodTitle": "Metoda US Navy",
+    "methodDescription": "Ten kalkulator używa metody US Navy, która szacuje procent tkanki tłuszczowej na podstawie pomiarów obwodu. Choć nie jest tak dokładna jak metody takie jak skanowanie DEXA, dostarcza rozsądnego oszacowania.",
+    "limitations": "Procent tkanki tłuszczowej może się różnić w zależności od wielu czynników. Ta metoda jest oszacowaniem i może nie być dokładna dla wszystkich typów ciała. W celu najbardziej precyzyjnego pomiaru rozważ profesjonalne metody takie jak DEXA, ważenie hydrostatyczne lub skaner BodPod."
+  }
+}
