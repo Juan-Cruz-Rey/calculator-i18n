@@ -23,8 +23,9 @@ import type { GetStaticPaths } from 'astro';
 import { getCollection } from 'astro:content';
 import BaseLayout from '@/layouts/BaseLayout.astro';
 import { languages, defaultLocale, type Locale } from '@/config/languages';
-import { calculators, getCalculatorComponentName, type CalculatorId } from '@/config/calculators';
+import { calculators, type CalculatorId } from '@/config/calculators';
 import { getSlug } from '@/config/routes';
+import { getCalculatorComponent } from '@/utils/calculatorComponents';
 
 export const getStaticPaths = (async () => {
   const paths = [];
@@ -81,17 +82,8 @@ try {
   // No MDX content found - this is expected, will use fallback template
 }
 
-// Dynamic import of the calculator component
-const componentName = getCalculatorComponentName(calculatorId);
-
-let CalculatorComponent;
-try {
-  const module = await import(`@/components/calculators/${componentName}.astro`);
-  CalculatorComponent = module.default;
-} catch (error) {
-  // Component not found - this is expected for calculators without MDX content yet
-  // Will use fallback template instead
-}
+// Get the calculator component from the static map
+const CalculatorComponent = getCalculatorComponent(calculatorId);
 
 // Fallback to loading translations from JSON if no MDX content
 let title = '';
