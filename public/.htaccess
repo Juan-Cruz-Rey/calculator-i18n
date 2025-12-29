@@ -8,8 +8,10 @@ RewriteCond %{HTTP_HOST} ^www\.calculatoria\.net$ [NC]
 RewriteRule ^(.*)$ https://calculatoria.net/$1 [R=301,L]
 
 # Asegurar trailing slash (Astro usa trailing slash)
+# Excluir archivos estáticos (imágenes, iconos, manifests, etc.)
 RewriteCond %{REQUEST_FILENAME} !-f
 RewriteCond %{REQUEST_URI} !/$
+RewriteCond %{REQUEST_URI} !\.(jpg|jpeg|gif|png|svg|webp|ico|json|xml|txt|css|js|woff|woff2|ttf|eot)$ [NC]
 RewriteRule ^(.*[^/])$ /$1/ [R=301,L]
 
 # Performance: Habilitar compresión
@@ -20,6 +22,7 @@ RewriteRule ^(.*[^/])$ /$1/ [R=301,L]
 # Performance: Cache control
 <IfModule mod_expires.c>
   ExpiresActive On
+
   # Imágenes
   ExpiresByType image/jpg "access plus 1 year"
   ExpiresByType image/jpeg "access plus 1 year"
@@ -27,17 +30,57 @@ RewriteRule ^(.*[^/])$ /$1/ [R=301,L]
   ExpiresByType image/png "access plus 1 year"
   ExpiresByType image/svg+xml "access plus 1 year"
   ExpiresByType image/webp "access plus 1 year"
+  ExpiresByType image/x-icon "access plus 1 year"
 
   # CSS y JavaScript
   ExpiresByType text/css "access plus 1 month"
   ExpiresByType application/javascript "access plus 1 month"
+  ExpiresByType text/javascript "access plus 1 month"
 
   # Fuentes
   ExpiresByType font/woff2 "access plus 1 year"
   ExpiresByType font/woff "access plus 1 year"
+  ExpiresByType font/ttf "access plus 1 year"
+  ExpiresByType font/eot "access plus 1 year"
+  ExpiresByType application/font-woff2 "access plus 1 year"
+
+  # Manifests y archivos de configuración
+  ExpiresByType application/manifest+json "access plus 1 year"
+  ExpiresByType application/json "access plus 1 week"
+  ExpiresByType text/xml "access plus 1 week"
 
   # HTML (no cachear)
   ExpiresByType text/html "access plus 0 seconds"
+</IfModule>
+
+# Cache-Control headers adicionales para iconos y assets
+<IfModule mod_headers.c>
+  # Iconos y manifests - cache por 1 año
+  <FilesMatch "\.(ico|png|svg|webmanifest)$">
+    Header set Cache-Control "public, max-age=31536000, immutable"
+  </FilesMatch>
+
+  # Imágenes - cache por 1 año
+  <FilesMatch "\.(jpg|jpeg|gif|webp)$">
+    Header set Cache-Control "public, max-age=31536000"
+  </FilesMatch>
+
+  # CSS y JS - cache por 1 mes
+  <FilesMatch "\.(css|js)$">
+    Header set Cache-Control "public, max-age=2592000"
+  </FilesMatch>
+
+  # Fuentes - cache por 1 año
+  <FilesMatch "\.(woff|woff2|ttf|eot)$">
+    Header set Cache-Control "public, max-age=31536000, immutable"
+  </FilesMatch>
+
+  # HTML - no cachear
+  <FilesMatch "\.html$">
+    Header set Cache-Control "no-cache, no-store, must-revalidate"
+    Header set Pragma "no-cache"
+    Header set Expires "0"
+  </FilesMatch>
 </IfModule>
 
 # Seguridad: Prevenir acceso a archivos sensibles
