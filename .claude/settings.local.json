@@ -9,7 +9,17 @@
       "Bash(ls:*)",
       "Bash(powershell -Command \"Get-Content ''public/locales/tr/calculators/gfr.json'' | Select-String '':\\s*\"\"\"\"'' | Measure-Object\")",
       "Bash(for file in public/locales/de/calculators/{gfr,bac,oneRepMax,fatIntake,weightWatchers}.json)",
-      "Bash(do echo \"=== $file ===\")"
+      "Bash(do echo \"=== $file ===\")",
+      "Bash(dir /s /b \"C:\\Users\\JuanC\\OneDrive\\Desktop\\calculator-i18n\\src\\pages\")",
+      "Bash(for lang in de fr hi it nl ru sv tr)",
+      "Bash(done)",
+      "Bash(git checkout:*)",
+      "Bash(npm install:*)",
+      "Bash(npm run astro:*)",
+      "Bash(npm run build:*)",
+      "Bash(npm run dev:*)",
+      "Bash(curl:*)",
+      "Bash(git add:*)"
     ],
     "deny": [],
     "ask": []

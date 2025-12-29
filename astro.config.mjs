@@ -2,12 +2,14 @@ import { defineConfig } from 'astro/config';
 import astroI18next from 'astro-i18next';
 import sitemap from '@astrojs/sitemap';
 import indexNow from 'astro-indexnow';
+import mdx from '@astrojs/mdx';
 
 // https://astro.build/config
 export default defineConfig({
   site: 'https://calculatoria.net',
   trailingSlash: 'always',
   integrations: [
+    mdx(),
     astroI18next(),
     sitemap({
       // Generar sitemap con todas las URLs de todos los idiomas

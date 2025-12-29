@@ -1,0 +1,252 @@
+---
+/**
+ * Dynamic routing for all calculator pages
+ *
+ * This file handles ALL calculator URLs across all languages using Astro's
+ * [...slug] pattern. It generates static paths for every calculator in every
+ * supported language, then renders the appropriate MDX content.
+ *
+ * URL Examples:
+ * - Spanish (default): /calculadoras/imc/
+ * - English: /en/calculators/bmi/
+ * - German: /de/rechner/bmi/
+ * - French: /fr/calculatrices/imc/
+ *
+ * Benefits:
+ * - Single source of truth for calculator pages
+ * - Adding a new calculator = update config + create MDX files
+ * - Adding a new language = update config + create MDX files
+ * - SEO-preserved: URLs remain identical to current structure
+ */
+
+import type { GetStaticPaths } from 'astro';
+import { getCollection } from 'astro:content';
+import BaseLayout from '@/layouts/BaseLayout.astro';
+import { languages, defaultLocale, type Locale } from '@/config/languages';
+import { calculators, getCalculatorComponentName, type CalculatorId } from '@/config/calculators';
+import { getSlug } from '@/config/routes';
+
+export const getStaticPaths = (async () => {
+  const paths = [];
+
+  // Generate paths for all calculators in all languages
+  for (const lang of Object.keys(languages) as Locale[]) {
+    const langConfig = languages[lang];
+
+    for (const calculatorId of calculators) {
+      const slug = getSlug(calculatorId, lang);
+
+      // Build the full path based on language
+      let fullPath: string;
+      if (lang === defaultLocale) {
+        // Spanish (default) has no language prefix
+        fullPath = `${langConfig.folder}/${slug}`;
+      } else {
+        // Other languages include language code
+        fullPath = `${lang}/${langConfig.folder}/${slug}`;
+      }
+
+      paths.push({
+        params: { slug: fullPath },
+        props: {
+          lang,
+          calculatorId,
+        }
+      });
+    }
+  }
+
+  return paths;
+}) satisfies GetStaticPaths;
+
+// Get props from getStaticPaths
+const { lang, calculatorId } = Astro.props;
+
+// Try to load the MDX content for this calculator in this language
+const entryId = `${lang}/${calculatorId}`;
+let entry;
+let Content;
+let frontmatter;
+
+try {
+  const allEntries = await getCollection('calculators');
+  entry = allEntries.find(e => e.id === `${lang}/${calculatorId}.mdx`);
+
+  if (entry) {
+    const rendered = await entry.render();
+    Content = rendered.Content;
+    frontmatter = entry.data;
+  }
+} catch (error) {
+  console.warn(`No MDX content found for ${entryId}, will render fallback`);
+}
+
+// Dynamic import of the calculator component
+const componentName = getCalculatorComponentName(calculatorId);
+
+let CalculatorComponent;
+try {
+  const module = await import(`@/components/calculators/${componentName}.astro`);
+  CalculatorComponent = module.default;
+} catch (error) {
+  console.error(`Calculator component not found: ${componentName}`, error);
+}
+
+// Fallback to loading translations from JSON if no MDX content
+let title = '';
+let description = '';
+
+if (frontmatter) {
+  title = frontmatter.title;
+  description = frontmatter.metaDescription;
+} else {
+  // Fallback: try to load from translation files
+  try {
+    const translations = await import(`../../public/locales/${lang}/calculators/${calculatorId}.json`);
+    title = translations.title || `${calculatorId} Calculator`;
+    description = translations.metaDescription || translations.description || '';
+  } catch (error) {
+    title = `${calculatorId} Calculator`;
+    description = `${calculatorId} calculator`;
+  }
+}
+---
+
+<BaseLayout
+  title={title}
+  description={description}
+  lang={lang}
+  calculator={calculatorId}
+>
+  <div class="container">
+    {frontmatter && Content ? (
+      <!-- Render MDX content if available -->
+      <div class="calculator-page">
+        {frontmatter.showCalculatorFirst && CalculatorComponent && (
+          <div class="calculator-wrapper">
+            <CalculatorComponent lang={lang} />
+          </div>
+        )}
+
+        <div class="content-wrapper">
+          <Content />
+        </div>
+
+        {!frontmatter.showCalculatorFirst && !frontmatter.hideCalculator && CalculatorComponent && (
+          <div class="calculator-wrapper">
+            <CalculatorComponent lang={lang} />
+          </div>
+        )}
+      </div>
+    ) : (
+      <!-- Fallback: render simple layout if no MDX content -->
+      <div class="calculator-page-fallback">
+        <div class="page-header">
+          <h1>{title}</h1>
+          {description && <p class="page-description">{description}</p>}
+        </div>
+
+        {CalculatorComponent && (
+          <div class="calculator-wrapper">
+            <CalculatorComponent lang={lang} />
+          </div>
+        )}
+      </div>
+    )}
+  </div>
+</BaseLayout>
+
+<style>
+  .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 2rem 1rem;
+  }
+
+  .calculator-page,
+  .calculator-page-fallback {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+  }
+
+  .content-wrapper {
+    line-height: 1.6;
+  }
+
+  .content-wrapper :global(h1) {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+    color: #1a202c;
+  }
+
+  .content-wrapper :global(h2) {
+    font-size: 2rem;
+    margin-top: 2rem;
+    margin-bottom: 1rem;
+    color: #2d3748;
+  }
+
+  .content-wrapper :global(h3) {
+    font-size: 1.5rem;
+    margin-top: 1.5rem;
+    margin-bottom: 0.75rem;
+    color: #4a5568;
+  }
+
+  .content-wrapper :global(p) {
+    margin-bottom: 1rem;
+    color: #4a5568;
+  }
+
+  .content-wrapper :global(ul),
+  .content-wrapper :global(ol) {
+    margin-bottom: 1rem;
+    padding-left: 1.5rem;
+  }
+
+  .content-wrapper :global(li) {
+    margin-bottom: 0.5rem;
+  }
+
+  .content-wrapper :global(table) {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 1rem;
+  }
+
+  .content-wrapper :global(th),
+  .content-wrapper :global(td) {
+    padding: 0.75rem;
+    border: 1px solid #e2e8f0;
+    text-align: left;
+  }
+
+  .content-wrapper :global(th) {
+    background-color: #f7fafc;
+    font-weight: 600;
+  }
+
+  .page-header {
+    margin-bottom: 2rem;
+  }
+
+  .page-header h1 {
+    font-size: 2.5rem;
+    margin-bottom: 0.5rem;
+    color: #1a202c;
+  }
+
+  .page-description {
+    font-size: 1.125rem;
+    color: #4a5568;
+    line-height: 1.6;
+  }
+
+  .calculator-wrapper {
+    background-color: #f7fafc;
+    padding: 2rem;
+    border-radius: 0.5rem;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+  }
+</style>
