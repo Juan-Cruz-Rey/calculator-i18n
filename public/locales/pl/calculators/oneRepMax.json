@@ -1,0 +1,29 @@
+{
+  "title": "Kalkulator 1RM",
+  "description": "Oblicz swoje maksimum jednego powtórzenia (1RM) w podnoszeniu ciężarów",
+  "metaDescription": "Darmowy Kalkulator 1RM - Oszacuj swoją maksymalną zdolność podnoszenia używając 7 sprawdzonych formuł w tym Epley, Brzycki i więcej.",
+  "form": {
+    "title": "Wprowadź szczegóły swojego podnoszenia",
+    "weightLabel": "Podniesiony Ciężar",
+    "weightPlaceholder": "Wprowadź podniesiony ciężar",
+    "repsLabel": "Wykonane Powtórzenia",
+    "repsPlaceholder": "Wprowadź liczbę powtórzeń",
+    "repsUnit": "powt"
+  },
+  "results": {
+    "title": "Twoje 1RM",
+    "average": "Średnie 1RM",
+    "epley": "Formuła Epley",
+    "brzycki": "Formuła Brzycki",
+    "lander": "Formuła Lander",
+    "lombardi": "Formuła Lombardi",
+    "mayhew": "Formuła Mayhew",
+    "oconner": "Formuła O'Conner",
+    "wathan": "Formuła Wathan"
+  },
+  "info": {
+    "title": "O 1RM",
+    "description": "Maksimum Jednego Powtórzenia (1RM) to maksymalna waga, którą możesz podnieść podczas jednego powtórzenia danego ćwiczenia. Ten kalkulator używa siedmiu różnych formuł do oszacowania twojego 1RM na podstawie podniesionej wagi i liczby wykonanych powtórzeń.",
+    "note": "Te formuły są najbardziej dokładne dla 1-10 powtórzeń. Zawsze rozgrzej się odpowiednio i użyj asekurującego podczas prób maksymalnych podnoszeń."
+  }
+}

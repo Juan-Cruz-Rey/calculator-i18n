@@ -1,0 +1,68 @@
+{
+  "title": "Kalkulator GFR",
+  "metaTitle": "Kalkulator GFR - Oszacuj Funkcję Nerek (eGFR)",
+  "metaDescription": "Oblicz szacowany współczynnik przesączania kłębuszkowego (eGFR) za pomocą równania CKD-EPI. Oceń funkcję nerek i stadium CKD na podstawie wieku, płci i kreatyniny w surowicy.",
+  "description": "Oblicz szacowany współczynnik przesączania kłębuszkowego (eGFR), aby ocenić funkcję nerek. Ten kalkulator wykorzystuje równanie CKD-EPI, najdokładniejszą metodę szacowania funkcji nerek.",
+
+  "inputs": {
+    "age": "Wiek",
+    "ageHelp": "Wprowadź swój wiek (18-120 lat)",
+    "gender": "Płeć",
+    "male": "Mężczyzna",
+    "female": "Kobieta",
+    "serumCreatinine": "Kreatynina w Surowicy",
+    "creatinineHelp": "Wprowadź poziom kreatyniny w surowicy z badania krwi",
+    "equation": "Równanie",
+    "equation2021": "CKD-EPI 2021 (bez rasy, zalecane)",
+    "equation2009": "CKD-EPI 2009 (z rasą, starsze)",
+    "equationHelp": "Równanie z 2021 roku jest zalecane, ponieważ nie używa rasy jako czynnika",
+    "race": "Rasa",
+    "africanAmerican": "Afroamerykanin",
+    "raceHelp": "Dotyczy tylko równania CKD-EPI 2009"
+  },
+
+  "calculate": "Oblicz GFR",
+
+  "results": {
+    "title": "Twoje Wyniki",
+    "gfrValue": "eGFR",
+    "stage": "Stadium CKD",
+    "interpretation": "Interpretacja",
+    "equation": "Użyte Równanie"
+  },
+
+  "stageInfo": {
+    "title": "Stadia Przewlekłej Choroby Nerek (CKD)",
+    "stage1": "Stadium 1 (GFR ≥90):",
+    "stage1Desc": "Normalna lub wysoka funkcja nerek",
+    "stage2": "Stadium 2 (GFR 60-89):",
+    "stage2Desc": "Nieznacznie obniżona funkcja nerek",
+    "stage3a": "Stadium 3a (GFR 45-59):",
+    "stage3aDesc": "Lekko do umiarkowanie obniżona funkcja nerek",
+    "stage3b": "Stadium 3b (GFR 30-44):",
+    "stage3bDesc": "Umiarkowanie do znacznie obniżona funkcja nerek",
+    "stage4": "Stadium 4 (GFR 15-29):",
+    "stage4Desc": "Poważnie obniżona funkcja nerek",
+    "stage5": "Stadium 5 (GFR <15):",
+    "stage5Desc": "Niewydolność nerek (konieczna dializa lub przeszczep)"
+  },
+
+  "disclaimer": {
+    "title": "Zastrzeżenie Medyczne",
+    "text": "Ten kalkulator służy wyłącznie celom informacyjnym i nie powinien zastępować profesjonalnej porady medycznej. Zawsze konsultuj się z lekarzem w celu właściwej diagnozy i leczenia chorób nerek. Szacunki GFR mogą być mniej dokładne w niektórych populacjach."
+  },
+
+  "about": {
+    "title": "O Kalkulatorze GFR",
+    "description": "Kalkulator współczynnika przesączania kłębuszkowego (GFR) szacuje, jak dobrze nerki filtrują odpady z krwi. Jest to kluczowy wskaźnik zdrowia nerek i służy do wykrywania i monitorowania przewlekłej choroby nerek (CKD).",
+    "whatIsGFR": "Co to jest GFR?",
+    "gfrExplanation": "GFR mierzy, ile krwi przepływa przez kłębuszki (małe filtry w nerkach) każdej minuty. Normalny GFR wynosi 90 lub więcej. GFR poniżej 60 przez trzy miesiące lub dłużej wskazuje na przewlekłą chorobę nerek. Im niższy GFR, tym gorsza funkcja nerek.",
+    "ckdEpiEquation": "Równanie CKD-EPI",
+    "equationExplanation": "Równanie CKD-EPI (Chronic Kidney Disease Epidemiology Collaboration) to najczęściej stosowana metoda szacowania GFR. Wersja z 2021 roku usunęła rasę jako czynnik, czyniąc ją bardziej sprawiedliwą. Wykorzystuje wiek, płeć i poziom kreatyniny w surowicy do szacowania funkcji nerek.",
+    "importantNotes": "Ważne Uwagi",
+    "note1": "Ten kalkulator jest najbardziej dokładny dla osób dorosłych w wieku 18 lat i starszych",
+    "note2": "Wyniki mogą być mniej dokładne u osób o ekstremalnych rozmiarach ciała, z ciężkim niedożywieniem lub chorobami mięśni",
+    "note3": "Pojedynczy wynik GFR nie wystarcza do zdiagnozowania choroby nerek - ważne jest monitorowanie w czasie",
+    "note4": "Inne czynniki, takie jak białko w moczu i uszkodzenie nerek, również określają stadium CKD"
+  }
+}

@@ -1,0 +1,69 @@
+{
+  "title": "Calculadora de Alcoholemia",
+  "metaDescription": "Calcula tu concentración de alcohol en sangre (BAC) según las bebidas consumidas, peso, género y tiempo. Estima el nivel de deterioro y el tiempo hasta estar sobrio.",
+  "disclaimer": {
+    "title": "Aviso Importante",
+    "text": "Esta calculadora solo proporciona estimaciones. El nivel de alcoholemia varía según muchos factores. Nunca conduzcas bajo los efectos del alcohol. Los límites legales varían según la jurisdicción. Consulta las leyes locales y siempre actúa con precaución."
+  },
+  "weight": {
+    "label": "Tu Peso"
+  },
+  "gender": {
+    "label": "Género",
+    "male": "Hombre",
+    "female": "Mujer"
+  },
+  "drinkType": {
+    "label": "Tipo de Bebida",
+    "beer": "Cerveza (355 ml, 5% alcohol)",
+    "wine": "Vino (150 ml, 12% alcohol)",
+    "liquor": "Licor/Destilados (45 ml, 40% alcohol)",
+    "custom": "Personalizado"
+  },
+  "drinkVolume": {
+    "label": "Volumen por Bebida"
+  },
+  "alcoholContent": {
+    "label": "Contenido de Alcohol (% vol.)"
+  },
+  "drinks": {
+    "label": "Número de Bebidas"
+  },
+  "hours": {
+    "label": "Horas Desde que Empezaste a Beber"
+  },
+  "results": {
+    "title": "Tus Resultados",
+    "bac": "Concentración de Alcohol en Sangre",
+    "impairmentLevel": "Nivel de Deterioro",
+    "timeUntilSober": "Tiempo Hasta Estar Sobrio",
+    "legalStatus": "Estado Legal",
+    "descriptionTitle": "Descripción del Deterioro"
+  },
+  "legalDisclaimer": {
+    "title": "Aviso Legal",
+    "text": "Esta calculadora es solo para fines educativos. No confíes en ella para determinar si puedes conducir legalmente. Los límites legales de alcoholemia varían según la jurisdicción (0.05% en España, 0.03% para conductores noveles y profesionales, 0.00% en algunos países). Siempre usa un conductor designado o transporte alternativo si has bebido."
+  },
+  "info": {
+    "title": "Acerca de la Alcoholemia",
+    "description": "La concentración de alcohol en sangre (BAC o alcoholemia) es una medida de la concentración de alcohol en tu torrente sanguíneo. Se expresa como porcentaje - por ejemplo, 0.05% significa 0.05 gramos de alcohol por 100 mililitros de sangre.",
+    "howItWorks": "Cómo Funciona Esta Calculadora",
+    "formula": "Esta calculadora usa la fórmula de Widmark para estimar la alcoholemia según el alcohol consumido, peso corporal, género y tiempo transcurrido. La fórmula tiene en cuenta la tasa de metabolización del alcohol (aproximadamente 0.015% de disminución por hora).",
+    "impairmentLevelsTitle": "Niveles de Deterioro",
+    "levels": {
+      "minimal": "Efectos mínimos, ligera elevación del estado de ánimo, cambios sutiles en el comportamiento",
+      "mild": "Deterioro leve, relajación, coordinación reducida, inhibiciones reducidas",
+      "moderate": "Deterioro moderado, tiempo de reacción reducido, juicio afectado, dificultad para concentrarse",
+      "significant": "Deterioro significativo, dificultad para caminar y mantener el equilibrio, habla arrastrada, mala toma de decisiones",
+      "severe": "Deterioro severo, riesgo de intoxicación etílica, pérdida de conciencia, condición potencialmente mortal"
+    },
+    "factorsTitle": "Factores que Afectan la Alcoholemia",
+    "factors": {
+      "weight": "Peso corporal - las personas más pesadas típicamente tienen niveles más bajos con la misma cantidad de alcohol",
+      "gender": "Género - las mujeres típicamente alcanzan niveles más altos que los hombres con la misma cantidad de alcohol",
+      "time": "Tiempo - el cuerpo metaboliza el alcohol aproximadamente a 0.015% por hora",
+      "food": "Consumo de alimentos - comer antes o mientras bebes ralentiza la absorción del alcohol",
+      "metabolism": "Metabolismo individual - varía según la genética, medicamentos y condiciones de salud"
+    }
+  }
+}

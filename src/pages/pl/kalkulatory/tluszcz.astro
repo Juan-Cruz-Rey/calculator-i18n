@@ -1,20 +1,20 @@
 ---
 import BaseLayout from '@/layouts/BaseLayout.astro';
-import BodyFatCalculator from '@/components/calculators/BodyFatCalculator.astro';
+import FatIntakeCalculator from '@/components/calculators/FatIntakeCalculator.astro';
 import { t } from '@/utils/i18n';
 
-const title = t('bodyFat.title', 'pl') + ' - ' + t('site.title', 'pl');
-const description = t('bodyFat.metaDescription', 'pl');
+const title = t('fatIntake.title', 'pl') + ' - ' + t('site.title', 'pl');
+const description = t('fatIntake.metaDescription', 'pl');
 ---
 
-<BaseLayout title={title} description={description} lang="pl" calculator="bodyFat">
+<BaseLayout title={title} description={description} lang="pl" calculator="fatIntake">
   <div class="container">
     <div class="page-header">
-      <h1>{t('bodyFat.title', 'pl')}</h1>
-      <p class="page-description">{t('bodyFat.description', 'pl')}</p>
+      <h1>{t('fatIntake.title', 'pl')}</h1>
+      <p class="page-description">{t('fatIntake.description', 'pl')}</p>
     </div>
 
-    <BodyFatCalculator lang="pl" />
+    <FatIntakeCalculator lang="pl" />
   </div>
 </BaseLayout>
 

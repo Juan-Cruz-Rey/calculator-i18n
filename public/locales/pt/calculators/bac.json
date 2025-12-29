@@ -1,0 +1,69 @@
+{
+  "title": "Calculadora de Alcoolemia",
+  "metaDescription": "Calcule sua concentração de álcool no sangue (BAC) com base nas bebidas consumidas, peso, sexo e tempo. Estime o nível de comprometimento e o tempo até ficar sóbrio.",
+  "disclaimer": {
+    "title": "Aviso Importante",
+    "text": "Esta calculadora fornece apenas estimativas. A alcoolemia varia com base em muitos fatores. Nunca dirija sob efeito de álcool. Os limites legais variam por jurisdição. Consulte as leis locais e sempre aja com cautela."
+  },
+  "weight": {
+    "label": "Seu Peso"
+  },
+  "gender": {
+    "label": "Sexo",
+    "male": "Masculino",
+    "female": "Feminino"
+  },
+  "drinkType": {
+    "label": "Tipo de Bebida",
+    "beer": "Cerveja (355 ml, 5% álcool)",
+    "wine": "Vinho (150 ml, 12% álcool)",
+    "liquor": "Destilados (45 ml, 40% álcool)",
+    "custom": "Personalizado"
+  },
+  "drinkVolume": {
+    "label": "Volume por Bebida"
+  },
+  "alcoholContent": {
+    "label": "Teor Alcoólico (% vol.)"
+  },
+  "drinks": {
+    "label": "Número de Bebidas"
+  },
+  "hours": {
+    "label": "Horas Desde que Começou a Beber"
+  },
+  "results": {
+    "title": "Seus Resultados",
+    "bac": "Concentração de Álcool no Sangue",
+    "impairmentLevel": "Nível de Comprometimento",
+    "timeUntilSober": "Tempo Até Ficar Sóbrio",
+    "legalStatus": "Status Legal",
+    "descriptionTitle": "Descrição do Comprometimento"
+  },
+  "legalDisclaimer": {
+    "title": "Aviso Legal",
+    "text": "Esta calculadora é apenas para fins educacionais. Não confie nela para determinar se você pode dirigir legalmente. Os limites legais de alcoolemia variam por jurisdição (0.05% no Brasil, 0.00% para tolerância zero). Sempre use um motorista designado ou transporte alternativo se você bebeu."
+  },
+  "info": {
+    "title": "Sobre a Alcoolemia",
+    "description": "A concentração de álcool no sangue (BAC) é uma medida da concentração de álcool em sua corrente sanguínea. É expressa como porcentagem - por exemplo, 0.05% significa 0.05 gramas de álcool por 100 mililitros de sangue.",
+    "howItWorks": "Como Esta Calculadora Funciona",
+    "formula": "Esta calculadora usa a fórmula de Widmark para estimar a alcoolemia com base no álcool consumido, peso corporal, sexo e tempo decorrido. A fórmula considera a taxa de metabolização do álcool (aproximadamente 0.015% de diminuição por hora).",
+    "impairmentLevelsTitle": "Níveis de Comprometimento",
+    "levels": {
+      "minimal": "Efeitos mínimos, leve elevação do humor, mudanças sutis no comportamento",
+      "mild": "Comprometimento leve, relaxamento, coordenação reduzida, inibições reduzidas",
+      "moderate": "Comprometimento moderado, tempo de reação reduzido, julgamento prejudicado, dificuldade de concentração",
+      "significant": "Comprometimento significativo, dificuldade para andar e equilibrar, fala arrastada, má tomada de decisões",
+      "severe": "Comprometimento severo, risco de intoxicação alcoólica, perda de consciência, condição potencialmente fatal"
+    },
+    "factorsTitle": "Fatores que Afetam a Alcoolemia",
+    "factors": {
+      "weight": "Peso corporal - pessoas mais pesadas geralmente têm níveis mais baixos com a mesma quantidade de álcool",
+      "gender": "Sexo - mulheres geralmente atingem níveis mais altos que homens com a mesma quantidade de álcool",
+      "time": "Tempo - o corpo metaboliza o álcool a aproximadamente 0.015% por hora",
+      "food": "Consumo de alimentos - comer antes ou enquanto bebe retarda a absorção do álcool",
+      "metabolism": "Metabolismo individual - varia com base na genética, medicamentos e condições de saúde"
+    }
+  }
+}

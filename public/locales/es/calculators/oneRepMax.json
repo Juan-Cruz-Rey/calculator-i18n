@@ -1,0 +1,29 @@
+{
+  "title": "Calculadora de 1RM",
+  "description": "Calcula tu máximo de una repetición (1RM) para levantamiento de pesas",
+  "metaDescription": "Calculadora de 1RM Gratis - Estima tu capacidad máxima de levantamiento usando 7 fórmulas probadas incluyendo Epley, Brzycki y más.",
+  "form": {
+    "title": "Ingresa los detalles de tu levantamiento",
+    "weightLabel": "Peso Levantado",
+    "weightPlaceholder": "Ingresa el peso levantado",
+    "repsLabel": "Repeticiones Realizadas",
+    "repsPlaceholder": "Ingresa el número de repeticiones",
+    "repsUnit": "reps"
+  },
+  "results": {
+    "title": "Tu 1RM",
+    "average": "Promedio 1RM",
+    "epley": "Fórmula Epley",
+    "brzycki": "Fórmula Brzycki",
+    "lander": "Fórmula Lander",
+    "lombardi": "Fórmula Lombardi",
+    "mayhew": "Fórmula Mayhew",
+    "oconner": "Fórmula O'Conner",
+    "wathan": "Fórmula Wathan"
+  },
+  "info": {
+    "title": "Acerca de 1RM",
+    "description": "El Máximo de Una Repetición (1RM) es la cantidad máxima de peso que puedes levantar para una sola repetición de un ejercicio dado. Esta calculadora usa siete fórmulas diferentes para estimar tu 1RM basado en el peso levantado y el número de repeticiones realizadas.",
+    "note": "Estas fórmulas son más precisas para 1-10 repeticiones. Siempre calienta adecuadamente y usa un ayudante al intentar levantamientos máximos."
+  }
+}

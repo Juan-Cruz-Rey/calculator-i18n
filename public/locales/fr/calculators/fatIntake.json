@@ -1,0 +1,62 @@
+{
+  "title": "Calculateur d'Apport en Graisses",
+  "description": "Calculez vos besoins quotidiens en graisses",
+  "metaDescription": "Calculateur gratuit d'apport en graisses - Calculez votre apport quotidien recommandé en graisses en fonction de votre âge, poids, taille, niveau d'activité et objectifs de fitness.",
+  "form": {
+    "title": "Entrez vos informations",
+    "ageLabel": "Âge",
+    "agePlaceholder": "Entrez votre âge (15-80)",
+    "genderLabel": "Sexe",
+    "heightLabel": "Taille",
+    "heightPlaceholder": "Entrez votre taille",
+    "weightLabel": "Poids",
+    "weightPlaceholder": "Entrez votre poids",
+    "activityLabel": "Niveau d'Activité",
+    "goalLabel": "Objectif"
+  },
+  "activity": {
+    "sedentary": "Sédentaire (peu ou pas d'exercice)",
+    "light": "Léger (exercice 1-3 fois/semaine)",
+    "moderate": "Modéré (exercice 4-5 fois/semaine)",
+    "active": "Actif (exercice quotidien ou exercice intense 3-4 fois/semaine)",
+    "veryActive": "Très Actif (exercice intense 6-7 fois/semaine)",
+    "extraActive": "Extra Actif (exercice très intense quotidien et travail physique)"
+  },
+  "goal": {
+    "loseWeight": "Perdre du Poids",
+    "maintain": "Maintenir le Poids",
+    "gainMuscle": "Gagner du Muscle"
+  },
+  "results": {
+    "title": "Vos Recommandations d'Apport en Graisses",
+    "recommendedIntake": "Apport Quotidien Recommandé en Graisses",
+    "gramsPerDay": "grammes par jour",
+    "fatCalories": "Calories des Graisses",
+    "percentage": "Pourcentage des Calories Totales",
+    "dailyCalories": "Calories Quotidiennes",
+    "recommendedRange": "Plage Recommandée",
+    "tdee": "TDEE",
+    "bmr": "MB"
+  },
+  "info": {
+    "title": "À Propos de l'Apport en Graisses",
+    "description": "Les graisses alimentaires sont un macronutriment essentiel qui joue des rôles cruciaux dans la production d'hormones, l'absorption des nutriments, la structure des membranes cellulaires et le stockage de l'énergie. Ce calculateur vous aide à déterminer la quantité optimale de graisses à consommer quotidiennement en fonction de votre dépense énergétique quotidienne totale (TDEE) et de vos objectifs de fitness.",
+    "typesTitle": "Types de Graisses",
+    "healthyFats": "Graisses Saines (Insaturées)",
+    "healthyFatsDesc": "Ces graisses peuvent améliorer la santé cardiaque, réduire l'inflammation et soutenir le bien-être général:",
+    "healthyFats1": "Graisses monoinsaturées: Huile d'olive, avocats, noix (amandes, noix de cajou, noix de pécan)",
+    "healthyFats2": "Graisses polyinsaturées: Poissons gras (saumon, maquereau, sardines), noix, graines de lin",
+    "healthyFats3": "Acides gras oméga-3: Essentiels pour la santé cérébrale et la réduction de l'inflammation",
+    "healthyFats4": "Acides gras oméga-6: Importants pour la croissance et le développement (avec modération)",
+    "unhealthyFats": "Graisses Non Saines",
+    "unhealthyFatsDesc": "Limitez ou évitez ces graisses car elles peuvent augmenter les risques pour la santé:",
+    "unhealthyFats1": "Graisses trans: Présentes dans les aliments transformés, frits et les huiles partiellement hydrogénées",
+    "unhealthyFats2": "Excès de graisses saturées: Grandes quantités de viande rouge, beurre et produits laitiers entiers",
+    "recommendationsTitle": "Recommandations",
+    "recommendation1": "Choisissez des graisses insaturées saines plutôt que des graisses saturées et trans",
+    "recommendation2": "Incluez du poisson gras dans votre alimentation 2-3 fois par semaine pour les oméga-3",
+    "recommendation3": "Utilisez de l'huile d'olive ou d'avocat pour cuisiner au lieu du beurre ou de la margarine",
+    "recommendation4": "Lisez les étiquettes nutritionnelles pour éviter les graisses trans et limiter les graisses saturées",
+    "limitations": "Ces recommandations sont des lignes directrices générales. Les besoins individuels en graisses peuvent varier en fonction du métabolisme, des conditions de santé et des exigences alimentaires spécifiques. Consultez un professionnel de la santé ou un diététicien pour des conseils nutritionnels personnalisés."
+  }
+}

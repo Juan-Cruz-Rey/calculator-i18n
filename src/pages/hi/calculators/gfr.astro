@@ -1,0 +1,29 @@
+---
+import BaseLayout from '@/layouts/BaseLayout.astro';
+import GFRCalculator from '@/components/calculators/GFRCalculator.astro';
+import { t } from '@/utils/i18n';
+
+const lang = 'hi';
+const title = t('gfr:metaTitle', lang);
+const description = t('gfr:metaDescription', lang);
+---
+
+<BaseLayout title={title} description={description} lang={lang} calculator="gfr">
+  <main class="container">
+    <GFRCalculator lang={lang} />
+  </main>
+</BaseLayout>
+
+<style>
+  .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 2rem 1rem;
+  }
+
+  @media (max-width: 768px) {
+    .container {
+      padding: 1rem 0.5rem;
+    }
+  }
+</style>

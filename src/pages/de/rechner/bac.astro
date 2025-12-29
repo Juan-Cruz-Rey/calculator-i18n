@@ -1,0 +1,67 @@
+---
+import BaseLayout from '@layouts/BaseLayout.astro';
+import BACCalculator from '@components/calculators/BACCalculator.astro';
+import { t } from '@utils/i18n';
+
+const lang = 'de';
+const title = t('bac:title', lang);
+const description = t('bac:metaDescription', lang);
+---
+
+<BaseLayout
+  title={`${title} - ${t('site.title', lang)}`}
+  description={description}
+  lang={lang}
+>
+  <main class="calculator-page">
+    <div class="container">
+      <header class="page-header">
+        <h1>{title}</h1>
+        <p class="page-description">{description}</p>
+      </header>
+
+      <BACCalculator lang={lang} />
+    </div>
+  </main>
+</BaseLayout>
+
+<style>
+  .calculator-page {
+    padding: 2rem 0;
+  }
+
+  .container {
+    max-width: 1400px;
+    margin: 0 auto;
+    padding: 0 1rem;
+  }
+
+  .page-header {
+    text-align: center;
+    margin-bottom: 3rem;
+  }
+
+  .page-header h1 {
+    font-size: 2.5rem;
+    color: #2c3e50;
+    margin-bottom: 1rem;
+  }
+
+  .page-description {
+    font-size: 1.1rem;
+    color: #666;
+    max-width: 800px;
+    margin: 0 auto;
+    line-height: 1.6;
+  }
+
+  @media (max-width: 768px) {
+    .page-header h1 {
+      font-size: 2rem;
+    }
+
+    .page-description {
+      font-size: 1rem;
+    }
+  }
+</style>

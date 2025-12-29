@@ -1,0 +1,29 @@
+{
+  "title": "Tek Tekrar Maksimum Hesaplayıcı",
+  "description": "Ağırlık kaldırma için tek tekrar maksimumunuzu (1RM) hesaplayın",
+  "metaDescription": "Ücretsiz 1RM Hesaplayıcı - Epley, Brzycki ve daha fazlası dahil 7 kanıtlanmış formül kullanarak maksimum kaldırma kapasitenizi tahmin edin.",
+  "form": {
+    "title": "Kaldırma detaylarınızı girin",
+    "weightLabel": "Kaldırılan Ağırlık",
+    "weightPlaceholder": "Kaldırılan ağırlığı girin",
+    "repsLabel": "Yapılan Tekrarlar",
+    "repsPlaceholder": "Tekrar sayısını girin",
+    "repsUnit": "tekrar"
+  },
+  "results": {
+    "title": "1RM Sonucunuz",
+    "average": "Ortalama 1RM",
+    "epley": "Epley Formülü",
+    "brzycki": "Brzycki Formülü",
+    "lander": "Lander Formülü",
+    "lombardi": "Lombardi Formülü",
+    "mayhew": "Mayhew Formülü",
+    "oconner": "O'Conner Formülü",
+    "wathan": "Wathan Formülü"
+  },
+  "info": {
+    "title": "1RM Hakkında",
+    "description": "Tek Tekrar Maksimum (1RM), belirli bir egzersizin tek bir tekrarı için kaldırabileceğiniz maksimum ağırlık miktarıdır. Bu hesaplayıcı, kaldırılan ağırlığa ve yapılan tekrar sayısına göre 1RM'nizi tahmin etmek için yedi farklı formül kullanır.",
+    "note": "Bu formüller 1-10 tekrar için en doğrudur. Maksimum kaldırma denemeleri yaparken her zaman düzgün ısının ve bir yardımcı kullanın."
+  }
+}

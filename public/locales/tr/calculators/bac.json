@@ -1,0 +1,69 @@
+{
+  "title": "KAN Hesaplayıcı",
+  "metaDescription": "İçilen içeceklere, kiloya, cinsiyete ve zamana göre Kan Alkol Konsantrasyonunuzu (KAN) hesaplayın. Bozulma seviyesini ve ayık olana kadar geçecek süreyi tahmin edin.",
+  "disclaimer": {
+    "title": "Önemli Uyarı",
+    "text": "Bu hesaplayıcı yalnızca tahminler sağlar. KAN birçok faktöre bağlı olarak değişir. Asla alkollü araç kullanmayın. Yasal sınırlar yargı yetkisine göre değişir. Yerel yasalara danışın ve her zaman dikkatli olun."
+  },
+  "weight": {
+    "label": "Kilonuz"
+  },
+  "gender": {
+    "label": "Cinsiyet",
+    "male": "Erkek",
+    "female": "Kadın"
+  },
+  "drinkType": {
+    "label": "İçecek Türü",
+    "beer": "Bira (355 ml, %5 alkol)",
+    "wine": "Şarap (150 ml, %12 alkol)",
+    "liquor": "Sert İçki (45 ml, %40 alkol)",
+    "custom": "Özel"
+  },
+  "drinkVolume": {
+    "label": "İçecek Başına Hacim"
+  },
+  "alcoholContent": {
+    "label": "Alkol İçeriği (% hac.)"
+  },
+  "drinks": {
+    "label": "İçecek Sayısı"
+  },
+  "hours": {
+    "label": "İçmeye Başladığınızdan Beri Geçen Saat"
+  },
+  "results": {
+    "title": "Sonuçlarınız",
+    "bac": "Kan Alkol Konsantrasyonu (KAN)",
+    "impairmentLevel": "Bozulma Seviyesi",
+    "timeUntilSober": "Ayık Olana Kadar Süre",
+    "legalStatus": "Yasal Durum",
+    "descriptionTitle": "Bozulma Açıklaması"
+  },
+  "legalDisclaimer": {
+    "title": "Yasal Sorumluluk Reddi",
+    "text": "Bu hesaplayıcı yalnızca eğitim amaçlıdır. Yasal olarak araç kullanıp kullanamayacağınızı belirlemek için buna güvenmeyin. Yasal KAN sınırları yargı yetkisine göre değişir (Türkiye'de %0.05). Alkol aldıysanız her zaman belirlenen bir sürücü veya alternatif ulaşım kullanın."
+  },
+  "info": {
+    "title": "KAN Hakkında",
+    "description": "Kan Alkol Konsantrasyonu (KAN), kan dolaşımınızdaki alkol konsantrasyonunun bir ölçüsüdür. Yüzde olarak ifade edilir - örneğin, %0.05, 100 mililitre kanda 0.05 gram alkol anlamına gelir.",
+    "howItWorks": "Bu Hesaplayıcı Nasıl Çalışır",
+    "formula": "Bu hesaplayıcı, tüketilen alkole, vücut ağırlığına, cinsiyete ve geçen zamana göre KAN'ı tahmin etmek için Widmark formülünü kullanır. Formül, alkol metabolizma oranını dikkate alır (saatte yaklaşık %0.015 KAN azalması).",
+    "impairmentLevelsTitle": "Bozulma Seviyeleri",
+    "levels": {
+      "minimal": "Minimum etkiler, hafif ruh hali yükselmesi, davranışta ince değişiklikler",
+      "mild": "Hafif bozulma, gevşeme, azalmış koordinasyon, azalmış kısıtlamalar",
+      "moderate": "Orta derecede bozulma, azalmış tepki süresi, bozulmuş muhakeme, konsantrasyon güçlüğü",
+      "significant": "Önemli bozulma, yürüme ve dengelenme güçlüğü, peltek konuşma, kötü karar verme",
+      "severe": "Ciddi bozulma, alkol zehirlenmesi riski, bilinç kaybı, potansiyel olarak hayati tehlike yaratan durum"
+    },
+    "factorsTitle": "KAN'ı Etkileyen Faktörler",
+    "factors": {
+      "weight": "Vücut ağırlığı - daha ağır bireyler genellikle aynı miktarda alkolden daha düşük KAN'a sahiptir",
+      "gender": "Cinsiyet - kadınlar genellikle aynı miktarda alkolden erkeklerden daha yüksek KAN seviyelerine ulaşır",
+      "time": "Zaman - vücut alkolu saatte yaklaşık %0.015 KAN oranında metabolize eder",
+      "food": "Yiyecek tüketimi - içmeden önce veya içerken yemek yemek alkol emilimini yavaşlatır",
+      "metabolism": "Bireysel metabolizma - genetiğe, ilaçlara ve sağlık durumuna göre değişir"
+    }
+  }
+}

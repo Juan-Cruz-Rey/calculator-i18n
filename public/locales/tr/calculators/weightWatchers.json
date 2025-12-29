@@ -1,0 +1,65 @@
+{
+  "title": "Weight Watchers Puan Hesaplayıcı",
+  "description": "Yiyecekler için SmartPoints ve günlük puan bütçenizi hesaplayın",
+  "metaDescription": "Ücretsiz Weight Watchers Puan Hesaplayıcı - Yiyecekler için SmartPoints hesaplayın ve kişisel bilgilerinize göre günlük puan bütçenizi belirleyin.",
+  "disclaimer": {
+    "title": "Feragatname",
+    "text": "Bu resmi olmayan bir hesaplayıcıdır ve WW International, Inc. ile ilişkili değildir. SmartPoints, WW International, Inc.'in ticari markasıdır. Bu hesaplayıcı yalnızca eğitim amaçlı tahminler sağlar."
+  },
+  "tabs": {
+    "foodPoints": "Yiyecek Puanları",
+    "dailyBudget": "Günlük Bütçe"
+  },
+  "foodPoints": {
+    "title": "Yiyecek Puanlarını Hesapla",
+    "description": "Yiyeceğinizin SmartPoints değerini hesaplamak için beslenme bilgilerini girin.",
+    "caloriesLabel": "Kalori",
+    "caloriesPlaceholder": "Kalori girin",
+    "saturatedFatLabel": "Doymuş Yağ",
+    "saturatedFatPlaceholder": "Doymuş yağ girin",
+    "sugarLabel": "Şeker",
+    "sugarPlaceholder": "Şeker girin",
+    "proteinLabel": "Protein",
+    "proteinPlaceholder": "Protein girin",
+    "resultsTitle": "Yiyecek Puanları Sonucu",
+    "smartPoints": "SmartPoints",
+    "pointsPerServing": "porsiyon başına"
+  },
+  "dailyBudget": {
+    "title": "Günlük Puan Bütçesini Hesapla",
+    "description": "Önerilen günlük SmartPoints bütçenizi hesaplamak için kişisel bilgilerinizi girin.",
+    "ageLabel": "Yaş",
+    "agePlaceholder": "Yaşınızı girin",
+    "genderLabel": "Cinsiyet",
+    "weightLabel": "Kilo",
+    "weightPlaceholder": "Kilonuzu girin",
+    "heightLabel": "Boy",
+    "heightPlaceholder": "Boyunuzu girin",
+    "activityLabel": "Aktivite Seviyesi",
+    "resultsTitle": "Günlük Bütçeniz",
+    "dailyPoints": "Günlük SmartPoints",
+    "pointsPerDay": "günlük",
+    "basePoints": "Temel Puanlar",
+    "activityBonus": "Aktivite Bonusu",
+    "weeklyPoints": "Haftalık Ekstra Puanlar",
+    "budgetExplanation": "Günlük SmartPoints bütçeniz her gün hedeflemeniz gereken puan sayısıdır. Ayrıca esneklik için haftalık ekstra puanlar alırsınız."
+  },
+  "activity": {
+    "sedentary": "Hareketsiz (az veya hiç egzersiz yok)",
+    "light": "Hafif (haftada 1-3 gün egzersiz)",
+    "moderate": "Orta (haftada 3-5 gün egzersiz)",
+    "active": "Aktif (haftada 6-7 gün egzersiz)",
+    "veryActive": "Çok Aktif (günlük yoğun egzersiz)"
+  },
+  "units": {
+    "kcal": "kcal",
+    "grams": "g"
+  },
+  "info": {
+    "title": "SmartPoints Hakkında",
+    "description": "SmartPoints, kalori, doymuş yağ, şeker ve proteine dayalı olarak yiyeceklere değer atayan bir beslenme sistemidir. Daha fazla kalori, doymuş yağ ve şeker içeren yiyecekler daha yüksek puan değerlerine sahipken, daha fazla protein içeren yiyecekler daha düşük değerlere sahiptir. Bu, daha sağlıklı yiyecek seçimlerini teşvik eder.",
+    "formulaTitle": "SmartPoints Formülü",
+    "formula": "Puanlar = (Kalori × 0,0305) + (Doymuş Yağ × 0,275) + (Şeker × 0,12) - (Protein × 0,098), en yakın tam sayıya yuvarlanır, minimum 0",
+    "limitations": "Bu hesaplayıcı yalnızca tahminler sağlar ve profesyonel diyet tavsiyesinin yerini almamalıdır. Kişiselleştirilmiş beslenme rehberliği için her zaman bir sağlık hizmeti sağlayıcısına veya kayıtlı diyetisyene danışın."
+  }
+}

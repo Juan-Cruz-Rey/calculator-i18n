@@ -1,0 +1,65 @@
+{
+  "title": "Diät-Punkte-Rechner",
+  "description": "Berechnen Sie SmartPoints für Lebensmittel und Ihr tägliches Punkte-Budget",
+  "metaDescription": "Kostenloser Diät-Punkte-Rechner - Berechnen Sie SmartPoints für Lebensmittel und bestimmen Sie Ihr tägliches Punkte-Budget basierend auf Ihren persönlichen Informationen.",
+  "disclaimer": {
+    "title": "Haftungsausschluss",
+    "text": "Dies ist ein inoffizieller Rechner und ist nicht mit WW International, Inc. verbunden. SmartPoints ist eine Marke von WW International, Inc. Dieser Rechner liefert Schätzungen nur zu Bildungszwecken."
+  },
+  "tabs": {
+    "foodPoints": "Lebensmittel-Punkte",
+    "dailyBudget": "Tägliches Budget"
+  },
+  "foodPoints": {
+    "title": "Lebensmittel-Punkte berechnen",
+    "description": "Geben Sie die Nährwertinformationen Ihres Lebensmittels ein, um seinen SmartPoints-Wert zu berechnen.",
+    "caloriesLabel": "Kalorien",
+    "caloriesPlaceholder": "Kalorien eingeben",
+    "saturatedFatLabel": "Gesättigte Fettsäuren",
+    "saturatedFatPlaceholder": "Gesättigte Fettsäuren eingeben",
+    "sugarLabel": "Zucker",
+    "sugarPlaceholder": "Zucker eingeben",
+    "proteinLabel": "Protein",
+    "proteinPlaceholder": "Protein eingeben",
+    "resultsTitle": "Lebensmittel-Punkte-Ergebnis",
+    "smartPoints": "SmartPoints",
+    "pointsPerServing": "pro Portion"
+  },
+  "dailyBudget": {
+    "title": "Tägliches Punkte-Budget berechnen",
+    "description": "Geben Sie Ihre persönlichen Informationen ein, um Ihr empfohlenes tägliches SmartPoints-Budget zu berechnen.",
+    "ageLabel": "Alter",
+    "agePlaceholder": "Ihr Alter eingeben",
+    "genderLabel": "Geschlecht",
+    "weightLabel": "Gewicht",
+    "weightPlaceholder": "Ihr Gewicht eingeben",
+    "heightLabel": "Größe",
+    "heightPlaceholder": "Ihre Größe eingeben",
+    "activityLabel": "Aktivitätslevel",
+    "resultsTitle": "Ihr Tägliches Budget",
+    "dailyPoints": "Tägliche SmartPoints",
+    "pointsPerDay": "pro Tag",
+    "basePoints": "Basis-Punkte",
+    "activityBonus": "Aktivitätsbonus",
+    "weeklyPoints": "Wöchentliche Extra-Punkte",
+    "budgetExplanation": "Ihr tägliches SmartPoints-Budget ist die Zielanzahl von Punkten, die Sie jeden Tag anstreben sollten. Sie erhalten auch wöchentliche Extra-Punkte für Flexibilität."
+  },
+  "activity": {
+    "sedentary": "Sitzend (wenig oder keine Bewegung)",
+    "light": "Leicht (Bewegung 1-3 Tage/Woche)",
+    "moderate": "Mäßig (Bewegung 3-5 Tage/Woche)",
+    "active": "Aktiv (Bewegung 6-7 Tage/Woche)",
+    "veryActive": "Sehr Aktiv (tägliches intensives Training)"
+  },
+  "units": {
+    "kcal": "kcal",
+    "grams": "g"
+  },
+  "info": {
+    "title": "Über SmartPoints",
+    "description": "SmartPoints ist ein Ernährungssystem, das Lebensmitteln Werte basierend auf Kalorien, gesättigten Fettsäuren, Zucker und Protein zuweist. Lebensmittel mit mehr Kalorien, gesättigten Fettsäuren und Zucker haben höhere Punktwerte, während Lebensmittel mit mehr Protein niedrigere Werte haben. Dies fördert gesündere Lebensmittelwahlen.",
+    "formulaTitle": "SmartPoints-Formel",
+    "formula": "Punkte = (Kalorien × 0,0305) + (Gesättigte Fettsäuren × 0,275) + (Zucker × 0,12) - (Protein × 0,098), auf die nächste ganze Zahl gerundet, Minimum 0",
+    "limitations": "Dieser Rechner liefert nur Schätzungen und sollte keine professionelle Ernährungsberatung ersetzen. Konsultieren Sie immer einen Gesundheitsdienstleister oder registrierten Ernährungsberater für personalisierte Ernährungsberatung."
+  }
+}

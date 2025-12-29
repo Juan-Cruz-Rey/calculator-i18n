@@ -1,0 +1,65 @@
+{
+  "title": "Weight Watchers Points Calculator",
+  "description": "Calculate SmartPoints for foods and your daily points budget",
+  "metaDescription": "Free Weight Watchers Points Calculator - Calculate SmartPoints for foods and determine your daily points budget based on your personal information.",
+  "disclaimer": {
+    "title": "Disclaimer",
+    "text": "This is an unofficial calculator and is not affiliated with WW International, Inc. SmartPoints is a trademark of WW International, Inc. This calculator provides estimates for educational purposes only."
+  },
+  "tabs": {
+    "foodPoints": "Food Points",
+    "dailyBudget": "Daily Budget"
+  },
+  "foodPoints": {
+    "title": "Calculate Food Points",
+    "description": "Enter the nutritional information of your food to calculate its SmartPoints value.",
+    "caloriesLabel": "Calories",
+    "caloriesPlaceholder": "Enter calories",
+    "saturatedFatLabel": "Saturated Fat",
+    "saturatedFatPlaceholder": "Enter saturated fat",
+    "sugarLabel": "Sugar",
+    "sugarPlaceholder": "Enter sugar",
+    "proteinLabel": "Protein",
+    "proteinPlaceholder": "Enter protein",
+    "resultsTitle": "Food Points Result",
+    "smartPoints": "SmartPoints",
+    "pointsPerServing": "per serving"
+  },
+  "dailyBudget": {
+    "title": "Calculate Daily Points Budget",
+    "description": "Enter your personal information to calculate your recommended daily SmartPoints budget.",
+    "ageLabel": "Age",
+    "agePlaceholder": "Enter your age",
+    "genderLabel": "Gender",
+    "weightLabel": "Weight",
+    "weightPlaceholder": "Enter your weight",
+    "heightLabel": "Height",
+    "heightPlaceholder": "Enter your height",
+    "activityLabel": "Activity Level",
+    "resultsTitle": "Your Daily Budget",
+    "dailyPoints": "Daily SmartPoints",
+    "pointsPerDay": "per day",
+    "basePoints": "Base Points",
+    "activityBonus": "Activity Bonus",
+    "weeklyPoints": "Weekly Extra Points",
+    "budgetExplanation": "Your daily SmartPoints budget is the target number of points you should aim for each day. You also receive weekly extra points for flexibility."
+  },
+  "activity": {
+    "sedentary": "Sedentary (little or no exercise)",
+    "light": "Light (exercise 1-3 days/week)",
+    "moderate": "Moderate (exercise 3-5 days/week)",
+    "active": "Active (exercise 6-7 days/week)",
+    "veryActive": "Very Active (intense daily exercise)"
+  },
+  "units": {
+    "kcal": "kcal",
+    "grams": "g"
+  },
+  "info": {
+    "title": "About SmartPoints",
+    "description": "SmartPoints is a nutrition system that assigns values to foods based on calories, saturated fat, sugar, and protein. Foods higher in calories, saturated fat, and sugar have higher point values, while foods higher in protein have lower point values. This encourages healthier food choices.",
+    "formulaTitle": "SmartPoints Formula",
+    "formula": "Points = (Calories × 0.0305) + (Saturated Fat × 0.275) + (Sugar × 0.12) - (Protein × 0.098), rounded to nearest integer, minimum 0",
+    "limitations": "This calculator provides estimates only and should not replace professional dietary advice. Always consult with a healthcare provider or registered dietitian for personalized nutrition guidance."
+  }
+}

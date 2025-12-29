@@ -1,0 +1,69 @@
+{
+  "title": "BAC-kalkylator",
+  "metaDescription": "Beräkna din blodalkoholhalt (BAC) baserat på druckna drycker, vikt, kön och tid. Uppskatta försämringsnivå och tid tills nykter.",
+  "disclaimer": {
+    "title": "Viktig Varning",
+    "text": "Denna kalkylator ger endast uppskattningar. BAC varierar baserat på många faktorer. Kör aldrig under alkoholpåverkan. Lagliga gränser varierar per jurisdiktion. Konsultera lokala lagar och var alltid försiktig."
+  },
+  "weight": {
+    "label": "Din Vikt"
+  },
+  "gender": {
+    "label": "Kön",
+    "male": "Man",
+    "female": "Kvinna"
+  },
+  "drinkType": {
+    "label": "Typ av Dryck",
+    "beer": "Öl (355 ml, 5% alkohol)",
+    "wine": "Vin (150 ml, 12% alkohol)",
+    "liquor": "Sprit (45 ml, 40% alkohol)",
+    "custom": "Anpassad"
+  },
+  "drinkVolume": {
+    "label": "Volym per Dryck"
+  },
+  "alcoholContent": {
+    "label": "Alkoholhalt (% vol.)"
+  },
+  "drinks": {
+    "label": "Antal Drycker"
+  },
+  "hours": {
+    "label": "Timmar Sedan du Började Dricka"
+  },
+  "results": {
+    "title": "Dina Resultat",
+    "bac": "Blodalkoholhalt (BAC)",
+    "impairmentLevel": "Försämringsnivå",
+    "timeUntilSober": "Tid Tills Nykter",
+    "legalStatus": "Juridisk Status",
+    "descriptionTitle": "Försämringsbeskrivning"
+  },
+  "legalDisclaimer": {
+    "title": "Juridisk Ansvarsfriskrivning",
+    "text": "Denna kalkylator är endast för utbildningsändamål. Lita inte på den för att avgöra om du lagligt kan köra. Lagliga BAC-gränser varierar per jurisdiktion (0.02% i Sverige). Använd alltid en utsedd förare eller alternativ transport om du har druckit."
+  },
+  "info": {
+    "title": "Om BAC",
+    "description": "Blodalkoholhalt (BAC) är ett mått på alkoholkoncentrationen i blodet. Det uttrycks som en procent - till exempel betyder 0.05% 0.05 gram alkohol per 100 milliliter blod.",
+    "howItWorks": "Hur Denna Kalkylator Fungerar",
+    "formula": "Denna kalkylator använder Widmark-formeln för att uppskatta BAC baserat på konsumerad alkohol, kroppsvikt, kön och förfluten tid. Formeln tar hänsyn till alkoholmetabolismhastigheten (cirka 0.015% BAC-minskning per timme).",
+    "impairmentLevelsTitle": "Försämringsnivåer",
+    "levels": {
+      "minimal": "Minimala effekter, lätt humörhöjning, subtila beteendeförändringar",
+      "mild": "Mild försämring, avslappning, minskad koordination, sänkta hämningar",
+      "moderate": "Måttlig försämring, minskad reaktionstid, nedsatt omdöme, koncentrationssvårigheter",
+      "significant": "Betydande försämring, svårigheter att gå och balansera, otydligt tal, dåligt beslutsfattande",
+      "severe": "Allvarlig försämring, risk för alkoholförgiftning, medvetslöshet, potentiellt livshotande tillstånd"
+    },
+    "factorsTitle": "Faktorer som Påverkar BAC",
+    "factors": {
+      "weight": "Kroppsvikt - tyngre individer har vanligtvis lägre BAC från samma mängd alkohol",
+      "gender": "Kön - kvinnor når vanligtvis högre BAC-nivåer än män från samma mängd alkohol",
+      "time": "Tid - kroppen metaboliserar alkohol med cirka 0.015% BAC per timme",
+      "food": "Matkonsumtion - att äta före eller under drickandet saktar ner alkoholabsorptionen",
+      "metabolism": "Individuell metabolism - varierar baserat på genetik, mediciner och hälsotillstånd"
+    }
+  }
+}

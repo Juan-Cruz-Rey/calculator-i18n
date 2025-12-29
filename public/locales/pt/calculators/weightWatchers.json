@@ -1,0 +1,65 @@
+{
+  "title": "Calculadora de Pontos da Dieta",
+  "description": "Calcule SmartPoints de alimentos e seu orçamento diário de pontos",
+  "metaDescription": "Calculadora gratuita de Pontos da Dieta - Calcule SmartPoints de alimentos e determine seu orçamento diário de pontos com base em suas informações pessoais.",
+  "disclaimer": {
+    "title": "Aviso Legal",
+    "text": "Esta é uma calculadora não oficial e não é afiliada à WW International, Inc. SmartPoints é uma marca registrada da WW International, Inc. Esta calculadora fornece estimativas apenas para fins educacionais."
+  },
+  "tabs": {
+    "foodPoints": "Pontos de Alimentos",
+    "dailyBudget": "Orçamento Diário"
+  },
+  "foodPoints": {
+    "title": "Calcular Pontos de Alimentos",
+    "description": "Insira as informações nutricionais do seu alimento para calcular seu valor em SmartPoints.",
+    "caloriesLabel": "Calorias",
+    "caloriesPlaceholder": "Insira as calorias",
+    "saturatedFatLabel": "Gordura Saturada",
+    "saturatedFatPlaceholder": "Insira a gordura saturada",
+    "sugarLabel": "Açúcar",
+    "sugarPlaceholder": "Insira o açúcar",
+    "proteinLabel": "Proteína",
+    "proteinPlaceholder": "Insira a proteína",
+    "resultsTitle": "Resultado de Pontos de Alimentos",
+    "smartPoints": "SmartPoints",
+    "pointsPerServing": "por porção"
+  },
+  "dailyBudget": {
+    "title": "Calcular Orçamento Diário de Pontos",
+    "description": "Insira suas informações pessoais para calcular seu orçamento diário recomendado de SmartPoints.",
+    "ageLabel": "Idade",
+    "agePlaceholder": "Insira sua idade",
+    "genderLabel": "Sexo",
+    "weightLabel": "Peso",
+    "weightPlaceholder": "Insira seu peso",
+    "heightLabel": "Altura",
+    "heightPlaceholder": "Insira sua altura",
+    "activityLabel": "Nível de Atividade",
+    "resultsTitle": "Seu Orçamento Diário",
+    "dailyPoints": "SmartPoints Diários",
+    "pointsPerDay": "por dia",
+    "basePoints": "Pontos Base",
+    "activityBonus": "Bônus de Atividade",
+    "weeklyPoints": "Pontos Extras Semanais",
+    "budgetExplanation": "Seu orçamento diário de SmartPoints é o número alvo de pontos que você deve buscar a cada dia. Você também recebe pontos extras semanais para flexibilidade."
+  },
+  "activity": {
+    "sedentary": "Sedentário (pouco ou nenhum exercício)",
+    "light": "Leve (exercício 1-3 dias/semana)",
+    "moderate": "Moderado (exercício 3-5 dias/semana)",
+    "active": "Ativo (exercício 6-7 dias/semana)",
+    "veryActive": "Muito Ativo (exercício intenso diário)"
+  },
+  "units": {
+    "kcal": "kcal",
+    "grams": "g"
+  },
+  "info": {
+    "title": "Sobre SmartPoints",
+    "description": "SmartPoints é um sistema de nutrição que atribui valores aos alimentos com base em calorias, gordura saturada, açúcar e proteína. Alimentos com mais calorias, gordura saturada e açúcar têm valores de pontos mais altos, enquanto alimentos com mais proteína têm valores mais baixos. Isso incentiva escolhas alimentares mais saudáveis.",
+    "formulaTitle": "Fórmula SmartPoints",
+    "formula": "Pontos = (Calorias × 0.0305) + (Gordura Saturada × 0.275) + (Açúcar × 0.12) - (Proteína × 0.098), arredondado para o inteiro mais próximo, mínimo 0",
+    "limitations": "Esta calculadora fornece apenas estimativas e não deve substituir aconselhamento dietético profissional. Sempre consulte um profissional de saúde ou nutricionista registrado para orientação nutricional personalizada."
+  }
+}

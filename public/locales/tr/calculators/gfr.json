@@ -1,0 +1,68 @@
+{
+  "title": "GFR Hesaplayıcı",
+  "metaTitle": "GFR Hesaplayıcı - Böbrek Fonksiyonunu Tahmin Edin (eGFR)",
+  "metaDescription": "CKD-EPI denklemi kullanarak tahmini Glomerüler Filtrasyon Hızınızı (eGFR) hesaplayın. Yaş, cinsiyet ve serum kreatinine dayalı böbrek fonksiyonunu ve CKD evresini değerlendirin.",
+  "description": "Böbrek fonksiyonunu değerlendirmek için tahmini Glomerüler Filtrasyon Hızınızı (eGFR) hesaplayın. Bu hesaplayıcı, böbrek fonksiyonunu tahmin etmek için en doğru yöntem olan CKD-EPI denklemini kullanır.",
+
+  "inputs": {
+    "age": "Yaş",
+    "ageHelp": "Yaşınızı girin (18-120 yaş)",
+    "gender": "Cinsiyet",
+    "male": "Erkek",
+    "female": "Kadın",
+    "serumCreatinine": "Serum Kreatinin",
+    "creatinineHelp": "Kan testinden serum kreatinin seviyenizi girin",
+    "equation": "Denklem",
+    "equation2021": "CKD-EPI 2021 (ırk olmadan, önerilen)",
+    "equation2009": "CKD-EPI 2009 (ırkla birlikte, eski)",
+    "equationHelp": "2021 denklemi, ırkı faktör olarak kullanmadığı için önerilir",
+    "race": "Irk",
+    "africanAmerican": "Afrikalı Amerikalı",
+    "raceHelp": "Sadece CKD-EPI 2009 denklemi kullanılırken geçerlidir"
+  },
+
+  "calculate": "GFR Hesapla",
+
+  "results": {
+    "title": "Sonuçlarınız",
+    "gfrValue": "eGFR",
+    "stage": "CKD Evresi",
+    "interpretation": "Yorum",
+    "equation": "Kullanılan Denklem"
+  },
+
+  "stageInfo": {
+    "title": "Kronik Böbrek Hastalığı (CKD) Evreleri",
+    "stage1": "Evre 1 (GFR ≥90):",
+    "stage1Desc": "Normal veya yüksek böbrek fonksiyonu",
+    "stage2": "Evre 2 (GFR 60-89):",
+    "stage2Desc": "Hafif azalmış böbrek fonksiyonu",
+    "stage3a": "Evre 3a (GFR 45-59):",
+    "stage3aDesc": "Böbrek fonksiyonunda hafif ila orta derecede azalma",
+    "stage3b": "Evre 3b (GFR 30-44):",
+    "stage3bDesc": "Böbrek fonksiyonunda orta ila şiddetli azalma",
+    "stage4": "Evre 4 (GFR 15-29):",
+    "stage4Desc": "Ciddi şekilde azalmış böbrek fonksiyonu",
+    "stage5": "Evre 5 (GFR <15):",
+    "stage5Desc": "Böbrek yetmezliği (diyaliz veya nakil gerekli)"
+  },
+
+  "disclaimer": {
+    "title": "Tıbbi Sorumluluk Reddi",
+    "text": "Bu hesaplayıcı yalnızca bilgilendirme amaçlıdır ve profesyonel tıbbi tavsiyenin yerini almamalıdır. Böbrek hastalığının uygun teşhis ve tedavisi için her zaman sağlık hizmeti sağlayıcınıza danışın. GFR tahminleri belirli popülasyonlarda daha az doğru olabilir."
+  },
+
+  "about": {
+    "title": "GFR Hesaplayıcı Hakkında",
+    "description": "Glomerüler Filtrasyon Hızı (GFR) hesaplayıcı, böbreklerinizin kanınızdan atıkları ne kadar iyi filtrelediğini tahmin eder. Böbrek sağlığının önemli bir göstergesidir ve kronik böbrek hastalığını (CKD) tespit etmek ve izlemek için kullanılır.",
+    "whatIsGFR": "GFR Nedir?",
+    "gfrExplanation": "GFR, her dakika glomerüllerden (böbreklerdeki küçük filtreler) ne kadar kan geçtiğini ölçer. Normal bir GFR 90 veya üzerindedir. Üç ay veya daha uzun süre 60'ın altında bir GFR, kronik böbrek hastalığını gösterir. GFR ne kadar düşükse, böbrek fonksiyonu o kadar kötüdür.",
+    "ckdEpiEquation": "CKD-EPI Denklemi",
+    "equationExplanation": "CKD-EPI (Kronik Böbrek Hastalığı Epidemiyoloji İşbirliği) denklemi, GFR'yi tahmin etmek için en yaygın kullanılan yöntemdir. 2021 sürümü, ırkı bir faktör olarak kaldırarak daha adil hale getirdi. Böbrek fonksiyonunu tahmin etmek için yaşınızı, cinsiyetinizi ve serum kreatinin seviyenizi kullanır.",
+    "importantNotes": "Önemli Notlar",
+    "note1": "Bu hesaplayıcı 18 yaş ve üzeri yetişkinler için en doğrudur",
+    "note2": "Sonuçlar, aşırı vücut boyutları, ciddi yetersiz beslenme veya kas hastalıkları olan kişilerde daha az doğru olabilir",
+    "note3": "Böbrek hastalığını teşhis etmek için tek bir GFR sonucu yeterli değildir - zaman içinde izleme önemlidir",
+    "note4": "İdrardaki protein ve böbrek hasarı gibi diğer faktörler de CKD evresini belirler"
+  }
+}

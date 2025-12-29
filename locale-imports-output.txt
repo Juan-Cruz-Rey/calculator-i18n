@@ -1,0 +1,415 @@
+=== CALCULATOR IMPORTS TO ADD ===
+
+import nlBmi from '../../public/locales/nl/calculators/bmi.json';
+import trBmi from '../../public/locales/tr/calculators/bmi.json';
+import svBmi from '../../public/locales/sv/calculators/bmi.json';
+import ruBmi from '../../public/locales/ru/calculators/bmi.json';
+import nlCalorie from '../../public/locales/nl/calculators/calorie.json';
+import trCalorie from '../../public/locales/tr/calculators/calorie.json';
+import svCalorie from '../../public/locales/sv/calculators/calorie.json';
+import ruCalorie from '../../public/locales/ru/calculators/calorie.json';
+import nlIdealWeight from '../../public/locales/nl/calculators/idealWeight.json';
+import trIdealWeight from '../../public/locales/tr/calculators/idealWeight.json';
+import svIdealWeight from '../../public/locales/sv/calculators/idealWeight.json';
+import ruIdealWeight from '../../public/locales/ru/calculators/idealWeight.json';
+import nlBodyFat from '../../public/locales/nl/calculators/bodyFat.json';
+import trBodyFat from '../../public/locales/tr/calculators/bodyFat.json';
+import svBodyFat from '../../public/locales/sv/calculators/bodyFat.json';
+import ruBodyFat from '../../public/locales/ru/calculators/bodyFat.json';
+import nlBmr from '../../public/locales/nl/calculators/bmr.json';
+import trBmr from '../../public/locales/tr/calculators/bmr.json';
+import svBmr from '../../public/locales/sv/calculators/bmr.json';
+import ruBmr from '../../public/locales/ru/calculators/bmr.json';
+import nlTdee from '../../public/locales/nl/calculators/tdee.json';
+import trTdee from '../../public/locales/tr/calculators/tdee.json';
+import svTdee from '../../public/locales/sv/calculators/tdee.json';
+import ruTdee from '../../public/locales/ru/calculators/tdee.json';
+import nlArmyBodyFat from '../../public/locales/nl/calculators/armyBodyFat.json';
+import trArmyBodyFat from '../../public/locales/tr/calculators/armyBodyFat.json';
+import svArmyBodyFat from '../../public/locales/sv/calculators/armyBodyFat.json';
+import ruArmyBodyFat from '../../public/locales/ru/calculators/armyBodyFat.json';
+import nlPace from '../../public/locales/nl/calculators/pace.json';
+import trPace from '../../public/locales/tr/calculators/pace.json';
+import svPace from '../../public/locales/sv/calculators/pace.json';
+import ruPace from '../../public/locales/ru/calculators/pace.json';
+import nlMacro from '../../public/locales/nl/calculators/macro.json';
+import trMacro from '../../public/locales/tr/calculators/macro.json';
+import svMacro from '../../public/locales/sv/calculators/macro.json';
+import ruMacro from '../../public/locales/ru/calculators/macro.json';
+import nlPregnancy from '../../public/locales/nl/calculators/pregnancy.json';
+import trPregnancy from '../../public/locales/tr/calculators/pregnancy.json';
+import svPregnancy from '../../public/locales/sv/calculators/pregnancy.json';
+import ruPregnancy from '../../public/locales/ru/calculators/pregnancy.json';
+import nlPregnancyWeightGain from '../../public/locales/nl/calculators/pregnancyWeightGain.json';
+import trPregnancyWeightGain from '../../public/locales/tr/calculators/pregnancyWeightGain.json';
+import svPregnancyWeightGain from '../../public/locales/sv/calculators/pregnancyWeightGain.json';
+import ruPregnancyWeightGain from '../../public/locales/ru/calculators/pregnancyWeightGain.json';
+import nlPregnancyConception from '../../public/locales/nl/calculators/pregnancyConception.json';
+import trPregnancyConception from '../../public/locales/tr/calculators/pregnancyConception.json';
+import svPregnancyConception from '../../public/locales/sv/calculators/pregnancyConception.json';
+import ruPregnancyConception from '../../public/locales/ru/calculators/pregnancyConception.json';
+import nlDueDate from '../../public/locales/nl/calculators/dueDate.json';
+import trDueDate from '../../public/locales/tr/calculators/dueDate.json';
+import svDueDate from '../../public/locales/sv/calculators/dueDate.json';
+import ruDueDate from '../../public/locales/ru/calculators/dueDate.json';
+import nlCarbohydrate from '../../public/locales/nl/calculators/carbohydrate.json';
+import trCarbohydrate from '../../public/locales/tr/calculators/carbohydrate.json';
+import svCarbohydrate from '../../public/locales/sv/calculators/carbohydrate.json';
+import ruCarbohydrate from '../../public/locales/ru/calculators/carbohydrate.json';
+import nlLeanBodyMass from '../../public/locales/nl/calculators/leanBodyMass.json';
+import trLeanBodyMass from '../../public/locales/tr/calculators/leanBodyMass.json';
+import svLeanBodyMass from '../../public/locales/sv/calculators/leanBodyMass.json';
+import ruLeanBodyMass from '../../public/locales/ru/calculators/leanBodyMass.json';
+import nlHealthyWeight from '../../public/locales/nl/calculators/healthyWeight.json';
+import trHealthyWeight from '../../public/locales/tr/calculators/healthyWeight.json';
+import svHealthyWeight from '../../public/locales/sv/calculators/healthyWeight.json';
+import ruHealthyWeight from '../../public/locales/ru/calculators/healthyWeight.json';
+import nlHeartRate from '../../public/locales/nl/calculators/heartRate.json';
+import trHeartRate from '../../public/locales/tr/calculators/heartRate.json';
+import svHeartRate from '../../public/locales/sv/calculators/heartRate.json';
+import ruHeartRate from '../../public/locales/ru/calculators/heartRate.json';
+import nlBodyType from '../../public/locales/nl/calculators/bodyType.json';
+import trBodyType from '../../public/locales/tr/calculators/bodyType.json';
+import svBodyType from '../../public/locales/sv/calculators/bodyType.json';
+import ruBodyType from '../../public/locales/ru/calculators/bodyType.json';
+import nlProtein from '../../public/locales/nl/calculators/protein.json';
+import trProtein from '../../public/locales/tr/calculators/protein.json';
+import svProtein from '../../public/locales/sv/calculators/protein.json';
+import ruProtein from '../../public/locales/ru/calculators/protein.json';
+import nlCaloriesBurned from '../../public/locales/nl/calculators/caloriesBurned.json';
+import trCaloriesBurned from '../../public/locales/tr/calculators/caloriesBurned.json';
+import svCaloriesBurned from '../../public/locales/sv/calculators/caloriesBurned.json';
+import ruCaloriesBurned from '../../public/locales/ru/calculators/caloriesBurned.json';
+import nlBsa from '../../public/locales/nl/calculators/bsa.json';
+import trBsa from '../../public/locales/tr/calculators/bsa.json';
+import svBsa from '../../public/locales/sv/calculators/bsa.json';
+import ruBsa from '../../public/locales/ru/calculators/bsa.json';
+import nlBloodType from '../../public/locales/nl/calculators/bloodType.json';
+import trBloodType from '../../public/locales/tr/calculators/bloodType.json';
+import svBloodType from '../../public/locales/sv/calculators/bloodType.json';
+import ruBloodType from '../../public/locales/ru/calculators/bloodType.json';
+import nlOvulation from '../../public/locales/nl/calculators/ovulation.json';
+import trOvulation from '../../public/locales/tr/calculators/ovulation.json';
+import svOvulation from '../../public/locales/sv/calculators/ovulation.json';
+import ruOvulation from '../../public/locales/ru/calculators/ovulation.json';
+import nlPeriod from '../../public/locales/nl/calculators/period.json';
+import trPeriod from '../../public/locales/tr/calculators/period.json';
+import svPeriod from '../../public/locales/sv/calculators/period.json';
+import ruPeriod from '../../public/locales/ru/calculators/period.json';
+import nlBodyFrame from '../../public/locales/nl/calculators/bodyFrame.json';
+import trBodyFrame from '../../public/locales/tr/calculators/bodyFrame.json';
+import svBodyFrame from '../../public/locales/sv/calculators/bodyFrame.json';
+import ruBodyFrame from '../../public/locales/ru/calculators/bodyFrame.json';
+import nlWaistHip from '../../public/locales/nl/calculators/waistHip.json';
+import trWaistHip from '../../public/locales/tr/calculators/waistHip.json';
+import svWaistHip from '../../public/locales/sv/calculators/waistHip.json';
+import ruWaistHip from '../../public/locales/ru/calculators/waistHip.json';
+import nlTip from '../../public/locales/nl/calculators/tip.json';
+import trTip from '../../public/locales/tr/calculators/tip.json';
+import svTip from '../../public/locales/sv/calculators/tip.json';
+import ruTip from '../../public/locales/ru/calculators/tip.json';
+import nlDate from '../../public/locales/nl/calculators/date.json';
+import trDate from '../../public/locales/tr/calculators/date.json';
+import svDate from '../../public/locales/sv/calculators/date.json';
+import ruDate from '../../public/locales/ru/calculators/date.json';
+import nlAge from '../../public/locales/nl/calculators/age.json';
+import trAge from '../../public/locales/tr/calculators/age.json';
+import svAge from '../../public/locales/sv/calculators/age.json';
+import ruAge from '../../public/locales/ru/calculators/age.json';
+import nlPercentage from '../../public/locales/nl/calculators/percentage.json';
+import trPercentage from '../../public/locales/tr/calculators/percentage.json';
+import svPercentage from '../../public/locales/sv/calculators/percentage.json';
+import ruPercentage from '../../public/locales/ru/calculators/percentage.json';
+import nlSleep from '../../public/locales/nl/calculators/sleep.json';
+import trSleep from '../../public/locales/tr/calculators/sleep.json';
+import svSleep from '../../public/locales/sv/calculators/sleep.json';
+import ruSleep from '../../public/locales/ru/calculators/sleep.json';
+
+
+=== TRANSLATIONS OBJECT ENTRIES TO ADD ===
+
+  nl: {
+    ...nlCommon,
+    categories: nlCategories,
+    bmi: nlBmi,
+    calorie: nlCalorie,
+    idealWeight: nlIdealWeight,
+    bodyFat: nlBodyFat,
+    bmr: nlBmr,
+    tdee: nlTdee,
+    armyBodyFat: nlArmyBodyFat,
+    pace: nlPace,
+    macro: nlMacro,
+    pregnancy: nlPregnancy,
+    pregnancyWeightGain: nlPregnancyWeightGain,
+    pregnancyConception: nlPregnancyConception,
+    dueDate: nlDueDate,
+    carbohydrate: nlCarbohydrate,
+    leanBodyMass: nlLeanBodyMass,
+    healthyWeight: nlHealthyWeight,
+    heartRate: nlHeartRate,
+    bodyType: nlBodyType,
+    protein: nlProtein,
+    caloriesBurned: nlCaloriesBurned,
+    bsa: nlBsa,
+    bloodType: nlBloodType,
+    ovulation: nlOvulation,
+    period: nlPeriod,
+    bodyFrame: nlBodyFrame,
+    waistHip: nlWaistHip,
+    tip: nlTip,
+    date: nlDate,
+    age: nlAge,
+    percentage: nlPercentage,
+    sleep: nlSleep,
+  },
+  tr: {
+    ...trCommon,
+    categories: trCategories,
+    bmi: trBmi,
+    calorie: trCalorie,
+    idealWeight: trIdealWeight,
+    bodyFat: trBodyFat,
+    bmr: trBmr,
+    tdee: trTdee,
+    armyBodyFat: trArmyBodyFat,
+    pace: trPace,
+    macro: trMacro,
+    pregnancy: trPregnancy,
+    pregnancyWeightGain: trPregnancyWeightGain,
+    pregnancyConception: trPregnancyConception,
+    dueDate: trDueDate,
+    carbohydrate: trCarbohydrate,
+    leanBodyMass: trLeanBodyMass,
+    healthyWeight: trHealthyWeight,
+    heartRate: trHeartRate,
+    bodyType: trBodyType,
+    protein: trProtein,
+    caloriesBurned: trCaloriesBurned,
+    bsa: trBsa,
+    bloodType: trBloodType,
+    ovulation: trOvulation,
+    period: trPeriod,
+    bodyFrame: trBodyFrame,
+    waistHip: trWaistHip,
+    tip: trTip,
+    date: trDate,
+    age: trAge,
+    percentage: trPercentage,
+    sleep: trSleep,
+  },
+  sv: {
+    ...svCommon,
+    categories: svCategories,
+    bmi: svBmi,
+    calorie: svCalorie,
+    idealWeight: svIdealWeight,
+    bodyFat: svBodyFat,
+    bmr: svBmr,
+    tdee: svTdee,
+    armyBodyFat: svArmyBodyFat,
+    pace: svPace,
+    macro: svMacro,
+    pregnancy: svPregnancy,
+    pregnancyWeightGain: svPregnancyWeightGain,
+    pregnancyConception: svPregnancyConception,
+    dueDate: svDueDate,
+    carbohydrate: svCarbohydrate,
+    leanBodyMass: svLeanBodyMass,
+    healthyWeight: svHealthyWeight,
+    heartRate: svHeartRate,
+    bodyType: svBodyType,
+    protein: svProtein,
+    caloriesBurned: svCaloriesBurned,
+    bsa: svBsa,
+    bloodType: svBloodType,
+    ovulation: svOvulation,
+    period: svPeriod,
+    bodyFrame: svBodyFrame,
+    waistHip: svWaistHip,
+    tip: svTip,
+    date: svDate,
+    age: svAge,
+    percentage: svPercentage,
+    sleep: svSleep,
+  },
+  ru: {
+    ...ruCommon,
+    categories: ruCategories,
+    bmi: ruBmi,
+    calorie: ruCalorie,
+    idealWeight: ruIdealWeight,
+    bodyFat: ruBodyFat,
+    bmr: ruBmr,
+    tdee: ruTdee,
+    armyBodyFat: ruArmyBodyFat,
+    pace: ruPace,
+    macro: ruMacro,
+    pregnancy: ruPregnancy,
+    pregnancyWeightGain: ruPregnancyWeightGain,
+    pregnancyConception: ruPregnancyConception,
+    dueDate: ruDueDate,
+    carbohydrate: ruCarbohydrate,
+    leanBodyMass: ruLeanBodyMass,
+    healthyWeight: ruHealthyWeight,
+    heartRate: ruHeartRate,
+    bodyType: ruBodyType,
+    protein: ruProtein,
+    caloriesBurned: ruCaloriesBurned,
+    bsa: ruBsa,
+    bloodType: ruBloodType,
+    ovulation: ruOvulation,
+    period: ruPeriod,
+    bodyFrame: ruBodyFrame,
+    waistHip: ruWaistHip,
+    tip: ruTip,
+    date: ruDate,
+    age: ruAge,
+    percentage: ruPercentage,
+    sleep: ruSleep,
+  },
+
+
+=== LANGUAGE CONFIG ENTRIES TO ADD ===
+
+  nl: { name: 'Dutch', nativeName: 'Nederlands', path: '/nl' },
+  tr: { name: 'Turkish', nativeName: 'Türkçe', path: '/tr' },
+  sv: { name: 'Swedish', nativeName: 'Svenska', path: '/sv' },
+  ru: { name: 'Russian', nativeName: 'Русский', path: '/ru' },
+
+
+=== CALCULATOR PATHS TO ADD (add to each calculator object) ===
+
+
+// NL calculator paths:
+      nl: '/nl/rekenmachines/bmi/',
+      nl: '/nl/rekenmachines/calorie/',
+      nl: '/nl/rekenmachines/ideal-weight/',
+      nl: '/nl/rekenmachines/body-fat/',
+      nl: '/nl/rekenmachines/bmr/',
+      nl: '/nl/rekenmachines/tdee/',
+      nl: '/nl/rekenmachines/army-body-fat/',
+      nl: '/nl/rekenmachines/pace/',
+      nl: '/nl/rekenmachines/macro/',
+      nl: '/nl/rekenmachines/pregnancy/',
+      nl: '/nl/rekenmachines/pregnancy-weight-gain/',
+      nl: '/nl/rekenmachines/pregnancy-conception/',
+      nl: '/nl/rekenmachines/due-date/',
+      nl: '/nl/rekenmachines/carbohydrate/',
+      nl: '/nl/rekenmachines/lean-body-mass/',
+      nl: '/nl/rekenmachines/healthy-weight/',
+      nl: '/nl/rekenmachines/heart-rate/',
+      nl: '/nl/rekenmachines/body-type/',
+      nl: '/nl/rekenmachines/protein/',
+      nl: '/nl/rekenmachines/calories-burned/',
+      nl: '/nl/rekenmachines/bsa/',
+      nl: '/nl/rekenmachines/blood-type/',
+      nl: '/nl/rekenmachines/ovulation/',
+      nl: '/nl/rekenmachines/period/',
+      nl: '/nl/rekenmachines/body-frame/',
+      nl: '/nl/rekenmachines/waist-hip/',
+      nl: '/nl/rekenmachines/tip/',
+      nl: '/nl/rekenmachines/date/',
+      nl: '/nl/rekenmachines/age/',
+      nl: '/nl/rekenmachines/percentage/',
+      nl: '/nl/rekenmachines/sleep/',
+
+// TR calculator paths:
+      tr: '/tr/hesap-makineleri/bmi/',
+      tr: '/tr/hesap-makineleri/calorie/',
+      tr: '/tr/hesap-makineleri/ideal-weight/',
+      tr: '/tr/hesap-makineleri/body-fat/',
+      tr: '/tr/hesap-makineleri/bmr/',
+      tr: '/tr/hesap-makineleri/tdee/',
+      tr: '/tr/hesap-makineleri/army-body-fat/',
+      tr: '/tr/hesap-makineleri/pace/',
+      tr: '/tr/hesap-makineleri/macro/',
+      tr: '/tr/hesap-makineleri/pregnancy/',
+      tr: '/tr/hesap-makineleri/pregnancy-weight-gain/',
+      tr: '/tr/hesap-makineleri/pregnancy-conception/',
+      tr: '/tr/hesap-makineleri/due-date/',
+      tr: '/tr/hesap-makineleri/carbohydrate/',
+      tr: '/tr/hesap-makineleri/lean-body-mass/',
+      tr: '/tr/hesap-makineleri/healthy-weight/',
+      tr: '/tr/hesap-makineleri/heart-rate/',
+      tr: '/tr/hesap-makineleri/body-type/',
+      tr: '/tr/hesap-makineleri/protein/',
+      tr: '/tr/hesap-makineleri/calories-burned/',
+      tr: '/tr/hesap-makineleri/bsa/',
+      tr: '/tr/hesap-makineleri/blood-type/',
+      tr: '/tr/hesap-makineleri/ovulation/',
+      tr: '/tr/hesap-makineleri/period/',
+      tr: '/tr/hesap-makineleri/body-frame/',
+      tr: '/tr/hesap-makineleri/waist-hip/',
+      tr: '/tr/hesap-makineleri/tip/',
+      tr: '/tr/hesap-makineleri/date/',
+      tr: '/tr/hesap-makineleri/age/',
+      tr: '/tr/hesap-makineleri/percentage/',
+      tr: '/tr/hesap-makineleri/sleep/',
+
+// SV calculator paths:
+      sv: '/sv/kalkylatorer/bmi/',
+      sv: '/sv/kalkylatorer/calorie/',
+      sv: '/sv/kalkylatorer/ideal-weight/',
+      sv: '/sv/kalkylatorer/body-fat/',
+      sv: '/sv/kalkylatorer/bmr/',
+      sv: '/sv/kalkylatorer/tdee/',
+      sv: '/sv/kalkylatorer/army-body-fat/',
+      sv: '/sv/kalkylatorer/pace/',
+      sv: '/sv/kalkylatorer/macro/',
+      sv: '/sv/kalkylatorer/pregnancy/',
+      sv: '/sv/kalkylatorer/pregnancy-weight-gain/',
+      sv: '/sv/kalkylatorer/pregnancy-conception/',
+      sv: '/sv/kalkylatorer/due-date/',
+      sv: '/sv/kalkylatorer/carbohydrate/',
+      sv: '/sv/kalkylatorer/lean-body-mass/',
+      sv: '/sv/kalkylatorer/healthy-weight/',
+      sv: '/sv/kalkylatorer/heart-rate/',
+      sv: '/sv/kalkylatorer/body-type/',
+      sv: '/sv/kalkylatorer/protein/',
+      sv: '/sv/kalkylatorer/calories-burned/',
+      sv: '/sv/kalkylatorer/bsa/',
+      sv: '/sv/kalkylatorer/blood-type/',
+      sv: '/sv/kalkylatorer/ovulation/',
+      sv: '/sv/kalkylatorer/period/',
+      sv: '/sv/kalkylatorer/body-frame/',
+      sv: '/sv/kalkylatorer/waist-hip/',
+      sv: '/sv/kalkylatorer/tip/',
+      sv: '/sv/kalkylatorer/date/',
+      sv: '/sv/kalkylatorer/age/',
+      sv: '/sv/kalkylatorer/percentage/',
+      sv: '/sv/kalkylatorer/sleep/',
+
+// RU calculator paths:
+      ru: '/ru/kalkulyatory/bmi/',
+      ru: '/ru/kalkulyatory/calorie/',
+      ru: '/ru/kalkulyatory/ideal-weight/',
+      ru: '/ru/kalkulyatory/body-fat/',
+      ru: '/ru/kalkulyatory/bmr/',
+      ru: '/ru/kalkulyatory/tdee/',
+      ru: '/ru/kalkulyatory/army-body-fat/',
+      ru: '/ru/kalkulyatory/pace/',
+      ru: '/ru/kalkulyatory/macro/',
+      ru: '/ru/kalkulyatory/pregnancy/',
+      ru: '/ru/kalkulyatory/pregnancy-weight-gain/',
+      ru: '/ru/kalkulyatory/pregnancy-conception/',
+      ru: '/ru/kalkulyatory/due-date/',
+      ru: '/ru/kalkulyatory/carbohydrate/',
+      ru: '/ru/kalkulyatory/lean-body-mass/',
+      ru: '/ru/kalkulyatory/healthy-weight/',
+      ru: '/ru/kalkulyatory/heart-rate/',
+      ru: '/ru/kalkulyatory/body-type/',
+      ru: '/ru/kalkulyatory/protein/',
+      ru: '/ru/kalkulyatory/calories-burned/',
+      ru: '/ru/kalkulyatory/bsa/',
+      ru: '/ru/kalkulyatory/blood-type/',
+      ru: '/ru/kalkulyatory/ovulation/',
+      ru: '/ru/kalkulyatory/period/',
+      ru: '/ru/kalkulyatory/body-frame/',
+      ru: '/ru/kalkulyatory/waist-hip/',
+      ru: '/ru/kalkulyatory/tip/',
+      ru: '/ru/kalkulyatory/date/',
+      ru: '/ru/kalkulyatory/age/',
+      ru: '/ru/kalkulyatory/percentage/',
+      ru: '/ru/kalkulyatory/sleep/',
+

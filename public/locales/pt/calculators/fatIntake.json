@@ -1,0 +1,62 @@
+{
+  "title": "Calculadora de Ingestão de Gordura",
+  "description": "Calcule suas necessidades diárias de consumo de gordura",
+  "metaDescription": "Calculadora gratuita de ingestão de gordura - Calcule sua ingestão diária recomendada de gordura com base em sua idade, peso, altura, nível de atividade e objetivos de fitness.",
+  "form": {
+    "title": "Insira suas informações",
+    "ageLabel": "Idade",
+    "agePlaceholder": "Insira sua idade (15-80)",
+    "genderLabel": "Sexo",
+    "heightLabel": "Altura",
+    "heightPlaceholder": "Insira sua altura",
+    "weightLabel": "Peso",
+    "weightPlaceholder": "Insira seu peso",
+    "activityLabel": "Nível de Atividade",
+    "goalLabel": "Objetivo"
+  },
+  "activity": {
+    "sedentary": "Sedentário (pouco ou nenhum exercício)",
+    "light": "Leve (exercício 1-3 vezes/semana)",
+    "moderate": "Moderado (exercício 4-5 vezes/semana)",
+    "active": "Ativo (exercício diário ou exercício intenso 3-4 vezes/semana)",
+    "veryActive": "Muito Ativo (exercício intenso 6-7 vezes/semana)",
+    "extraActive": "Extra Ativo (exercício muito intenso diário e trabalho físico)"
+  },
+  "goal": {
+    "loseWeight": "Perder Peso",
+    "maintain": "Manter Peso",
+    "gainMuscle": "Ganhar Músculo"
+  },
+  "results": {
+    "title": "Suas Recomendações de Ingestão de Gordura",
+    "recommendedIntake": "Ingestão Diária Recomendada de Gordura",
+    "gramsPerDay": "gramas por dia",
+    "fatCalories": "Calorias de Gordura",
+    "percentage": "Porcentagem de Calorias Totais",
+    "dailyCalories": "Calorias Diárias",
+    "recommendedRange": "Faixa Recomendada",
+    "tdee": "TDEE",
+    "bmr": "TMB"
+  },
+  "info": {
+    "title": "Sobre a Ingestão de Gordura",
+    "description": "A gordura dietética é um macronutriente essencial que desempenha papéis cruciais na produção de hormônios, absorção de nutrientes, estrutura da membrana celular e armazenamento de energia. Esta calculadora ajuda você a determinar a quantidade ideal de gordura a consumir diariamente com base no seu gasto energético diário total (TDEE) e objetivos de fitness.",
+    "typesTitle": "Tipos de Gorduras",
+    "healthyFats": "Gorduras Saudáveis (Insaturadas)",
+    "healthyFatsDesc": "Essas gorduras podem melhorar a saúde cardíaca, reduzir a inflamação e apoiar o bem-estar geral:",
+    "healthyFats1": "Gorduras monoinsaturadas: Azeite de oliva, abacates, nozes (amêndoas, castanhas de caju, nozes-pecã)",
+    "healthyFats2": "Gorduras poliinsaturadas: Peixes gordurosos (salmão, cavala, sardinha), nozes, sementes de linhaça",
+    "healthyFats3": "Ácidos graxos ômega-3: Essenciais para a saúde do cérebro e redução da inflamação",
+    "healthyFats4": "Ácidos graxos ômega-6: Importantes para crescimento e desenvolvimento (com moderação)",
+    "unhealthyFats": "Gorduras Não Saudáveis",
+    "unhealthyFatsDesc": "Limite ou evite essas gorduras, pois podem aumentar riscos à saúde:",
+    "unhealthyFats1": "Gorduras trans: Encontradas em alimentos processados, fritos e óleos parcialmente hidrogenados",
+    "unhealthyFats2": "Excesso de gorduras saturadas: Grandes quantidades de carne vermelha, manteiga e laticínios integrais",
+    "recommendationsTitle": "Recomendações",
+    "recommendation1": "Escolha gorduras insaturadas saudáveis em vez de gorduras saturadas e trans",
+    "recommendation2": "Inclua peixes gordurosos em sua dieta 2-3 vezes por semana para obter ômega-3",
+    "recommendation3": "Use azeite de oliva ou óleo de abacate para cozinhar em vez de manteiga ou margarina",
+    "recommendation4": "Leia os rótulos nutricionais para evitar gorduras trans e limitar gorduras saturadas",
+    "limitations": "Essas recomendações são diretrizes gerais. As necessidades individuais de gordura podem variar com base no metabolismo, condições de saúde e requisitos dietéticos específicos. Consulte um profissional de saúde ou nutricionista para aconselhamento nutricional personalizado."
+  }
+}

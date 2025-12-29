@@ -1,0 +1,65 @@
+{
+  "title": "Weight Watchers Punten Calculator",
+  "description": "Bereken SmartPoints voor voedsel en je dagelijkse puntenbudget",
+  "metaDescription": "Gratis Weight Watchers Punten Calculator - Bereken SmartPoints voor voedsel en bepaal je dagelijkse puntenbudget op basis van je persoonlijke informatie.",
+  "disclaimer": {
+    "title": "Disclaimer",
+    "text": "Dit is een onofficiële calculator en is niet gelieerd aan WW International, Inc. SmartPoints is een handelsmerk van WW International, Inc. Deze calculator biedt schattingen alleen voor educatieve doeleinden."
+  },
+  "tabs": {
+    "foodPoints": "Voedselpunten",
+    "dailyBudget": "Dagelijks Budget"
+  },
+  "foodPoints": {
+    "title": "Bereken Voedselpunten",
+    "description": "Voer de voedingswaarde van je voedsel in om de SmartPoints-waarde te berekenen.",
+    "caloriesLabel": "Calorieën",
+    "caloriesPlaceholder": "Voer calorieën in",
+    "saturatedFatLabel": "Verzadigd Vet",
+    "saturatedFatPlaceholder": "Voer verzadigd vet in",
+    "sugarLabel": "Suiker",
+    "sugarPlaceholder": "Voer suiker in",
+    "proteinLabel": "Eiwit",
+    "proteinPlaceholder": "Voer eiwit in",
+    "resultsTitle": "Voedselpunten Resultaat",
+    "smartPoints": "SmartPoints",
+    "pointsPerServing": "per portie"
+  },
+  "dailyBudget": {
+    "title": "Bereken Dagelijks Puntenbudget",
+    "description": "Voer je persoonlijke informatie in om je aanbevolen dagelijkse SmartPoints-budget te berekenen.",
+    "ageLabel": "Leeftijd",
+    "agePlaceholder": "Voer je leeftijd in",
+    "genderLabel": "Geslacht",
+    "weightLabel": "Gewicht",
+    "weightPlaceholder": "Voer je gewicht in",
+    "heightLabel": "Lengte",
+    "heightPlaceholder": "Voer je lengte in",
+    "activityLabel": "Activiteitsniveau",
+    "resultsTitle": "Je Dagelijkse Budget",
+    "dailyPoints": "Dagelijkse SmartPoints",
+    "pointsPerDay": "per dag",
+    "basePoints": "Basispunten",
+    "activityBonus": "Activiteitsbonus",
+    "weeklyPoints": "Wekelijkse Extra Punten",
+    "budgetExplanation": "Je dagelijkse SmartPoints-budget is het streefaantal punten dat je elke dag moet nastreven. Je ontvangt ook wekelijkse extra punten voor flexibiliteit."
+  },
+  "activity": {
+    "sedentary": "Zittend (weinig of geen beweging)",
+    "light": "Licht (beweging 1-3 dagen/week)",
+    "moderate": "Matig (beweging 3-5 dagen/week)",
+    "active": "Actief (beweging 6-7 dagen/week)",
+    "veryActive": "Zeer Actief (dagelijkse intensieve training)"
+  },
+  "units": {
+    "kcal": "kcal",
+    "grams": "g"
+  },
+  "info": {
+    "title": "Over SmartPoints",
+    "description": "SmartPoints is een voedingssysteem dat waarden toekent aan voedsel op basis van calorieën, verzadigd vet, suiker en eiwit. Voedingsmiddelen met meer calorieën, verzadigd vet en suiker hebben hogere puntenwaarden, terwijl voedingsmiddelen met meer eiwit lagere waarden hebben. Dit stimuleert gezondere voedselkeuzes.",
+    "formulaTitle": "SmartPoints Formule",
+    "formula": "Punten = (Calorieën × 0,0305) + (Verzadigd Vet × 0,275) + (Suiker × 0,12) - (Eiwit × 0,098), afgerond op het dichtstbijzijnde gehele getal, minimum 0",
+    "limitations": "Deze calculator biedt alleen schattingen en mag geen professioneel dieetadvies vervangen. Raadpleeg altijd een zorgverlener of geregistreerde diëtist voor gepersonaliseerd voedingsadvies."
+  }
+}

@@ -1,0 +1,69 @@
+{
+  "title": "Promillerechner",
+  "metaDescription": "Berechnen Sie Ihren Blutalkoholgehalt (BAK) basierend auf konsumierten Getränken, Gewicht, Geschlecht und Zeit. Schätzen Sie das Beeinträchtigungsniveau und die Zeit bis zur Nüchternheit.",
+  "disclaimer": {
+    "title": "Wichtiger Hinweis",
+    "text": "Dieser Rechner liefert nur Schätzungen. Der Blutalkoholgehalt variiert aufgrund vieler Faktoren. Fahren Sie niemals unter Alkoholeinfluss. Gesetzliche Grenzen variieren je nach Rechtsprechung. Konsultieren Sie lokale Gesetze und handeln Sie immer vorsichtig."
+  },
+  "weight": {
+    "label": "Ihr Gewicht"
+  },
+  "gender": {
+    "label": "Geschlecht",
+    "male": "Männlich",
+    "female": "Weiblich"
+  },
+  "drinkType": {
+    "label": "Getränketyp",
+    "beer": "Bier (355 ml, 5% Alkohol)",
+    "wine": "Wein (150 ml, 12% Alkohol)",
+    "liquor": "Spirituosen (45 ml, 40% Alkohol)",
+    "custom": "Benutzerdefiniert"
+  },
+  "drinkVolume": {
+    "label": "Volumen pro Getränk"
+  },
+  "alcoholContent": {
+    "label": "Alkoholgehalt (% Vol.)"
+  },
+  "drinks": {
+    "label": "Anzahl der Getränke"
+  },
+  "hours": {
+    "label": "Stunden seit Trinkbeginn"
+  },
+  "results": {
+    "title": "Ihre Ergebnisse",
+    "bac": "Blutalkoholkonzentration (BAK)",
+    "impairmentLevel": "Beeinträchtigungsniveau",
+    "timeUntilSober": "Zeit bis zur Nüchternheit",
+    "legalStatus": "Rechtlicher Status",
+    "descriptionTitle": "Beeinträchtigungsbeschreibung"
+  },
+  "legalDisclaimer": {
+    "title": "Rechtlicher Haftungsausschluss",
+    "text": "Dieser Rechner dient nur zu Bildungszwecken. Verlassen Sie sich nicht darauf, um festzustellen, ob Sie legal fahren können. Gesetzliche BAK-Grenzen variieren je nach Rechtsprechung (0.05% in Deutschland, 0.00% für Fahranfänger). Verwenden Sie immer einen nüchternen Fahrer oder alternative Transportmittel, wenn Sie getrunken haben."
+  },
+  "info": {
+    "title": "Über den Blutalkoholgehalt",
+    "description": "Der Blutalkoholgehalt (BAK) ist ein Maß für die Alkoholkonzentration in Ihrem Blutkreislauf. Er wird als Prozentsatz ausgedrückt - zum Beispiel bedeutet 0.05%, dass 0.05 Gramm Alkohol pro 100 Milliliter Blut vorhanden sind.",
+    "howItWorks": "Wie dieser Rechner funktioniert",
+    "formula": "Dieser Rechner verwendet die Widmark-Formel, um den BAK basierend auf konsumiertem Alkohol, Körpergewicht, Geschlecht und verstrichener Zeit zu schätzen. Die Formel berücksichtigt die Alkoholabbaurate (etwa 0.015% BAK-Abnahme pro Stunde).",
+    "impairmentLevelsTitle": "Beeinträchtigungsniveaus",
+    "levels": {
+      "minimal": "Minimale Effekte, leichte Stimmungsaufhellung, subtile Verhaltensänderungen",
+      "mild": "Leichte Beeinträchtigung, Entspannung, reduzierte Koordination, verringerte Hemmungen",
+      "moderate": "Mäßige Beeinträchtigung, reduzierte Reaktionszeit, beeinträchtigtes Urteilsvermögen, Konzentrationsschwierigkeiten",
+      "significant": "Erhebliche Beeinträchtigung, Schwierigkeiten beim Gehen und Balancieren, undeutliche Sprache, schlechte Entscheidungsfindung",
+      "severe": "Schwere Beeinträchtigung, Risiko einer Alkoholvergiftung, Bewusstlosigkeit, potenziell lebensbedrohlicher Zustand"
+    },
+    "factorsTitle": "Faktoren, die den BAK beeinflussen",
+    "factors": {
+      "weight": "Körpergewicht - schwerere Personen haben typischerweise niedrigere BAK-Werte bei gleicher Alkoholmenge",
+      "gender": "Geschlecht - Frauen erreichen typischerweise höhere BAK-Werte als Männer bei gleicher Alkoholmenge",
+      "time": "Zeit - der Körper baut Alkohol mit etwa 0.015% BAK pro Stunde ab",
+      "food": "Nahrungsaufnahme - Essen vor oder während des Trinkens verlangsamt die Alkoholaufnahme",
+      "metabolism": "Individueller Stoffwechsel - variiert je nach Genetik, Medikamenten und Gesundheitszustand"
+    }
+  }
+}

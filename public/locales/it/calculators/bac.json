@@ -1,0 +1,69 @@
+{
+  "title": "Calcolatore di Alcolemia",
+  "metaDescription": "Calcola il tuo tasso alcolemico (BAC) in base alle bevande consumate, peso, sesso e tempo. Stima il livello di compromissione e il tempo fino alla sobrietà.",
+  "disclaimer": {
+    "title": "Avviso Importante",
+    "text": "Questo calcolatore fornisce solo stime. Il tasso alcolemico varia in base a molti fattori. Non guidare mai sotto l'effetto dell'alcol. I limiti legali variano per giurisdizione. Consulta le leggi locali e agisci sempre con cautela."
+  },
+  "weight": {
+    "label": "Il Tuo Peso"
+  },
+  "gender": {
+    "label": "Sesso",
+    "male": "Maschio",
+    "female": "Femmina"
+  },
+  "drinkType": {
+    "label": "Tipo di Bevanda",
+    "beer": "Birra (355 ml, 5% alcol)",
+    "wine": "Vino (150 ml, 12% alcol)",
+    "liquor": "Superalcolici (45 ml, 40% alcol)",
+    "custom": "Personalizzato"
+  },
+  "drinkVolume": {
+    "label": "Volume per Bevanda"
+  },
+  "alcoholContent": {
+    "label": "Contenuto Alcolico (% vol.)"
+  },
+  "drinks": {
+    "label": "Numero di Bevande"
+  },
+  "hours": {
+    "label": "Ore dall'Inizio del Consumo"
+  },
+  "results": {
+    "title": "I Tuoi Risultati",
+    "bac": "Tasso Alcolemico (BAC)",
+    "impairmentLevel": "Livello di Compromissione",
+    "timeUntilSober": "Tempo Fino alla Sobrietà",
+    "legalStatus": "Stato Legale",
+    "descriptionTitle": "Descrizione della Compromissione"
+  },
+  "legalDisclaimer": {
+    "title": "Disclaimer Legale",
+    "text": "Questo calcolatore è solo per scopi educativi. Non fare affidamento su di esso per determinare se puoi guidare legalmente. I limiti legali di alcolemia variano per giurisdizione (0.05% in Italia, 0.00% per neopatentati). Usa sempre un autista designato o trasporto alternativo se hai bevuto."
+  },
+  "info": {
+    "title": "Informazioni sul Tasso Alcolemico",
+    "description": "Il tasso alcolemico (BAC) è una misura della concentrazione di alcol nel flusso sanguigno. È espresso in percentuale - ad esempio, 0.05% significa 0.05 grammi di alcol per 100 millilitri di sangue.",
+    "howItWorks": "Come Funziona Questo Calcolatore",
+    "formula": "Questo calcolatore usa la formula di Widmark per stimare il BAC in base all'alcol consumato, peso corporeo, sesso e tempo trascorso. La formula tiene conto del tasso di metabolizzazione dell'alcol (circa 0.015% di diminuzione del BAC per ora).",
+    "impairmentLevelsTitle": "Livelli di Compromissione",
+    "levels": {
+      "minimal": "Effetti minimi, leggera elevazione dell'umore, cambiamenti comportamentali sottili",
+      "mild": "Compromissione lieve, rilassamento, coordinazione ridotta, inibizioni ridotte",
+      "moderate": "Compromissione moderata, tempo di reazione ridotto, giudizio compromesso, difficoltà di concentrazione",
+      "significant": "Compromissione significativa, difficoltà a camminare e mantenere l'equilibrio, eloquio confuso, cattivo giudizio",
+      "severe": "Compromissione grave, rischio di intossicazione da alcol, perdita di coscienza, condizione potenzialmente letale"
+    },
+    "factorsTitle": "Fattori che Influenzano il BAC",
+    "factors": {
+      "weight": "Peso corporeo - le persone più pesanti hanno generalmente livelli più bassi con la stessa quantità di alcol",
+      "gender": "Sesso - le donne raggiungono generalmente livelli più alti degli uomini con la stessa quantità di alcol",
+      "time": "Tempo - il corpo metabolizza l'alcol a circa 0.015% per ora",
+      "food": "Consumo di cibo - mangiare prima o mentre si beve rallenta l'assorbimento dell'alcol",
+      "metabolism": "Metabolismo individuale - varia in base alla genetica, ai farmaci e alle condizioni di salute"
+    }
+  }
+}

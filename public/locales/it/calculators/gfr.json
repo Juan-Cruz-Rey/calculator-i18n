@@ -1,0 +1,68 @@
+{
+  "title": "Calcolatore GFR",
+  "metaTitle": "Calcolatore GFR - Stima della Funzione Renale (eGFR)",
+  "metaDescription": "Calcola il tuo Tasso di Filtrazione Glomerulare stimato (eGFR) usando l'equazione CKD-EPI. Valuta la funzione renale e lo stadio della CKD in base ad età, sesso e creatinina sierica.",
+  "description": "Calcola il tuo Tasso di Filtrazione Glomerulare stimato (eGFR) per valutare la funzione renale. Questo calcolatore utilizza l'equazione CKD-EPI, il metodo più accurato per stimare la funzione renale.",
+
+  "inputs": {
+    "age": "Età",
+    "ageHelp": "Inserisci la tua età (18-120 anni)",
+    "gender": "Sesso",
+    "male": "Maschile",
+    "female": "Femminile",
+    "serumCreatinine": "Creatinina Sierica",
+    "creatinineHelp": "Inserisci il tuo livello di creatinina sierica dall'esame del sangue",
+    "equation": "Equazione",
+    "equation2021": "CKD-EPI 2021 (senza razza, raccomandato)",
+    "equation2009": "CKD-EPI 2009 (con razza, legacy)",
+    "equationHelp": "L'equazione del 2021 è raccomandata poiché non usa la razza come fattore",
+    "race": "Razza",
+    "africanAmerican": "Afroamericano",
+    "raceHelp": "Applicabile solo quando si utilizza l'equazione CKD-EPI 2009"
+  },
+
+  "calculate": "Calcola GFR",
+
+  "results": {
+    "title": "I Tuoi Risultati",
+    "gfrValue": "eGFR",
+    "stage": "Stadio CKD",
+    "interpretation": "Interpretazione",
+    "equation": "Equazione Utilizzata"
+  },
+
+  "stageInfo": {
+    "title": "Stadi della Malattia Renale Cronica (CKD)",
+    "stage1": "Stadio 1 (GFR ≥90):",
+    "stage1Desc": "Funzione renale normale o alta",
+    "stage2": "Stadio 2 (GFR 60-89):",
+    "stage2Desc": "Funzione renale lievemente ridotta",
+    "stage3a": "Stadio 3a (GFR 45-59):",
+    "stage3aDesc": "Riduzione lieve-moderata della funzione renale",
+    "stage3b": "Stadio 3b (GFR 30-44):",
+    "stage3bDesc": "Riduzione moderata-severa della funzione renale",
+    "stage4": "Stadio 4 (GFR 15-29):",
+    "stage4Desc": "Funzione renale severamente ridotta",
+    "stage5": "Stadio 5 (GFR <15):",
+    "stage5Desc": "Insufficienza renale (necessaria dialisi o trapianto)"
+  },
+
+  "disclaimer": {
+    "title": "Avvertenza Medica",
+    "text": "Questo calcolatore è solo a scopo informativo e non dovrebbe sostituire il consiglio medico professionale. Consultare sempre il proprio medico per una diagnosi e un trattamento adeguati della malattia renale. Le stime del GFR possono essere meno accurate in alcune popolazioni."
+  },
+
+  "about": {
+    "title": "Informazioni sul Calcolatore GFR",
+    "description": "Il calcolatore del Tasso di Filtrazione Glomerulare (GFR) stima quanto bene i tuoi reni filtrano i rifiuti dal sangue. È un indicatore chiave della salute renale ed è utilizzato per rilevare e monitorare la malattia renale cronica (CKD).",
+    "whatIsGFR": "Cos'è il GFR?",
+    "gfrExplanation": "Il GFR misura quanto sangue passa attraverso i glomeruli (piccoli filtri nei reni) ogni minuto. Un GFR normale è 90 o superiore. Un GFR inferiore a 60 per tre mesi o più indica malattia renale cronica. Più basso è il GFR, peggiore è la funzione renale.",
+    "ckdEpiEquation": "Equazione CKD-EPI",
+    "equationExplanation": "L'equazione CKD-EPI (Chronic Kidney Disease Epidemiology Collaboration) è il metodo più utilizzato per stimare il GFR. La versione 2021 ha rimosso la razza come fattore, rendendola più equa. Utilizza età, sesso e livello di creatinina sierica per stimare la funzione renale.",
+    "importantNotes": "Note Importanti",
+    "note1": "Questo calcolatore è più accurato per adulti di 18 anni o più",
+    "note2": "I risultati possono essere meno accurati in persone con dimensioni corporee estreme, grave malnutrizione o malattie muscolari",
+    "note3": "Un singolo risultato GFR non è sufficiente per diagnosticare la malattia renale - il monitoraggio nel tempo è importante",
+    "note4": "Altri fattori come proteine nelle urine e danni renali determinano anche lo stadio della CKD"
+  }
+}

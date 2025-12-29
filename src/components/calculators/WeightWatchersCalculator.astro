@@ -1,0 +1,719 @@
+---
+import { t, type Locale } from '@/utils/i18n';
+
+const { lang } = Astro.props as { lang: Locale };
+---
+
+<div class="ww-calculator">
+  <!-- Disclaimer -->
+  <div class="disclaimer">
+    <p><strong>{t('weightWatchers.disclaimer.title', lang)}</strong></p>
+    <p>{t('weightWatchers.disclaimer.text', lang)}</p>
+  </div>
+
+  <!-- Tab Navigation -->
+  <div class="tab-navigation" role="tablist">
+    <button
+      type="button"
+      role="tab"
+      aria-selected="true"
+      aria-controls="food-panel"
+      id="food-tab"
+      class="tab-button active"
+      data-tab="food"
+    >
+      {t('weightWatchers.tabs.foodPoints', lang)}
+    </button>
+    <button
+      type="button"
+      role="tab"
+      aria-selected="false"
+      aria-controls="budget-panel"
+      id="budget-tab"
+      class="tab-button"
+      data-tab="budget"
+    >
+      {t('weightWatchers.tabs.dailyBudget', lang)}
+    </button>
+  </div>
+
+  <!-- Food Points Calculator -->
+  <div
+    id="food-panel"
+    role="tabpanel"
+    aria-labelledby="food-tab"
+    class="tab-panel active"
+  >
+    <div class="calculator-form">
+      <h2>{t('weightWatchers.foodPoints.title', lang)}</h2>
+      <p class="form-description">{t('weightWatchers.foodPoints.description', lang)}</p>
+
+      <form id="food-form">
+        <!-- Calories -->
+        <div class="form-group">
+          <label for="calories">{t('weightWatchers.foodPoints.caloriesLabel', lang)}</label>
+          <input
+            type="number"
+            id="calories"
+            name="calories"
+            min="0"
+            max="10000"
+            step="1"
+            required
+            placeholder={t('weightWatchers.foodPoints.caloriesPlaceholder', lang)}
+          />
+          <span class="unit">{t('weightWatchers.units.kcal', lang)}</span>
+        </div>
+
+        <!-- Saturated Fat -->
+        <div class="form-group">
+          <label for="saturatedFat">{t('weightWatchers.foodPoints.saturatedFatLabel', lang)}</label>
+          <input
+            type="number"
+            id="saturatedFat"
+            name="saturatedFat"
+            min="0"
+            max="1000"
+            step="0.1"
+            required
+            placeholder={t('weightWatchers.foodPoints.saturatedFatPlaceholder', lang)}
+          />
+          <span class="unit">{t('weightWatchers.units.grams', lang)}</span>
+        </div>
+
+        <!-- Sugar -->
+        <div class="form-group">
+          <label for="sugar">{t('weightWatchers.foodPoints.sugarLabel', lang)}</label>
+          <input
+            type="number"
+            id="sugar"
+            name="sugar"
+            min="0"
+            max="1000"
+            step="0.1"
+            required
+            placeholder={t('weightWatchers.foodPoints.sugarPlaceholder', lang)}
+          />
+          <span class="unit">{t('weightWatchers.units.grams', lang)}</span>
+        </div>
+
+        <!-- Protein -->
+        <div class="form-group">
+          <label for="protein">{t('weightWatchers.foodPoints.proteinLabel', lang)}</label>
+          <input
+            type="number"
+            id="protein"
+            name="protein"
+            min="0"
+            max="1000"
+            step="0.1"
+            required
+            placeholder={t('weightWatchers.foodPoints.proteinPlaceholder', lang)}
+          />
+          <span class="unit">{t('weightWatchers.units.grams', lang)}</span>
+        </div>
+
+        <!-- Buttons -->
+        <div class="form-actions">
+          <button type="submit" class="btn-primary">{t('common.calculate', lang)}</button>
+          <button type="reset" class="btn-secondary">{t('common.reset', lang)}</button>
+        </div>
+      </form>
+    </div>
+
+    <!-- Food Points Results -->
+    <div class="calculator-results" id="food-results" style="display: none;" role="region" aria-live="polite" aria-atomic="true">
+      <h2>{t('weightWatchers.foodPoints.resultsTitle', lang)}</h2>
+
+      <div class="result-card points-value">
+        <h3>{t('weightWatchers.foodPoints.smartPoints', lang)}</h3>
+        <p class="value" id="food-points-value">-</p>
+        <p class="subtitle">{t('weightWatchers.foodPoints.pointsPerServing', lang)}</p>
+      </div>
+
+      <div class="result-grid">
+        <div class="result-item">
+          <strong>{t('weightWatchers.foodPoints.caloriesLabel', lang)}:</strong>
+          <span id="result-calories">-</span>
+        </div>
+        <div class="result-item">
+          <strong>{t('weightWatchers.foodPoints.saturatedFatLabel', lang)}:</strong>
+          <span id="result-sat-fat">-</span>
+        </div>
+        <div class="result-item">
+          <strong>{t('weightWatchers.foodPoints.sugarLabel', lang)}:</strong>
+          <span id="result-sugar">-</span>
+        </div>
+        <div class="result-item">
+          <strong>{t('weightWatchers.foodPoints.proteinLabel', lang)}:</strong>
+          <span id="result-protein">-</span>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Daily Budget Calculator -->
+  <div
+    id="budget-panel"
+    role="tabpanel"
+    aria-labelledby="budget-tab"
+    class="tab-panel"
+    style="display: none;"
+  >
+    <div class="calculator-form">
+      <h2>{t('weightWatchers.dailyBudget.title', lang)}</h2>
+      <p class="form-description">{t('weightWatchers.dailyBudget.description', lang)}</p>
+
+      <form id="budget-form">
+        <!-- Age -->
+        <div class="form-group">
+          <label for="budget-age">{t('weightWatchers.dailyBudget.ageLabel', lang)}</label>
+          <input
+            type="number"
+            id="budget-age"
+            name="age"
+            min="18"
+            max="100"
+            required
+            placeholder={t('weightWatchers.dailyBudget.agePlaceholder', lang)}
+          />
+          <span class="unit">{t('common.years', lang)}</span>
+        </div>
+
+        <!-- Gender -->
+        <div class="form-group">
+          <label for="budget-gender">{t('weightWatchers.dailyBudget.genderLabel', lang)}</label>
+          <select id="budget-gender" name="gender" required>
+            <option value="male">{t('common.male', lang)}</option>
+            <option value="female">{t('common.female', lang)}</option>
+          </select>
+        </div>
+
+        <!-- Weight -->
+        <div class="form-group">
+          <label for="budget-weight">{t('weightWatchers.dailyBudget.weightLabel', lang)}</label>
+          <input
+            type="number"
+            id="budget-weight"
+            name="weight"
+            min="30"
+            max="300"
+            step="0.1"
+            required
+            placeholder={t('weightWatchers.dailyBudget.weightPlaceholder', lang)}
+          />
+          <span class="unit">{t('units.kg', lang)}</span>
+        </div>
+
+        <!-- Height -->
+        <div class="form-group">
+          <label for="budget-height">{t('weightWatchers.dailyBudget.heightLabel', lang)}</label>
+          <input
+            type="number"
+            id="budget-height"
+            name="height"
+            min="100"
+            max="250"
+            step="1"
+            required
+            placeholder={t('weightWatchers.dailyBudget.heightPlaceholder', lang)}
+          />
+          <span class="unit">{t('units.cm', lang)}</span>
+        </div>
+
+        <!-- Activity Level -->
+        <div class="form-group">
+          <label for="activity-level">{t('weightWatchers.dailyBudget.activityLabel', lang)}</label>
+          <select id="activity-level" name="activityLevel" required>
+            <option value="sedentary">{t('weightWatchers.activity.sedentary', lang)}</option>
+            <option value="light">{t('weightWatchers.activity.light', lang)}</option>
+            <option value="moderate" selected>{t('weightWatchers.activity.moderate', lang)}</option>
+            <option value="active">{t('weightWatchers.activity.active', lang)}</option>
+            <option value="very-active">{t('weightWatchers.activity.veryActive', lang)}</option>
+          </select>
+        </div>
+
+        <!-- Buttons -->
+        <div class="form-actions">
+          <button type="submit" class="btn-primary">{t('common.calculate', lang)}</button>
+          <button type="reset" class="btn-secondary">{t('common.reset', lang)}</button>
+        </div>
+      </form>
+    </div>
+
+    <!-- Daily Budget Results -->
+    <div class="calculator-results" id="budget-results" style="display: none;" role="region" aria-live="polite" aria-atomic="true">
+      <h2>{t('weightWatchers.dailyBudget.resultsTitle', lang)}</h2>
+
+      <div class="result-card budget-value">
+        <h3>{t('weightWatchers.dailyBudget.dailyPoints', lang)}</h3>
+        <p class="value" id="daily-points-value">-</p>
+        <p class="subtitle">{t('weightWatchers.dailyBudget.pointsPerDay', lang)}</p>
+      </div>
+
+      <div class="result-grid">
+        <div class="result-item">
+          <strong>{t('weightWatchers.dailyBudget.basePoints', lang)}:</strong>
+          <span id="base-points">-</span>
+        </div>
+        <div class="result-item">
+          <strong>{t('weightWatchers.dailyBudget.activityBonus', lang)}:</strong>
+          <span id="activity-bonus">-</span>
+        </div>
+        <div class="result-item highlight">
+          <strong>{t('weightWatchers.dailyBudget.weeklyPoints', lang)}:</strong>
+          <span id="weekly-points">-</span>
+        </div>
+      </div>
+
+      <div class="budget-info">
+        <p>{t('weightWatchers.dailyBudget.budgetExplanation', lang)}</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- Information Section -->
+  <div class="calculator-info">
+    <h2>{t('weightWatchers.info.title', lang)}</h2>
+    <p>{t('weightWatchers.info.description', lang)}</p>
+    <p class="formula"><strong>{t('weightWatchers.info.formulaTitle', lang)}:</strong> {t('weightWatchers.info.formula', lang)}</p>
+    <p class="limitations">{t('weightWatchers.info.limitations', lang)}</p>
+  </div>
+</div>
+
+<style>
+  .ww-calculator {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 2rem;
+  }
+
+  .disclaimer {
+    background: #fff3cd;
+    border: 1px solid #ffc107;
+    border-radius: 8px;
+    padding: 1.5rem;
+    margin-bottom: 2rem;
+  }
+
+  .disclaimer p {
+    margin: 0.5rem 0;
+    color: #856404;
+    line-height: 1.6;
+  }
+
+  .disclaimer strong {
+    color: #664d03;
+  }
+
+  .tab-navigation {
+    display: flex;
+    gap: 0.5rem;
+    margin-bottom: 2rem;
+    border-bottom: 2px solid #e0e0e0;
+  }
+
+  .tab-button {
+    flex: 1;
+    padding: 1rem;
+    background: transparent;
+    border: none;
+    border-bottom: 3px solid transparent;
+    font-size: 1rem;
+    font-weight: 500;
+    color: #666;
+    cursor: pointer;
+    transition: all 0.2s;
+  }
+
+  .tab-button:hover {
+    background: #f5f5f5;
+    color: #333;
+  }
+
+  .tab-button.active {
+    color: var(--primary-color);
+    border-bottom-color: var(--primary-color);
+  }
+
+  .tab-button:focus {
+    outline: 2px solid var(--primary-color);
+    outline-offset: -2px;
+  }
+
+  .tab-panel {
+    display: none;
+  }
+
+  .tab-panel.active {
+    display: block;
+  }
+
+  .calculator-form, .calculator-results, .calculator-info {
+    background: white;
+    border-radius: 8px;
+    padding: 2rem;
+    margin-bottom: 2rem;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+  }
+
+  h2 {
+    margin-top: 0;
+    color: #333;
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+  }
+
+  .form-description {
+    color: #666;
+    margin-bottom: 1.5rem;
+    line-height: 1.6;
+  }
+
+  .form-group {
+    margin-bottom: 1.5rem;
+  }
+
+  .form-group label {
+    display: block;
+    margin-bottom: 0.5rem;
+    font-weight: 500;
+    color: #555;
+  }
+
+  .form-group input[type="number"],
+  .form-group select {
+    width: 100%;
+    padding: 0.75rem;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-size: 1rem;
+  }
+
+  .form-group input[type="number"]:focus,
+  .form-group select:focus {
+    border-color: var(--primary-color);
+    outline: none;
+    box-shadow: 0 0 0 3px rgba(52, 168, 83, 0.1);
+  }
+
+  .unit {
+    display: inline-block;
+    margin-left: 0.5rem;
+    color: #888;
+    font-size: 0.9rem;
+  }
+
+  .form-actions {
+    display: flex;
+    gap: 1rem;
+    margin-top: 2rem;
+  }
+
+  .btn-primary, .btn-secondary {
+    flex: 1;
+    padding: 0.875rem;
+    border: none;
+    border-radius: 4px;
+    font-size: 1rem;
+    font-weight: 500;
+    cursor: pointer;
+    transition: all 0.2s;
+  }
+
+  .btn-primary {
+    background: var(--primary-color);
+    color: white;
+  }
+
+  .btn-primary:hover {
+    background: #2d6a2f;
+  }
+
+  .btn-primary:focus {
+    outline: 2px solid var(--primary-color);
+    outline-offset: 2px;
+  }
+
+  .btn-secondary {
+    background: #f5f5f5;
+    color: #333;
+  }
+
+  .btn-secondary:hover {
+    background: #e0e0e0;
+  }
+
+  .btn-secondary:focus {
+    outline: 2px solid #999;
+    outline-offset: 2px;
+  }
+
+  .result-card {
+    text-align: center;
+    padding: 2rem;
+    background: linear-gradient(135deg, #5568d3 0%, #6a4199 100%);
+    color: white;
+    border-radius: 8px;
+    margin-bottom: 2rem;
+  }
+
+  .result-card h3 {
+    margin: 0 0 1rem 0;
+    font-size: 1.2rem;
+  }
+
+  .result-card .value {
+    font-size: 3.5rem;
+    font-weight: bold;
+    margin: 0;
+  }
+
+  .result-card .subtitle {
+    font-size: 1rem;
+    margin: 0.5rem 0 0 0;
+    opacity: 0.9;
+  }
+
+  .points-value {
+    background: linear-gradient(135deg, #e91e63 0%, #9c27b0 100%);
+  }
+
+  .budget-value {
+    background: linear-gradient(135deg, #2196f3 0%, #1976d2 100%);
+  }
+
+  .result-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 1rem;
+  }
+
+  .result-item {
+    padding: 1rem;
+    background: #f9f9f9;
+    border-radius: 4px;
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+
+  .result-item.highlight {
+    background: #e3f2fd;
+    border: 2px solid #2196f3;
+  }
+
+  .result-item strong {
+    color: #555;
+    font-size: 0.9rem;
+  }
+
+  .result-item span {
+    color: #333;
+    font-size: 1.1rem;
+    font-weight: 500;
+  }
+
+  .budget-info {
+    margin-top: 1.5rem;
+    padding: 1rem;
+    background: #e8f5e9;
+    border-radius: 4px;
+    border-left: 4px solid var(--primary-color);
+  }
+
+  .budget-info p {
+    margin: 0;
+    color: #2e7d32;
+    line-height: 1.6;
+  }
+
+  .calculator-info {
+    background: #f9f9f9;
+  }
+
+  .calculator-info p {
+    margin-bottom: 1rem;
+    line-height: 1.6;
+    color: #555;
+  }
+
+  .formula {
+    font-family: monospace;
+    background: white;
+    padding: 1rem;
+    border-left: 4px solid var(--primary-color);
+    margin: 1rem 0;
+  }
+
+  .limitations {
+    font-size: 0.9rem;
+    font-style: italic;
+  }
+
+  .sr-only {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    white-space: nowrap;
+    border-width: 0;
+  }
+
+  @media (max-width: 768px) {
+    .ww-calculator {
+      padding: 1rem;
+    }
+
+    .calculator-form, .calculator-results, .calculator-info {
+      padding: 1.5rem;
+    }
+
+    .result-card .value {
+      font-size: 2.5rem;
+    }
+
+    .tab-button {
+      font-size: 0.9rem;
+      padding: 0.75rem;
+    }
+  }
+</style>
+
+<script>
+  import type {
+    FoodPointsInput,
+    DailyBudgetInput,
+    ActivityLevel,
+    Gender
+  } from '@/utils/calculators/weightWatchers';
+  import {
+    calculateFoodPoints,
+    calculateDailyBudget
+  } from '@/utils/calculators/weightWatchers';
+
+  // Tab Navigation
+  const tabButtons = document.querySelectorAll('.tab-button');
+  const tabPanels = document.querySelectorAll('.tab-panel');
+
+  tabButtons.forEach(button => {
+    button.addEventListener('click', () => {
+      const targetTab = button.getAttribute('data-tab');
+
+      // Update buttons
+      tabButtons.forEach(btn => {
+        btn.classList.remove('active');
+        btn.setAttribute('aria-selected', 'false');
+      });
+      button.classList.add('active');
+      button.setAttribute('aria-selected', 'true');
+
+      // Update panels
+      tabPanels.forEach(panel => {
+        panel.classList.remove('active');
+        (panel as HTMLElement).style.display = 'none';
+      });
+
+      const targetPanel = targetTab === 'food'
+        ? document.getElementById('food-panel')
+        : document.getElementById('budget-panel');
+
+      if (targetPanel) {
+        targetPanel.classList.add('active');
+        targetPanel.style.display = 'block';
+      }
+    });
+  });
+
+  // Food Points Calculator
+  const foodForm = document.getElementById('food-form') as HTMLFormElement;
+  const foodResults = document.getElementById('food-results') as HTMLDivElement;
+
+  foodForm.addEventListener('submit', (e) => {
+    e.preventDefault();
+
+    const formData = new FormData(foodForm);
+    const input: FoodPointsInput = {
+      calories: parseFloat(formData.get('calories') as string),
+      saturatedFat: parseFloat(formData.get('saturatedFat') as string),
+      sugar: parseFloat(formData.get('sugar') as string),
+      protein: parseFloat(formData.get('protein') as string)
+    };
+
+    try {
+      const result = calculateFoodPoints(input);
+      displayFoodResults(result);
+    } catch (error) {
+      alert('Error calculating food points. Please check your inputs.');
+      console.error(error);
+    }
+  });
+
+  function displayFoodResults(result: any) {
+    const pointsValue = document.getElementById('food-points-value') as HTMLParagraphElement;
+    const resultCalories = document.getElementById('result-calories') as HTMLSpanElement;
+    const resultSatFat = document.getElementById('result-sat-fat') as HTMLSpanElement;
+    const resultSugar = document.getElementById('result-sugar') as HTMLSpanElement;
+    const resultProtein = document.getElementById('result-protein') as HTMLSpanElement;
+
+    pointsValue.textContent = result.points.toString();
+    resultCalories.textContent = result.calories + ' kcal';
+    resultSatFat.textContent = result.saturatedFat + ' g';
+    resultSugar.textContent = result.sugar + ' g';
+    resultProtein.textContent = result.protein + ' g';
+
+    foodResults.style.display = 'block';
+    foodResults.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
+  }
+
+  foodForm.addEventListener('reset', () => {
+    foodResults.style.display = 'none';
+  });
+
+  // Daily Budget Calculator
+  const budgetForm = document.getElementById('budget-form') as HTMLFormElement;
+  const budgetResults = document.getElementById('budget-results') as HTMLDivElement;
+
+  budgetForm.addEventListener('submit', (e) => {
+    e.preventDefault();
+
+    const formData = new FormData(budgetForm);
+    const input: DailyBudgetInput = {
+      age: parseInt(formData.get('age') as string),
+      gender: formData.get('gender') as Gender,
+      weight: parseFloat(formData.get('weight') as string),
+      height: parseFloat(formData.get('height') as string),
+      activityLevel: formData.get('activityLevel') as ActivityLevel
+    };
+
+    try {
+      const result = calculateDailyBudget(input);
+      displayBudgetResults(result);
+    } catch (error) {
+      alert('Error calculating daily budget. Please check your inputs.');
+      console.error(error);
+    }
+  });
+
+  function displayBudgetResults(result: any) {
+    const dailyPointsValue = document.getElementById('daily-points-value') as HTMLParagraphElement;
+    const basePoints = document.getElementById('base-points') as HTMLSpanElement;
+    const activityBonus = document.getElementById('activity-bonus') as HTMLSpanElement;
+    const weeklyPoints = document.getElementById('weekly-points') as HTMLSpanElement;
+
+    dailyPointsValue.textContent = result.dailyPoints.toString();
+    basePoints.textContent = result.basePoints.toString();
+    activityBonus.textContent = '+' + result.activityBonus.toString();
+    weeklyPoints.textContent = result.weeklyPoints.toString();
+
+    budgetResults.style.display = 'block';
+    budgetResults.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
+  }
+
+  budgetForm.addEventListener('reset', () => {
+    budgetResults.style.display = 'none';
+  });
+</script>

@@ -1,0 +1,68 @@
+{
+  "title": "GFR Kalkylator",
+  "metaTitle": "GFR Kalkylator - Uppskatta Njurfunktion (eGFR)",
+  "metaDescription": "Beräkna din uppskattade glomerulära filtrationshastighet (eGFR) med CKD-EPI ekvationen. Bedöm njurfunktion och CKD-stadium baserat på ålder, kön och serumkreatinin.",
+  "description": "Beräkna din uppskattade glomerulära filtrationshastighet (eGFR) för att bedöma njurfunktionen. Denna kalkylator använder CKD-EPI ekvationen, den mest exakta metoden för att uppskatta njurfunktion.",
+
+  "inputs": {
+    "age": "Ålder",
+    "ageHelp": "Ange din ålder (18-120 år)",
+    "gender": "Kön",
+    "male": "Man",
+    "female": "Kvinna",
+    "serumCreatinine": "Serumkreatinin",
+    "creatinineHelp": "Ange din serumkreatininnivå från blodprovet",
+    "equation": "Ekvation",
+    "equation2021": "CKD-EPI 2021 (utan ras, rekommenderad)",
+    "equation2009": "CKD-EPI 2009 (med ras, äldre)",
+    "equationHelp": "Ekvationen från 2021 rekommenderas eftersom den inte använder ras som faktor",
+    "race": "Ras",
+    "africanAmerican": "Afroamerikansk",
+    "raceHelp": "Gäller endast vid användning av CKD-EPI 2009 ekvationen"
+  },
+
+  "calculate": "Beräkna GFR",
+
+  "results": {
+    "title": "Dina Resultat",
+    "gfrValue": "eGFR",
+    "stage": "CKD-Stadium",
+    "interpretation": "Tolkning",
+    "equation": "Använd Ekvation"
+  },
+
+  "stageInfo": {
+    "title": "Kronisk Njursjukdom (CKD) Stadier",
+    "stage1": "Stadium 1 (GFR ≥90):",
+    "stage1Desc": "Normal eller hög njurfunktion",
+    "stage2": "Stadium 2 (GFR 60-89):",
+    "stage2Desc": "Lätt nedsatt njurfunktion",
+    "stage3a": "Stadium 3a (GFR 45-59):",
+    "stage3aDesc": "Lätt till måttligt nedsatt njurfunktion",
+    "stage3b": "Stadium 3b (GFR 30-44):",
+    "stage3bDesc": "Måttligt till allvarligt nedsatt njurfunktion",
+    "stage4": "Stadium 4 (GFR 15-29):",
+    "stage4Desc": "Allvarligt nedsatt njurfunktion",
+    "stage5": "Stadium 5 (GFR <15):",
+    "stage5Desc": "Njursvikt (dialys eller transplantation behövs)"
+  },
+
+  "disclaimer": {
+    "title": "Medicinsk Ansvarsfriskrivning",
+    "text": "Denna kalkylator är endast för informationsändamål och bör inte ersätta professionell medicinsk rådgivning. Konsultera alltid din vårdgivare för korrekt diagnos och behandling av njursjukdom. GFR-uppskattningar kan vara mindre exakta i vissa populationer."
+  },
+
+  "about": {
+    "title": "Om GFR Kalkylatorn",
+    "description": "Kalkylatorn för glomerulär filtrationshastighet (GFR) uppskattar hur väl dina njurar filtrerar avfall från ditt blod. Det är en nyckelindikator för njurhälsa och används för att upptäcka och övervaka kronisk njursjukdom (CKD).",
+    "whatIsGFR": "Vad är GFR?",
+    "gfrExplanation": "GFR mäter hur mycket blod som passerar genom glomeruli (små filter i njurarna) varje minut. En normal GFR är 90 eller högre. En GFR under 60 i tre månader eller mer indikerar kronisk njursjukdom. Ju lägre GFR, desto sämre njurfunktion.",
+    "ckdEpiEquation": "CKD-EPI Ekvation",
+    "equationExplanation": "CKD-EPI (Chronic Kidney Disease Epidemiology Collaboration) ekvationen är den mest använda metoden för att uppskatta GFR. Versionen från 2021 tog bort ras som faktor, vilket gör den mer rättvis. Den använder din ålder, kön och serumkreatininnivå för att uppskatta njurfunktionen.",
+    "importantNotes": "Viktiga Anteckningar",
+    "note1": "Denna kalkylator är mest exakt för vuxna 18 år och äldre",
+    "note2": "Resultat kan vara mindre exakta hos personer med extrema kroppsstorlekar, allvarlig undernäring eller muskelsjukdomar",
+    "note3": "Ett enda GFR-resultat räcker inte för att diagnostisera njursjukdom - övervakning över tid är viktigt",
+    "note4": "Andra faktorer som protein i urinen och njurskador avgör också CKD-stadiet"
+  }
+}

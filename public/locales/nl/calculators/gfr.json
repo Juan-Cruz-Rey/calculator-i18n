@@ -1,0 +1,68 @@
+{
+  "title": "GFR Calculator",
+  "metaTitle": "GFR Calculator - Nierfunctie Schatten (eGFR)",
+  "metaDescription": "Bereken uw geschatte Glomerulaire Filtratiesnelheid (eGFR) met de CKD-EPI vergelijking. Beoordeel de nierfunctie en CKD-stadium op basis van leeftijd, geslacht en serumcreatinine.",
+  "description": "Bereken uw geschatte Glomerulaire Filtratiesnelheid (eGFR) om de nierfunctie te beoordelen. Deze calculator gebruikt de CKD-EPI vergelijking, de meest nauwkeurige methode voor het schatten van de nierfunctie.",
+
+  "inputs": {
+    "age": "Leeftijd",
+    "ageHelp": "Voer uw leeftijd in (18-120 jaar)",
+    "gender": "Geslacht",
+    "male": "Mannelijk",
+    "female": "Vrouwelijk",
+    "serumCreatinine": "Serumcreatinine",
+    "creatinineHelp": "Voer uw serumcreatininegehalte uit de bloedtest in",
+    "equation": "Vergelijking",
+    "equation2021": "CKD-EPI 2021 (zonder ras, aanbevolen)",
+    "equation2009": "CKD-EPI 2009 (met ras, verouderd)",
+    "equationHelp": "De 2021 vergelijking wordt aanbevolen omdat het ras niet als factor gebruikt",
+    "race": "Ras",
+    "africanAmerican": "Afro-Amerikaans",
+    "raceHelp": "Alleen van toepassing bij gebruik van de CKD-EPI 2009 vergelijking"
+  },
+
+  "calculate": "GFR Berekenen",
+
+  "results": {
+    "title": "Uw Resultaten",
+    "gfrValue": "eGFR",
+    "stage": "CKD-Stadium",
+    "interpretation": "Interpretatie",
+    "equation": "Gebruikte Vergelijking"
+  },
+
+  "stageInfo": {
+    "title": "Chronische Nierziekte (CKD) Stadia",
+    "stage1": "Stadium 1 (GFR ≥90):",
+    "stage1Desc": "Normale of hoge nierfunctie",
+    "stage2": "Stadium 2 (GFR 60-89):",
+    "stage2Desc": "Licht verminderde nierfunctie",
+    "stage3a": "Stadium 3a (GFR 45-59):",
+    "stage3aDesc": "Lichte tot matige afname van de nierfunctie",
+    "stage3b": "Stadium 3b (GFR 30-44):",
+    "stage3bDesc": "Matige tot ernstige afname van de nierfunctie",
+    "stage4": "Stadium 4 (GFR 15-29):",
+    "stage4Desc": "Ernstig verminderde nierfunctie",
+    "stage5": "Stadium 5 (GFR <15):",
+    "stage5Desc": "Nierfalen (dialyse of transplantatie nodig)"
+  },
+
+  "disclaimer": {
+    "title": "Medische Disclaimer",
+    "text": "Deze calculator is alleen voor informatieve doeleinden en mag geen vervanging zijn voor professioneel medisch advies. Raadpleeg altijd uw zorgverlener voor een juiste diagnose en behandeling van nierziekte. GFR-schattingen kunnen minder nauwkeurig zijn in bepaalde populaties."
+  },
+
+  "about": {
+    "title": "Over de GFR Calculator",
+    "description": "De Glomerulaire Filtratiesnelheid (GFR) calculator schat hoe goed uw nieren afvalstoffen uit uw bloed filteren. Het is een belangrijke indicator van de niergezondheid en wordt gebruikt om chronische nierziekte (CKD) op te sporen en te monitoren.",
+    "whatIsGFR": "Wat is GFR?",
+    "gfrExplanation": "GFR meet hoeveel bloed er elke minuut door de glomeruli (kleine filters in de nieren) stroomt. Een normale GFR is 90 of hoger. Een GFR onder de 60 gedurende drie maanden of langer duidt op chronische nierziekte. Hoe lager de GFR, hoe slechter de nierfunctie.",
+    "ckdEpiEquation": "CKD-EPI Vergelijking",
+    "equationExplanation": "De CKD-EPI (Chronic Kidney Disease Epidemiology Collaboration) vergelijking is de meest gebruikte methode voor het schatten van GFR. De 2021 versie heeft ras als factor verwijderd, waardoor het rechtvaardiger is. Het gebruikt uw leeftijd, geslacht en serumcreatininegehalte om de nierfunctie te schatten.",
+    "importantNotes": "Belangrijke Opmerkingen",
+    "note1": "Deze calculator is het meest nauwkeurig voor volwassenen van 18 jaar en ouder",
+    "note2": "Resultaten kunnen minder nauwkeurig zijn bij mensen met extreme lichaamsafmetingen, ernstige ondervoeding of spierziekten",
+    "note3": "Een enkel GFR-resultaat is niet voldoende om nierziekte te diagnosticeren - monitoring in de loop van de tijd is belangrijk",
+    "note4": "Andere factoren zoals eiwit in de urine en nierschade bepalen ook het CKD-stadium"
+  }
+}

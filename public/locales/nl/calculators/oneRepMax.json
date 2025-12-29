@@ -1,0 +1,29 @@
+{
+  "title": "1RM Calculator",
+  "description": "Bereken je één-herhaling-maximum (1RM) voor gewichtheffen",
+  "metaDescription": "Gratis 1RM Calculator - Schat je maximale hefcapaciteit met 7 bewezen formules waaronder Epley, Brzycki en meer.",
+  "form": {
+    "title": "Voer je hefdetails in",
+    "weightLabel": "Geheven Gewicht",
+    "weightPlaceholder": "Voer geheven gewicht in",
+    "repsLabel": "Uitgevoerde Herhalingen",
+    "repsPlaceholder": "Voer aantal herhalingen in",
+    "repsUnit": "herh"
+  },
+  "results": {
+    "title": "Je 1RM",
+    "average": "Gemiddelde 1RM",
+    "epley": "Epley Formule",
+    "brzycki": "Brzycki Formule",
+    "lander": "Lander Formule",
+    "lombardi": "Lombardi Formule",
+    "mayhew": "Mayhew Formule",
+    "oconner": "O'Conner Formule",
+    "wathan": "Wathan Formule"
+  },
+  "info": {
+    "title": "Over 1RM",
+    "description": "Het Één-Herhaling-Maximum (1RM) is het maximale gewicht dat je kunt heffen voor één enkele herhaling van een bepaalde oefening. Deze calculator gebruikt zeven verschillende formules om je 1RM te schatten op basis van het geheven gewicht en het aantal uitgevoerde herhalingen.",
+    "note": "Deze formules zijn het meest nauwkeurig voor 1-10 herhalingen. Warm altijd goed op en gebruik een spotter bij het proberen van maximale hefpogingen."
+  }
+}

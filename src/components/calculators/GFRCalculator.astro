@@ -1,0 +1,515 @@
+---
+import { t, type Locale } from '@/utils/i18n';
+
+const { lang } = Astro.props as { lang: Locale };
+---
+
+<div class="calculator-container">
+  <div class="calculator-card">
+    <h2>{t('title', lang)}</h2>
+    <p class="calculator-description">{t('description', lang)}</p>
+
+    <form id="gfr-form" class="calculator-form">
+      <!-- Age Input -->
+      <div class="form-group">
+        <label for="age">{t('inputs.age', lang)}</label>
+        <input
+          type="number"
+          id="age"
+          name="age"
+          min="18"
+          max="120"
+          step="1"
+          required
+          aria-describedby="age-help"
+        />
+        <small id="age-help" class="form-help">{t('inputs.ageHelp', lang)}</small>
+      </div>
+
+      <!-- Gender Selection -->
+      <div class="form-group">
+        <label>{t('inputs.gender', lang)}</label>
+        <div class="radio-group">
+          <label class="radio-label">
+            <input type="radio" name="gender" value="male" required />
+            <span>{t('inputs.male', lang)}</span>
+          </label>
+          <label class="radio-label">
+            <input type="radio" name="gender" value="female" required />
+            <span>{t('inputs.female', lang)}</span>
+          </label>
+        </div>
+      </div>
+
+      <!-- Serum Creatinine Input -->
+      <div class="form-group">
+        <label for="creatinine">{t('inputs.serumCreatinine', lang)}</label>
+        <div class="input-with-unit">
+          <input
+            type="number"
+            id="creatinine"
+            name="creatinine"
+            min="0.1"
+            max="20"
+            step="0.01"
+            required
+            aria-describedby="creatinine-help"
+          />
+          <select id="creatinine-unit" name="creatinineUnit" required>
+            <option value="mg/dL">mg/dL</option>
+            <option value="μmol/L">μmol/L</option>
+          </select>
+        </div>
+        <small id="creatinine-help" class="form-help">{t('inputs.creatinineHelp', lang)}</small>
+      </div>
+
+      <!-- Equation Selection -->
+      <div class="form-group">
+        <label>{t('inputs.equation', lang)}</label>
+        <div class="radio-group">
+          <label class="radio-label">
+            <input type="radio" name="equation" value="ckd-epi-2021" checked />
+            <span>{t('inputs.equation2021', lang)}</span>
+          </label>
+          <label class="radio-label">
+            <input type="radio" name="equation" value="ckd-epi-2009" />
+            <span>{t('inputs.equation2009', lang)}</span>
+          </label>
+        </div>
+        <small class="form-help">{t('inputs.equationHelp', lang)}</small>
+      </div>
+
+      <!-- Race Option (only for 2009 equation) -->
+      <div class="form-group" id="race-group" style="display: none;">
+        <label>{t('inputs.race', lang)}</label>
+        <div class="checkbox-group">
+          <label class="checkbox-label">
+            <input type="checkbox" id="african-american" name="africanAmerican" />
+            <span>{t('inputs.africanAmerican', lang)}</span>
+          </label>
+        </div>
+        <small class="form-help">{t('inputs.raceHelp', lang)}</small>
+      </div>
+
+      <!-- Calculate Button -->
+      <button type="submit" class="btn btn-primary">
+        {t('calculate', lang)}
+      </button>
+    </form>
+
+    <!-- Results Section -->
+    <div id="results" class="results" style="display: none;">
+      <h3>{t('results.title', lang)}</h3>
+
+      <div class="result-card">
+        <div class="result-primary">
+          <span class="result-label">{t('results.gfrValue', lang)}</span>
+          <span class="result-value" id="gfr-value">--</span>
+        </div>
+
+        <div class="result-secondary">
+          <div class="result-item">
+            <span class="result-label">{t('results.stage', lang)}</span>
+            <span class="result-value" id="stage-value">--</span>
+          </div>
+
+          <div class="result-item">
+            <span class="result-label">{t('results.interpretation', lang)}</span>
+            <span class="result-value" id="interpretation-value">--</span>
+          </div>
+
+          <div class="result-item">
+            <span class="result-label">{t('results.equation', lang)}</span>
+            <span class="result-value" id="equation-value">--</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Stage Information -->
+      <div class="stage-info" id="stage-info">
+        <h4>{t('stageInfo.title', lang)}</h4>
+        <ul class="stage-list">
+          <li><strong>{t('stageInfo.stage1', lang)}</strong> {t('gfr.stageInfo.stage1Desc', lang)}</li>
+          <li><strong>{t('stageInfo.stage2', lang)}</strong> {t('gfr.stageInfo.stage2Desc', lang)}</li>
+          <li><strong>{t('stageInfo.stage3a', lang)}</strong> {t('gfr.stageInfo.stage3aDesc', lang)}</li>
+          <li><strong>{t('stageInfo.stage3b', lang)}</strong> {t('gfr.stageInfo.stage3bDesc', lang)}</li>
+          <li><strong>{t('stageInfo.stage4', lang)}</strong> {t('gfr.stageInfo.stage4Desc', lang)}</li>
+          <li><strong>{t('stageInfo.stage5', lang)}</strong> {t('gfr.stageInfo.stage5Desc', lang)}</li>
+        </ul>
+      </div>
+
+      <!-- Medical Disclaimer -->
+      <div class="disclaimer">
+        <p><strong>{t('disclaimer.title', lang)}</strong></p>
+        <p>{t('disclaimer.text', lang)}</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- About Section -->
+  <div class="info-section">
+    <h3>{t('about.title', lang)}</h3>
+    <p>{t('about.description', lang)}</p>
+
+    <h4>{t('about.whatIsGFR', lang)}</h4>
+    <p>{t('about.gfrExplanation', lang)}</p>
+
+    <h4>{t('about.ckdEpiEquation', lang)}</h4>
+    <p>{t('about.equationExplanation', lang)}</p>
+
+    <h4>{t('about.importantNotes', lang)}</h4>
+    <ul>
+      <li>{t('about.note1', lang)}</li>
+      <li>{t('about.note2', lang)}</li>
+      <li>{t('about.note3', lang)}</li>
+      <li>{t('about.note4', lang)}</li>
+    </ul>
+  </div>
+</div>
+
+<style>
+  .calculator-container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 2rem 1rem;
+  }
+
+  .calculator-card {
+    background: white;
+    border-radius: 8px;
+    padding: 2rem;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    margin-bottom: 2rem;
+  }
+
+  .calculator-description {
+    color: #666;
+    margin-bottom: 2rem;
+    line-height: 1.6;
+  }
+
+  .calculator-form {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+  }
+
+  .form-group {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+
+  .form-group label {
+    font-weight: 600;
+    color: #333;
+  }
+
+  .form-group input[type="number"] {
+    padding: 0.75rem;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-size: 1rem;
+    width: 100%;
+  }
+
+  .input-with-unit {
+    display: grid;
+    grid-template-columns: 1fr auto;
+    gap: 0.5rem;
+  }
+
+  .input-with-unit select {
+    padding: 0.75rem;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-size: 1rem;
+    background: white;
+    cursor: pointer;
+    min-width: 100px;
+  }
+
+  .radio-group,
+  .checkbox-group {
+    display: flex;
+    flex-direction: column;
+    gap: 0.75rem;
+  }
+
+  .radio-label,
+  .checkbox-label {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    cursor: pointer;
+    padding: 0.5rem;
+    border-radius: 4px;
+    transition: background-color 0.2s;
+  }
+
+  .radio-label:hover,
+  .checkbox-label:hover {
+    background-color: #f5f5f5;
+  }
+
+  .radio-label input[type="radio"],
+  .checkbox-label input[type="checkbox"] {
+    cursor: pointer;
+    width: 18px;
+    height: 18px;
+  }
+
+  .form-help {
+    color: #666;
+    font-size: 0.875rem;
+    line-height: 1.4;
+  }
+
+  .btn {
+    padding: 1rem 2rem;
+    border: none;
+    border-radius: 4px;
+    font-size: 1rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.3s;
+  }
+
+  .btn-primary {
+    background: #2563eb;
+    color: white;
+  }
+
+  .btn-primary:hover {
+    background: #1d4ed8;
+    transform: translateY(-1px);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  }
+
+  .results {
+    margin-top: 2rem;
+    padding-top: 2rem;
+    border-top: 2px solid #e5e7eb;
+  }
+
+  .results h3 {
+    color: #1f2937;
+    margin-bottom: 1.5rem;
+  }
+
+  .result-card {
+    background: #f9fafb;
+    border-radius: 8px;
+    padding: 1.5rem;
+    margin-bottom: 1.5rem;
+  }
+
+  .result-primary {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 1.5rem;
+    background: white;
+    border-radius: 6px;
+    margin-bottom: 1rem;
+  }
+
+  .result-primary .result-label {
+    font-size: 0.875rem;
+    color: #6b7280;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    margin-bottom: 0.5rem;
+  }
+
+  .result-primary .result-value {
+    font-size: 3rem;
+    font-weight: 700;
+    color: #2563eb;
+  }
+
+  .result-secondary {
+    display: grid;
+    gap: 1rem;
+  }
+
+  .result-item {
+    display: flex;
+    justify-content: space-between;
+    padding: 0.75rem;
+    background: white;
+    border-radius: 6px;
+  }
+
+  .result-item .result-label {
+    font-weight: 600;
+    color: #4b5563;
+  }
+
+  .result-item .result-value {
+    color: #1f2937;
+    font-weight: 500;
+  }
+
+  .stage-info {
+    background: #eff6ff;
+    border-left: 4px solid #2563eb;
+    padding: 1.5rem;
+    border-radius: 4px;
+    margin-bottom: 1.5rem;
+  }
+
+  .stage-info h4 {
+    color: #1e40af;
+    margin-bottom: 1rem;
+  }
+
+  .stage-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+
+  .stage-list li {
+    padding: 0.5rem 0;
+    color: #1f2937;
+    line-height: 1.6;
+  }
+
+  .disclaimer {
+    background: #fef3c7;
+    border-left: 4px solid #f59e0b;
+    padding: 1.5rem;
+    border-radius: 4px;
+  }
+
+  .disclaimer p {
+    margin: 0.5rem 0;
+    color: #78350f;
+    line-height: 1.6;
+  }
+
+  .disclaimer strong {
+    color: #92400e;
+  }
+
+  .info-section {
+    background: white;
+    border-radius: 8px;
+    padding: 2rem;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+
+  .info-section h3 {
+    color: #1f2937;
+    margin-bottom: 1rem;
+  }
+
+  .info-section h4 {
+    color: #374151;
+    margin-top: 1.5rem;
+    margin-bottom: 0.75rem;
+  }
+
+  .info-section p {
+    color: #4b5563;
+    line-height: 1.6;
+    margin-bottom: 1rem;
+  }
+
+  .info-section ul {
+    color: #4b5563;
+    line-height: 1.8;
+    margin-left: 1.5rem;
+  }
+
+  @media (max-width: 640px) {
+    .calculator-card,
+    .info-section {
+      padding: 1.5rem;
+    }
+
+    .result-primary .result-value {
+      font-size: 2.5rem;
+    }
+
+    .result-item {
+      flex-direction: column;
+      gap: 0.25rem;
+    }
+  }
+</style>
+
+<script>
+  import { calculateGFR, type GFRInput } from '@/utils/calculators/gfr';
+
+  const form = document.getElementById('gfr-form') as HTMLFormElement;
+  const results = document.getElementById('results') as HTMLElement;
+  const raceGroup = document.getElementById('race-group') as HTMLElement;
+  const equationInputs = document.querySelectorAll('input[name="equation"]') as NodeListOf<HTMLInputElement>;
+
+  // Show/hide race option based on equation selection
+  equationInputs.forEach(input => {
+    input.addEventListener('change', (e) => {
+      const target = e.target as HTMLInputElement;
+      if (target.value === 'ckd-epi-2009') {
+        raceGroup.style.display = 'block';
+      } else {
+        raceGroup.style.display = 'none';
+      }
+    });
+  });
+
+  form?.addEventListener('submit', (e) => {
+    e.preventDefault();
+
+    const formData = new FormData(form);
+
+    const age = parseFloat(formData.get('age') as string);
+    const gender = formData.get('gender') as 'male' | 'female';
+    const serumCreatinine = parseFloat(formData.get('creatinine') as string);
+    const creatinineUnit = formData.get('creatinineUnit') as 'mg/dL' | 'μmol/L';
+    const equation = formData.get('equation') as 'ckd-epi-2021' | 'ckd-epi-2009';
+    const africanAmerican = formData.get('africanAmerican') === 'on';
+
+    const input: GFRInput = {
+      age,
+      gender,
+      serumCreatinine,
+      creatinineUnit,
+      equation,
+      race: africanAmerican ? 'african-american' : 'other'
+    };
+
+    try {
+      const result = calculateGFR(input);
+
+      // Display results
+      document.getElementById('gfr-value')!.textContent = `${result.gfr} mL/min/1.73m²`;
+      document.getElementById('stage-value')!.textContent = result.stageName;
+      document.getElementById('interpretation-value')!.textContent = getInterpretationText(result.interpretation);
+      document.getElementById('equation-value')!.textContent = result.equation;
+
+      // Show results
+      results!.style.display = 'block';
+
+      // Scroll to results
+      results!.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
+    } catch (error) {
+      alert(error instanceof Error ? error.message : 'An error occurred');
+    }
+  });
+
+  function getInterpretationText(interpretation: string): string {
+    // This will be replaced by proper i18n in translations
+    const interpretations: Record<string, string> = {
+      'normal_or_high': 'Normal or high kidney function',
+      'mildly_decreased': 'Mildly decreased kidney function',
+      'mild_to_moderate': 'Mild to moderate decrease',
+      'moderate_to_severe': 'Moderate to severe decrease',
+      'severely_decreased': 'Severely decreased kidney function',
+      'kidney_failure': 'Kidney failure'
+    };
+    return interpretations[interpretation] || interpretation;
+  }
+</script>

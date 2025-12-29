@@ -1,5 +1,3 @@
-const fs = require('fs');
-
 const calculators = [
   'bmi', 'calorie', 'idealWeight', 'bodyFat', 'bmr', 'tdee', 'armyBodyFat',
   'pace', 'macro', 'pregnancy', 'pregnancyWeightGain', 'pregnancyConception',
@@ -15,7 +13,6 @@ let imports = '';
 calculators.forEach(calc => {
   const calcCap = calc.charAt(0).toUpperCase() + calc.slice(1);
   newLocales.forEach(locale => {
-    const localeUpper = locale.toUpperCase();
     imports += `import ${locale}${calcCap} from '../../public/locales/${locale}/calculators/${calc}.json';\n`;
   });
 });

@@ -1,0 +1,395 @@
+---
+import { t, type Locale } from '@/utils/i18n';
+
+const { lang } = Astro.props as { lang: Locale };
+---
+
+<div class="onerepmax-calculator">
+  <div class="calculator-form">
+    <h2>{t('oneRepMax.form.title', lang)}</h2>
+
+    <form id="onerepmax-form">
+      <!-- Unit System Toggle -->
+      <fieldset class="form-group unit-toggle">
+        <legend class="sr-only">{t('oneRepMax.units.system', lang)}</legend>
+        <label>
+          <input type="radio" name="unitSystem" value="metric" checked />
+          {t('oneRepMax.units.metric', lang)}
+        </label>
+        <label>
+          <input type="radio" name="unitSystem" value="imperial" />
+          {t('oneRepMax.units.imperial', lang)}
+        </label>
+      </fieldset>
+
+      <!-- Weight Lifted -->
+      <div class="form-group">
+        <label for="weight">{t('oneRepMax.form.weightLabel', lang)}</label>
+        <input
+          type="number"
+          id="weight"
+          name="weight"
+          min="1"
+          max="1000"
+          step="0.5"
+          required
+          placeholder={t('oneRepMax.form.weightPlaceholder', lang)}
+        />
+        <span class="unit weight-unit">{t('oneRepMax.units.kg', lang)}</span>
+      </div>
+
+      <!-- Reps Performed -->
+      <div class="form-group">
+        <label for="reps">{t('oneRepMax.form.repsLabel', lang)}</label>
+        <input
+          type="number"
+          id="reps"
+          name="reps"
+          min="1"
+          max="30"
+          required
+          placeholder={t('oneRepMax.form.repsPlaceholder', lang)}
+        />
+        <span class="unit">{t('oneRepMax.form.repsUnit', lang)}</span>
+      </div>
+
+      <!-- Buttons -->
+      <div class="form-actions">
+        <button type="submit" class="btn-primary">{t('common.calculate', lang)}</button>
+        <button type="reset" class="btn-secondary">{t('common.reset', lang)}</button>
+      </div>
+    </form>
+  </div>
+
+  <div class="calculator-results" id="results" style="display: none;" role="region" aria-live="polite" aria-atomic="true">
+    <h2>{t('oneRepMax.results.title', lang)}</h2>
+
+    <div class="result-card average-value">
+      <h3>{t('oneRepMax.results.average', lang)}</h3>
+      <p class="value" id="average-value">-</p>
+      <p class="unit-label" id="unit-label">-</p>
+    </div>
+
+    <div class="formulas-grid">
+      <div class="formula-item">
+        <strong>{t('oneRepMax.results.epley', lang)}</strong>
+        <span id="epley-value">-</span>
+      </div>
+      <div class="formula-item">
+        <strong>{t('oneRepMax.results.brzycki', lang)}</strong>
+        <span id="brzycki-value">-</span>
+      </div>
+      <div class="formula-item">
+        <strong>{t('oneRepMax.results.lander', lang)}</strong>
+        <span id="lander-value">-</span>
+      </div>
+      <div class="formula-item">
+        <strong>{t('oneRepMax.results.lombardi', lang)}</strong>
+        <span id="lombardi-value">-</span>
+      </div>
+      <div class="formula-item">
+        <strong>{t('oneRepMax.results.mayhew', lang)}</strong>
+        <span id="mayhew-value">-</span>
+      </div>
+      <div class="formula-item">
+        <strong>{t('oneRepMax.results.oconner', lang)}</strong>
+        <span id="oconner-value">-</span>
+      </div>
+      <div class="formula-item">
+        <strong>{t('oneRepMax.results.wathan', lang)}</strong>
+        <span id="wathan-value">-</span>
+      </div>
+    </div>
+  </div>
+
+  <div class="calculator-info">
+    <h2>{t('oneRepMax.info.title', lang)}</h2>
+    <p>{t('oneRepMax.info.description', lang)}</p>
+    <p class="note">{t('oneRepMax.info.note', lang)}</p>
+  </div>
+</div>
+
+<style>
+  .onerepmax-calculator {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 2rem;
+  }
+
+  .calculator-form, .calculator-results, .calculator-info {
+    background: white;
+    border-radius: 8px;
+    padding: 2rem;
+    margin-bottom: 2rem;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+  }
+
+  h2 {
+    margin-top: 0;
+    color: #333;
+    font-size: 1.5rem;
+    margin-bottom: 1.5rem;
+  }
+
+  .form-group {
+    margin-bottom: 1.5rem;
+  }
+
+  .form-group label {
+    display: block;
+    margin-bottom: 0.5rem;
+    font-weight: 500;
+    color: #555;
+  }
+
+  .form-group input[type="number"],
+  .form-group select {
+    width: 100%;
+    padding: 0.75rem;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-size: 1rem;
+  }
+
+  .form-group input[type="number"]:focus,
+  .form-group select:focus {
+    border-color: var(--primary-color);
+    outline: none;
+  }
+
+  .unit {
+    display: inline-block;
+    margin-left: 0.5rem;
+    color: #888;
+    font-size: 0.9rem;
+  }
+
+  .unit-toggle {
+    display: flex;
+    gap: 1rem;
+    padding: 1rem;
+    background: #f5f5f5;
+    border-radius: 4px;
+    border: none;
+  }
+
+  .unit-toggle legend {
+    padding: 0;
+  }
+
+  .unit-toggle label {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    cursor: pointer;
+    margin: 0;
+  }
+
+  .sr-only {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    white-space: nowrap;
+    border-width: 0;
+  }
+
+  .form-actions {
+    display: flex;
+    gap: 1rem;
+    margin-top: 2rem;
+  }
+
+  .btn-primary, .btn-secondary {
+    flex: 1;
+    padding: 0.875rem;
+    border: none;
+    border-radius: 4px;
+    font-size: 1rem;
+    font-weight: 500;
+    cursor: pointer;
+    transition: all 0.2s;
+  }
+
+  .btn-primary {
+    background: var(--primary-color);
+    color: white;
+  }
+
+  .btn-primary:hover {
+    background: #2d6a2f;
+  }
+
+  .btn-secondary {
+    background: #f5f5f5;
+    color: #333;
+  }
+
+  .btn-secondary:hover {
+    background: #e0e0e0;
+  }
+
+  .result-card {
+    text-align: center;
+    padding: 2rem;
+    background: linear-gradient(135deg, #d35555 0%, #994141 100%);
+    color: white;
+    border-radius: 8px;
+    margin-bottom: 2rem;
+  }
+
+  .result-card h3 {
+    margin: 0 0 1rem 0;
+    font-size: 1.2rem;
+  }
+
+  .result-card .value {
+    font-size: 3rem;
+    font-weight: bold;
+    margin: 0;
+  }
+
+  .result-card .unit-label {
+    font-size: 1.2rem;
+    margin: 0.5rem 0 0 0;
+    opacity: 0.9;
+  }
+
+  .formulas-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 1rem;
+  }
+
+  .formula-item {
+    padding: 1rem;
+    background: #f9f9f9;
+    border-radius: 4px;
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+
+  .formula-item strong {
+    color: #555;
+    font-size: 0.9rem;
+  }
+
+  .formula-item span {
+    color: #333;
+    font-size: 1.1rem;
+    font-weight: 500;
+  }
+
+  .calculator-info {
+    background: #f9f9f9;
+  }
+
+  .calculator-info p {
+    margin-bottom: 1rem;
+    line-height: 1.6;
+    color: #555;
+  }
+
+  .note {
+    font-size: 0.9rem;
+    font-style: italic;
+    background: white;
+    padding: 1rem;
+    border-left: 4px solid var(--primary-color);
+    margin: 1rem 0 0 0;
+  }
+</style>
+
+<script>
+  // Import One Rep Max calculation utilities
+  import type { OneRepMaxInput, OneRepMaxResult, UnitSystem } from '@/utils/calculators/oneRepMax';
+  import { calculateOneRepMax } from '@/utils/calculators/oneRepMax';
+
+  const form = document.getElementById('onerepmax-form') as HTMLFormElement;
+  const results = document.getElementById('results') as HTMLDivElement;
+  const unitSystemInputs = document.querySelectorAll('input[name="unitSystem"]');
+  const weightUnit = document.querySelector('.weight-unit') as HTMLSpanElement;
+
+  // Get current language from document
+  const lang = document.documentElement.lang;
+
+  // Handle unit system change
+  unitSystemInputs.forEach(input => {
+    input.addEventListener('change', (e) => {
+      const target = e.target as HTMLInputElement;
+      const isMetric = target.value === 'metric';
+
+      if (isMetric) {
+        weightUnit.textContent = 'kg';
+      } else {
+        weightUnit.textContent = 'lbs';
+      }
+    });
+  });
+
+  // Handle form submission
+  form.addEventListener('submit', (e) => {
+    e.preventDefault();
+
+    const formData = new FormData(form);
+    const unitSystem = formData.get('unitSystem') as UnitSystem;
+    const weight = parseFloat(formData.get('weight') as string);
+    const reps = parseInt(formData.get('reps') as string);
+
+    const input: OneRepMaxInput = {
+      weight,
+      reps,
+      unitSystem,
+    };
+
+    try {
+      const result = calculateOneRepMax(input);
+      displayResults(result);
+    } catch (error) {
+      if (error instanceof Error) {
+        alert(error.message);
+      } else {
+        alert('Error calculating One Rep Max. Please check your inputs.');
+      }
+      console.error(error);
+    }
+  });
+
+  function displayResults(result: OneRepMaxResult) {
+    const averageValue = document.getElementById('average-value') as HTMLParagraphElement;
+    const unitLabel = document.getElementById('unit-label') as HTMLParagraphElement;
+    const epleyValue = document.getElementById('epley-value') as HTMLSpanElement;
+    const brzyckiValue = document.getElementById('brzycki-value') as HTMLSpanElement;
+    const landerValue = document.getElementById('lander-value') as HTMLSpanElement;
+    const lombardiValue = document.getElementById('lombardi-value') as HTMLSpanElement;
+    const mayhewValue = document.getElementById('mayhew-value') as HTMLSpanElement;
+    const oconnerValue = document.getElementById('oconner-value') as HTMLSpanElement;
+    const wathanValue = document.getElementById('wathan-value') as HTMLSpanElement;
+
+    const unit = result.unitSystem === 'metric' ? 'kg' : 'lbs';
+
+    averageValue.textContent = result.average.toString();
+    unitLabel.textContent = unit;
+
+    epleyValue.textContent = `${result.formulas.epley} ${unit}`;
+    brzyckiValue.textContent = `${result.formulas.brzycki} ${unit}`;
+    landerValue.textContent = `${result.formulas.lander} ${unit}`;
+    lombardiValue.textContent = `${result.formulas.lombardi} ${unit}`;
+    mayhewValue.textContent = `${result.formulas.mayhew} ${unit}`;
+    oconnerValue.textContent = `${result.formulas.oconner} ${unit}`;
+    wathanValue.textContent = `${result.formulas.wathan} ${unit}`;
+
+    // Show results
+    results.style.display = 'block';
+    results.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
+  }
+
+  // Handle form reset
+  form.addEventListener('reset', () => {
+    results.style.display = 'none';
+  });
+</script>

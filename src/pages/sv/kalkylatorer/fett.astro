@@ -1,0 +1,37 @@
+---
+import BaseLayout from '@/layouts/BaseLayout.astro';
+import FatIntakeCalculator from '@/components/calculators/FatIntakeCalculator.astro';
+import { t } from '@/utils/i18n';
+
+const title = t('fatIntake.title', 'sv') + ' - ' + t('site.title', 'sv');
+const description = t('fatIntake.metaDescription', 'sv');
+---
+
+<BaseLayout title={title} description={description} lang="sv" calculator="fatIntake">
+  <div class="container">
+    <div class="page-header">
+      <h1>{t('fatIntake.title', 'sv')}</h1>
+      <p class="page-description">{t('fatIntake.description', 'sv')}</p>
+    </div>
+
+    <FatIntakeCalculator lang="sv" />
+  </div>
+</BaseLayout>
+
+<style>
+  .page-header {
+    text-align: center;
+    padding: 2rem 0 1rem;
+  }
+
+  .page-header h1 {
+    font-size: 2.5rem;
+    color: #333;
+    margin-bottom: 0.5rem;
+  }
+
+  .page-description {
+    font-size: 1.25rem;
+    color: #666;
+  }
+</style>

@@ -1,0 +1,68 @@
+{
+  "title": "Calculadora de TFG",
+  "metaTitle": "Calculadora de TFG - Estimar Função Renal (TFGe)",
+  "metaDescription": "Calcule sua Taxa de Filtração Glomerular estimada (TFGe) usando a equação CKD-EPI. Avalie a função renal e o estágio da DRC com base na idade, sexo e creatinina sérica.",
+  "description": "Calcule sua Taxa de Filtração Glomerular estimada (TFGe) para avaliar a função renal. Esta calculadora usa a equação CKD-EPI, o método mais preciso para estimar a função renal.",
+
+  "inputs": {
+    "age": "Idade",
+    "ageHelp": "Digite sua idade (18-120 anos)",
+    "gender": "Sexo",
+    "male": "Masculino",
+    "female": "Feminino",
+    "serumCreatinine": "Creatinina Sérica",
+    "creatinineHelp": "Digite seu nível de creatinina sérica do exame de sangue",
+    "equation": "Equação",
+    "equation2021": "CKD-EPI 2021 (sem raça, recomendado)",
+    "equation2009": "CKD-EPI 2009 (com raça, legado)",
+    "equationHelp": "A equação de 2021 é recomendada pois não usa raça como fator",
+    "race": "Raça",
+    "africanAmerican": "Afro-americano",
+    "raceHelp": "Aplicável apenas ao usar a equação CKD-EPI 2009"
+  },
+
+  "calculate": "Calcular TFG",
+
+  "results": {
+    "title": "Seus Resultados",
+    "gfrValue": "TFGe",
+    "stage": "Estágio da DRC",
+    "interpretation": "Interpretação",
+    "equation": "Equação Utilizada"
+  },
+
+  "stageInfo": {
+    "title": "Estágios da Doença Renal Crônica (DRC)",
+    "stage1": "Estágio 1 (TFG ≥90):",
+    "stage1Desc": "Função renal normal ou alta",
+    "stage2": "Estágio 2 (TFG 60-89):",
+    "stage2Desc": "Função renal levemente diminuída",
+    "stage3a": "Estágio 3a (TFG 45-59):",
+    "stage3aDesc": "Diminuição leve a moderada da função renal",
+    "stage3b": "Estágio 3b (TFG 30-44):",
+    "stage3bDesc": "Diminuição moderada a severa da função renal",
+    "stage4": "Estágio 4 (TFG 15-29):",
+    "stage4Desc": "Função renal severamente diminuída",
+    "stage5": "Estágio 5 (TFG <15):",
+    "stage5Desc": "Insuficiência renal (diálise ou transplante necessário)"
+  },
+
+  "disclaimer": {
+    "title": "Aviso Médico",
+    "text": "Esta calculadora é apenas para fins informativos e não deve substituir o conselho médico profissional. Sempre consulte seu médico para diagnóstico e tratamento adequados da doença renal. As estimativas de TFG podem ser menos precisas em certas populações."
+  },
+
+  "about": {
+    "title": "Sobre a Calculadora de TFG",
+    "description": "A calculadora de Taxa de Filtração Glomerular (TFG) estima quão bem seus rins estão filtrando resíduos do sangue. É um indicador chave da saúde renal e é usado para detectar e monitorar a doença renal crônica (DRC).",
+    "whatIsGFR": "O que é TFG?",
+    "gfrExplanation": "A TFG mede quanto sangue passa pelos glomérulos (pequenos filtros nos rins) a cada minuto. Uma TFG normal é 90 ou acima. Uma TFG abaixo de 60 por três meses ou mais indica doença renal crônica. Quanto menor a TFG, pior a função renal.",
+    "ckdEpiEquation": "Equação CKD-EPI",
+    "equationExplanation": "A equação CKD-EPI (Chronic Kidney Disease Epidemiology Collaboration) é o método mais usado para estimar a TFG. A versão de 2021 removeu raça como fator, tornando-a mais equitativa. Ela usa sua idade, sexo e nível de creatinina sérica para estimar a função renal.",
+    "importantNotes": "Notas Importantes",
+    "note1": "Esta calculadora é mais precisa para adultos com 18 anos ou mais",
+    "note2": "Os resultados podem ser menos precisos em pessoas com tamanhos corporais extremos, desnutrição severa ou doenças musculares",
+    "note3": "Um único resultado de TFG não é suficiente para diagnosticar doença renal - o monitoramento ao longo do tempo é importante",
+    "note4": "Outros fatores como proteína na urina e dano renal também determinam o estágio da DRC"
+  }
+}

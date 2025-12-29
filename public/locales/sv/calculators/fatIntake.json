@@ -1,0 +1,62 @@
+{
+  "title": "Fettintag Kalkylator",
+  "description": "Beräkna ditt dagliga fettbehov",
+  "metaDescription": "Gratis fettintag kalkylator - Beräkna ditt rekommenderade dagliga fettintag baserat på ålder, vikt, längd, aktivitetsnivå och fitnessmål.",
+  "form": {
+    "title": "Ange din information",
+    "ageLabel": "Ålder",
+    "agePlaceholder": "Ange din ålder (15-80)",
+    "genderLabel": "Kön",
+    "heightLabel": "Längd",
+    "heightPlaceholder": "Ange din längd",
+    "weightLabel": "Vikt",
+    "weightPlaceholder": "Ange din vikt",
+    "activityLabel": "Aktivitetsnivå",
+    "goalLabel": "Mål"
+  },
+  "activity": {
+    "sedentary": "Stillasittande (lite eller ingen träning)",
+    "light": "Lätt (träning 1-3 gånger/vecka)",
+    "moderate": "Måttlig (träning 4-5 gånger/vecka)",
+    "active": "Aktiv (daglig träning eller intensiv träning 3-4 gånger/vecka)",
+    "veryActive": "Mycket Aktiv (intensiv träning 6-7 gånger/vecka)",
+    "extraActive": "Extra Aktiv (mycket intensiv daglig träning och fysiskt arbete)"
+  },
+  "goal": {
+    "loseWeight": "Gå Ner i Vikt",
+    "maintain": "Bibehålla Vikt",
+    "gainMuscle": "Bygga Muskler"
+  },
+  "results": {
+    "title": "Dina Fettintag Rekommendationer",
+    "recommendedIntake": "Rekommenderat Dagligt Fettintag",
+    "gramsPerDay": "gram per dag",
+    "fatCalories": "Kalorier från Fett",
+    "percentage": "Procent av Totala Kalorier",
+    "dailyCalories": "Dagliga Kalorier",
+    "recommendedRange": "Rekommenderat Område",
+    "tdee": "TDEE",
+    "bmr": "BMR"
+  },
+  "info": {
+    "title": "Om Fettintag",
+    "description": "Kostfett är ett väsentligt makronäringsämne som spelar avgörande roller i hormonproduktion, näringsupptag, cellmembranstruktur och energilagring. Denna kalkylator hjälper dig att bestämma den optimala mängden fett att konsumera dagligen baserat på din totala dagliga energiförbrukning (TDEE) och fitnessmål.",
+    "typesTitle": "Typer av Fett",
+    "healthyFats": "Hälsosamma Fetter (Omättade)",
+    "healthyFatsDesc": "Dessa fetter kan förbättra hjärthälsan, minska inflammation och stödja allmänt välbefinnande:",
+    "healthyFats1": "Enkelomättade fetter: Olivolja, avokado, nötter (mandlar, cashewnötter, pekannötter)",
+    "healthyFats2": "Fleromättade fetter: Fet fisk (lax, makrill, sardiner), valnötter, linfrön",
+    "healthyFats3": "Omega-3 fettsyror: Nödvändiga för hjärnhälsa och minskning av inflammation",
+    "healthyFats4": "Omega-6 fettsyror: Viktiga för tillväxt och utveckling (i måttliga mängder)",
+    "unhealthyFats": "Ohälsosamma Fetter",
+    "unhealthyFatsDesc": "Begränsa eller undvik dessa fetter eftersom de kan öka hälsorisker:",
+    "unhealthyFats1": "Transfetter: Finns i bearbetade livsmedel, friterade livsmedel och delvis härdade oljor",
+    "unhealthyFats2": "Överskott av mättade fetter: Stora mängder från rött kött, smör och fullmjölksprodukter",
+    "recommendationsTitle": "Rekommendationer",
+    "recommendation1": "Välj hälsosamma omättade fetter framför mättade och transfetter",
+    "recommendation2": "Inkludera fet fisk i din kost 2-3 gånger per vecka för omega-3",
+    "recommendation3": "Använd olivolja eller avokadoolja för matlagning istället för smör eller margarin",
+    "recommendation4": "Läs näringsetiketter för att undvika transfetter och begränsa mättade fetter",
+    "limitations": "Dessa rekommendationer är allmänna riktlinjer. Individuella fettbehov kan variera baserat på metabolism, hälsotillstånd och specifika kostrestriktioner. Konsultera en vårdprofessionell eller dietist för personlig näringsrådgivning."
+  }
+}

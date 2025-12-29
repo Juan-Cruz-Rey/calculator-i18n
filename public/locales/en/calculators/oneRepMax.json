@@ -1,0 +1,29 @@
+{
+  "title": "One Rep Max Calculator",
+  "description": "Calculate your one-repetition maximum (1RM) for weightlifting",
+  "metaDescription": "Free One Rep Max Calculator - Estimate your maximum lift capacity using 7 proven formulas including Epley, Brzycki, and more.",
+  "form": {
+    "title": "Enter your lift details",
+    "weightLabel": "Weight Lifted",
+    "weightPlaceholder": "Enter weight lifted",
+    "repsLabel": "Reps Performed",
+    "repsPlaceholder": "Enter number of reps",
+    "repsUnit": "reps"
+  },
+  "results": {
+    "title": "Your One Rep Max",
+    "average": "Average 1RM",
+    "epley": "Epley Formula",
+    "brzycki": "Brzycki Formula",
+    "lander": "Lander Formula",
+    "lombardi": "Lombardi Formula",
+    "mayhew": "Mayhew Formula",
+    "oconner": "O'Conner Formula",
+    "wathan": "Wathan Formula"
+  },
+  "info": {
+    "title": "About One Rep Max",
+    "description": "One Rep Max (1RM) is the maximum amount of weight you can lift for a single repetition of a given exercise. This calculator uses seven different formulas to estimate your 1RM based on the weight lifted and number of repetitions performed.",
+    "note": "These formulas are most accurate for 1-10 reps. Always warm up properly and use a spotter when attempting maximum lifts."
+  }
+}

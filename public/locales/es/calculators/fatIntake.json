@@ -1,0 +1,62 @@
+{
+  "title": "Calculadora de Ingesta de Grasas",
+  "description": "Calcula tus necesidades diarias de consumo de grasas",
+  "metaDescription": "Calculadora gratuita de ingesta de grasas - Calcula tu consumo diario recomendado de grasas según tu edad, peso, altura, nivel de actividad y objetivos de fitness.",
+  "form": {
+    "title": "Ingresa tu información",
+    "ageLabel": "Edad",
+    "agePlaceholder": "Ingresa tu edad (15-80)",
+    "genderLabel": "Sexo",
+    "heightLabel": "Altura",
+    "heightPlaceholder": "Ingresa tu altura",
+    "weightLabel": "Peso",
+    "weightPlaceholder": "Ingresa tu peso",
+    "activityLabel": "Nivel de Actividad",
+    "goalLabel": "Objetivo"
+  },
+  "activity": {
+    "sedentary": "Sedentario (poco o ningún ejercicio)",
+    "light": "Ligero (ejercicio 1-3 veces/semana)",
+    "moderate": "Moderado (ejercicio 4-5 veces/semana)",
+    "active": "Activo (ejercicio diario o ejercicio intenso 3-4 veces/semana)",
+    "veryActive": "Muy Activo (ejercicio intenso 6-7 veces/semana)",
+    "extraActive": "Extra Activo (ejercicio muy intenso diario y trabajo físico)"
+  },
+  "goal": {
+    "loseWeight": "Perder Peso",
+    "maintain": "Mantener Peso",
+    "gainMuscle": "Ganar Músculo"
+  },
+  "results": {
+    "title": "Tus Recomendaciones de Ingesta de Grasas",
+    "recommendedIntake": "Ingesta Diaria Recomendada de Grasas",
+    "gramsPerDay": "gramos por día",
+    "fatCalories": "Calorías de Grasas",
+    "percentage": "Porcentaje de Calorías Totales",
+    "dailyCalories": "Calorías Diarias",
+    "recommendedRange": "Rango Recomendado",
+    "tdee": "TDEE",
+    "bmr": "TMB"
+  },
+  "info": {
+    "title": "Acerca de la Ingesta de Grasas",
+    "description": "La grasa dietética es un macronutriente esencial que desempeña funciones cruciales en la producción de hormonas, absorción de nutrientes, estructura de las membranas celulares y almacenamiento de energía. Esta calculadora te ayuda a determinar la cantidad óptima de grasa que debes consumir diariamente según tu gasto energético diario total (TDEE) y tus objetivos de fitness.",
+    "typesTitle": "Tipos de Grasas",
+    "healthyFats": "Grasas Saludables (Insaturadas)",
+    "healthyFatsDesc": "Estas grasas pueden mejorar la salud cardíaca, reducir la inflamación y apoyar el bienestar general:",
+    "healthyFats1": "Grasas monoinsaturadas: Aceite de oliva, aguacates, frutos secos (almendras, anacardos, nueces pecanas)",
+    "healthyFats2": "Grasas poliinsaturadas: Pescado graso (salmón, caballa, sardinas), nueces, semillas de lino",
+    "healthyFats3": "Ácidos grasos omega-3: Esenciales para la salud cerebral y reducción de la inflamación",
+    "healthyFats4": "Ácidos grasos omega-6: Importantes para el crecimiento y desarrollo (con moderación)",
+    "unhealthyFats": "Grasas No Saludables",
+    "unhealthyFatsDesc": "Limita o evita estas grasas ya que pueden aumentar los riesgos para la salud:",
+    "unhealthyFats1": "Grasas trans: Se encuentran en alimentos procesados, fritos y aceites parcialmente hidrogenados",
+    "unhealthyFats2": "Exceso de grasas saturadas: Grandes cantidades de carne roja, mantequilla y productos lácteos enteros",
+    "recommendationsTitle": "Recomendaciones",
+    "recommendation1": "Elige grasas insaturadas saludables sobre grasas saturadas y trans",
+    "recommendation2": "Incluye pescado graso en tu dieta 2-3 veces por semana para obtener omega-3",
+    "recommendation3": "Usa aceite de oliva o aceite de aguacate para cocinar en lugar de mantequilla o margarina",
+    "recommendation4": "Lee las etiquetas nutricionales para evitar grasas trans y limitar grasas saturadas",
+    "limitations": "Estas recomendaciones son pautas generales. Las necesidades individuales de grasas pueden variar según el metabolismo, condiciones de salud y requisitos dietéticos específicos. Consulta con un profesional de la salud o dietista registrado para obtener asesoramiento nutricional personalizado."
+  }
+}

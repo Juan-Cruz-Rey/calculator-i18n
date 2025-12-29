@@ -1,0 +1,68 @@
+{
+  "title": "GFR Calculator",
+  "metaTitle": "GFR Calculator - Estimate Kidney Function (eGFR)",
+  "metaDescription": "Calculate your estimated Glomerular Filtration Rate (eGFR) using the CKD-EPI equation. Assess kidney function and CKD stage based on age, gender, and serum creatinine.",
+  "description": "Calculate your estimated Glomerular Filtration Rate (eGFR) to assess kidney function. This calculator uses the CKD-EPI equation, the most accurate method for estimating kidney function.",
+
+  "inputs": {
+    "age": "Age",
+    "ageHelp": "Enter your age (18-120 years)",
+    "gender": "Gender",
+    "male": "Male",
+    "female": "Female",
+    "serumCreatinine": "Serum Creatinine",
+    "creatinineHelp": "Enter your serum creatinine level from blood test",
+    "equation": "Equation",
+    "equation2021": "CKD-EPI 2021 (without race, recommended)",
+    "equation2009": "CKD-EPI 2009 (with race, legacy)",
+    "equationHelp": "The 2021 equation is recommended as it does not use race as a factor",
+    "race": "Race",
+    "africanAmerican": "African American",
+    "raceHelp": "Only applicable when using the CKD-EPI 2009 equation"
+  },
+
+  "calculate": "Calculate GFR",
+
+  "results": {
+    "title": "Your Results",
+    "gfrValue": "eGFR",
+    "stage": "CKD Stage",
+    "interpretation": "Interpretation",
+    "equation": "Equation Used"
+  },
+
+  "stageInfo": {
+    "title": "Chronic Kidney Disease (CKD) Stages",
+    "stage1": "Stage 1 (GFR ≥90):",
+    "stage1Desc": "Normal or high kidney function",
+    "stage2": "Stage 2 (GFR 60-89):",
+    "stage2Desc": "Mildly decreased kidney function",
+    "stage3a": "Stage 3a (GFR 45-59):",
+    "stage3aDesc": "Mild to moderate decrease in kidney function",
+    "stage3b": "Stage 3b (GFR 30-44):",
+    "stage3bDesc": "Moderate to severe decrease in kidney function",
+    "stage4": "Stage 4 (GFR 15-29):",
+    "stage4Desc": "Severely decreased kidney function",
+    "stage5": "Stage 5 (GFR <15):",
+    "stage5Desc": "Kidney failure (dialysis or transplant needed)"
+  },
+
+  "disclaimer": {
+    "title": "Medical Disclaimer",
+    "text": "This calculator is for informational purposes only and should not replace professional medical advice. Always consult your healthcare provider for proper diagnosis and treatment of kidney disease. GFR estimates may be less accurate in certain populations."
+  },
+
+  "about": {
+    "title": "About the GFR Calculator",
+    "description": "The Glomerular Filtration Rate (GFR) calculator estimates how well your kidneys are filtering waste from your blood. It's a key indicator of kidney health and is used to detect and monitor chronic kidney disease (CKD).",
+    "whatIsGFR": "What is GFR?",
+    "gfrExplanation": "GFR measures how much blood passes through the glomeruli (tiny filters in the kidneys) each minute. A normal GFR is 90 or above. A GFR below 60 for three months or more indicates chronic kidney disease. The lower the GFR, the worse the kidney function.",
+    "ckdEpiEquation": "CKD-EPI Equation",
+    "equationExplanation": "The CKD-EPI (Chronic Kidney Disease Epidemiology Collaboration) equation is the most widely used method for estimating GFR. The 2021 version removed race as a factor, making it more equitable. It uses your age, gender, and serum creatinine level to estimate kidney function.",
+    "importantNotes": "Important Notes",
+    "note1": "This calculator is most accurate for adults 18 years and older",
+    "note2": "Results may be less accurate in people with extreme body sizes, severe malnutrition, or muscle diseases",
+    "note3": "A single GFR result is not enough to diagnose kidney disease - monitoring over time is important",
+    "note4": "Other factors like protein in urine and kidney damage also determine CKD stage"
+  }
+}

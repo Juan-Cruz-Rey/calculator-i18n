@@ -1,0 +1,37 @@
+---
+import BaseLayout from '@/layouts/BaseLayout.astro';
+import WeightWatchersCalculator from '@/components/calculators/WeightWatchersCalculator.astro';
+import { t } from '@/utils/i18n';
+
+const title = t('weightWatchers.title', 'sv') + ' - ' + t('site.title', 'sv');
+const description = t('weightWatchers.metaDescription', 'sv');
+---
+
+<BaseLayout title={title} description={description} lang="sv" calculator="weightWatchers">
+  <div class="container">
+    <div class="page-header">
+      <h1>{t('weightWatchers.title', 'sv')}</h1>
+      <p class="page-description">{t('weightWatchers.description', 'sv')}</p>
+    </div>
+
+    <WeightWatchersCalculator lang="sv" />
+  </div>
+
+  <style>
+    .page-header {
+      text-align: center;
+      padding: 2rem 0;
+    }
+
+    .page-header h1 {
+      font-size: 2.5rem;
+      color: #333;
+      margin-bottom: 0.5rem;
+    }
+
+    .page-description {
+      font-size: 1.25rem;
+      color: #666;
+    }
+  </style>
+</BaseLayout>

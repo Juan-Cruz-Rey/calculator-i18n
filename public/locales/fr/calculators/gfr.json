@@ -1,0 +1,68 @@
+{
+  "title": "Calculateur de DFG",
+  "metaTitle": "Calculateur de DFG - Estimer la Fonction Rénale (DFGe)",
+  "metaDescription": "Calculez votre Débit de Filtration Glomérulaire estimé (DFGe) en utilisant l'équation CKD-EPI. Évaluez la fonction rénale et le stade de l'IRC selon l'âge, le sexe et la créatinine sérique.",
+  "description": "Calculez votre Débit de Filtration Glomérulaire estimé (DFGe) pour évaluer la fonction rénale. Ce calculateur utilise l'équation CKD-EPI, la méthode la plus précise pour estimer la fonction rénale.",
+
+  "inputs": {
+    "age": "Âge",
+    "ageHelp": "Entrez votre âge (18-120 ans)",
+    "gender": "Sexe",
+    "male": "Masculin",
+    "female": "Féminin",
+    "serumCreatinine": "Créatinine Sérique",
+    "creatinineHelp": "Entrez votre taux de créatinine sérique du test sanguin",
+    "equation": "Équation",
+    "equation2021": "CKD-EPI 2021 (sans race, recommandé)",
+    "equation2009": "CKD-EPI 2009 (avec race, ancien)",
+    "equationHelp": "L'équation de 2021 est recommandée car elle n'utilise pas la race comme facteur",
+    "race": "Race",
+    "africanAmerican": "Afro-américain",
+    "raceHelp": "Applicable uniquement lors de l'utilisation de l'équation CKD-EPI 2009"
+  },
+
+  "calculate": "Calculer le DFG",
+
+  "results": {
+    "title": "Vos Résultats",
+    "gfrValue": "DFGe",
+    "stage": "Stade de l'IRC",
+    "interpretation": "Interprétation",
+    "equation": "Équation Utilisée"
+  },
+
+  "stageInfo": {
+    "title": "Stades de l'Insuffisance Rénale Chronique (IRC)",
+    "stage1": "Stade 1 (DFG ≥90) :",
+    "stage1Desc": "Fonction rénale normale ou élevée",
+    "stage2": "Stade 2 (DFG 60-89) :",
+    "stage2Desc": "Fonction rénale légèrement diminuée",
+    "stage3a": "Stade 3a (DFG 45-59) :",
+    "stage3aDesc": "Diminution légère à modérée de la fonction rénale",
+    "stage3b": "Stade 3b (DFG 30-44) :",
+    "stage3bDesc": "Diminution modérée à sévère de la fonction rénale",
+    "stage4": "Stade 4 (DFG 15-29) :",
+    "stage4Desc": "Fonction rénale sévèrement diminuée",
+    "stage5": "Stade 5 (DFG <15) :",
+    "stage5Desc": "Insuffisance rénale (dialyse ou transplantation nécessaire)"
+  },
+
+  "disclaimer": {
+    "title": "Avertissement Médical",
+    "text": "Ce calculateur est à titre informatif uniquement et ne doit pas remplacer les conseils médicaux professionnels. Consultez toujours votre professionnel de la santé pour un diagnostic et un traitement appropriés des maladies rénales. Les estimations du DFG peuvent être moins précises dans certaines populations."
+  },
+
+  "about": {
+    "title": "À Propos du Calculateur de DFG",
+    "description": "Le calculateur de Débit de Filtration Glomérulaire (DFG) estime l'efficacité avec laquelle vos reins filtrent les déchets de votre sang. C'est un indicateur clé de la santé rénale et est utilisé pour détecter et surveiller l'insuffisance rénale chronique (IRC).",
+    "whatIsGFR": "Qu'est-ce que le DFG ?",
+    "gfrExplanation": "Le DFG mesure la quantité de sang qui passe à travers les glomérules (petits filtres dans les reins) chaque minute. Un DFG normal est de 90 ou plus. Un DFG inférieur à 60 pendant trois mois ou plus indique une maladie rénale chronique. Plus le DFG est bas, plus la fonction rénale est mauvaise.",
+    "ckdEpiEquation": "Équation CKD-EPI",
+    "equationExplanation": "L'équation CKD-EPI (Chronic Kidney Disease Epidemiology Collaboration) est la méthode la plus largement utilisée pour estimer le DFG. La version 2021 a supprimé la race comme facteur, la rendant plus équitable. Elle utilise votre âge, votre sexe et votre taux de créatinine sérique pour estimer la fonction rénale.",
+    "importantNotes": "Notes Importantes",
+    "note1": "Ce calculateur est plus précis pour les adultes de 18 ans et plus",
+    "note2": "Les résultats peuvent être moins précis chez les personnes ayant des tailles corporelles extrêmes, une malnutrition sévère ou des maladies musculaires",
+    "note3": "Un seul résultat de DFG ne suffit pas pour diagnostiquer une maladie rénale - la surveillance dans le temps est importante",
+    "note4": "D'autres facteurs comme les protéines dans l'urine et les lésions rénales déterminent également le stade de l'IRC"
+  }
+}

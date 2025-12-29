@@ -1,0 +1,29 @@
+{
+  "title": "Calculateur de 1RM",
+  "description": "Calculez votre maximum d'une répétition (1RM) pour la musculation",
+  "metaDescription": "Calculateur de 1RM Gratuit - Estimez votre capacité maximale de levage en utilisant 7 formules éprouvées dont Epley, Brzycki et plus.",
+  "form": {
+    "title": "Entrez les détails de votre levage",
+    "weightLabel": "Poids Soulevé",
+    "weightPlaceholder": "Entrez le poids soulevé",
+    "repsLabel": "Répétitions Effectuées",
+    "repsPlaceholder": "Entrez le nombre de répétitions",
+    "repsUnit": "reps"
+  },
+  "results": {
+    "title": "Votre 1RM",
+    "average": "Moyenne 1RM",
+    "epley": "Formule Epley",
+    "brzycki": "Formule Brzycki",
+    "lander": "Formule Lander",
+    "lombardi": "Formule Lombardi",
+    "mayhew": "Formule Mayhew",
+    "oconner": "Formule O'Conner",
+    "wathan": "Formule Wathan"
+  },
+  "info": {
+    "title": "À propos du 1RM",
+    "description": "Le Maximum d'Une Répétition (1RM) est la quantité maximale de poids que vous pouvez soulever pour une seule répétition d'un exercice donné. Ce calculateur utilise sept formules différentes pour estimer votre 1RM en fonction du poids soulevé et du nombre de répétitions effectuées.",
+    "note": "Ces formules sont plus précises pour 1 à 10 répétitions. Échauffez-vous toujours correctement et utilisez un pareur lors de tentatives de levages maximaux."
+  }
+}

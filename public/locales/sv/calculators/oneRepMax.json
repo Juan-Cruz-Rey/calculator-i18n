@@ -1,0 +1,29 @@
+{
+  "title": "1RM Kalkylator",
+  "description": "Beräkna ditt en-repetitions-maximum (1RM) för tyngdlyftning",
+  "metaDescription": "Gratis 1RM Kalkylator - Uppskatta din maximala lyftkapacitet med 7 beprövade formler inklusive Epley, Brzycki och fler.",
+  "form": {
+    "title": "Ange dina lyftdetaljer",
+    "weightLabel": "Lyft Vikt",
+    "weightPlaceholder": "Ange lyft vikt",
+    "repsLabel": "Utförda Repetitioner",
+    "repsPlaceholder": "Ange antal repetitioner",
+    "repsUnit": "reps"
+  },
+  "results": {
+    "title": "Ditt 1RM",
+    "average": "Genomsnitt 1RM",
+    "epley": "Epley Formel",
+    "brzycki": "Brzycki Formel",
+    "lander": "Lander Formel",
+    "lombardi": "Lombardi Formel",
+    "mayhew": "Mayhew Formel",
+    "oconner": "O'Conner Formel",
+    "wathan": "Wathan Formel"
+  },
+  "info": {
+    "title": "Om 1RM",
+    "description": "En-Repetitions-Maximum (1RM) är den maximala vikten du kan lyfta för en enda repetition av en given övning. Denna kalkylator använder sju olika formler för att uppskatta ditt 1RM baserat på lyft vikt och antalet utförda repetitioner.",
+    "note": "Dessa formler är mest noggranna för 1-10 repetitioner. Värm alltid upp ordentligt och använd en spotter när du försöker maximala lyft."
+  }
+}

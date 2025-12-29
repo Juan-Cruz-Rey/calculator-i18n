@@ -1,0 +1,62 @@
+{
+  "title": "Fettaufnahme Rechner",
+  "description": "Berechnen Sie Ihren täglichen Fettbedarf",
+  "metaDescription": "Kostenloser Fettaufnahme-Rechner - Berechnen Sie Ihre empfohlene tägliche Fettaufnahme basierend auf Alter, Gewicht, Größe, Aktivitätslevel und Fitnesszielen.",
+  "form": {
+    "title": "Geben Sie Ihre Informationen ein",
+    "ageLabel": "Alter",
+    "agePlaceholder": "Geben Sie Ihr Alter ein (15-80)",
+    "genderLabel": "Geschlecht",
+    "heightLabel": "Größe",
+    "heightPlaceholder": "Geben Sie Ihre Größe ein",
+    "weightLabel": "Gewicht",
+    "weightPlaceholder": "Geben Sie Ihr Gewicht ein",
+    "activityLabel": "Aktivitätslevel",
+    "goalLabel": "Ziel"
+  },
+  "activity": {
+    "sedentary": "Sitzend (wenig oder keine Bewegung)",
+    "light": "Leicht (Bewegung 1-3 Mal/Woche)",
+    "moderate": "Mäßig (Bewegung 4-5 Mal/Woche)",
+    "active": "Aktiv (tägliche Bewegung oder intensive Bewegung 3-4 Mal/Woche)",
+    "veryActive": "Sehr Aktiv (intensive Bewegung 6-7 Mal/Woche)",
+    "extraActive": "Extra Aktiv (sehr intensive tägliche Bewegung und körperliche Arbeit)"
+  },
+  "goal": {
+    "loseWeight": "Gewicht Verlieren",
+    "maintain": "Gewicht Halten",
+    "gainMuscle": "Muskeln Aufbauen"
+  },
+  "results": {
+    "title": "Ihre Fettaufnahme-Empfehlungen",
+    "recommendedIntake": "Empfohlene Tägliche Fettaufnahme",
+    "gramsPerDay": "Gramm pro Tag",
+    "fatCalories": "Kalorien aus Fett",
+    "percentage": "Prozentsatz der Gesamtkalorien",
+    "dailyCalories": "Tägliche Kalorien",
+    "recommendedRange": "Empfohlener Bereich",
+    "tdee": "TDEE",
+    "bmr": "GU"
+  },
+  "info": {
+    "title": "Über die Fettaufnahme",
+    "description": "Nahrungsfett ist ein essentieller Makronährstoff, der wichtige Rollen bei der Hormonproduktion, Nährstoffaufnahme, Zellmembranstruktur und Energiespeicherung spielt. Dieser Rechner hilft Ihnen, die optimale Menge an Fett zu bestimmen, die Sie täglich basierend auf Ihrem Gesamtenergieumsatz (TDEE) und Ihren Fitnesszielen konsumieren sollten.",
+    "typesTitle": "Arten von Fetten",
+    "healthyFats": "Gesunde Fette (Ungesättigt)",
+    "healthyFatsDesc": "Diese Fette können die Herzgesundheit verbessern, Entzündungen reduzieren und das allgemeine Wohlbefinden unterstützen:",
+    "healthyFats1": "Einfach ungesättigte Fette: Olivenöl, Avocados, Nüsse (Mandeln, Cashewnüsse, Pekannüsse)",
+    "healthyFats2": "Mehrfach ungesättigte Fette: Fettreicher Fisch (Lachs, Makrele, Sardinen), Walnüsse, Leinsamen",
+    "healthyFats3": "Omega-3-Fettsäuren: Wichtig für die Gehirngesundheit und Entzündungshemmung",
+    "healthyFats4": "Omega-6-Fettsäuren: Wichtig für Wachstum und Entwicklung (in Maßen)",
+    "unhealthyFats": "Ungesunde Fette",
+    "unhealthyFatsDesc": "Begrenzen oder vermeiden Sie diese Fette, da sie Gesundheitsrisiken erhöhen können:",
+    "unhealthyFats1": "Transfette: In verarbeiteten Lebensmitteln, frittierten Lebensmitteln und teilweise hydrierten Ölen",
+    "unhealthyFats2": "Überschüssige gesättigte Fette: Große Mengen aus rotem Fleisch, Butter und Vollfettmilchprodukten",
+    "recommendationsTitle": "Empfehlungen",
+    "recommendation1": "Wählen Sie gesunde ungesättigte Fette statt gesättigter und Transfette",
+    "recommendation2": "Nehmen Sie 2-3 Mal pro Woche fettreichen Fisch für Omega-3 in Ihre Ernährung auf",
+    "recommendation3": "Verwenden Sie Olivenöl oder Avocadoöl zum Kochen anstelle von Butter oder Margarine",
+    "recommendation4": "Lesen Sie Nährwertkennzeichnungen, um Transfette zu vermeiden und gesättigte Fette zu begrenzen",
+    "limitations": "Diese Empfehlungen sind allgemeine Richtlinien. Der individuelle Fettbedarf kann je nach Stoffwechsel, Gesundheitszustand und spezifischen Ernährungsanforderungen variieren. Konsultieren Sie einen Arzt oder Ernährungsberater für personalisierte Ernährungsberatung."
+  }
+}

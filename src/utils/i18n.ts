@@ -101,6 +101,14 @@ import hiMacro from '../../public/locales/hi/calculators/macro.json';
 import deMacro from '../../public/locales/de/calculators/macro.json';
 import itMacro from '../../public/locales/it/calculators/macro.json';
 
+import esBAC from '../../public/locales/es/calculators/bac.json';
+import enBAC from '../../public/locales/en/calculators/bac.json';
+import ptBAC from '../../public/locales/pt/calculators/bac.json';
+import frBAC from '../../public/locales/fr/calculators/bac.json';
+import hiBAC from '../../public/locales/hi/calculators/bac.json';
+import deBAC from '../../public/locales/de/calculators/bac.json';
+import itBAC from '../../public/locales/it/calculators/bac.json';
+
 import esPregnancy from '../../public/locales/es/calculators/pregnancy.json';
 import enPregnancy from '../../public/locales/en/calculators/pregnancy.json';
 import ptPregnancy from '../../public/locales/pt/calculators/pregnancy.json';
@@ -267,6 +275,14 @@ import frPercentage from '../../public/locales/fr/calculators/percentage.json';
 import hiPercentage from '../../public/locales/hi/calculators/percentage.json';
 import dePercentage from '../../public/locales/de/calculators/percentage.json';
 import itPercentage from '../../public/locales/it/calculators/percentage.json';
+import esGFR from '../../public/locales/es/calculators/gfr.json';
+import enGFR from '../../public/locales/en/calculators/gfr.json';
+import ptGFR from '../../public/locales/pt/calculators/gfr.json';
+import frGFR from '../../public/locales/fr/calculators/gfr.json';
+import hiGFR from '../../public/locales/hi/calculators/gfr.json';
+import deGFR from '../../public/locales/de/calculators/gfr.json';
+import itGFR from '../../public/locales/it/calculators/gfr.json';
+
 
 import plBMI from '../../public/locales/pl/calculators/bmi.json';
 import svBMI from '../../public/locales/sv/calculators/bmi.json';
@@ -286,6 +302,8 @@ import plPace from '../../public/locales/pl/calculators/pace.json';
 import svPace from '../../public/locales/sv/calculators/pace.json';
 import plMacro from '../../public/locales/pl/calculators/macro.json';
 import svMacro from '../../public/locales/sv/calculators/macro.json';
+import plBAC from '../../public/locales/pl/calculators/bac.json';
+import svBAC from '../../public/locales/sv/calculators/bac.json';
 import plPregnancy from '../../public/locales/pl/calculators/pregnancy.json';
 import svPregnancy from '../../public/locales/sv/calculators/pregnancy.json';
 import plPregnancyWeightGain from '../../public/locales/pl/calculators/pregnancyWeightGain.json';
@@ -330,6 +348,9 @@ import plPercentage from '../../public/locales/pl/calculators/percentage.json';
 import svPercentage from '../../public/locales/sv/calculators/percentage.json';
 import plSleep from '../../public/locales/pl/calculators/sleep.json';
 import svSleep from '../../public/locales/sv/calculators/sleep.json';
+import plGFR from '../../public/locales/pl/calculators/gfr.json';
+import svGFR from '../../public/locales/sv/calculators/gfr.json';
+
 
 import nlBmi from '../../public/locales/nl/calculators/bmi.json';
 import trBmi from '../../public/locales/tr/calculators/bmi.json';
@@ -358,6 +379,9 @@ import ruPace from '../../public/locales/ru/calculators/pace.json';
 import nlMacro from '../../public/locales/nl/calculators/macro.json';
 import trMacro from '../../public/locales/tr/calculators/macro.json';
 import ruMacro from '../../public/locales/ru/calculators/macro.json';
+import nlBAC from '../../public/locales/nl/calculators/bac.json';
+import trBAC from '../../public/locales/tr/calculators/bac.json';
+import ruBAC from '../../public/locales/ru/calculators/bac.json';
 import nlPregnancy from '../../public/locales/nl/calculators/pregnancy.json';
 import trPregnancy from '../../public/locales/tr/calculators/pregnancy.json';
 import ruPregnancy from '../../public/locales/ru/calculators/pregnancy.json';
@@ -424,6 +448,49 @@ import ruPercentage from '../../public/locales/ru/calculators/percentage.json';
 import nlSleep from '../../public/locales/nl/calculators/sleep.json';
 import trSleep from '../../public/locales/tr/calculators/sleep.json';
 import ruSleep from '../../public/locales/ru/calculators/sleep.json';
+import nlGFR from '../../public/locales/nl/calculators/gfr.json';
+import trGFR from '../../public/locales/tr/calculators/gfr.json';
+import ruGFR from '../../public/locales/ru/calculators/gfr.json';
+
+
+import esOneRepMax from '../../public/locales/es/calculators/oneRepMax.json';
+import enOneRepMax from '../../public/locales/en/calculators/oneRepMax.json';
+import ptOneRepMax from '../../public/locales/pt/calculators/oneRepMax.json';
+import frOneRepMax from '../../public/locales/fr/calculators/oneRepMax.json';
+import hiOneRepMax from '../../public/locales/hi/calculators/oneRepMax.json';
+import deOneRepMax from '../../public/locales/de/calculators/oneRepMax.json';
+import itOneRepMax from '../../public/locales/it/calculators/oneRepMax.json';
+import plOneRepMax from '../../public/locales/pl/calculators/oneRepMax.json';
+import nlOneRepMax from '../../public/locales/nl/calculators/oneRepMax.json';
+import trOneRepMax from '../../public/locales/tr/calculators/oneRepMax.json';
+import svOneRepMax from '../../public/locales/sv/calculators/oneRepMax.json';
+import ruOneRepMax from '../../public/locales/ru/calculators/oneRepMax.json';
+
+import esWeightWatchers from '../../public/locales/es/calculators/weightWatchers.json';
+import enWeightWatchers from '../../public/locales/en/calculators/weightWatchers.json';
+import ptWeightWatchers from '../../public/locales/pt/calculators/weightWatchers.json';
+import frWeightWatchers from '../../public/locales/fr/calculators/weightWatchers.json';
+import hiWeightWatchers from '../../public/locales/hi/calculators/weightWatchers.json';
+import deWeightWatchers from '../../public/locales/de/calculators/weightWatchers.json';
+import itWeightWatchers from '../../public/locales/it/calculators/weightWatchers.json';
+import plWeightWatchers from '../../public/locales/pl/calculators/weightWatchers.json';
+import nlWeightWatchers from '../../public/locales/nl/calculators/weightWatchers.json';
+import trWeightWatchers from '../../public/locales/tr/calculators/weightWatchers.json';
+import svWeightWatchers from '../../public/locales/sv/calculators/weightWatchers.json';
+import ruWeightWatchers from '../../public/locales/ru/calculators/weightWatchers.json';
+
+import esFatIntake from '../../public/locales/es/calculators/fatIntake.json';
+import enFatIntake from '../../public/locales/en/calculators/fatIntake.json';
+import ptFatIntake from '../../public/locales/pt/calculators/fatIntake.json';
+import frFatIntake from '../../public/locales/fr/calculators/fatIntake.json';
+import hiFatIntake from '../../public/locales/hi/calculators/fatIntake.json';
+import deFatIntake from '../../public/locales/de/calculators/fatIntake.json';
+import itFatIntake from '../../public/locales/it/calculators/fatIntake.json';
+import plFatIntake from '../../public/locales/pl/calculators/fatIntake.json';
+import nlFatIntake from '../../public/locales/nl/calculators/fatIntake.json';
+import trFatIntake from '../../public/locales/tr/calculators/fatIntake.json';
+import svFatIntake from '../../public/locales/sv/calculators/fatIntake.json';
+import ruFatIntake from '../../public/locales/ru/calculators/fatIntake.json';
 
 interface Translations {
   [key: string]: any;
@@ -442,6 +509,7 @@ const translations: Record<Locale, Translations> = {
     armyBodyFat: esArmyBodyFat,
     pace: esPace,
     macro: esMacro,
+    bac: esBAC,
     pregnancy: esPregnancy,
     pregnancyWeightGain: esPregnancyWeightGain,
     pregnancyConception: esPregnancyConception,
@@ -461,8 +529,12 @@ const translations: Record<Locale, Translations> = {
     waistHip: esWaistHip,
     age: esAge,
     tip: esTip,
+    weightWatchers: esWeightWatchers,
     date: esDate,
     percentage: esPercentage,
+    gfr: esGFR,
+    oneRepMax: esOneRepMax,
+    fatIntake: esFatIntake,
   },
   en: {
     ...enCommon,
@@ -476,9 +548,11 @@ const translations: Record<Locale, Translations> = {
     armyBodyFat: enArmyBodyFat,
     pace: enPace,
     macro: enMacro,
+    bac: enBAC,
     pregnancy: enPregnancy,
     pregnancyWeightGain: enPregnancyWeightGain,
     pregnancyConception: enPregnancyConception,
+    weightWatchers: enWeightWatchers,
     dueDate: enDueDate,
     carbohydrate: enCarbohydrate,
     leanBodyMass: enLeanBodyMass,
@@ -497,6 +571,9 @@ const translations: Record<Locale, Translations> = {
     tip: enTip,
     date: enDate,
     percentage: enPercentage,
+    gfr: enGFR,
+    oneRepMax: enOneRepMax,
+    fatIntake: enFatIntake,
   },
   pt: {
     ...ptCommon,
@@ -510,8 +587,10 @@ const translations: Record<Locale, Translations> = {
     armyBodyFat: ptArmyBodyFat,
     pace: ptPace,
     macro: ptMacro,
+    bac: ptBAC,
     pregnancy: ptPregnancy,
     pregnancyWeightGain: ptPregnancyWeightGain,
+    weightWatchers: ptWeightWatchers,
     pregnancyConception: ptPregnancyConception,
     dueDate: ptDueDate,
     carbohydrate: ptCarbohydrate,
@@ -531,6 +610,9 @@ const translations: Record<Locale, Translations> = {
     tip: ptTip,
     date: ptDate,
     percentage: ptPercentage,
+    gfr: ptGFR,
+    oneRepMax: ptOneRepMax,
+    fatIntake: ptFatIntake,
   },
   fr: {
     ...frCommon,
@@ -544,7 +626,9 @@ const translations: Record<Locale, Translations> = {
     armyBodyFat: frArmyBodyFat,
     pace: frPace,
     macro: frMacro,
+    bac: frBAC,
     pregnancy: frPregnancy,
+    weightWatchers: frWeightWatchers,
     pregnancyWeightGain: frPregnancyWeightGain,
     pregnancyConception: frPregnancyConception,
     dueDate: frDueDate,
@@ -565,6 +649,9 @@ const translations: Record<Locale, Translations> = {
     tip: frTip,
     date: frDate,
     percentage: frPercentage,
+    gfr: frGFR,
+    oneRepMax: frOneRepMax,
+    fatIntake: frFatIntake,
   },
   hi: {
     ...hiCommon,
@@ -578,6 +665,8 @@ const translations: Record<Locale, Translations> = {
     armyBodyFat: hiArmyBodyFat,
     pace: hiPace,
     macro: hiMacro,
+    bac: hiBAC,
+    weightWatchers: hiWeightWatchers,
     pregnancy: hiPregnancy,
     pregnancyWeightGain: hiPregnancyWeightGain,
     pregnancyConception: hiPregnancyConception,
@@ -599,6 +688,9 @@ const translations: Record<Locale, Translations> = {
     waistHip: hiWaistHip,
     date: hiDate,
     percentage: hiPercentage,
+    gfr: hiGFR,
+    oneRepMax: hiOneRepMax,
+    fatIntake: hiFatIntake,
   },
   de: {
     ...deCommon,
@@ -612,6 +704,8 @@ const translations: Record<Locale, Translations> = {
     armyBodyFat: deArmyBodyFat,
     pace: dePace,
     macro: deMacro,
+    weightWatchers: deWeightWatchers,
+    bac: deBAC,
     pregnancy: dePregnancy,
     pregnancyWeightGain: dePregnancyWeightGain,
     pregnancyConception: dePregnancyConception,
@@ -633,6 +727,9 @@ const translations: Record<Locale, Translations> = {
     waistHip: deWaistHip,
     date: deDate,
     percentage: dePercentage,
+    gfr: deGFR,
+    oneRepMax: deOneRepMax,
+    fatIntake: deFatIntake,
   },
   it: {
     ...itCommon,
@@ -644,8 +741,10 @@ const translations: Record<Locale, Translations> = {
     bmr: itBMR,
     tdee: itTDEE,
     armyBodyFat: itArmyBodyFat,
+    weightWatchers: itWeightWatchers,
     pace: itPace,
     macro: itMacro,
+    bac: itBAC,
     pregnancy: itPregnancy,
     pregnancyWeightGain: itPregnancyWeightGain,
     pregnancyConception: itPregnancyConception,
@@ -667,6 +766,9 @@ const translations: Record<Locale, Translations> = {
     waistHip: itWaistHip,
     date: itDate,
     percentage: itPercentage,
+    gfr: itGFR,
+    oneRepMax: itOneRepMax,
+    fatIntake: itFatIntake,
   },
   pl: {
     ...plCommon,
@@ -678,8 +780,10 @@ const translations: Record<Locale, Translations> = {
     bmr: plBMR,
     tdee: plTDEE,
     armyBodyFat: plArmyBodyFat,
+    weightWatchers: plWeightWatchers,
     pace: plPace,
     macro: plMacro,
+    bac: plBAC,
     pregnancy: plPregnancy,
     pregnancyWeightGain: plPregnancyWeightGain,
     pregnancyConception: plPregnancyConception,
@@ -701,7 +805,10 @@ const translations: Record<Locale, Translations> = {
     tip: plTip,
     date: plDate,
     percentage: plPercentage,
+    gfr: plGFR,
     sleep: plSleep,
+    oneRepMax: plOneRepMax,
+    fatIntake: plFatIntake,
   },
   sv: {
     ...svCommon,
@@ -712,9 +819,11 @@ const translations: Record<Locale, Translations> = {
     bodyFat: svBodyFat,
     bmr: svBMR,
     tdee: svTDEE,
+    weightWatchers: svWeightWatchers,
     armyBodyFat: svArmyBodyFat,
     pace: svPace,
     macro: svMacro,
+    bac: svBAC,
     pregnancy: svPregnancy,
     pregnancyWeightGain: svPregnancyWeightGain,
     pregnancyConception: svPregnancyConception,
@@ -736,7 +845,10 @@ const translations: Record<Locale, Translations> = {
     tip: svTip,
     date: svDate,
     percentage: svPercentage,
+    gfr: svGFR,
     sleep: svSleep,
+    oneRepMax: svOneRepMax,
+    fatIntake: svFatIntake,
   },
   nl: {
     ...nlCommon,
@@ -746,10 +858,12 @@ const translations: Record<Locale, Translations> = {
     idealWeight: nlIdealWeight,
     bodyFat: nlBodyFat,
     bmr: nlBmr,
+    weightWatchers: nlWeightWatchers,
     tdee: nlTdee,
     armyBodyFat: nlArmyBodyFat,
     pace: nlPace,
     macro: nlMacro,
+    bac: nlBAC,
     pregnancy: nlPregnancy,
     pregnancyWeightGain: nlPregnancyWeightGain,
     pregnancyConception: nlPregnancyConception,
@@ -771,7 +885,10 @@ const translations: Record<Locale, Translations> = {
     date: nlDate,
     age: nlAge,
     percentage: nlPercentage,
+    gfr: nlGFR,
     sleep: nlSleep,
+    oneRepMax: nlOneRepMax,
+    fatIntake: nlFatIntake,
   },
   tr: {
     ...trCommon,
@@ -780,11 +897,13 @@ const translations: Record<Locale, Translations> = {
     calorie: trCalorie,
     idealWeight: trIdealWeight,
     bodyFat: trBodyFat,
+    weightWatchers: trWeightWatchers,
     bmr: trBmr,
     tdee: trTdee,
     armyBodyFat: trArmyBodyFat,
     pace: trPace,
     macro: trMacro,
+    bac: trBAC,
     pregnancy: trPregnancy,
     pregnancyWeightGain: trPregnancyWeightGain,
     pregnancyConception: trPregnancyConception,
@@ -806,7 +925,10 @@ const translations: Record<Locale, Translations> = {
     date: trDate,
     age: trAge,
     percentage: trPercentage,
+    gfr: trGFR,
     sleep: trSleep,
+    oneRepMax: trOneRepMax,
+    fatIntake: trFatIntake,
   },
   ru: {
     ...ruCommon,
@@ -815,11 +937,13 @@ const translations: Record<Locale, Translations> = {
     calorie: ruCalorie,
     idealWeight: ruIdealWeight,
     bodyFat: ruBodyFat,
+    weightWatchers: ruWeightWatchers,
     bmr: ruBmr,
     tdee: ruTdee,
     armyBodyFat: ruArmyBodyFat,
     pace: ruPace,
     macro: ruMacro,
+    bac: ruBAC,
     pregnancy: ruPregnancy,
     pregnancyWeightGain: ruPregnancyWeightGain,
     pregnancyConception: ruPregnancyConception,
@@ -841,7 +965,10 @@ const translations: Record<Locale, Translations> = {
     date: ruDate,
     age: ruAge,
     percentage: ruPercentage,
+    gfr: ruGFR,
     sleep: ruSleep,
+    oneRepMax: ruOneRepMax,
+    fatIntake: ruFatIntake,
   },
 };
 
@@ -1333,6 +1460,76 @@ export const calculatorPaths = {
     tr: '/tr/hesap-makineleri/sleep/',
     ru: '/ru/kalkulyatory/sleep/',
   },
+  weightWatchers: {
+    es: '/es/calculadoras/puntos-dieta/',
+    en: '/calculators/weight-watchers/',
+    pt: '/pt/calculadoras/pontos-dieta/',
+    fr: '/fr/calculatrices/points-regime/',
+    hi: '/hi/calculators/weight-watchers/',
+    de: '/de/rechner/diat-punkte/',
+    it: '/it/calcolatrici/punti-dieta/',
+    pl: '/pl/kalkulatory/punkty-diety/',
+    sv: '/sv/kalkylatorer/viktvaktare/',
+    nl: '/nl/rekenmachines/weight-watchers/',
+    tr: '/tr/hesap-makineleri/diyet-puanlari/',
+    ru: '/ru/kalkulyatory/ballyi-diety/',
+  },
+  oneRepMax: {
+    es: '/es/calculadoras/1rm/',
+    en: '/calculators/one-rep-max/',
+    pt: '/pt/calculadoras/1rm/',
+    fr: '/fr/calculatrices/1rm/',
+    hi: '/hi/calculators/one-rep-max/',
+    de: '/de/rechner/1rm/',
+    it: '/it/calcolatrici/1rm/',
+    pl: '/pl/kalkulatory/1rm/',
+    sv: '/sv/kalkylatorer/1rm/',
+    nl: '/nl/rekenmachines/1rm/',
+    tr: '/tr/hesap-makineleri/1rm/',
+    ru: '/ru/kalkulyatory/1rm/',
+  },
+  fatIntake: {
+    es: '/es/calculadoras/grasas/',
+    en: '/calculators/fat-intake/',
+    pt: '/pt/calculadoras/gorduras/',
+    fr: '/fr/calculatrices/apport-lipides/',
+    hi: '/hi/calculators/fat-intake/',
+    de: '/de/rechner/fettaufnahme/',
+    it: '/it/calcolatrici/grassi/',
+    pl: '/pl/kalkulatory/tluszcze/',
+    sv: '/sv/kalkylatorer/fettintag/',
+    nl: '/nl/rekenmachines/vetinname/',
+    tr: '/tr/hesap-makineleri/yag-alimi/',
+    ru: '/ru/kalkulyatory/zhiry/',
+  },
+  gfr: {
+    es: '/es/calculadoras/tfg/',
+    en: '/calculators/gfr/',
+    pt: '/pt/calculadoras/tfg/',
+    fr: '/fr/calculatrices/dfg/',
+    hi: '/hi/calculators/gfr/',
+    de: '/de/rechner/gfr/',
+    it: '/it/calcolatrici/vfg/',
+    pl: '/pl/kalkulatory/gfr/',
+    sv: '/sv/kalkylatorer/gfr/',
+    nl: '/nl/rekenmachines/gfr/',
+    tr: '/tr/hesap-makineleri/gfr/',
+    ru: '/ru/kalkulyatory/gfr/',
+  },
+  bac: {
+    es: '/es/calculadoras/alcoholemia/',
+    en: '/calculators/bac/',
+    pt: '/pt/calculadoras/tac/',
+    fr: '/fr/calculatrices/tac/',
+    hi: '/hi/calculators/bac/',
+    de: '/de/rechner/bak/',
+    it: '/it/calcolatrici/tac/',
+    pl: '/pl/kalkulatory/bac/',
+    sv: '/sv/kalkylatorer/bac/',
+    nl: '/nl/rekenmachines/bac/',
+    tr: '/tr/hesap-makineleri/kan-alkol/',
+    ru: '/ru/kalkulyatory/bac/',
+  },
 };
 
 /**
@@ -1515,6 +1712,20 @@ export function getAlternatePath(currentPath: string, targetLocale: Locale, calc
       nl: '/nl/rekenmachines/macro/',
       tr: '/tr/hesap-makineleri/macro/',
       ru: '/ru/kalkulyatory/macro/',
+    },
+    bac: {
+      es: '/es/calculadoras/alcoholemia/',
+      en: '/calculators/bac/',
+      pt: '/pt/calculadoras/tac/',
+      fr: '/fr/calculatrices/tac/',
+      hi: '/hi/calculators/bac/',
+      de: '/de/rechner/bak/',
+      it: '/it/calcolatrici/tac/',
+      pl: '/pl/kalkulatory/bac/',
+      sv: '/sv/kalkylatorer/bac/',
+      nl: '/nl/rekenmachines/bac/',
+      tr: '/tr/hesap-makineleri/kan-alkol/',
+      ru: '/ru/kalkulyatory/bac/',
     },
     pregnancyWeightGain: {
       es: '/es/calculadoras/aumento-peso-embarazo/',
@@ -1796,6 +2007,20 @@ export function getAlternatePath(currentPath: string, targetLocale: Locale, calc
       tr: '/tr/hesap-makineleri/percentage/',
       ru: '/ru/kalkulyatory/percentage/',
     },
+    weightWatchers: {
+      es: '/es/calculadoras/puntos-dieta/',
+      en: '/calculators/weight-watchers/',
+      pt: '/pt/calculadoras/pontos-dieta/',
+      fr: '/fr/calculatrices/points-regime/',
+      hi: '/hi/calculators/weight-watchers/',
+      de: '/de/rechner/diat-punkte/',
+      it: '/it/calcolatrici/punti-dieta/',
+      pl: '/pl/kalkulatory/punkty-diety/',
+      sv: '/sv/kalkylatorer/viktvaktare/',
+      nl: '/nl/rekenmachines/weight-watchers/',
+      tr: '/tr/hesap-makineleri/diyet-puanlari/',
+      ru: '/ru/kalkulyatory/ballyi-diety/',
+    },
     sleep: {
       es: '/es/calculadoras/sueno/',
       en: '/calculators/sleep/',
@@ -1809,6 +2034,20 @@ export function getAlternatePath(currentPath: string, targetLocale: Locale, calc
       nl: '/nl/rekenmachines/sleep/',
       tr: '/tr/hesap-makineleri/sleep/',
       ru: '/ru/kalkulyatory/sleep/',
+    },
+    gfr: {
+      es: '/es/calculadoras/tfg/',
+      en: '/calculators/gfr/',
+      pt: '/pt/calculadoras/tfg/',
+      fr: '/fr/calculatrices/dfg/',
+      hi: '/hi/calculators/gfr/',
+      de: '/de/rechner/gfr/',
+      it: '/it/calcolatrici/vfg/',
+      pl: '/pl/kalkulatory/gfr/',
+      sv: '/sv/kalkylatorer/gfr/',
+      nl: '/nl/rekenmachines/gfr/',
+      tr: '/tr/hesap-makineleri/gfr/',
+      ru: '/ru/kalkulyatory/gfr/',
     },
   };
 

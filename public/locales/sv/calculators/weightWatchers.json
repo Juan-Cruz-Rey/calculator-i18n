@@ -1,0 +1,65 @@
+{
+  "title": "Weight Watchers Poängkalkylator",
+  "description": "Beräkna SmartPoints för mat och din dagliga poängbudget",
+  "metaDescription": "Gratis Weight Watchers Poängkalkylator - Beräkna SmartPoints för mat och bestäm din dagliga poängbudget baserat på din personliga information.",
+  "disclaimer": {
+    "title": "Ansvarsfriskrivning",
+    "text": "Detta är en inofficiell kalkylator och är inte affilierad med WW International, Inc. SmartPoints är ett varumärke som tillhör WW International, Inc. Denna kalkylator ger uppskattningar endast för utbildningsändamål."
+  },
+  "tabs": {
+    "foodPoints": "Matpoäng",
+    "dailyBudget": "Daglig Budget"
+  },
+  "foodPoints": {
+    "title": "Beräkna Matpoäng",
+    "description": "Ange näringsinnehållet i din mat för att beräkna dess SmartPoints-värde.",
+    "caloriesLabel": "Kalorier",
+    "caloriesPlaceholder": "Ange kalorier",
+    "saturatedFatLabel": "Mättat Fett",
+    "saturatedFatPlaceholder": "Ange mättat fett",
+    "sugarLabel": "Socker",
+    "sugarPlaceholder": "Ange socker",
+    "proteinLabel": "Protein",
+    "proteinPlaceholder": "Ange protein",
+    "resultsTitle": "Matpoäng Resultat",
+    "smartPoints": "SmartPoints",
+    "pointsPerServing": "per portion"
+  },
+  "dailyBudget": {
+    "title": "Beräkna Daglig Poängbudget",
+    "description": "Ange din personliga information för att beräkna din rekommenderade dagliga SmartPoints-budget.",
+    "ageLabel": "Ålder",
+    "agePlaceholder": "Ange din ålder",
+    "genderLabel": "Kön",
+    "weightLabel": "Vikt",
+    "weightPlaceholder": "Ange din vikt",
+    "heightLabel": "Längd",
+    "heightPlaceholder": "Ange din längd",
+    "activityLabel": "Aktivitetsnivå",
+    "resultsTitle": "Din Dagliga Budget",
+    "dailyPoints": "Dagliga SmartPoints",
+    "pointsPerDay": "per dag",
+    "basePoints": "Baspoäng",
+    "activityBonus": "Aktivitetsbonus",
+    "weeklyPoints": "Veckovisa Extra Poäng",
+    "budgetExplanation": "Din dagliga SmartPoints-budget är målantalet poäng du bör sträva efter varje dag. Du får också veckovisa extra poäng för flexibilitet."
+  },
+  "activity": {
+    "sedentary": "Stillasittande (lite eller ingen träning)",
+    "light": "Lätt (träning 1-3 dagar/vecka)",
+    "moderate": "Måttlig (träning 3-5 dagar/vecka)",
+    "active": "Aktiv (träning 6-7 dagar/vecka)",
+    "veryActive": "Mycket Aktiv (intensiv daglig träning)"
+  },
+  "units": {
+    "kcal": "kcal",
+    "grams": "g"
+  },
+  "info": {
+    "title": "Om SmartPoints",
+    "description": "SmartPoints är ett näringssystem som tilldelar värden till mat baserat på kalorier, mättat fett, socker och protein. Mat med mer kalorier, mättat fett och socker har högre poängvärden, medan mat med mer protein har lägre värden. Detta uppmuntrar hälsosammare matval.",
+    "formulaTitle": "SmartPoints Formel",
+    "formula": "Poäng = (Kalorier × 0,0305) + (Mättat Fett × 0,275) + (Socker × 0,12) - (Protein × 0,098), avrundat till närmaste heltal, minimum 0",
+    "limitations": "Denna kalkylator ger endast uppskattningar och bör inte ersätta professionell kostrådgivning. Rådfråga alltid en vårdgivare eller legitimerad dietist för personlig näringsvägledning."
+  }
+}

@@ -1,0 +1,69 @@
+{
+  "title": "BAC Calculator",
+  "metaDescription": "Calculate your Blood Alcohol Content (BAC) based on drinks consumed, weight, gender, and time. Estimate impairment level and time until sober.",
+  "disclaimer": {
+    "title": "Important Disclaimer",
+    "text": "This calculator provides estimates only. BAC varies based on many factors. Never drink and drive. Legal limits vary by jurisdiction. Consult local laws and always err on the side of caution."
+  },
+  "weight": {
+    "label": "Your Weight"
+  },
+  "gender": {
+    "label": "Gender",
+    "male": "Male",
+    "female": "Female"
+  },
+  "drinkType": {
+    "label": "Type of Drink",
+    "beer": "Beer (12 oz, 5% ABV)",
+    "wine": "Wine (5 oz, 12% ABV)",
+    "liquor": "Liquor/Spirits (1.5 oz, 40% ABV)",
+    "custom": "Custom"
+  },
+  "drinkVolume": {
+    "label": "Drink Volume per Serving"
+  },
+  "alcoholContent": {
+    "label": "Alcohol Content (% ABV)"
+  },
+  "drinks": {
+    "label": "Number of Drinks"
+  },
+  "hours": {
+    "label": "Hours Since You Started Drinking"
+  },
+  "results": {
+    "title": "Your Results",
+    "bac": "Blood Alcohol Content (BAC)",
+    "impairmentLevel": "Impairment Level",
+    "timeUntilSober": "Time Until Sober",
+    "legalStatus": "Legal Status",
+    "descriptionTitle": "Impairment Description"
+  },
+  "legalDisclaimer": {
+    "title": "Legal Disclaimer",
+    "text": "This calculator is for educational purposes only. Do not rely on it to determine if you can legally drive. Legal BAC limits vary by jurisdiction (0.08% in most US states, 0.05% in many countries, 0.00% for commercial drivers). Always use designated drivers or alternative transportation if you've been drinking."
+  },
+  "info": {
+    "title": "About BAC",
+    "description": "Blood Alcohol Content (BAC) is a measure of alcohol concentration in your bloodstream. It's expressed as a percentage - for example, 0.08% means 0.08 grams of alcohol per 100 milliliters of blood.",
+    "howItWorks": "How This Calculator Works",
+    "formula": "This calculator uses the Widmark formula to estimate BAC based on alcohol consumed, body weight, gender, and time elapsed. The formula accounts for alcohol metabolism rate (approximately 0.015% BAC decrease per hour).",
+    "impairmentLevelsTitle": "Impairment Levels",
+    "levels": {
+      "minimal": "Minimal effects, slight mood elevation, subtle changes in behavior",
+      "mild": "Mild impairment, relaxation, reduced coordination, lowered inhibitions",
+      "moderate": "Moderate impairment, reduced reaction time, impaired judgment, difficulty concentrating",
+      "significant": "Significant impairment, difficulty walking and balancing, slurred speech, poor decision making",
+      "severe": "Severe impairment, risk of alcohol poisoning, loss of consciousness, potential life-threatening condition"
+    },
+    "factorsTitle": "Factors Affecting BAC",
+    "factors": {
+      "weight": "Body weight - heavier individuals typically have lower BAC from the same amount of alcohol",
+      "gender": "Gender - women typically reach higher BAC levels than men from the same amount of alcohol",
+      "time": "Time - the body metabolizes alcohol at approximately 0.015% BAC per hour",
+      "food": "Food consumption - eating before or while drinking slows alcohol absorption",
+      "metabolism": "Individual metabolism - varies based on genetics, medications, and health conditions"
+    }
+  }
+}

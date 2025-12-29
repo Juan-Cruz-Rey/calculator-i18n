@@ -1,0 +1,68 @@
+{
+  "title": "GFR-Rechner",
+  "metaTitle": "GFR-Rechner - Nierenfunktion Schätzen (eGFR)",
+  "metaDescription": "Berechnen Sie Ihre geschätzte Glomeruläre Filtrationsrate (eGFR) mit der CKD-EPI-Gleichung. Bewerten Sie die Nierenfunktion und das CKD-Stadium basierend auf Alter, Geschlecht und Serumkreatinin.",
+  "description": "Berechnen Sie Ihre geschätzte Glomeruläre Filtrationsrate (eGFR) zur Bewertung der Nierenfunktion. Dieser Rechner verwendet die CKD-EPI-Gleichung, die genaueste Methode zur Schätzung der Nierenfunktion.",
+
+  "inputs": {
+    "age": "Alter",
+    "ageHelp": "Geben Sie Ihr Alter ein (18-120 Jahre)",
+    "gender": "Geschlecht",
+    "male": "Männlich",
+    "female": "Weiblich",
+    "serumCreatinine": "Serumkreatinin",
+    "creatinineHelp": "Geben Sie Ihren Serumkreatininspiegel aus dem Bluttest ein",
+    "equation": "Gleichung",
+    "equation2021": "CKD-EPI 2021 (ohne Rasse, empfohlen)",
+    "equation2009": "CKD-EPI 2009 (mit Rasse, veraltet)",
+    "equationHelp": "Die Gleichung von 2021 wird empfohlen, da sie Rasse nicht als Faktor verwendet",
+    "race": "Rasse",
+    "africanAmerican": "Afroamerikaner",
+    "raceHelp": "Nur anwendbar bei Verwendung der CKD-EPI 2009 Gleichung"
+  },
+
+  "calculate": "GFR Berechnen",
+
+  "results": {
+    "title": "Ihre Ergebnisse",
+    "gfrValue": "eGFR",
+    "stage": "CKD-Stadium",
+    "interpretation": "Interpretation",
+    "equation": "Verwendete Gleichung"
+  },
+
+  "stageInfo": {
+    "title": "Chronische Nierenerkrankung (CKD) Stadien",
+    "stage1": "Stadium 1 (GFR ≥90):",
+    "stage1Desc": "Normale oder hohe Nierenfunktion",
+    "stage2": "Stadium 2 (GFR 60-89):",
+    "stage2Desc": "Leicht verminderte Nierenfunktion",
+    "stage3a": "Stadium 3a (GFR 45-59):",
+    "stage3aDesc": "Leichte bis mäßige Abnahme der Nierenfunktion",
+    "stage3b": "Stadium 3b (GFR 30-44):",
+    "stage3bDesc": "Mäßige bis schwere Abnahme der Nierenfunktion",
+    "stage4": "Stadium 4 (GFR 15-29):",
+    "stage4Desc": "Stark verminderte Nierenfunktion",
+    "stage5": "Stadium 5 (GFR <15):",
+    "stage5Desc": "Nierenversagen (Dialyse oder Transplantation erforderlich)"
+  },
+
+  "disclaimer": {
+    "title": "Medizinischer Haftungsausschluss",
+    "text": "Dieser Rechner dient nur zu Informationszwecken und sollte keine professionelle medizinische Beratung ersetzen. Konsultieren Sie immer Ihren Arzt für eine ordnungsgemäße Diagnose und Behandlung von Nierenerkrankungen. GFR-Schätzungen können in bestimmten Bevölkerungsgruppen weniger genau sein."
+  },
+
+  "about": {
+    "title": "Über den GFR-Rechner",
+    "description": "Der GFR-Rechner (Glomeruläre Filtrationsrate) schätzt, wie gut Ihre Nieren Abfallstoffe aus Ihrem Blut filtern. Es ist ein wichtiger Indikator für die Nierengesundheit und wird zur Erkennung und Überwachung chronischer Nierenerkrankungen (CKD) verwendet.",
+    "whatIsGFR": "Was ist die GFR?",
+    "gfrExplanation": "Die GFR misst, wie viel Blut jede Minute durch die Glomeruli (winzige Filter in den Nieren) fließt. Eine normale GFR liegt bei 90 oder höher. Eine GFR unter 60 für drei Monate oder länger weist auf eine chronische Nierenerkrankung hin. Je niedriger die GFR, desto schlechter die Nierenfunktion.",
+    "ckdEpiEquation": "CKD-EPI-Gleichung",
+    "equationExplanation": "Die CKD-EPI-Gleichung (Chronic Kidney Disease Epidemiology Collaboration) ist die am häufigsten verwendete Methode zur Schätzung der GFR. Die Version von 2021 hat Rasse als Faktor entfernt und ist somit gerechter. Sie verwendet Ihr Alter, Geschlecht und Serumkreatininspiegel zur Schätzung der Nierenfunktion.",
+    "importantNotes": "Wichtige Hinweise",
+    "note1": "Dieser Rechner ist am genauesten für Erwachsene ab 18 Jahren",
+    "note2": "Ergebnisse können bei Personen mit extremen Körpergrößen, schwerer Unterernährung oder Muskelerkrankungen weniger genau sein",
+    "note3": "Ein einzelnes GFR-Ergebnis reicht nicht aus, um eine Nierenerkrankung zu diagnostizieren - eine Überwachung im Zeitverlauf ist wichtig",
+    "note4": "Andere Faktoren wie Protein im Urin und Nierenschäden bestimmen ebenfalls das CKD-Stadium"
+  }
+}

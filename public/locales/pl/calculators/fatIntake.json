@@ -1,0 +1,62 @@
+{
+  "title": "Kalkulator Spożycia Tłuszczu",
+  "description": "Oblicz swoje dzienne zapotrzebowanie na tłuszcze",
+  "metaDescription": "Darmowy kalkulator spożycia tłuszczu - Oblicz zalecane dzienne spożycie tłuszczu na podstawie wieku, wagi, wzrostu, poziomu aktywności i celów fitness.",
+  "form": {
+    "title": "Wprowadź swoje dane",
+    "ageLabel": "Wiek",
+    "agePlaceholder": "Wprowadź swój wiek (15-80)",
+    "genderLabel": "Płeć",
+    "heightLabel": "Wzrost",
+    "heightPlaceholder": "Wprowadź swój wzrost",
+    "weightLabel": "Waga",
+    "weightPlaceholder": "Wprowadź swoją wagę",
+    "activityLabel": "Poziom Aktywności",
+    "goalLabel": "Cel"
+  },
+  "activity": {
+    "sedentary": "Siedzący (mało lub brak ćwiczeń)",
+    "light": "Lekki (ćwiczenia 1-3 razy/tydzień)",
+    "moderate": "Umiarkowany (ćwiczenia 4-5 razy/tydzień)",
+    "active": "Aktywny (codzienne ćwiczenia lub intensywne ćwiczenia 3-4 razy/tydzień)",
+    "veryActive": "Bardzo Aktywny (intensywne ćwiczenia 6-7 razy/tydzień)",
+    "extraActive": "Ekstra Aktywny (bardzo intensywne codzienne ćwiczenia i praca fizyczna)"
+  },
+  "goal": {
+    "loseWeight": "Schudnąć",
+    "maintain": "Utrzymać Wagę",
+    "gainMuscle": "Zbudować Mięśnie"
+  },
+  "results": {
+    "title": "Twoje Zalecenia Dotyczące Spożycia Tłuszczu",
+    "recommendedIntake": "Zalecane Dzienne Spożycie Tłuszczu",
+    "gramsPerDay": "gramów dziennie",
+    "fatCalories": "Kalorie z Tłuszczu",
+    "percentage": "Procent Całkowitych Kalorii",
+    "dailyCalories": "Kalorie Dzienne",
+    "recommendedRange": "Zalecany Zakres",
+    "tdee": "TDEE",
+    "bmr": "PPM"
+  },
+  "info": {
+    "title": "O Spożyciu Tłuszczu",
+    "description": "Tłuszcz dietetyczny jest niezbędnym makroskładnikiem, który odgrywa kluczową rolę w produkcji hormonów, wchłanianiu składników odżywczych, strukturze błon komórkowych i magazynowaniu energii. Ten kalkulator pomaga określić optymalną ilość tłuszczu do spożycia dziennie w oparciu o całkowite dzienne wydatki energetyczne (TDEE) i cele fitness.",
+    "typesTitle": "Rodzaje Tłuszczów",
+    "healthyFats": "Zdrowe Tłuszcze (Nienasycone)",
+    "healthyFatsDesc": "Te tłuszcze mogą poprawić zdrowie serca, zmniejszyć stan zapalny i wspierać ogólne samopoczucie:",
+    "healthyFats1": "Tłuszcze jednonienasycone: Oliwa z oliwek, awokado, orzechy (migdały, orzechy nerkowca, pekan)",
+    "healthyFats2": "Tłuszcze wielonienasycone: Tłuste ryby (łosoś, makrela, sardynki), orzechy włoskie, siemię lniane",
+    "healthyFats3": "Kwasy tłuszczowe omega-3: Niezbędne dla zdrowia mózgu i zmniejszania stanu zapalnego",
+    "healthyFats4": "Kwasy tłuszczowe omega-6: Ważne dla wzrostu i rozwoju (w umiarkowanych ilościach)",
+    "unhealthyFats": "Niezdrowe Tłuszcze",
+    "unhealthyFatsDesc": "Ogranicz lub unikaj tych tłuszczów, ponieważ mogą zwiększać ryzyko zdrowotne:",
+    "unhealthyFats1": "Tłuszcze trans: Znajdują się w przetworzonej żywności, żywności smażonej i częściowo uwodornionych olejach",
+    "unhealthyFats2": "Nadmiar tłuszczów nasyconych: Duże ilości z czerwonego mięsa, masła i pełnotłustych produktów mlecznych",
+    "recommendationsTitle": "Zalecenia",
+    "recommendation1": "Wybieraj zdrowe tłuszcze nienasycone zamiast tłuszczów nasyconych i trans",
+    "recommendation2": "Włącz tłuste ryby do swojej diety 2-3 razy w tygodniu dla omega-3",
+    "recommendation3": "Używaj oliwy z oliwek lub oleju z awokado do gotowania zamiast masła lub margaryny",
+    "recommendation4": "Czytaj etykiety odżywcze, aby unikać tłuszczów trans i ograniczać tłuszcze nasycone",
+    "limitations": "Te zalecenia są ogólnymi wytycznymi. Indywidualne zapotrzebowanie na tłuszcze może się różnić w zależności od metabolizmu, stanu zdrowia i specyficznych wymagań dietetycznych. Skonsultuj się z profesjonalistą ds. zdrowia lub dietetykiem w celu uzyskania spersonalizowanych porad żywieniowych."
+  }
+}

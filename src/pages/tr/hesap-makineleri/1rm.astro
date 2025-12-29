@@ -1,0 +1,37 @@
+---
+import BaseLayout from '@/layouts/BaseLayout.astro';
+import OneRepMaxCalculator from '@/components/calculators/OneRepMaxCalculator.astro';
+import { t } from '@/utils/i18n';
+
+const title = t('oneRepMax.title', 'tr') + ' - ' + t('site.title', 'tr');
+const description = t('oneRepMax.metaDescription', 'tr');
+---
+
+<BaseLayout title={title} description={description} lang="tr" calculator="one-rep-max">
+  <div class="container">
+    <div class="page-header">
+      <h1>{t('oneRepMax.title', 'tr')}</h1>
+      <p class="page-description">{t('oneRepMax.description', 'tr')}</p>
+    </div>
+
+    <OneRepMaxCalculator lang="tr" />
+  </div>
+
+  <style>
+    .page-header {
+      text-align: center;
+      padding: 2rem 0;
+    }
+
+    .page-header h1 {
+      font-size: 2.5rem;
+      color: #333;
+      margin-bottom: 0.5rem;
+    }
+
+    .page-description {
+      font-size: 1.25rem;
+      color: #666;
+    }
+  </style>
+</BaseLayout>
