@@ -1,0 +1,266 @@
+---
+/**
+ * Dynamic homepage for all languages
+ *
+ * This file generates the homepage (calculator listing) for all languages
+ * except Spanish (which is in the root index.astro).
+ *
+ * URLs generated:
+ * - /en/ (English)
+ * - /de/ (German)
+ * - /fr/ (French)
+ * - /pt/ (Portuguese)
+ * - /hi/ (Hindi)
+ * - /it/ (Italian)
+ * - /pl/ (Polish)
+ * - /nl/ (Dutch)
+ * - /ru/ (Russian)
+ * - /sv/ (Swedish)
+ * - /tr/ (Turkish)
+ */
+
+import type { GetStaticPaths } from 'astro';
+import BaseLayout from '@/layouts/BaseLayout.astro';
+import { t, calculatorPaths } from '@/utils/i18n';
+import { getSupportedLocales, type Locale } from '@/config/languages';
+
+export const getStaticPaths = (async () => {
+  const locales = getSupportedLocales();
+
+  // Generate paths for all languages except Spanish (default)
+  return locales
+    .filter(locale => locale !== 'es')
+    .map(locale => ({
+      params: { lang: locale },
+      props: { locale }
+    }));
+}) satisfies GetStaticPaths;
+
+const { locale } = Astro.props;
+const lang = locale as Locale;
+
+// Build calculators list dynamically for this language
+const calculators = [
+  { title: t('bmi.title', lang), description: t('bmi.description', lang), url: calculatorPaths.bmi[lang], category: t('categories.health', lang), icon: '⚕️' },
+  { title: t('calorie.title', lang), description: t('calorie.description', lang), url: calculatorPaths.calorie[lang], category: t('categories.health', lang), icon: '🔥' },
+  { title: t('idealWeight.title', lang), description: t('idealWeight.description', lang), url: calculatorPaths.idealWeight[lang], category: t('categories.health', lang), icon: '🎯' },
+  { title: t('bodyFat.title', lang), description: t('bodyFat.description', lang), url: calculatorPaths.bodyFat[lang], category: t('categories.health', lang), icon: '📊' },
+  { title: t('bmr.title', lang), description: t('bmr.description', lang), url: calculatorPaths.bmr[lang], category: t('categories.health', lang), icon: '⚡' },
+  { title: t('tdee.title', lang), description: t('tdee.description', lang), url: calculatorPaths.tdee[lang], category: t('categories.health', lang), icon: '💪' },
+  { title: t('macro.title', lang), description: t('macro.description', lang), url: calculatorPaths.macro[lang], category: t('categories.health', lang), icon: '🍽️' },
+  { title: t('pregnancy.title', lang), description: t('pregnancy.description', lang), url: calculatorPaths.pregnancy[lang], category: t('categories.health', lang), icon: '🤰' },
+  { title: t('pregnancyWeightGain.title', lang), description: t('pregnancyWeightGain.description', lang), url: calculatorPaths.pregnancyWeightGain[lang], category: t('categories.health', lang), icon: '⚖️' },
+  { title: t('pregnancyConception.title', lang), description: t('pregnancyConception.description', lang), url: calculatorPaths.pregnancyConception[lang], category: t('categories.health', lang), icon: '👶' },
+  { title: t('dueDate.title', lang), description: t('dueDate.description', lang), url: calculatorPaths.dueDate[lang], category: t('categories.health', lang), icon: '📅' },
+  { title: t('pace.title', lang), description: t('pace.description', lang), url: calculatorPaths.pace[lang], category: t('categories.health', lang), icon: '🏃' },
+  { title: t('armyBodyFat.title', lang), description: t('armyBodyFat.description', lang), url: calculatorPaths.armyBodyFat[lang], category: t('categories.health', lang), icon: '🎖️' },
+  { title: t('carbohydrate.title', lang), description: t('carbohydrate.description', lang), url: calculatorPaths.carbohydrate[lang], category: t('categories.health', lang), icon: '🍞' },
+  { title: t('leanBodyMass.title', lang), description: t('leanBodyMass.description', lang), url: calculatorPaths.leanBodyMass[lang], category: t('categories.health', lang), icon: '💪' },
+  { title: t('healthyWeight.title', lang), description: t('healthyWeight.description', lang), url: calculatorPaths.healthyWeight[lang], category: t('categories.health', lang), icon: '✅' },
+  { title: t('protein.title', lang), description: t('protein.description', lang), url: calculatorPaths.protein[lang], category: t('categories.health', lang), icon: '🥩' },
+  { title: t('bodyType.title', lang), description: t('bodyType.description', lang), url: calculatorPaths.bodyType[lang], category: t('categories.health', lang), icon: '🧍' },
+  { title: t('caloriesBurned.title', lang), description: t('caloriesBurned.description', lang), url: calculatorPaths.caloriesBurned[lang], category: t('categories.health', lang), icon: '🔥' },
+  { title: t('bsa.title', lang), description: t('bsa.description', lang), url: calculatorPaths.bsa[lang], category: t('categories.health', lang), icon: '📐' },
+  { title: t('bloodType.title', lang), description: t('bloodType.description', lang), url: calculatorPaths.bloodType[lang], category: t('categories.health', lang), icon: '🩸' },
+  { title: t('ovulation.title', lang), description: t('ovulation.description', lang), url: calculatorPaths.ovulation[lang], category: t('categories.health', lang), icon: '🥚' },
+  { title: t('period.title', lang), description: t('period.description', lang), url: calculatorPaths.period[lang], category: t('categories.health', lang), icon: '📅' },
+  { title: t('bodyFrame.title', lang), description: t('bodyFrame.description', lang), url: calculatorPaths.bodyFrame[lang], category: t('categories.health', lang), icon: '📏' },
+  { title: t('heartRate.title', lang), description: t('heartRate.description', lang), url: calculatorPaths.heartRate[lang], category: t('categories.health', lang), icon: '💗' },
+  { title: t('waistHip.title', lang), description: t('waistHip.description', lang), url: calculatorPaths.waistHip[lang], category: t('categories.health', lang), icon: '📊' },
+  { title: t('oneRepMax.title', lang), description: t('oneRepMax.description', lang), url: calculatorPaths.oneRepMax[lang], category: t('categories.health', lang), icon: '💪' },
+  { title: t('fatIntake.title', lang), description: t('fatIntake.description', lang), url: calculatorPaths.fatIntake[lang], category: t('categories.health', lang), icon: '🥑' },
+  { title: t('gfr.title', lang), description: t('gfr.description', lang), url: calculatorPaths.gfr[lang], category: t('categories.health', lang), icon: '🏥' },
+  { title: t('bac.title', lang), description: t('bac.description', lang), url: calculatorPaths.bac[lang], category: t('categories.health', lang), icon: '🍺' },
+  { title: t('weightWatchers.title', lang), description: t('weightWatchers.description', lang), url: calculatorPaths.weightWatchers[lang], category: t('categories.health', lang), icon: '⚖️' },
+  { title: t('age.title', lang), description: t('age.description', lang), url: calculatorPaths.age[lang], category: t('categories.health', lang), icon: '🎂' },
+  { title: t('date.title', lang), description: t('date.description', lang), url: calculatorPaths.date[lang], category: t('categories.health', lang), icon: '📅' },
+  { title: t('percentage.title', lang), description: t('percentage.description', lang), url: calculatorPaths.percentage[lang], category: t('categories.health', lang), icon: '💯' },
+  { title: t('sleep.title', lang), description: t('sleep.description', lang), url: calculatorPaths.sleep[lang], category: t('categories.health', lang), icon: '😴' },
+  { title: t('tip.title', lang), description: t('tip.description', lang), url: calculatorPaths.tip[lang], category: t('categories.health', lang), icon: '💰' },
+];
+---
+
+<BaseLayout
+  title={t('site.title', lang)}
+  description={t('site.description', lang)}
+  lang={lang}
+>
+  <div class="container">
+    <div class="hero">
+      <h1>{t('site.title', lang)}</h1>
+      <p class="subtitle">{t('site.description', lang)}</p>
+    </div>
+
+    <section class="calculators-grid">
+      <h2>{t('common.featuredCalculators', lang) || 'Featured Calculators'}</h2>
+
+      <div class="search-box">
+        <input
+          type="text"
+          id="search"
+          placeholder={t('common.search', lang)}
+          autocomplete="off"
+        />
+      </div>
+
+      <div class="grid" id="calculators-grid">
+        {calculators.map((calc) => (
+          <a href={calc.url} class="calculator-card" data-title={calc.title.toLowerCase()} data-description={calc.description.toLowerCase()}>
+            <div class="calculator-icon">{calc.icon}</div>
+            <h3>{calc.title}</h3>
+            <p>{calc.description}</p>
+            <span class="category">{calc.category}</span>
+          </a>
+        ))}
+      </div>
+
+      <p class="no-results" id="no-results" style="display: none;">
+        {t('common.noResults', lang)}
+      </p>
+    </section>
+  </div>
+
+  <script>
+    const searchInput = document.getElementById('search') as HTMLInputElement;
+    const calculatorsGrid = document.getElementById('calculators-grid') as HTMLElement;
+    const noResults = document.getElementById('no-results') as HTMLElement;
+    const cards = Array.from(calculatorsGrid.querySelectorAll('.calculator-card'));
+
+    searchInput?.addEventListener('input', (e) => {
+      const searchTerm = (e.target as HTMLInputElement).value.toLowerCase();
+      let visibleCount = 0;
+
+      cards.forEach((card) => {
+        const title = card.getAttribute('data-title') || '';
+        const description = card.getAttribute('data-description') || '';
+        const matches = title.includes(searchTerm) || description.includes(searchTerm);
+
+        if (matches) {
+          (card as HTMLElement).style.display = '';
+          visibleCount++;
+        } else {
+          (card as HTMLElement).style.display = 'none';
+        }
+      });
+
+      if (visibleCount === 0) {
+        noResults.style.display = 'block';
+      } else {
+        noResults.style.display = 'none';
+      }
+    });
+  </script>
+
+  <style>
+    .hero {
+      text-align: center;
+      padding: 4rem 0;
+    }
+
+    .hero h1 {
+      font-size: 3rem;
+      color: #333;
+      margin-bottom: 1rem;
+    }
+
+    .subtitle {
+      font-size: 1.25rem;
+      color: #666;
+    }
+
+    .calculators-grid {
+      padding: 2rem 0;
+    }
+
+    .calculators-grid h2 {
+      font-size: 2rem;
+      margin-bottom: 2rem;
+      color: #333;
+    }
+
+    .search-box {
+      margin-bottom: 2rem;
+    }
+
+    .search-box input {
+      width: 100%;
+      padding: 1rem;
+      font-size: 1rem;
+      border: 2px solid #e0e0e0;
+      border-radius: 8px;
+      transition: border-color 0.2s;
+    }
+
+    .search-box input:focus {
+      outline: none;
+      border-color: var(--primary-color);
+    }
+
+    .no-results {
+      text-align: center;
+      padding: 3rem;
+      color: #999;
+      font-size: 1.125rem;
+    }
+
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+      gap: 2rem;
+    }
+
+    .calculator-card {
+      background: white;
+      padding: 2rem;
+      border-radius: 8px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+      text-decoration: none;
+      color: inherit;
+      transition: transform 0.2s, box-shadow 0.2s;
+      display: flex;
+      flex-direction: column;
+    }
+
+    .calculator-card:hover {
+      transform: translateY(-4px);
+      box-shadow: 0 4px 16px rgba(0,0,0,0.15);
+    }
+
+    .calculator-icon {
+      font-size: 3rem;
+      margin-bottom: 1rem;
+    }
+
+    .calculator-card h3 {
+      font-size: 1.5rem;
+      margin-bottom: 0.5rem;
+      color: #333;
+    }
+
+    .calculator-card p {
+      color: #666;
+      margin-bottom: 1rem;
+      flex: 1;
+    }
+
+    .category {
+      display: inline-block;
+      padding: 0.25rem 0.75rem;
+      background: #e3f2fd;
+      color: #1976d2;
+      border-radius: 12px;
+      font-size: 0.875rem;
+      font-weight: 500;
+    }
+
+    @media (max-width: 768px) {
+      .hero h1 {
+        font-size: 2rem;
+      }
+
+      .grid {
+        grid-template-columns: 1fr;
+      }
+    }
+  </style>
+</BaseLayout>
