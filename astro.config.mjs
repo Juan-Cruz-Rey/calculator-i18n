@@ -77,7 +77,7 @@ export default defineConfig({
       },
     }),
     indexNow({
-      key: ' b5d9013e886b4d85a331366e6bb88d45'
+      key: '55813a23124e4cdc893ca3a9e299afc6'
     }),
   ],
 });
