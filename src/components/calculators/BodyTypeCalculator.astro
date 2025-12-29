@@ -848,14 +848,14 @@ const { lang } = Astro.props as { lang: Locale };
 
     try {
       const result = calculateBodyTypeMetrics(input);
-      displayResults(result, unitSystem);
+      displayResults(result);
     } catch (error) {
       alert('Error calculating body type. Please check your inputs.');
       console.error(error);
     }
   });
 
-  function displayResults(result: BodyTypeResult, unitSystem: UnitSystem) {
+  function displayResults(result: BodyTypeResult) {
     const bodytypeValue = document.getElementById('bodytype-value') as HTMLParagraphElement;
     const bodytypeDescription = document.getElementById('bodytype-description') as HTMLParagraphElement;
     const frameSize = document.getElementById('frame-size') as HTMLSpanElement;

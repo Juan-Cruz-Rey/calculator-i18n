@@ -381,12 +381,10 @@ const { lang } = Astro.props as { lang: Locale };
   // Clear active state when custom input is used
   tipPercentageInput.addEventListener('input', () => {
     const currentValue = tipPercentageInput.value;
-    let matchFound = false;
 
     presetButtons.forEach(btn => {
       if (btn.dataset.tip === currentValue) {
         btn.classList.add('active');
-        matchFound = true;
       } else {
         btn.classList.remove('active');
       }
