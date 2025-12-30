@@ -40,19 +40,5 @@
     "carbs": "Carbohydrates",
     "fats": "Fats",
     "macrosNote": "Balanced split: 30% protein, 40% carbohydrates, 30% fats"
-  },
-  "info": {
-    "title": "About the TDEE Calculator",
-    "description": "Total Daily Energy Expenditure (TDEE) represents the total number of calories your body burns in a day, including your basal metabolic rate (BMR) and calories burned through physical activity. This calculator uses the Mifflin-St Jeor equation to calculate your BMR and multiplies it by your activity level.",
-    "formulasTitle": "Formulas Used",
-    "mifflinFormula": "Men: BMR = 10 × weight(kg) + 6.25 × height(cm) - 5 × age + 5\nWomen: BMR = 10 × weight(kg) + 6.25 × height(cm) - 5 × age - 161\nTDEE = BMR × Activity Factor",
-    "activityTitle": "Activity Levels",
-    "sedentaryDesc": "Little or no exercise, desk job",
-    "lightDesc": "Light exercise 1-3 times per week",
-    "moderateDesc": "Moderate exercise 4-5 times per week",
-    "activeDesc": "Daily exercise or intense exercise 3-4 times per week",
-    "veryActiveDesc": "Intense exercise 6-7 times per week",
-    "extraActiveDesc": "Very intense daily exercise plus physical job or training twice per day",
-    "limitations": "These estimates are general guidelines. Individual energy needs may vary based on metabolism, body composition, genetics, and other health factors. Consult with a healthcare professional or nutritionist for a personalized plan."
   }
 }

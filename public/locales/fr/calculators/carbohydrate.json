@@ -43,11 +43,5 @@
       "high": "Optimal pour les athlètes et les personnes très actives. Fournit de l'énergie pour les entraînements intenses."
     },
     "note": "Note : L'apport minimal recommandé en glucides est de 130g par jour pour les adultes. Consultez un professionnel de la santé avant d'apporter des modifications importantes à votre alimentation."
-  },
-  "info": {
-    "title": "À Propos des Glucides",
-    "description": "Les glucides sont l'un des trois principaux macronutriments (avec les protéines et les lipides) et la principale source d'énergie du corps. La quantité optimale de glucides varie en fonction de votre niveau d'activité, de vos objectifs et de vos préférences personnelles.",
-    "formula": "Formule : Grammes de glucides = (Calories cibles × % de glucides) ÷ 4 calories/g",
-    "recommendations": "Les recommandations en glucides sont basées sur des pourcentages de votre apport calorique total : Faible (10-30%), Modéré (30-50%), Élevé (50-70%). Le choix dépend de vos objectifs, de votre niveau d'activité et de votre réponse métabolique individuelle."
   }
 }

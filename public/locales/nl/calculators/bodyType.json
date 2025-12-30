@@ -21,24 +21,5 @@
     "wristRatio": "Lengte/Pols Verhouding",
     "ankleRatio": "Lengte/Enkel Verhouding",
     "characteristics": "Kenmerken"
-  },
-  "info": {
-    "title": "Over Lichaamsvorm",
-    "description": "Somatotypen of lichaamsvorm werden in de jaren 1940 ontwikkeld door psycholoog William Sheldon. Deze classificatie verdeelt lichaamsvorm in drie hoofdcategorieën op basis van skeletale structuur en lichaamssamenstelling.",
-    "types": {
-      "ectomorph": {
-        "name": "Ectomorf",
-        "description": "Ectomorfen hebben een slank lichaam met lange ledematen, snelle stofwisseling en moeite met gewichtst of spieropbouw. Ze hebben doorgaans smalle schouders en laag lichaamsvet."
-      },
-      "mesomorph": {
-        "name": "Mesomorf",
-        "description": "Mesomorfen hebben een van nature atletische bouw met brede schouders, smalle taille en gemak bij spieropbouw. Ze hebben een efficiënte stofwisseling en reageren goed op training."
-      },
-      "endomorph": {
-        "name": "Endomorf",
-        "description": "Endomorfen hebben een grotere bonestructuur, ronde lichaamsvorm en neiging om vet op te slaan. Ze hebben een langzamere stofwisseling en nemen gemakkelijk gewicht aan, maar kunnen ook spieren opbouwen."
-      }
-    },
-    "limitations": "Deze calculator biedt een algemene schatting op basis van skelettale afmetingen. De meeste mensen zijn een combinatie van lichaamsvorm. De resultaten moeten als algemene richtlijn worden gebruikt en niet als medische diagnose."
   }
 }

@@ -43,11 +43,5 @@
       "high": "Optimal für Athleten und sehr aktive Personen. Liefert Energie für intensive Workouts."
     },
     "note": "Hinweis: Die empfohlene Mindestzufuhr von Kohlenhydraten beträgt 130g pro Tag für Erwachsene. Konsultieren Sie einen Gesundheitsexperten, bevor Sie bedeutende Ernährungsänderungen vornehmen."
-  },
-  "info": {
-    "title": "Über Kohlenhydrate",
-    "description": "Kohlenhydrate sind einer der drei Hauptmakronährstoffe (neben Proteinen und Fetten) und die primäre Energiequelle des Körpers. Die optimale Menge an Kohlenhydraten variiert je nach Aktivitätslevel, Zielen und persönlichen Präferenzen.",
-    "formula": "Formel: Kohlenhydrat-Gramm = (Zielkalorien × % Kohlenhydrate) ÷ 4 Kalorien/g",
-    "recommendations": "Kohlenhydrat-Empfehlungen basieren auf Prozentsätzen Ihrer gesamten Kalorienaufnahme: Niedrig (10-30%), Moderat (30-50%), Hoch (50-70%). Die Wahl hängt von Ihren Zielen, Ihrem Aktivitätslevel und Ihrer individuellen Stoffwechselreaktion ab."
   }
 }

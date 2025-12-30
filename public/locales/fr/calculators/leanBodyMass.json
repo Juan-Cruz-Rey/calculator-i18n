@@ -21,14 +21,5 @@
     "leanMass": "Masse Maigre",
     "fatMass": "Masse Grasse",
     "bodyFatPercent": "% Graisse Corporelle"
-  },
-  "info": {
-    "title": "À propos de la Masse Maigre",
-    "description": "La Masse Maigre (MM) est le poids total de votre corps moins le poids de votre graisse corporelle. Elle comprend le poids de tous les organes, la peau, les os, l'eau corporelle et les muscles. La MM est utile pour déterminer les dosages de médicaments, évaluer l'état métabolique et planifier des programmes de nutrition et d'exercice.",
-    "formulasTitle": "Formules Utilisées",
-    "boerFormula": "Hommes: MM = 0.407 × Poids + 0.267 × Taille - 19.2 | Femmes: MM = 0.252 × Poids + 0.473 × Taille - 48.3",
-    "jamesFormula": "Hommes: MM = 1.1 × Poids - 128 × (Poids/Taille)² | Femmes: MM = 1.07 × Poids - 148 × (Poids/Taille)²",
-    "humeFormula": "Hommes: MM = 0.32810 × Poids + 0.33929 × Taille - 29.5336 | Femmes: MM = 0.29569 × Poids + 0.41813 × Taille - 43.2933",
-    "limitations": "Note: Ces formules fournissent des estimations et les résultats peuvent varier selon les différentes méthodes. La masse maigre et la masse sans graisse sont souvent utilisées de manière interchangeable, bien qu'elles diffèrent d'environ 2 à 3% chez les hommes et de 5 à 12% chez les femmes en raison des différences dans la composition en graisses essentielles. Pour des mesures précises, envisagez des méthodes telles que DEXA, pesée hydrostatique ou analyse d'impédance bioélectrique."
   }
 }

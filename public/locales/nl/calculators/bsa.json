@@ -16,20 +16,5 @@
     "dubois": "Du Bois Formule",
     "mosteller": "Mosteller Formule",
     "haycock": "Haycock Formule"
-  },
-  "info": {
-    "title": "Over Lichaamsooppervlakte (BSA)",
-    "description": "Lichaamsooppervlakte (BSA) is het gemeten of berekende oppervlak van een menselijk lichaam. Het wordt gebruikt in veel metingen in de geneeskunde, inclusief medicijndosering voor chemotherapie, berekening van cardiale index en meer. Er zijn verschillende formules om BSA te berekenen, waarbij de meest gebruikelijke Du Bois, Mosteller en Haycock zijn.",
-    "formulasTitle": "Gebruikte Formules",
-    "duboisTitle": "Du Bois Formule (1916)",
-    "duboisFormula": "BSA (m²) = 0.007184 × lengte^0.725 × gewicht^0.425",
-    "duboisDescription": "Een van de oudste en meest gebruikte formules. Ontwikkeld door D. Du Bois en E.F. Du Bois in 1916.",
-    "mostellerTitle": "Mosteller Formule (1987)",
-    "mostellerFormula": "BSA (m²) = √(lengte × gewicht / 3600)",
-    "mostellerDescription": "De meest gebruikte formule vanwege eenvoud en nauwkeurigheid. Het is gemakkelijker om te berekenen en wordt aanbevolen voor klinisch gebruik.",
-    "haycockTitle": "Haycock Formule (1978)",
-    "haycockFormula": "BSA (m²) = 0.024265 × lengte^0.3964 × gewicht^0.5378",
-    "haycockDescription": "Een ander veel gebruikte formule die nauwkeurige resultaten oplevert in een breed bereik van lichaamsmaten.",
-    "usage": "BSA wordt vooral in de geneeskunde gebruikt voor: medicijndosering (vooral chemotherapie), cardiale index berekening, brandwondenbeoordeling en vloeistofvereisten bepaling. Raadpleeg altijd medische professionals voor klinische toepassingen."
   }
 }

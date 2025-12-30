@@ -46,11 +46,5 @@
     "metValue": "MET Value",
     "caloriesPerMinute": "Calories per Minute",
     "caloriesPerHour": "Calories per Hour"
-  },
-  "info": {
-    "title": "About Calories Burned",
-    "description": "This calculator estimates calories burned during different physical activities using MET (Metabolic Equivalent of Task) values. MET is a unit that estimates the amount of energy your body uses during physical activity.",
-    "formula": "Formula: Calories/minute = (MET × weight in kg × 3.5) / 200",
-    "limitations": "Results are estimates based on average MET values. Actual calorie expenditure may vary based on exercise intensity, body composition, age, gender, and fitness level."
   }
 }

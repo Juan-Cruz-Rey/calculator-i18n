@@ -21,14 +21,5 @@
     "leanMass": "Massa Magra",
     "fatMass": "Massa Gorda",
     "bodyFatPercent": "% Gordura Corporal"
-  },
-  "info": {
-    "title": "Sobre a Massa Corporal Magra",
-    "description": "A Massa Corporal Magra (MCM) é o peso total do seu corpo menos o peso da gordura corporal. Inclui o peso de todos os órgãos, pele, ossos, água corporal e músculos. A MCM é útil para determinar dosagens de medicamentos, avaliar a condição metabólica e planejar programas de nutrição e exercício.",
-    "formulasTitle": "Fórmulas Utilizadas",
-    "boerFormula": "Homens: MCM = 0.407 × Peso + 0.267 × Altura - 19.2 | Mulheres: MCM = 0.252 × Peso + 0.473 × Altura - 48.3",
-    "jamesFormula": "Homens: MCM = 1.1 × Peso - 128 × (Peso/Altura)² | Mulheres: MCM = 1.07 × Peso - 148 × (Peso/Altura)²",
-    "humeFormula": "Homens: MCM = 0.32810 × Peso + 0.33929 × Altura - 29.5336 | Mulheres: MCM = 0.29569 × Peso + 0.41813 × Altura - 43.2933",
-    "limitations": "Nota: Essas fórmulas fornecem estimativas e os resultados podem variar entre diferentes métodos. A massa corporal magra e a massa livre de gordura são frequentemente usadas indistintamente, embora difiram em aproximadamente 2-3% nos homens e 5-12% nas mulheres devido a diferenças na composição de gordura essencial. Para medições precisas, considere métodos como DEXA, pesagem hidrostática ou análise de impedância bioelétrica."
   }
 }

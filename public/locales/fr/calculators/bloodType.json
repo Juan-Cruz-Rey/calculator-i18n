@@ -15,14 +15,5 @@
     "title": "Groupes Sanguins Possibles de l'Enfant",
     "possibleBloodTypes": "Groupes Sanguins Possibles",
     "explanation": "Ces résultats montrent tous les groupes sanguins possibles que votre enfant pourrait hériter en fonction de la génétique parentale. Les pourcentages représentent la probabilité de chaque groupe sanguin."
-  },
-  "info": {
-    "title": "À Propos de l'Hérédité du Groupe Sanguin",
-    "description": "Le groupe sanguin est hérité des parents selon les lois mendéliennes de la génétique. Chaque parent contribue un allèle (gène) qui détermine le groupe sanguin ABO et le facteur Rh de l'enfant.",
-    "inheritanceTitle": "Hérédité du Groupe Sanguin ABO",
-    "inheritanceDescription": "Le système de groupes sanguins ABO comporte quatre types principaux : A, B, AB et O. Chaque personne hérite d'un allèle de chaque parent. Le type A peut être AA ou AO, le type B peut être BB ou BO, le type AB est AB et le type O est OO. Les allèles A et B sont codominants, tandis que O est récessif.",
-    "rhTitle": "Hérédité du Facteur Rh",
-    "rhDescription": "Le facteur Rh peut être positif (+) ou négatif (-). Le Rh positif est dominant sur le Rh négatif. Une personne avec Rh+ peut avoir les génotypes ++ ou +-, tandis que Rh- ne peut être que --. Si au moins un allèle est +, le groupe sanguin sera positif.",
-    "limitations": "Ce calculateur fournit des probabilités basées sur les lois génétiques standard. Les résultats réels peuvent varier en raison de mutations rares ou d'autres facteurs génétiques. Consultez toujours un professionnel de la santé pour déterminer le groupe sanguin exact."
   }
 }

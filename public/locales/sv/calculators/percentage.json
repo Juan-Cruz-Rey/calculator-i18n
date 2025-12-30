@@ -43,14 +43,5 @@
     "title": "Result",
     "resultLabel": "Answer",
     "formulaLabel": "Calculation"
-  },
-  "info": {
-    "title": "About Percentage Calculator",
-    "description": "Percentages are a way to express a number as a fraction of 100. This calculator helps you solve various percentage problems including finding percentages, calculating percentage change, and determining percentage differences.",
-    "commonUses": "Common Uses",
-    "use1": "Calculate discounts and sales prices",
-    "use2": "Determine tax amounts and tips",
-    "use3": "Analyze financial changes and growth rates",
-    "use4": "Compare values and statistics"
   }
 }

@@ -21,14 +21,5 @@
     "leanMass": "Lean Mass",
     "fatMass": "Fat Mass",
     "bodyFatPercent": "Body Fat %"
-  },
-  "info": {
-    "title": "About Lean Body Mass",
-    "description": "Lean Body Mass (LBM) is the total weight of your body minus the weight of your body fat. It includes the weight of all organs, skin, bones, body water, and muscles. LBM is useful for determining medication dosages, assessing metabolic condition, and planning nutrition and exercise programs.",
-    "formulasTitle": "Formulas Used",
-    "boerFormula": "Males: LBM = 0.407 × Weight + 0.267 × Height - 19.2 | Females: LBM = 0.252 × Weight + 0.473 × Height - 48.3",
-    "jamesFormula": "Males: LBM = 1.1 × Weight - 128 × (Weight/Height)² | Females: LBM = 1.07 × Weight - 148 × (Weight/Height)²",
-    "humeFormula": "Males: LBM = 0.32810 × Weight + 0.33929 × Height - 29.5336 | Females: LBM = 0.29569 × Weight + 0.41813 × Height - 43.2933",
-    "limitations": "Note: These formulas provide estimates and results may vary between different methods. Lean body mass and fat-free mass are often used interchangeably, though they differ by approximately 2-3% in men and 5-12% in women due to differences in essential fat composition. For accurate measurements, consider methods such as DEXA, hydrostatic weighing, or bioelectrical impedance analysis."
   }
 }

@@ -20,11 +20,5 @@
     "ovulationDate": "Eisprung",
     "fertilityWindow": "Fruchtbare Tage",
     "upcomingPeriods": "Kommende Perioden"
-  },
-  "info": {
-    "title": "Über den Periodenrechner",
-    "description": "Dieser Rechner sagt Ihre kommenden Menstruationsperioden und Eisprung basierend auf Ihrer letzten Periode und durchschnittlichen Zykluslänge voraus. Der Eisprung tritt typischerweise 14 Tage vor der nächsten Periode auf.",
-    "formula": "Formel: Nächste Periode = Letzte Periode + Zykluslänge. Eisprung = Nächste Periode - 14 Tage",
-    "limitations": "Hinweis: Dieser Rechner liefert Schätzungen basierend auf regelmäßigen Zyklen. Menstruationszyklen können natürlich variieren. Bei medizinischen Bedenken oder Zyklusunregelmäßigkeiten wenden Sie sich bitte an einen Arzt."
   }
 }

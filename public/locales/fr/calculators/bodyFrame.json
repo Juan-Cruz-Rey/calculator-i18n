@@ -32,14 +32,5 @@
       "medium": "Moyenne",
       "large": "Grande"
     }
-  },
-  "info": {
-    "title": "À propos de la Taille de Structure Corporelle",
-    "description": "La taille de la structure corporelle (ou taille du squelette) fait référence à la taille relative de vos os. Les personnes ayant des os plus grands ont une structure plus grande, tandis que celles ayant des os plus petits ont une structure plus petite. Connaître votre structure corporelle peut vous aider à fixer des objectifs de poids réalistes.",
-    "wristMethodTitle": "Méthode de Circonférence du Poignet",
-    "wristMethodDescription": "Cette méthode calcule un rapport (valeur r) entre votre taille et la circonférence de votre poignet. Une valeur r plus élevée indique une structure plus petite, tandis qu'une valeur r plus faible suggère une structure plus grande. C'est la méthode la plus simple et la plus couramment utilisée.",
-    "elbowMethodTitle": "Méthode de Largeur du Coude",
-    "elbowMethodDescription": "Cette méthode utilise la largeur de votre coude par rapport à votre taille pour déterminer la taille de votre structure. Pour une mesure précise, étendez votre bras vers l'avant avec la paume vers le haut, pliez votre coude à un angle de 90 degrés et mesurez la distance entre les deux os proéminents de chaque côté de votre coude.",
-    "limitations": "Note: La taille de la structure corporelle n'est qu'un facteur pour déterminer le poids corporel idéal. D'autres facteurs incluent la composition musculaire, la distribution des graisses et la santé globale. Consultez un professionnel de la santé pour des conseils personnalisés."
   }
 }

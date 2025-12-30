@@ -31,11 +31,5 @@
     "mild": "Łagodna",
     "moderate": "Umiarkowana",
     "extreme": "Ekstremalna"
-  },
-  "info": {
-    "title": "O TDEE",
-    "description": "Całkowite Dzienne Wydatki Energii (TDEE) to szacunkowa liczba kalorii spalanych dziennie, uwzględniając Twoją podstawową przemianę materii (BMR) i poziom aktywności fizycznej.",
-    "calculation": "TDEE oblicza się mnożąc BMR przez współczynnik aktywności odpowiadający Twojemu poziomowi codziennej aktywności.",
-    "usage": "Znajomość TDEE pomoże Ci zarządzać wagą: jedz mniej niż TDEE, aby schudnąć, więcej, aby przybrać na wadze, lub mniej więcej tyle samo, aby utrzymać wagę."
   }
 }

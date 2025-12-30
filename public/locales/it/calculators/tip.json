@@ -19,15 +19,5 @@
     "totalAmount": "Totale con mancia",
     "tipPerPerson": "Mancia per persona",
     "totalPerPerson": "Totale per persona"
-  },
-  "info": {
-    "title": "Guida alla Mancia",
-    "description": "La mancia è un modo per mostrare apprezzamento per un buon servizio. Sebbene le usanze varino in base al paese e al tipo di servizio, ecco alcune linee guida generali:",
-    "guidelinesTitle": "Linee guida comuni per la mancia:",
-    "guideline1": "Servizio base o regolare",
-    "guideline2": "Buon servizio standard",
-    "guideline3": "Servizio eccellente o eccezionale",
-    "guideline4": "Servizio straordinario o gruppi numerosi",
-    "note": "Nota: Le usanze relative alla mancia variano significativamente in base alla regione e al tipo di locale. In alcuni paesi, la mancia è inclusa nel conto o non è consuetudine lasciare la mancia."
   }
 }

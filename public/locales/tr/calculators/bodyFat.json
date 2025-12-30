@@ -38,19 +38,5 @@
     "idealBodyFat": "Ideal Body Fat",
     "fatToLose": "Fat to Lose",
     "method": "Method Used"
-  },
-  "info": {
-    "title": "About the Body Fat Calculator",
-    "description": "This calculator estimates your body fat percentage using the U.S. Navy Method or BMI-based method. The Navy method uses body circumference measurements, while the BMI method is based on your age, weight, and height.",
-    "categoriesTitle": "Body Fat Categories (American Council on Exercise)",
-    "categoryLabel": "Category",
-    "menLabel": "Men",
-    "womenLabel": "Women",
-    "essentialFat": "Essential Fat",
-    "athletes": "Athletes",
-    "fitness": "Fitness",
-    "average": "Average",
-    "obese": "Obese",
-    "limitations": "These results are only an estimate. For more accurate body fat measurement, consider using instruments like bioelectric impedance analysis or consult with a healthcare professional."
   }
 }

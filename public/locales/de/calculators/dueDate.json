@@ -43,22 +43,5 @@
     "secondTrimesterEnd": "Ende des zweiten Trimesters (27 Wochen)",
     "fullTerm": "Vollständiger Termin (39 Wochen)",
     "disclaimer": "Nur etwa 4% der Babys werden am geschätzten Geburtstermin geboren. Die meisten Babys werden zwischen der 37. und 42. Schwangerschaftswoche geboren. Dieser Rechner liefert eine Schätzung und sollte keine professionelle medizinische Beratung ersetzen."
-  },
-  "info": {
-    "title": "Über die Geburtsterminberechnung",
-    "description": "Ein Geburtsterminrechner hilft abzuschätzen, wann Ihr Baby geboren wird. Der Rechner verwendet verschiedene Methoden, um eine genaue Schätzung Ihres Geburtsdatums zu liefern.",
-    "methods": {
-      "title": "Berechnungsmethoden",
-      "lmp": "Letzte Menstruation (LMP):",
-      "lmpDesc": "Die häufigste Methode, die die Naegele-Regel verwendet (LMP + 280 Tage). Dies geht von einem 28-Tage-Zyklus mit Eisprung am Tag 14 aus.",
-      "conception": "Empfängnisdatum:",
-      "conceptionDesc": "Fügt 266 Tage (38 Wochen) zum bekannten oder geschätzten Empfängnisdatum hinzu.",
-      "ultrasound": "Ultraschall:",
-      "ultrasoundDesc": "Verwendet Schwangerschaftsaltermessungen aus der Ultraschallbildgebung, die im ersten Trimester am genauesten ist.",
-      "ivf": "IVF-Transfer:",
-      "ivfDesc": "Die präziseste Methode, da das Embryo-Transferdatum genau bekannt ist. Berücksichtigt das Embryoalter beim Transfer."
-    },
-    "formula": "Standardformel: Geburtstermin = LMP + 280 Tage (40 Wochen)",
-    "limitations": "Denken Sie daran, dass ein Geburtstermin nur eine Schätzung ist. Nur etwa 4% der Babys werden an ihrem genauen Geburtstermin geboren. Die meisten werden innerhalb von 2 Wochen davor oder danach geboren. Faktoren wie Zykluslänge, Empfängniszeitpunkt und individuelle Variationen können das tatsächliche Geburtsdatum beeinflussen. Konsultieren Sie immer Ihren Gesundheitsdienstleister für persönliche medizinische Beratung."
   }
 }

@@ -24,11 +24,5 @@
     "yourDistance": "La Tua Distanza",
     "commonRaces": "Tempi di Gare Comuni",
     "splits": "Tempi Parziali"
-  },
-  "info": {
-    "title": "Sul Ritmo di Corsa",
-    "description": "Il ritmo di corsa è il tempo necessario per coprire un'unità specifica di distanza (chilometro o miglio). È una metrica essenziale per i corridori che desiderano pianificare le sessioni di allenamento e stabilire obiettivi di gara.",
-    "formula": "Formula: Ritmo = Tempo Totale / Distanza",
-    "tip": "Suggerimento: Un ritmo costante è la chiave del successo nelle gare di lunga distanza. Usa questo calcolatore per pianificare la tua strategia di gara e mantenere un ritmo sostenibile."
   }
 }

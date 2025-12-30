@@ -49,11 +49,5 @@
     "protein": "Protéines",
     "carbs": "Glucides",
     "fats": "Lipides"
-  },
-  "info": {
-    "title": "À Propos des Macronutriments",
-    "description": "Les macronutriments (protéines, glucides et lipides) sont les nutriments qui fournissent de l'énergie à votre corps. Cette calculatrice détermine votre dépense énergétique totale quotidienne et répartit les calories en macronutriments selon votre objectif et votre type de régime préféré.",
-    "formula": "Formule: MB (Mifflin-St Jeor) × Multiplicateur d'Activité ± Ajustement d'Objectif",
-    "limitations": "Cette calculatrice fournit des estimations basées sur des formules standard. Les besoins individuels peuvent varier. Consultez un professionnel de la santé ou un nutritionniste pour un plan personnalisé."
   }
 }

@@ -24,11 +24,5 @@
     "recommendedTotalGain": "Empfohlene Gesamtzunahme",
     "recommendedAtWeek": "Empfohlen in dieser Woche",
     "weeklyGainTarget": "Wöchentliches Ziel (2./3. Trimester)"
-  },
-  "info": {
-    "title": "Über die Gewichtszunahme in der Schwangerschaft",
-    "description": "Die Gewichtszunahme während der Schwangerschaft ist für die Gesundheit von Mutter und Baby unerlässlich. Die Empfehlungen des Institute of Medicine (IOM) variieren je nach BMI vor der Schwangerschaft und ob es sich um eine Zwillingsschwangerschaft handelt.",
-    "guidelines": "Allgemeine Richtlinien: Während des ersten Trimesters ist die Gewichtszunahme minimal (0,5-1,8 kg). Im zweiten und dritten Trimester ist die Gewichtszunahme stetig und progressiv basierend auf der BMI-Kategorie.",
-    "limitations": "Dieser Rechner liefert allgemeine Schätzungen basierend auf IOM-Richtlinien. Konsultieren Sie immer Ihren Arzt oder Gesundheitsdienstleister für personalisierte Empfehlungen entsprechend Ihrer individuellen Situation."
   }
 }

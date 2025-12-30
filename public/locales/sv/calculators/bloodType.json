@@ -15,14 +15,5 @@
     "title": "Child's Possible Blod Types",
     "possibleBloodTypes": "Possible Blod Types",
     "explanation": "These results show all possible blood types your child could inherit baserat på parental genetics. Percentages represent the probability of each blood type."
-  },
-  "info": {
-    "title": "Om Blod Typ Inheritance",
-    "description": "Blod type is inherited from parents following Mendelian laws of genetics. Each parent contributes one allele (gene) that determines the child's ABO blood type and Rh factor.",
-    "inheritanceTitle": "ABO Blod Typ Inheritance",
-    "inheritanceDescription": "The ABO blood group system has four main types: A, B, AB, and O. Each person inherits one allele from each parent. Typ A can be AA or AO, type B can be BB or BO, type AB is AB, and type O is OO. A and B alleles are co-dominant, while O is recessive.",
-    "rhTitle": "Rh Factor Inheritance",
-    "rhDescription": "The Rh factor can be positive (+) or negative (-). Rh positive is dominant over Rh negative. A person with Rh+ can have genotypes ++ or +-, while Rh- can only be --. If at least one allele is +, the blood type will be positive.",
-    "limitations": "This calculator provides probabilities baserat på standard genetic laws. Actual results may vary due to rare mutations or other genetic factors. Always consult with a medical professional to determine exact blood type."
   }
 }

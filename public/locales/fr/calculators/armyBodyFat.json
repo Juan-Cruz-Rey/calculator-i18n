@@ -22,15 +22,5 @@
     "ageGroup": "Groupe d'Âge",
     "maxAllowed": "Maximum Autorisé",
     "status": "Norme de l'Armée"
-  },
-  "info": {
-    "title": "À Propos du Calculateur de Graisse Corporelle de l'Armée",
-    "description": "Le Calculateur de Graisse Corporelle de l'Armée utilise la formule officielle de l'armée américaine du règlement de l'armée 600-9. Ce calculateur détermine si vous répondez aux normes de composition corporelle requises pour le service militaire. La formule utilise des mesures de circonférence du cou, de la taille et (pour les femmes) des hanches pour estimer le pourcentage de graisse corporelle.",
-    "standardsTitle": "Normes de Graisse Corporelle de l'Armée Américaine",
-    "ageRange": "Tranche d'Âge",
-    "maleMax": "Max. Homme %",
-    "femaleMax": "Max. Femme %",
-    "formula": "Formule Hommes : % GC = 86.010 × log10(taille - cou) - 70.041 × log10(hauteur) + 36.76 | Formule Femmes : % GC = 163.205 × log10(taille + hanches - cou) - 97.684 × log10(hauteur) - 78.387",
-    "limitations": "Ce calculateur utilise la méthode officielle de test au ruban de l'armée américaine. Pour une mesure plus précise, prenez la moyenne d'au moins trois mesures arrondies au 0,5 pouce ou cm le plus proche. Les soldats qui échouent peuvent demander des tests supplémentaires utilisant les systèmes DXA, InBody 770 ou Bod Pod."
   }
 }

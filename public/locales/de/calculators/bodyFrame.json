@@ -32,14 +32,5 @@
       "medium": "Mittel",
       "large": "Groß"
     }
-  },
-  "info": {
-    "title": "Über die Körperbaugröße",
-    "description": "Die Körperbaugröße (oder Skelettgröße) bezieht sich auf die relative Größe Ihrer Knochen. Menschen mit größeren Knochen haben einen größeren Körperbau, während Menschen mit kleineren Knochen einen kleineren Körperbau haben. Das Kennen Ihres Körperbaus kann Ihnen helfen, realistische Gewichtsziele zu setzen.",
-    "wristMethodTitle": "Handgelenkumfang-Methode",
-    "wristMethodDescription": "Diese Methode berechnet ein Verhältnis (R-Wert) zwischen Ihrer Größe und Ihrem Handgelenkumfang. Ein höherer R-Wert deutet auf einen kleineren Körperbau hin, während ein niedrigerer R-Wert einen größeren Körperbau nahelegt. Dies ist die einfachste und am häufigsten verwendete Methode.",
-    "elbowMethodTitle": "Ellenbogenbreite-Methode",
-    "elbowMethodDescription": "Diese Methode verwendet die Breite Ihres Ellenbogens im Verhältnis zu Ihrer Größe, um Ihre Körperbaugröße zu bestimmen. Für eine genaue Messung strecken Sie Ihren Arm mit der Handfläche nach oben aus, beugen Sie Ihren Ellenbogen in einem 90-Grad-Winkel und messen Sie den Abstand zwischen den beiden hervorstehenden Knochen auf beiden Seiten Ihres Ellenbogens.",
-    "limitations": "Hinweis: Die Körperbaugröße ist nur ein Faktor bei der Bestimmung des idealen Körpergewichts. Andere Faktoren umfassen Muskelzusammensetzung, Fettverteilung und allgemeine Gesundheit. Konsultieren Sie einen Gesundheitsexperten für persönliche Beratung."
   }
 }

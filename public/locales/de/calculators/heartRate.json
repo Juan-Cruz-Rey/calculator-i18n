@@ -24,16 +24,5 @@
     "fatburn": "Fettverbrennung",
     "cardio": "Kardio",
     "peak": "Maximum"
-  },
-  "info": {
-    "title": "Über die Herzfrequenz",
-    "description": "Die maximale Herzfrequenz ist die höchste Anzahl von Schlägen, die Ihr Herz pro Minute während maximaler körperlicher Anstrengung schlagen kann. Sie wird im Allgemeinen mit der Formel 220 - Alter berechnet. Trainingszonen helfen Ihnen, Ihre Workouts basierend auf Ihren Zielen zu optimieren.",
-    "formula": "Formel: Max HF = 220 - Alter | Ziel-HF = ((Max HF - Ruhe-HF) × % Intensität) + Ruhe-HF",
-    "zonesExplained": "Trainingszonen erklärt",
-    "warmupDesc": "Ideal zum Aufwärmen und Abkühlen. Verbessert die allgemeine Gesundheit und unterstützt die Erholung.",
-    "fatburnDesc": "Optimale Zone zur Fettverbrennung. Bei dieser Intensität nutzt Ihr Körper Fett als Hauptenergiequelle.",
-    "cardioDesc": "Verbessert die kardiovaskuläre Kapazität und Ausdauer. Ideal zur Verbesserung der aeroben Leistung.",
-    "peakDesc": "Hochintensives Training. Entwickelt Geschwindigkeit und Kraft. Nur für kurze Einheiten.",
-    "limitations": "Die Formel 220 - Alter ist eine allgemeine Schätzung. Die tatsächliche maximale Herzfrequenz kann aufgrund individueller Faktoren wie Genetik, Fitnesslevel und Medikamenten variieren. Konsultieren Sie einen Arzt, bevor Sie ein intensives Trainingsprogramm beginnen."
   }
 }

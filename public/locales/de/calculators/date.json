@@ -38,14 +38,5 @@
     "businessDays": "Arbeitstage",
     "weekdays": "Wochentage",
     "weekends": "Wochenenden"
-  },
-  "info": {
-    "title": "Über den Datumsrechner",
-    "description": "Dieser Datumsrechner ermöglicht es Ihnen, Zeit von einem bestimmten Datum zu addieren oder zu subtrahieren oder den Unterschied zwischen zwei Daten zu berechnen. Er ist nützlich für Projektplanung, Fristenberechnung und vieles mehr.",
-    "useCasesTitle": "Anwendungsfälle:",
-    "useCase1": "Fälligkeitstermine und Lieferfristen berechnen",
-    "useCase2": "Projektdauer in Arbeitstagen bestimmen",
-    "useCase3": "Veranstaltungen planen und zukünftige Daten berechnen",
-    "useCase4": "Alter, Jahrestage und verstrichene Zeit berechnen"
   }
 }

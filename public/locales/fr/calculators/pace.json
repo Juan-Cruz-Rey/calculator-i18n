@@ -24,11 +24,5 @@
     "yourDistance": "Votre Distance",
     "commonRaces": "Temps de Courses Courantes",
     "splits": "Temps Intermédiaires"
-  },
-  "info": {
-    "title": "À Propos de l'Allure de Course",
-    "description": "L'allure de course est le temps qu'il vous faut pour parcourir une unité de distance spécifique (kilomètre ou mile). C'est une métrique essentielle pour les coureurs qui souhaitent planifier leurs entraînements et fixer des objectifs de course.",
-    "formula": "Formule: Allure = Temps Total / Distance",
-    "tip": "Conseil: Une allure constante est la clé du succès dans les courses de longue distance. Utilisez ce calculateur pour planifier votre stratégie de course et maintenir une allure durable."
   }
 }

@@ -19,15 +19,5 @@
     "totalAmount": "Total avec pourboire",
     "tipPerPerson": "Pourboire par personne",
     "totalPerPerson": "Total par personne"
-  },
-  "info": {
-    "title": "Guide des Pourboires",
-    "description": "Le pourboire est une façon de montrer son appréciation pour un bon service. Bien que les coutumes varient selon les pays et le type de service, voici quelques directives générales:",
-    "guidelinesTitle": "Directives courantes pour les pourboires:",
-    "guideline1": "Service de base ou correct",
-    "guideline2": "Bon service standard",
-    "guideline3": "Service excellent ou exceptionnel",
-    "guideline4": "Service extraordinaire ou grands groupes",
-    "note": "Note: Les coutumes de pourboire varient considérablement selon la région et le type d'établissement. Dans certains pays, le pourboire est inclus dans l'addition ou il n'est pas coutume de donner un pourboire."
   }
 }

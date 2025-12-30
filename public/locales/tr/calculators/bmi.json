@@ -26,11 +26,5 @@
       "overweight": "Fazla Kilolu",
       "obese": "Obez"
     }
-  },
-  "info": {
-    "title": "VKİ Hakkında",
-    "description": "Vücut Kitle İndeksi (VKİ), bir kişinin kilosu ve boyuna dayanan vücut ağırlığının bir ölçüsüdür. Kilogramcinsinden ağırlığın, metre cinsinden boyun karesine bölünmesiyle hesaplanır.",
-    "formula": "Formül: VKİ = kilo (kg) / boy² (m)",
-    "limitations": "VKİ yararlı bir tarama aracıdır, ancak vücut yağlılığını veya bir bireyin sağlığını teşhis etmez. Daha fazla kas kütlesine sahip kişiler, fazla yağ olmadan yüksek VKİ'ye sahip olabilirler."
   }
 }

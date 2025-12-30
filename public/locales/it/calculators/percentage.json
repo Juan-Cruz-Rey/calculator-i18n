@@ -43,14 +43,5 @@
     "title": "Risultato",
     "resultLabel": "Risposta",
     "formulaLabel": "Calcolo"
-  },
-  "info": {
-    "title": "Informazioni sul Calcolatore di Percentuale",
-    "description": "Le percentuali sono un modo per esprimere un numero come frazione di 100. Questo calcolatore ti aiuta a risolvere vari problemi percentuali, inclusi trovare percentuali, calcolare variazioni percentuali e determinare differenze percentuali.",
-    "commonUses": "Usi Comuni",
-    "use1": "Calcolare sconti e prezzi di vendita",
-    "use2": "Determinare importi fiscali e mance",
-    "use3": "Analizzare cambiamenti finanziari e tassi di crescita",
-    "use4": "Confrontare valori e statistiche"
   }
 }

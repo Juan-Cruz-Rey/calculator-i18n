@@ -21,12 +21,5 @@
     "high": "Wysokie",
     "apple": "Jabłko (tłuszcz w talii)",
     "pear": "Gruszka (tłuszcz w biodrach)"
-  },
-  "info": {
-    "title": "O Wskaźniku Talia-Biodra",
-    "description": "Wskaźnik talia-biodra (WHR) mierzy stosunek obwodu talii do obwodu bioder. Jest wskaźnikiem rozkładu tkanki tłuszczowej w ciele i może pomóc ocenić ryzyko zdrowotne.",
-    "health": "Znaczenie zdrowotne:\n• Wysokie WHR (kształt jabłka): Większe ryzyko chorób serca, cukrzycy\n• Niskie WHR (kształt gruszki): Niższe ryzyko problemów zdrowotnych\n• Tłuszcz w okolicy brzucha jest bardziej ryzykowny niż w biodrach",
-    "ranges": "Zdrowe zakresy:\n• Kobiety: poniżej 0,85\n• Mężczyźni: poniżej 0,90\n\nWysokie ryzyko:\n• Kobiety: powyżej 0,85\n• Mężczyźni: powyżej 1,0",
-    "measurement": "Jak mierzyć: Talia w najwęższym miejscu (zwykle tuż nad pępkiem), biodra w najszerszym miejscu. Mierz na odkrytej skórze, stojąc prosto."
   }
 }

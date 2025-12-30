@@ -44,27 +44,5 @@
   "legalDisclaimer": {
     "title": "Juridische Disclaimer",
     "text": "Deze calculator is alleen voor educatieve doeleinden. Vertrouw er niet op om te bepalen of je legaal kunt rijden. Wettelijke BAC-limieten variëren per rechtsgebied (0.05% in Nederland, 0.02% voor beginnende bestuurders). Gebruik altijd een aangewezen bestuurder of alternatief vervoer als je hebt gedronken."
-  },
-  "info": {
-    "title": "Over BAC",
-    "description": "Bloedalcoholgehalte (BAC) is een maat voor de alcoholconcentratie in je bloedbaan. Het wordt uitgedrukt als percentage - bijvoorbeeld, 0.05% betekent 0.05 gram alcohol per 100 milliliter bloed.",
-    "howItWorks": "Hoe Deze Calculator Werkt",
-    "formula": "Deze calculator gebruikt de Widmark-formule om BAC te schatten op basis van gedronken alcohol, lichaamsgewicht, geslacht en verstreken tijd. De formule houdt rekening met het alcoholmetabolisme (ongeveer 0.015% BAC-afname per uur).",
-    "impairmentLevelsTitle": "Niveaus van Beperking",
-    "levels": {
-      "minimal": "Minimale effecten, lichte stemmingsverbetering, subtiele gedragsveranderingen",
-      "mild": "Milde beperking, ontspanning, verminderde coördinatie, verlaagde remmingen",
-      "moderate": "Matige beperking, verminderde reactietijd, aangetast beoordelingsvermogen, concentratieproblemen",
-      "significant": "Aanzienlijke beperking, moeite met lopen en balanceren, onduidelijke spraak, slecht besluitvormingsvermogen",
-      "severe": "Ernstige beperking, risico op alcoholvergiftiging, bewustzijnsverlies, potentieel levensbedreigende toestand"
-    },
-    "factorsTitle": "Factoren die BAC Beïnvloeden",
-    "factors": {
-      "weight": "Lichaamsgewicht - zwaardere personen hebben meestal een lager BAC bij dezelfde hoeveelheid alcohol",
-      "gender": "Geslacht - vrouwen bereiken meestal hogere BAC-niveaus dan mannen bij dezelfde hoeveelheid alcohol",
-      "time": "Tijd - het lichaam metaboliseert alcohol met ongeveer 0.015% BAC per uur",
-      "food": "Voedselinname - eten voor of tijdens het drinken vertraagt de opname van alcohol",
-      "metabolism": "Individueel metabolisme - varieert op basis van genetica, medicijnen en gezondheidstoestand"
-    }
   }
 }

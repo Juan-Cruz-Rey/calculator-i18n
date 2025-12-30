@@ -12,12 +12,5 @@
     "possible": "Możliwe grupy krwi",
     "probability": "Prawdopodobieństwo",
     "rh": "Czynnik Rh"
-  },
-  "info": {
-    "title": "O Grupach Krwi",
-    "description": "Grupa krwi jest dziedziczona od rodziców zgodnie z prawami genetyki. System ABO (A, B, AB, O) i czynnik Rh (+/-) są przekazywane niezależnie.",
-    "inheritance": "Dziedziczenie:\n• Geny A i B są dominujące\n• Gen O jest recesywny\n• Każde dziecko otrzymuje jeden gen od każdego rodzica\n• Czynnik Rh+ jest dominujący nad Rh-",
-    "compatibility": "Zgodność transfuzji:\n• O- jest dawcą uniwersalnym\n• AB+ jest biorcą uniwersalnym\n• Można otrzymać krew tej samej grupy lub zgodnej",
-    "note": "Ten kalkulator pokazuje możliwości genetyczne. Rzeczywista grupa krwi dziecka musi być określona przez test krwi."
   }
 }

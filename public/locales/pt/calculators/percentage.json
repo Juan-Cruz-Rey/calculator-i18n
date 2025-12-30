@@ -43,14 +43,5 @@
     "title": "Resultado",
     "resultLabel": "Resposta",
     "formulaLabel": "Cálculo"
-  },
-  "info": {
-    "title": "Sobre a Calculadora de Porcentagem",
-    "description": "Porcentagens são uma forma de expressar um número como uma fração de 100. Esta calculadora ajuda você a resolver vários problemas de porcentagem, incluindo encontrar porcentagens, calcular variação percentual e determinar diferenças percentuais.",
-    "commonUses": "Usos Comuns",
-    "use1": "Calcular descontos e preços de venda",
-    "use2": "Determinar valores de impostos e gorjetas",
-    "use3": "Analisar mudanças financeiras e taxas de crescimento",
-    "use4": "Comparar valores e estatísticas"
   }
 }

@@ -20,11 +20,5 @@
     "periodDay": "Giorno del ciclo",
     "fertileWindow": "Finestra fertile",
     "ovulation": "Ovulazione"
-  },
-  "info": {
-    "title": "Sul Calcolatore di Ovulazione",
-    "description": "Questo calcolatore prevede la tua data di ovulazione e finestra fertile in base al tuo ultimo ciclo e alla durata del ciclo. L'ovulazione si verifica tipicamente 14 giorni prima del prossimo ciclo. La finestra fertile include i 5 giorni prima dell'ovulazione e il giorno dell'ovulazione.",
-    "formula": "Formula: Data di ovulazione = Primo giorno dell'ultimo ciclo + (Durata del ciclo - 14 giorni)",
-    "limitations": "Nota: Questo calcolatore fornisce stime basate su medie. I cicli possono variare da persona a persona e da mese a mese. Per una maggiore precisione, considera di utilizzare metodi di monitoraggio dell'ovulazione come la temperatura basale o i kit di previsione dell'ovulazione. Consulta sempre il tuo medico per la pianificazione familiare."
   }
 }

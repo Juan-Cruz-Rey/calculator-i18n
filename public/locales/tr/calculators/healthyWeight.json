@@ -27,13 +27,5 @@
     "hamwiFormula": "Hamwi",
     "hamwiSmallFrame": "Hamwi (Small Frame)",
     "hamwiLargeFrame": "Hamwi (Large Frame)"
-  },
-  "info": {
-    "title": "About Healthy Weight",
-    "description": "Healthy weight is based on the WHO recommended BMI range (18.5-25). This calculator uses your height to determine your healthy weight range and compares multiple scientific formulas to calculate your ideal weight.",
-    "bmiFormula": "Healthy BMI Range: 18.5 - 25.0 kg/m²",
-    "formulasTitle": "Ideal Weight Formulas",
-    "formulasDescription": "Four recognized scientific formulas are included (Robinson 1983, Miller 1983, Devine 1974, Hamwi 1964). The Hamwi formula is also adjusted for small body frame (-10%) and large body frame (+10%).",
-    "limitations": "These formulas are general estimates for adults aged 18 or older. They do not account for individual body composition, muscle mass, or specific health conditions. Consult a healthcare professional for personalized guidance."
   }
 }

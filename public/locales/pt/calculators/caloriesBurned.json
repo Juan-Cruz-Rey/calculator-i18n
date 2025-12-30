@@ -46,11 +46,5 @@
     "metValue": "Valor MET",
     "caloriesPerMinute": "Calorias por Minuto",
     "caloriesPerHour": "Calorias por Hora"
-  },
-  "info": {
-    "title": "Sobre Calorias Queimadas",
-    "description": "Esta calculadora estima as calorias queimadas durante diferentes atividades físicas usando valores MET (Equivalente Metabólico de Tarefa). MET é uma unidade que estima a quantidade de energia que seu corpo usa durante a atividade física.",
-    "formula": "Fórmula: Calorias/minuto = (MET × peso em kg × 3.5) / 200",
-    "limitations": "Os resultados são estimativas baseadas em valores MET médios. O gasto calórico real pode variar com base na intensidade do exercício, composição corporal, idade, gênero e nível de condicionamento físico."
   }
 }

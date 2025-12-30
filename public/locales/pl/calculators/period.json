@@ -17,12 +17,5 @@
     "fertileWindow": "Okno płodności",
     "cycleDay": "Dzień cyklu",
     "upcoming": "Nadchodzące miesiączki"
-  },
-  "info": {
-    "title": "O Cyklu Menstruacyjnym",
-    "description": "Cykl menstruacyjny trwa średnio 28 dni, ale normalne cykle mogą wynosić od 21 do 35 dni. Śledzenie cyklu pomaga zrozumieć wzorce ciała i planować z wyprzedzeniem.",
-    "phases": "Fazy cyklu:\n• Faza menstruacyjna: Dni 1-5 (miesiączka)\n• Faza folikularna: Dni 1-13\n• Owulacja: Około dnia 14\n• Faza lutealna: Dni 15-28",
-    "fertility": "Jesteś najbardziej płodna w dniach poprzedzających i podczas owulacji. Okno płodności to zazwyczaj 5 dni przed owulacją i dzień owulacji.",
-    "note": "Ten kalkulator dostarcza oszacowań na podstawie przeciętnych cykli. Rzeczywiste cykle mogą się różnić. W przypadku nieregularnych cykli lub pytań skonsultuj się z lekarzem."
   }
 }

@@ -44,27 +44,5 @@
   "legalDisclaimer": {
     "title": "Zastrzeżenie Prawne",
     "text": "Ten kalkulator służy wyłącznie celom edukacyjnym. Nie polegaj na nim przy określaniu, czy możesz legalnie prowadzić pojazd. Prawne limity BAC różnią się w zależności od jurysdykcji (0.02% w Polsce). Zawsze korzystaj z wyznaczonego kierowcy lub alternatywnego transportu, jeśli piłeś alkohol."
-  },
-  "info": {
-    "title": "O Poziomie Alkoholu we Krwi",
-    "description": "Poziom alkoholu we krwi (BAC) to miara stężenia alkoholu w krwiobiegu. Jest wyrażany jako procent - na przykład 0.05% oznacza 0.05 grama alkoholu na 100 mililitrów krwi.",
-    "howItWorks": "Jak Działa Ten Kalkulator",
-    "formula": "Ten kalkulator wykorzystuje wzór Widmarka do oszacowania BAC na podstawie spożytego alkoholu, wagi ciała, płci i upływu czasu. Wzór uwzględnia tempo metabolizmu alkoholu (około 0.015% spadku BAC na godzinę).",
-    "impairmentLevelsTitle": "Poziomy Upośledzenia",
-    "levels": {
-      "minimal": "Minimalne efekty, lekka poprawa nastroju, subtelne zmiany w zachowaniu",
-      "mild": "Łagodne upośledzenie, relaksacja, zmniejszona koordynacja, obniżone zahamowania",
-      "moderate": "Umiarkowane upośledzenie, zmniejszony czas reakcji, zaburzona ocena, trudności z koncentracją",
-      "significant": "Znaczne upośledzenie, trudności w chodzeniu i utrzymaniu równowagi, niewyraźna mowa, złe podejmowanie decyzji",
-      "severe": "Poważne upośledzenie, ryzyko zatrucia alkoholem, utrata przytomności, stan potencjalnie zagrażający życiu"
-    },
-    "factorsTitle": "Czynniki Wpływające na BAC",
-    "factors": {
-      "weight": "Waga ciała - cięższe osoby zazwyczaj mają niższy BAC przy tej samej ilości alkoholu",
-      "gender": "Płeć - kobiety zazwyczaj osiągają wyższe poziomy BAC niż mężczyźni przy tej samej ilości alkoholu",
-      "time": "Czas - ciało metabolizuje alkohol w tempie około 0.015% BAC na godzinę",
-      "food": "Spożycie pokarmu - jedzenie przed lub podczas picia spowalnia wchłanianie alkoholu",
-      "metabolism": "Indywidualny metabolizm - różni się w zależności od genetyki, leków i stanu zdrowia"
-    }
   }
 }

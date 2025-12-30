@@ -20,10 +20,5 @@
     "mayhew": "Fórmula Mayhew",
     "oconner": "Fórmula O'Conner",
     "wathan": "Fórmula Wathan"
-  },
-  "info": {
-    "title": "Sobre 1RM",
-    "description": "O Máximo de Uma Repetição (1RM) é a quantidade máxima de peso que você pode levantar para uma única repetição de um determinado exercício. Esta calculadora usa sete fórmulas diferentes para estimar seu 1RM com base no peso levantado e no número de repetições realizadas.",
-    "note": "Essas fórmulas são mais precisas para 1-10 repetições. Sempre aqueça adequadamente e use um auxiliar ao tentar levantamentos máximos."
   }
 }

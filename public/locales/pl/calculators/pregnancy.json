@@ -21,11 +21,5 @@
     "first": "Pierwszy",
     "second": "Drugi",
     "third": "Trzeci"
-  },
-  "info": {
-    "title": "O Ciąży",
-    "description": "Ciąża trwa średnio 40 tygodni (280 dni) od pierwszego dnia ostatniej miesiączki. Jest podzielona na trzy trymestry, każdy z unikalnymi etapami rozwoju.",
-    "trimesters": "Pierwszy trymestr (tydzień 1-12): Rozwój głównych narządów. Drugi trymestr (tydzień 13-26): Szybki wzrost i rozwój. Trzeci trymestr (tydzień 27-40): Ostateczny wzrost i przygotowanie do porodu.",
-    "note": "Ta kalkulacja jest oszacowaniem. Tylko około 5% dzieci rodzi się dokładnie w terminie porodu. Większość rodzi się w ciągu dwóch tygodni przed lub po terminie."
   }
 }

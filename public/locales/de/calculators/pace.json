@@ -24,11 +24,5 @@
     "yourDistance": "Ihre Distanz",
     "commonRaces": "Übliche Rennzeiten",
     "splits": "Zwischenzeiten"
-  },
-  "info": {
-    "title": "Über das Lauftempo",
-    "description": "Das Lauftempo ist die Zeit, die Sie benötigen, um eine bestimmte Distanzeinheit (Kilometer oder Meile) zurückzulegen. Es ist eine wesentliche Metrik für Läufer, die Trainingssitzungen planen und Rennziele setzen möchten.",
-    "formula": "Formel: Tempo = Gesamtzeit / Distanz",
-    "tip": "Tipp: Ein gleichmäßiges Tempo ist der Schlüssel zum Erfolg bei Langstreckenläufen. Verwenden Sie diesen Rechner, um Ihre Rennstrategie zu planen und ein nachhaltiges Tempo zu halten."
   }
 }

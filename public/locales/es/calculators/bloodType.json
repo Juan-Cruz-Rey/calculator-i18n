@@ -15,14 +15,5 @@
     "title": "Tipos de Sangre Posibles del Hijo",
     "possibleBloodTypes": "Tipos de Sangre Posibles",
     "explanation": "Estos resultados muestran todos los posibles tipos de sangre que tu hijo podría heredar basándose en la genética de los padres. Los porcentajes representan la probabilidad de cada tipo de sangre."
-  },
-  "info": {
-    "title": "Sobre la Herencia del Tipo de Sangre",
-    "description": "El tipo de sangre se hereda de los padres según las leyes mendelianas de la genética. Cada padre contribuye con un alelo (gen) que determina el tipo de sangre ABO y el factor Rh del hijo.",
-    "inheritanceTitle": "Herencia del Tipo de Sangre ABO",
-    "inheritanceDescription": "El sistema de grupos sanguíneos ABO tiene cuatro tipos principales: A, B, AB y O. Cada persona hereda un alelo de cada padre. El tipo A puede ser AA o AO, el tipo B puede ser BB o BO, el tipo AB es AB, y el tipo O es OO. Los alelos A y B son codominantes, mientras que O es recesivo.",
-    "rhTitle": "Herencia del Factor Rh",
-    "rhDescription": "El factor Rh puede ser positivo (+) o negativo (-). El Rh positivo es dominante sobre el Rh negativo. Una persona con Rh+ puede tener los genotipos ++ o +-, mientras que Rh- solo puede ser --. Si al menos uno de los alelos es +, el tipo de sangre será positivo.",
-    "limitations": "Esta calculadora proporciona probabilidades basadas en las leyes genéticas estándar. Los resultados reales pueden variar debido a mutaciones raras u otros factores genéticos. Siempre consulte con un profesional médico para determinar el tipo de sangre exacto."
   }
 }

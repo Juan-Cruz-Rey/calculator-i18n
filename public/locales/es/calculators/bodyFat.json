@@ -38,19 +38,5 @@
     "idealBodyFat": "Grasa Corporal Ideal",
     "fatToLose": "Grasa a Perder",
     "method": "Método Utilizado"
-  },
-  "info": {
-    "title": "Sobre la Calculadora de Grasa Corporal",
-    "description": "Esta calculadora estima tu porcentaje de grasa corporal usando el método de la Marina de EE.UU. o el método basado en IMC. El método de la Marina utiliza medidas de circunferencia corporal, mientras que el método del IMC se basa en tu edad, peso y altura.",
-    "categoriesTitle": "Categorías de Grasa Corporal (American Council on Exercise)",
-    "categoryLabel": "Categoría",
-    "menLabel": "Hombres",
-    "womenLabel": "Mujeres",
-    "essentialFat": "Grasa Esencial",
-    "athletes": "Atletas",
-    "fitness": "Fitness",
-    "average": "Promedio",
-    "obese": "Obeso",
-    "limitations": "Estos resultados son solo una estimación. Para una medición más precisa de la grasa corporal, considera usar instrumentos como el análisis de impedancia bioeléctrica o consultar con un profesional de la salud."
   }
 }

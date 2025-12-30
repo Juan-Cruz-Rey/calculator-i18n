@@ -21,14 +21,5 @@
     "leanMass": "Spiermassa",
     "fatMass": "Vetmassa",
     "bodyFatPercent": "Lichaamsvet %"
-  },
-  "info": {
-    "title": "Over Spiermassa",
-    "description": "Spiermassa (LBM) is het totale gewicht van uw lichaam minus het gewicht van uw lichaamsvet. Het bevat het gewicht van alle organen, huid, botten, lichaamsvocht en spieren. Spiermassa is nuttig voor het bepalen van medicijnhoeveelheden, beoordeling van metabole toestand en planning van voeding en oefenprogramma's.",
-    "formulasTitle": "Gebruikte Formules",
-    "boerFormula": "Mannen: LBM = 0.407 × Gewicht + 0.267 × Lengte - 19.2 | Vrouwen: LBM = 0.252 × Gewicht + 0.473 × Lengte - 48.3",
-    "jamesFormula": "Mannen: LBM = 1.1 × Gewicht - 128 × (Gewicht/Lengte)² | Vrouwen: LBM = 1.07 × Gewicht - 148 × (Gewicht/Lengte)²",
-    "humeFormula": "Mannen: LBM = 0.32810 × Gewicht + 0.33929 × Lengte - 29.5336 | Vrouwen: LBM = 0.29569 × Gewicht + 0.41813 × Lengte - 43.2933",
-    "limitations": "Opmerking: Deze formules geven schattingen en de resultaten kunnen tussen verschillende methoden variëren. Spiermassa en vetvrije massa worden vaak door elkaar gebruikt, hoewel ze met ongeveer 2-3% bij mannen en 5-12% bij vrouwen verschillen vanwege verschillen in essentiële vetsamenstelling. Voor nauwkeurige metingen, overweeg methoden zoals DEXA, hydrostatisch wegen of bioelektrische impedantieanalyse."
   }
 }

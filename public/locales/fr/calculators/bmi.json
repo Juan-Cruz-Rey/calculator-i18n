@@ -26,11 +26,5 @@
       "overweight": "Surpoids",
       "obese": "Obésité"
     }
-  },
-  "info": {
-    "title": "À propos de l'IMC",
-    "description": "L'Indice de Masse Corporelle (IMC) est une mesure du poids corporel basée sur le poids et la taille d'une personne. Il est calculé en divisant le poids en kilogrammes par le carré de la taille en mètres.",
-    "formula": "Formule: IMC = poids (kg) / taille² (m)",
-    "limitations": "L'IMC est un outil de dépistage utile, mais il ne diagnostique pas la graisse corporelle ou la santé d'un individu. Les personnes ayant une masse musculaire plus importante peuvent avoir un IMC élevé sans excès de graisse."
   }
 }

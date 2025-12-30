@@ -20,10 +20,5 @@
     "mayhew": "Formuła Mayhew",
     "oconner": "Formuła O'Conner",
     "wathan": "Formuła Wathan"
-  },
-  "info": {
-    "title": "O 1RM",
-    "description": "Maksimum Jednego Powtórzenia (1RM) to maksymalna waga, którą możesz podnieść podczas jednego powtórzenia danego ćwiczenia. Ten kalkulator używa siedmiu różnych formuł do oszacowania twojego 1RM na podstawie podniesionej wagi i liczby wykonanych powtórzeń.",
-    "note": "Te formuły są najbardziej dokładne dla 1-10 powtórzeń. Zawsze rozgrzej się odpowiednio i użyj asekurującego podczas prób maksymalnych podnoszeń."
   }
 }

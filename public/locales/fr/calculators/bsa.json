@@ -16,20 +16,5 @@
     "dubois": "Formule de Du Bois",
     "mosteller": "Formule de Mosteller",
     "haycock": "Formule de Haycock"
-  },
-  "info": {
-    "title": "À propos de la Surface Corporelle (BSA)",
-    "description": "La Surface Corporelle (BSA) est la surface mesurée ou calculée d'un corps humain. Elle est utilisée dans de nombreuses mesures en médecine, notamment pour le dosage des médicaments de chimiothérapie, le calcul de l'index cardiaque, et plus encore. Il existe différentes formules pour calculer la BSA, les plus courantes étant celles de Du Bois, Mosteller et Haycock.",
-    "formulasTitle": "Formules Utilisées",
-    "duboisTitle": "Formule de Du Bois (1916)",
-    "duboisFormula": "BSA (m²) = 0.007184 × taille^0.725 × poids^0.425",
-    "duboisDescription": "L'une des formules les plus anciennes et les plus largement utilisées. Développée par D. Du Bois et E.F. Du Bois en 1916.",
-    "mostellerTitle": "Formule de Mosteller (1987)",
-    "mostellerFormula": "BSA (m²) = √(taille × poids / 3600)",
-    "mostellerDescription": "La formule la plus couramment utilisée en raison de sa simplicité et de sa précision. Elle est plus facile à calculer et est recommandée pour un usage clinique.",
-    "haycockTitle": "Formule de Haycock (1978)",
-    "haycockFormula": "BSA (m²) = 0.024265 × taille^0.3964 × poids^0.5378",
-    "haycockDescription": "Une autre formule couramment utilisée qui fournit des résultats précis pour une large gamme de tailles corporelles.",
-    "usage": "La BSA est principalement utilisée en médecine pour : le dosage des médicaments (en particulier la chimiothérapie), le calcul de l'index cardiaque, l'évaluation des brûlures et la détermination des besoins en fluides. Consultez toujours des professionnels de santé pour les applications cliniques."
   }
 }

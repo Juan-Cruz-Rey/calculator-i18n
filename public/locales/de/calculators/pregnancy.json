@@ -26,11 +26,5 @@
     "daysRemaining": "Verbleibende Tage",
     "percentComplete": "Fortschritt",
     "milestones": "Schwangerschaftsmeilensteine"
-  },
-  "info": {
-    "title": "Über den Schwangerschaftsrechner",
-    "description": "Dieser Rechner schätzt Ihren Geburtstermin und verfolgt Ihren Fortschritt während der Schwangerschaft. Die Schwangerschaft dauert normalerweise 40 Wochen (280 Tage) ab dem ersten Tag Ihrer letzten Regelblutung oder 38 Wochen ab der Empfängnis.",
-    "formula": "Formel: Naegele-Regel - Geburtstermin = LMP + 280 Tage (angepasst an die Zykluslänge)",
-    "limitations": "Hinweis: Dieser Rechner liefert Schätzungen. Nur 4% der Babys werden genau am errechneten Termin geboren. 60% werden innerhalb einer Woche des geschätzten Termins geboren und 90% innerhalb von zwei Wochen. Konsultieren Sie immer Ihren Arzt für eine genaue Schwangerschaftsverfolgung."
   }
 }

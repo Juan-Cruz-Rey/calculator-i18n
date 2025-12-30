@@ -30,16 +30,5 @@
     "formulas": "Formel Comparison",
     "calorieNeeds": "Kalori Needs by Aktivitet Nivå",
     "calorieNeedsDesc": "Daglig calories needed baserat på your physical activity level"
-  },
-  "info": {
-    "title": "Om the BMR Kalkylator",
-    "description": "Basal Metabolisk Hastighet (BMR) is the amount of energy (calories) your body needs to function while at complete rest. It represents approximately 60-75% of your total daily energy expenditure. This calculator uses three scientifically validated formulas to estimate your BMR.",
-    "formulasTitle": "Formler Used",
-    "recommended": "Rekommenderad",
-    "mifflinFormula": "Män: BMR = 10 × weight(kg) + 6.25 × height(cm) - 5 × age + 5\nKvinnor: BMR = 10 × weight(kg) + 6.25 × height(cm) - 5 × age - 161",
-    "harrisFormula": "Män: BMR = 13.397 × weight(kg) + 4.799 × height(cm) - 5.677 × age + 88.362\nKvinnor: BMR = 9.247 × weight(kg) + 3.098 × height(cm) - 4.330 × age + 447.593",
-    "katchFormula": "BMR = 370 + 21.6 × lean body mass(kg)\nFettfri body mass = weight × (1 - body fat%/100)",
-    "katchNote": "Requires knowing your body fat percentage. More accurate for athletic individuals.",
-    "limitations": "These estimates are general guidelines. Individual metabolic needs can vary baserat på genetic factors, body composition, medications, and health conditions. Consult with a healthcare professional for a personalized plan."
   }
 }

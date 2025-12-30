@@ -43,11 +43,5 @@
       "high": "Optimal for athletes and very active individuals. Provides energy for intense workouts."
     },
     "note": "Note: The minimum recommended carbohydrate intake is 130g per day for adults. Consult with a healthcare professional before making significant dietary changes."
-  },
-  "info": {
-    "title": "About Carbohydrates",
-    "description": "Carbohydrates are one of the three main macronutrients (along with protein and fat) and the body's primary source of energy. The optimal amount of carbohydrates varies based on your activity level, goals, and personal preferences.",
-    "formula": "Formula: Carbohydrate grams = (Target calories × % carbs) ÷ 4 calories/g",
-    "recommendations": "Carbohydrate recommendations are based on percentages of your total caloric intake: Low (10-30%), Moderate (30-50%), High (50-70%). The choice depends on your goals, activity level, and individual metabolic response."
   }
 }

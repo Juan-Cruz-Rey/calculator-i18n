@@ -43,14 +43,5 @@
     "title": "Resultado",
     "resultLabel": "Respuesta",
     "formulaLabel": "Cálculo"
-  },
-  "info": {
-    "title": "Acerca de la Calculadora de Porcentaje",
-    "description": "Los porcentajes son una forma de expresar un número como una fracción de 100. Esta calculadora te ayuda a resolver varios problemas de porcentaje, incluidos el cálculo de porcentajes, el cambio porcentual y la determinación de diferencias porcentuales.",
-    "commonUses": "Usos Comunes",
-    "use1": "Calcular descuentos y precios de venta",
-    "use2": "Determinar montos de impuestos y propinas",
-    "use3": "Analizar cambios financieros y tasas de crecimiento",
-    "use4": "Comparar valores y estadísticas"
   }
 }

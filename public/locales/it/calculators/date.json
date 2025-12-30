@@ -38,14 +38,5 @@
     "businessDays": "Giorni lavorativi",
     "weekdays": "Giorni feriali",
     "weekends": "Fine settimana"
-  },
-  "info": {
-    "title": "Informazioni sulla Calcolatrice di Date",
-    "description": "Questa calcolatrice di date consente di aggiungere o sottrarre tempo da una data specifica o di calcolare la differenza tra due date. È utile per la pianificazione di progetti, il calcolo delle scadenze e molto altro.",
-    "useCasesTitle": "Casi d'uso:",
-    "useCase1": "Calcolare le date di scadenza e i termini di consegna",
-    "useCase2": "Determinare la durata dei progetti in giorni lavorativi",
-    "useCase3": "Pianificare eventi e calcolare date future",
-    "useCase4": "Calcolare l'età, gli anniversari e il tempo trascorso"
   }
 }

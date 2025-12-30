@@ -49,11 +49,5 @@
     "protein": "Proteine",
     "carbs": "Carboidrati",
     "fats": "Grassi"
-  },
-  "info": {
-    "title": "Informazioni sui Macronutrienti",
-    "description": "I macronutrienti (proteine, carboidrati e grassi) sono i nutrienti che forniscono energia al tuo corpo. Questo calcolatore determina il tuo dispendio energetico totale giornaliero e distribuisce le calorie in macronutrienti in base al tuo obiettivo e al tipo di dieta preferito.",
-    "formula": "Formula: BMR (Mifflin-St Jeor) × Moltiplicatore di Attività ± Aggiustamento Obiettivo",
-    "limitations": "Questo calcolatore fornisce stime basate su formule standard. I requisiti individuali possono variare. Consulta un professionista della salute o un nutrizionista per un piano personalizzato."
   }
 }

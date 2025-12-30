@@ -45,26 +45,5 @@
     "recommendedRange": "Aanbevolen Bereik",
     "tdee": "TDEE",
     "bmr": "BMR"
-  },
-  "info": {
-    "title": "Over Vetinname",
-    "description": "Voedingsvet is een essentiële macronutriënt die cruciale rollen speelt in hormoonproductie, nutriëntenabsorptie, celmembraanstructuur en energieopslag. Deze calculator helpt je de optimale hoeveelheid vet te bepalen die je dagelijks moet consumeren op basis van je totale dagelijkse energieverbruik (TDEE) en fitnessdoelen.",
-    "typesTitle": "Soorten Vetten",
-    "healthyFats": "Gezonde Vetten (Onverzadigd)",
-    "healthyFatsDesc": "Deze vetten kunnen de hartgezondheid verbeteren, ontstekingen verminderen en het algemeen welzijn ondersteunen:",
-    "healthyFats1": "Enkelvoudig onverzadigde vetten: Olijfolie, avocado's, noten (amandelen, cashewnoten, pecannoten)",
-    "healthyFats2": "Meervoudig onverzadigde vetten: Vette vis (zalm, makreel, sardines), walnoten, lijnzaad",
-    "healthyFats3": "Omega-3 vetzuren: Essentieel voor hersengezondheid en vermindering van ontstekingen",
-    "healthyFats4": "Omega-6 vetzuren: Belangrijk voor groei en ontwikkeling (met mate)",
-    "unhealthyFats": "Ongezonde Vetten",
-    "unhealthyFatsDesc": "Beperk of vermijd deze vetten omdat ze gezondheidsrisico's kunnen verhogen:",
-    "unhealthyFats1": "Transvetten: Aanwezig in bewerkte voedingsmiddelen, gefrituurde voedingsmiddelen en gedeeltelijk gehydrogeneerde oliën",
-    "unhealthyFats2": "Overmatig verzadigd vet: Grote hoeveelheden uit rood vlees, boter en volle zuivelproducten",
-    "recommendationsTitle": "Aanbevelingen",
-    "recommendation1": "Kies gezonde onverzadigde vetten boven verzadigde en transvetten",
-    "recommendation2": "Neem 2-3 keer per week vette vis op in je dieet voor omega-3",
-    "recommendation3": "Gebruik olijfolie of avocado-olie om te koken in plaats van boter of margarine",
-    "recommendation4": "Lees voedingslabels om transvetten te vermijden en verzadigde vetten te beperken",
-    "limitations": "Deze aanbevelingen zijn algemene richtlijnen. Individuele vetbehoeften kunnen variëren op basis van metabolisme, gezondheidsomstandigheden en specifieke dieetvereisten. Raadpleeg een zorgprofessional of geregistreerde diëtist voor gepersonaliseerd voedingsadvies."
   }
 }

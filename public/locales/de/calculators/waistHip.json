@@ -20,26 +20,5 @@
       "high": "Hohes Risiko",
       "very-high": "Sehr hohes Risiko"
     }
-  },
-  "info": {
-    "title": "Über das Taille-Hüft-Verhältnis",
-    "description": "Das Taille-Hüft-Verhältnis (WHR) ist ein Maß für die Körperfettverteilung. Es wird berechnet, indem der Taillenumfang durch den Hüftumfang geteilt wird. Ein hohes WHR weist auf mehr Fett um die Taille herum hin, was mit einem erhöhten Risiko für Gesundheitsprobleme wie Herz-Kreislauf-Erkrankungen und Typ-2-Diabetes verbunden ist.",
-    "formula": "Formel: WHR = Taillenumfang / Hüftumfang",
-    "thresholdsTitle": "Risikoschwellen",
-    "thresholds": {
-      "male": {
-        "low": "< 0.90: Niedriges Risiko",
-        "moderate": "0.90 - 0.94: Mäßiges Risiko",
-        "high": "0.95 - 0.99: Hohes Risiko",
-        "veryHigh": "≥ 1.00: Sehr hohes Risiko"
-      },
-      "female": {
-        "low": "< 0.80: Niedriges Risiko",
-        "moderate": "0.80 - 0.84: Mäßiges Risiko",
-        "high": "0.85 - 0.89: Hohes Risiko",
-        "veryHigh": "≥ 0.90: Sehr hohes Risiko"
-      }
-    },
-    "limitations": "Das WHR ist ein nützliches Screening-Instrument, sollte aber zusammen mit anderen Gesundheitsmaßen verwendet werden. Es berücksichtigt nicht die gesamte Körperzusammensetzung oder andere individuelle Faktoren. Konsultieren Sie einen Gesundheitsexperten für eine vollständige Bewertung."
   }
 }

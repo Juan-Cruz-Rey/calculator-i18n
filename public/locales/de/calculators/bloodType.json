@@ -15,14 +15,5 @@
     "title": "Mögliche Blutgruppen des Kindes",
     "possibleBloodTypes": "Mögliche Blutgruppen",
     "explanation": "Diese Ergebnisse zeigen alle möglichen Blutgruppen, die Ihr Kind basierend auf der elterlichen Genetik erben könnte. Die Prozentsätze repräsentieren die Wahrscheinlichkeit jeder Blutgruppe."
-  },
-  "info": {
-    "title": "Über die Vererbung von Blutgruppen",
-    "description": "Die Blutgruppe wird von den Eltern nach den Mendelschen Gesetzen der Genetik vererbt. Jeder Elternteil trägt ein Allel (Gen) bei, das die ABO-Blutgruppe und den Rh-Faktor des Kindes bestimmt.",
-    "inheritanceTitle": "ABO-Blutgruppen-Vererbung",
-    "inheritanceDescription": "Das ABO-Blutgruppensystem hat vier Haupttypen: A, B, AB und O. Jede Person erbt ein Allel von jedem Elternteil. Typ A kann AA oder AO sein, Typ B kann BB oder BO sein, Typ AB ist AB und Typ O ist OO. A- und B-Allele sind kodominant, während O rezessiv ist.",
-    "rhTitle": "Rh-Faktor-Vererbung",
-    "rhDescription": "Der Rh-Faktor kann positiv (+) oder negativ (-) sein. Rh-positiv ist dominant über Rh-negativ. Eine Person mit Rh+ kann die Genotypen ++ oder +- haben, während Rh- nur -- sein kann. Wenn mindestens ein Allel + ist, wird die Blutgruppe positiv sein.",
-    "limitations": "Dieser Rechner liefert Wahrscheinlichkeiten basierend auf Standardgenetikgesetzen. Tatsächliche Ergebnisse können aufgrund seltener Mutationen oder anderer genetischer Faktoren variieren. Konsultieren Sie immer einen medizinischen Fachmann, um die genaue Blutgruppe zu bestimmen."
   }
 }

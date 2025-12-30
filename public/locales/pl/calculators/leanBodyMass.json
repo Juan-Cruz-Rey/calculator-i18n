@@ -15,11 +15,5 @@
     "leanBodyMass": "Masa beztłuszczowa (LBM)",
     "fatMass": "Masa tłuszczu",
     "bodyFat": "Procent tkanki tłuszczowej"
-  },
-  "info": {
-    "title": "O Masie Beztłuszczowej",
-    "description": "Masa beztłuszczowa (LBM) to całkowita masa ciała minus masa tłuszczu. Obejmuje mięśnie, kości, organy i wodę w organizmie. W przeciwieństwie do całkowitej wagi, LBM daje lepszy obraz składu ciała.",
-    "importance": "Dlaczego LBM jest ważna:\n• Pomaga śledzić zmiany w składzie ciała\n• Wyższa LBM oznacza wyższy metabolizm\n• Ważne dla celów fitness i odżywiania\n• Lepszy wskaźnik zdrowia niż sama waga",
-    "usage": "Wiedza o LBM pomoże Ci w lepszym ustalaniu celów fitness, planowaniu odżywiania i śledzeniu postępów. Staraj się zwiększać LBM poprzez trening siłowy i odpowiednie odżywianie."
   }
 }

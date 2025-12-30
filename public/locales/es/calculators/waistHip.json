@@ -20,26 +20,5 @@
       "high": "Riesgo alto",
       "very-high": "Riesgo muy alto"
     }
-  },
-  "info": {
-    "title": "Sobre la Relación Cintura-Cadera",
-    "description": "La relación cintura-cadera (ICC) es una medida de la distribución de grasa corporal. Se calcula dividiendo la circunferencia de la cintura entre la circunferencia de la cadera. Un ICC alto indica más grasa almacenada alrededor de la cintura, lo que está asociado con mayor riesgo de problemas de salud como enfermedades cardiovasculares y diabetes tipo 2.",
-    "formula": "Fórmula: ICC = circunferencia de cintura / circunferencia de cadera",
-    "thresholdsTitle": "Umbrales de Riesgo",
-    "thresholds": {
-      "male": {
-        "low": "< 0.90: Bajo riesgo",
-        "moderate": "0.90 - 0.94: Riesgo moderado",
-        "high": "0.95 - 0.99: Riesgo alto",
-        "veryHigh": "≥ 1.00: Riesgo muy alto"
-      },
-      "female": {
-        "low": "< 0.80: Bajo riesgo",
-        "moderate": "0.80 - 0.84: Riesgo moderado",
-        "high": "0.85 - 0.89: Riesgo alto",
-        "veryHigh": "≥ 0.90: Riesgo muy alto"
-      }
-    },
-    "limitations": "La ICC es una herramienta de evaluación útil, pero debe usarse junto con otras medidas de salud. No toma en cuenta la composición corporal total ni otros factores individuales. Consulta con un profesional de la salud para una evaluación completa."
   }
 }

@@ -24,16 +24,5 @@
     "fatburn": "Brûle Graisse",
     "cardio": "Cardio",
     "peak": "Maximum"
-  },
-  "info": {
-    "title": "À Propos de la Fréquence Cardiaque",
-    "description": "La fréquence cardiaque maximale est le nombre maximum de fois que votre cœur peut battre par minute pendant un effort physique maximal. Elle est généralement calculée à l'aide de la formule 220 - âge. Les zones d'entraînement vous aident à optimiser vos séances en fonction de vos objectifs.",
-    "formula": "Formule : FC Max = 220 - âge | FC Cible = ((FC Max - FC Repos) × % Intensité) + FC Repos",
-    "zonesExplained": "Zones d'Entraînement Expliquées",
-    "warmupDesc": "Idéal pour l'échauffement et la récupération. Améliore la santé générale et aide à la récupération.",
-    "fatburnDesc": "Zone optimale pour brûler les graisses. À cette intensité, votre corps utilise les graisses comme source d'énergie principale.",
-    "cardioDesc": "Améliore la capacité cardiovasculaire et l'endurance. Idéal pour améliorer les performances aérobiques.",
-    "peakDesc": "Entraînement à haute intensité. Développe la vitesse et la puissance. Uniquement pour de courtes sessions.",
-    "limitations": "La formule 220 - âge est une estimation générale. La fréquence cardiaque maximale réelle peut varier en fonction de facteurs individuels tels que la génétique, le niveau de forme physique et les médicaments. Consultez un professionnel de la santé avant de commencer un programme d'exercice intense."
   }
 }

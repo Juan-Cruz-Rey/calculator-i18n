@@ -26,11 +26,5 @@
     "daysRemaining": "Jours Restants",
     "percentComplete": "Progrès",
     "milestones": "Jalons de la Grossesse"
-  },
-  "info": {
-    "title": "À propos du Calculateur de Grossesse",
-    "description": "Ce calculateur estime votre date d'accouchement et suit votre progression tout au long de la grossesse. La grossesse dure généralement 40 semaines (280 jours) depuis le premier jour de vos dernières règles, ou 38 semaines depuis la conception.",
-    "formula": "Formule: Règle de Naegele - Date d'accouchement = DDR + 280 jours (ajusté selon la durée du cycle)",
-    "limitations": "Remarque: Ce calculateur fournit des estimations. Seulement 4% des bébés naissent exactement à la date prévue. 60% naissent dans la semaine de la date estimée, et 90% dans les deux semaines. Consultez toujours votre médecin pour un suivi précis de la grossesse."
   }
 }

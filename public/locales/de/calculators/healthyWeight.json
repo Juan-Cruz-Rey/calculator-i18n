@@ -27,13 +27,5 @@
     "hamwiFormula": "Hamwi",
     "hamwiSmallFrame": "Hamwi (Kleiner Rahmen)",
     "hamwiLargeFrame": "Hamwi (Großer Rahmen)"
-  },
-  "info": {
-    "title": "Über Gesundes Gewicht",
-    "description": "Das gesunde Gewicht basiert auf dem von der WHO empfohlenen BMI-Bereich (18.5-25). Dieser Rechner verwendet Ihre Größe, um Ihren gesunden Gewichtsbereich zu bestimmen und vergleicht mehrere wissenschaftliche Formeln, um Ihr Idealgewicht zu berechnen.",
-    "bmiFormula": "Gesunder BMI-Bereich: 18.5 - 25.0 kg/m²",
-    "formulasTitle": "Idealgewicht-Formeln",
-    "formulasDescription": "Vier anerkannte wissenschaftliche Formeln sind enthalten (Robinson 1983, Miller 1983, Devine 1974, Hamwi 1964). Die Hamwi-Formel wird auch für kleine Körperstruktur (-10%) und große Körperstruktur (+10%) angepasst.",
-    "limitations": "Diese Formeln sind allgemeine Schätzungen für Erwachsene ab 18 Jahren. Sie berücksichtigen nicht die individuelle Körperzusammensetzung, Muskelmasse oder spezifische Gesundheitszustände. Konsultieren Sie einen Gesundheitsfachmann für persönliche Beratung."
   }
 }

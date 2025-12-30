@@ -21,14 +21,5 @@
     "leanMass": "Fettfri Massa",
     "fatMass": "Fett Massa",
     "bodyFatPercent": "Kropp Fett %"
-  },
-  "info": {
-    "title": "Om Fettfri Kropp Massa",
-    "description": "Fettfri Kropp Massa (LBM) is the total weight of your body minus the weight of your body fat. It includes the weight of all organs, skin, bones, body water, and muscles. LBM is useful for determining medication dosages, assessing metabolic condition, and planning nutrition and träning programs.",
-    "formulasTitle": "Formler Used",
-    "boerFormula": "Males: LBM = 0.407 × Vikt + 0.267 × Längd - 19.2 | Females: LBM = 0.252 × Vikt + 0.473 × Längd - 48.3",
-    "jamesFormula": "Males: LBM = 1.1 × Vikt - 128 × (Vikt/Längd)² | Females: LBM = 1.07 × Vikt - 148 × (Vikt/Längd)²",
-    "humeFormula": "Males: LBM = 0.32810 × Vikt + 0.33929 × Längd - 29.5336 | Females: LBM = 0.29569 × Vikt + 0.41813 × Längd - 43.2933",
-    "limitations": "Note: These formulas provide estimates and results may vary between different methods. Fettfri body mass and fat-free mass are often used interchangeably, though they differ by approximately 2-3% in men and 5-12% in women due to differences in essential fat composition. For accurate measurements, consider methods such as DEXA, hydrostatic weighing, or bioelectrical impedance analysis."
   }
 }

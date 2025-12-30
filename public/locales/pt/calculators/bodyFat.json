@@ -38,19 +38,5 @@
     "idealBodyFat": "Gordura Corporal Ideal",
     "fatToLose": "Gordura a Perder",
     "method": "Método Utilizado"
-  },
-  "info": {
-    "title": "Sobre a Calculadora de Gordura Corporal",
-    "description": "Esta calculadora estima sua porcentagem de gordura corporal usando o Método da Marinha dos EUA ou método baseado no IMC. O método da Marinha usa medidas de circunferência corporal, enquanto o método do IMC é baseado em sua idade, peso e altura.",
-    "categoriesTitle": "Categorias de Gordura Corporal (American Council on Exercise)",
-    "categoryLabel": "Categoria",
-    "menLabel": "Homens",
-    "womenLabel": "Mulheres",
-    "essentialFat": "Gordura Essencial",
-    "athletes": "Atletas",
-    "fitness": "Fitness",
-    "average": "Média",
-    "obese": "Obeso",
-    "limitations": "Estes resultados são apenas uma estimativa. Para uma medição mais precisa da gordura corporal, considere usar instrumentos como análise de impedância bioelétrica ou consultar um profissional de saúde."
   }
 }

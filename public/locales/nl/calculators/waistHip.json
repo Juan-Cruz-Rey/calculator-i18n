@@ -20,26 +20,5 @@
       "high": "Hoog risico",
       "very-high": "Zeer hoog risico"
     }
-  },
-  "info": {
-    "title": "Over Taille-tot-Heup Verhouding",
-    "description": "De taille-tot-heup verhouding (WHR) is een meting van lichaamsverdeling. Deze wordt berekend door de tailleomtrek door de heupomtrek te delen. Een hoge WHR geeft aan dat meer vet rond de taille wordt opgeslagen, wat verband houdt met verhoogd risico op gezondheidsproblemen zoals hartziekten en type 2 diabetes.",
-    "formula": "Formule: WHR = tailleomtrek / heupomtrek",
-    "thresholdsTitle": "Risicodrempels",
-    "thresholds": {
-      "male": {
-        "low": "< 0.90: Laag risico",
-        "moderate": "0.90 - 0.94: Gemiddeld risico",
-        "high": "0.95 - 0.99: Hoog risico",
-        "veryHigh": "≥ 1.00: Zeer hoog risico"
-      },
-      "female": {
-        "low": "< 0.80: Laag risico",
-        "moderate": "0.80 - 0.84: Gemiddeld risico",
-        "high": "0.85 - 0.89: Hoog risico",
-        "veryHigh": "≥ 0.90: Zeer hoog risico"
-      }
-    },
-    "limitations": "WHR is een nuttig screeninginstrument, maar moet samen met andere gezondheidsmetingen worden gebruikt. Het houdt geen rekening met totale lichaamssamenstelling of andere individuele factoren. Raadpleeg een gezondheidsprofessional voor een volledige beoordeling."
   }
 }

@@ -20,16 +20,5 @@
     "cycles": "{count} cykli",
     "totalSleep": "{hours} godzin snu",
     "recommended": "ZALECANE"
-  },
-  "info": {
-    "title": "O Cyklach Snu",
-    "description": "Sen występuje w cyklach trwających około 90 minut. Budzenie się pod koniec cyklu snu pomaga poczuć się bardziej wypoczętym i czujnym. Ten kalkulator pomaga znaleźć najlepsze momenty do snu lub budzenia się w oparciu o te naturalne cykle.",
-    "cycleTitle": "Jak działają cykle snu?",
-    "cycleDescription": "W ciągu nocy przechodzisz przez 4-6 cykli snu. Każdy cykl ma różne etapy: sen lekki, sen głęboki i sen REM. Budzenie się podczas głębokiego snu może sprawić, że poczujesz się otępiały i zmęczony. Ten kalkulator uwzględnia 14 minut na zaśnięcie i sugeruje pory budzenia na końcu pełnych cykli snu.",
-    "tipsTitle": "Wskazówki dla lepszego snu",
-    "tip1": "Dorośli zazwyczaj potrzebują 7-9 godzin snu (5-6 pełnych cykli)",
-    "tip2": "Utrzymuj stały harmonogram snu, nawet w weekendy",
-    "tip3": "Unikaj kofeiny i ekranów przynajmniej 1 godzinę przed snem",
-    "tip4": "Stwórz komfortowe środowisko: ciemne, ciche i chłodne (15-19°C)"
   }
 }

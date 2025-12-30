@@ -20,10 +20,5 @@
     "mayhew": "Mayhew Formula",
     "oconner": "O'Conner Formula",
     "wathan": "Wathan Formula"
-  },
-  "info": {
-    "title": "About One Rep Max",
-    "description": "One Rep Max (1RM) is the maximum amount of weight you can lift for a single repetition of a given exercise. This calculator uses seven different formulas to estimate your 1RM based on the weight lifted and number of repetitions performed.",
-    "note": "These formulas are most accurate for 1-10 reps. Always warm up properly and use a spotter when attempting maximum lifts."
   }
 }

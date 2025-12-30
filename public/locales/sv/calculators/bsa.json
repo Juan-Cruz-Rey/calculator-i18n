@@ -16,20 +16,5 @@
     "dubois": "Du Bois Formel",
     "mosteller": "Mosteller Formel",
     "haycock": "Haycock Formel"
-  },
-  "info": {
-    "title": "Om Kropp Yta Yta (BSA)",
-    "description": "Kropp Yta Yta (BSA) is the measured or calculated surface area of a human body. It is used in many measurements in medicine, including drug dosing for chemotherapy, calculation of cardiac index, and more. There are different formulas to calculate BSA, with the most common being Du Bois, Mosteller, and Haycock.",
-    "formulasTitle": "Formler Used",
-    "duboisTitle": "Du Bois Formel (1916)",
-    "duboisFormula": "BSA (m²) = 0.007184 × height^0.725 × weight^0.425",
-    "duboisDescription": "One of the oldest and most widely used formulas. Developed by D. Du Bois and E.F. Du Bois in 1916.",
-    "mostellerTitle": "Mosteller Formel (1987)",
-    "mostellerFormula": "BSA (m²) = √(height × weight / 3600)",
-    "mostellerDescription": "The most commonly used formula due to its simplicity and accuracy. It is easier to calculate and is recommended for clinical use.",
-    "haycockTitle": "Haycock Formel (1978)",
-    "haycockFormula": "BSA (m²) = 0.024265 × height^0.3964 × weight^0.5378",
-    "haycockDescription": "Another commonly used formula that provides accurate results across a wide range of body sizes.",
-    "usage": "BSA is primarily used in medicine for: drug dosing (especially chemotherapy), cardiac index calculation, burn assessment, and fluid requirements determination. Always consult with medical professionals for clinical applications."
   }
 }

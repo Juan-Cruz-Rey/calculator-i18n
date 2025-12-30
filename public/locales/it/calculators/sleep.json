@@ -20,16 +20,5 @@
     "cycles": "{count} cicli",
     "totalSleep": "{hours} ore di sonno",
     "recommended": "CONSIGLIATO"
-  },
-  "info": {
-    "title": "Informazioni sui Cicli del Sonno",
-    "description": "Il sonno avviene in cicli di circa 90 minuti. Svegliarsi alla fine di un ciclo del sonno ti aiuta a sentirti più riposato e vigile. Questo calcolatore ti aiuta a trovare i momenti migliori per dormire o svegliarti in base a questi cicli naturali.",
-    "cycleTitle": "Come funzionano i cicli del sonno?",
-    "cycleDescription": "Durante la notte, attraversi 4-6 cicli del sonno. Ogni ciclo ha diverse fasi: sonno leggero, sonno profondo e sonno REM. Svegliarsi durante il sonno profondo può farti sentire intontito e stanco. Questo calcolatore tiene conto di 14 minuti per addormentarsi e suggerisce orari di sveglia alla fine di cicli del sonno completi.",
-    "tipsTitle": "Consigli per dormire meglio",
-    "tip1": "Gli adulti hanno generalmente bisogno di 7-9 ore di sonno (5-6 cicli completi)",
-    "tip2": "Mantieni un programma del sonno regolare, anche nei fine settimana",
-    "tip3": "Evita caffeina e schermi almeno 1 ora prima di andare a letto",
-    "tip4": "Crea un ambiente confortevole: buio, silenzioso e fresco (15-19°C)"
   }
 }

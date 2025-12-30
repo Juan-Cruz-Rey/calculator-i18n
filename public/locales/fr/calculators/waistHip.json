@@ -20,26 +20,5 @@
       "high": "Risque élevé",
       "very-high": "Risque très élevé"
     }
-  },
-  "info": {
-    "title": "À propos du Rapport Taille-Hanches",
-    "description": "Le rapport taille-hanches (RTH) est une mesure de la distribution de la graisse corporelle. Il est calculé en divisant la circonférence de la taille par la circonférence des hanches. Un RTH élevé indique plus de graisse stockée autour de la taille, ce qui est associé à un risque accru de problèmes de santé tels que les maladies cardiovasculaires et le diabète de type 2.",
-    "formula": "Formule: RTH = circonférence de la taille / circonférence des hanches",
-    "thresholdsTitle": "Seuils de Risque",
-    "thresholds": {
-      "male": {
-        "low": "< 0.90: Risque faible",
-        "moderate": "0.90 - 0.94: Risque modéré",
-        "high": "0.95 - 0.99: Risque élevé",
-        "veryHigh": "≥ 1.00: Risque très élevé"
-      },
-      "female": {
-        "low": "< 0.80: Risque faible",
-        "moderate": "0.80 - 0.84: Risque modéré",
-        "high": "0.85 - 0.89: Risque élevé",
-        "veryHigh": "≥ 0.90: Risque très élevé"
-      }
-    },
-    "limitations": "Le RTH est un outil d'évaluation utile, mais doit être utilisé avec d'autres mesures de santé. Il ne tient pas compte de la composition corporelle totale ni d'autres facteurs individuels. Consultez un professionnel de la santé pour une évaluation complète."
   }
 }

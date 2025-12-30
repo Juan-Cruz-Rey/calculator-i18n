@@ -24,11 +24,5 @@
     "recommendedTotalGain": "Recommended Total Gain",
     "recommendedAtWeek": "Recommended at This Week",
     "weeklyGainTarget": "Weekly Gain Target (2nd/3rd Trimester)"
-  },
-  "info": {
-    "title": "About Pregnancy Weight Gain",
-    "description": "Weight gain during pregnancy is essential for the health of both mother and baby. The Institute of Medicine (IOM) recommendations vary based on pre-pregnancy BMI and whether it's a twin pregnancy.",
-    "guidelines": "General guidelines: During the first trimester, weight gain is minimal (1-4 lbs). In the second and third trimesters, weight gain is steady and progressive based on BMI category.",
-    "limitations": "This calculator provides general estimates based on IOM guidelines. Always consult with your doctor or healthcare provider for personalized recommendations based on your individual situation."
   }
 }

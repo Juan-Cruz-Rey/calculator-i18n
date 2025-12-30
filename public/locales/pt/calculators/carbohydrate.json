@@ -43,11 +43,5 @@
       "high": "Ótimo para atletas e indivíduos muito ativos. Fornece energia para treinos intensos."
     },
     "note": "Nota: A ingestão mínima recomendada de carboidratos é de 130g por dia para adultos. Consulte um profissional de saúde antes de fazer mudanças significativas na dieta."
-  },
-  "info": {
-    "title": "Sobre Carboidratos",
-    "description": "Os carboidratos são um dos três macronutrientes principais (junto com proteínas e gorduras) e a principal fonte de energia do corpo. A quantidade ideal de carboidratos varia de acordo com seu nível de atividade, objetivos e preferências pessoais.",
-    "formula": "Fórmula: Gramas de carboidratos = (Calorias alvo × % de carboidratos) ÷ 4 calorias/g",
-    "recommendations": "As recomendações de carboidratos são baseadas em porcentagens da sua ingestão calórica total: Baixo (10-30%), Moderado (30-50%), Alto (50-70%). A escolha depende dos seus objetivos, nível de atividade e resposta metabólica individual."
   }
 }

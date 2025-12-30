@@ -49,11 +49,5 @@
     "protein": "Protein",
     "carbs": "Kolhydrater",
     "fats": "Fats"
-  },
-  "info": {
-    "title": "Om Macronutrients",
-    "description": "Macronutrients (protein, carbohydrates, and fats) are the nutrients that provide energy to your body. This calculator determines your total daily energy expenditure and distributes calories into macronutrients baserat på your goal and preferred diet type.",
-    "formula": "Formel: BMR (Mifflin-St Jeor) × Aktivitet Multiplier ± Goal Adjustment",
-    "limitations": "This calculator provides estimates baserat på standard formulas. Individual requirements may vary. Consult with a healthcare professional or nutritionist for a personalized plan."
   }
 }

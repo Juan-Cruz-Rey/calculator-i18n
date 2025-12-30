@@ -34,12 +34,5 @@
     "discount": "Zniżka",
     "markup": "Narzut",
     "change": "Zmiana Procentowa"
-  },
-  "info": {
-    "title": "O Procentach",
-    "description": "Procent to sposób wyrażania liczby jako ułamka ze 100. Symbol % oznacza 'na 100'. Procenty są używane w życiu codziennym do zniżek, podatków, stóp procentowych i wielu innych.",
-    "formulas": "Podstawowe wzory:\n• X% z Y = (X/100) × Y\n• X to Y% z = (X/Y) × 100\n• Zmiana % = ((Nowe-Stare)/Stare) × 100",
-    "examples": "Przykłady:\n• 20% z 50 = 10\n• 30 to 60% z 50\n• Zmiana z 40 na 50 = wzrost o 25%",
-    "uses": "Typowe zastosowania:\n• Obliczanie zniżek przy zakupach\n• Obliczanie napiwków w restauracjach\n• Zrozumienie podatków\n• Analiza zwrotu z inwestycji\n• Porównywanie zmian w czasie"
   }
 }

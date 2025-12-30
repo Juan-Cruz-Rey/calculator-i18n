@@ -44,27 +44,5 @@
   "legalDisclaimer": {
     "title": "Avertissement Légal",
     "text": "Ce calculateur est à des fins éducatives uniquement. Ne vous fiez pas à lui pour déterminer si vous pouvez conduire légalement. Les limites légales d'alcoolémie varient selon la juridiction (0.05% en France, 0.02% pour les jeunes conducteurs). Utilisez toujours un conducteur désigné ou un transport alternatif si vous avez bu."
-  },
-  "info": {
-    "title": "À Propos de l'Alcoolémie",
-    "description": "Le taux d'alcoolémie (BAC) est une mesure de la concentration d'alcool dans votre sang. Il est exprimé en pourcentage - par exemple, 0.05% signifie 0.05 grammes d'alcool pour 100 millilitres de sang.",
-    "howItWorks": "Comment Fonctionne ce Calculateur",
-    "formula": "Ce calculateur utilise la formule de Widmark pour estimer le taux d'alcoolémie en fonction de l'alcool consommé, du poids corporel, du sexe et du temps écoulé. La formule tient compte du taux de métabolisation de l'alcool (environ 0.015% de diminution par heure).",
-    "impairmentLevelsTitle": "Niveaux d'Altération",
-    "levels": {
-      "minimal": "Effets minimes, légère élévation de l'humeur, changements subtils de comportement",
-      "mild": "Altération légère, relaxation, coordination réduite, inhibitions réduites",
-      "moderate": "Altération modérée, temps de réaction réduit, jugement altéré, difficulté de concentration",
-      "significant": "Altération significative, difficulté à marcher et à s'équilibrer, élocution troublée, mauvaises décisions",
-      "severe": "Altération sévère, risque d'intoxication alcoolique, perte de conscience, condition potentiellement mortelle"
-    },
-    "factorsTitle": "Facteurs Affectant l'Alcoolémie",
-    "factors": {
-      "weight": "Poids corporel - les personnes plus lourdes ont généralement des niveaux plus bas avec la même quantité d'alcool",
-      "gender": "Sexe - les femmes atteignent généralement des niveaux plus élevés que les hommes avec la même quantité d'alcool",
-      "time": "Temps - le corps métabolise l'alcool à environ 0.015% par heure",
-      "food": "Consommation alimentaire - manger avant ou pendant que vous buvez ralentit l'absorption d'alcool",
-      "metabolism": "Métabolisme individuel - varie en fonction de la génétique, des médicaments et des conditions de santé"
-    }
   }
 }

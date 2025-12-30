@@ -43,22 +43,5 @@
     "secondTrimesterEnd": "Fin du Deuxième Trimestre (27 semaines)",
     "fullTerm": "À Terme (39 semaines)",
     "disclaimer": "Seulement environ 4% des bébés naissent à leur date prévue d'accouchement. La plupart des bébés naissent entre 37 et 42 semaines de grossesse. Ce calculateur fournit une estimation et ne doit pas remplacer les conseils médicaux professionnels."
-  },
-  "info": {
-    "title": "À Propos du Calcul de la Date d'Accouchement",
-    "description": "Un calculateur de date d'accouchement aide à estimer quand votre bébé naîtra. Le calculateur utilise différentes méthodes pour fournir une estimation précise de votre date d'accouchement.",
-    "methods": {
-      "title": "Méthodes de Calcul",
-      "lmp": "Dernières Règles (DDR):",
-      "lmpDesc": "La méthode la plus courante, utilisant la règle de Naegele (DDR + 280 jours). Cela suppose un cycle de 28 jours avec ovulation au jour 14.",
-      "conception": "Date de Conception:",
-      "conceptionDesc": "Ajoute 266 jours (38 semaines) à la date de conception connue ou estimée.",
-      "ultrasound": "Échographie:",
-      "ultrasoundDesc": "Utilise les mesures d'âge gestationnel de l'échographie, qui est plus précise au premier trimestre.",
-      "ivf": "Transfert FIV:",
-      "ivfDesc": "La méthode la plus précise car la date de transfert de l'embryon est connue exactement. Prend en compte l'âge de l'embryon au transfert."
-    },
-    "formula": "Formule Standard: Date d'Accouchement = DDR + 280 jours (40 semaines)",
-    "limitations": "Rappelez-vous que la date d'accouchement n'est qu'une estimation. Seulement environ 4% des bébés naissent à leur date exacte d'accouchement. La plupart naissent dans les 2 semaines avant ou après. Des facteurs tels que la durée du cycle, le moment de la conception et les variations individuelles peuvent affecter la date réelle d'accouchement. Consultez toujours votre professionnel de santé pour des conseils médicaux personnalisés."
   }
 }

@@ -20,14 +20,5 @@
     "fertilityWindow": "Fertility Window",
     "dueDate": "Due Date",
     "currentWeek": "Current Pregnancy Week"
-  },
-  "info": {
-    "title": "About Pregnancy Conception",
-    "description": "The pregnancy conception calculator helps you estimate when conception likely occurred based on your last menstrual period or your due date. This information can be helpful for determining paternity or simply for better understanding your pregnancy.",
-    "howItWorksTitle": "How It Works",
-    "howItWorks": "Conception typically occurs around ovulation, which is usually 14 days before the start of your next period. For a 28-day cycle, this means ovulation occurs around day 14. Sperm can survive for up to 5 days in the body, so the fertility window includes the 5 days before ovulation plus the day of ovulation. Pregnancy lasts approximately 280 days (40 weeks) from the first day of your last menstrual period.",
-    "accuracyTitle": "Accuracy",
-    "accuracy": "This calculator provides estimates based on average menstrual cycles. Actual ovulation and conception can vary from person to person. Factors that may affect accuracy include irregular menstrual cycles, late or early ovulation, and individual variations. For more precise information about your pregnancy, consult with your healthcare provider.",
-    "disclaimer": "Note: This calculator is for informational purposes only and should not be used as medical advice. Always consult with a healthcare professional for accurate medical information about your pregnancy."
   }
 }

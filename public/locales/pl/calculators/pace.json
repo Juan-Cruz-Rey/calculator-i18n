@@ -21,11 +21,5 @@
     "time": "Czas",
     "distance": "Dystans",
     "splits": "Czasy pośrednie"
-  },
-  "info": {
-    "title": "O Tempie Biegu",
-    "description": "Tempo to czas potrzebny na przebiegnięcie określonego dystansu, zwykle wyrażany jako minuty na kilometr lub minuty na milę. Zrozumienie tempa pomoże Ci planować treningi i strategie wyścigowe.",
-    "usage": "Użyj tego kalkulatora do: planowania tempa treningowego, przewidywania czasów wyścigów, obliczania czasu ukończenia, lub analizowania wydajności biegu.",
-    "tips": "Pamiętaj, że tempo może się różnić w zależności od terenu, warunków pogodowych i poziomu zmęczenia. Zacznij zachowawczo i dostosuj na podstawie swojego samopoczucia podczas biegu."
   }
 }

@@ -24,11 +24,5 @@
     "yourDistance": "Uw Afstand",
     "commonRaces": "Veelvoorkomende Racetijden",
     "splits": "Gesplitste Tijden"
-  },
-  "info": {
-    "title": "Over Hardlooptempo",
-    "description": "Hardlooptempo is de tijd die nodig is om een specifieke afstandseenheid (kilometer of mijl) af te leggen. Het is een essentieel gegeven voor hardlopers die trainingen willen plannen en racedeals willen stellen.",
-    "formula": "Formule: Tempo = Totale Tijd / Afstand",
-    "tip": "Tip: Een consistent tempo is de sleutel tot succes in lange afstandsraces. Gebruik deze calculator om uw racestrategie in te plannen en een duurzaam tempo te handhaven."
   }
 }

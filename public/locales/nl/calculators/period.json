@@ -20,11 +20,5 @@
     "ovulationDate": "Ovulatiedatum",
     "fertilityWindow": "Vruchtbaarheidsvenster",
     "upcomingPeriods": "Komende Periodes"
-  },
-  "info": {
-    "title": "Over de Menstruatie Calculator",
-    "description": "Deze calculator voorspelt uw aankomende menstruatieperiodes en ovulatiedatums op basis van uw laatste periode en gemiddelde cyclushoofdlijn. Ovulatie vindt meestal 14 dagen voor de volgende periode plaats.",
-    "formula": "Formule: Volgende periode = Laatste periode + Cyclushoofdlijn. Ovulatie = Volgende periode - 14 dagen",
-    "limitations": "Opmerking: Deze calculator biedt schattingen op basis van reguliere cyclen. Menstruatiecyclen kunnen natuurlijk variëren. Voor medische zorgen of cyclus onregelmatigheden, raadpleeg alstublieft een gezondheidsprofessional."
   }
 }

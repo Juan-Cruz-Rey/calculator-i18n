@@ -20,16 +20,5 @@
     "cycles": "{count} Zyklen",
     "totalSleep": "{hours} Stunden Schlaf",
     "recommended": "EMPFOHLEN"
-  },
-  "info": {
-    "title": "Über Schlafzyklen",
-    "description": "Der Schlaf erfolgt in Zyklen von etwa 90 Minuten. Das Aufwachen am Ende eines Schlafzyklus hilft Ihnen, sich ausgeruhter und wacher zu fühlen. Dieser Rechner hilft Ihnen, die besten Zeiten zum Schlafen oder Aufwachen basierend auf diesen natürlichen Zyklen zu finden.",
-    "cycleTitle": "Wie funktionieren Schlafzyklen?",
-    "cycleDescription": "Im Laufe der Nacht durchlaufen Sie 4-6 Schlafzyklen. Jeder Zyklus hat verschiedene Phasen: Leichtschlaf, Tiefschlaf und REM-Schlaf. Das Aufwachen während des Tiefschlafs kann dazu führen, dass Sie sich benommen und müde fühlen. Dieser Rechner berücksichtigt 14 Minuten zum Einschlafen und schlägt Weckzeiten am Ende vollständiger Schlafzyklen vor.",
-    "tipsTitle": "Tipps für besseren Schlaf",
-    "tip1": "Erwachsene benötigen normalerweise 7-9 Stunden Schlaf (5-6 vollständige Zyklen)",
-    "tip2": "Halten Sie einen konsistenten Schlafplan ein, auch am Wochenende",
-    "tip3": "Vermeiden Sie Koffein und Bildschirme mindestens 1 Stunde vor dem Schlafengehen",
-    "tip4": "Schaffen Sie eine komfortable Umgebung: dunkel, ruhig und kühl (15-19°C)"
   }
 }

@@ -18,10 +18,5 @@
     "totalHours": "Totalt antal timmar",
     "totalMinutes": "Totalt antal minuter",
     "nextBirthday": "Nästa födelsedag"
-  },
-  "info": {
-    "title": "Om ålderskalkylatorn",
-    "description": "Denna kalkylator låter dig bestämma din exakta ålder i år, månader och dagar. Den beräknar även din ålder i totalt antal veckor, dagar, timmar och minuter, vilket ger en omfattande översikt av tiden som förflutit sedan din födelse.",
-    "usage": "Du kan använda det valfria fältet 'Beräkna ålder vid' för att bestämma hur gammal du var eller kommer att vara på ett specifikt datum. Detta är användbart för att beräkna din ålder på historiska eller framtida datum."
   }
 }

@@ -45,26 +45,5 @@
     "recommendedRange": "Intervallo Raccomandato",
     "tdee": "TDEE",
     "bmr": "MB"
-  },
-  "info": {
-    "title": "Informazioni sull'Assunzione di Grassi",
-    "description": "I grassi alimentari sono un macronutriente essenziale che svolge ruoli cruciali nella produzione di ormoni, nell'assorbimento dei nutrienti, nella struttura delle membrane cellulari e nell'accumulo di energia. Questo calcolatore ti aiuta a determinare la quantità ottimale di grassi da consumare quotidianamente in base al tuo dispendio energetico giornaliero totale (TDEE) e ai tuoi obiettivi di fitness.",
-    "typesTitle": "Tipi di Grassi",
-    "healthyFats": "Grassi Salutari (Insaturi)",
-    "healthyFatsDesc": "Questi grassi possono migliorare la salute cardiaca, ridurre l'infiammazione e supportare il benessere generale:",
-    "healthyFats1": "Grassi monoinsaturi: Olio d'oliva, avocado, noci (mandorle, anacardi, noci pecan)",
-    "healthyFats2": "Grassi polinsaturi: Pesce grasso (salmone, sgombro, sardine), noci, semi di lino",
-    "healthyFats3": "Acidi grassi omega-3: Essenziali per la salute del cervello e la riduzione dell'infiammazione",
-    "healthyFats4": "Acidi grassi omega-6: Importanti per la crescita e lo sviluppo (con moderazione)",
-    "unhealthyFats": "Grassi Non Salutari",
-    "unhealthyFatsDesc": "Limita o evita questi grassi poiché possono aumentare i rischi per la salute:",
-    "unhealthyFats1": "Grassi trans: Presenti negli alimenti trasformati, fritti e oli parzialmente idrogenati",
-    "unhealthyFats2": "Eccesso di grassi saturi: Grandi quantità da carne rossa, burro e latticini interi",
-    "recommendationsTitle": "Raccomandazioni",
-    "recommendation1": "Scegli grassi insaturi salutari invece di grassi saturi e trans",
-    "recommendation2": "Includi pesce grasso nella tua dieta 2-3 volte a settimana per gli omega-3",
-    "recommendation3": "Usa olio d'oliva o olio di avocado per cucinare invece di burro o margarina",
-    "recommendation4": "Leggi le etichette nutrizionali per evitare i grassi trans e limitare i grassi saturi",
-    "limitations": "Queste raccomandazioni sono linee guida generali. Le esigenze individuali di grassi possono variare in base al metabolismo, alle condizioni di salute e ai requisiti dietetici specifici. Consulta un professionista della salute o un dietista per consigli nutrizionali personalizzati."
   }
 }

@@ -33,12 +33,5 @@
     "extreme": "Extremo",
     "bmr": "TMB (Tasa Metabólica Basal)",
     "bmrDesc": "Calorías que tu cuerpo necesita en reposo"
-  },
-  "info": {
-    "title": "Sobre la Calculadora de Calorías",
-    "description": "Esta calculadora estima cuántas calorías diarias necesitas según tu edad, género, peso, altura y nivel de actividad física. Utiliza la ecuación de Mifflin-St Jeor, considerada una de las más precisas para calcular la tasa metabólica basal (TMB).",
-    "formulasTitle": "Fórmulas Utilizadas",
-    "mifflinFormula": "Hombres: TMB = 10 × peso(kg) + 6.25 × altura(cm) - 5 × edad + 5\nMujeres: TMB = 10 × peso(kg) + 6.25 × altura(cm) - 5 × edad - 161",
-    "limitations": "Estas estimaciones son guías generales. Las necesidades calóricas individuales pueden variar según el metabolismo, la composición corporal y otros factores de salud. Consulta con un profesional de la salud para un plan personalizado."
   }
 }

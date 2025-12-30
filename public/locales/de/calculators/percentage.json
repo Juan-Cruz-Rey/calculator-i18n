@@ -43,14 +43,5 @@
     "title": "Ergebnis",
     "resultLabel": "Antwort",
     "formulaLabel": "Berechnung"
-  },
-  "info": {
-    "title": "Über den Prozentrechner",
-    "description": "Prozentsätze sind eine Möglichkeit, eine Zahl als Bruchteil von 100 auszudrücken. Dieser Rechner hilft Ihnen, verschiedene Prozentprobleme zu lösen, einschließlich des Findens von Prozentsätzen, der Berechnung prozentualer Änderungen und der Bestimmung prozentualer Differenzen.",
-    "commonUses": "Häufige Verwendungen",
-    "use1": "Rabatte und Verkaufspreise berechnen",
-    "use2": "Steuerbeträge und Trinkgelder bestimmen",
-    "use3": "Finanzielle Änderungen und Wachstumsraten analysieren",
-    "use4": "Werte und Statistiken vergleichen"
   }
 }

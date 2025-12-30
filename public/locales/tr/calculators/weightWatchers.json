@@ -54,12 +54,5 @@
   "units": {
     "kcal": "kcal",
     "grams": "g"
-  },
-  "info": {
-    "title": "SmartPoints Hakkında",
-    "description": "SmartPoints, kalori, doymuş yağ, şeker ve proteine dayalı olarak yiyeceklere değer atayan bir beslenme sistemidir. Daha fazla kalori, doymuş yağ ve şeker içeren yiyecekler daha yüksek puan değerlerine sahipken, daha fazla protein içeren yiyecekler daha düşük değerlere sahiptir. Bu, daha sağlıklı yiyecek seçimlerini teşvik eder.",
-    "formulaTitle": "SmartPoints Formülü",
-    "formula": "Puanlar = (Kalori × 0,0305) + (Doymuş Yağ × 0,275) + (Şeker × 0,12) - (Protein × 0,098), en yakın tam sayıya yuvarlanır, minimum 0",
-    "limitations": "Bu hesaplayıcı yalnızca tahminler sağlar ve profesyonel diyet tavsiyesinin yerini almamalıdır. Kişiselleştirilmiş beslenme rehberliği için her zaman bir sağlık hizmeti sağlayıcısına veya kayıtlı diyetisyene danışın."
   }
 }

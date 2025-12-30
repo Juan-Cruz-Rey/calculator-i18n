@@ -28,19 +28,5 @@
     "proteinPerKg": "Protein pro kg Gewicht",
     "caloriesFromProtein": "Kalorien aus Protein",
     "percentageOfDiet": "Prozentsatz der Ernährung (2000 kcal Basis)"
-  },
-  "info": {
-    "title": "Über Protein",
-    "description": "Proteine sind essentielle Makronährstoffe, die eine entscheidende Rolle beim Aufbau und der Reparatur von Gewebe, der Produktion von Enzymen und Hormonen sowie der Erhaltung der Muskelmasse spielen. Die Menge an Protein, die Sie benötigen, hängt von Ihrem Körpergewicht, Ihrem körperlichen Aktivitätsniveau und Ihren Gesundheitszielen ab.",
-    "recommendationsTitle": "Allgemeine Empfehlungen",
-    "recommendations": {
-      "sedentary": "Sesshaften Personen",
-      "sedentaryValue": "0,8g pro kg Körpergewicht",
-      "active": "Aktive Personen",
-      "activeValue": "1,2-1,5g pro kg Körpergewicht",
-      "athlete": "Athleten und Muskelaufbau",
-      "athleteValue": "1,6-2,2g pro kg Körpergewicht"
-    },
-    "note": "Hinweis: Dieser Rechner liefert allgemeine Schätzungen. Konsultieren Sie einen Gesundheitsexperten oder Ernährungsberater für personalisierte Empfehlungen, insbesondere wenn Sie spezifische medizinische Bedingungen haben."
   }
 }

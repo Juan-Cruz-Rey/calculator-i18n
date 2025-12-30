@@ -32,14 +32,5 @@
       "medium": "Média",
       "large": "Grande"
     }
-  },
-  "info": {
-    "title": "Sobre a Estrutura Corporal",
-    "description": "O tamanho da estrutura corporal (ou tamanho do esqueleto) refere-se ao tamanho relativo dos seus ossos. Pessoas com ossos maiores têm uma estrutura maior, enquanto aquelas com ossos menores têm uma estrutura menor. Conhecer sua estrutura corporal pode ajudá-lo a estabelecer metas de peso realistas.",
-    "wristMethodTitle": "Método de Circunferência do Pulso",
-    "wristMethodDescription": "Este método calcula uma relação (valor r) entre sua altura e a circunferência do pulso. Um valor r mais alto indica uma estrutura menor, enquanto um valor r mais baixo sugere uma estrutura maior. Este é o método mais simples e comumente usado.",
-    "elbowMethodTitle": "Método de Largura do Cotovelo",
-    "elbowMethodDescription": "Este método usa a largura do seu cotovelo em relação à sua altura para determinar o tamanho da sua estrutura. Para uma medida precisa, estenda seu braço para frente com a palma para cima, dobre o cotovelo em um ângulo de 90 graus e meça a distância entre os dois ossos proeminentes de cada lado do cotovelo.",
-    "limitations": "Nota: O tamanho da estrutura corporal é apenas um fator na determinação do peso corporal ideal. Outros fatores incluem composição muscular, distribuição de gordura e saúde geral. Consulte um profissional de saúde para aconselhamento personalizado."
   }
 }

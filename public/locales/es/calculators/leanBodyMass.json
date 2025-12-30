@@ -21,14 +21,5 @@
     "leanMass": "Masa Magra",
     "fatMass": "Masa Grasa",
     "bodyFatPercent": "% Grasa Corporal"
-  },
-  "info": {
-    "title": "Sobre la Masa Corporal Magra",
-    "description": "La Masa Corporal Magra (LBM, por sus siglas en inglés) es el peso total del cuerpo menos el peso de la grasa corporal. Incluye el peso de todos los órganos, piel, huesos, agua corporal y músculos. La LBM es útil para determinar la dosis de medicamentos, evaluar la condición metabólica y planificar programas de nutrición y ejercicio.",
-    "formulasTitle": "Fórmulas Utilizadas",
-    "boerFormula": "Hombres: LBM = 0.407 × Peso + 0.267 × Altura - 19.2 | Mujeres: LBM = 0.252 × Peso + 0.473 × Altura - 48.3",
-    "jamesFormula": "Hombres: LBM = 1.1 × Peso - 128 × (Peso/Altura)² | Mujeres: LBM = 1.07 × Peso - 148 × (Peso/Altura)²",
-    "humeFormula": "Hombres: LBM = 0.32810 × Peso + 0.33929 × Altura - 29.5336 | Mujeres: LBM = 0.29569 × Peso + 0.41813 × Altura - 43.2933",
-    "limitations": "Nota: Estas fórmulas proporcionan estimaciones y los resultados pueden variar entre diferentes métodos. La masa corporal magra y la masa libre de grasa a menudo se usan indistintamente, aunque difieren en aproximadamente 2-3% en hombres y 5-12% en mujeres debido a las diferencias en la composición de grasa esencial. Para mediciones precisas, considere métodos como DEXA, pesaje hidrostático o análisis de impedancia bioeléctrica."
   }
 }

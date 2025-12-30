@@ -43,22 +43,5 @@
     "secondTrimesterEnd": "End of Second Trimester (27 weeks)",
     "fullTerm": "Full Term (39 weeks)",
     "disclaimer": "Only about 4% of babies are born on their estimated due date. Most babies are born between 37-42 weeks of pregnancy. This calculator provides an estimate and should not replace professional medical advice."
-  },
-  "info": {
-    "title": "About Due Date Calculation",
-    "description": "A pregnancy due date calculator helps estimate when your baby will be born. The calculator uses different methods to provide an accurate estimate of your delivery date.",
-    "methods": {
-      "title": "Calculation Methods",
-      "lmp": "Last Menstrual Period (LMP):",
-      "lmpDesc": "The most common method, using Naegele's rule (LMP + 280 days). This assumes a 28-day cycle with ovulation on day 14.",
-      "conception": "Conception Date:",
-      "conceptionDesc": "Adds 266 days (38 weeks) to the known or estimated conception date.",
-      "ultrasound": "Ultrasound:",
-      "ultrasoundDesc": "Uses gestational age measurements from ultrasound imaging, which is most accurate in the first trimester.",
-      "ivf": "IVF Transfer:",
-      "ivfDesc": "The most precise method since the embryo transfer date is known exactly. Accounts for embryo age at transfer."
-    },
-    "formula": "Standard Formula: Due Date = LMP + 280 days (40 weeks)",
-    "limitations": "Remember that a due date is only an estimate. Only about 4% of babies are born on their exact due date. Most are born within 2 weeks before or after. Factors like cycle length, conception timing, and individual variations can affect the actual delivery date. Always consult with your healthcare provider for personalized medical advice."
   }
 }

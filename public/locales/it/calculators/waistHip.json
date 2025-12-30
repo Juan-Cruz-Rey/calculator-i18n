@@ -20,26 +20,5 @@
       "high": "Rischio alto",
       "very-high": "Rischio molto alto"
     }
-  },
-  "info": {
-    "title": "Sul Rapporto Vita-Fianchi",
-    "description": "Il rapporto vita-fianchi (WHR) è una misura della distribuzione del grasso corporeo. Si calcola dividendo la circonferenza della vita per la circonferenza dei fianchi. Un WHR alto indica più grasso accumulato intorno alla vita, che è associato a un rischio maggiore di problemi di salute come malattie cardiovascolari e diabete di tipo 2.",
-    "formula": "Formula: WHR = circonferenza della vita / circonferenza dei fianchi",
-    "thresholdsTitle": "Soglie di Rischio",
-    "thresholds": {
-      "male": {
-        "low": "< 0.90: Rischio basso",
-        "moderate": "0.90 - 0.94: Rischio moderato",
-        "high": "0.95 - 0.99: Rischio alto",
-        "veryHigh": "≥ 1.00: Rischio molto alto"
-      },
-      "female": {
-        "low": "< 0.80: Rischio basso",
-        "moderate": "0.80 - 0.84: Rischio moderato",
-        "high": "0.85 - 0.89: Rischio alto",
-        "veryHigh": "≥ 0.90: Rischio molto alto"
-      }
-    },
-    "limitations": "Il WHR è uno strumento di screening utile, ma dovrebbe essere utilizzato insieme ad altre misure di salute. Non tiene conto della composizione corporea totale o di altri fattori individuali. Consulta un professionista della salute per una valutazione completa."
   }
 }

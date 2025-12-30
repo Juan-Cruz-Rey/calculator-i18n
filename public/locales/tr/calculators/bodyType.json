@@ -21,24 +21,5 @@
     "wristRatio": "Height/Wrist Ratio",
     "ankleRatio": "Height/Ankle Ratio",
     "characteristics": "Characteristics"
-  },
-  "info": {
-    "title": "About Body Types",
-    "description": "Somatotypes or body types were developed by psychologist William Sheldon in the 1940s. This classification divides body types into three main categories based on skeletal structure and body composition.",
-    "types": {
-      "ectomorph": {
-        "name": "Ectomorph",
-        "description": "Ectomorphs have a lean body with long limbs, fast metabolism, and difficulty gaining weight or muscle mass. They typically have narrow shoulders and low body fat."
-      },
-      "mesomorph": {
-        "name": "Mesomorph",
-        "description": "Mesomorphs have a naturally athletic build with broad shoulders, narrow waist, and ease in gaining muscle. They have an efficient metabolism and respond well to training."
-      },
-      "endomorph": {
-        "name": "Endomorph",
-        "description": "Endomorphs have a larger bone structure, rounded body shape, and tendency to store fat. They have a slower metabolism and gain weight easily, but can also build muscle."
-      }
-    },
-    "limitations": "This calculator provides a general estimate based on skeletal measurements. Most people are a combination of body types. Results should be used as a general guide and not as a medical diagnosis."
   }
 }

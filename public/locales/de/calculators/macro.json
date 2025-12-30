@@ -49,11 +49,5 @@
     "protein": "Protein",
     "carbs": "Kohlenhydrate",
     "fats": "Fette"
-  },
-  "info": {
-    "title": "Über Makronährstoffe",
-    "description": "Makronährstoffe (Protein, Kohlenhydrate und Fette) sind die Nährstoffe, die Ihrem Körper Energie liefern. Dieser Rechner bestimmt Ihren gesamten täglichen Energieverbrauch und verteilt Kalorien auf Makronährstoffe basierend auf Ihrem Ziel und bevorzugten Diättyp.",
-    "formula": "Formel: BMR (Mifflin-St Jeor) × Aktivitätsmultiplikator ± Zielanpassung",
-    "limitations": "Dieser Rechner liefert Schätzungen basierend auf Standardformeln. Individuelle Anforderungen können variieren. Konsultieren Sie einen Gesundheitsexperten oder Ernährungsberater für einen personalisierten Plan."
   }
 }

@@ -19,15 +19,5 @@
     "totalAmount": "Bahşişle Toplam",
     "tipPerPerson": "Kişi Başı Bahşiş",
     "totalPerPerson": "Kişi Başı Toplam"
-  },
-  "info": {
-    "title": "Bahşiş Rehberi",
-    "description": "Bahşiş, iyi hizmet için takdir göstermenin bir yoludur. Örf ve adetler ülkeye ve hizmet türüne göre değişse de, işte bazı genel yönergeler:",
-    "guidelinesTitle": "Yaygın bahşiş yönergeleri:",
-    "guideline1": "Temel veya normal hizmet",
-    "guideline2": "İyi standart hizmet",
-    "guideline3": "Mükemmel veya olağanüstü hizmet",
-    "guideline4": "Olağanüstü hizmet veya büyük gruplar",
-    "note": "Not: Bahşiş gelenekleri bölgeye ve işletme türüne göre önemli ölçüde değişir. Bazı ülkelerde bahşiş hesaba dahildir veya bahşiş vermek alışılmış bir şey değildir."
   }
 }

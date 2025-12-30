@@ -20,16 +20,5 @@
     "cycles": "{count} fasen",
     "totalSleep": "{hours} uren slaap",
     "recommended": "AANBEVOLEN"
-  },
-  "info": {
-    "title": "Over Slaapfasen",
-    "description": "Slaap vindt plaats in fasen van ongeveer 90 minuten. Wakker worden aan het einde van een slaapfase helpt u zich meer uitgerust en alert te voelen. Deze calculator helpt u de beste momenten vinden om te slapen of wakker te worden op basis van deze natuurlijke fasen.",
-    "cycleTitle": "Hoe werken slaapfasen?",
-    "cycleDescription": "Door de nacht heen gaat u door 4-6 slaapfasen. Elke fase heeft verschillende stadia: lichte slaap, diepe slaap en REM-slaap. Wakker worden tijdens diepe slaap kan u slaperig en moe maken. Deze calculator houdt rekening met 14 minuten om in slaap te vallen en stelt wakker wordtijden voor aan het einde van volledige slaapfasen.",
-    "tipsTitle": "Tips voor betere slaap",
-    "tip1": "Volwassenen hebben meestal 7-9 uur slaap nodig (5-6 volledige fasen)",
-    "tip2": "Houd een consistent slaapschema aan, ook in het weekend",
-    "tip3": "Vermijd cafeïne en schermen minstens 1 uur voor het slapengaan",
-    "tip4": "Maak een comfortabele omgeving: donker, stil en koel (15-19°C)"
   }
 }

@@ -28,19 +28,5 @@
     "proteinPerKg": "Protein per kg of weight",
     "caloriesFromProtein": "Kalorier from protein",
     "percentageOfDiet": "Percentage of diet (2000 kcal base)"
-  },
-  "info": {
-    "title": "Om Protein",
-    "description": "Proteins are essential macronutrients that play a crucial role in building and repairing tissues, producing enzymes and hormones, and maintaining muscle mass. The amount of protein you need depends on your body weight, physical activity level, and health goals.",
-    "recommendationsTitle": "General Recommendations",
-    "recommendations": {
-      "sedentary": "Stillasittande individuals",
-      "sedentaryValue": "0.8g per kg of body weight",
-      "active": "Active individuals",
-      "activeValue": "1.2-1.5g per kg of body weight",
-      "athlete": "Athletes and muscle building",
-      "athleteValue": "1.6-2.2g per kg of body weight"
-    },
-    "note": "Note: This calculator provides general estimates. Consult a healthcare professional or nutritionist for personalized recommendations, especially if you have specific medical conditions."
   }
 }

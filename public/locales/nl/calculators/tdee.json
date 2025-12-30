@@ -40,19 +40,5 @@
     "carbs": "Koolhydraten",
     "fats": "Vetten",
     "macrosNote": "Gebalanceerde verdeling: 30% eiwit, 40% koolhydraten, 30% vetten"
-  },
-  "info": {
-    "title": "Over de TDEE Rekenmachine",
-    "description": "Totaal Dagelijks Energieverbruik (TDEE) vertegenwoordigt het totale aantal calorieën dat uw lichaam op een dag verbrandt, inclusief uw basaal metabolisme (BMR) en calorieën verbrand door fysieke activiteit. Deze rekenmachine gebruikt de Mifflin-St Jeor vergelijking om uw BMR te berekenen en vermenigvuldigt deze met uw activiteitenniveau.",
-    "formulasTitle": "Gebruikte Formules",
-    "mifflinFormula": "Mannen: BMR = 10 × gewicht(kg) + 6,25 × lengte(cm) - 5 × leeftijd + 5\nVrouwen: BMR = 10 × gewicht(kg) + 6,25 × lengte(cm) - 5 × leeftijd - 161\nTDEE = BMR × Activiteitsfactor",
-    "activityTitle": "Activiteitenniveaus",
-    "sedentaryDesc": "Weinig of geen beweging, bureauwerk",
-    "lightDesc": "Lichte beweging 1-3 keer per week",
-    "moderateDesc": "Matige beweging 4-5 keer per week",
-    "activeDesc": "Dagelijkse beweging of intensieve beweging 3-4 keer per week",
-    "veryActiveDesc": "Intensieve beweging 6-7 keer per week",
-    "extraActiveDesc": "Zeer intensieve dagelijkse beweging plus fysiek werk of twee keer per dag trainen",
-    "limitations": "Deze schattingen zijn algemene richtlijnen. Individuele energiebehoeften kunnen variëren op basis van metabolisme, lichaamssamenstelling, genetica en andere gezondheidsfactoren. Raadpleeg een zorgprofessional of diëtist voor een gepersonaliseerd plan."
   }
 }

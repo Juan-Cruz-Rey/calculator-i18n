@@ -43,11 +43,5 @@
       "high": "Óptimo para atletas y personas muy activas. Proporciona energía para entrenamientos intensos."
     },
     "note": "Nota: La ingesta mínima recomendada de carbohidratos es de 130g por día para adultos. Consulta con un profesional de la salud antes de hacer cambios significativos en tu dieta."
-  },
-  "info": {
-    "title": "Sobre los Carbohidratos",
-    "description": "Los carbohidratos son uno de los tres macronutrientes principales (junto con proteínas y grasas) y la principal fuente de energía del cuerpo. La cantidad óptima de carbohidratos varía según tu nivel de actividad, objetivos y preferencias personales.",
-    "formula": "Fórmula: Gramos de carbohidratos = (Calorías objetivo × % de carbohidratos) ÷ 4 calorías/g",
-    "recommendations": "Las recomendaciones de carbohidratos se basan en porcentajes de tu ingesta calórica total: Bajo (10-30%), Moderado (30-50%), Alto (50-70%). La elección depende de tus objetivos, nivel de actividad y respuesta metabólica individual."
   }
 }

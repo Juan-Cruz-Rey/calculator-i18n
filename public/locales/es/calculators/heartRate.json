@@ -24,16 +24,5 @@
     "fatburn": "Quema de Grasa",
     "cardio": "Cardio",
     "peak": "Máximo"
-  },
-  "info": {
-    "title": "Sobre la Frecuencia Cardíaca",
-    "description": "La frecuencia cardíaca máxima es el número máximo de veces que tu corazón puede latir por minuto durante el esfuerzo físico máximo. Se calcula generalmente usando la fórmula 220 - edad. Las zonas de entrenamiento te ayudan a optimizar tus entrenamientos según tus objetivos.",
-    "formula": "Fórmula: FC Máxima = 220 - edad | FC Objetivo = ((FC Máx - FC Reposo) × % Intensidad) + FC Reposo",
-    "zonesExplained": "Zonas de Entrenamiento Explicadas",
-    "warmupDesc": "Ideal para calentamiento y enfriamiento. Mejora la salud general y ayuda en la recuperación.",
-    "fatburnDesc": "Zona óptima para quemar grasa. A esta intensidad, tu cuerpo utiliza grasa como fuente principal de energía.",
-    "cardioDesc": "Mejora la capacidad cardiovascular y la resistencia. Ideal para mejorar el rendimiento aeróbico.",
-    "peakDesc": "Entrenamiento de alta intensidad. Desarrolla velocidad y potencia. Solo para sesiones cortas.",
-    "limitations": "La fórmula 220 - edad es una estimación general. La frecuencia cardíaca máxima real puede variar según factores individuales como la genética, nivel de condición física y medicamentos. Consulta con un profesional de la salud antes de comenzar un programa de ejercicio intenso."
   }
 }

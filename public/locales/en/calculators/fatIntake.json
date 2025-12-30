@@ -45,26 +45,5 @@
     "recommendedRange": "Recommended Range",
     "tdee": "TDEE",
     "bmr": "BMR"
-  },
-  "info": {
-    "title": "About Fat Intake",
-    "description": "Dietary fat is an essential macronutrient that plays crucial roles in hormone production, nutrient absorption, cell membrane structure, and energy storage. This calculator helps you determine the optimal amount of fat to consume daily based on your total daily energy expenditure (TDEE) and fitness goals.",
-    "typesTitle": "Types of Fats",
-    "healthyFats": "Healthy Fats (Unsaturated)",
-    "healthyFatsDesc": "These fats can improve heart health, reduce inflammation, and support overall wellness:",
-    "healthyFats1": "Monounsaturated fats: Olive oil, avocados, nuts (almonds, cashews, pecans)",
-    "healthyFats2": "Polyunsaturated fats: Fatty fish (salmon, mackerel, sardines), walnuts, flaxseeds",
-    "healthyFats3": "Omega-3 fatty acids: Essential for brain health and reducing inflammation",
-    "healthyFats4": "Omega-6 fatty acids: Important for growth and development (in moderation)",
-    "unhealthyFats": "Unhealthy Fats",
-    "unhealthyFatsDesc": "Limit or avoid these fats as they can increase health risks:",
-    "unhealthyFats1": "Trans fats: Found in processed foods, fried foods, and partially hydrogenated oils",
-    "unhealthyFats2": "Excess saturated fats: High amounts from red meat, butter, and full-fat dairy products",
-    "recommendationsTitle": "Recommendations",
-    "recommendation1": "Choose healthy unsaturated fats over saturated and trans fats",
-    "recommendation2": "Include fatty fish in your diet 2-3 times per week for omega-3s",
-    "recommendation3": "Use olive oil or avocado oil for cooking instead of butter or margarine",
-    "recommendation4": "Read nutrition labels to avoid trans fats and limit saturated fats",
-    "limitations": "These recommendations are general guidelines. Individual fat needs may vary based on metabolism, health conditions, and specific dietary requirements. Consult with a healthcare professional or registered dietitian for personalized nutrition advice."
   }
 }

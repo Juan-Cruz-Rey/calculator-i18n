@@ -23,11 +23,5 @@
     "overWeight": "POWYŻEJ NORMY",
     "totalRecommended": "Zalecany całkowity przyrost",
     "remainingGain": "Pozostały zalecany przyrost"
-  },
-  "info": {
-    "title": "O Przyroście Wagi w Ciąży",
-    "description": "Odpowiedni przyrost wagi w ciąży jest ważny dla zdrowia matki i dziecka. Zalecany przyrost zależy od BMI sprzed ciąży.",
-    "guidelines": "Wytyczne przyrostu wagi (dla ciąży pojedynczej):\n• Niedowaga (BMI < 18,5): 12,5-18 kg\n• Normalna (BMI 18,5-24,9): 11,5-16 kg\n• Nadwaga (BMI 25-29,9): 7-11,5 kg\n• Otyłość (BMI ≥ 30): 5-9 kg",
-    "note": "Te wytyczne są dla ciąży pojedynczej. Ciąże bliźniacze i mnogie wymagają większego przyrostu wagi. Zawsze konsultuj się z lekarzem w sprawie indywidualnych celów."
   }
 }

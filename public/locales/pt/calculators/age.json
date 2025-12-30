@@ -18,10 +18,5 @@
     "totalHours": "Horas Totais",
     "totalMinutes": "Minutos Totais",
     "nextBirthday": "Próximo Aniversário"
-  },
-  "info": {
-    "title": "Sobre a Calculadora de Idade",
-    "description": "Esta calculadora permite que você determine sua idade exata em anos, meses e dias. Ela também calcula sua idade em semanas, dias, horas e minutos totais, fornecendo uma visão abrangente do tempo decorrido desde seu nascimento.",
-    "usage": "Você pode usar o campo opcional 'Calcular idade em' para determinar quantos anos você tinha ou terá em uma data específica. Isso é útil para calcular sua idade em datas históricas ou futuras."
   }
 }

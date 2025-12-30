@@ -26,11 +26,5 @@
       "overweight": "Övervikt",
       "obese": "Fetma"
     }
-  },
-  "info": {
-    "title": "Om BMI",
-    "description": "Kroppsmasseindex (BMI) är ett mått på kroppsvikt baserat på en persons vikt och längd. Det beräknas genom att dividera vikten i kilogram med kvadraten av längden i meter.",
-    "formula": "Formel: BMI = vikt (kg) / längd² (m)",
-    "limitations": "BMI är ett användbart screeningverktyg, men det diagnostiserar inte kroppsfett eller en individs hälsa. Personer med större muskelmassa kan ha ett högt BMI utan överskott av fett."
   }
 }

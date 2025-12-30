@@ -24,12 +24,5 @@
     "pass": "ZDANY",
     "fail": "NIEZDANY",
     "maxAllowed": "Maksymalne dozwolone"
-  },
-  "info": {
-    "title": "O Standardzie US Army",
-    "description": "Metoda US Army używa pomiarów obwodu do oszacowania procentu tkanki tłuszczowej. Jest to standard używany przez armię amerykańską do określania gotowości i sprawności fizycznej żołnierzy.",
-    "standardsTitle": "Standardy Armii",
-    "standardsDescription": "US Army ma konkretne wymagania dotyczące maksymalnego dozwolonego procentu tkanki tłuszczowej, które różnią się w zależności od wieku i płci. Przekroczenie tych limitów może wpłynąć na status służby wojskowej.",
-    "measurements": "Upewnij się, że mierzysz prawidłowo: szyja w najcieńszym miejscu, talia w punkcie pępka, biodra w najszerszym miejscu. Pomiary powinny być wykonywane na odkrytej skórze."
   }
 }

@@ -27,13 +27,5 @@
     "hamwiFormula": "Hamwi",
     "hamwiSmallFrame": "Hamwi (Estrutura Pequena)",
     "hamwiLargeFrame": "Hamwi (Estrutura Grande)"
-  },
-  "info": {
-    "title": "Sobre o Peso Saudável",
-    "description": "O peso saudável é baseado na faixa de IMC recomendada pela OMS (18.5-25). Esta calculadora usa sua altura para determinar sua faixa de peso saudável e compara múltiplas fórmulas científicas para calcular seu peso ideal.",
-    "bmiFormula": "Faixa de IMC Saudável: 18.5 - 25.0 kg/m²",
-    "formulasTitle": "Fórmulas de Peso Ideal",
-    "formulasDescription": "Quatro fórmulas científicas reconhecidas estão incluídas (Robinson 1983, Miller 1983, Devine 1974, Hamwi 1964). A fórmula de Hamwi também é ajustada para estrutura corporal pequena (-10%) e estrutura corporal grande (+10%).",
-    "limitations": "Essas fórmulas são estimativas gerais para adultos com 18 anos ou mais. Elas não levam em conta a composição corporal individual, massa muscular ou condições de saúde específicas. Consulte um profissional de saúde para orientação personalizada."
   }
 }

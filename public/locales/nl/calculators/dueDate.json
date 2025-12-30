@@ -43,22 +43,5 @@
     "secondTrimesterEnd": "Einde Tweede Trimester (27 weken)",
     "fullTerm": "Volledige Termijn (39 weken)",
     "disclaimer": "Ongeveer 4% van de baby's wordt geboren op hun geschatte bevorderde datum. De meeste baby's worden geboren tussen 37-42 weken zwangerschap. Deze calculator biedt een schatting en vervangt geen professioneel medisch advies."
-  },
-  "info": {
-    "title": "Over Bevorderde Datumberekening",
-    "description": "Een zwangerschapsbevorderde datumcalculator helpt het moment waarop uw baby wordt geboren in te schatten. De calculator gebruikt verschillende methoden om een nauwkeurige schatting van uw bevorderde datum te geven.",
-    "methods": {
-      "title": "Berekeningsmethoden",
-      "lmp": "Laatste Menstruatie (LMP):",
-      "lmpDesc": "De meest gebruikte methode, met Naegele's regel (LMP + 280 dagen). Dit gaat ervan uit dat er een 28-daagse cyclus is met ovulatie op dag 14.",
-      "conception": "Conceptiedatum:",
-      "conceptionDesc": "Voegt 266 dagen (38 weken) toe aan de bekende of geschatte conceptiedatum.",
-      "ultrasound": "Echo:",
-      "ultrasoundDesc": "Gebruikt zwangerschapsduurmetingen van echo-afbeelding, welke het nauwkeurigst is in het eerste trimester.",
-      "ivf": "IVF Overdracht:",
-      "ivfDesc": "De meest nauwkeurige methode omdat de embryo-overdacht datum exact bekend is. Houdt rekening met embryo-leeftijd bij overdracht."
-    },
-    "formula": "Standaardformule: Bevorderde Datum = LMP + 280 dagen (40 weken)",
-    "limitations": "Onthoud dat een bevorderde datum slechts een schatting is. Ongeveer 4% van de baby's wordt op hun exact bevorderde datum geboren. De meeste worden geboren binnen 2 weken voor of na. Factoren zoals cyclushoofdlijn, conceptietiming en individuele variaties kunnen de werkelijke bevorderde datum beïnvloeden. Raadpleeg altijd uw zorgverlener voor persoonlijk medisch advies."
   }
 }

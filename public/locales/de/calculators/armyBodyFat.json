@@ -22,15 +22,5 @@
     "ageGroup": "Altersgruppe",
     "maxAllowed": "Maximal Erlaubt",
     "status": "Armee-Standard"
-  },
-  "info": {
-    "title": "Über den Körperfett-Rechner der Armee",
-    "description": "Der Körperfett-Rechner der Armee verwendet die offizielle US-Armee-Formel aus der Armee-Verordnung 600-9. Dieser Rechner bestimmt, ob Sie die für den Militärdienst erforderlichen Körperzusammensetzungsstandards erfüllen. Die Formel verwendet Umfangsmessungen von Hals, Taille und (bei Frauen) Hüften, um den Körperfettanteil zu schätzen.",
-    "standardsTitle": "US-Armee Körperfettstandards",
-    "ageRange": "Altersbereich",
-    "maleMax": "Max. Mann %",
-    "femaleMax": "Max. Frau %",
-    "formula": "Formel Männer: % KF = 86.010 × log10(Taille - Hals) - 70.041 × log10(Größe) + 36.76 | Formel Frauen: % KF = 163.205 × log10(Taille + Hüfte - Hals) - 97.684 × log10(Größe) - 78.387",
-    "limitations": "Dieser Rechner verwendet die offizielle US-Armee-Bandtest-Methode. Für die genaueste Messung nehmen Sie den Durchschnitt von mindestens drei Messungen, gerundet auf den nächsten 0,5 Zoll oder cm. Soldaten, die durchfallen, können zusätzliche Tests mit DXA-, InBody 770- oder Bod Pod-Systemen anfordern."
   }
 }

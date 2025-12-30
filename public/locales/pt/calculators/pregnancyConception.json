@@ -20,14 +20,5 @@
     "fertilityWindow": "Janela de Fertilidade",
     "dueDate": "Data Provável do Parto",
     "currentWeek": "Semana Atual da Gravidez"
-  },
-  "info": {
-    "title": "Sobre a Concepção da Gravidez",
-    "description": "A calculadora de concepção da gravidez ajuda você a estimar quando a concepção provavelmente ocorreu com base no seu último período menstrual ou na sua data provável do parto. Esta informação pode ser útil para determinar paternidade ou simplesmente para entender melhor sua gravidez.",
-    "howItWorksTitle": "Como Funciona",
-    "howItWorks": "A concepção geralmente ocorre por volta da ovulação, que é geralmente 14 dias antes do início do seu próximo período. Para um ciclo de 28 dias, isso significa que a ovulação ocorre por volta do dia 14. Os espermatozoides podem sobreviver até 5 dias no corpo, então a janela de fertilidade inclui os 5 dias antes da ovulação mais o dia da ovulação. A gravidez dura aproximadamente 280 dias (40 semanas) a partir do primeiro dia do seu último período menstrual.",
-    "accuracyTitle": "Precisão",
-    "accuracy": "Esta calculadora fornece estimativas baseadas em ciclos menstruais médios. A ovulação real e a concepção podem variar de pessoa para pessoa. Fatores que podem afetar a precisão incluem ciclos menstruais irregulares, ovulação tardia ou precoce e variações individuais. Para informações mais precisas sobre sua gravidez, consulte seu médico.",
-    "disclaimer": "Nota: Esta calculadora é apenas para fins informativos e não deve ser usada como aconselhamento médico. Sempre consulte um profissional de saúde para obter informações médicas precisas sobre sua gravidez."
   }
 }

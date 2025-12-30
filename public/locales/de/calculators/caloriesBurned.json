@@ -46,11 +46,5 @@
     "metValue": "MET-Wert",
     "caloriesPerMinute": "Kalorien pro Minute",
     "caloriesPerHour": "Kalorien pro Stunde"
-  },
-  "info": {
-    "title": "Über Kalorienverbrauch",
-    "description": "Dieser Rechner schätzt die verbrannten Kalorien bei verschiedenen körperlichen Aktivitäten unter Verwendung von MET-Werten (Metabolisches Äquivalent). MET ist eine Einheit, die die Energiemenge schätzt, die Ihr Körper bei körperlicher Aktivität verbraucht.",
-    "formula": "Formel: Kalorien/Minute = (MET × Gewicht in kg × 3.5) / 200",
-    "limitations": "Die Ergebnisse sind Schätzungen basierend auf durchschnittlichen MET-Werten. Der tatsächliche Kalorienverbrauch kann je nach Trainingsintensität, Körperzusammensetzung, Alter, Geschlecht und Fitnessniveau variieren."
   }
 }

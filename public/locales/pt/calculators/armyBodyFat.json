@@ -22,15 +22,5 @@
     "ageGroup": "Faixa Etária",
     "maxAllowed": "Máximo Permitido",
     "status": "Padrão do Exército"
-  },
-  "info": {
-    "title": "Sobre a Calculadora de Gordura Corporal do Exército",
-    "description": "A Calculadora de Gordura Corporal do Exército usa a fórmula oficial do Exército dos EUA do Regulamento do Exército 600-9. Esta calculadora determina se você atende aos padrões de composição corporal exigidos para o serviço militar. A fórmula usa medidas de circunferência do pescoço, cintura e (para mulheres) quadris para estimar a porcentagem de gordura corporal.",
-    "standardsTitle": "Padrões de Gordura Corporal do Exército dos EUA",
-    "ageRange": "Faixa Etária",
-    "maleMax": "Máx. Homem %",
-    "femaleMax": "Máx. Mulher %",
-    "formula": "Fórmula Homens: % GC = 86.010 × log10(cintura - pescoço) - 70.041 × log10(altura) + 36.76 | Fórmula Mulheres: % GC = 163.205 × log10(cintura + quadril - pescoço) - 97.684 × log10(altura) - 78.387",
-    "limitations": "Esta calculadora usa o método oficial de teste de fita do Exército dos EUA. Para a medição mais precisa, tire a média de pelo menos três medições arredondadas para a 0,5 polegada ou cm mais próxima. Soldados que falharem podem solicitar testes suplementares usando sistemas DXA, InBody 770 ou Bod Pod."
   }
 }

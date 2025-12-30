@@ -33,12 +33,5 @@
     "extreme": "Estremo",
     "bmr": "MB (Metabolismo Basale)",
     "bmrDesc": "Calorie di cui il corpo ha bisogno a riposo"
-  },
-  "info": {
-    "title": "Informazioni sul Calcolatore di Calorie",
-    "description": "Questo calcolatore stima quante calorie giornaliere hai bisogno in base a età, sesso, peso, altezza e livello di attività fisica. Utilizza l'equazione di Mifflin-St Jeor, considerata una delle più accurate per calcolare il metabolismo basale (MB).",
-    "formulasTitle": "Formule Utilizzate",
-    "mifflinFormula": "Uomini: MB = 10 × peso(kg) + 6,25 × altezza(cm) - 5 × età + 5\nDonne: MB = 10 × peso(kg) + 6,25 × altezza(cm) - 5 × età - 161",
-    "limitations": "Queste stime sono linee guida generali. Il fabbisogno calorico individuale può variare in base al metabolismo, alla composizione corporea e ad altri fattori di salute. Consultare un professionista della salute per un piano personalizzato."
   }
 }

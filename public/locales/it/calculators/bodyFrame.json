@@ -32,14 +32,5 @@
       "medium": "Media",
       "large": "Grande"
     }
-  },
-  "info": {
-    "title": "Informazioni sulla Taglia della Struttura Corporea",
-    "description": "La taglia della struttura corporea (o taglia dello scheletro) si riferisce alla dimensione relativa delle tue ossa. Le persone con ossa più grandi hanno una struttura più grande, mentre quelle con ossa più piccole hanno una struttura più piccola. Conoscere la tua struttura corporea può aiutarti a stabilire obiettivi di peso realistici.",
-    "wristMethodTitle": "Metodo della Circonferenza del Polso",
-    "wristMethodDescription": "Questo metodo calcola un rapporto (valore r) tra la tua altezza e la circonferenza del polso. Un valore r più alto indica una struttura più piccola, mentre un valore r più basso suggerisce una struttura più grande. Questo è il metodo più semplice e comunemente utilizzato.",
-    "elbowMethodTitle": "Metodo della Larghezza del Gomito",
-    "elbowMethodDescription": "Questo metodo utilizza la larghezza del tuo gomito in relazione alla tua altezza per determinare la taglia della tua struttura. Per una misurazione accurata, estendi il braccio in avanti con il palmo verso l'alto, piega il gomito ad un angolo di 90 gradi e misura la distanza tra le due ossa prominenti su ciascun lato del gomito.",
-    "limitations": "Nota: La taglia della struttura corporea è solo un fattore nella determinazione del peso corporeo ideale. Altri fattori includono la composizione muscolare, la distribuzione del grasso e la salute generale. Consulta un professionista sanitario per consigli personalizzati."
   }
 }

@@ -34,13 +34,5 @@
     "fat": "Tłuszcze",
     "grams": "g",
     "percentage": "% kalorii"
-  },
-  "info": {
-    "title": "O Makroskładnikach",
-    "description": "Makroskładniki to składniki odżywcze, których organizm potrzebuje w dużych ilościach: białko, węglowodany i tłuszcze. Każdy odgrywa ważną rolę w zdrowiu i wydajności.",
-    "protein": "Białko: Niezbędne do budowy i naprawy tkanek. 4 kalorie na gram.",
-    "carbs": "Węglowodany: Główne źródło energii dla organizmu. 4 kalorie na gram.",
-    "fats": "Tłuszcze: Niezbędne do funkcjonowania hormonów i wchłaniania witamin. 9 kalorii na gram.",
-    "balance": "Ten kalkulator zapewnia zbilansowany rozkład makroskładników, ale możesz dostosować go do swoich konkretnych potrzeb lub preferencji dietetycznych."
   }
 }

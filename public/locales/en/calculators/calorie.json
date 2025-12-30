@@ -33,12 +33,5 @@
     "extreme": "Extreme",
     "bmr": "BMR (Basal Metabolic Rate)",
     "bmrDesc": "Calories your body needs at rest"
-  },
-  "info": {
-    "title": "About the Calorie Calculator",
-    "description": "This calculator estimates how many daily calories you need based on your age, gender, weight, height, and activity level. It uses the Mifflin-St Jeor equation, considered one of the most accurate for calculating basal metabolic rate (BMR).",
-    "formulasTitle": "Formulas Used",
-    "mifflinFormula": "Men: BMR = 10 × weight(kg) + 6.25 × height(cm) - 5 × age + 5\nWomen: BMR = 10 × weight(kg) + 6.25 × height(cm) - 5 × age - 161",
-    "limitations": "These estimates are general guidelines. Individual calorie needs may vary based on metabolism, body composition, and other health factors. Consult with a healthcare professional for a personalized plan."
   }
 }

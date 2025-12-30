@@ -24,11 +24,5 @@
     "recommendedTotalGain": "Prise Totale Recommandée",
     "recommendedAtWeek": "Recommandé à cette semaine",
     "weeklyGainTarget": "Objectif hebdomadaire (2e/3e trimestre)"
-  },
-  "info": {
-    "title": "À Propos de la Prise de Poids Pendant la Grossesse",
-    "description": "La prise de poids pendant la grossesse est essentielle pour la santé de la mère et du bébé. Les recommandations de l'Institute of Medicine (IOM) varient en fonction de l'IMC pré-grossesse et s'il s'agit d'une grossesse gémellaire.",
-    "guidelines": "Directives générales : Pendant le premier trimestre, la prise de poids est minime (0,5-1,8 kg). Au cours des deuxième et troisième trimestres, la prise de poids est régulière et progressive selon la catégorie d'IMC.",
-    "limitations": "Ce calculateur fournit des estimations générales basées sur les directives de l'IOM. Consultez toujours votre médecin ou professionnel de santé pour des recommandations personnalisées selon votre situation individuelle."
   }
 }

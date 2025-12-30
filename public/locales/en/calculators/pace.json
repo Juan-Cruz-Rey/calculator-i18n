@@ -24,11 +24,5 @@
     "yourDistance": "Your Distance",
     "commonRaces": "Common Race Times",
     "splits": "Split Times"
-  },
-  "info": {
-    "title": "About Running Pace",
-    "description": "Running pace is the time it takes you to cover a specific unit of distance (kilometer or mile). It's an essential metric for runners looking to plan training sessions and set race goals.",
-    "formula": "Formula: Pace = Total Time / Distance",
-    "tip": "Tip: A consistent pace is key to success in long-distance races. Use this calculator to plan your race strategy and maintain a sustainable pace."
   }
 }

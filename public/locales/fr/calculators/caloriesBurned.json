@@ -46,11 +46,5 @@
     "metValue": "Valeur MET",
     "caloriesPerMinute": "Calories par Minute",
     "caloriesPerHour": "Calories par Heure"
-  },
-  "info": {
-    "title": "À propos des Calories Brûlées",
-    "description": "Ce calculateur estime les calories brûlées pendant différentes activités physiques en utilisant les valeurs MET (Équivalent Métabolique de Tâche). Le MET est une unité qui estime la quantité d'énergie que votre corps utilise pendant l'activité physique.",
-    "formula": "Formule : Calories/minute = (MET × poids en kg × 3.5) / 200",
-    "limitations": "Les résultats sont des estimations basées sur des valeurs MET moyennes. La dépense calorique réelle peut varier en fonction de l'intensité de l'exercice, de la composition corporelle, de l'âge, du sexe et du niveau de forme physique."
   }
 }

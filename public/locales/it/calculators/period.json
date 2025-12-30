@@ -20,11 +20,5 @@
     "ovulationDate": "Data di Ovulazione",
     "fertilityWindow": "Finestra Fertile",
     "upcomingPeriods": "Prossimi Cicli"
-  },
-  "info": {
-    "title": "Informazioni sul Calcolatore del Ciclo",
-    "description": "Questo calcolatore prevede i tuoi prossimi cicli mestruali e le date di ovulazione in base al tuo ultimo ciclo e alla durata media del ciclo. L'ovulazione si verifica tipicamente 14 giorni prima del prossimo ciclo.",
-    "formula": "Formula: Prossimo ciclo = Ultimo ciclo + Durata del ciclo. Ovulazione = Prossimo ciclo - 14 giorni",
-    "limitations": "Nota: Questo calcolatore fornisce stime basate su cicli regolari. I cicli mestruali possono variare naturalmente. Per preoccupazioni mediche o irregolarità del ciclo, consulta un professionista sanitario."
   }
 }

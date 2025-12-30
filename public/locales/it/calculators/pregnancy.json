@@ -26,11 +26,5 @@
     "daysRemaining": "Giorni Rimanenti",
     "percentComplete": "Progresso",
     "milestones": "Tappe della Gravidanza"
-  },
-  "info": {
-    "title": "Sul Calcolatore di Gravidanza",
-    "description": "Questo calcolatore stima la data presunta del parto e monitora i tuoi progressi durante la gravidanza. La gravidanza dura tipicamente 40 settimane (280 giorni) dal primo giorno dell'ultima mestruazione, o 38 settimane dal concepimento.",
-    "formula": "Formula: Regola di Naegele - Data presunta = LMP + 280 giorni (aggiustata per la durata del ciclo)",
-    "limitations": "Nota: Questo calcolatore fornisce stime. Solo il 4% dei bambini nasce esattamente alla data prevista. Il 60% nasce entro una settimana dalla data stimata, e il 90% entro due settimane. Consulta sempre il tuo medico per un monitoraggio accurato della gravidanza."
   }
 }

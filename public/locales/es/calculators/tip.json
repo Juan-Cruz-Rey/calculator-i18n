@@ -19,15 +19,5 @@
     "totalAmount": "Total con propina",
     "tipPerPerson": "Propina por persona",
     "totalPerPerson": "Total por persona"
-  },
-  "info": {
-    "title": "Guía de Propinas",
-    "description": "La propina es una forma de mostrar aprecio por un buen servicio. Aunque las costumbres varían según el país y el tipo de servicio, aquí hay algunas pautas generales:",
-    "guidelinesTitle": "Pautas de propina comunes:",
-    "guideline1": "Servicio básico o regular",
-    "guideline2": "Buen servicio estándar",
-    "guideline3": "Servicio excelente o excepcional",
-    "guideline4": "Servicio extraordinario o grupos grandes",
-    "note": "Nota: Las costumbres de propina varían significativamente según la región y el tipo de establecimiento. En algunos países, la propina está incluida en la cuenta o no es costumbre dar propina."
   }
 }

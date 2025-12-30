@@ -33,12 +33,5 @@
     "extreme": "Extrême",
     "bmr": "MB (Métabolisme de Base)",
     "bmrDesc": "Calories dont votre corps a besoin au repos"
-  },
-  "info": {
-    "title": "À propos du Calculateur de Calories",
-    "description": "Ce calculateur estime combien de calories quotidiennes vous avez besoin selon votre âge, sexe, poids, taille et niveau d'activité physique. Il utilise l'équation de Mifflin-St Jeor, considérée comme l'une des plus précises pour calculer le métabolisme de base (MB).",
-    "formulasTitle": "Formules Utilisées",
-    "mifflinFormula": "Hommes : MB = 10 × poids(kg) + 6,25 × taille(cm) - 5 × âge + 5\nFemmes : MB = 10 × poids(kg) + 6,25 × taille(cm) - 5 × âge - 161",
-    "limitations": "Ces estimations sont des lignes directrices générales. Les besoins caloriques individuels peuvent varier en fonction du métabolisme, de la composition corporelle et d'autres facteurs de santé. Consultez un professionnel de la santé pour un plan personnalisé."
   }
 }

@@ -24,11 +24,5 @@
     "yourDistance": "Sua Distância",
     "commonRaces": "Tempos de Corridas Comuns",
     "splits": "Tempos Parciais"
-  },
-  "info": {
-    "title": "Sobre o Ritmo de Corrida",
-    "description": "O ritmo de corrida é o tempo que você leva para percorrer uma unidade específica de distância (quilômetro ou milha). É uma métrica essencial para corredores que desejam planejar treinos e estabelecer metas de corrida.",
-    "formula": "Fórmula: Ritmo = Tempo Total / Distância",
-    "tip": "Dica: Um ritmo consistente é essencial para o sucesso em corridas de longa distância. Use esta calculadora para planejar sua estratégia de corrida e manter um ritmo sustentável."
   }
 }

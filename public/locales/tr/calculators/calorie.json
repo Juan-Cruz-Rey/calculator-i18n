@@ -33,12 +33,5 @@
     "extreme": "Aşırı",
     "bmr": "BMR (Bazal Metabolizma Hızı)",
     "bmrDesc": "Vücudunuzun dinlenme halinde ihtiyaç duyduğu kalori"
-  },
-  "info": {
-    "title": "Kalori Hesaplayıcı Hakkında",
-    "description": "Bu hesaplayıcı, yaşınıza, cinsiyetinize, kilonuza, boyunuza ve aktivite seviyenize göre günlük kaç kaloriye ihtiyacınız olduğunu tahmin eder. Bazal metabolizma hızını (BMR) hesaplamak için en doğru yöntemlerden biri olarak kabul edilen Mifflin-St Jeor denklemini kullanır.",
-    "formulasTitle": "Kullanılan Formüller",
-    "mifflinFormula": "Erkekler: BMR = 10 × kilo(kg) + 6.25 × boy(cm) - 5 × yaş + 5\nKadınlar: BMR = 10 × kilo(kg) + 6.25 × boy(cm) - 5 × yaş - 161",
-    "limitations": "Bu tahminler genel yönergelerdir. Bireysel kalori ihtiyaçları metabolizmaya, vücut bileşimine ve diğer sağlık faktörlerine göre değişebilir. Kişiselleştirilmiş bir plan için bir sağlık uzmanına danışın."
   }
 }

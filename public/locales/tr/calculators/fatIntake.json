@@ -45,26 +45,5 @@
     "recommendedRange": "Önerilen Aralık",
     "tdee": "TDEE",
     "bmr": "BMH"
-  },
-  "info": {
-    "title": "Yağ Alımı Hakkında",
-    "description": "Diyetsel yağ, hormon üretimi, besin emilimi, hücre zarı yapısı ve enerji depolamasında önemli roller oynayan temel bir makro besindir. Bu hesaplayıcı, toplam günlük enerji harcamanıza (TDEE) ve fitness hedeflerinize göre günlük olarak tüketmeniz gereken optimal yağ miktarını belirlemenize yardımcı olur.",
-    "typesTitle": "Yağ Türleri",
-    "healthyFats": "Sağlıklı Yağlar (Doymamış)",
-    "healthyFatsDesc": "Bu yağlar kalp sağlığını iyileştirebilir, iltihabı azaltabilir ve genel refahı destekleyebilir:",
-    "healthyFats1": "Tekli doymamış yağlar: Zeytinyağı, avokado, kabuklu yemişler (badem, kaju, pekan)",
-    "healthyFats2": "Çoklu doymamış yağlar: Yağlı balık (somon, uskumru, sardalya), ceviz, keten tohumu",
-    "healthyFats3": "Omega-3 yağ asitleri: Beyin sağlığı ve iltihabın azaltılması için gereklidir",
-    "healthyFats4": "Omega-6 yağ asitleri: Büyüme ve gelişme için önemlidir (ölçülü olarak)",
-    "unhealthyFats": "Sağlıksız Yağlar",
-    "unhealthyFatsDesc": "Bu yağları sınırlayın veya kaçının çünkü sağlık risklerini artırabilirler:",
-    "unhealthyFats1": "Trans yağlar: İşlenmiş gıdalarda, kızartılmış gıdalarda ve kısmen hidrojenlenmiş yağlarda bulunur",
-    "unhealthyFats2": "Aşırı doymuş yağlar: Kırmızı et, tereyağı ve tam yağlı süt ürünlerinden büyük miktarlar",
-    "recommendationsTitle": "Öneriler",
-    "recommendation1": "Doymuş ve trans yağlar yerine sağlıklı doymamış yağları seçin",
-    "recommendation2": "Omega-3 için diyetinize haftada 2-3 kez yağlı balık ekleyin",
-    "recommendation3": "Tereyağı veya margarin yerine pişirmek için zeytinyağı veya avokado yağı kullanın",
-    "recommendation4": "Trans yağlardan kaçınmak ve doymuş yağları sınırlamak için besin etiketlerini okuyun",
-    "limitations": "Bu öneriler genel yönergelerdir. Bireysel yağ ihtiyaçları metabolizma, sağlık durumları ve özel diyet gereksinimlerine göre değişebilir. Kişiselleştirilmiş beslenme tavsiyesi için bir sağlık uzmanı veya diyetisyene danışın."
   }
 }

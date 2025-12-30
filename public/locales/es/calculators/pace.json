@@ -24,11 +24,5 @@
     "yourDistance": "Tu Distancia",
     "commonRaces": "Tiempos de Carreras Comunes",
     "splits": "Tiempos Parciales"
-  },
-  "info": {
-    "title": "Sobre el Ritmo de Carrera",
-    "description": "El ritmo de carrera es el tiempo que tardas en recorrer una unidad de distancia específica (kilómetro o milla). Es una métrica esencial para corredores que desean planificar entrenamientos y establecer objetivos de carrera.",
-    "formula": "Fórmula: Ritmo = Tiempo Total / Distancia",
-    "tip": "Consejo: Un ritmo constante es clave para el éxito en carreras de larga distancia. Usa esta calculadora para planificar tu estrategia de carrera y mantener un ritmo sostenible."
   }
 }

@@ -43,22 +43,5 @@
     "secondTrimesterEnd": "Fine del Secondo Trimestre (27 settimane)",
     "fullTerm": "A Termine (39 settimane)",
     "disclaimer": "Solo circa il 4% dei bambini nasce alla data presunta del parto. La maggior parte dei bambini nasce tra le 37 e le 42 settimane di gravidanza. Questo calcolatore fornisce una stima e non dovrebbe sostituire il consiglio medico professionale."
-  },
-  "info": {
-    "title": "Informazioni sul Calcolo della Data del Parto",
-    "description": "Un calcolatore della data del parto aiuta a stimare quando nascerà il tuo bambino. Il calcolatore utilizza diversi metodi per fornire una stima accurata della data del parto.",
-    "methods": {
-      "title": "Metodi di Calcolo",
-      "lmp": "Ultima Mestruazione (UMP):",
-      "lmpDesc": "Il metodo più comune, utilizzando la regola di Naegele (UMP + 280 giorni). Questo presuppone un ciclo di 28 giorni con ovulazione al giorno 14.",
-      "conception": "Data di Concepimento:",
-      "conceptionDesc": "Aggiunge 266 giorni (38 settimane) alla data di concepimento nota o stimata.",
-      "ultrasound": "Ecografia:",
-      "ultrasoundDesc": "Utilizza misurazioni dell'età gestazionale dall'ecografia, che è più accurata nel primo trimestre.",
-      "ivf": "Trasferimento FIV:",
-      "ivfDesc": "Il metodo più preciso poiché la data del trasferimento dell'embrione è nota esattamente. Tiene conto dell'età dell'embrione al trasferimento."
-    },
-    "formula": "Formula Standard: Data del Parto = UMP + 280 giorni (40 settimane)",
-    "limitations": "Ricorda che la data del parto è solo una stima. Solo circa il 4% dei bambini nasce esattamente alla data prevista del parto. La maggior parte nasce entro 2 settimane prima o dopo. Fattori come la durata del ciclo, il momento del concepimento e le variazioni individuali possono influenzare la data effettiva del parto. Consulta sempre il tuo operatore sanitario per consigli medici personalizzati."
   }
 }

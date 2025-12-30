@@ -20,11 +20,5 @@
     "periodDay": "Periodedag",
     "fertileWindow": "Vruchtbaar venster",
     "ovulation": "Ovulatie"
-  },
-  "info": {
-    "title": "Over de Ovulatie Calculator",
-    "description": "Deze calculator voorspelt uw ovulatiedatum en vruchtbaar venster op basis van uw laatste periode en cyclusduur. Ovulatie vindt meestal 14 dagen voor de volgende periode plaats. Het vruchtbare venster bevat de 5 dagen voor ovulatie en de dag van ovulatie.",
-    "formula": "Formule: Ovulatiedatum = Eerste dag van laatste periode + (Cyclusduur - 14 dagen)",
-    "limitations": "Opmerking: Deze calculator biedt schattingen op basis van gemiddelden. Cyclen kunnen van persoon tot persoon en van maand tot maand variëren. Voor grotere nauwkeurigheid, overweeg ovulatie bewakingsmethoden zoals basale temperatuur of ovulatie-voorspelingssets. Raadpleeg altijd uw arts voor gezinsplanning."
   }
 }

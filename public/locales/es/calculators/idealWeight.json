@@ -17,15 +17,5 @@
     "formulasTitle": "Resultados por Fórmula",
     "healthyRange": "Rango de Peso Saludable (según IMC)",
     "healthyRangeDesc": "Basado en un IMC saludable de 18.5 - 25"
-  },
-  "info": {
-    "title": "Sobre la Calculadora de Peso Ideal",
-    "description": "Esta calculadora estima tu peso ideal según tu altura y género utilizando cuatro fórmulas científicas reconocidas: Robinson (1983), Miller (1983), Devine (1974) y Hamwi (1964). También calcula un rango de peso saludable basado en el Índice de Masa Corporal (IMC) recomendado por la OMS.",
-    "formulasTitle": "Fórmulas Utilizadas",
-    "robinsonFormula": "Hombres: 52 kg + 1.9 kg por pulgada sobre 5 pies\nMujeres: 49 kg + 1.7 kg por pulgada sobre 5 pies",
-    "millerFormula": "Hombres: 56.2 kg + 1.41 kg por pulgada sobre 5 pies\nMujeres: 53.1 kg + 1.36 kg por pulgada sobre 5 pies",
-    "devineFormula": "Hombres: 50 kg + 2.3 kg por pulgada sobre 5 pies\nMujeres: 45.5 kg + 2.3 kg por pulgada sobre 5 pies",
-    "hamwiFormula": "Hombres: 48 kg + 2.7 kg por pulgada sobre 5 pies\nMujeres: 45.5 kg + 2.2 kg por pulgada sobre 5 pies",
-    "limitations": "Estas fórmulas proporcionan estimaciones generales del peso ideal. El peso ideal real puede variar según la composición corporal, estructura ósea, masa muscular y otros factores individuales. Consulta con un profesional de la salud para una evaluación personalizada."
   }
 }

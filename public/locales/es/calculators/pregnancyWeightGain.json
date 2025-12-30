@@ -24,11 +24,5 @@
     "recommendedTotalGain": "Aumento Total Recomendado",
     "recommendedAtWeek": "Recomendado en esta semana",
     "weeklyGainTarget": "Objetivo semanal (2º/3º trimestre)"
-  },
-  "info": {
-    "title": "Sobre el Aumento de Peso en el Embarazo",
-    "description": "El aumento de peso durante el embarazo es fundamental para la salud de la madre y el bebé. Las recomendaciones del Instituto de Medicina (IOM) varían según el IMC pregestacional y si se trata de un embarazo gemelar.",
-    "guidelines": "Guías generales: Durante el primer trimestre, el aumento es mínimo (1-2 kg). En el segundo y tercer trimestre, el aumento es constante y progresivo según la categoría de IMC.",
-    "limitations": "Esta calculadora proporciona estimaciones generales basadas en las guías del IOM. Consulta siempre con tu médico o profesional de la salud para recomendaciones personalizadas según tu situación individual."
   }
 }

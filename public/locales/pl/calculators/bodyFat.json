@@ -31,12 +31,5 @@
       "average": "Przeciętna",
       "obese": "Otyłość"
     }
-  },
-  "info": {
-    "title": "O Tkance Tłuszczowej",
-    "description": "Procent tkanki tłuszczowej w organizmie to całkowita masa tłuszczu podzielona przez całkowitą masę ciała, wyrażona w procentach. Zawiera tłuszcz niezbędny i tłuszcz magazynowy.",
-    "methodTitle": "Metoda US Navy",
-    "methodDescription": "Ten kalkulator używa metody US Navy, która szacuje procent tkanki tłuszczowej na podstawie pomiarów obwodu. Choć nie jest tak dokładna jak metody takie jak skanowanie DEXA, dostarcza rozsądnego oszacowania.",
-    "limitations": "Procent tkanki tłuszczowej może się różnić w zależności od wielu czynników. Ta metoda jest oszacowaniem i może nie być dokładna dla wszystkich typów ciała. W celu najbardziej precyzyjnego pomiaru rozważ profesjonalne metody takie jak DEXA, ważenie hydrostatyczne lub skaner BodPod."
   }
 }

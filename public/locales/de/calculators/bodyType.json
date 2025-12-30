@@ -21,24 +21,5 @@
     "wristRatio": "Größe/Handgelenk-Verhältnis",
     "ankleRatio": "Größe/Knöchel-Verhältnis",
     "characteristics": "Merkmale"
-  },
-  "info": {
-    "title": "Über Körpertypen",
-    "description": "Somatotypen oder Körpertypen wurden in den 1940er Jahren vom Psychologen William Sheldon entwickelt. Diese Klassifizierung unterteilt Körpertypen basierend auf der Skelettstruktur und Körperzusammensetzung in drei Hauptkategorien.",
-    "types": {
-      "ectomorph": {
-        "name": "Ektomorph",
-        "description": "Ektomorphe haben einen schlanken Körper mit langen Gliedmaßen, schnellem Stoffwechsel und Schwierigkeiten beim Zunehmen von Gewicht oder Muskelmasse. Sie haben typischerweise schmale Schultern und wenig Körperfett."
-      },
-      "mesomorph": {
-        "name": "Mesomorph",
-        "description": "Mesomorphe haben einen natürlich athletischen Körperbau mit breiten Schultern, schmaler Taille und Leichtigkeit beim Muskelaufbau. Sie haben einen effizienten Stoffwechsel und reagieren gut auf Training."
-      },
-      "endomorph": {
-        "name": "Endomorph",
-        "description": "Endomorphe haben eine größere Knochenstruktur, rundliche Körperform und Neigung zur Fettspeicherung. Sie haben einen langsameren Stoffwechsel und nehmen leicht zu, können aber auch Muskeln aufbauen."
-      }
-    },
-    "limitations": "Dieser Rechner liefert eine allgemeine Schätzung basierend auf Skelettmessungen. Die meisten Menschen sind eine Kombination von Körpertypen. Die Ergebnisse sollten als allgemeine Richtlinie und nicht als medizinische Diagnose verwendet werden."
   }
 }

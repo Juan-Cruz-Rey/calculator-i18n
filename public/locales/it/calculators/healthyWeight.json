@@ -27,13 +27,5 @@
     "hamwiFormula": "Hamwi",
     "hamwiSmallFrame": "Hamwi (Struttura Piccola)",
     "hamwiLargeFrame": "Hamwi (Struttura Grande)"
-  },
-  "info": {
-    "title": "Sul Peso Sano",
-    "description": "Il peso sano si basa sul range di BMI raccomandato dall'OMS (18.5-25). Questo calcolatore utilizza la tua altezza per determinare il tuo range di peso sano e confronta molteplici formule scientifiche per calcolare il tuo peso ideale.",
-    "bmiFormula": "Range BMI Sano: 18.5 - 25.0 kg/m²",
-    "formulasTitle": "Formule di Peso Ideale",
-    "formulasDescription": "Sono incluse quattro formule scientifiche riconosciute (Robinson 1983, Miller 1983, Devine 1974, Hamwi 1964). La formula di Hamwi è anche adattata per struttura corporea piccola (-10%) e struttura corporea grande (+10%).",
-    "limitations": "Queste formule sono stime generali per adulti di età pari o superiore a 18 anni. Non tengono conto della composizione corporea individuale, della massa muscolare o di condizioni di salute specifiche. Consulta un professionista sanitario per una guida personalizzata."
   }
 }

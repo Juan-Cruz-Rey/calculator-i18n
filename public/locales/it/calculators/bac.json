@@ -44,27 +44,5 @@
   "legalDisclaimer": {
     "title": "Disclaimer Legale",
     "text": "Questo calcolatore è solo per scopi educativi. Non fare affidamento su di esso per determinare se puoi guidare legalmente. I limiti legali di alcolemia variano per giurisdizione (0.05% in Italia, 0.00% per neopatentati). Usa sempre un autista designato o trasporto alternativo se hai bevuto."
-  },
-  "info": {
-    "title": "Informazioni sul Tasso Alcolemico",
-    "description": "Il tasso alcolemico (BAC) è una misura della concentrazione di alcol nel flusso sanguigno. È espresso in percentuale - ad esempio, 0.05% significa 0.05 grammi di alcol per 100 millilitri di sangue.",
-    "howItWorks": "Come Funziona Questo Calcolatore",
-    "formula": "Questo calcolatore usa la formula di Widmark per stimare il BAC in base all'alcol consumato, peso corporeo, sesso e tempo trascorso. La formula tiene conto del tasso di metabolizzazione dell'alcol (circa 0.015% di diminuzione del BAC per ora).",
-    "impairmentLevelsTitle": "Livelli di Compromissione",
-    "levels": {
-      "minimal": "Effetti minimi, leggera elevazione dell'umore, cambiamenti comportamentali sottili",
-      "mild": "Compromissione lieve, rilassamento, coordinazione ridotta, inibizioni ridotte",
-      "moderate": "Compromissione moderata, tempo di reazione ridotto, giudizio compromesso, difficoltà di concentrazione",
-      "significant": "Compromissione significativa, difficoltà a camminare e mantenere l'equilibrio, eloquio confuso, cattivo giudizio",
-      "severe": "Compromissione grave, rischio di intossicazione da alcol, perdita di coscienza, condizione potenzialmente letale"
-    },
-    "factorsTitle": "Fattori che Influenzano il BAC",
-    "factors": {
-      "weight": "Peso corporeo - le persone più pesanti hanno generalmente livelli più bassi con la stessa quantità di alcol",
-      "gender": "Sesso - le donne raggiungono generalmente livelli più alti degli uomini con la stessa quantità di alcol",
-      "time": "Tempo - il corpo metabolizza l'alcol a circa 0.015% per ora",
-      "food": "Consumo di cibo - mangiare prima o mentre si beve rallenta l'assorbimento dell'alcol",
-      "metabolism": "Metabolismo individuale - varia in base alla genetica, ai farmaci e alle condizioni di salute"
-    }
   }
 }

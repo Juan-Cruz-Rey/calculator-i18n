@@ -28,19 +28,5 @@
     "proteinPerKg": "Protéines par kg de poids",
     "caloriesFromProtein": "Calories des protéines",
     "percentageOfDiet": "Pourcentage du régime (base 2000 kcal)"
-  },
-  "info": {
-    "title": "À Propos des Protéines",
-    "description": "Les protéines sont des macronutriments essentiels qui jouent un rôle crucial dans la construction et la réparation des tissus, la production d'enzymes et d'hormones, et le maintien de la masse musculaire. La quantité de protéines dont vous avez besoin dépend de votre poids corporel, de votre niveau d'activité physique et de vos objectifs de santé.",
-    "recommendationsTitle": "Recommandations Générales",
-    "recommendations": {
-      "sedentary": "Personnes sédentaires",
-      "sedentaryValue": "0,8g par kg de poids corporel",
-      "active": "Personnes actives",
-      "activeValue": "1,2-1,5g par kg de poids corporel",
-      "athlete": "Athlètes et construction musculaire",
-      "athleteValue": "1,6-2,2g par kg de poids corporel"
-    },
-    "note": "Note : Ce calculateur fournit des estimations générales. Consultez un professionnel de la santé ou un nutritionniste pour des recommandations personnalisées, surtout si vous avez des conditions médicales spécifiques."
   }
 }

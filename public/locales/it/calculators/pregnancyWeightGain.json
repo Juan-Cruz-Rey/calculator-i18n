@@ -24,11 +24,5 @@
     "recommendedTotalGain": "Aumento Totale Raccomandato",
     "recommendedAtWeek": "Raccomandato in questa settimana",
     "weeklyGainTarget": "Obiettivo settimanale (2°/3° trimestre)"
-  },
-  "info": {
-    "title": "Sull'Aumento di Peso in Gravidanza",
-    "description": "L'aumento di peso durante la gravidanza è essenziale per la salute sia della madre che del bambino. Le raccomandazioni dell'Institute of Medicine (IOM) variano in base al BMI pre-gravidanza e se si tratta di una gravidanza gemellare.",
-    "guidelines": "Linee guida generali: Durante il primo trimestre, l'aumento di peso è minimo (0,5-1,8 kg). Nel secondo e terzo trimestre, l'aumento di peso è costante e progressivo in base alla categoria di BMI.",
-    "limitations": "Questo calcolatore fornisce stime generali basate sulle linee guida IOM. Consultare sempre il proprio medico o operatore sanitario per raccomandazioni personalizzate in base alla propria situazione individuale."
   }
 }

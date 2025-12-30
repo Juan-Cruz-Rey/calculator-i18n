@@ -43,22 +43,5 @@
     "secondTrimesterEnd": "Fin del Segundo Trimestre (27 semanas)",
     "fullTerm": "A Término (39 semanas)",
     "disclaimer": "Solo alrededor del 4% de los bebés nacen en su fecha estimada de parto. La mayoría de los bebés nacen entre las 37-42 semanas de embarazo. Esta calculadora proporciona una estimación y no debe reemplazar el consejo médico profesional."
-  },
-  "info": {
-    "title": "Acerca del Cálculo de la Fecha de Parto",
-    "description": "Una calculadora de fecha de parto ayuda a estimar cuándo nacerá tu bebé. La calculadora utiliza diferentes métodos para proporcionar una estimación precisa de tu fecha de parto.",
-    "methods": {
-      "title": "Métodos de Cálculo",
-      "lmp": "Última Menstruación (FUM):",
-      "lmpDesc": "El método más común, utilizando la regla de Naegele (FUM + 280 días). Esto asume un ciclo de 28 días con ovulación en el día 14.",
-      "conception": "Fecha de Concepción:",
-      "conceptionDesc": "Añade 266 días (38 semanas) a la fecha de concepción conocida o estimada.",
-      "ultrasound": "Ecografía:",
-      "ultrasoundDesc": "Utiliza medidas de edad gestacional de la ecografía, que es más precisa en el primer trimestre.",
-      "ivf": "Transferencia FIV:",
-      "ivfDesc": "El método más preciso ya que la fecha de transferencia del embrión se conoce exactamente. Tiene en cuenta la edad del embrión en la transferencia."
-    },
-    "formula": "Fórmula Estándar: Fecha de Parto = FUM + 280 días (40 semanas)",
-    "limitations": "Recuerda que la fecha de parto es solo una estimación. Solo alrededor del 4% de los bebés nacen en su fecha exacta de parto. La mayoría nacen dentro de las 2 semanas antes o después. Factores como la duración del ciclo, el momento de la concepción y las variaciones individuales pueden afectar la fecha real de parto. Siempre consulta con tu proveedor de atención médica para obtener asesoramiento médico personalizado."
   }
 }

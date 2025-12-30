@@ -19,12 +19,5 @@
     "healthyBMI": "Zdrowe BMI",
     "range": "Zakres",
     "average": "Średnia wszystkich metod"
-  },
-  "info": {
-    "title": "O Idealnej Wadze",
-    "description": "Idealna waga to oszacowanie zakresu wagi, który jest uważany za zdrowy dla danej osoby na podstawie wzrostu. Różne wzory zostały opracowane na przestrzeni lat, każdy z nieco innym podejściem.",
-    "methodsTitle": "Metody Obliczania",
-    "methodsDescription": "Ten kalkulator używa pięciu uznanych wzorów oraz zakresu zdrowego BMI (18,5-25). Średnia wszystkich metod daje dobre ogólne oszacowanie idealnej wagi.",
-    "limitations": "Idealna waga to jedynie szacunek. Zdrowa waga zależy od wielu czynników, w tym budowy ciała, masy mięśniowej, gęstości kości i ogólnego stanu zdrowia. Zawsze konsultuj się z profesjonalistą medycznym w sprawie celów wagowych."
   }
 }

@@ -30,16 +30,5 @@
     "formulas": "Comparación de Fórmulas",
     "calorieNeeds": "Necesidades Calóricas por Nivel de Actividad",
     "calorieNeedsDesc": "Calorías diarias necesarias según tu nivel de actividad física"
-  },
-  "info": {
-    "title": "Sobre la Calculadora de TMB",
-    "description": "La Tasa Metabólica Basal (TMB) es la cantidad de energía (calorías) que tu cuerpo necesita para funcionar en reposo completo. Representa aproximadamente el 60-75% de tu gasto energético diario total. Esta calculadora utiliza tres fórmulas científicamente validadas para estimar tu TMB.",
-    "formulasTitle": "Fórmulas Utilizadas",
-    "recommended": "Recomendada",
-    "mifflinFormula": "Hombres: TMB = 10 × peso(kg) + 6.25 × altura(cm) - 5 × edad + 5\nMujeres: TMB = 10 × peso(kg) + 6.25 × altura(cm) - 5 × edad - 161",
-    "harrisFormula": "Hombres: TMB = 13.397 × peso(kg) + 4.799 × altura(cm) - 5.677 × edad + 88.362\nMujeres: TMB = 9.247 × peso(kg) + 3.098 × altura(cm) - 4.330 × edad + 447.593",
-    "katchFormula": "TMB = 370 + 21.6 × masa magra(kg)\nMasa magra = peso × (1 - grasa corporal%/100)",
-    "katchNote": "Requiere conocer tu porcentaje de grasa corporal. Es más precisa para personas atléticas.",
-    "limitations": "Estas estimaciones son guías generales. Las necesidades metabólicas individuales pueden variar según factores genéticos, composición corporal, medicamentos y condiciones de salud. Consulta con un profesional de la salud para un plan personalizado."
   }
 }

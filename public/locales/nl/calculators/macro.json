@@ -49,11 +49,5 @@
     "protein": "Eiwit",
     "carbs": "Koolhydraten",
     "fats": "Vetten"
-  },
-  "info": {
-    "title": "Over Macronutriënten",
-    "description": "Macronutriënten (eiwit, koolhydraten en vetten) zijn voedingsstoffen die energie leveren aan uw lichaam. Deze calculator bepaalt uw totale dagelijkse energieverbruik en verdeelt calorieën in macronutriënten op basis van uw doel en voorkeurd diëttype.",
-    "formula": "Formule: BMR (Mifflin-St Jeor) × Activiteitsvermenigvuldiger ± Doelaanpassing",
-    "limitations": "Deze calculator biedt schattingen op basis van standaardformules. Individuele vereisten kunnen variëren. Raadpleeg een gezondheidsprofessional of voedingsdeskundige voor een persoonlijk plan."
   }
 }

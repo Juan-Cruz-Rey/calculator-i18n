@@ -26,11 +26,5 @@
     "daysRemaining": "Dias Restantes",
     "percentComplete": "Progresso",
     "milestones": "Marcos da Gravidez"
-  },
-  "info": {
-    "title": "Sobre a Calculadora de Gravidez",
-    "description": "Esta calculadora estima a data prevista do parto e acompanha o progresso durante a gravidez. A gravidez geralmente dura 40 semanas (280 dias) desde o primeiro dia do último período menstrual, ou 38 semanas desde a concepção.",
-    "formula": "Fórmula: Regra de Naegele - Data prevista = DUM + 280 dias (ajustado pela duração do ciclo)",
-    "limitations": "Nota: Esta calculadora fornece estimativas. Apenas 4% dos bebês nascem exatamente na data prevista. 60% nascem dentro de uma semana da data estimada, e 90% dentro de duas semanas. Sempre consulte seu médico para um acompanhamento preciso da gravidez."
   }
 }

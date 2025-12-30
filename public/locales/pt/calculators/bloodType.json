@@ -15,14 +15,5 @@
     "title": "Tipos Sanguíneos Possíveis da Criança",
     "possibleBloodTypes": "Tipos Sanguíneos Possíveis",
     "explanation": "Estes resultados mostram todos os tipos sanguíneos possíveis que seu filho pode herdar com base na genética dos pais. As porcentagens representam a probabilidade de cada tipo sanguíneo."
-  },
-  "info": {
-    "title": "Sobre a Herança do Tipo Sanguíneo",
-    "description": "O tipo sanguíneo é herdado dos pais seguindo as leis mendelianas da genética. Cada pai contribui com um alelo (gene) que determina o tipo sanguíneo ABO e o fator Rh da criança.",
-    "inheritanceTitle": "Herança do Tipo Sanguíneo ABO",
-    "inheritanceDescription": "O sistema de grupos sanguíneos ABO tem quatro tipos principais: A, B, AB e O. Cada pessoa herda um alelo de cada pai. O tipo A pode ser AA ou AO, o tipo B pode ser BB ou BO, o tipo AB é AB e o tipo O é OO. Os alelos A e B são codominantes, enquanto O é recessivo.",
-    "rhTitle": "Herança do Fator Rh",
-    "rhDescription": "O fator Rh pode ser positivo (+) ou negativo (-). O Rh positivo é dominante sobre o Rh negativo. Uma pessoa com Rh+ pode ter genótipos ++ ou +-, enquanto Rh- só pode ser --. Se pelo menos um alelo for +, o tipo sanguíneo será positivo.",
-    "limitations": "Esta calculadora fornece probabilidades baseadas em leis genéticas padrão. Os resultados reais podem variar devido a mutações raras ou outros fatores genéticos. Sempre consulte um profissional médico para determinar o tipo sanguíneo exato."
   }
 }

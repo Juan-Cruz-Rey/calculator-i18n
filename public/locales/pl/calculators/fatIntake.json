@@ -45,26 +45,5 @@
     "recommendedRange": "Zalecany Zakres",
     "tdee": "TDEE",
     "bmr": "PPM"
-  },
-  "info": {
-    "title": "O Spożyciu Tłuszczu",
-    "description": "Tłuszcz dietetyczny jest niezbędnym makroskładnikiem, który odgrywa kluczową rolę w produkcji hormonów, wchłanianiu składników odżywczych, strukturze błon komórkowych i magazynowaniu energii. Ten kalkulator pomaga określić optymalną ilość tłuszczu do spożycia dziennie w oparciu o całkowite dzienne wydatki energetyczne (TDEE) i cele fitness.",
-    "typesTitle": "Rodzaje Tłuszczów",
-    "healthyFats": "Zdrowe Tłuszcze (Nienasycone)",
-    "healthyFatsDesc": "Te tłuszcze mogą poprawić zdrowie serca, zmniejszyć stan zapalny i wspierać ogólne samopoczucie:",
-    "healthyFats1": "Tłuszcze jednonienasycone: Oliwa z oliwek, awokado, orzechy (migdały, orzechy nerkowca, pekan)",
-    "healthyFats2": "Tłuszcze wielonienasycone: Tłuste ryby (łosoś, makrela, sardynki), orzechy włoskie, siemię lniane",
-    "healthyFats3": "Kwasy tłuszczowe omega-3: Niezbędne dla zdrowia mózgu i zmniejszania stanu zapalnego",
-    "healthyFats4": "Kwasy tłuszczowe omega-6: Ważne dla wzrostu i rozwoju (w umiarkowanych ilościach)",
-    "unhealthyFats": "Niezdrowe Tłuszcze",
-    "unhealthyFatsDesc": "Ogranicz lub unikaj tych tłuszczów, ponieważ mogą zwiększać ryzyko zdrowotne:",
-    "unhealthyFats1": "Tłuszcze trans: Znajdują się w przetworzonej żywności, żywności smażonej i częściowo uwodornionych olejach",
-    "unhealthyFats2": "Nadmiar tłuszczów nasyconych: Duże ilości z czerwonego mięsa, masła i pełnotłustych produktów mlecznych",
-    "recommendationsTitle": "Zalecenia",
-    "recommendation1": "Wybieraj zdrowe tłuszcze nienasycone zamiast tłuszczów nasyconych i trans",
-    "recommendation2": "Włącz tłuste ryby do swojej diety 2-3 razy w tygodniu dla omega-3",
-    "recommendation3": "Używaj oliwy z oliwek lub oleju z awokado do gotowania zamiast masła lub margaryny",
-    "recommendation4": "Czytaj etykiety odżywcze, aby unikać tłuszczów trans i ograniczać tłuszcze nasycone",
-    "limitations": "Te zalecenia są ogólnymi wytycznymi. Indywidualne zapotrzebowanie na tłuszcze może się różnić w zależności od metabolizmu, stanu zdrowia i specyficznych wymagań dietetycznych. Skonsultuj się z profesjonalistą ds. zdrowia lub dietetykiem w celu uzyskania spersonalizowanych porad żywieniowych."
   }
 }

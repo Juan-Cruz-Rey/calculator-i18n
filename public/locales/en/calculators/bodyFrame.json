@@ -32,14 +32,5 @@
       "medium": "Medium",
       "large": "Large"
     }
-  },
-  "info": {
-    "title": "About Body Frame Size",
-    "description": "Body frame size (or skeletal frame size) refers to the relative size of your bones. People with larger bones have a larger frame, while those with smaller bones have a smaller frame. Knowing your body frame can help you set realistic weight goals.",
-    "wristMethodTitle": "Wrist Circumference Method",
-    "wristMethodDescription": "This method calculates a ratio (r-value) between your height and wrist circumference. A higher r-value indicates a smaller frame, while a lower r-value suggests a larger frame. This is the simplest and most commonly used method.",
-    "elbowMethodTitle": "Elbow Breadth Method",
-    "elbowMethodDescription": "This method uses the width of your elbow in relation to your height to determine your frame size. For an accurate measurement, extend your arm forward with palm up, bend your elbow to a 90-degree angle, and measure the distance between the two prominent bones on either side of your elbow.",
-    "limitations": "Note: Body frame size is just one factor in determining ideal body weight. Other factors include muscle composition, fat distribution, and overall health. Consult with a healthcare professional for personalized advice."
   }
 }

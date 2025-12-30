@@ -54,12 +54,5 @@
   "units": {
     "kcal": "kcal",
     "grams": "g"
-  },
-  "info": {
-    "title": "Over SmartPoints",
-    "description": "SmartPoints is een voedingssysteem dat waarden toekent aan voedsel op basis van calorieën, verzadigd vet, suiker en eiwit. Voedingsmiddelen met meer calorieën, verzadigd vet en suiker hebben hogere puntenwaarden, terwijl voedingsmiddelen met meer eiwit lagere waarden hebben. Dit stimuleert gezondere voedselkeuzes.",
-    "formulaTitle": "SmartPoints Formule",
-    "formula": "Punten = (Calorieën × 0,0305) + (Verzadigd Vet × 0,275) + (Suiker × 0,12) - (Eiwit × 0,098), afgerond op het dichtstbijzijnde gehele getal, minimum 0",
-    "limitations": "Deze calculator biedt alleen schattingen en mag geen professioneel dieetadvies vervangen. Raadpleeg altijd een zorgverlener of geregistreerde diëtist voor gepersonaliseerd voedingsadvies."
   }
 }

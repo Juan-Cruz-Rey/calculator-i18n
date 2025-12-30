@@ -18,10 +18,5 @@
     "totalHours": "Gesamte Stunden",
     "totalMinutes": "Gesamte Minuten",
     "nextBirthday": "Nächster Geburtstag"
-  },
-  "info": {
-    "title": "Über den Altersrechner",
-    "description": "Dieser Rechner ermöglicht es Ihnen, Ihr genaues Alter in Jahren, Monaten und Tagen zu bestimmen. Er berechnet auch Ihr Alter in Gesamtwochen, Tagen, Stunden und Minuten und bietet einen umfassenden Überblick über die seit Ihrer Geburt vergangene Zeit.",
-    "usage": "Sie können das optionale Feld 'Alter berechnen am' verwenden, um zu bestimmen, wie alt Sie an einem bestimmten Datum waren oder sein werden. Dies ist nützlich, um Ihr Alter an historischen oder zukünftigen Daten zu berechnen."
   }
 }

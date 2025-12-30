@@ -38,14 +38,5 @@
     "businessDays": "Días laborables",
     "weekdays": "Días de semana",
     "weekends": "Fines de semana"
-  },
-  "info": {
-    "title": "Acerca de la Calculadora de Fechas",
-    "description": "Esta calculadora de fechas te permite sumar o restar tiempo de una fecha específica, o calcular la diferencia entre dos fechas. Es útil para planificación de proyectos, cálculo de plazos, y mucho más.",
-    "useCasesTitle": "Casos de uso:",
-    "useCase1": "Calcular fechas de vencimiento y plazos de entrega",
-    "useCase2": "Determinar la duración de proyectos en días laborables",
-    "useCase3": "Planificar eventos y calcular fechas futuras",
-    "useCase4": "Calcular edad, aniversarios y tiempo transcurrido"
   }
 }

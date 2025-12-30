@@ -20,11 +20,5 @@
     "ovulationDate": "Ovulation Date",
     "fertilityWindow": "Fertility Window",
     "upcomingPeriods": "Upcoming Periods"
-  },
-  "info": {
-    "title": "About the Period Calculator",
-    "description": "This calculator predicts your upcoming menstrual periods and ovulation dates based on your last period and average cycle length. Ovulation typically occurs 14 days before the next period.",
-    "formula": "Formula: Next period = Last period + Cycle length. Ovulation = Next period - 14 days",
-    "limitations": "Note: This calculator provides estimates based on regular cycles. Menstrual cycles can vary naturally. For medical concerns or cycle irregularities, please consult with a healthcare professional."
   }
 }

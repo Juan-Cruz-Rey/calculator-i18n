@@ -24,11 +24,5 @@
     "recommendedTotalGain": "Ganho Total Recomendado",
     "recommendedAtWeek": "Recomendado nesta semana",
     "weeklyGainTarget": "Meta semanal (2º/3º trimestre)"
-  },
-  "info": {
-    "title": "Sobre o Ganho de Peso na Gravidez",
-    "description": "O ganho de peso durante a gravidez é essencial para a saúde da mãe e do bebê. As recomendações do Instituto de Medicina (IOM) variam de acordo com o IMC pré-gestacional e se é uma gravidez gemelar.",
-    "guidelines": "Diretrizes gerais: Durante o primeiro trimestre, o ganho é mínimo (0,5-1,8 kg). No segundo e terceiro trimestres, o ganho é constante e progressivo baseado na categoria de IMC.",
-    "limitations": "Esta calculadora fornece estimativas gerais baseadas nas diretrizes do IOM. Sempre consulte seu médico ou profissional de saúde para recomendações personalizadas de acordo com sua situação individual."
   }
 }

@@ -27,13 +27,5 @@
     "hamwiFormula": "Hamwi",
     "hamwiSmallFrame": "Hamwi (Klein Bouwtype)",
     "hamwiLargeFrame": "Hamwi (Groot Bouwtype)"
-  },
-  "info": {
-    "title": "Over Gezond Gewicht",
-    "description": "Gezond gewicht is gebaseerd op het WHO-aanbevolen BMI-bereik (18.5-25). Deze calculator gebruikt uw lengte om uw gezonde gewichtsbereik te bepalen en vergelijkt meerdere wetenschappelijke formules om uw ideale gewicht te berekenen.",
-    "bmiFormula": "Gezonde BMI-bereik: 18.5 - 25.0 kg/m²",
-    "formulasTitle": "Ideale Gewichtsformules",
-    "formulasDescription": "Vier erkende wetenschappelijke formules zijn opgenomen (Robinson 1983, Miller 1983, Devine 1974, Hamwi 1964). De Hamwi-formule wordt ook aangepast voor klein bouwtype (-10%) en groot bouwtype (+10%).",
-    "limitations": "Deze formules zijn algemene schattingen voor volwassenen van 18 jaar of ouder. Ze houden geen rekening met individuele lichaamssamenstelling, spiermassa of specifieke aandoeningen. Raadpleeg een gezondheidsprofessional voor persoonlijke begeleiding."
   }
 }

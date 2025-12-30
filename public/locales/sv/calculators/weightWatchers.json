@@ -54,12 +54,5 @@
   "units": {
     "kcal": "kcal",
     "grams": "g"
-  },
-  "info": {
-    "title": "Om SmartPoints",
-    "description": "SmartPoints är ett näringssystem som tilldelar värden till mat baserat på kalorier, mättat fett, socker och protein. Mat med mer kalorier, mättat fett och socker har högre poängvärden, medan mat med mer protein har lägre värden. Detta uppmuntrar hälsosammare matval.",
-    "formulaTitle": "SmartPoints Formel",
-    "formula": "Poäng = (Kalorier × 0,0305) + (Mättat Fett × 0,275) + (Socker × 0,12) - (Protein × 0,098), avrundat till närmaste heltal, minimum 0",
-    "limitations": "Denna kalkylator ger endast uppskattningar och bör inte ersätta professionell kostrådgivning. Rådfråga alltid en vårdgivare eller legitimerad dietist för personlig näringsvägledning."
   }
 }

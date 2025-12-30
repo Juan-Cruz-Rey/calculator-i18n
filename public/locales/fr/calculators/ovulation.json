@@ -20,11 +20,5 @@
     "periodDay": "Jour des règles",
     "fertileWindow": "Fenêtre fertile",
     "ovulation": "Ovulation"
-  },
-  "info": {
-    "title": "À Propos du Calculateur d'Ovulation",
-    "description": "Ce calculateur prédit votre date d'ovulation et fenêtre fertile en fonction de vos dernières règles et de la durée de votre cycle. L'ovulation se produit généralement 14 jours avant les prochaines règles. La fenêtre fertile comprend les 5 jours avant l'ovulation et le jour de l'ovulation.",
-    "formula": "Formule : Date d'ovulation = Premier jour des dernières règles + (Durée du cycle - 14 jours)",
-    "limitations": "Remarque : Ce calculateur fournit des estimations basées sur des moyennes. Les cycles peuvent varier d'une personne à l'autre et d'un mois à l'autre. Pour une plus grande précision, envisagez d'utiliser des méthodes de surveillance de l'ovulation telles que la température basale ou les kits de prédiction de l'ovulation. Consultez toujours votre médecin pour la planification familiale."
   }
 }

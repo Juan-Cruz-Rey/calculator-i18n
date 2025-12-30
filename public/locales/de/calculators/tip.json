@@ -19,15 +19,5 @@
     "totalAmount": "Gesamt mit Trinkgeld",
     "tipPerPerson": "Trinkgeld pro Person",
     "totalPerPerson": "Gesamt pro Person"
-  },
-  "info": {
-    "title": "Trinkgeld-Leitfaden",
-    "description": "Trinkgeld ist eine Möglichkeit, Wertschätzung für guten Service zu zeigen. Obwohl die Gepflogenheiten je nach Land und Art des Services variieren, hier einige allgemeine Richtlinien:",
-    "guidelinesTitle": "Gängige Trinkgeld-Richtlinien:",
-    "guideline1": "Grundlegender oder normaler Service",
-    "guideline2": "Guter Standard-Service",
-    "guideline3": "Ausgezeichneter oder außergewöhnlicher Service",
-    "guideline4": "Außerordentlicher Service oder große Gruppen",
-    "note": "Hinweis: Trinkgeld-Gepflogenheiten variieren erheblich je nach Region und Art der Einrichtung. In einigen Ländern ist das Trinkgeld in der Rechnung enthalten oder es ist nicht üblich, Trinkgeld zu geben."
   }
 }

@@ -15,14 +15,5 @@
     "title": "Gruppi Sanguigni Possibili del Bambino",
     "possibleBloodTypes": "Gruppi Sanguigni Possibili",
     "explanation": "Questi risultati mostrano tutti i possibili gruppi sanguigni che tuo figlio potrebbe ereditare in base alla genetica dei genitori. Le percentuali rappresentano la probabilità di ciascun gruppo sanguigno."
-  },
-  "info": {
-    "title": "Sull'Ereditarietà del Gruppo Sanguigno",
-    "description": "Il gruppo sanguigno è ereditato dai genitori seguendo le leggi mendeliane della genetica. Ogni genitore contribuisce con un allele (gene) che determina il gruppo sanguigno ABO e il fattore Rh del bambino.",
-    "inheritanceTitle": "Ereditarietà del Gruppo Sanguigno ABO",
-    "inheritanceDescription": "Il sistema dei gruppi sanguigni ABO ha quattro tipi principali: A, B, AB e O. Ogni persona eredita un allele da ciascun genitore. Il tipo A può essere AA o AO, il tipo B può essere BB o BO, il tipo AB è AB e il tipo O è OO. Gli alleli A e B sono codominanti, mentre O è recessivo.",
-    "rhTitle": "Ereditarietà del Fattore Rh",
-    "rhDescription": "Il fattore Rh può essere positivo (+) o negativo (-). L'Rh positivo è dominante sull'Rh negativo. Una persona con Rh+ può avere genotipi ++ o +-, mentre Rh- può essere solo --. Se almeno un allele è +, il gruppo sanguigno sarà positivo.",
-    "limitations": "Questo calcolatore fornisce probabilità basate su leggi genetiche standard. I risultati effettivi possono variare a causa di mutazioni rare o altri fattori genetici. Consultare sempre un professionista medico per determinare il gruppo sanguigno esatto."
   }
 }

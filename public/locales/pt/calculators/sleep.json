@@ -20,16 +20,5 @@
     "cycles": "{count} ciclos",
     "totalSleep": "{hours} horas de sono",
     "recommended": "RECOMENDADO"
-  },
-  "info": {
-    "title": "Sobre os Ciclos de Sono",
-    "description": "O sono ocorre em ciclos de aproximadamente 90 minutos. Acordar no final de um ciclo de sono ajuda você a se sentir mais descansado e alerta. Esta calculadora ajuda você a encontrar os melhores momentos para dormir ou acordar baseados nestes ciclos naturais.",
-    "cycleTitle": "Como funcionam os ciclos de sono?",
-    "cycleDescription": "Durante a noite, você passa por 4-6 ciclos de sono. Cada ciclo tem diferentes estágios: sono leve, sono profundo e sono REM. Acordar durante o sono profundo pode fazer você se sentir tonto e cansado. Esta calculadora considera 14 minutos para adormecer e sugere horários de despertar no final de ciclos de sono completos.",
-    "tipsTitle": "Dicas para melhor sono",
-    "tip1": "Adultos normalmente precisam de 7-9 horas de sono (5-6 ciclos completos)",
-    "tip2": "Mantenha um horário de sono consistente, mesmo nos fins de semana",
-    "tip3": "Evite cafeína e telas pelo menos 1 hora antes de dormir",
-    "tip4": "Crie um ambiente confortável: escuro, silencioso e fresco (15-19°C)"
   }
 }

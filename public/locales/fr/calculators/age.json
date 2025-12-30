@@ -18,10 +18,5 @@
     "totalHours": "Heures Totales",
     "totalMinutes": "Minutes Totales",
     "nextBirthday": "Prochain Anniversaire"
-  },
-  "info": {
-    "title": "À Propos du Calculateur d'Âge",
-    "description": "Ce calculateur vous permet de déterminer votre âge exact en années, mois et jours. Il calcule également votre âge en semaines, jours, heures et minutes totales, offrant une vue complète du temps écoulé depuis votre naissance.",
-    "usage": "Vous pouvez utiliser le champ optionnel 'Calculer l'âge à' pour déterminer quel âge vous aviez ou aurez à une date spécifique. Ceci est utile pour calculer votre âge à des dates historiques ou futures."
   }
 }

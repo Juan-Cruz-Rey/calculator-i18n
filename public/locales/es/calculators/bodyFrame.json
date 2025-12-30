@@ -32,14 +32,5 @@
       "medium": "Mediana",
       "large": "Grande"
     }
-  },
-  "info": {
-    "title": "Acerca de la estructura corporal",
-    "description": "La estructura corporal (o tamaño de esqueleto) se refiere al tamaño relativo de tus huesos. Las personas con huesos más grandes tienen una estructura más grande, mientras que aquellas con huesos más pequeños tienen una estructura más pequeña. Conocer tu estructura corporal puede ayudarte a establecer objetivos de peso realistas.",
-    "wristMethodTitle": "Método de circunferencia de muñeca",
-    "wristMethodDescription": "Este método calcula una relación (valor r) entre tu altura y la circunferencia de tu muñeca. Un valor r más alto indica una estructura más pequeña, mientras que un valor r más bajo sugiere una estructura más grande. Este es el método más simple y comúnmente utilizado.",
-    "elbowMethodTitle": "Método de anchura del codo",
-    "elbowMethodDescription": "Este método utiliza la anchura de tu codo en relación con tu altura para determinar el tamaño de tu estructura. Para obtener una medida precisa, extiende tu brazo hacia adelante con la palma hacia arriba, dobla el codo en un ángulo de 90 grados y mide la distancia entre los dos huesos prominentes de cada lado del codo.",
-    "limitations": "Nota: El tamaño de la estructura corporal es solo un factor para determinar el peso corporal ideal. Otros factores incluyen la composición muscular, la distribución de grasa y la salud general. Consulta con un profesional de la salud para obtener asesoramiento personalizado."
   }
 }

@@ -20,11 +20,5 @@
     "periodDay": "Periodentag",
     "fertileWindow": "Fruchtbares Fenster",
     "ovulation": "Eisprung"
-  },
-  "info": {
-    "title": "Über den Eisprungrechner",
-    "description": "Dieser Rechner sagt Ihren Eisprungtermin und Ihr fruchtbares Fenster basierend auf Ihrer letzten Periode und Zykluslänge voraus. Der Eisprung erfolgt typischerweise 14 Tage vor der nächsten Periode. Das fruchtbare Fenster umfasst die 5 Tage vor dem Eisprung und den Tag des Eisprungs.",
-    "formula": "Formel: Eisprungtermin = Erster Tag der letzten Periode + (Zykluslänge - 14 Tage)",
-    "limitations": "Hinweis: Dieser Rechner liefert Schätzungen basierend auf Durchschnittswerten. Zyklen können von Person zu Person und von Monat zu Monat variieren. Für größere Genauigkeit erwägen Sie die Verwendung von Eisprung-Überwachungsmethoden wie Basaltemperatur oder Eisprung-Vorhersage-Kits. Konsultieren Sie immer Ihren Arzt für Familienplanung."
   }
 }

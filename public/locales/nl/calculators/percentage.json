@@ -43,14 +43,5 @@
     "title": "Resultaat",
     "resultLabel": "Antwoord",
     "formulaLabel": "Berekening"
-  },
-  "info": {
-    "title": "Over Percentage Calculator",
-    "description": "Percentages zijn een manier om een getal uit te drukken als een fractie van 100. Deze calculator helpt u verschillende percentageproblemen op te lossen, inclusief het vinden van percentages, het berekenen van percentageverandering en het bepalen van percentageverschillen.",
-    "commonUses": "Veelvoorkomend Gebruik",
-    "use1": "Bereken kortingen en verkoopprijzen",
-    "use2": "Bepaal belastingbedragen en fooien",
-    "use3": "Analyseer financiële veranderingen en groeipercentages",
-    "use4": "Vergelijk waarden en statistieken"
   }
 }

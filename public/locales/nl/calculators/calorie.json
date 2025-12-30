@@ -33,12 +33,5 @@
     "extreme": "Extreem",
     "bmr": "BMR (Basaal Metabolisme)",
     "bmrDesc": "Calorieën die uw lichaam in rust nodig heeft"
-  },
-  "info": {
-    "title": "Over de Calorie Rekenmachine",
-    "description": "Deze rekenmachine schat hoeveel dagelijkse calorieën u nodig heeft op basis van uw leeftijd, geslacht, gewicht, lengte en activiteitenniveau. Het gebruikt de Mifflin-St Jeor vergelijking, beschouwd als een van de meest nauwkeurige voor het berekenen van het basaal metabolisme (BMR).",
-    "formulasTitle": "Gebruikte Formules",
-    "mifflinFormula": "Mannen: BMR = 10 × gewicht(kg) + 6,25 × lengte(cm) - 5 × leeftijd + 5\nVrouwen: BMR = 10 × gewicht(kg) + 6,25 × lengte(cm) - 5 × leeftijd - 161",
-    "limitations": "Deze schattingen zijn algemene richtlijnen. Individuele caloriebehoeften kunnen variëren op basis van metabolisme, lichaamssamenstelling en andere gezondheidsfactoren. Raadpleeg een zorgprofessional voor een gepersonaliseerd plan."
   }
 }

@@ -19,15 +19,5 @@
     "totalAmount": "Total com gorjeta",
     "tipPerPerson": "Gorjeta por pessoa",
     "totalPerPerson": "Total por pessoa"
-  },
-  "info": {
-    "title": "Guia de Gorjetas",
-    "description": "A gorjeta é uma forma de demonstrar apreço por um bom serviço. Embora os costumes variem por país e tipo de serviço, aqui estão algumas orientações gerais:",
-    "guidelinesTitle": "Diretrizes comuns de gorjeta:",
-    "guideline1": "Serviço básico ou regular",
-    "guideline2": "Bom serviço padrão",
-    "guideline3": "Serviço excelente ou excepcional",
-    "guideline4": "Serviço extraordinário ou grupos grandes",
-    "note": "Nota: Os costumes de gorjeta variam significativamente por região e tipo de estabelecimento. Em alguns países, a gorjeta está incluída na conta ou não é costume dar gorjeta."
   }
 }

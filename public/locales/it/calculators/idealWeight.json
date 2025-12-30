@@ -17,15 +17,5 @@
     "formulasTitle": "Risultati per Formula",
     "healthyRange": "Gamma di Peso Salutare (basata sull'IMC)",
     "healthyRangeDesc": "Basato su un IMC salutare di 18.5 - 25"
-  },
-  "info": {
-    "title": "Informazioni sul Calcolatore del Peso Ideale",
-    "description": "Questo calcolatore stima il tuo peso ideale in base alla tua altezza e al tuo genere utilizzando quattro formule scientifiche riconosciute: Robinson (1983), Miller (1983), Devine (1974) e Hamwi (1964). Calcola anche una gamma di peso salutare basata sull'Indice di Massa Corporea (IMC) raccomandato dall'OMS.",
-    "formulasTitle": "Formule Utilizzate",
-    "robinsonFormula": "Uomini: 52 kg + 1.9 kg per pollice sopra i 5 piedi\nDonne: 49 kg + 1.7 kg per pollice sopra i 5 piedi",
-    "millerFormula": "Uomini: 56.2 kg + 1.41 kg per pollice sopra i 5 piedi\nDonne: 53.1 kg + 1.36 kg per pollice sopra i 5 piedi",
-    "devineFormula": "Uomini: 50 kg + 2.3 kg per pollice sopra i 5 piedi\nDonne: 45.5 kg + 2.3 kg per pollice sopra i 5 piedi",
-    "hamwiFormula": "Uomini: 48 kg + 2.7 kg per pollice sopra i 5 piedi\nDonne: 45.5 kg + 2.2 kg per pollice sopra i 5 piedi",
-    "limitations": "Queste formule forniscono stime generali del peso ideale. Il peso ideale effettivo può variare in base alla composizione corporea, alla struttura ossea, alla massa muscolare e ad altri fattori individuali. Consulta un professionista della salute per una valutazione personalizzata."
   }
 }

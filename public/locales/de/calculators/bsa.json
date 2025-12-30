@@ -16,20 +16,5 @@
     "dubois": "Du Bois Formel",
     "mosteller": "Mosteller Formel",
     "haycock": "Haycock Formel"
-  },
-  "info": {
-    "title": "Über die Körperoberfläche (BSA)",
-    "description": "Die Körperoberfläche (BSA) ist die gemessene oder berechnete Oberfläche eines menschlichen Körpers. Sie wird in vielen medizinischen Messungen verwendet, einschließlich der Dosierung von Chemotherapie-Medikamenten, der Berechnung des Herzindex und mehr. Es gibt verschiedene Formeln zur Berechnung der BSA, wobei die gebräuchlichsten Du Bois, Mosteller und Haycock sind.",
-    "formulasTitle": "Verwendete Formeln",
-    "duboisTitle": "Du Bois Formel (1916)",
-    "duboisFormula": "BSA (m²) = 0.007184 × Größe^0.725 × Gewicht^0.425",
-    "duboisDescription": "Eine der ältesten und am häufigsten verwendeten Formeln. Entwickelt von D. Du Bois und E.F. Du Bois im Jahr 1916.",
-    "mostellerTitle": "Mosteller Formel (1987)",
-    "mostellerFormula": "BSA (m²) = √(Größe × Gewicht / 3600)",
-    "mostellerDescription": "Die am häufigsten verwendete Formel aufgrund ihrer Einfachheit und Genauigkeit. Sie ist einfacher zu berechnen und wird für den klinischen Gebrauch empfohlen.",
-    "haycockTitle": "Haycock Formel (1978)",
-    "haycockFormula": "BSA (m²) = 0.024265 × Größe^0.3964 × Gewicht^0.5378",
-    "haycockDescription": "Eine weitere häufig verwendete Formel, die genaue Ergebnisse über eine breite Palette von Körpergrößen liefert.",
-    "usage": "Die BSA wird hauptsächlich in der Medizin verwendet für: Medikamentendosierung (insbesondere Chemotherapie), Berechnung des Herzindex, Verbrennungsbewertung und Bestimmung des Flüssigkeitsbedarfs. Konsultieren Sie immer medizinische Fachkräfte für klinische Anwendungen."
   }
 }

@@ -20,16 +20,5 @@
     "cycles": "{count} ciclos",
     "totalSleep": "{hours} horas de sueño",
     "recommended": "RECOMENDADO"
-  },
-  "info": {
-    "title": "Sobre los Ciclos de Sueño",
-    "description": "El sueño ocurre en ciclos de aproximadamente 90 minutos. Despertar al final de un ciclo de sueño te ayuda a sentirte más descansado y alerta. Esta calculadora te ayuda a encontrar los mejores momentos para dormir o despertar basándose en estos ciclos naturales.",
-    "cycleTitle": "¿Cómo funcionan los ciclos de sueño?",
-    "cycleDescription": "Durante la noche, pasas por 4-6 ciclos de sueño. Cada ciclo tiene diferentes etapas: sueño ligero, sueño profundo y sueño REM. Despertar durante el sueño profundo puede hacerte sentir aturdido y cansado. Esta calculadora tiene en cuenta 14 minutos para quedarte dormido y sugiere horarios de despertar al final de ciclos de sueño completos.",
-    "tipsTitle": "Consejos para mejor sueño",
-    "tip1": "Los adultos necesitan típicamente 7-9 horas de sueño (5-6 ciclos completos)",
-    "tip2": "Mantén un horario de sueño consistente, incluso los fines de semana",
-    "tip3": "Evita la cafeína y las pantallas al menos 1 hora antes de acostarte",
-    "tip4": "Crea un ambiente cómodo: oscuro, silencioso y fresco (15-19°C)"
   }
 }

@@ -33,12 +33,5 @@
     "extreme": "Ekstremalny",
     "bmr": "BMR (Podstawowa Przemiana Materii)",
     "bmrDesc": "Kalorie potrzebne organizmowi w spoczynku"
-  },
-  "info": {
-    "title": "O Kalkulatorze Kalorii",
-    "description": "Ten kalkulator szacuje ile kalorii dziennie potrzebujesz na podstawie wieku, płci, wagi, wzrostu i poziomu aktywności fizycznej. Używa równania Mifflin-St Jeor, uznawanego za jedno z najdokładniejszych do obliczania podstawowej przemiany materii (BMR).",
-    "formulasTitle": "Użyte Wzory",
-    "mifflinFormula": "Mężczyźni: BMR = 10 × waga(kg) + 6,25 × wzrost(cm) - 5 × wiek + 5\nKobiety: BMR = 10 × waga(kg) + 6,25 × wzrost(cm) - 5 × wiek - 161",
-    "limitations": "Te szacunki są ogólnymi wytycznymi. Indywidualne zapotrzebowanie kaloryczne może się różnić w zależności od metabolizmu, składu ciała i innych czynników zdrowotnych. Skonsultuj się ze specjalistą ds. zdrowia w celu spersonalizowanego planu."
   }
 }

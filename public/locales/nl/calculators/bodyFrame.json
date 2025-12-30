@@ -32,14 +32,5 @@
       "medium": "Gemiddeld",
       "large": "Groot"
     }
-  },
-  "info": {
-    "title": "Over Lichaamsbouwtype",
-    "description": "Lichaamsbouwtype (of skeletaal bouwtype) verwijst naar de relatieve grootte van uw botten. Mensen met grotere botten hebben een groter bouwtype, terwijl degenen met kleinere botten een kleiner bouwtype hebben. Het kennen van uw lichaamsbouwtype kan u helpen realistische gewichtsdoelen te stellen.",
-    "wristMethodTitle": "Polsmaat Methode",
-    "wristMethodDescription": "Deze methode berekent een verhouding (r-waarde) tussen uw lengte en polsmaat. Een hogere r-waarde geeft een kleiner bouwtype aan, terwijl een lagere r-waarde een groter bouwtype suggereert. Dit is de eenvoudigste en meest gebruikte methode.",
-    "elbowMethodTitle": "Elleboogbreedte Methode",
-    "elbowMethodDescription": "Deze methode gebruikt de breedte van uw elleboog in relatie tot uw lengte om uw bouwtype te bepalen. Voor een nauwkeurige meting strekt u uw arm naar voren met de handpalm omhoog, buigt u uw elleboog naar een hoek van 90 graden en meet u de afstand tussen de twee uitstekende beenderen aan weerszijden van uw elleboog.",
-    "limitations": "Opmerking: Lichaamsbouwtype is slechts één factor bij het bepalen van ideaal lichaamsgewicht. Andere factoren zijn spiersamenstelling, vetdistributie en algemene gezondheid. Raadpleeg een gezondheidsprofessional voor persoonlijk advies."
   }
 }

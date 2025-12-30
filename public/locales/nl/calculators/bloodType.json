@@ -15,14 +15,5 @@
     "title": "Mogelijke Bloedgroepen van het Kind",
     "possibleBloodTypes": "Mogelijke Bloedgroepen",
     "explanation": "Deze resultaten tonen alle mogelijke bloedgroepen die uw kind kan erven op basis van genetica van de ouders. Percentages vertegenwoordigen de waarschijnlijkheid van elke bloedgroep."
-  },
-  "info": {
-    "title": "Over Bloedgroepovererving",
-    "description": "Bloedgroep wordt overgeërfd van ouders volgens de wetten van Mendelse erfelijkheid. Elke ouder draagt één allel (gen) bij dat de ABO-bloedgroep en Rhesus-factor van het kind bepaalt.",
-    "inheritanceTitle": "ABO-Bloedgroepovererving",
-    "inheritanceDescription": "Het ABO-bloedgroepsysteem heeft vier hoofdtypen: A, B, AB en O. Elke persoon erft één allel van beide ouders. Type A kan AA of AO zijn, type B kan BB of BO zijn, type AB is AB, en type O is OO. A- en B-allelen zijn co-dominant, terwijl O recessief is.",
-    "rhTitle": "Rhesus-Factorovererving",
-    "rhDescription": "De Rhesus-factor kan positief (+) of negatief (-) zijn. Rhesus-positief is dominant over Rhesus-negatief. Een persoon met Rh+ kan genotypen ++ of +- hebben, terwijl Rh- alleen -- kan zijn. Als ten minste één allel + is, zal de bloedgroep positief zijn.",
-    "limitations": "Deze calculator biedt waarschijnlijkheden op basis van standaardgenetische wetten. Werkelijke resultaten kunnen verschillen vanwege zeldzame mutaties of andere genetische factoren. Raadpleeg altijd een medische professional om exact bloedtype te bepalen."
   }
 }

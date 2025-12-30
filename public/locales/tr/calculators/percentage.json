@@ -43,14 +43,5 @@
     "title": "Sonuç",
     "resultLabel": "Cevap",
     "formulaLabel": "Hesaplama"
-  },
-  "info": {
-    "title": "Yüzde Hesaplayıcı Hakkında",
-    "description": "Yüzdeler, bir sayıyı 100'ün kesri olarak ifade etmenin bir yoludur. Bu hesaplayıcı, yüzde bulma, yüzde değişimini hesaplama ve yüzde farklarını belirleme dahil olmak üzere çeşitli yüzde sorunlarını çözmenize yardımcı olur.",
-    "commonUses": "Yaygın Kullanımlar",
-    "use1": "İndirimleri ve satış fiyatlarını hesaplayın",
-    "use2": "Vergi tutarlarını ve bahşişleri belirleyin",
-    "use3": "Finansal değişimleri ve büyüme oranlarını analiz edin",
-    "use4": "Değerleri ve istatistikleri karşılaştırın"
   }
 }

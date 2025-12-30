@@ -20,11 +20,5 @@
     "ovulationDate": "Ägglossning Datum",
     "fertilityWindow": "Fertility Window",
     "upcomingPeriods": "Upcoming Periods"
-  },
-  "info": {
-    "title": "Om the Menstruation Kalkylator",
-    "description": "This calculator predicts your upcoming menstrual periods and ovulation dates baserat på your last period and average cycle length. Ägglossning typically occurs 14 days before the next period.",
-    "formula": "Formel: Next period = Last period + Cycle length. Ägglossning = Next period - 14 days",
-    "limitations": "Note: This calculator provides estimates baserat på regular cycles. Menstrual cycles can vary naturally. For medical concerns or cycle irregularities, please consult with a healthcare professional."
   }
 }

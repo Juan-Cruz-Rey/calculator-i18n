@@ -19,15 +19,5 @@
     "totalAmount": "Razem z napiwkiem",
     "tipPerPerson": "Napiwek na osobę",
     "totalPerPerson": "Razem na osobę"
-  },
-  "info": {
-    "title": "Przewodnik po Napiwkach",
-    "description": "Napiwek to sposób na okazanie uznania za dobrą obsługę. Chociaż zwyczaje różnią się w zależności od kraju i rodzaju usługi, oto ogólne wytyczne:",
-    "guidelinesTitle": "Powszechne wytyczne dotyczące napiwków:",
-    "guideline1": "Podstawowa lub standardowa obsługa",
-    "guideline2": "Dobra standardowa obsługa",
-    "guideline3": "Doskonała lub wyjątkowa obsługa",
-    "guideline4": "Nadzwyczajna obsługa lub duże grupy",
-    "note": "Uwaga: Zwyczaje dotyczące napiwków różnią się znacząco w zależności od regionu i typu lokalu. W niektórych krajach napiwek jest wliczony w rachunek lub nie jest zwyczajem dawanie napiwków. W Polsce napiwek zwykle wynosi 10% rachunku i jest opcjonalny."
   }
 }

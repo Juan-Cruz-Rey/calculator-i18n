@@ -38,19 +38,5 @@
     "idealBodyFat": "Grasso Corporeo Ideale",
     "fatToLose": "Grasso da Perdere",
     "method": "Metodo Utilizzato"
-  },
-  "info": {
-    "title": "Informazioni sul Calcolatore di Grasso Corporeo",
-    "description": "Questo calcolatore stima la tua percentuale di grasso corporeo utilizzando il metodo della Marina degli Stati Uniti o il metodo basato sull'IMC. Il metodo della Marina utilizza misure della circonferenza corporea, mentre il metodo dell'IMC si basa su età, peso e altezza.",
-    "categoriesTitle": "Categorie di Grasso Corporeo (American Council on Exercise)",
-    "categoryLabel": "Categoria",
-    "menLabel": "Uomini",
-    "womenLabel": "Donne",
-    "essentialFat": "Grasso Essenziale",
-    "athletes": "Atleti",
-    "fitness": "Fitness",
-    "average": "Media",
-    "obese": "Obeso",
-    "limitations": "Questi risultati sono solo una stima. Per una misurazione più accurata del grasso corporeo, considera l'utilizzo di strumenti come l'analisi dell'impedenza bioelettrica o consulta un professionista sanitario."
   }
 }

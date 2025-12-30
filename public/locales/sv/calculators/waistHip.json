@@ -20,26 +20,5 @@
       "high": "High risk",
       "very-high": "Very high risk"
     }
-  },
-  "info": {
-    "title": "Om Midja-to-Höft Ratio",
-    "description": "The waist-to-hip ratio (WHR) is a measurement of body fat distribution. It is calculated by dividing waist circumference by hip circumference. A high WHR indicates more fat stored around the waist, which is associated with increased risk of health problems such as cardiovascular disease and type 2 diabetes.",
-    "formula": "Formel: WHR = waist circumference / hip circumference",
-    "thresholdsTitle": "Risk Thresholds",
-    "thresholds": {
-      "male": {
-        "low": "< 0.90: Low risk",
-        "moderate": "0.90 - 0.94: Måttlig risk",
-        "high": "0.95 - 0.99: High risk",
-        "veryHigh": "≥ 1.00: Very high risk"
-      },
-      "female": {
-        "low": "< 0.80: Low risk",
-        "moderate": "0.80 - 0.84: Måttlig risk",
-        "high": "0.85 - 0.89: High risk",
-        "veryHigh": "≥ 0.90: Very high risk"
-      }
-    },
-    "limitations": "WHR is a useful screening tool, but should be used alongside other health measures. It doesn't account for total body composition or other individual factors. Consult with a healthcare professional for a complete assessment."
   }
 }

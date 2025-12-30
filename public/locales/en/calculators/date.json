@@ -38,14 +38,5 @@
     "businessDays": "Business days",
     "weekdays": "Weekdays",
     "weekends": "Weekends"
-  },
-  "info": {
-    "title": "About the Date Calculator",
-    "description": "This date calculator allows you to add or subtract time from a specific date, or calculate the difference between two dates. It's useful for project planning, deadline calculation, and much more.",
-    "useCasesTitle": "Use cases:",
-    "useCase1": "Calculate due dates and delivery deadlines",
-    "useCase2": "Determine project duration in business days",
-    "useCase3": "Plan events and calculate future dates",
-    "useCase4": "Calculate age, anniversaries, and elapsed time"
   }
 }

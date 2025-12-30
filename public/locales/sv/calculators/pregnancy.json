@@ -26,11 +26,5 @@
     "daysRemaining": "Days Remaining",
     "percentComplete": "Progress",
     "milestones": "Graviditet Milestones"
-  },
-  "info": {
-    "title": "Om the Graviditet Kalkylator",
-    "description": "This calculator estimates your due date and tracks your progress throughout pregnancy. Graviditet typically lasts 40 weeks (280 days) from the first day of your last menstrual period, or 38 weeks from conception.",
-    "formula": "Formel: Naegele's Rule - Förfallo Datum = LMP + 280 days (adjusted for cycle length)",
-    "limitations": "Note: This calculator provides estimates. Only 4% of babies are born on their exact due date. 60% are born within one week of the estimated date, and 90% within two weeks. Always consult with your healthcare provider for accurate pregnancy tracking."
   }
 }

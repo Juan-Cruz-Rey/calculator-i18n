@@ -38,19 +38,5 @@
     "idealBodyFat": "Graisse Corporelle Idéale",
     "fatToLose": "Graisse à Perdre",
     "method": "Méthode Utilisée"
-  },
-  "info": {
-    "title": "À Propos du Calculateur de Graisse Corporelle",
-    "description": "Ce calculateur estime votre pourcentage de graisse corporelle en utilisant la méthode de la Marine américaine ou la méthode basée sur l'IMC. La méthode de la Marine utilise des mesures de circonférence corporelle, tandis que la méthode de l'IMC est basée sur votre âge, votre poids et votre taille.",
-    "categoriesTitle": "Catégories de Graisse Corporelle (American Council on Exercise)",
-    "categoryLabel": "Catégorie",
-    "menLabel": "Hommes",
-    "womenLabel": "Femmes",
-    "essentialFat": "Graisse Essentielle",
-    "athletes": "Athlètes",
-    "fitness": "Fitness",
-    "average": "Moyenne",
-    "obese": "Obèse",
-    "limitations": "Ces résultats ne sont qu'une estimation. Pour une mesure plus précise de la graisse corporelle, envisagez d'utiliser des instruments comme l'analyse d'impédance bioélectrique ou consultez un professionnel de la santé."
   }
 }

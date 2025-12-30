@@ -38,19 +38,5 @@
     "idealBodyFat": "Ideales Körperfett",
     "fatToLose": "Zu verlierendes Fett",
     "method": "Verwendete Methode"
-  },
-  "info": {
-    "title": "Über den Körperfett-Rechner",
-    "description": "Dieser Rechner schätzt Ihren Körperfettanteil mit der US-Navy-Methode oder der BMI-basierten Methode. Die Navy-Methode verwendet Körperumfangsmessungen, während die BMI-Methode auf Ihrem Alter, Gewicht und Größe basiert.",
-    "categoriesTitle": "Körperfett-Kategorien (American Council on Exercise)",
-    "categoryLabel": "Kategorie",
-    "menLabel": "Männer",
-    "womenLabel": "Frauen",
-    "essentialFat": "Essentielles Fett",
-    "athletes": "Athleten",
-    "fitness": "Fitness",
-    "average": "Durchschnitt",
-    "obese": "Adipös",
-    "limitations": "Diese Ergebnisse sind nur eine Schätzung. Für eine genauere Körperfettmessung sollten Sie Instrumente wie die bioelektrische Impedanzanalyse verwenden oder einen Gesundheitsfachmann konsultieren."
   }
 }

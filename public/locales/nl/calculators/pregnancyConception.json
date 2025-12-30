@@ -20,14 +20,5 @@
     "fertilityWindow": "Vruchtbaarheidsvenster",
     "dueDate": "Bevorderde Datum",
     "currentWeek": "Huidige Zwangerschapsweek"
-  },
-  "info": {
-    "title": "Over Zwangerschap Conceptie",
-    "description": "De zwangerschap conceptie calculator helpt u in te schatten wanneer conceptie waarschijnlijk plaatsvond op basis van uw laatste menstruatie of uw bevorderde datum. Deze informatie kan nuttig zijn om vaderschap te bepalen of om uw zwangerschap beter te begrijpen.",
-    "howItWorksTitle": "Hoe Het Werkt",
-    "howItWorks": "Conceptie vindt meestal rond ovulatie plaats, wat meestal 14 dagen voor het begin van uw volgende periode is. Voor een 28-daagse cyclus betekent dit dat ovulatie rond dag 14 plaatsvindt. Spermatozoa kan tot 5 dagen in het lichaam overleven, dus het vruchtbaarheidsvenster omvat de 5 dagen voor ovulatie plus de dag van ovulatie. De zwangerschap duurt ongeveer 280 dagen (40 weken) vanaf de eerste dag van uw laatste menstruatie.",
-    "accuracyTitle": "Nauwkeurigheid",
-    "accuracy": "Deze calculator biedt schattingen op basis van gemiddelde menstruatiecycli. Werkelijke ovulatie en conceptie kunnen van persoon tot persoon variëren. Factoren die nauwkeurigheid kunnen beïnvloeden zijn onregelmatige menstruatiecycli, late of vroege ovulatie en individuele variaties. Voor nauwkeurigere informatie over uw zwangerschap, raadpleeg uw zorgverlener.",
-    "disclaimer": "Opmerking: Deze calculator is alleen voor informatiedoeleinden en mag niet als medisch advies worden gebruikt. Raadpleeg altijd een gezondheidsprofessional voor nauwkeurige medische informatie over uw zwangerschap."
   }
 }

@@ -20,26 +20,5 @@
       "high": "Risco alto",
       "very-high": "Risco muito alto"
     }
-  },
-  "info": {
-    "title": "Sobre a Relação Cintura-Quadril",
-    "description": "A relação cintura-quadril (RCQ) é uma medida da distribuição de gordura corporal. É calculada dividindo a circunferência da cintura pela circunferência do quadril. Uma RCQ alta indica mais gordura armazenada na cintura, o que está associado a maior risco de problemas de saúde como doenças cardiovasculares e diabetes tipo 2.",
-    "formula": "Fórmula: RCQ = circunferência da cintura / circunferência do quadril",
-    "thresholdsTitle": "Limiares de Risco",
-    "thresholds": {
-      "male": {
-        "low": "< 0.90: Baixo risco",
-        "moderate": "0.90 - 0.94: Risco moderado",
-        "high": "0.95 - 0.99: Risco alto",
-        "veryHigh": "≥ 1.00: Risco muito alto"
-      },
-      "female": {
-        "low": "< 0.80: Baixo risco",
-        "moderate": "0.80 - 0.84: Risco moderado",
-        "high": "0.85 - 0.89: Risco alto",
-        "veryHigh": "≥ 0.90: Risco muito alto"
-      }
-    },
-    "limitations": "A RCQ é uma ferramenta de avaliação útil, mas deve ser usada junto com outras medidas de saúde. Não leva em conta a composição corporal total nem outros fatores individuais. Consulte um profissional de saúde para uma avaliação completa."
   }
 }

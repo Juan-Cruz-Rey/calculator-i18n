@@ -20,11 +20,5 @@
     "ovulationDate": "Date d'Ovulation",
     "fertilityWindow": "Fenêtre de Fertilité",
     "upcomingPeriods": "Règles à Venir"
-  },
-  "info": {
-    "title": "À Propos du Calculateur de Règles",
-    "description": "Ce calculateur prédit vos prochaines règles et dates d'ovulation en fonction de vos dernières règles et de la durée moyenne de votre cycle. L'ovulation se produit généralement 14 jours avant les prochaines règles.",
-    "formula": "Formule: Prochaines règles = Dernières règles + Durée du cycle. Ovulation = Prochaines règles - 14 jours",
-    "limitations": "Note: Ce calculateur fournit des estimations basées sur des cycles réguliers. Les cycles menstruels peuvent varier naturellement. Pour des préoccupations médicales ou des irrégularités du cycle, veuillez consulter un professionnel de santé."
   }
 }

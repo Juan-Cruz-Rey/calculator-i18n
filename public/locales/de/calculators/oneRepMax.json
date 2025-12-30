@@ -20,10 +20,5 @@
     "mayhew": "Mayhew-Formel",
     "oconner": "O'Conner-Formel",
     "wathan": "Wathan-Formel"
-  },
-  "info": {
-    "title": "Über 1RM",
-    "description": "Das Einer-Wiederholungs-Maximum (1RM) ist das maximale Gewicht, das Sie für eine einzelne Wiederholung einer bestimmten Übung heben können. Dieser Rechner verwendet sieben verschiedene Formeln, um Ihr 1RM basierend auf dem gehobenen Gewicht und der Anzahl der ausgeführten Wiederholungen zu schätzen.",
-    "note": "Diese Formeln sind am genauesten für 1-10 Wiederholungen. Wärmen Sie sich immer richtig auf und verwenden Sie einen Spotter bei maximalen Hebeversuchen."
   }
 }

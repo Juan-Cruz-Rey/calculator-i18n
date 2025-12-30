@@ -18,10 +18,5 @@
     "totalHours": "Toplam Saat",
     "totalMinutes": "Toplam Dakika",
     "nextBirthday": "Sonraki Doğum Günü"
-  },
-  "info": {
-    "title": "Yaş Hesaplayıcı Hakkında",
-    "description": "Bu hesaplayıcı, tam yaşınızı yıl, ay ve gün olarak belirlemenize olanak tanır. Ayrıca yaşınızı toplam hafta, gün, saat ve dakika olarak hesaplayarak doğumunuzdan bu yana geçen zamanın kapsamlı bir görünümünü sağlar.",
-    "usage": "Belirli bir tarihte kaç yaşında olduğunuzu veya olacağınızı belirlemek için isteğe bağlı 'Şu tarihte yaşı hesapla' alanını kullanabilirsiniz. Bu, geçmiş veya gelecek tarihlerde yaşınızı hesaplamak için kullanışlıdır."
   }
 }

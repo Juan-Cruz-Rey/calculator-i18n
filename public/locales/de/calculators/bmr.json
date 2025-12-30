@@ -30,16 +30,5 @@
     "formulas": "Formelvergleich",
     "calorieNeeds": "Kalorienbedarf nach Aktivitätsniveau",
     "calorieNeedsDesc": "Täglicher Kalorienbedarf basierend auf Ihrem körperlichen Aktivitätsniveau"
-  },
-  "info": {
-    "title": "Über den GU-Rechner",
-    "description": "Der Grundumsatz (GU) ist die Energiemenge (Kalorien), die Ihr Körper in völliger Ruhe benötigt. Er macht etwa 60-75% Ihres gesamten täglichen Energieverbrauchs aus. Dieser Rechner verwendet drei wissenschaftlich validierte Formeln zur Schätzung Ihres GU.",
-    "formulasTitle": "Verwendete Formeln",
-    "recommended": "Empfohlen",
-    "mifflinFormula": "Männer: GU = 10 × Gewicht(kg) + 6.25 × Größe(cm) - 5 × Alter + 5\nFrauen: GU = 10 × Gewicht(kg) + 6.25 × Größe(cm) - 5 × Alter - 161",
-    "harrisFormula": "Männer: GU = 13.397 × Gewicht(kg) + 4.799 × Größe(cm) - 5.677 × Alter + 88.362\nFrauen: GU = 9.247 × Gewicht(kg) + 3.098 × Größe(cm) - 4.330 × Alter + 447.593",
-    "katchFormula": "GU = 370 + 21.6 × fettfreie Masse(kg)\nFettfreie Masse = Gewicht × (1 - Körperfett%/100)",
-    "katchNote": "Erfordert Kenntnis Ihres Körperfettanteils. Genauer für sportliche Personen.",
-    "limitations": "Diese Schätzungen sind allgemeine Richtlinien. Der individuelle Stoffwechselbedarf kann aufgrund genetischer Faktoren, Körperzusammensetzung, Medikamenten und Gesundheitszustand variieren. Konsultieren Sie einen medizinischen Fachmann für einen personalisierten Plan."
   }
 }

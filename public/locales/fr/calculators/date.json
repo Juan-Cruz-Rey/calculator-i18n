@@ -38,14 +38,5 @@
     "businessDays": "Jours ouvrables",
     "weekdays": "Jours de la semaine",
     "weekends": "Week-ends"
-  },
-  "info": {
-    "title": "À propos de la Calculatrice de Dates",
-    "description": "Cette calculatrice de dates vous permet d'ajouter ou de soustraire du temps d'une date spécifique, ou de calculer la différence entre deux dates. Elle est utile pour la planification de projets, le calcul de délais et bien plus encore.",
-    "useCasesTitle": "Cas d'utilisation:",
-    "useCase1": "Calculer les dates d'échéance et les délais de livraison",
-    "useCase2": "Déterminer la durée des projets en jours ouvrables",
-    "useCase3": "Planifier des événements et calculer des dates futures",
-    "useCase4": "Calculer l'âge, les anniversaires et le temps écoulé"
   }
 }

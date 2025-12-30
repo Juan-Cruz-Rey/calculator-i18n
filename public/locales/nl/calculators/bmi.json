@@ -26,11 +26,5 @@
       "overweight": "Overgewicht",
       "obese": "Obesitas"
     }
-  },
-  "info": {
-    "title": "Over BMI",
-    "description": "Body Mass Index (BMI) is een maat voor lichaamsgewicht gebaseerd op het gewicht en de lengte van een persoon. Het wordt berekend door het gewicht in kilogram te delen door het kwadraat van de lengte in meters.",
-    "formula": "Formule: BMI = gewicht (kg) / lengte² (m)",
-    "limitations": "BMI is een nuttig screeninginstrument, maar het diagnosticeert geen lichaamsvet of iemands gezondheid. Mensen met meer spiermassa kunnen een hoge BMI hebben zonder overtollig vet."
   }
 }

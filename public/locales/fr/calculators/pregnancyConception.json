@@ -20,14 +20,5 @@
     "fertilityWindow": "Fenêtre de Fertilité",
     "dueDate": "Date d'Accouchement Prévue",
     "currentWeek": "Semaine Actuelle de Grossesse"
-  },
-  "info": {
-    "title": "À Propos de la Conception de Grossesse",
-    "description": "Le calculateur de conception de grossesse vous aide à estimer quand la conception a probablement eu lieu en fonction de vos dernières règles ou de votre date d'accouchement prévue. Cette information peut être utile pour déterminer la paternité ou simplement pour mieux comprendre votre grossesse.",
-    "howItWorksTitle": "Comment Ça Marche",
-    "howItWorks": "La conception se produit généralement autour de l'ovulation, qui a lieu généralement 14 jours avant le début de vos prochaines règles. Pour un cycle de 28 jours, cela signifie que l'ovulation se produit autour du jour 14. Les spermatozoïdes peuvent survivre jusqu'à 5 jours dans le corps, donc la fenêtre de fertilité inclut les 5 jours avant l'ovulation plus le jour de l'ovulation. La grossesse dure environ 280 jours (40 semaines) à partir du premier jour de vos dernières règles.",
-    "accuracyTitle": "Précision",
-    "accuracy": "Ce calculateur fournit des estimations basées sur des cycles menstruels moyens. L'ovulation réelle et la conception peuvent varier d'une personne à l'autre. Les facteurs qui peuvent affecter la précision incluent les cycles menstruels irréguliers, l'ovulation tardive ou précoce et les variations individuelles. Pour des informations plus précises sur votre grossesse, consultez votre professionnel de santé.",
-    "disclaimer": "Remarque : Ce calculateur est à titre informatif uniquement et ne doit pas être utilisé comme conseil médical. Consultez toujours un professionnel de santé pour obtenir des informations médicales précises sur votre grossesse."
   }
 }

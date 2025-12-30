@@ -20,16 +20,5 @@
     "cycles": "{count} cycles",
     "totalSleep": "{hours} heures de sommeil",
     "recommended": "RECOMMANDÉ"
-  },
-  "info": {
-    "title": "À Propos des Cycles de Sommeil",
-    "description": "Le sommeil se produit en cycles d'environ 90 minutes. Se réveiller à la fin d'un cycle de sommeil vous aide à vous sentir plus reposé et alerte. Ce calculateur vous aide à trouver les meilleurs moments pour dormir ou vous réveiller en fonction de ces cycles naturels.",
-    "cycleTitle": "Comment fonctionnent les cycles de sommeil?",
-    "cycleDescription": "Tout au long de la nuit, vous passez par 4 à 6 cycles de sommeil. Chaque cycle a différentes étapes: sommeil léger, sommeil profond et sommeil paradoxal. Se réveiller pendant le sommeil profond peut vous faire sentir groggy et fatigué. Ce calculateur prend en compte 14 minutes pour s'endormir et suggère des heures de réveil à la fin de cycles de sommeil complets.",
-    "tipsTitle": "Conseils pour mieux dormir",
-    "tip1": "Les adultes ont généralement besoin de 7 à 9 heures de sommeil (5 à 6 cycles complets)",
-    "tip2": "Maintenez un horaire de sommeil régulier, même le week-end",
-    "tip3": "Évitez la caféine et les écrans au moins 1 heure avant le coucher",
-    "tip4": "Créez un environnement confortable: sombre, silencieux et frais (15-19°C)"
   }
 }

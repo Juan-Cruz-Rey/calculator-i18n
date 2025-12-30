@@ -24,16 +24,5 @@
     "fatburn": "Vetverbranding",
     "cardio": "Cardio",
     "peak": "Piek"
-  },
-  "info": {
-    "title": "Over Hartslag",
-    "description": "Maximale hartslag is het hoogste aantal keren per minuut dat uw hart kan kloppen tijdens maximale fysieke inspanning. Dit wordt over het algemeen berekend met behulp van de formule 220 - leeftijd. Trainingszones helpen u uw trainingen te optimaliseren op basis van uw doelen.",
-    "formula": "Formule: Max HR = 220 - leeftijd | Target HR = ((Max HR - Hartslag in Rust) × % Intensiteit) + Hartslag in Rust",
-    "zonesExplained": "Trainingszones Uitgelegd",
-    "warmupDesc": "Ideaal voor opwarmen en afkoelen. Verbetert de algemene gezondheid en helpt bij herstel.",
-    "fatburnDesc": "Optimale zone voor vetverbranding. Bij deze intensiteit gebruikt uw lichaam vet als primaire energiebron.",
-    "cardioDesc": "Verbetert cardiovasculaire capaciteit en uithoudingsvermogen. Ideaal voor het verbeteren van aerobe prestaties.",
-    "peakDesc": "Hochintensieve training. Ontwikkelt snelheid en kracht. Alleen voor korte sessies.",
-    "limitations": "De formule 220 - leeftijd is een algemene schatting. Werkelijke maximale hartslag kan variëren op basis van individuele factoren zoals erfelijkheid, fitnessniveau en medicijnen. Raadpleeg een gezondheidsprofessional voordat u aan een intens trainingsprogramma begint."
   }
 }

@@ -54,12 +54,5 @@
   "units": {
     "kcal": "kcal",
     "grams": "g"
-  },
-  "info": {
-    "title": "Sobre SmartPoints",
-    "description": "SmartPoints é um sistema de nutrição que atribui valores aos alimentos com base em calorias, gordura saturada, açúcar e proteína. Alimentos com mais calorias, gordura saturada e açúcar têm valores de pontos mais altos, enquanto alimentos com mais proteína têm valores mais baixos. Isso incentiva escolhas alimentares mais saudáveis.",
-    "formulaTitle": "Fórmula SmartPoints",
-    "formula": "Pontos = (Calorias × 0.0305) + (Gordura Saturada × 0.275) + (Açúcar × 0.12) - (Proteína × 0.098), arredondado para o inteiro mais próximo, mínimo 0",
-    "limitations": "Esta calculadora fornece apenas estimativas e não deve substituir aconselhamento dietético profissional. Sempre consulte um profissional de saúde ou nutricionista registrado para orientação nutricional personalizada."
   }
 }

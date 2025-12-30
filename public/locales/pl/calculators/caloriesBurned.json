@@ -35,11 +35,5 @@
     "burpees": "burpees",
     "stairs": "pięter schodów",
     "apples": "jabłek"
-  },
-  "info": {
-    "title": "O Spalonych Kaloriach",
-    "description": "Liczba spalonych kalorii podczas ćwiczeń zależy od wagi ciała, intensywności aktywności i czasu trwania. Ten kalkulator używa wartości MET (Metaboliczny Ekwiwalent Zadania) do oszacowania wydatku energii.",
-    "met": "Wartości MET reprezentują, ile energii wydatkujesz podczas aktywności w porównaniu do spoczynku. Wyższa wartość MET oznacza bardziej intensywną aktywność i więcej spalonych kalorii.",
-    "accuracy": "Te szacunki są przybliżone. Rzeczywiste spalone kalorie mogą się różnić w zależności od metabolizmu, poziomu sprawności, techniki ćwiczeń i innych czynników indywidualnych."
   }
 }

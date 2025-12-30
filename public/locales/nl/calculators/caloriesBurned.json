@@ -46,11 +46,5 @@
     "metValue": "MET-waarde",
     "caloriesPerMinute": "Calorieën per Minuut",
     "caloriesPerHour": "Calorieën per Uur"
-  },
-  "info": {
-    "title": "Over Verbrande Calorieën",
-    "description": "Deze calculator schat calorieën verbrand tijdens verschillende fysieke activiteiten met behulp van MET (Metabolic Equivalent of Task) waarden. MET is een eenheid die schat hoeveel energie uw lichaam tijdens fysieke activiteit gebruikt.",
-    "formula": "Formule: Calorieën/minuut = (MET × gewicht in kg × 3.5) / 200",
-    "limitations": "De resultaten zijn schattingen op basis van gemiddelde MET-waarden. Werkelijk calorieënverbruik kan variëren op basis van trainingsintensiteit, lichaamssamenstelling, leeftijd, geslacht en fitnessniveau."
   }
 }

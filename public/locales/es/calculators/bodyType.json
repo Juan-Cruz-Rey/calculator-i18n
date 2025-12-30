@@ -21,24 +21,5 @@
     "wristRatio": "Ratio Altura/Muñeca",
     "ankleRatio": "Ratio Altura/Tobillo",
     "characteristics": "Características"
-  },
-  "info": {
-    "title": "Sobre los Tipos de Cuerpo",
-    "description": "Los somatotipos o tipos de cuerpo fueron desarrollados por el psicólogo William Sheldon en la década de 1940. Esta clasificación divide los tipos de cuerpo en tres categorías principales basadas en la estructura esquelética y la composición corporal.",
-    "types": {
-      "ectomorph": {
-        "name": "Ectomorfo",
-        "description": "Los ectomorfos tienen un cuerpo delgado con extremidades largas, metabolismo rápido y dificultad para ganar peso o masa muscular. Suelen tener hombros estrechos y poca grasa corporal."
-      },
-      "mesomorph": {
-        "name": "Mesomorfo",
-        "description": "Los mesomorfos tienen una estructura corporal naturalmente atlética con hombros anchos, cintura estrecha y facilidad para ganar músculo. Tienen un metabolismo eficiente y responden bien al entrenamiento."
-      },
-      "endomorph": {
-        "name": "Endomorfo",
-        "description": "Los endomorfos tienen una estructura ósea más grande, forma corporal redondeada y tendencia a almacenar grasa. Tienen un metabolismo más lento y ganan peso con facilidad, pero también pueden desarrollar músculo."
-      }
-    },
-    "limitations": "Esta calculadora proporciona una estimación general basada en medidas esqueléticas. La mayoría de las personas son una combinación de tipos de cuerpo. Los resultados deben usarse como guía general y no como diagnóstico médico."
   }
 }

@@ -43,11 +43,5 @@
       "high": "Ottimale per atleti e persone molto attive. Fornisce energia per allenamenti intensi."
     },
     "note": "Nota: L'apporto minimo raccomandato di carboidrati è di 130g al giorno per gli adulti. Consultare un professionista sanitario prima di apportare modifiche significative alla dieta."
-  },
-  "info": {
-    "title": "Sui Carboidrati",
-    "description": "I carboidrati sono uno dei tre macronutrienti principali (insieme a proteine e grassi) e la principale fonte di energia del corpo. La quantità ottimale di carboidrati varia in base al livello di attività, agli obiettivi e alle preferenze personali.",
-    "formula": "Formula: Grammi di carboidrati = (Calorie target × % carboidrati) ÷ 4 calorie/g",
-    "recommendations": "Le raccomandazioni sui carboidrati si basano su percentuali del tuo apporto calorico totale: Basso (10-30%), Moderato (30-50%), Alto (50-70%). La scelta dipende dai tuoi obiettivi, dal livello di attività e dalla risposta metabolica individuale."
   }
 }

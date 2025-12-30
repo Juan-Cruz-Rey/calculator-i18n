@@ -18,10 +18,5 @@
     "totalHours": "Totaal Uren",
     "totalMinutes": "Totaal Minuten",
     "nextBirthday": "Volgende Verjaardag"
-  },
-  "info": {
-    "title": "Over de Leeftijd Rekenmachine",
-    "description": "Deze rekenmachine stelt u in staat om uw exacte leeftijd in jaren, maanden en dagen te bepalen. Het berekent ook uw leeftijd in totaal weken, dagen, uren en minuten, en biedt een uitgebreid beeld van de tijd die is verstreken sinds uw geboorte.",
-    "usage": "U kunt het optionele veld 'Bereken leeftijd op' gebruiken om te bepalen hoe oud u was of zult zijn op een specifieke datum. Dit is handig voor het berekenen van uw leeftijd op historische of toekomstige data."
   }
 }

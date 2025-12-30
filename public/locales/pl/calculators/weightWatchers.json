@@ -54,12 +54,5 @@
   "units": {
     "kcal": "kcal",
     "grams": "g"
-  },
-  "info": {
-    "title": "O SmartPoints",
-    "description": "SmartPoints to system żywieniowy, który przypisuje wartości produktom spożywczym na podstawie kalorii, tłuszczów nasyconych, cukru i białka. Produkty bogate w kalorie, tłuszcze nasycone i cukier mają wyższe wartości punktowe, podczas gdy produkty bogate w białko mają niższe wartości. Zachęca to do zdrowszych wyborów żywieniowych.",
-    "formulaTitle": "Formuła SmartPoints",
-    "formula": "Punkty = (Kalorie × 0,0305) + (Tłuszcze Nasycone × 0,275) + (Cukier × 0,12) - (Białko × 0,098), zaokrąglone do najbliższej liczby całkowitej, minimum 0",
-    "limitations": "Ten kalkulator dostarcza tylko szacunków i nie powinien zastępować profesjonalnych porad dietetycznych. Zawsze konsultuj się z dostawcą opieki zdrowotnej lub zarejestrowanym dietetykiem w celu uzyskania spersonalizowanych wskazówek żywieniowych."
   }
 }

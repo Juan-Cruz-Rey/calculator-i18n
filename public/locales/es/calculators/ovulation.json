@@ -20,11 +20,5 @@
     "periodDay": "Día del período",
     "fertileWindow": "Ventana fértil",
     "ovulation": "Ovulación"
-  },
-  "info": {
-    "title": "Sobre la Calculadora de Ovulación",
-    "description": "Esta calculadora predice tu fecha de ovulación y ventana fértil basándose en tu último período y la duración de tu ciclo. La ovulación generalmente ocurre 14 días antes del próximo período. La ventana fértil incluye los 5 días antes de la ovulación y el día de la ovulación.",
-    "formula": "Fórmula: Fecha de ovulación = Primer día del último período + (Duración del ciclo - 14 días)",
-    "limitations": "Nota: Esta calculadora proporciona estimaciones basadas en promedios. Los ciclos pueden variar de persona a persona y de mes a mes. Para mayor precisión, considera usar métodos de monitoreo de la ovulación como temperatura basal o kits de predicción de ovulación. Consulta siempre con tu médico para planificación familiar."
   }
 }

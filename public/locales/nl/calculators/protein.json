@@ -28,19 +28,5 @@
     "proteinPerKg": "Eiwit per kg gewicht",
     "caloriesFromProtein": "Calorieën uit eiwit",
     "percentageOfDiet": "Percentage van dieet (2000 kcal basis)"
-  },
-  "info": {
-    "title": "Over Eiwit",
-    "description": "Eiwitten zijn essentiële macronutriënten die een cruciale rol spelen bij het bouwen en repareren van weefsels, het produceren van enzymen en hormonen en het behouden van spiermassa. De hoeveelheid eiwit die u nodig hebt, hangt af van uw lichaamsgewicht, fysieke activiteitenniveau en gezondheidsdoelen.",
-    "recommendationsTitle": "Algemene Aanbevelingen",
-    "recommendations": {
-      "sedentary": "Zittende personen",
-      "sedentaryValue": "0,8g per kg lichaamsgewicht",
-      "active": "Actieve personen",
-      "activeValue": "1,2-1,5g per kg lichaamsgewicht",
-      "athlete": "Atleten en spieropbouw",
-      "athleteValue": "1,6-2,2g per kg lichaamsgewicht"
-    },
-    "note": "Opmerking: Deze calculator biedt algemene schattingen. Raadpleeg een gezondheidsprofessional of voedingsdeskundige voor persoonlijke aanbevelingen, vooral als u specifieke medische aandoeningen hebt."
   }
 }

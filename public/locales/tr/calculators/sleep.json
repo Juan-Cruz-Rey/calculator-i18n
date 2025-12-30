@@ -20,16 +20,5 @@
     "cycles": "{count} döngü",
     "totalSleep": "{hours} saat uyku",
     "recommended": "ÖNERİLEN"
-  },
-  "info": {
-    "title": "Uyku Döngüleri Hakkında",
-    "description": "Uyku yaklaşık 90 dakikalık döngüler halinde gerçekleşir. Bir uyku döngüsünün sonunda uyanmak kendinizi daha dinlenmiş ve uyanık hissetmenize yardımcı olur. Bu hesaplayıcı, bu doğal döngülere dayalı olarak uyumak veya uyanmak için en iyi zamanları bulmanıza yardımcı olur.",
-    "cycleTitle": "Uyku döngüleri nasıl çalışır?",
-    "cycleDescription": "Gece boyunca 4-6 uyku döngüsünden geçersiniz. Her döngünün farklı aşamaları vardır: hafif uyku, derin uyku ve REM uykusu. Derin uyku sırasında uyanmak kendinizi halsiz ve yorgun hissetmenize neden olabilir. Bu hesaplayıcı uykuya dalmak için 14 dakika hesaba katar ve tam uyku döngülerinin sonunda uyanma saatleri önerir.",
-    "tipsTitle": "Daha iyi uyku için ipuçları",
-    "tip1": "Yetişkinler genellikle 7-9 saat uykuya ihtiyaç duyar (5-6 tam döngü)",
-    "tip2": "Hafta sonları bile tutarlı bir uyku programı tutun",
-    "tip3": "Yatmadan en az 1 saat önce kafein ve ekranlardan kaçının",
-    "tip4": "Rahat bir ortam yaratın: karanlık, sessiz ve serin (15-19°C)"
   }
 }

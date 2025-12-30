@@ -44,27 +44,5 @@
   "legalDisclaimer": {
     "title": "Yasal Sorumluluk Reddi",
     "text": "Bu hesaplayıcı yalnızca eğitim amaçlıdır. Yasal olarak araç kullanıp kullanamayacağınızı belirlemek için buna güvenmeyin. Yasal KAN sınırları yargı yetkisine göre değişir (Türkiye'de %0.05). Alkol aldıysanız her zaman belirlenen bir sürücü veya alternatif ulaşım kullanın."
-  },
-  "info": {
-    "title": "KAN Hakkında",
-    "description": "Kan Alkol Konsantrasyonu (KAN), kan dolaşımınızdaki alkol konsantrasyonunun bir ölçüsüdür. Yüzde olarak ifade edilir - örneğin, %0.05, 100 mililitre kanda 0.05 gram alkol anlamına gelir.",
-    "howItWorks": "Bu Hesaplayıcı Nasıl Çalışır",
-    "formula": "Bu hesaplayıcı, tüketilen alkole, vücut ağırlığına, cinsiyete ve geçen zamana göre KAN'ı tahmin etmek için Widmark formülünü kullanır. Formül, alkol metabolizma oranını dikkate alır (saatte yaklaşık %0.015 KAN azalması).",
-    "impairmentLevelsTitle": "Bozulma Seviyeleri",
-    "levels": {
-      "minimal": "Minimum etkiler, hafif ruh hali yükselmesi, davranışta ince değişiklikler",
-      "mild": "Hafif bozulma, gevşeme, azalmış koordinasyon, azalmış kısıtlamalar",
-      "moderate": "Orta derecede bozulma, azalmış tepki süresi, bozulmuş muhakeme, konsantrasyon güçlüğü",
-      "significant": "Önemli bozulma, yürüme ve dengelenme güçlüğü, peltek konuşma, kötü karar verme",
-      "severe": "Ciddi bozulma, alkol zehirlenmesi riski, bilinç kaybı, potansiyel olarak hayati tehlike yaratan durum"
-    },
-    "factorsTitle": "KAN'ı Etkileyen Faktörler",
-    "factors": {
-      "weight": "Vücut ağırlığı - daha ağır bireyler genellikle aynı miktarda alkolden daha düşük KAN'a sahiptir",
-      "gender": "Cinsiyet - kadınlar genellikle aynı miktarda alkolden erkeklerden daha yüksek KAN seviyelerine ulaşır",
-      "time": "Zaman - vücut alkolu saatte yaklaşık %0.015 KAN oranında metabolize eder",
-      "food": "Yiyecek tüketimi - içmeden önce veya içerken yemek yemek alkol emilimini yavaşlatır",
-      "metabolism": "Bireysel metabolizma - genetiğe, ilaçlara ve sağlık durumuna göre değişir"
-    }
   }
 }

@@ -24,16 +24,5 @@
     "fatburn": "Fett Burn",
     "cardio": "Cardio",
     "peak": "Peak"
-  },
-  "info": {
-    "title": "Om Hjärta Hastighet",
-    "description": "Maximum heart rate is the highest number of times your heart can beat per minute during maximum physical exertion. It's generally calculated using the formula 220 - age. Training zones help you optimize your workouts baserat på your goals.",
-    "formula": "Formel: Max HR = 220 - age | Target HR = ((Max HR - Resting HR) × % Intensity) + Resting HR",
-    "zonesExplained": "Training Zones Explained",
-    "warmupDesc": "Ideal for warming up and cooling down. Improves overall health and aids in recovery.",
-    "fatburnDesc": "Optimal zone for burning fat. At this intensity, your body uses fat as the primary energy source.",
-    "cardioDesc": "Improves cardiovascular capacity and endurance. Ideal for improving aerobic performance.",
-    "peakDesc": "High-intensity training. Develops speed and power. Only for short sessions.",
-    "limitations": "The 220 - age formula is a general estimate. Actual maximum heart rate can vary baserat på individual factors such as genetics, fitness level, and medications. Consult with a healthcare professional before starting an intense träning program."
   }
 }

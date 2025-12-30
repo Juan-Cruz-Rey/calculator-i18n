@@ -40,19 +40,5 @@
     "carbs": "Carbohidratos",
     "fats": "Grasas",
     "macrosNote": "Distribución balanceada: 30% proteínas, 40% carbohidratos, 30% grasas"
-  },
-  "info": {
-    "title": "Sobre la Calculadora de GECT",
-    "description": "El Gasto Energético Calórico Total (GECT) representa la cantidad total de calorías que tu cuerpo quema en un día, incluyendo la tasa metabólica basal (TMB) y las calorías quemadas por actividad física. Esta calculadora utiliza la ecuación de Mifflin-St Jeor para calcular tu TMB y la multiplica por tu nivel de actividad.",
-    "formulasTitle": "Fórmulas Utilizadas",
-    "mifflinFormula": "Hombres: TMB = 10 × peso(kg) + 6.25 × altura(cm) - 5 × edad + 5\nMujeres: TMB = 10 × peso(kg) + 6.25 × altura(cm) - 5 × edad - 161\nGECT = TMB × Factor de Actividad",
-    "activityTitle": "Niveles de Actividad",
-    "sedentaryDesc": "Poco o ningún ejercicio, trabajo de oficina",
-    "lightDesc": "Ejercicio ligero 1-3 veces por semana",
-    "moderateDesc": "Ejercicio moderado 4-5 veces por semana",
-    "activeDesc": "Ejercicio diario o ejercicio intenso 3-4 veces por semana",
-    "veryActiveDesc": "Ejercicio intenso 6-7 veces por semana",
-    "extraActiveDesc": "Ejercicio muy intenso diario más trabajo físico o entrenamiento dos veces al día",
-    "limitations": "Estas estimaciones son guías generales. Las necesidades energéticas individuales pueden variar según el metabolismo, la composición corporal, la genética y otros factores de salud. Consulta con un profesional de la salud o nutricionista para un plan personalizado."
   }
 }

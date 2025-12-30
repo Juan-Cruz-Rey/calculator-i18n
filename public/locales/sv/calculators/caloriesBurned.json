@@ -46,11 +46,5 @@
     "metValue": "MET Value",
     "caloriesPerMinute": "Kalorier per Minute",
     "caloriesPerHour": "Kalorier per Hour"
-  },
-  "info": {
-    "title": "Om Kalorier Förbrända",
-    "description": "This calculator estimates calories burned during different physical activities using MET (Metabolisk Equivalent of Task) values. MET is a unit that estimates the amount of energy your body uses during physical activity.",
-    "formula": "Formel: Kalorier/minute = (MET × weight in kg × 3.5) / 200",
-    "limitations": "Resultat are estimates baserat på average MET values. Actual calorie expenditure may vary baserat på träning intensity, body composition, age, gender, and fitness level."
   }
 }

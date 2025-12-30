@@ -26,11 +26,5 @@
     "daysRemaining": "Resterende Dagen",
     "percentComplete": "Voortgang",
     "milestones": "Zwangerschapsmijlpalen"
-  },
-  "info": {
-    "title": "Over de Zwangerschap Calculator",
-    "description": "Deze calculator schat uw bevorderde datum in en volgt uw voortgang tijdens de zwangerschap. De zwangerschap duurt meestal 40 weken (280 dagen) vanaf de eerste dag van uw laatste menstruatie, of 38 weken vanaf conceptie.",
-    "formula": "Formule: Naegele's Regel - Bevorderde Datum = LMP + 280 dagen (aangepast voor cyclushoofdlijn)",
-    "limitations": "Opmerking: Deze calculator biedt schattingen. Slechts 4% van de baby's wordt op hun exact bevorderde datum geboren. 60% wordt binnen een week van de geschatte datum geboren, en 90% binnen twee weken. Raadpleeg altijd uw zorgverlener voor nauwkeurige zwangerschapstracering."
   }
 }

@@ -45,26 +45,5 @@
     "recommendedRange": "Faixa Recomendada",
     "tdee": "TDEE",
     "bmr": "TMB"
-  },
-  "info": {
-    "title": "Sobre a Ingestão de Gordura",
-    "description": "A gordura dietética é um macronutriente essencial que desempenha papéis cruciais na produção de hormônios, absorção de nutrientes, estrutura da membrana celular e armazenamento de energia. Esta calculadora ajuda você a determinar a quantidade ideal de gordura a consumir diariamente com base no seu gasto energético diário total (TDEE) e objetivos de fitness.",
-    "typesTitle": "Tipos de Gorduras",
-    "healthyFats": "Gorduras Saudáveis (Insaturadas)",
-    "healthyFatsDesc": "Essas gorduras podem melhorar a saúde cardíaca, reduzir a inflamação e apoiar o bem-estar geral:",
-    "healthyFats1": "Gorduras monoinsaturadas: Azeite de oliva, abacates, nozes (amêndoas, castanhas de caju, nozes-pecã)",
-    "healthyFats2": "Gorduras poliinsaturadas: Peixes gordurosos (salmão, cavala, sardinha), nozes, sementes de linhaça",
-    "healthyFats3": "Ácidos graxos ômega-3: Essenciais para a saúde do cérebro e redução da inflamação",
-    "healthyFats4": "Ácidos graxos ômega-6: Importantes para crescimento e desenvolvimento (com moderação)",
-    "unhealthyFats": "Gorduras Não Saudáveis",
-    "unhealthyFatsDesc": "Limite ou evite essas gorduras, pois podem aumentar riscos à saúde:",
-    "unhealthyFats1": "Gorduras trans: Encontradas em alimentos processados, fritos e óleos parcialmente hidrogenados",
-    "unhealthyFats2": "Excesso de gorduras saturadas: Grandes quantidades de carne vermelha, manteiga e laticínios integrais",
-    "recommendationsTitle": "Recomendações",
-    "recommendation1": "Escolha gorduras insaturadas saudáveis em vez de gorduras saturadas e trans",
-    "recommendation2": "Inclua peixes gordurosos em sua dieta 2-3 vezes por semana para obter ômega-3",
-    "recommendation3": "Use azeite de oliva ou óleo de abacate para cozinhar em vez de manteiga ou margarina",
-    "recommendation4": "Leia os rótulos nutricionais para evitar gorduras trans e limitar gorduras saturadas",
-    "limitations": "Essas recomendações são diretrizes gerais. As necessidades individuais de gordura podem variar com base no metabolismo, condições de saúde e requisitos dietéticos específicos. Consulte um profissional de saúde ou nutricionista para aconselhamento nutricional personalizado."
   }
 }

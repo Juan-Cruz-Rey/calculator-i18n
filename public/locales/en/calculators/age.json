@@ -18,10 +18,5 @@
     "totalHours": "Total Hours",
     "totalMinutes": "Total Minutes",
     "nextBirthday": "Next Birthday"
-  },
-  "info": {
-    "title": "About the Age Calculator",
-    "description": "This calculator allows you to determine your exact age in years, months, and days. It also calculates your age in total weeks, days, hours, and minutes, providing a comprehensive view of the time elapsed since your birth.",
-    "usage": "You can use the optional 'Calculate age at' field to determine how old you were or will be on a specific date. This is useful for calculating your age on historical or future dates."
   }
 }

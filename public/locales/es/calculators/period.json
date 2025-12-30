@@ -20,11 +20,5 @@
     "ovulationDate": "Fecha de Ovulación",
     "fertilityWindow": "Ventana Fértil",
     "upcomingPeriods": "Próximos Períodos"
-  },
-  "info": {
-    "title": "Sobre la Calculadora de Período",
-    "description": "Esta calculadora predice tus próximos períodos menstruales y fechas de ovulación basándose en tu último período y la duración promedio de tu ciclo. La ovulación típicamente ocurre 14 días antes del próximo período.",
-    "formula": "Fórmula: Próximo período = Último período + Duración del ciclo. Ovulación = Próximo período - 14 días",
-    "limitations": "Nota: Esta calculadora proporciona estimaciones basadas en ciclos regulares. Los ciclos menstruales pueden variar naturalmente. Para preocupaciones médicas o irregularidades en el ciclo, consulta con un profesional de la salud."
   }
 }

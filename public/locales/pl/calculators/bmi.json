@@ -26,11 +26,5 @@
       "overweight": "Nadwaga",
       "obese": "Otyłość"
     }
-  },
-  "info": {
-    "title": "O wskaźniku BMI",
-    "description": "Wskaźnik Masy Ciała (BMI) to miara wagi ciała oparta na wadze i wzroście osoby. Oblicza się go dzieląc wagę w kilogramach przez kwadrat wzrostu w metrach.",
-    "formula": "Wzór: BMI = waga (kg) / wzrost² (m)",
-    "limitations": "BMI jest użytecznym narzędziem przesiewowym, ale nie diagnozuje tkanki tłuszczowej ani zdrowia osoby. Osoby o większej masie mięśniowej mogą mieć wysokie BMI bez nadmiaru tkanki tłuszczowej."
   }
 }

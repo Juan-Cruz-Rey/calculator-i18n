@@ -38,19 +38,5 @@
     "idealBodyFat": "Ideaal Lichaamsvet",
     "fatToLose": "Vet om te Verliezen",
     "method": "Gebruikte Methode"
-  },
-  "info": {
-    "title": "Over de Lichaamsvet Rekenmachine",
-    "description": "Deze rekenmachine schat uw lichaamsvetpercentage met behulp van de U.S. Navy Methode of BMI-gebaseerde methode. De Navy methode gebruikt lichaamsomtrek metingen, terwijl de BMI methode gebaseerd is op uw leeftijd, gewicht en lengte.",
-    "categoriesTitle": "Lichaamsvet Categorieën (American Council on Exercise)",
-    "categoryLabel": "Categorie",
-    "menLabel": "Mannen",
-    "womenLabel": "Vrouwen",
-    "essentialFat": "Essentieel Vet",
-    "athletes": "Atleten",
-    "fitness": "Fitness",
-    "average": "Gemiddeld",
-    "obese": "Obesitas",
-    "limitations": "Deze resultaten zijn slechts een schatting. Voor een nauwkeurigere lichaamsvetmeting, overweeg het gebruik van instrumenten zoals bio-elektrische impedantie analyse of raadpleeg een zorgprofessional."
   }
 }

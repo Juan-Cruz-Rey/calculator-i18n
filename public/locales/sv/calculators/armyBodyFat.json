@@ -22,15 +22,5 @@
     "ageGroup": "Ålder Group",
     "maxAllowed": "Max Allowed",
     "status": "Militär Standard"
-  },
-  "info": {
-    "title": "Om Militär Kropp Fett Kalkylator",
-    "description": "The Militär Kropp Fett Kalkylator uses the official US Militär formula from Militär Regulation 600-9. This calculator determines if you meet the body composition standards required for military service. The formula uses circumference measurements of the neck, waist, and (for females) hips to estimate body fat percentage.",
-    "standardsTitle": "US Militär Kropp Fett Standards",
-    "ageRange": "Ålder Range",
-    "maleMax": "Man Max %",
-    "femaleMax": "Kvinna Max %",
-    "formula": "Man Formel: % BF = 86.010 × log10(waist - neck) - 70.041 × log10(height) + 36.76 | Kvinna Formel: % BF = 163.205 × log10(waist + hip - neck) - 97.684 × log10(height) - 78.387",
-    "limitations": "This calculator uses the official US Militär tape test method. For the most accurate measurement, take the average of at least three measurements rounded to the nearest 0.5 inch or cm. Soldiers who fail may request supplemental testing using DXA, InBody 770, or Bod Pod systems."
   }
 }

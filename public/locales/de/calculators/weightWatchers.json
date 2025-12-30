@@ -54,12 +54,5 @@
   "units": {
     "kcal": "kcal",
     "grams": "g"
-  },
-  "info": {
-    "title": "Über SmartPoints",
-    "description": "SmartPoints ist ein Ernährungssystem, das Lebensmitteln Werte basierend auf Kalorien, gesättigten Fettsäuren, Zucker und Protein zuweist. Lebensmittel mit mehr Kalorien, gesättigten Fettsäuren und Zucker haben höhere Punktwerte, während Lebensmittel mit mehr Protein niedrigere Werte haben. Dies fördert gesündere Lebensmittelwahlen.",
-    "formulaTitle": "SmartPoints-Formel",
-    "formula": "Punkte = (Kalorien × 0,0305) + (Gesättigte Fettsäuren × 0,275) + (Zucker × 0,12) - (Protein × 0,098), auf die nächste ganze Zahl gerundet, Minimum 0",
-    "limitations": "Dieser Rechner liefert nur Schätzungen und sollte keine professionelle Ernährungsberatung ersetzen. Konsultieren Sie immer einen Gesundheitsdienstleister oder registrierten Ernährungsberater für personalisierte Ernährungsberatung."
   }
 }

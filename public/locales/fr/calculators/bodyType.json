@@ -21,24 +21,5 @@
     "wristRatio": "Rapport Taille/Poignet",
     "ankleRatio": "Rapport Taille/Cheville",
     "characteristics": "Caractéristiques"
-  },
-  "info": {
-    "title": "À Propos des Types de Morphologie",
-    "description": "Les somatotypes ou types de morphologie ont été développés par le psychologue William Sheldon dans les années 1940. Cette classification divise les types de morphologie en trois catégories principales basées sur la structure squelettique et la composition corporelle.",
-    "types": {
-      "ectomorph": {
-        "name": "Ectomorphe",
-        "description": "Les ectomorphes ont un corps mince avec des membres longs, un métabolisme rapide et des difficultés à prendre du poids ou de la masse musculaire. Ils ont généralement des épaules étroites et peu de graisse corporelle."
-      },
-      "mesomorph": {
-        "name": "Mésomorphe",
-        "description": "Les mésomorphes ont une constitution naturellement athlétique avec des épaules larges, une taille étroite et une facilité à prendre du muscle. Ils ont un métabolisme efficace et répondent bien à l'entraînement."
-      },
-      "endomorph": {
-        "name": "Endomorphe",
-        "description": "Les endomorphes ont une structure osseuse plus grande, une forme corporelle arrondie et une tendance à stocker les graisses. Ils ont un métabolisme plus lent et prennent du poids facilement, mais peuvent aussi développer du muscle."
-      }
-    },
-    "limitations": "Ce calculateur fournit une estimation générale basée sur les mesures squelettiques. La plupart des gens sont une combinaison de types de morphologie. Les résultats doivent être utilisés comme guide général et non comme diagnostic médical."
   }
 }

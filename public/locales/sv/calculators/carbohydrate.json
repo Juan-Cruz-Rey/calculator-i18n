@@ -43,11 +43,5 @@
       "high": "Optimal for athletes and very active individuals. Provides energy for intense workouts."
     },
     "note": "Note: The minimum recommended carbohydrate intake is 130g per day for adults. Consult with a healthcare professional before making significant dietary changes."
-  },
-  "info": {
-    "title": "Om Kolhydrater",
-    "description": "Kolhydrater are one of the three main macronutrients (along with protein and fat) and the body's primary source of energy. The optimal amount of carbohydrates varies baserat på your activity level, goals, and personal preferences.",
-    "formula": "Formel: Kolhydrat grams = (Target calories × % carbs) ÷ 4 calories/g",
-    "recommendations": "Kolhydrat recommendations are baserat på percentages of your total caloric intake: Low (10-30%), Måttlig (30-50%), High (50-70%). The choice depends on your goals, activity level, and individual metabolic response."
   }
 }

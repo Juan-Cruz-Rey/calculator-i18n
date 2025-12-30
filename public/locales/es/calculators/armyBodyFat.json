@@ -22,15 +22,5 @@
     "ageGroup": "Grupo de Edad",
     "maxAllowed": "Máximo Permitido",
     "status": "Estándar del Ejército"
-  },
-  "info": {
-    "title": "Acerca de la Calculadora de Grasa Corporal del Ejército",
-    "description": "La Calculadora de Grasa Corporal del Ejército utiliza la fórmula oficial del Ejército de EE.UU. del Reglamento del Ejército 600-9. Esta calculadora determina si cumples con los estándares de composición corporal requeridos para el servicio militar. La fórmula usa medidas de circunferencia del cuello, cintura y (para mujeres) caderas para estimar el porcentaje de grasa corporal.",
-    "standardsTitle": "Estándares de Grasa Corporal del Ejército de EE.UU.",
-    "ageRange": "Rango de Edad",
-    "maleMax": "Máx. Hombre %",
-    "femaleMax": "Máx. Mujer %",
-    "formula": "Fórmula Hombres: % GC = 86.010 × log10(cintura - cuello) - 70.041 × log10(altura) + 36.76 | Fórmula Mujeres: % GC = 163.205 × log10(cintura + cadera - cuello) - 97.684 × log10(altura) - 78.387",
-    "limitations": "Esta calculadora utiliza el método oficial de prueba de cinta del Ejército de EE.UU. Para la medición más precisa, toma el promedio de al menos tres mediciones redondeadas a la 0.5 pulgada o cm más cercana. Los soldados que no aprueben pueden solicitar pruebas suplementarias usando sistemas DXA, InBody 770 o Bod Pod."
   }
 }

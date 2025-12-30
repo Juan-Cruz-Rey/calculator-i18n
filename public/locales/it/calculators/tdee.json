@@ -40,19 +40,5 @@
     "carbs": "Carboidrati",
     "fats": "Grassi",
     "macrosNote": "Distribuzione equilibrata: 30% proteine, 40% carboidrati, 30% grassi"
-  },
-  "info": {
-    "title": "Informazioni sulla Calcolatrice FTGE",
-    "description": "Il Fabbisogno Totale Giornaliero di Energia (FTGE) rappresenta il numero totale di calorie che il tuo corpo brucia in un giorno, incluso il tuo metabolismo basale (MB) e le calorie bruciate attraverso l'attività fisica. Questa calcolatrice utilizza l'equazione di Mifflin-St Jeor per calcolare il tuo MB e lo moltiplica per il tuo livello di attività.",
-    "formulasTitle": "Formule utilizzate",
-    "mifflinFormula": "Uomini: MB = 10 × peso(kg) + 6.25 × altezza(cm) - 5 × età + 5\nDonne: MB = 10 × peso(kg) + 6.25 × altezza(cm) - 5 × età - 161\nFTGE = MB × Fattore di attività",
-    "activityTitle": "Livelli di attività",
-    "sedentaryDesc": "Poco o nessun esercizio, lavoro d'ufficio",
-    "lightDesc": "Esercizio leggero 1-3 volte a settimana",
-    "moderateDesc": "Esercizio moderato 4-5 volte a settimana",
-    "activeDesc": "Esercizio quotidiano o esercizio intenso 3-4 volte a settimana",
-    "veryActiveDesc": "Esercizio intenso 6-7 volte a settimana",
-    "extraActiveDesc": "Esercizio molto intenso quotidiano più lavoro fisico o allenamento due volte al giorno",
-    "limitations": "Queste stime sono linee guida generali. Il fabbisogno energetico individuale può variare in base al metabolismo, alla composizione corporea, alla genetica e ad altri fattori di salute. Consultare un professionista della salute o un nutrizionista per un piano personalizzato."
   }
 }

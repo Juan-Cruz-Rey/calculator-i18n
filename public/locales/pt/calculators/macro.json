@@ -49,11 +49,5 @@
     "protein": "Proteínas",
     "carbs": "Carboidratos",
     "fats": "Gorduras"
-  },
-  "info": {
-    "title": "Sobre os Macronutrientes",
-    "description": "Os macronutrientes (proteínas, carboidratos e gorduras) são os nutrientes que fornecem energia ao seu corpo. Esta calculadora determina seu gasto energético total diário e distribui as calorias em macronutrientes com base em seu objetivo e tipo de dieta preferido.",
-    "formula": "Fórmula: TMB (Mifflin-St Jeor) × Multiplicador de Atividade ± Ajuste de Objetivo",
-    "limitations": "Esta calculadora fornece estimativas baseadas em fórmulas padrão. Os requisitos individuais podem variar. Consulte um profissional de saúde ou nutricionista para um plano personalizado."
   }
 }

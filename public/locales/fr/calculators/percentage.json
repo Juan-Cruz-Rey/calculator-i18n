@@ -43,14 +43,5 @@
     "title": "Résultat",
     "resultLabel": "Réponse",
     "formulaLabel": "Calcul"
-  },
-  "info": {
-    "title": "À Propos de la Calculatrice de Pourcentage",
-    "description": "Les pourcentages sont une façon d'exprimer un nombre comme une fraction de 100. Cette calculatrice vous aide à résoudre divers problèmes de pourcentage, y compris trouver des pourcentages, calculer le changement en pourcentage et déterminer les différences en pourcentage.",
-    "commonUses": "Utilisations Courantes",
-    "use1": "Calculer les remises et les prix de vente",
-    "use2": "Déterminer les montants de taxes et les pourboires",
-    "use3": "Analyser les changements financiers et les taux de croissance",
-    "use4": "Comparer les valeurs et les statistiques"
   }
 }

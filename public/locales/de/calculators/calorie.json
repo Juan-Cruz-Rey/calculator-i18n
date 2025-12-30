@@ -33,12 +33,5 @@
     "extreme": "Extrem",
     "bmr": "GU (Grundumsatz)",
     "bmrDesc": "Kalorien, die Ihr Körper in Ruhe benötigt"
-  },
-  "info": {
-    "title": "Über den Kalorienrechner",
-    "description": "Dieser Rechner schätzt, wie viele tägliche Kalorien Sie benötigen, basierend auf Alter, Geschlecht, Gewicht, Größe und körperlicher Aktivität. Er verwendet die Mifflin-St Jeor-Gleichung, die als eine der genauesten zur Berechnung des Grundumsatzes (GU) gilt.",
-    "formulasTitle": "Verwendete Formeln",
-    "mifflinFormula": "Männer: GU = 10 × Gewicht(kg) + 6,25 × Größe(cm) - 5 × Alter + 5\nFrauen: GU = 10 × Gewicht(kg) + 6,25 × Größe(cm) - 5 × Alter - 161",
-    "limitations": "Diese Schätzungen sind allgemeine Richtlinien. Der individuelle Kalorienbedarf kann je nach Stoffwechsel, Körperzusammensetzung und anderen Gesundheitsfaktoren variieren. Konsultieren Sie einen Gesundheitsfachmann für einen personalisierten Plan."
   }
 }

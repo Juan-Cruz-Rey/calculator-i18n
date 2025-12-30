@@ -20,14 +20,5 @@
     "fertilityWindow": "Ventana de Fertilidad",
     "dueDate": "Fecha Probable de Parto",
     "currentWeek": "Semana Actual de Embarazo"
-  },
-  "info": {
-    "title": "Sobre la Concepción del Embarazo",
-    "description": "La calculadora de concepción del embarazo te ayuda a estimar cuándo probablemente ocurrió la concepción basándose en tu último período menstrual o tu fecha probable de parto. Esta información puede ser útil para determinar la paternidad o simplemente para entender mejor tu embarazo.",
-    "howItWorksTitle": "Cómo Funciona",
-    "howItWorks": "La concepción generalmente ocurre alrededor de la ovulación, que típicamente es 14 días antes del inicio de tu siguiente período. Para un ciclo de 28 días, esto significa que la ovulación ocurre alrededor del día 14. Los espermatozoides pueden sobrevivir hasta 5 días en el cuerpo, por lo que la ventana de fertilidad incluye los 5 días previos a la ovulación más el día de la ovulación. El embarazo dura aproximadamente 280 días (40 semanas) desde el primer día de tu último período menstrual.",
-    "accuracyTitle": "Precisión",
-    "accuracy": "Esta calculadora proporciona estimaciones basadas en ciclos menstruales promedio. La ovulación real y la concepción pueden variar de persona a persona. Los factores que pueden afectar la precisión incluyen ciclos menstruales irregulares, ovulación tardía o temprana, y variaciones individuales. Para información más precisa sobre tu embarazo, consulta con tu proveedor de atención médica.",
-    "disclaimer": "Nota: Esta calculadora es solo para fines informativos y no debe usarse como consejo médico. Siempre consulta con un profesional de la salud para obtener información médica precisa sobre tu embarazo."
   }
 }

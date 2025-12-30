@@ -26,11 +26,5 @@
       "overweight": "Overweight",
       "obese": "Obese"
     }
-  },
-  "info": {
-    "title": "About BMI",
-    "description": "Body Mass Index (BMI) is a measure of body weight based on a person's weight and height. It is calculated by dividing weight in kilograms by the square of height in meters.",
-    "formula": "Formula: BMI = weight (kg) / height² (m)",
-    "limitations": "BMI is a useful screening tool, but it does not diagnose body fatness or an individual's health. People with greater muscle mass may have a high BMI without excess fat."
   }
 }

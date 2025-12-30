@@ -19,12 +19,5 @@
     "large": "Duża",
     "ratio": "Wskaźnik wzrost/nadgarstek",
     "description": "Typ budowy"
-  },
-  "info": {
-    "title": "O Budowie Ciała",
-    "description": "Budowa ciała odnosi się do rozmiaru kości i ogólnej struktury ciała. Jest określana głównie przez genetykę i nie zmienia się z wiekiem czy wagą. Wiedza o budowie ciała pomaga ustalać realistyczne cele wagowe.",
-    "significance": "Dlaczego budowa ma znaczenie:\n• Wpływa na idealny zakres wagi\n• Osoby o większej budowie ważą więcej przy tym samym BMI\n• Pomaga ustalać realistyczne cele fitness\n• Ważne dla oceny zdrowej wagi",
-    "measurement": "Metoda obwodu nadgarstka jest prostym i dokładnym sposobem określenia budowy ciała. Nadgarstek nie zmienia się znacząco z wagą, co czyni go dobrym wskaźnikiem rozmiaru kości.",
-    "ranges": "Ogólne zakresy (wzrost/nadgarstek):\n• Mała budowa: >10,4 (mężczyźni), >11,0 (kobiety)\n• Średnia budowa: 9,6-10,4 (mężczyźni), 10,1-11,0 (kobiety)\n• Duża budowa: <9,6 (mężczyźni), <10,1 (kobiety)"
   }
 }

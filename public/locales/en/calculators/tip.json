@@ -19,15 +19,5 @@
     "totalAmount": "Total with Tip",
     "tipPerPerson": "Tip per Person",
     "totalPerPerson": "Total per Person"
-  },
-  "info": {
-    "title": "Tipping Guide",
-    "description": "Tipping is a way to show appreciation for good service. While customs vary by country and type of service, here are some general guidelines:",
-    "guidelinesTitle": "Common tipping guidelines:",
-    "guideline1": "Basic or fair service",
-    "guideline2": "Good standard service",
-    "guideline3": "Excellent or exceptional service",
-    "guideline4": "Extraordinary service or large groups",
-    "note": "Note: Tipping customs vary significantly by region and type of establishment. In some countries, tips are included in the bill or tipping is not customary."
   }
 }
