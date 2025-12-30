@@ -7,7 +7,6 @@ const { lang } = Astro.props as { lang: Locale };
 <div class="calculator-container">
   <div class="calculator-card">
     <h2>{t('gfr.title', lang)}</h2>
-    <p class="calculator-description">{t('gfr.description', lang)}</p>
 
     <form id="gfr-form" class="calculator-form">
       <!-- Age Input -->
@@ -144,26 +143,6 @@ const { lang } = Astro.props as { lang: Locale };
         <p>{t('gfr.disclaimer.text', lang)}</p>
       </div>
     </div>
-  </div>
-
-  <!-- About Section -->
-  <div class="info-section">
-    <h3>{t('gfr.about.title', lang)}</h3>
-    <p>{t('gfr.about.description', lang)}</p>
-
-    <h4>{t('gfr.about.whatIsGFR', lang)}</h4>
-    <p>{t('gfr.about.gfrExplanation', lang)}</p>
-
-    <h4>{t('gfr.about.ckdEpiEquation', lang)}</h4>
-    <p>{t('gfr.about.equationExplanation', lang)}</p>
-
-    <h4>{t('gfr.about.importantNotes', lang)}</h4>
-    <ul>
-      <li>{t('gfr.about.note1', lang)}</li>
-      <li>{t('gfr.about.note2', lang)}</li>
-      <li>{t('gfr.about.note3', lang)}</li>
-      <li>{t('gfr.about.note4', lang)}</li>
-    </ul>
   </div>
 </div>
 

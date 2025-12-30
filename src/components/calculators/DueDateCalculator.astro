@@ -193,21 +193,6 @@ const { lang } = Astro.props as { lang: Locale };
     </div>
   </div>
 
-  <div class="calculator-info">
-    <h2>{t('dueDate:info.title', lang)}</h2>
-    <p>{t('dueDate:info.description', lang)}</p>
-
-    <h3>{t('dueDate:info.methods.title', lang)}</h3>
-    <ul>
-      <li><strong>{t('dueDate:info.methods.lmp', lang)}</strong> {t('dueDate:info.methods.lmpDesc', lang)}</li>
-      <li><strong>{t('dueDate:info.methods.conception', lang)}</strong> {t('dueDate:info.methods.conceptionDesc', lang)}</li>
-      <li><strong>{t('dueDate:info.methods.ultrasound', lang)}</strong> {t('dueDate:info.methods.ultrasoundDesc', lang)}</li>
-      <li><strong>{t('dueDate:info.methods.ivf', lang)}</strong> {t('dueDate:info.methods.ivfDesc', lang)}</li>
-    </ul>
-
-    <p class="formula">{t('dueDate:info.formula', lang)}</p>
-    <p class="limitations">{t('dueDate:info.limitations', lang)}</p>
-  </div>
 </div>
 
 <style>

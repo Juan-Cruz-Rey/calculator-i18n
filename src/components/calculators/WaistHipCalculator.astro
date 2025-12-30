@@ -86,36 +86,6 @@ const { lang } = Astro.props as { lang: Locale };
       </div>
     </div>
   </div>
-
-  <div class="calculator-info">
-    <h2>{t('waistHip.info.title', lang)}</h2>
-    <p>{t('waistHip.info.description', lang)}</p>
-    <p class="formula">{t('waistHip.info.formula', lang)}</p>
-
-    <h3>{t('waistHip.info.thresholdsTitle', lang)}</h3>
-    <div class="thresholds">
-      <div class="threshold-section">
-        <h4>{t('common.male', lang)}</h4>
-        <ul>
-          <li>{t('waistHip.info.thresholds.male.low', lang)}</li>
-          <li>{t('waistHip.info.thresholds.male.moderate', lang)}</li>
-          <li>{t('waistHip.info.thresholds.male.high', lang)}</li>
-          <li>{t('waistHip.info.thresholds.male.veryHigh', lang)}</li>
-        </ul>
-      </div>
-      <div class="threshold-section">
-        <h4>{t('common.female', lang)}</h4>
-        <ul>
-          <li>{t('waistHip.info.thresholds.female.low', lang)}</li>
-          <li>{t('waistHip.info.thresholds.female.moderate', lang)}</li>
-          <li>{t('waistHip.info.thresholds.female.high', lang)}</li>
-          <li>{t('waistHip.info.thresholds.female.veryHigh', lang)}</li>
-        </ul>
-      </div>
-    </div>
-
-    <p class="limitations">{t('waistHip.info.limitations', lang)}</p>
-  </div>
 </div>
 
 <style>

@@ -154,28 +154,6 @@ const { lang } = Astro.props as { lang: Locale };
     </div>
   </div>
 
-  <div class="calculator-info">
-    <h2>{t('leanBodyMass:info.title', lang)}</h2>
-    <p>{t('leanBodyMass:info.description', lang)}</p>
-
-    <h3>{t('leanBodyMass:info.formulasTitle', lang)}</h3>
-    <div class="formulas-list">
-      <div class="formula-item">
-        <h4>Boer</h4>
-        <p class="formula">{t('leanBodyMass:info.boerFormula', lang)}</p>
-      </div>
-      <div class="formula-item">
-        <h4>James</h4>
-        <p class="formula">{t('leanBodyMass:info.jamesFormula', lang)}</p>
-      </div>
-      <div class="formula-item">
-        <h4>Hume</h4>
-        <p class="formula">{t('leanBodyMass:info.humeFormula', lang)}</p>
-      </div>
-    </div>
-
-    <p class="limitations">{t('leanBodyMass:info.limitations', lang)}</p>
-  </div>
 </div>
 
 <style>

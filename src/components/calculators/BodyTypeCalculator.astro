@@ -137,27 +137,6 @@ const { lang } = Astro.props as { lang: Locale };
     </div>
   </div>
 
-  <div class="calculator-info">
-    <h2>{t('bodyType.info.title', lang)}</h2>
-    <p>{t('bodyType.info.description', lang)}</p>
-
-    <div class="body-types-overview">
-      <div class="type-card">
-        <h3>{t('bodyType.info.types.ectomorph.name', lang)}</h3>
-        <p>{t('bodyType.info.types.ectomorph.description', lang)}</p>
-      </div>
-      <div class="type-card">
-        <h3>{t('bodyType.info.types.mesomorph.name', lang)}</h3>
-        <p>{t('bodyType.info.types.mesomorph.description', lang)}</p>
-      </div>
-      <div class="type-card">
-        <h3>{t('bodyType.info.types.endomorph.name', lang)}</h3>
-        <p>{t('bodyType.info.types.endomorph.description', lang)}</p>
-      </div>
-    </div>
-
-    <p class="limitations">{t('bodyType.info.limitations', lang)}</p>
-  </div>
 </div>
 
 <style>

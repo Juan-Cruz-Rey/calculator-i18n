@@ -186,30 +186,6 @@ const { lang } = Astro.props as { lang: Locale };
     </div>
   </div>
 
-  <div class="calculator-info">
-    <h2>{t('bmr.info.title', lang)}</h2>
-    <p>{t('bmr.info.description', lang)}</p>
-
-    <h3>{t('bmr.info.formulasTitle', lang)}</h3>
-
-    <div class="formula-box">
-      <strong>Mifflin-St Jeor ({t('bmr.info.recommended', lang)}):</strong>
-      <p class="formula">{t('bmr.info.mifflinFormula', lang)}</p>
-    </div>
-
-    <div class="formula-box">
-      <strong>Harris-Benedict:</strong>
-      <p class="formula">{t('bmr.info.harrisFormula', lang)}</p>
-    </div>
-
-    <div class="formula-box">
-      <strong>Katch-McArdle:</strong>
-      <p class="formula">{t('bmr.info.katchFormula', lang)}</p>
-      <small>{t('bmr.info.katchNote', lang)}</small>
-    </div>
-
-    <p class="limitations">{t('bmr.info.limitations', lang)}</p>
-  </div>
 </div>
 
 <style>

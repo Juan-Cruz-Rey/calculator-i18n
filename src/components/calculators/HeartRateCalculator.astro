@@ -77,33 +77,6 @@ const { lang } = Astro.props as { lang: Locale };
     </div>
   </div>
 
-  <div class="calculator-info">
-    <h2>{t('heartRate.info.title', lang)}</h2>
-    <p>{t('heartRate.info.description', lang)}</p>
-    <p class="formula">{t('heartRate.info.formula', lang)}</p>
-
-    <h3>{t('heartRate.info.zonesExplained', lang)}</h3>
-    <div class="zones-info">
-      <div class="zone-info">
-        <strong>{t('heartRate.zones.warmup', lang)} (50-60%):</strong>
-        <p>{t('heartRate.info.warmupDesc', lang)}</p>
-      </div>
-      <div class="zone-info">
-        <strong>{t('heartRate.zones.fatburn', lang)} (60-70%):</strong>
-        <p>{t('heartRate.info.fatburnDesc', lang)}</p>
-      </div>
-      <div class="zone-info">
-        <strong>{t('heartRate.zones.cardio', lang)} (70-85%):</strong>
-        <p>{t('heartRate.info.cardioDesc', lang)}</p>
-      </div>
-      <div class="zone-info">
-        <strong>{t('heartRate.zones.peak', lang)} (85-100%):</strong>
-        <p>{t('heartRate.info.peakDesc', lang)}</p>
-      </div>
-    </div>
-
-    <p class="limitations">{t('heartRate.info.limitations', lang)}</p>
-  </div>
 </div>
 
 <style>

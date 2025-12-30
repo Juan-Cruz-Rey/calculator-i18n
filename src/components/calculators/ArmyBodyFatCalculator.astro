@@ -211,48 +211,6 @@ const { lang } = Astro.props as { lang: Locale };
     </div>
   </div>
 
-  <div class="calculator-info">
-    <h2>{t('armyBodyFat:info.title', lang)}</h2>
-    <p>{t('armyBodyFat:info.description', lang)}</p>
-
-    <h3>{t('armyBodyFat:info.standardsTitle', lang)}</h3>
-    <div class="standards-table">
-      <table>
-        <thead>
-          <tr>
-            <th>{t('armyBodyFat:info.ageRange', lang)}</th>
-            <th>{t('armyBodyFat:info.maleMax', lang)}</th>
-            <th>{t('armyBodyFat:info.femaleMax', lang)}</th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr>
-            <td>17-20</td>
-            <td>20%</td>
-            <td>30%</td>
-          </tr>
-          <tr>
-            <td>21-27</td>
-            <td>22%</td>
-            <td>32%</td>
-          </tr>
-          <tr>
-            <td>28-39</td>
-            <td>24%</td>
-            <td>34%</td>
-          </tr>
-          <tr>
-            <td>40+</td>
-            <td>26%</td>
-            <td>36%</td>
-          </tr>
-        </tbody>
-      </table>
-    </div>
-
-    <p class="formula">{t('armyBodyFat:info.formula', lang)}</p>
-    <p class="limitations">{t('armyBodyFat:info.limitations', lang)}</p>
-  </div>
 </div>
 
 <style>

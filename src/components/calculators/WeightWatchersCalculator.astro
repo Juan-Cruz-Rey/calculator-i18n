@@ -5,12 +5,6 @@ const { lang } = Astro.props as { lang: Locale };
 ---
 
 <div class="ww-calculator">
-  <!-- Disclaimer -->
-  <div class="disclaimer">
-    <p><strong>{t('weightWatchers.disclaimer.title', lang)}</strong></p>
-    <p>{t('weightWatchers.disclaimer.text', lang)}</p>
-  </div>
-
   <!-- Tab Navigation -->
   <div class="tab-navigation" role="tablist">
     <button
@@ -270,14 +264,6 @@ const { lang } = Astro.props as { lang: Locale };
         <p>{t('weightWatchers.dailyBudget.budgetExplanation', lang)}</p>
       </div>
     </div>
-  </div>
-
-  <!-- Information Section -->
-  <div class="calculator-info">
-    <h2>{t('weightWatchers.info.title', lang)}</h2>
-    <p>{t('weightWatchers.info.description', lang)}</p>
-    <p class="formula"><strong>{t('weightWatchers.info.formulaTitle', lang)}:</strong> {t('weightWatchers.info.formula', lang)}</p>
-    <p class="limitations">{t('weightWatchers.info.limitations', lang)}</p>
   </div>
 </div>
 

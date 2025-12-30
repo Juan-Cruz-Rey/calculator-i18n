@@ -115,21 +115,9 @@ if (frontmatter) {
     {frontmatter && Content ? (
       <!-- Render MDX content if available -->
       <div class="calculator-page">
-        {frontmatter.showCalculatorFirst && CalculatorComponent && (
-          <div class="calculator-wrapper">
-            <CalculatorComponent lang={lang} />
-          </div>
-        )}
-
         <div class="content-wrapper">
           <Content />
         </div>
-
-        {!frontmatter.showCalculatorFirst && !frontmatter.hideCalculator && CalculatorComponent && (
-          <div class="calculator-wrapper">
-            <CalculatorComponent lang={lang} />
-          </div>
-        )}
       </div>
     ) : (
       <!-- Fallback: render simple layout if no MDX content -->

@@ -207,46 +207,6 @@ const { lang } = Astro.props as { lang: Locale };
     </div>
   </div>
 
-  <div class="calculator-info">
-    <h2>{t('bodyFat.info.title', lang)}</h2>
-    <p>{t('bodyFat.info.description', lang)}</p>
-
-    <h3>{t('bodyFat.info.categoriesTitle', lang)}</h3>
-    <div class="categories-table">
-      <div class="category-row header">
-        <div class="category-name">{t('bodyFat.info.categoryLabel', lang)}</div>
-        <div class="category-range">{t('bodyFat.info.menLabel', lang)}</div>
-        <div class="category-range">{t('bodyFat.info.womenLabel', lang)}</div>
-      </div>
-      <div class="category-row">
-        <div class="category-name">{t('bodyFat.info.essentialFat', lang)}</div>
-        <div class="category-range">2-5%</div>
-        <div class="category-range">10-13%</div>
-      </div>
-      <div class="category-row">
-        <div class="category-name">{t('bodyFat.info.athletes', lang)}</div>
-        <div class="category-range">6-13%</div>
-        <div class="category-range">14-20%</div>
-      </div>
-      <div class="category-row">
-        <div class="category-name">{t('bodyFat.info.fitness', lang)}</div>
-        <div class="category-range">14-17%</div>
-        <div class="category-range">21-24%</div>
-      </div>
-      <div class="category-row">
-        <div class="category-name">{t('bodyFat.info.average', lang)}</div>
-        <div class="category-range">18-24%</div>
-        <div class="category-range">25-31%</div>
-      </div>
-      <div class="category-row">
-        <div class="category-name">{t('bodyFat.info.obese', lang)}</div>
-        <div class="category-range">25%+</div>
-        <div class="category-range">32%+</div>
-      </div>
-    </div>
-
-    <p class="limitations">{t('bodyFat.info.limitations', lang)}</p>
-  </div>
 </div>
 
 <style>

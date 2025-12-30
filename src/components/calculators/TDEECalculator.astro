@@ -224,29 +224,6 @@ const { lang } = Astro.props as { lang: Locale };
       <p class="bmr-desc">{t('tdee.results.bmrDesc', lang)}</p>
     </div>
   </div>
-
-  <div class="calculator-info">
-    <h2>{t('tdee.info.title', lang)}</h2>
-    <p>{t('tdee.info.description', lang)}</p>
-
-    <h3>{t('tdee.info.formulasTitle', lang)}</h3>
-    <div class="formula-box">
-      <strong>Mifflin-St Jeor:</strong>
-      <p class="formula">{t('tdee.info.mifflinFormula', lang)}</p>
-    </div>
-
-    <h3>{t('tdee.info.activityTitle', lang)}</h3>
-    <ul class="activity-list">
-      <li><strong>{t('tdee.activity.sedentary', lang)}</strong> - {t('tdee.info.sedentaryDesc', lang)}</li>
-      <li><strong>{t('tdee.activity.light', lang)}</strong> - {t('tdee.info.lightDesc', lang)}</li>
-      <li><strong>{t('tdee.activity.moderate', lang)}</strong> - {t('tdee.info.moderateDesc', lang)}</li>
-      <li><strong>{t('tdee.activity.active', lang)}</strong> - {t('tdee.info.activeDesc', lang)}</li>
-      <li><strong>{t('tdee.activity.veryActive', lang)}</strong> - {t('tdee.info.veryActiveDesc', lang)}</li>
-      <li><strong>{t('tdee.activity.extraActive', lang)}</strong> - {t('tdee.info.extraActiveDesc', lang)}</li>
-    </ul>
-
-    <p class="limitations">{t('tdee.info.limitations', lang)}</p>
-  </div>
 </div>
 
 <style>

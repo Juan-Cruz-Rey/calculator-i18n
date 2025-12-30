@@ -12,12 +12,6 @@ const { lang } = Astro.props;
   <div class="calculator-card">
     <h2>{t('bac.title', lang)}</h2>
 
-    <!-- Strong Disclaimer -->
-    <div class="disclaimer-box">
-      <strong>⚠️ {t('bac.disclaimer.title', lang)}</strong>
-      <p>{t('bac.disclaimer.text', lang)}</p>
-    </div>
-
     <form id="bac-form">
       <!-- Weight Input -->
       <div class="form-group">
@@ -171,33 +165,6 @@ const { lang } = Astro.props;
         <p>{t('bac.legalDisclaimer.text', lang)}</p>
       </div>
     </div>
-  </div>
-
-  <!-- Information Section -->
-  <div class="info-section">
-    <h3>{t('bac.info.title', lang)}</h3>
-    <p>{t('bac.info.description', lang)}</p>
-
-    <h4>{t('bac.info.howItWorks', lang)}</h4>
-    <p>{t('bac.info.formula', lang)}</p>
-
-    <h4>{t('bac.info.impairmentLevelsTitle', lang)}</h4>
-    <ul>
-      <li><strong>0.00-0.02%:</strong> {t('bac.info.levels.minimal', lang)}</li>
-      <li><strong>0.03-0.05%:</strong> {t('bac.info.levels.mild', lang)}</li>
-      <li><strong>0.06-0.09%:</strong> {t('bac.info.levels.moderate', lang)}</li>
-      <li><strong>0.10-0.15%:</strong> {t('bac.info.levels.significant', lang)}</li>
-      <li><strong>0.16%+:</strong> {t('bac.info.levels.severe', lang)}</li>
-    </ul>
-
-    <h4>{t('bac.info.factorsTitle', lang)}</h4>
-    <ul>
-      <li>{t('bac.info.factors.weight', lang)}</li>
-      <li>{t('bac.info.factors.gender', lang)}</li>
-      <li>{t('bac.info.factors.time', lang)}</li>
-      <li>{t('bac.info.factors.food', lang)}</li>
-      <li>{t('bac.info.factors.metabolism', lang)}</li>
-    </ul>
   </div>
 </div>
 
