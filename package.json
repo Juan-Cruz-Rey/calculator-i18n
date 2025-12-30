@@ -7,7 +7,15 @@
     "start": "astro dev",
     "build": "astro check && astro build",
     "preview": "astro preview",
-    "astro": "astro"
+    "astro": "astro",
+    "test": "playwright test",
+    "test:ui": "playwright test --ui",
+    "test:headed": "playwright test --headed",
+    "test:debug": "playwright test --debug",
+    "test:homepage": "playwright test tests/e2e/homepage.spec.ts",
+    "test:calculators": "playwright test tests/e2e/calculators-display.spec.ts",
+    "test:language-selector": "playwright test tests/e2e/language-selector.spec.ts",
+    "test:report": "playwright show-report"
   },
   "dependencies": {
     "@astrojs/mdx": "^4.3.13",
@@ -18,6 +26,7 @@
   "devDependencies": {
     "@astrojs/check": "^0.9.0",
     "@astrojs/sitemap": "^3.6.0",
+    "@playwright/test": "^1.57.0",
     "typescript": "^5.7.2"
   }
 }

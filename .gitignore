@@ -27,3 +27,8 @@ pnpm-debug.log*
 *.swp
 *.swo
 *~
+
+# Playwright test results
+test-results/
+playwright-report/
+playwright/.cache/
