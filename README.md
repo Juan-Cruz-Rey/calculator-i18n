@@ -36,7 +36,7 @@ A multilingual calculator web application built with Astro and full internationa
 
 - [Astro 5.x](https://astro.build/) - Static Site Generator
 - [TypeScript](https://www.typescriptlang.org/) - Type Safety
-- [astro-i18next](https://github.com/yassinedoghri/astro-i18next) - Internationalization
+- Custom i18n System - Lightweight internationalization with JSON translations
 - Pure CSS - No framework overhead
 - [Playwright](https://playwright.dev/) - E2E Testing
 

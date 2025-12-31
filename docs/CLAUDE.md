@@ -8,7 +8,7 @@ This is an Astro-based web application featuring a collection of calculators wit
 
 **Technology Stack:**
 - Astro 5.x with TypeScript (strict mode)
-- astro-i18next for internationalization
+- Custom i18n system with JSON translations
 - Pure CSS (no framework)
 - Client-side interactivity via Astro scripts
 
@@ -68,9 +68,9 @@ TypeScript path aliases are configured in `tsconfig.json`:
 
 ## Internationalization
 
-**⚠️ CRITICAL RULE:** All URLs MUST be fully localized. See `.claude/url-localization-rules.md` for complete guidelines.
+**⚠️ CRITICAL RULE:** All URLs MUST be fully localized. See `docs/url-localization-rules.md` for complete guidelines.
 
-**Library:** astro-i18next
+**System:** Custom lightweight i18n implementation
 
 **Supported Languages:**
 - Spanish (es) - Default language
@@ -81,38 +81,46 @@ TypeScript path aliases are configured in `tsconfig.json`:
 - German (de)
 - Italian (it)
 - Polish (pl)
+- Dutch (nl)
+- Turkish (tr)
+- Swedish (sv)
+- Russian (ru)
 
-**Configuration:** `astro-i18next.config.mjs`
+**Configuration:**
+- Language configs: `src/config/languages.ts`
+- Route mappings: `src/config/routes.ts`
+- Calculator IDs: `src/config/calculators.ts`
 
-**Translation Files Location:** `public/locales/{lang}/*.json`
+**Translation Files Location:** `public/locales/{lang}/calculators/{calculator-id}.json`
 
 **URL Structure (ALWAYS use translated paths):**
 - Spanish: `/calculadoras/imc`
-- English: `/calculators/bmi`
-- Portuguese: `/pt/calculadoras/bmi`
-- French: `/fr/calculatrices/bmi`
+- English: `/en/calculators/bmi`
+- Portuguese: `/pt/calculadoras/imc`
+- French: `/fr/calculatrices/imc`
 - Hindi: `/hi/calculators/bmi`
 - German: `/de/rechner/bmi`
-- Italian: `/it/calcolatrici/bmi`
+- Italian: `/it/calcolatrici/imc`
 - Polish: `/pl/kalkulatory/bmi`
 
 **Route Mapping:**
-- The `routes` object in `astro-i18next.config.mjs` maps Spanish URLs to localized equivalents for each language
-- Spanish is the default locale (`showDefaultLocale: false`)
+- The `routes` config in `src/config/routes.ts` maps calculator slugs to localized URLs for each language
+- Spanish is the default locale (no language prefix in URLs)
 - **NEVER** use `/calculators/` for non-English languages - always use translated folder names
+- Dynamic routing via `[...slug].astro` handles all calculator pages
 
 **Using Translations:**
 ```astro
 ---
-import { t, changeLanguage } from 'i18next';
-changeLanguage('es'); // Set language at page level
+import { t } from '@/utils/i18n';
 ---
-<h1>{t('calculators:bmi.title')}</h1>
+<h1>{t('bmi:title', 'es')}</h1>
 ```
 
-**Translation Namespaces:**
-- `common` - Site-wide strings (nav, buttons, units)
-- `calculators` - Calculator-specific content
+**Translation Structure:**
+- Each calculator has its own translation file
+- Format: `{calculator-id}:{key}`
+- Example: `t('bmi:form.title', lang)`
 
 ## Calculator Implementation Pattern
 
@@ -157,15 +165,20 @@ Each page sets:
 
 ## Supported Languages
 
-The project supports 7 languages covering Europe, Latin America, and India:
+The project supports 12 languages covering Europe, Latin America, Asia, and global markets:
 
 - **Spanish (es)** - Default language (Spain, Latin America)
 - **English (en)** - International
 - **Portuguese (pt)** - Brazil, Portugal
-- **French (fr)** - France, French-speaking Europe
+- **French (fr)** - France, French-speaking regions
 - **Hindi (hi)** - India
 - **German (de)** - Germany, Austria
 - **Italian (it)** - Italy
+- **Polish (pl)** - Poland
+- **Dutch (nl)** - Netherlands, Belgium
+- **Turkish (tr)** - Turkey
+- **Swedish (sv)** - Sweden
+- **Russian (ru)** - Russia, Eastern Europe
 
 ### URL Structure by Language
 
@@ -176,6 +189,11 @@ The project supports 7 languages covering Europe, Latin America, and India:
 - Hindi: `/hi/`, `/hi/calculators/bmi/`
 - German: `/de/`, `/de/rechner/bmi/`
 - Italian: `/it/`, `/it/calcolatrici/imc/`
+- Polish: `/pl/`, `/pl/kalkulatory/bmi/`
+- Dutch: `/nl/`, `/nl/calculators/bmi/`
+- Turkish: `/tr/`, `/tr/hesap-makineleri/bmi/`
+- Swedish: `/sv/`, `/sv/kalkylatorer/bmi/`
+- Russian: `/ru/`, `/ru/калькуляторы/bmi/`
 
 ## Translation Structure
 
@@ -198,52 +216,66 @@ public/locales/
 
 ## Adding New Calculators
 
-1. **Create calculation logic** in `src/utils/calculators/{name}.ts`
+1. **Add calculator ID** to `src/config/calculators.ts`
+   - Add calculator ID to the `calculators` array
+   - Use kebab-case (e.g., 'body-fat')
+
+2. **Create calculation logic** in `src/utils/calculators/{name}.ts`
    - Pure TypeScript functions
    - Type-safe interfaces for inputs/outputs
    - Unit conversion utilities
 
-2. **Create component** in `src/components/calculators/{Name}Calculator.astro`
-   - Use `t('calculator-name:key', lang)` for translations
+3. **Create component** in `src/components/calculators/{Name}Calculator.astro`
+   - Use `t('calculator-id:key', lang)` for translations
    - Import calculation functions from utils
+   - Add `class="calculator"` to main wrapper div
 
-3. **Add translations** for ALL languages in `public/locales/{lang}/calculators/{name}.json`
-   - es, en, pt, fr, hi, de, it
-   - Follow the structure from `bmi.json`
+4. **Add translations** for ALL 12 languages in `public/locales/{lang}/calculators/{calculator-id}.json`
+   - es, en, pt, fr, hi, de, it, pl, nl, tr, sv, ru
+   - Follow the structure from existing calculator translation files
 
-4. **Update i18n system** in `src/utils/i18n.ts`
-   - Import the new calculator translations for all languages
-   - Add to translations object
-   - Add calculator paths to `getAlternatePath()` function
+5. **Create MDX content** for each language in `src/content/calculators/{lang}/{calculator-id}.mdx`
+   - Include frontmatter with: title, metaDescription, keywords, canonical, lang
+   - Import and render the calculator component
+   - Add SEO-optimized content below the calculator
 
-5. **Create pages** for each language:
-   - `src/pages/calculadoras/{name}.astro` (Spanish)
-   - `src/pages/en/calculators/{name}.astro` (English)
-   - `src/pages/pt/calculadoras/{name}.astro` (Portuguese)
-   - `src/pages/fr/calculatrices/{name}.astro` (French)
-   - `src/pages/hi/calculators/{name}.astro` (Hindi)
-   - `src/pages/de/rechner/{name}.astro` (German)
-   - `src/pages/it/calcolatrici/{name}.astro` (Italian)
+6. **Update route config** in `src/config/routes.ts`
+   - Add URL mappings for all languages
+   - Follow existing patterns for localized paths
 
-6. **Update calculator listings** in index pages for all languages
+The dynamic router (`[...slug].astro`) will automatically handle all calculator pages.
 
 ## Current Calculators
 
-- **BMI Calculator** - Available in 7 languages
-  - Supports metric and imperial units
-  - Calculates: BMI, BMI Prime, Ponderal Index
-  - Provides category and healthy weight range
-  - URLs: `/calculadoras/imc/` (es), `/en/calculators/bmi/`, `/pt/calculadoras/imc/`, etc.
+**23 calculators** available in **12 languages** = **276 localized pages**
+
+### Health & Fitness Calculators:
+- BMI, BMR, TDEE, Body Fat, BSA
+- Calorie, Protein, Carbohydrate, Fat Intake, Macro
+- Ideal Weight, Healthy Weight
+- Army Body Fat, Lean Body Mass, Body Frame, Body Type
+- Waist-to-Hip Ratio
+
+### Life & Other Calculators:
+- Age, Pregnancy
+- GFR (Kidney Function), Heart Rate
+- One Rep Max, Pace, Percentage
+
+All calculators support:
+- Multiple units (metric/imperial where applicable)
+- Responsive design
+- Full SEO optimization
+- Dynamic routing
 
 ## Future Expansion
 
 The project is designed to scale to ~175-180 calculators from calculator.net across categories:
-- Health & Fitness (~30 calculators)
+- Health & Fitness (~30 calculators) - 23 completed
 - Financial (~50 calculators)
 - Math (~40 calculators)
 - Other (~50 calculators)
 
-Each calculator will be available in all 7 supported languages.
+Each calculator will be available in all 12 supported languages.
 
 **Calculator Reference:**
 - The complete list of calculators to implement is available at: https://www.calculator.net/sitemap.html
