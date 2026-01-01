@@ -34,6 +34,19 @@ This directory contains all core documentation for the calculator-i18n project.
 - File structure summary
 - Migration guide from old system
 
+### [COMPLETE_CALCULATOR_GUIDE.md](./COMPLETE_CALCULATOR_GUIDE.md) ⭐ **NEW**
+**Complete Guide for Adding Calculators** - Comprehensive guide with all requirements
+- Complete step-by-step process (from planning to deployment)
+- All content requirements (MDX, SEO, translations)
+- Quality standards (word count, FAQs, tables, formatting)
+- SEO optimization methodology (titles, meta, keywords, canonical)
+- Cultural localization guidelines (not literal translation)
+- Special character escaping requirements
+- Batch strategy for efficient development
+- Complete checklists and troubleshooting
+- Based on real experience from 6 completed batches (36 calculators)
+- **Recommended starting point for adding new calculators**
+
 ### [CALCULATOR_OPTIMIZATION_GUIDE.md](./CALCULATOR_OPTIMIZATION_GUIDE.md)
 **SEO & UX Optimization Methodology** - Complete guide for optimizing calculators
 - Research methodology (analyzing top 3-5 results per language)
@@ -89,7 +102,8 @@ This directory contains all core documentation for the calculator-i18n project.
 → Reference [CLAUDE.md](./CLAUDE.md)
 
 **Adding a new calculator?**
-→ Follow [ADDING_CALCULATORS.md](./ADDING_CALCULATORS.md)
+→ Start with [COMPLETE_CALCULATOR_GUIDE.md](./COMPLETE_CALCULATOR_GUIDE.md) ⭐ **RECOMMENDED**
+→ Or follow [ADDING_CALCULATORS.md](./ADDING_CALCULATORS.md) for basic steps
 → Then optimize with [CALCULATOR_OPTIMIZATION_GUIDE.md](./CALCULATOR_OPTIMIZATION_GUIDE.md)
 
 **Creating multiple calculators at once?**
