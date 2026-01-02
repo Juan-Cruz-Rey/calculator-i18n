@@ -214,34 +214,70 @@ public/locales/
 └── [pt, fr, hi, de, it]/   # Same structure for each language
 ```
 
+## Calculator Categories
+
+The project uses a category system to organize calculators into logical groups:
+
+**7 Categories:**
+1. **Health & Fitness** (`health-fitness`) - BMI, BMR, TDEE, heart rate, GFR, BAC, sleep, calories burned, one rep max, pace
+2. **Pregnancy** (`pregnancy`) - Pregnancy, due date, conception, weight gain, ovulation, period
+3. **Nutrition** (`nutrition`) - Calorie, protein, carbohydrate, macro, fat intake, weight watchers
+4. **Body Composition** (`body-composition`) - Body fat, army body fat, body frame, body type, BSA, lean body mass, ideal weight, healthy weight, waist-hip
+5. **Date & Time** (`date-time`) - Age, date
+6. **Financial** (`financial`) - Tip
+7. **General** (`general`) - Percentage, blood type
+
+**Configuration Files:**
+- **Category mappings:** `src/config/categories.ts`
+- **Calculator-to-category mapping:** `calculatorCategories` object in `categories.ts`
+- **Translated category names:** `categoryNames` object with translations for all 12 languages
+
+**Helper Functions:**
+```typescript
+import { getCategoryName } from '@/config/categories';
+
+// Get translated category name for a calculator
+const categoryName = getCategoryName('bmi', 'en'); // Returns "Health & Fitness"
+const categoryNameEs = getCategoryName('bmi', 'es'); // Returns "Salud y Fitness"
+```
+
 ## Adding New Calculators
 
 1. **Add calculator ID** to `src/config/calculators.ts`
    - Add calculator ID to the `calculators` array
    - Use kebab-case (e.g., 'body-fat')
 
-2. **Create calculation logic** in `src/utils/calculators/{name}.ts`
+2. **Assign category** in `src/config/categories.ts`
+   - Add entry to `calculatorCategories` mapping
+   - Choose appropriate category ID from the 7 available categories
+
+3. **Create calculation logic** in `src/utils/calculators/{name}.ts`
    - Pure TypeScript functions
    - Type-safe interfaces for inputs/outputs
    - Unit conversion utilities
 
-3. **Create component** in `src/components/calculators/{Name}Calculator.astro`
+4. **Create component** in `src/components/calculators/{Name}Calculator.astro`
    - Use `t('calculator-id:key', lang)` for translations
    - Import calculation functions from utils
    - Add `class="calculator"` to main wrapper div
 
-4. **Add translations** for ALL 12 languages in `public/locales/{lang}/calculators/{calculator-id}.json`
+5. **Add translations** for ALL 12 languages in `public/locales/{lang}/calculators/{calculator-id}.json`
    - es, en, pt, fr, hi, de, it, pl, nl, tr, sv, ru
    - Follow the structure from existing calculator translation files
 
-5. **Create MDX content** for each language in `src/content/calculators/{lang}/{calculator-id}.mdx`
-   - Include frontmatter with: title, metaDescription, keywords, canonical, lang
+6. **Create MDX content** for each language in `src/content/calculators/{lang}/{calculator-id}.mdx`
+   - Include frontmatter with: title, metaDescription, keywords, canonical, category, lang
+   - The `category` field should contain the translated category name (automatically populated)
    - Import and render the calculator component
    - Add SEO-optimized content below the calculator
 
-6. **Update route config** in `src/config/routes.ts`
+7. **Update route config** in `src/config/routes.ts`
    - Add URL mappings for all languages
    - Follow existing patterns for localized paths
+
+8. **Update homepage** (if displaying on homepage)
+   - Add calculator to the list in `src/pages/index.astro` and `src/pages/[lang]/index.astro`
+   - Use `getCategoryName('calculator-id', lang)` for the category field
 
 The dynamic router (`[...slug].astro`) will automatically handle all calculator pages.
 

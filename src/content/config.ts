@@ -17,6 +17,10 @@ const calculators = defineCollection({
     keywords: z.string().optional(),
     canonical: z.string(),
 
+    // Category classification
+    // This should match the category displayed on the homepage
+    category: z.string(),
+
     // Optional Schema.org structured data
     schema: z.record(z.any()).optional(),
 
