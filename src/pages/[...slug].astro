@@ -119,6 +119,14 @@ const { title, metaDescription: description } = entry.data;
     font-size: 2.5rem;
     margin-bottom: 1rem;
     color: #1a202c;
+    line-height: 1.2;
+  }
+
+  /* Mobile responsive heading */
+  @media (max-width: 768px) {
+    .content-wrapper :global(h1) {
+      font-size: 1.875rem; /* 30px */
+    }
   }
 
   .content-wrapper :global(h2) {
