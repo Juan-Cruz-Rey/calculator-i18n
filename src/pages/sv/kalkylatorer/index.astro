@@ -1,0 +1,240 @@
+---
+import BaseLayout from '@/layouts/BaseLayout.astro';
+import { getCategoriesWithTranslations } from '@/config/calculator-categories';
+import { calculatorPaths } from '@/utils/i18n';
+import type { CalculatorId } from '@/config/calculators';
+
+const lang = 'sv';
+const categoriesData = getCategoriesWithTranslations(lang);
+// Helper to convert calculator ID to camelCase for accessing calculatorPaths
+function kebabToCamelCase(str: string): string {
+  return str.replace(/-([a-z])/g, (g) => g[1].toUpperCase());
+}
+
+
+
+// Helper to get calculator translation
+async function getCalculatorInfo(calculatorId: CalculatorId) {
+  try {
+    const translation = await import(`../../../../public/locales/sv/calculators/${calculatorId}.json`);
+    return {
+      title: translation.title || calculatorId,
+      description: translation.description || ''
+    };
+  } catch (e) {
+    return {
+      title: calculatorId,
+      description: ''
+    };
+  }
+}
+
+// Get all calculator info
+const categoriesWithCalculators = await Promise.all(
+  categoriesData.map(async (category) => {
+    const calculators = await Promise.all(
+      category.calculators.map(async (calcId) => {
+        const info = await getCalculatorInfo(calcId);
+        const camelCaseId = kebabToCamelCase(calcId);
+        return {
+          id: calcId,
+          ...info,
+          path: calculatorPaths[camelCaseId][lang]
+        };
+      })
+    );
+    return {
+      ...category,
+      calculators
+    };
+  })
+);
+
+const totalCalculators = categoriesData.reduce((acc, cat) => acc + cat.calculators.length, 0);
+---
+
+<BaseLayout
+  title="Gratis Online Kalkylatorer | Calculatoria"
+  description={`Upptäck ${totalCalculators} gratis kalkylatorer organiserade efter kategori: hälsa, näring, graviditet, fitness och mer. Noggranna och lättanvända verktyg.`}
+  lang={lang}
+  keywords="online kalkylatorer, gratis kalkylator, beräkningsverktyg, hälsokalkylator, BMI kalkylator, kalorikalkylator, graviditetskalkylator"
+>
+  <div class="container">
+    <div class="page-header">
+      <h1>Online Kalkylatorer</h1>
+      <p class="subtitle">
+        Utforska vår samling av {totalCalculators} gratis och noggranna kalkylatorer för hälsa, näring, fitness och mer.
+      </p>
+    </div>
+
+    <div class="categories">
+      {categoriesWithCalculators.map((category) => (
+        <section class="category-section">
+          <div class="category-header">
+            <h2>{category.name}</h2>
+            <p class="category-description">{category.description}</p>
+          </div>
+
+          <div class="calculators-grid">
+            {category.calculators.map((calc) => (
+              <a href={calc.path} class="calculator-card">
+                <h3 class="calculator-title">{calc.title}</h3>
+                {calc.description && (
+                  <p class="calculator-description">{calc.description}</p>
+                )}
+                <span class="calculator-link" aria-hidden="true">→</span>
+              </a>
+            ))}
+          </div>
+        </section>
+      ))}
+    </div>
+  </div>
+
+  <style>
+    .page-header {
+      text-align: center;
+      margin: 2rem 0 3rem;
+      padding: 0 1rem;
+    }
+
+    .page-header h1 {
+      font-size: 2.5rem;
+      color: var(--text-color);
+      margin-bottom: 1rem;
+      font-weight: 700;
+    }
+
+    .subtitle {
+      font-size: 1.125rem;
+      color: #666;
+      max-width: 600px;
+      margin: 0 auto;
+      line-height: 1.6;
+    }
+
+    .categories {
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 0 1rem;
+    }
+
+    .category-section {
+      margin-bottom: 4rem;
+    }
+
+    .category-header {
+      margin-bottom: 1.5rem;
+    }
+
+    .category-header h2 {
+      font-size: 1.75rem;
+      color: var(--primary-color);
+      margin-bottom: 0.5rem;
+      font-weight: 600;
+    }
+
+    .category-description {
+      color: #666;
+      font-size: 1rem;
+      line-height: 1.5;
+    }
+
+    .calculators-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+      gap: 1.5rem;
+    }
+
+    .calculator-card {
+      background: white;
+      border: 1px solid #e0e0e0;
+      border-radius: 8px;
+      padding: 1.5rem;
+      text-decoration: none;
+      color: var(--text-color);
+      transition: all 0.2s ease;
+      display: flex;
+      flex-direction: column;
+      position: relative;
+      min-height: 120px;
+    }
+
+    .calculator-card:hover {
+      border-color: var(--primary-color);
+      box-shadow: 0 4px 12px rgba(56, 142, 60, 0.15);
+      transform: translateY(-2px);
+    }
+
+    .calculator-card:focus {
+      outline: 3px solid var(--focus-color);
+      outline-offset: 2px;
+    }
+
+    .calculator-title {
+      font-size: 1.125rem;
+      font-weight: 600;
+      color: var(--text-color);
+      margin-bottom: 0.5rem;
+      line-height: 1.4;
+    }
+
+    .calculator-description {
+      font-size: 0.875rem;
+      color: #666;
+      line-height: 1.5;
+      flex-grow: 1;
+    }
+
+    .calculator-link {
+      position: absolute;
+      bottom: 1rem;
+      right: 1rem;
+      color: var(--primary-color);
+      font-size: 1.5rem;
+      font-weight: bold;
+      transition: transform 0.2s ease;
+    }
+
+    .calculator-card:hover .calculator-link {
+      transform: translateX(4px);
+    }
+
+    @media (max-width: 768px) {
+      .page-header h1 {
+        font-size: 2rem;
+      }
+
+      .subtitle {
+        font-size: 1rem;
+      }
+
+      .category-header h2 {
+        font-size: 1.5rem;
+      }
+
+      .calculators-grid {
+        grid-template-columns: 1fr;
+        gap: 1rem;
+      }
+
+      .calculator-card {
+        padding: 1.25rem;
+      }
+    }
+
+    @media (max-width: 480px) {
+      .page-header {
+        margin: 1.5rem 0 2rem;
+      }
+
+      .page-header h1 {
+        font-size: 1.75rem;
+      }
+
+      .category-section {
+        margin-bottom: 3rem;
+      }
+    }
+  </style>
+</BaseLayout>
