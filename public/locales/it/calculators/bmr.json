@@ -1,34 +1,157 @@
 {
   "title": "Calcolatore MB (Metabolismo Basale)",
-  "description": "Calcola il tuo metabolismo basale",
-  "metaDescription": "Calcolatore MB gratuito - Calcola il tuo Metabolismo Basale (calorie bruciate a riposo) utilizzando le formule di Mifflin-St Jeor, Harris-Benedict e Katch-McArdle.",
+  "description": "Calcola il tuo metabolismo basale e il fabbisogno calorico giornaliero",
+  "metaDescription": "Calcolatore MB gratuito - Calcola il tuo Metabolismo Basale (calorie bruciate a riposo) usando le formule di Mifflin-St Jeor e Harris-Benedict. Include calcolo del TDEE.",
+  "keywords": "MB, metabolismo basale, calcolatore MB, calorie a riposo, dispendio energetico totale, TDEE, fabbisogno calorico, calcolatore metabolismo, Mifflin-St Jeor, Harris-Benedict, perdita di peso, calorie giornaliere",
+
+  "terminology": {
+    "bmr": "MB",
+    "bmrFull": "Metabolismo Basale",
+    "tdee": "TDEE",
+    "tdeeFull": "Dispendio Energetico Totale Giornaliero",
+    "calories": "calorie",
+    "perDay": "al giorno",
+    "kcal": "kcal",
+    "kcalPerDay": "kcal/giorno"
+  },
+
   "form": {
     "title": "Inserisci i tuoi dati",
     "ageLabel": "Età",
     "agePlaceholder": "Inserisci la tua età (15-80)",
+    "ageHelp": "L'età influenza il tuo metabolismo basale",
     "genderLabel": "Sesso",
+    "genderMale": "Maschio",
+    "genderFemale": "Femmina",
     "heightLabel": "Altezza",
     "heightPlaceholder": "Inserisci la tua altezza",
     "weightLabel": "Peso",
     "weightPlaceholder": "Inserisci il tuo peso",
     "bodyFatLabel": "Percentuale di Grasso Corporeo (Opzionale)",
-    "bodyFatPlaceholder": "es: 20",
-    "bodyFatHelp": "Opzionale: Inserisci la tua % di grasso corporeo per un calcolo più preciso"
+    "bodyFatPlaceholder": "es. 20",
+    "bodyFatHelp": "Opzionale: Inserisci la tua percentuale di grasso corporeo per un calcolo Katch-McArdle più preciso",
+    "activityLabel": "Livello di Attività Fisica",
+    "calculateButton": "Calcola MB",
+    "calculating": "Calcolo in corso...",
+    "resetButton": "Ripristina"
   },
+
   "activity": {
-    "sedentary": "Sedentario (poco o nessun esercizio)",
-    "light": "Leggero (esercizio 1-3 volte/settimana)",
-    "moderate": "Moderato (esercizio 4-5 volte/settimana)",
-    "active": "Attivo (esercizio quotidiano o intenso 3-4 volte/settimana)",
-    "veryActive": "Molto attivo (esercizio intenso 6-7 volte/settimana)",
-    "extraActive": "Estremamente attivo (esercizio molto intenso quotidiano e lavoro fisico)"
+    "title": "Seleziona il tuo livello di attività",
+    "sedentary": "Sedentario",
+    "sedentaryDesc": "Poco o nessun esercizio, lavoro d'ufficio",
+    "light": "Leggero",
+    "lightDesc": "Esercizio leggero 1-3 volte/settimana",
+    "moderate": "Moderato",
+    "moderateDesc": "Esercizio moderato 4-5 volte/settimana",
+    "active": "Attivo",
+    "activeDesc": "Esercizio quotidiano o intenso 3-4 volte/settimana",
+    "veryActive": "Molto attivo",
+    "veryActiveDesc": "Esercizio intenso 6-7 volte/settimana",
+    "extraActive": "Estremamente attivo",
+    "extraActiveDesc": "Esercizio molto intenso quotidiano + lavoro fisico",
+    "multiplier": "Moltiplicatore"
   },
+
+  "formulas": {
+    "title": "Confronto delle Formule",
+    "description": "Diverse formule scientifiche per calcolare il tuo MB",
+    "mifflinStJeor": "Mifflin-St Jeor (1990)",
+    "mifflinDesc": "Formula moderna più accurata - Raccomandata dalla SINU (Società Italiana di Nutrizione Umana)",
+    "mifflinFormulaMale": "MB = (10 × peso in kg) + (6,25 × altezza in cm) - (5 × età) + 5",
+    "mifflinFormulaFemale": "MB = (10 × peso in kg) + (6,25 × altezza in cm) - (5 × età) - 161",
+    "harrisBenedict": "Harris-Benedict (1984 rivista)",
+    "harrisDesc": "Formula tradizionale rivista - Ampiamente usata nella pratica clinica",
+    "harrisFormulaMale": "MB = 13,397 × peso + 4,799 × altezza - 5,677 × età + 88,362",
+    "harrisFormulaFemale": "MB = 9,247 × peso + 3,098 × altezza - 4,330 × età + 447,593",
+    "katchMcArdle": "Katch-McArdle",
+    "katchDesc": "Basata sulla massa magra - Più accurata se conosci la tua percentuale di grasso corporeo",
+    "katchFormula": "MB = 370 + (21,6 × massa magra in kg)",
+    "katchNote": "Richiede la percentuale di grasso corporeo",
+    "recommended": "✓ Raccomandata",
+    "mostAccurate": "Più accurata",
+    "requiresBodyFat": "Richiede % grasso"
+  },
+
   "results": {
     "title": "I Tuoi Risultati",
     "yourBMR": "Il Tuo MB",
-    "bmrDesc": "Calorie che il tuo corpo brucia a riposo",
-    "formulas": "Confronto delle Formule",
-    "calorieNeeds": "Fabbisogno Calorico per Livello di Attività",
-    "calorieNeedsDesc": "Calorie giornaliere necessarie in base al tuo livello di attività fisica"
+    "bmrDesc": "Calorie che il tuo corpo brucia a riposo completo (24 ore senza attività)",
+    "yourTDEE": "Il Tuo TDEE",
+    "tdeeDesc": "Calorie totali che bruci quotidianamente includendo l'attività fisica",
+    "formulaComparison": "Confronto Formule",
+    "formulaComparisonDesc": "Diversi metodi scientifici per stimare il tuo MB",
+    "calorieNeeds": "Fabbisogno Calorico Giornaliero",
+    "calorieNeedsDesc": "Calorie necessarie in base al tuo livello di attività fisica",
+    "activityLevel": "Livello di Attività",
+    "dailyCalories": "Calorie Giornaliere",
+    "perDay": "al giorno",
+    "basedOn": "Basato su",
+    "avgOf": "Media di",
+    "formulas_plural": "formule"
+  },
+
+  "deficitTable": {
+    "title": "Tabella Deficit Calorico per la Perdita di Peso",
+    "description": "Riduci queste calorie dal tuo TDEE per perdere peso in modo salutare",
+    "goal": "Obiettivo di Perdita",
+    "deficit": "Deficit Giornaliero",
+    "calories": "Calorie Giornaliere",
+    "timeFrame": "Tempo Stimato",
+    "mild": "Lieve (0,25 kg/settimana)",
+    "moderate": "Moderato (0,5 kg/settimana)",
+    "aggressive": "Aggressivo (0,75 kg/settimana)",
+    "veryAggressive": "Molto Aggressivo (1 kg/settimana)",
+    "warning": "⚠️ Non ridurre più di 1000 kcal/giorno",
+    "minCalories": "Non scendere mai sotto 1200 kcal/giorno (donne) o 1500 kcal/giorno (uomini)",
+    "disclaimer": "Consulta un nutrizionista per un piano personalizzato"
+  },
+
+  "graph": {
+    "title": "Confronto Visivo delle Formule",
+    "yAxisLabel": "Calorie (kcal/giorno)",
+    "compareLabel": "Confronta"
+  },
+
+  "info": {
+    "whatIsBMR": "Cos'è il MB?",
+    "bmrExplanation": "Il Metabolismo Basale (MB) è la quantità minima di energia (calorie) di cui il tuo corpo ha bisogno per mantenere le funzioni vitali a riposo: respirazione, circolazione sanguigna, produzione cellulare, elaborazione dei nutrienti.",
+    "whatIsTDEE": "Cos'è il TDEE?",
+    "tdeeExplanation": "Il Dispendio Energetico Totale Giornaliero (TDEE) è il tuo MB moltiplicato per il tuo livello di attività fisica. Rappresenta le calorie totali che bruci in un giorno tipico.",
+    "howToUse": "Come utilizzare questi risultati?",
+    "useCase1": "Mantenere il peso: Consuma calorie = TDEE",
+    "useCase2": "Perdere peso: Consuma 300-500 kcal in meno del TDEE",
+    "useCase3": "Aumentare peso/muscoli: Consuma 300-500 kcal in più del TDEE",
+    "accuracy": "Precisione delle Formule",
+    "accuracyNote": "Le formule hanno un margine di errore di ±10%. Mifflin-St Jeor è la più accurata per la popolazione generale. Katch-McArdle è superiore se conosci la tua composizione corporea."
+  },
+
+  "tips": {
+    "title": "Consigli Utili",
+    "tip1": "Fattori che aumentano il MB: più massa muscolare, età più giovane, sesso maschile, genetica, febbre, gravidanza",
+    "tip2": "Fattori che diminuiscono il MB: età avanzata, diete molto restrittive, perdita di massa muscolare, ipotiroidismo",
+    "tip3": "L'allenamento di forza aumenta la tua massa muscolare e quindi il tuo MB a lungo termine",
+    "tip4": "Le diete estreme (< 1000 kcal/giorno) riducono il tuo metabolismo come meccanismo di sopravvivenza"
+  },
+
+  "disclaimer": {
+    "title": "⚠️ Importante: Limitazioni",
+    "point1": "Queste formule sono stime basate su medie di popolazione",
+    "point2": "Non considerano condizioni mediche specifiche (tiroide, PCOS, ecc.)",
+    "point3": "Il dispendio energetico reale può variare di ±10-20% tra individui",
+    "point4": "Consulta un nutrizionista o un medico per un piano personalizzato",
+    "point5": "Non raccomandato per minori di 15 anni senza supervisione professionale"
+  },
+
+  "healthAuthority": "Fonte: OMS (Organizzazione Mondiale della Sanità), Ministero della Salute, SINU (Società Italiana di Nutrizione Umana)",
+
+  "relatedCalculators": {
+    "title": "Calcolatori Correlati",
+    "bmi": "Calcolatore IMC",
+    "bodyFat": "Calcolatore Grasso Corporeo",
+    "tdee": "Calcolatore TDEE",
+    "macro": "Calcolatore Macronutrienti",
+    "calorie": "Calcolatore Calorie",
+    "idealWeight": "Calcolatore Peso Ideale"
   }
 }

@@ -126,6 +126,53 @@ const { lang } = Astro.props as { lang: Locale };
     </form>
   </div>
 
+  <!-- Calculating Animation -->
+  <div id="calculating-animation" class="calculating-animation" style="display: none;">
+    <div class="calculating-content">
+      <div class="animated-gauge">
+        <svg viewBox="0 0 200 120" xmlns="http://www.w3.org/2000/svg">
+          <!-- Background arc -->
+          <path
+            d="M 30 100 A 70 70 0 0 1 170 100"
+            fill="none"
+            stroke="#e0e0e0"
+            stroke-width="12"
+            stroke-linecap="round"
+          />
+          <!-- Animated progress arc with purple gradient -->
+          <path
+            id="progress-arc"
+            d="M 30 100 A 70 70 0 0 1 170 100"
+            fill="none"
+            stroke="url(#bmr-gradient)"
+            stroke-width="12"
+            stroke-linecap="round"
+            stroke-dasharray="220"
+            stroke-dashoffset="220"
+          />
+          <!-- Center circle pulse -->
+          <circle cx="100" cy="100" r="20" fill="#9C27B0" opacity="0.3" class="pulse-circle"/>
+          <circle cx="100" cy="100" r="15" fill="#9C27B0" class="pulse-circle-small"/>
+
+          <!-- Gradient definition (purple theme for BMR) -->
+          <defs>
+            <linearGradient id="bmr-gradient" x1="0%" y1="0%" x2="100%" y2="0%">
+              <stop offset="0%" style="stop-color:#9C27B0;stop-opacity:1" />
+              <stop offset="50%" style="stop-color:#673AB7;stop-opacity:1" />
+              <stop offset="100%" style="stop-color:#E91E63;stop-opacity:1" />
+            </linearGradient>
+          </defs>
+        </svg>
+      </div>
+      <p class="calculating-text">{t('bmr.results.title', lang)}...</p>
+      <div class="calculating-dots">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+    </div>
+  </div>
+
   <div class="calculator-results" id="results" style="display: none;" role="region" aria-live="polite" aria-atomic="true">
     <h2>{t('bmr.results.title', lang)}</h2>
 
@@ -149,6 +196,67 @@ const { lang } = Astro.props as { lang: Locale };
         <div class="formula-item" id="katch-item" style="display: none;">
           <span class="formula-name">Katch-McArdle</span>
           <span class="formula-value" id="katch-value">-</span>
+        </div>
+      </div>
+
+      <!-- Visual Formula Comparison Chart -->
+      <div class="formula-chart" id="formula-chart" style="display: none;">
+        <h4 class="chart-title">Visual Comparison</h4>
+        <p class="chart-subtitle">Relative differences between formulas</p>
+
+        <div class="chart-bars">
+          <div class="chart-bar-item">
+            <div class="chart-bar-label">
+              <span class="chart-formula-name">Mifflin-St Jeor</span>
+              <span class="chart-badge recommended">✓ Recommended</span>
+            </div>
+            <div class="chart-bar-container">
+              <div class="chart-bar mifflin-bar" id="mifflin-bar" style="width: 0%">
+                <span class="chart-bar-value" id="mifflin-bar-value">0</span>
+              </div>
+            </div>
+            <span class="chart-difference" id="mifflin-diff">-</span>
+          </div>
+
+          <div class="chart-bar-item">
+            <div class="chart-bar-label">
+              <span class="chart-formula-name">Harris-Benedict</span>
+            </div>
+            <div class="chart-bar-container">
+              <div class="chart-bar harris-bar" id="harris-bar" style="width: 0%">
+                <span class="chart-bar-value" id="harris-bar-value">0</span>
+              </div>
+            </div>
+            <span class="chart-difference" id="harris-diff">-</span>
+          </div>
+
+          <div class="chart-bar-item" id="katch-chart-item" style="display: none;">
+            <div class="chart-bar-label">
+              <span class="chart-formula-name">Katch-McArdle</span>
+              <span class="chart-badge body-comp">Body Composition</span>
+            </div>
+            <div class="chart-bar-container">
+              <div class="chart-bar katch-bar" id="katch-bar" style="width: 0%">
+                <span class="chart-bar-value" id="katch-bar-value">0</span>
+              </div>
+            </div>
+            <span class="chart-difference" id="katch-diff">-</span>
+          </div>
+        </div>
+
+        <div class="chart-legend">
+          <div class="legend-item">
+            <div class="legend-color mifflin-color"></div>
+            <span>Most accurate for general population</span>
+          </div>
+          <div class="legend-item">
+            <div class="legend-color harris-color"></div>
+            <span>Traditional method, widely used</span>
+          </div>
+          <div class="legend-item" id="katch-legend" style="display: none;">
+            <div class="legend-color katch-color"></div>
+            <span>Best for athletes with known body fat %</span>
+          </div>
         </div>
       </div>
     </div>
@@ -244,7 +352,7 @@ const { lang } = Astro.props as { lang: Locale };
   .unit {
     display: inline-block;
     margin-left: 0.5rem;
-    color: #888;
+    color: #666; /* WCAG AA compliant (contrast ratio 5.74:1) */
     font-size: 0.9rem;
   }
 
@@ -452,6 +560,283 @@ const { lang } = Astro.props as { lang: Locale };
     margin-top: 1.5rem;
   }
 
+  /* Calculating Animation */
+  .calculating-animation {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 3rem 1rem;
+    min-height: 300px;
+    animation: fadeIn 0.3s ease-in;
+  }
+
+  .calculating-content {
+    text-align: center;
+    max-width: 300px;
+  }
+
+  .animated-gauge {
+    width: 200px;
+    height: 120px;
+    margin: 0 auto 2rem;
+  }
+
+  .animated-gauge svg {
+    width: 100%;
+    height: 100%;
+    filter: drop-shadow(0 4px 6px rgba(156, 39, 176, 0.2));
+  }
+
+  /* Progress arc animation */
+  #progress-arc {
+    animation: fillProgress 2s ease-out forwards;
+  }
+
+  @keyframes fillProgress {
+    from {
+      stroke-dashoffset: 220;
+    }
+    to {
+      stroke-dashoffset: 0;
+    }
+  }
+
+  /* Pulse animations */
+  .pulse-circle {
+    animation: pulse 1.5s ease-in-out infinite;
+  }
+
+  .pulse-circle-small {
+    animation: pulseSmall 1.5s ease-in-out infinite;
+  }
+
+  @keyframes pulse {
+    0%, 100% {
+      r: 20;
+      opacity: 0.3;
+    }
+    50% {
+      r: 28;
+      opacity: 0.1;
+    }
+  }
+
+  @keyframes pulseSmall {
+    0%, 100% {
+      r: 15;
+      opacity: 1;
+    }
+    50% {
+      r: 12;
+      opacity: 0.7;
+    }
+  }
+
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+      transform: translateY(-10px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+
+  .calculating-text {
+    font-size: 1.25rem;
+    font-weight: 600;
+    color: #7B1FA2; /* Darker purple for WCAG AA compliance (contrast ratio 6.3:1) */
+    margin-bottom: 1rem;
+  }
+
+  /* Loading dots animation */
+  .calculating-dots {
+    display: flex;
+    justify-content: center;
+    gap: 0.5rem;
+  }
+
+  .calculating-dots span {
+    width: 10px;
+    height: 10px;
+    background-color: #9C27B0;
+    border-radius: 50%;
+    animation: dotPulse 1.4s ease-in-out infinite;
+  }
+
+  .calculating-dots span:nth-child(1) {
+    animation-delay: 0s;
+  }
+
+  .calculating-dots span:nth-child(2) {
+    animation-delay: 0.2s;
+  }
+
+  .calculating-dots span:nth-child(3) {
+    animation-delay: 0.4s;
+  }
+
+  @keyframes dotPulse {
+    0%, 80%, 100% {
+      opacity: 0.3;
+      transform: scale(1);
+    }
+    40% {
+      opacity: 1;
+      transform: scale(1.3);
+    }
+  }
+
+  /* Formula Comparison Chart */
+  .formula-chart {
+    margin-top: 2rem;
+    padding: 1.5rem;
+    background: #f8f4fc;
+    border-radius: 8px;
+    border-left: 4px solid #9C27B0;
+  }
+
+  .chart-title {
+    margin: 0 0 0.5rem 0;
+    color: #7B1FA2; /* Darker purple for WCAG AA compliance (contrast ratio 6.3:1) */
+    font-size: 1.1rem;
+    font-weight: 600;
+  }
+
+  .chart-subtitle {
+    margin: 0 0 1.5rem 0;
+    color: #666;
+    font-size: 0.9rem;
+  }
+
+  .chart-bars {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    margin-bottom: 1.5rem;
+  }
+
+  .chart-bar-item {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+
+  .chart-bar-label {
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+    margin-bottom: 0.25rem;
+  }
+
+  .chart-formula-name {
+    font-weight: 600;
+    color: #333;
+    font-size: 0.95rem;
+  }
+
+  .chart-badge {
+    display: inline-block;
+    padding: 0.125rem 0.5rem;
+    border-radius: 12px;
+    font-size: 0.75rem;
+    font-weight: 600;
+  }
+
+  .chart-badge.recommended {
+    background: #4CAF50;
+    color: white;
+  }
+
+  .chart-badge.body-comp {
+    background: #FF9800;
+    color: white;
+  }
+
+  .chart-bar-container {
+    position: relative;
+    width: 100%;
+    height: 40px;
+    background: #e0e0e0;
+    border-radius: 4px;
+    overflow: hidden;
+  }
+
+  .chart-bar {
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    padding-right: 0.75rem;
+    border-radius: 4px;
+    transition: width 1s ease-out;
+    position: relative;
+  }
+
+  .mifflin-bar {
+    background: linear-gradient(90deg, #9C27B0 0%, #BA68C8 100%);
+  }
+
+  .harris-bar {
+    background: linear-gradient(90deg, #673AB7 0%, #9575CD 100%);
+  }
+
+  .katch-bar {
+    background: linear-gradient(90deg, #E91E63 0%, #F48FB1 100%);
+  }
+
+  .chart-bar-value {
+    color: white;
+    font-weight: 700;
+    font-size: 0.9rem;
+    text-shadow: 0 1px 2px rgba(0,0,0,0.2);
+  }
+
+  .chart-difference {
+    font-size: 0.85rem;
+    color: #666;
+    margin-top: 0.25rem;
+  }
+
+  .chart-legend {
+    display: flex;
+    flex-direction: column;
+    gap: 0.75rem;
+    padding-top: 1rem;
+    border-top: 1px solid #ddd;
+  }
+
+  .legend-item {
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+  }
+
+  .legend-color {
+    width: 20px;
+    height: 20px;
+    border-radius: 4px;
+    flex-shrink: 0;
+  }
+
+  .mifflin-color {
+    background: linear-gradient(90deg, #9C27B0 0%, #BA68C8 100%);
+  }
+
+  .harris-color {
+    background: linear-gradient(90deg, #673AB7 0%, #9575CD 100%);
+  }
+
+  .katch-color {
+    background: linear-gradient(90deg, #E91E63 0%, #F48FB1 100%);
+  }
+
+  .legend-item span {
+    color: #555;
+    font-size: 0.9rem;
+  }
+
   @media (max-width: 768px) {
     .activity-grid, .formula-comparison {
       grid-template-columns: 1fr;
@@ -498,8 +883,11 @@ const { lang } = Astro.props as { lang: Locale };
   });
 
   // Handle form submission
-  form.addEventListener('submit', (e) => {
+  form.addEventListener('submit', async (e) => {
     e.preventDefault();
+
+    // Show calculating animation
+    showCalculatingAnimation();
 
     const formData = new FormData(form);
     const unitSystem = formData.get('unitSystem') as string;
@@ -528,15 +916,39 @@ const { lang } = Astro.props as { lang: Locale };
     };
 
     try {
-      const result = calculateBMR(input);
+      // Calculate BMR with 2-second animation delay
+      const [result] = await Promise.all([
+        Promise.resolve(calculateBMR(input)),
+        new Promise(resolve => setTimeout(resolve, 2000)) // 2 second animation
+      ]);
+
       displayResults(result);
     } catch (error) {
       alert('Error calculating BMR. Please check your inputs.');
       console.error(error);
+      hideCalculatingAnimation();
     }
   });
 
+  function showCalculatingAnimation() {
+    const calculatingDiv = document.getElementById('calculating-animation');
+    if (calculatingDiv) {
+      calculatingDiv.style.display = 'block';
+      calculatingDiv.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
+    }
+  }
+
+  function hideCalculatingAnimation() {
+    const calculatingDiv = document.getElementById('calculating-animation');
+    if (calculatingDiv) {
+      calculatingDiv.style.display = 'none';
+    }
+  }
+
   function displayResults(result: BMRResult) {
+    // Hide calculating animation
+    hideCalculatingAnimation();
+
     const bmrValue = document.getElementById('bmr-value') as HTMLParagraphElement;
     const mifflinValue = document.getElementById('mifflin-value') as HTMLSpanElement;
     const harrisValue = document.getElementById('harris-value') as HTMLSpanElement;
@@ -568,13 +980,104 @@ const { lang } = Astro.props as { lang: Locale };
     veryActiveValue.textContent = `${result.calorieNeeds.veryActive} cal/day`;
     extraActiveValue.textContent = `${result.calorieNeeds.extraActive} cal/day`;
 
+    // Update visual chart
+    updateFormulaChart(result);
+
     // Show results
     results.style.display = 'block';
     results.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
   }
 
+  function updateFormulaChart(result: BMRResult) {
+    const chart = document.getElementById('formula-chart');
+    const katchChartItem = document.getElementById('katch-chart-item');
+    const katchLegend = document.getElementById('katch-legend');
+
+    if (!chart) return;
+
+    // Determine max value for scaling
+    const values = [result.mifflin, result.harris];
+    if (result.katch !== null) {
+      values.push(result.katch);
+      if (katchChartItem) katchChartItem.style.display = 'flex';
+      if (katchLegend) katchLegend.style.display = 'flex';
+    } else {
+      if (katchChartItem) katchChartItem.style.display = 'none';
+      if (katchLegend) katchLegend.style.display = 'none';
+    }
+
+    const maxValue = Math.max(...values);
+    const minValue = Math.min(...values);
+
+    // Update Mifflin-St Jeor bar
+    const mifflinBar = document.getElementById('mifflin-bar');
+    const mifflinBarValue = document.getElementById('mifflin-bar-value');
+    const mifflinDiff = document.getElementById('mifflin-diff');
+    if (mifflinBar && mifflinBarValue && mifflinDiff) {
+      const mifflinPercent = (result.mifflin / maxValue) * 100;
+      setTimeout(() => {
+        mifflinBar.style.width = `${mifflinPercent}%`;
+      }, 100);
+      mifflinBarValue.textContent = `${result.mifflin}`;
+      mifflinDiff.textContent = result.mifflin === maxValue ? 'Highest' :
+        result.mifflin === minValue ? 'Lowest' : 'Baseline';
+    }
+
+    // Update Harris-Benedict bar
+    const harrisBar = document.getElementById('harris-bar');
+    const harrisBarValue = document.getElementById('harris-bar-value');
+    const harrisDiff = document.getElementById('harris-diff');
+    if (harrisBar && harrisBarValue && harrisDiff) {
+      const harrisPercent = (result.harris / maxValue) * 100;
+      setTimeout(() => {
+        harrisBar.style.width = `${harrisPercent}%`;
+      }, 200);
+      harrisBarValue.textContent = `${result.harris}`;
+      const diff = result.harris - result.mifflin;
+      const diffSign = diff > 0 ? '+' : '';
+      harrisDiff.textContent = result.harris === maxValue ? 'Highest' :
+        result.harris === minValue ? 'Lowest' :
+        `${diffSign}${diff} cal vs Mifflin`;
+    }
+
+    // Update Katch-McArdle bar if available
+    if (result.katch !== null) {
+      const katchBar = document.getElementById('katch-bar');
+      const katchBarValue = document.getElementById('katch-bar-value');
+      const katchDiff = document.getElementById('katch-diff');
+      if (katchBar && katchBarValue && katchDiff) {
+        const katchPercent = (result.katch / maxValue) * 100;
+        setTimeout(() => {
+          katchBar.style.width = `${katchPercent}%`;
+        }, 300);
+        katchBarValue.textContent = `${result.katch}`;
+        const diff = result.katch - result.mifflin;
+        const diffSign = diff > 0 ? '+' : '';
+        katchDiff.textContent = result.katch === maxValue ? 'Highest' :
+          result.katch === minValue ? 'Lowest' :
+          `${diffSign}${diff} cal vs Mifflin`;
+      }
+    }
+
+    // Show chart
+    chart.style.display = 'block';
+  }
+
   // Handle form reset
   form.addEventListener('reset', () => {
+    hideCalculatingAnimation();
     results.style.display = 'none';
+
+    // Reset chart bars
+    const chart = document.getElementById('formula-chart');
+    if (chart) {
+      chart.style.display = 'none';
+      const bars = chart.querySelectorAll('.chart-bar');
+      bars.forEach((bar: Element) => {
+        if (bar instanceof HTMLElement) {
+          bar.style.width = '0%';
+        }
+      });
+    }
   });
 </script>

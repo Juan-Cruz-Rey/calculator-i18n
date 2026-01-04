@@ -1,34 +1,157 @@
 {
-  "title": "GU-Rechner (Grundumsatz)",
-  "description": "Berechnen Sie Ihren Grundumsatz",
-  "metaDescription": "Kostenloser GU-Rechner - Berechnen Sie Ihren Grundumsatz (im Ruhezustand verbrannte Kalorien) mit den Formeln von Mifflin-St Jeor, Harris-Benedict und Katch-McArdle.",
+  "title": "Grundumsatz-Rechner (BMR)",
+  "description": "Berechnen Sie Ihren Grundumsatz und täglichen Kalorienbedarf",
+  "metaDescription": "Kostenloser Grundumsatz-Rechner - Berechnen Sie Ihren Grundumsatz (Kalorienverbrauch im Ruhezustand) mit den Formeln nach Mifflin-St Jeor und Harris-Benedict. Inklusive Gesamtumsatz-Berechnung.",
+  "keywords": "Grundumsatz, BMR, Grundumsatz-Rechner, Kalorienverbrauch Ruhe, Gesamtumsatz, TDEE, Kalorienbedarf, Stoffwechsel-Rechner, Mifflin-St Jeor, Harris-Benedict, Abnehmen, täglicher Kalorienbedarf",
+
+  "terminology": {
+    "bmr": "Grundumsatz",
+    "bmrFull": "Grundumsatz (BMR)",
+    "tdee": "Gesamtumsatz",
+    "tdeeFull": "Gesamtumsatz (TDEE)",
+    "calories": "Kalorien",
+    "perDay": "pro Tag",
+    "kcal": "kcal",
+    "kcalPerDay": "kcal/Tag"
+  },
+
   "form": {
     "title": "Geben Sie Ihre Daten ein",
     "ageLabel": "Alter",
     "agePlaceholder": "Geben Sie Ihr Alter ein (15-80)",
+    "ageHelp": "Ihr Alter beeinflusst Ihren Grundumsatz",
     "genderLabel": "Geschlecht",
-    "heightLabel": "Größe",
-    "heightPlaceholder": "Geben Sie Ihre Größe ein",
+    "genderMale": "Männlich",
+    "genderFemale": "Weiblich",
+    "heightLabel": "Körpergröße",
+    "heightPlaceholder": "Geben Sie Ihre Körpergröße ein",
     "weightLabel": "Gewicht",
     "weightPlaceholder": "Geben Sie Ihr Gewicht ein",
     "bodyFatLabel": "Körperfettanteil (Optional)",
     "bodyFatPlaceholder": "z.B. 20",
-    "bodyFatHelp": "Optional: Geben Sie Ihren Körperfettanteil % für eine genauere Berechnung ein"
+    "bodyFatHelp": "Optional: Geben Sie Ihren Körperfettanteil für eine genauere Katch-McArdle-Berechnung ein",
+    "activityLabel": "Körperliche Aktivität",
+    "calculateButton": "Grundumsatz berechnen",
+    "calculating": "Berechnung läuft...",
+    "resetButton": "Zurücksetzen"
   },
+
   "activity": {
-    "sedentary": "Sitzend (wenig oder keine Bewegung)",
-    "light": "Leicht (Bewegung 1-3 Mal/Woche)",
-    "moderate": "Mäßig (Bewegung 4-5 Mal/Woche)",
-    "active": "Aktiv (tägliche Bewegung oder intensive Bewegung 3-4 Mal/Woche)",
-    "veryActive": "Sehr aktiv (intensive Bewegung 6-7 Mal/Woche)",
-    "extraActive": "Extrem aktiv (sehr intensive tägliche Bewegung & körperliche Arbeit)"
+    "title": "Wählen Sie Ihr Aktivitätsniveau",
+    "sedentary": "Sitzend",
+    "sedentaryDesc": "Wenig oder keine Bewegung, Büroarbeit",
+    "light": "Leicht aktiv",
+    "lightDesc": "Leichtes Training 1-3 Mal/Woche",
+    "moderate": "Mäßig aktiv",
+    "moderateDesc": "Mäßiges Training 4-5 Mal/Woche",
+    "active": "Aktiv",
+    "activeDesc": "Tägliches Training oder intensives Training 3-4 Mal/Woche",
+    "veryActive": "Sehr aktiv",
+    "veryActiveDesc": "Intensives Training 6-7 Mal/Woche",
+    "extraActive": "Extrem aktiv",
+    "extraActiveDesc": "Sehr intensives tägliches Training + körperliche Arbeit",
+    "multiplier": "Multiplikator"
   },
+
+  "formulas": {
+    "title": "Vergleich der Berechnungsformeln",
+    "description": "Verschiedene wissenschaftliche Formeln zur Berechnung Ihres Grundumsatzes",
+    "mifflinStJeor": "Mifflin-St Jeor (1990)",
+    "mifflinDesc": "Genaueste moderne Formel - Empfohlen von der Deutschen Gesellschaft für Ernährung (DGE)",
+    "mifflinFormulaMale": "Grundumsatz = (10 × Gewicht in kg) + (6,25 × Größe in cm) - (5 × Alter) + 5",
+    "mifflinFormulaFemale": "Grundumsatz = (10 × Gewicht in kg) + (6,25 × Größe in cm) - (5 × Alter) - 161",
+    "harrisBenedict": "Harris-Benedict (1984 überarbeitet)",
+    "harrisDesc": "Klassische überarbeitete Formel - Weit verbreitet in der klinischen Praxis",
+    "harrisFormulaMale": "Grundumsatz = 13,397 × Gewicht + 4,799 × Größe - 5,677 × Alter + 88,362",
+    "harrisFormulaFemale": "Grundumsatz = 9,247 × Gewicht + 3,098 × Größe - 4,330 × Alter + 447,593",
+    "katchMcArdle": "Katch-McArdle",
+    "katchDesc": "Basierend auf fettfreier Körpermasse - Genauer bei bekanntem Körperfettanteil",
+    "katchFormula": "Grundumsatz = 370 + (21,6 × fettfreie Masse in kg)",
+    "katchNote": "Erfordert Körperfettanteil",
+    "recommended": "✓ Empfohlen",
+    "mostAccurate": "Genaueste Formel",
+    "requiresBodyFat": "Erfordert Körperfettanteil"
+  },
+
   "results": {
     "title": "Ihre Ergebnisse",
-    "yourBMR": "Ihr GU",
-    "bmrDesc": "Kalorien, die Ihr Körper in Ruhe verbrennt",
-    "formulas": "Formelvergleich",
-    "calorieNeeds": "Kalorienbedarf nach Aktivitätsniveau",
-    "calorieNeedsDesc": "Täglicher Kalorienbedarf basierend auf Ihrem körperlichen Aktivitätsniveau"
+    "yourBMR": "Ihr Grundumsatz",
+    "bmrDesc": "Kalorien, die Ihr Körper in völliger Ruhe verbrennt (24 Stunden ohne Aktivität)",
+    "yourTDEE": "Ihr Gesamtumsatz",
+    "tdeeDesc": "Gesamte Kalorien, die Sie täglich verbrennen inklusive körperlicher Aktivität",
+    "formulaComparison": "Formelvergleich",
+    "formulaComparisonDesc": "Verschiedene wissenschaftliche Methoden zur Schätzung Ihres Grundumsatzes",
+    "calorieNeeds": "Täglicher Kalorienbedarf",
+    "calorieNeedsDesc": "Benötigte Kalorien basierend auf Ihrem körperlichen Aktivitätsniveau",
+    "activityLevel": "Aktivitätsniveau",
+    "dailyCalories": "Tägliche Kalorien",
+    "perDay": "pro Tag",
+    "basedOn": "Basierend auf",
+    "avgOf": "Durchschnitt von",
+    "formulas_plural": "Formeln"
+  },
+
+  "deficitTable": {
+    "title": "Kaloriendefizit-Tabelle für Gewichtsabnahme",
+    "description": "Reduzieren Sie diese Kalorienmenge von Ihrem Gesamtumsatz für gesunde Gewichtsabnahme",
+    "goal": "Abnehmziel",
+    "deficit": "Tägliches Defizit",
+    "calories": "Tägliche Kalorien",
+    "timeFrame": "Geschätzte Dauer",
+    "mild": "Mild (0,25 kg/Woche)",
+    "moderate": "Moderat (0,5 kg/Woche)",
+    "aggressive": "Aggressiv (0,75 kg/Woche)",
+    "veryAggressive": "Sehr aggressiv (1 kg/Woche)",
+    "warning": "⚠️ Reduzieren Sie nicht mehr als 1000 kcal/Tag",
+    "minCalories": "Nehmen Sie niemals weniger als 1200 kcal/Tag (Frauen) oder 1500 kcal/Tag (Männer) zu sich",
+    "disclaimer": "Konsultieren Sie einen Ernährungsberater für einen personalisierten Plan"
+  },
+
+  "graph": {
+    "title": "Visueller Formelvergleich",
+    "yAxisLabel": "Kalorien (kcal/Tag)",
+    "compareLabel": "Vergleichen"
+  },
+
+  "info": {
+    "whatIsBMR": "Was ist der Grundumsatz?",
+    "bmrExplanation": "Der Grundumsatz (BMR - Basal Metabolic Rate) ist die minimale Energiemenge (Kalorien), die Ihr Körper benötigt, um lebenswichtige Funktionen im Ruhezustand aufrechtzuerhalten: Atmung, Blutkreislauf, Zellproduktion, Nährstoffverarbeitung.",
+    "whatIsTDEE": "Was ist der Gesamtumsatz?",
+    "tdeeExplanation": "Der Gesamtumsatz (TDEE - Total Daily Energy Expenditure) ist Ihr Grundumsatz multipliziert mit Ihrem körperlichen Aktivitätsniveau. Er repräsentiert die gesamten Kalorien, die Sie an einem typischen Tag verbrennen.",
+    "howToUse": "Wie verwenden Sie diese Ergebnisse?",
+    "useCase1": "Gewicht halten: Konsumieren Sie Kalorien = Gesamtumsatz",
+    "useCase2": "Gewicht verlieren: Konsumieren Sie 300-500 kcal weniger als Gesamtumsatz",
+    "useCase3": "Gewicht/Muskelmasse zunehmen: Konsumieren Sie 300-500 kcal mehr als Gesamtumsatz",
+    "accuracy": "Genauigkeit der Formeln",
+    "accuracyNote": "Die Formeln haben eine Fehlertoleranz von ±10%. Mifflin-St Jeor ist am genauesten für die Allgemeinbevölkerung. Katch-McArdle ist überlegen, wenn Sie Ihre Körperzusammensetzung kennen."
+  },
+
+  "tips": {
+    "title": "Nützliche Tipps",
+    "tip1": "Faktoren, die den Grundumsatz erhöhen: mehr Muskelmasse, jüngeres Alter, männliches Geschlecht, Genetik, Fieber, Schwangerschaft",
+    "tip2": "Faktoren, die den Grundumsatz senken: höheres Alter, sehr restriktive Diäten, Verlust von Muskelmasse, Schilddrüsenunterfunktion",
+    "tip3": "Krafttraining erhöht Ihre Muskelmasse und damit langfristig Ihren Grundumsatz",
+    "tip4": "Extreme Diäten (< 1000 kcal/Tag) reduzieren Ihren Stoffwechsel als Überlebensmechanismus"
+  },
+
+  "disclaimer": {
+    "title": "⚠️ Wichtig: Einschränkungen",
+    "point1": "Diese Formeln sind Schätzungen basierend auf Bevölkerungsdurchschnitten",
+    "point2": "Sie berücksichtigen keine spezifischen medizinischen Bedingungen (Schilddrüse, PCOS usw.)",
+    "point3": "Der tatsächliche Energieverbrauch kann zwischen Individuen um ±10-20% variieren",
+    "point4": "Konsultieren Sie einen Ernährungsberater oder Arzt für einen personalisierten Plan",
+    "point5": "Nicht empfohlen für Personen unter 15 Jahren ohne professionelle Betreuung"
+  },
+
+  "healthAuthority": "Quelle: WHO (Weltgesundheitsorganisation), DGE (Deutsche Gesellschaft für Ernährung), Robert Koch Institut",
+
+  "relatedCalculators": {
+    "title": "Verwandte Rechner",
+    "bmi": "BMI-Rechner",
+    "bodyFat": "Körperfett-Rechner",
+    "tdee": "Gesamtumsatz-Rechner",
+    "macro": "Makronährstoff-Rechner",
+    "calorie": "Kalorien-Rechner",
+    "idealWeight": "Idealgewicht-Rechner"
   }
 }

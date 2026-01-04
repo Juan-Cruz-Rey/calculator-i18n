@@ -1,34 +1,141 @@
 {
-  "title": "BMR Calculator (Basal Metabolic Rate)",
-  "description": "Calculate your basal metabolic rate",
-  "metaDescription": "Free BMR Calculator - Calculate your Basal Metabolic Rate (calories burned at rest) using Mifflin-St Jeor, Harris-Benedict, and Katch-McArdle formulas.",
+  "title": "BMH Hesaplayıcı (Bazal Metabolizma Hızı)",
+  "description": "Bazal metabolizma hızınızı ve günlük kalori ihtiyaçlarınızı hesaplayın",
+  "metaDescription": "Ücretsiz BMH Hesaplayıcı - Mifflin-St Jeor ve Harris-Benedict formüllerini kullanarak Bazal Metabolizma Hızınızı (dinlenme kalori yakımı) hesaplayın. TDEE hesaplama dahil.",
+  "keywords": "BMH, bazal metabolizma hızı, BMH hesaplayıcı, dinlenme kalorisi, toplam günlük enerji harcaması, TDEE, kalori ihtiyacı, metabolizma hesaplayıcı, Mifflin-St Jeor, Harris-Benedict, kilo verme, günlük kalori",
+
+  "terminology": {
+    "bmr": "BMH",
+    "bmrFull": "Bazal Metabolizma Hızı",
+    "tdee": "TDEE",
+    "tdeeFull": "Toplam Günlük Enerji Harcaması",
+    "calories": "kalori",
+    "perDay": "günde",
+    "kcal": "kcal",
+    "kcalPerDay": "kcal/gün"
+  },
+
   "form": {
-    "title": "Enter your information",
-    "ageLabel": "Age",
-    "agePlaceholder": "Enter your age (15-80)",
-    "genderLabel": "Gender",
-    "heightLabel": "Height",
-    "heightPlaceholder": "Enter your height",
-    "weightLabel": "Weight",
-    "weightPlaceholder": "Enter your weight",
-    "bodyFatLabel": "Body Fat Percentage (Optional)",
-    "bodyFatPlaceholder": "e.g., 20",
-    "bodyFatHelp": "Optional: Enter your body fat % for a more accurate calculation"
+    "title": "Bilgilerinizi girin",
+    "ageLabel": "Yaş",
+    "agePlaceholder": "Yaşınızı girin (15-80)",
+    "ageHelp": "Yaşınız bazal metabolizma hızınızı etkiler",
+    "genderLabel": "Cinsiyet",
+    "genderMale": "Erkek",
+    "genderFemale": "Kadın",
+    "heightLabel": "Boy",
+    "heightPlaceholder": "Boyunuzu girin",
+    "weightLabel": "Kilo",
+    "weightPlaceholder": "Kilonuzu girin",
+    "bodyFatLabel": "Vücut Yağ Yüzdesi (İsteğe bağlı)",
+    "bodyFatPlaceholder": "Örn: 20",
+    "bodyFatHelp": "İsteğe bağlı: Daha doğru Katch-McArdle hesaplaması için vücut yağ % girin",
+    "activityLabel": "Fiziksel Aktivite Seviyesi",
+    "calculateButton": "BMH Hesapla",
+    "calculating": "Hesaplanıyor...",
+    "resetButton": "Sıfırla"
   },
+
   "activity": {
-    "sedentary": "Sedentary (little or no exercise)",
-    "light": "Light (exercise 1-3 times/week)",
-    "moderate": "Moderate (exercise 4-5 times/week)",
-    "active": "Active (daily exercise or intense exercise 3-4 times/week)",
-    "veryActive": "Very active (intense exercise 6-7 times/week)",
-    "extraActive": "Extra active (very intense daily exercise & physical job)"
+    "title": "Aktivite seviyenizi seçin",
+    "sedentary": "Hareketsiz",
+    "sedentaryDesc": "Az veya hiç egzersiz yok, masa başı iş",
+    "light": "Hafif",
+    "lightDesc": "Haftada 1-3 kez hafif egzersiz",
+    "moderate": "Orta",
+    "moderateDesc": "Haftada 4-5 kez orta egzersiz",
+    "active": "Aktif",
+    "activeDesc": "Günlük egzersiz veya haftada 3-4 kez yoğun egzersiz",
+    "veryActive": "Çok aktif",
+    "veryActiveDesc": "Haftada 6-7 kez yoğun egzersiz",
+    "extraActive": "Son derece aktif",
+    "extraActiveDesc": "Günlük çok yoğun egzersiz + fiziksel iş",
+    "multiplier": "Çarpan"
   },
+
+  "formulas": {
+    "title": "Formül Karşılaştırması",
+    "description": "BMH hesaplamak için farklı bilimsel formüller",
+    "mifflinStJeor": "Mifflin-St Jeor (1990)",
+    "mifflinDesc": "En doğru modern formül - Beslenme ve Diyetetik Akademisi tarafından kullanılır",
+    "mifflinFormulaMale": "BMH = (10 × kg cinsinden kilo) + (6.25 × cm cinsinden boy) - (5 × yaş) + 5",
+    "mifflinFormulaFemale": "BMH = (10 × kg cinsinden kilo) + (6.25 × cm cinsinden boy) - (5 × yaş) - 161",
+    "harrisBenedict": "Harris-Benedict (1984 revize)",
+    "harrisDesc": "Geleneksel revize formül - Kliniklerde yaygın kullanılır",
+    "harrisFormulaMale": "BMH = 13.397 × kilo + 4.799 × boy - 5.677 × yaş + 88.362",
+    "harrisFormulaFemale": "BMH = 9.247 × kilo + 3.098 × boy - 4.330 × yaş + 447.593",
+    "katchMcArdle": "Katch-McArdle",
+    "katchDesc": "Yağsız vücut kütlesine dayalı - Vücut yağ % biliyorsanız daha doğru",
+    "katchFormula": "BMH = 370 + (21.6 × kg cinsinden yağsız vücut kütlesi)",
+    "katchNote": "Vücut yağ yüzdesi gerektirir",
+    "recommended": "✓ Önerilen",
+    "mostAccurate": "En doğru",
+    "requiresBodyFat": "Vücut yağ % gerektirir"
+  },
+
   "results": {
-    "title": "Your Results",
-    "yourBMR": "Your BMR",
-    "bmrDesc": "Calories your body burns at rest",
-    "formulas": "Formula Comparison",
-    "calorieNeeds": "Calorie Needs by Activity Level",
-    "calorieNeedsDesc": "Daily calories needed based on your physical activity level"
+    "title": "Sonuçlarınız",
+    "yourBMR": "BMH'niz",
+    "bmrDesc": "Vücudunuzun tam dinlenme halinde yaktığı kalori (aktivite olmadan 24 saat)",
+    "yourTDEE": "TDEE'niz",
+    "tdeeDesc": "Fiziksel aktiviteniz dahil günlük toplam yaktığınız kalori",
+    "formulaComparison": "Formül Karşılaştırması",
+    "formulaComparisonDesc": "BMH'nizi tahmin etmek için farklı bilimsel yöntemler",
+    "calorieNeeds": "Günlük Kalori İhtiyacı",
+    "calorieNeedsDesc": "Fiziksel aktivite seviyenize göre gerekli kalori",
+    "activityLevel": "Aktivite Seviyesi",
+    "dailyCalories": "Günlük Kalori",
+    "perDay": "günde",
+    "basedOn": "Temeli",
+    "avgOf": "Ortalaması",
+    "formulas_plural": "formüller"
+  },
+
+  "graph": {
+    "title": "Görsel Formül Karşılaştırması",
+    "yAxisLabel": "Kalori (kcal/gün)",
+    "compareLabel": "Karşılaştır"
+  },
+
+  "info": {
+    "whatIsBMR": "BMH nedir?",
+    "bmrExplanation": "Bazal Metabolizma Hızı (BMH), vücudunuzun dinlenme halinde hayati fonksiyonları sürdürmek için ihtiyaç duyduğu minimum enerji (kalori) miktarıdır: solunum, kan dolaşımı, hücre üretimi, besin işleme.",
+    "whatIsTDEE": "TDEE nedir?",
+    "tdeeExplanation": "Toplam Günlük Enerji Harcaması (TDEE), BMH'nizin fiziksel aktivite seviyenizle çarpımıdır. Tipik bir günde yaktığınız toplam kaloriyi temsil eder.",
+    "howToUse": "Bu sonuçlar nasıl kullanılır?",
+    "useCase1": "Kilo koruma: TDEE'ye eşit kalori tüketin",
+    "useCase2": "Kilo verme: TDEE'den 300-500 kcal az tüketin",
+    "useCase3": "Kilo alma/kas: TDEE'den 300-500 kcal fazla tüketin",
+    "accuracy": "Formül Doğruluğu",
+    "accuracyNote": "Formüller ±%10 hata payına sahiptir. Mifflin-St Jeor genel popülasyon için en doğrudur. Vücut kompozisyonunuzu biliyorsanız Katch-McArdle daha iyidir."
+  },
+
+  "tips": {
+    "title": "Faydalı İpuçları",
+    "tip1": "BMH'yi artıran faktörler: daha fazla kas kütlesi, genç yaş, erkek cinsiyet, genetik, ateş, hamilelik",
+    "tip2": "BMH'yi azaltan faktörler: ileri yaş, çok kısıtlayıcı diyetler, kas kaybı, hipotiroidizm",
+    "tip3": "Kuvvet antrenmanı kas kütlenizi artırır ve uzun vadede BMH'nizi yükseltir",
+    "tip4": "Aşırı diyetler (< 1000 kcal/gün) hayatta kalma mekanizması olarak metabolizmanızı düşürür"
+  },
+
+  "disclaimer": {
+    "title": "⚠️ Önemli: Sınırlamalar",
+    "point1": "Bu formüller popülasyon ortalamalarına dayalı tahminlerdir",
+    "point2": "Spesifik tıbbi durumları (tiroid, PCOS vb.) dikkate almazlar",
+    "point3": "Gerçek enerji harcaması bireyler arasında ±%10-20 değişebilir",
+    "point4": "Kişiselleştirilmiş plan için diyetisyen veya doktora danışın",
+    "point5": "15 yaş altı için profesyonel gözetim olmadan önerilmez"
+  },
+
+  "healthAuthority": "Kaynak: WHO (Dünya Sağlık Örgütü), Türkiye Sağlık Bakanlığı",
+
+  "relatedCalculators": {
+    "title": "İlgili Hesaplayıcılar",
+    "bmi": "VKİ Hesaplayıcı",
+    "bodyFat": "Vücut Yağı Hesaplayıcı",
+    "tdee": "TDEE Hesaplayıcı",
+    "macro": "Makro Besin Hesaplayıcı",
+    "calorie": "Kalori Hesaplayıcı",
+    "idealWeight": "İdeal Kilo Hesaplayıcı"
   }
 }

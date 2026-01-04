@@ -1,34 +1,169 @@
 {
-  "title": "BMR Rekenmachine (Basaal Metabolisme)",
-  "description": "Bereken uw basaal metabolisme",
-  "metaDescription": "Gratis BMR Rekenmachine - Bereken uw Basaal Metabolisme (calorieën verbrand in rust) met behulp van Mifflin-St Jeor, Harris-Benedict en Katch-McArdle formules.",
+  "title": "BMR Calculator (Basaal Metabolisme)",
+  "description": "Bereken je basaal metabolisme en dagelijkse caloriebehoefte",
+  "metaDescription": "Gratis BMR Calculator - Bereken je Basaal Metabolisme (calorieën verbrand in rust) met de Mifflin-St Jeor, Harris-Benedict, Ten Haaf en WHO/FAO formules. Inclusief TDEE berekening en grafische vergelijking.",
+  "keywords": "BMR, basaal metabolisme, BMR calculator, calorieën in rust, totale dagelijkse energieverbruik, TDEE, caloriebehoefte, stofwisseling calculator, Mifflin-St Jeor, Harris-Benedict, Ten Haaf, afvallen, dagelijkse calorieën",
+
+  "terminology": {
+    "bmr": "BMR",
+    "bmrFull": "Basaal Metabolisme",
+    "tdee": "TDEE",
+    "tdeeFull": "Totaal Dagelijks Energieverbruik",
+    "calories": "calorieën",
+    "perDay": "per dag",
+    "kcal": "kcal",
+    "kcalPerDay": "kcal/dag"
+  },
+
   "form": {
-    "title": "Voer uw gegevens in",
+    "title": "Voer je gegevens in",
     "ageLabel": "Leeftijd",
-    "agePlaceholder": "Voer uw leeftijd in (15-80)",
+    "agePlaceholder": "Voer je leeftijd in (15-80)",
+    "ageHelp": "Je leeftijd beïnvloedt je basaal metabolisme",
     "genderLabel": "Geslacht",
+    "genderMale": "Man",
+    "genderFemale": "Vrouw",
     "heightLabel": "Lengte",
-    "heightPlaceholder": "Voer uw lengte in",
+    "heightPlaceholder": "Voer je lengte in",
     "weightLabel": "Gewicht",
-    "weightPlaceholder": "Voer uw gewicht in",
+    "weightPlaceholder": "Voer je gewicht in",
     "bodyFatLabel": "Lichaamsvetpercentage (Optioneel)",
     "bodyFatPlaceholder": "bijv. 20",
-    "bodyFatHelp": "Optioneel: Voer uw lichaamsvet % in voor een nauwkeurigere berekening"
+    "bodyFatHelp": "Optioneel: Voer je lichaamsvetpercentage in voor een nauwkeurigere Katch-McArdle berekening",
+    "activityLabel": "Fysieke Activiteitsniveau",
+    "calculateButton": "Bereken BMR",
+    "calculating": "Berekenen...",
+    "resetButton": "Resetten"
   },
+
   "activity": {
-    "sedentary": "Zittend (weinig of geen beweging)",
-    "light": "Licht (beweging 1-3 keer/week)",
-    "moderate": "Matig (beweging 4-5 keer/week)",
-    "active": "Actief (dagelijkse beweging of intensieve beweging 3-4 keer/week)",
-    "veryActive": "Zeer actief (intensieve beweging 6-7 keer/week)",
-    "extraActive": "Extra actief (zeer intensieve dagelijkse beweging & fysiek werk)"
+    "title": "Selecteer je activiteitsniveau",
+    "sedentary": "Zittend",
+    "sedentaryDesc": "Weinig of geen beweging, kantoorwerk",
+    "light": "Licht actief",
+    "lightDesc": "Lichte beweging 1-3 keer/week",
+    "moderate": "Matig actief",
+    "moderateDesc": "Matige beweging 4-5 keer/week",
+    "active": "Actief",
+    "activeDesc": "Dagelijkse beweging of intensieve training 3-4 keer/week",
+    "veryActive": "Zeer actief",
+    "veryActiveDesc": "Intensieve training 6-7 keer/week",
+    "extraActive": "Extreem actief",
+    "extraActiveDesc": "Zeer intensieve dagelijkse training + fysiek werk",
+    "multiplier": "Vermenigvuldiger"
   },
+
+  "formulas": {
+    "title": "Vergelijking van Formules",
+    "description": "Verschillende wetenschappelijke formules om je BMR te berekenen",
+    "mifflinStJeor": "Mifflin-St Jeor (1990)",
+    "mifflinDesc": "Meest nauwkeurige moderne formule - Aanbevolen door het Voedingscentrum",
+    "mifflinFormulaMale": "BMR = (10 × gewicht in kg) + (6,25 × lengte in cm) - (5 × leeftijd) + 5",
+    "mifflinFormulaFemale": "BMR = (10 × gewicht in kg) + (6,25 × lengte in cm) - (5 × leeftijd) - 161",
+    "harrisBenedict": "Harris-Benedict (1984 herzien)",
+    "harrisDesc": "Traditionele herziene formule - Veelvuldig gebruikt in de klinische praktijk",
+    "harrisFormulaMale": "BMR = 13,397 × gewicht + 4,799 × lengte - 5,677 × leeftijd + 88,362",
+    "harrisFormulaFemale": "BMR = 9,247 × gewicht + 3,098 × lengte - 4,330 × leeftijd + 447,593",
+    "katchMcArdle": "Katch-McArdle",
+    "katchDesc": "Gebaseerd op vetvrije massa - Nauwkeuriger als je je lichaamsvetpercentage kent",
+    "katchFormula": "BMR = 370 + (21,6 × vetvrije massa in kg)",
+    "katchNote": "Vereist lichaamsvetpercentage",
+    "tenHaaf": "Ten Haaf (Nederlands onderzoek)",
+    "tenHaafDesc": "Nederlandse formule gebaseerd op recent onderzoek - Geschikt voor Nederlandse populatie",
+    "tenHaafFormulaMale": "BMR = 11,5 × gewicht + 633 × lengte in m - 7,0 × leeftijd + 65",
+    "tenHaafFormulaFemale": "BMR = 8,4 × gewicht + 464 × lengte in m - 5,4 × leeftijd + 232",
+    "whoFao": "WHO/FAO (Leeftijdsgroep-specifiek)",
+    "whoFaoDesc": "Wereldgezondheidsorganisatie formule - Verschillende berekeningen per leeftijdscategorie",
+    "recommended": "✓ Aanbevolen",
+    "mostAccurate": "Meest nauwkeurig",
+    "requiresBodyFat": "Vereist vetpercentage",
+    "dutchResearch": "Nederlands onderzoek"
+  },
+
   "results": {
-    "title": "Uw Resultaten",
-    "yourBMR": "Uw BMR",
-    "bmrDesc": "Calorieën die uw lichaam in rust verbrandt",
-    "formulas": "Formule Vergelijking",
-    "calorieNeeds": "Caloriebehoefte per Activiteitenniveau",
-    "calorieNeedsDesc": "Dagelijkse calorieën nodig op basis van uw fysieke activiteitenniveau"
+    "title": "Je Resultaten",
+    "yourBMR": "Jouw BMR",
+    "bmrDesc": "Calorieën die je lichaam verbrandt in volledige rust (24 uur zonder activiteit)",
+    "yourTDEE": "Jouw TDEE",
+    "tdeeDesc": "Totale calorieën die je dagelijks verbrandt inclusief fysieke activiteit",
+    "formulaComparison": "Formule Vergelijking",
+    "formulaComparisonDesc": "Verschillende wetenschappelijke methoden om je BMR te schatten",
+    "calorieNeeds": "Dagelijkse Caloriebehoefte",
+    "calorieNeedsDesc": "Benodigde calorieën gebaseerd op je fysieke activiteitsniveau",
+    "activityLevel": "Activiteitsniveau",
+    "dailyCalories": "Dagelijkse Calorieën",
+    "perDay": "per dag",
+    "basedOn": "Gebaseerd op",
+    "avgOf": "Gemiddelde van",
+    "formulas_plural": "formules"
+  },
+
+  "deficitTable": {
+    "title": "Calorie Deficit Tabel voor Gewichtsverlies",
+    "description": "Verminder deze calorieën van je TDEE voor gezond gewichtsverlies",
+    "goal": "Verlies Doelstelling",
+    "deficit": "Dagelijks Deficit",
+    "calories": "Dagelijkse Calorieën",
+    "timeFrame": "Geschatte Tijd",
+    "mild": "Mild (0,25 kg/week)",
+    "moderate": "Matig (0,5 kg/week)",
+    "aggressive": "Agressief (0,75 kg/week)",
+    "veryAggressive": "Zeer Agressief (1 kg/week)",
+    "warning": "⚠️ Verminder niet meer dan 1000 kcal/dag",
+    "minCalories": "Consumeer nooit minder dan 1200 kcal/dag (vrouwen) of 1500 kcal/dag (mannen)",
+    "disclaimer": "Raadpleeg een diëtist voor een persoonlijk plan"
+  },
+
+  "graph": {
+    "title": "Visuele Formule Vergelijking",
+    "yAxisLabel": "Calorieën (kcal/dag)",
+    "compareLabel": "Vergelijk",
+    "mifflinLabel": "Mifflin-St Jeor",
+    "harrisLabel": "Harris-Benedict",
+    "tenHaafLabel": "Ten Haaf",
+    "whoFaoLabel": "WHO/FAO",
+    "katchLabel": "Katch-McArdle"
+  },
+
+  "info": {
+    "whatIsBMR": "Wat is BMR?",
+    "bmrExplanation": "Basaal Metabolisme (BMR - Basal Metabolic Rate) is de minimale hoeveelheid energie (calorieën) die je lichaam nodig heeft om vitale functies in rust te onderhouden: ademhaling, bloedcirculatie, celproductie, nutriëntverwerking.",
+    "whatIsTDEE": "Wat is TDEE?",
+    "tdeeExplanation": "Totaal Dagelijks Energieverbruik (TDEE - Total Daily Energy Expenditure) is je BMR vermenigvuldigd met je fysieke activiteitsniveau. Het vertegenwoordigt de totale calorieën die je verbrandt op een typische dag.",
+    "howToUse": "Hoe gebruik je deze resultaten?",
+    "useCase1": "Gewicht behouden: Consumeer calorieën = TDEE",
+    "useCase2": "Gewicht verliezen: Consumeer 300-500 kcal minder dan TDEE",
+    "useCase3": "Gewicht/spiermassa toevoegen: Consumeer 300-500 kcal meer dan TDEE",
+    "accuracy": "Nauwkeurigheid van de Formules",
+    "accuracyNote": "De formules hebben een foutmarge van ±10%. Mifflin-St Jeor is het meest nauwkeurig voor de algemene bevolking. Katch-McArdle is superieur als je je lichaamssamenstelling kent. Ten Haaf is specifiek ontwikkeld voor de Nederlandse populatie."
+  },
+
+  "tips": {
+    "title": "Handige Tips",
+    "tip1": "Factoren die BMR verhogen: meer spiermassa, jongere leeftijd, mannelijk geslacht, genetica, koorts, zwangerschap",
+    "tip2": "Factoren die BMR verlagen: hogere leeftijd, zeer restrictieve diëten, verlies van spiermassa, hypothyreoïdie",
+    "tip3": "Krachttraining verhoogt je spiermassa en daarmee je BMR op de lange termijn",
+    "tip4": "Extreme diëten (< 1000 kcal/dag) verlagen je stofwisseling als overlevingsmechanisme"
+  },
+
+  "disclaimer": {
+    "title": "⚠️ Belangrijk: Beperkingen",
+    "point1": "Deze formules zijn schattingen gebaseerd op bevolkingsgemiddelden",
+    "point2": "Ze houden geen rekening met specifieke medische aandoeningen (schildklier, PCOS, etc.)",
+    "point3": "Het werkelijke energieverbruik kan ±10-20% variëren tussen individuen",
+    "point4": "Raadpleeg een diëtist of arts voor een persoonlijk plan",
+    "point5": "Niet aanbevolen voor personen onder de 15 jaar zonder professionele begeleiding"
+  },
+
+  "healthAuthority": "Bron: WHO (Wereldgezondheidsorganisatie), RIVM, Voedingscentrum",
+
+  "relatedCalculators": {
+    "title": "Gerelateerde Calculators",
+    "bmi": "BMI Calculator",
+    "bodyFat": "Lichaamsvet Calculator",
+    "tdee": "TDEE Calculator",
+    "macro": "Macronutriënten Calculator",
+    "calorie": "Calorie Calculator",
+    "idealWeight": "Ideaal Gewicht Calculator"
   }
 }

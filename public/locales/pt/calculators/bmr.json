@@ -1,34 +1,177 @@
 {
   "title": "Calculadora de TMB (Taxa Metabólica Basal)",
-  "description": "Calcule sua taxa metabólica basal",
-  "metaDescription": "Calculadora de TMB gratuita - Calcule sua Taxa Metabólica Basal (calorias queimadas em repouso) usando as fórmulas de Mifflin-St Jeor, Harris-Benedict e Katch-McArdle.",
+  "description": "Calcule sua taxa metabólica basal e necessidades calóricas diárias",
+  "metaDescription": "Calculadora de TMB gratuita - Calcule sua Taxa Metabólica Basal (calorias queimadas em repouso) usando as fórmulas de Mifflin-St Jeor, Harris-Benedict e OMS/FAO. Inclui cálculo de GET.",
+  "keywords": "TMB, taxa metabólica basal, calculadora TMB, calorias em repouso, gasto energético total, GET, necessidades calóricas, calculadora metabolismo, fórmula Mifflin, Harris-Benedict, OMS FAO, perda de peso, calorias diárias, metabolismo basal",
+
+  "terminology": {
+    "bmr": "TMB",
+    "bmrFull": "Taxa Metabólica Basal",
+    "tdee": "GET",
+    "tdeeFull": "Gasto Energético Total",
+    "calories": "calorias",
+    "perDay": "por dia",
+    "kcal": "kcal",
+    "kcalPerDay": "kcal/dia"
+  },
+
   "form": {
     "title": "Insira seus dados",
     "ageLabel": "Idade",
     "agePlaceholder": "Insira sua idade (15-80)",
-    "genderLabel": "Gênero",
+    "ageHelp": "A idade afeta seu metabolismo basal",
+    "genderLabel": "Sexo",
+    "genderMale": "Masculino",
+    "genderFemale": "Feminino",
     "heightLabel": "Altura",
     "heightPlaceholder": "Insira sua altura",
     "weightLabel": "Peso",
     "weightPlaceholder": "Insira seu peso",
     "bodyFatLabel": "Percentual de Gordura Corporal (Opcional)",
-    "bodyFatPlaceholder": "ex: 20",
-    "bodyFatHelp": "Opcional: Insira seu % de gordura corporal para um cálculo mais preciso"
+    "bodyFatPlaceholder": "Ex: 20",
+    "bodyFatHelp": "Opcional: Insira seu percentual de gordura corporal para cálculo Katch-McArdle mais preciso",
+    "activityLabel": "Nível de Atividade Física",
+    "calculateButton": "Calcular TMB",
+    "calculating": "Calculando...",
+    "resetButton": "Reiniciar"
   },
+
   "activity": {
-    "sedentary": "Sedentário (pouco ou nenhum exercício)",
-    "light": "Leve (exercício 1-3 vezes/semana)",
-    "moderate": "Moderado (exercício 4-5 vezes/semana)",
-    "active": "Ativo (exercício diário ou intenso 3-4 vezes/semana)",
-    "veryActive": "Muito ativo (exercício intenso 6-7 vezes/semana)",
-    "extraActive": "Extremamente ativo (exercício muito intenso diário e trabalho físico)"
+    "title": "Selecione seu nível de atividade",
+    "sedentary": "Sedentário",
+    "sedentaryDesc": "Pouco ou nenhum exercício, trabalho de escritório",
+    "light": "Leve",
+    "lightDesc": "Exercício leve 1-3 vezes/semana",
+    "moderate": "Moderado",
+    "moderateDesc": "Exercício moderado 4-5 vezes/semana",
+    "active": "Ativo",
+    "activeDesc": "Exercício diário ou intenso 3-4 vezes/semana",
+    "veryActive": "Muito ativo",
+    "veryActiveDesc": "Exercício intenso 6-7 vezes/semana",
+    "extraActive": "Extremamente ativo",
+    "extraActiveDesc": "Exercício muito intenso diário + trabalho físico",
+    "multiplier": "Multiplicador"
   },
+
+  "formulas": {
+    "title": "Comparação de Fórmulas",
+    "description": "Diferentes fórmulas científicas para calcular sua TMB",
+    "mifflinStJeor": "Mifflin-St Jeor (1990)",
+    "mifflinDesc": "Fórmula mais precisa e recomendada - Usada pela Academia de Nutrição e Dietética",
+    "mifflinFormulaMale": "TMB = (10 × peso em kg) + (6,25 × altura em cm) - (5 × idade) + 5",
+    "mifflinFormulaFemale": "TMB = (10 × peso em kg) + (6,25 × altura em cm) - (5 × idade) - 161",
+    "harrisBenedict": "Harris-Benedict (1984 revisada)",
+    "harrisDesc": "Fórmula tradicional revisada - Amplamente usada em clínicas",
+    "harrisFormulaMale": "TMB = 13,397 × peso + 4,799 × altura - 5,677 × idade + 88,362",
+    "harrisFormulaFemale": "TMB = 9,247 × peso + 3,098 × altura - 4,330 × idade + 447,593",
+    "katchMcArdle": "Katch-McArdle",
+    "katchDesc": "Baseada em massa magra - Mais precisa se você conhece seu percentual de gordura",
+    "katchFormula": "TMB = 370 + (21,6 × massa magra em kg)",
+    "katchNote": "Requer percentual de gordura corporal",
+    "whoFao": "OMS/FAO (por faixa etária)",
+    "whoFaoDesc": "Fórmulas específicas por grupo de idade - Recomendadas pela Organização Mundial da Saúde",
+    "recommended": "✓ Recomendada",
+    "mostAccurate": "Mais precisa",
+    "requiresBodyFat": "Requer % gordura"
+  },
+
+  "ageGroupFormulas": {
+    "title": "Fórmulas OMS/FAO por Faixa Etária",
+    "description": "Equações específicas para diferentes grupos de idade, recomendadas pela Organização Mundial da Saúde e FAO",
+    "age18to30": "18-30 anos",
+    "age18to30Male": "TMB = (15,3 × peso) + 679",
+    "age18to30Female": "TMB = (14,7 × peso) + 496",
+    "age30to60": "30-60 anos",
+    "age30to60Male": "TMB = (11,6 × peso) + 879",
+    "age30to60Female": "TMB = (8,7 × peso) + 829",
+    "age60plus": "Acima de 60 anos",
+    "age60plusMale": "TMB = (13,5 × peso) + 487",
+    "age60plusFemale": "TMB = (10,5 × peso) + 596",
+    "note": "Estas fórmulas são particularmente úteis para a população brasileira e portuguesa",
+    "source": "Fonte: OMS/FAO Expert Consultation on Energy and Protein Requirements"
+  },
+
   "results": {
     "title": "Seus Resultados",
     "yourBMR": "Sua TMB",
-    "bmrDesc": "Calorias que seu corpo queima em repouso",
-    "formulas": "Comparação de Fórmulas",
-    "calorieNeeds": "Necessidades Calóricas por Nível de Atividade",
-    "calorieNeedsDesc": "Calorias diárias necessárias baseadas no seu nível de atividade física"
+    "bmrDesc": "Calorias que seu corpo queima em repouso absoluto (24 horas sem atividade)",
+    "yourTDEE": "Seu GET",
+    "tdeeDesc": "Calorias totais que você queima diariamente incluindo sua atividade física",
+    "formulaComparison": "Comparação de Fórmulas",
+    "formulaComparisonDesc": "Diferentes métodos científicos para estimar sua TMB",
+    "calorieNeeds": "Necessidades Calóricas Diárias",
+    "calorieNeedsDesc": "Calorias necessárias de acordo com seu nível de atividade física",
+    "activityLevel": "Nível de Atividade",
+    "dailyCalories": "Calorias Diárias",
+    "perDay": "por dia",
+    "basedOn": "Baseado na fórmula",
+    "avgOf": "Média de",
+    "formulas_plural": "fórmulas"
+  },
+
+  "deficitTable": {
+    "title": "Tabela de Déficit Calórico para Perda de Peso",
+    "description": "Reduza estas calorias do seu GET para perder peso de forma saudável",
+    "goal": "Objetivo de Perda",
+    "deficit": "Déficit Diário",
+    "calories": "Calorias Diárias",
+    "timeFrame": "Tempo Estimado",
+    "mild": "Leve (0,25 kg/semana)",
+    "moderate": "Moderado (0,5 kg/semana)",
+    "aggressive": "Agressivo (0,75 kg/semana)",
+    "veryAggressive": "Muito Agressivo (1 kg/semana)",
+    "warning": "⚠️ Não reduza mais de 1000 kcal/dia",
+    "minCalories": "Nunca consuma menos de 1200 kcal/dia (mulheres) ou 1500 kcal/dia (homens)",
+    "disclaimer": "Consulte um nutricionista para um plano personalizado"
+  },
+
+  "graph": {
+    "title": "Comparação Visual de Fórmulas",
+    "yAxisLabel": "Calorias (kcal/dia)",
+    "compareLabel": "Comparar"
+  },
+
+  "info": {
+    "whatIsBMR": "O que é a TMB?",
+    "bmrExplanation": "A Taxa Metabólica Basal (TMB) é a quantidade mínima de energia (calorias) que seu corpo precisa para manter funções vitais em repouso: respiração, circulação sanguínea, produção de células, processamento de nutrientes.",
+    "whatIsTDEE": "O que é o GET?",
+    "tdeeExplanation": "O Gasto Energético Total (GET) é sua TMB multiplicada pelo seu nível de atividade física. Representa as calorias totais que você queima em um dia típico.",
+    "howToUse": "Como usar estes resultados?",
+    "useCase1": "Manter peso: Consuma calorias = GET",
+    "useCase2": "Perder peso: Consuma 300-500 kcal a menos que GET",
+    "useCase3": "Ganhar peso/músculo: Consuma 300-500 kcal a mais que GET",
+    "accuracy": "Precisão das Fórmulas",
+    "accuracyNote": "As fórmulas têm uma margem de erro de ±10%. Mifflin-St Jeor é a mais precisa para a população geral. Katch-McArdle é superior se você conhece sua composição corporal. As fórmulas OMS/FAO são especialmente úteis para diferentes faixas etárias."
+  },
+
+  "tips": {
+    "title": "Dicas Úteis",
+    "tip1": "Fatores que aumentam a TMB: mais massa muscular, menor idade, sexo masculino, genética, febre, gravidez",
+    "tip2": "Fatores que diminuem a TMB: maior idade, dietas muito restritivas, perda de massa muscular, hipotireoidismo",
+    "tip3": "O exercício de força aumenta sua massa muscular e, portanto, sua TMB a longo prazo",
+    "tip4": "Dietas extremas (< 1000 kcal/dia) reduzem seu metabolismo como mecanismo de sobrevivência",
+    "tip5": "A TMB representa cerca de 60-75% do seu gasto energético total diário",
+    "tip6": "Beber água fria pode aumentar temporariamente seu metabolismo em 24-30%"
+  },
+
+  "disclaimer": {
+    "title": "⚠️ Importante: Limitações",
+    "point1": "Estas fórmulas são estimativas baseadas em médias populacionais",
+    "point2": "Não consideram condições médicas específicas (tireoide, SOP, etc.)",
+    "point3": "O gasto energético real pode variar ±10-20% entre indivíduos",
+    "point4": "Consulte um nutricionista ou médico para um plano personalizado",
+    "point5": "Não recomendado para menores de 15 anos sem supervisão profissional"
+  },
+
+  "healthAuthority": "Fonte: OMS (Organização Mundial da Saúde), Ministério da Saúde",
+
+  "relatedCalculators": {
+    "title": "Calculadoras Relacionadas",
+    "bmi": "Calculadora de IMC",
+    "bodyFat": "Calculadora de Gordura Corporal",
+    "tdee": "Calculadora de GET",
+    "macro": "Calculadora de Macronutrientes",
+    "calorie": "Calculadora de Calorias",
+    "idealWeight": "Calculadora de Peso Ideal"
   }
 }

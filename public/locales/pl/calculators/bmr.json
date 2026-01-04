@@ -1,24 +1,161 @@
 {
-  "title": "Kalkulator BMR",
-  "description": "Oblicz swoją podstawową przemianę materii",
-  "metaDescription": "Darmowy kalkulator BMR - Oblicz swoją podstawową przemianę materii (BMR), liczbę kalorii, które Twój organizm spala w spoczynku.",
+  "title": "Kalkulator PPM (Podstawowa Przemiana Materii)",
+  "description": "Oblicz swoją podstawową przemianę materii i całkowitą przemianę materii",
+  "metaDescription": "Darmowy kalkulator PPM - Oblicz swoją Podstawową Przemianę Materii (PPM) i Całkowitą Przemianę Materii (CPM) używając formuł Mifflin-St Jeor, Harris-Benedict i Katch-McArdle. Porównanie formuł z wykresem.",
+  "keywords": "PPM, podstawowa przemiana materii, kalkulator PPM, CPM, całkowita przemiana materii, kalorie, metabolizm bazalny, zapotrzebowanie kaloryczne, Mifflin-St Jeor, Harris-Benedict, Katch-McArdle, odchudzanie, kalorie dziennie",
+
+  "terminology": {
+    "bmr": "PPM",
+    "bmrFull": "Podstawowa Przemiana Materii",
+    "tdee": "CPM",
+    "tdeeFull": "Całkowita Przemiana Materii",
+    "calories": "kalorie",
+    "perDay": "dziennie",
+    "kcal": "kcal",
+    "kcalPerDay": "kcal/dzień"
+  },
+
   "form": {
     "title": "Wprowadź swoje dane",
     "ageLabel": "Wiek",
-    "agePlaceholder": "Wprowadź swój wiek",
+    "agePlaceholder": "Wprowadź swój wiek (15-80)",
+    "ageHelp": "Wiek wpływa na podstawową przemianę materii",
     "genderLabel": "Płeć",
+    "genderMale": "Mężczyzna",
+    "genderFemale": "Kobieta",
     "heightLabel": "Wzrost",
     "heightPlaceholder": "Wprowadź swój wzrost",
     "weightLabel": "Waga",
-    "weightPlaceholder": "Wprowadź swoją wagę"
+    "weightPlaceholder": "Wprowadź swoją wagę",
+    "bodyFatLabel": "Procent Tkanki Tłuszczowej (Opcjonalnie)",
+    "bodyFatPlaceholder": "Np.: 20",
+    "bodyFatHelp": "Opcjonalnie: Wprowadź % tkanki tłuszczowej dla dokładniejszego obliczenia Katch-McArdle",
+    "activityLabel": "Poziom Aktywności Fizycznej",
+    "calculateButton": "Oblicz PPM i CPM",
+    "calculating": "Obliczanie...",
+    "resetButton": "Wyczyść"
   },
+
+  "activity": {
+    "title": "Wybierz swój poziom aktywności",
+    "sedentary": "Brak aktywności",
+    "sedentaryDesc": "Praca siedząca, brak lub bardzo mało ruchu",
+    "light": "Niska aktywność",
+    "lightDesc": "Lekkie ćwiczenia 1-3 razy/tydzień",
+    "moderate": "Umiarkowana aktywność",
+    "moderateDesc": "Umiarkowane ćwiczenia 4-5 razy/tydzień",
+    "active": "Aktywny",
+    "activeDesc": "Intensywne ćwiczenia 3-4 razy/tydzień lub codziennie",
+    "veryActive": "Bardzo aktywny",
+    "veryActiveDesc": "Intensywne ćwiczenia 6-7 razy/tydzień",
+    "extraActive": "Ekstremalnie aktywny",
+    "extraActiveDesc": "Bardzo intensywne ćwiczenia codziennie + praca fizyczna",
+    "multiplier": "Mnożnik"
+  },
+
+  "formulas": {
+    "title": "Porównanie Formuł",
+    "description": "Różne formuły naukowe do obliczania PPM",
+    "mifflinStJeor": "Mifflin-St Jeor (1990)",
+    "mifflinDesc": "Najdokładniejsza współczesna formuła - Zalecana przez Akademię Żywienia i Dietetyki",
+    "mifflinFormulaMale": "PPM = (10 × waga w kg) + (6.25 × wzrost w cm) - (5 × wiek) + 5",
+    "mifflinFormulaFemale": "PPM = (10 × waga w kg) + (6.25 × wzrost w cm) - (5 × wiek) - 161",
+    "harrisBenedict": "Harris-Benedict (1984 poprawiona)",
+    "harrisDesc": "Tradycyjna formuła - Szeroko stosowana w praktyce klinicznej",
+    "harrisFormulaMale": "PPM = 13.397 × waga + 4.799 × wzrost - 5.677 × wiek + 88.362",
+    "harrisFormulaFemale": "PPM = 9.247 × waga + 3.098 × wzrost - 4.330 × wiek + 447.593",
+    "katchMcArdle": "Katch-McArdle",
+    "katchDesc": "Oparta na beztłuszczowej masie ciała - Dokładniejsza przy znanym % tkanki tłuszczowej",
+    "katchFormula": "PPM = 370 + (21.6 × beztłuszczowa masa ciała w kg)",
+    "katchNote": "Wymaga znajomości procentu tkanki tłuszczowej",
+    "recommended": "✓ Zalecana",
+    "mostAccurate": "Najdokładniejsza",
+    "requiresBodyFat": "Wymaga % tkanki tłuszczowej"
+  },
+
   "results": {
-    "title": "Twoja Podstawowa Przemiana Materii",
-    "mifflin": "Mifflin-St Jeor",
-    "harris": "Harris-Benedict (poprawiony)",
-    "katch": "Katch-McArdle",
-    "bodyFatLabel": "Procent tkanki tłuszczowej (dla Katch-McArdle)",
-    "bodyFatPlaceholder": "Opcjonalnie",
-    "calories": "kalorii/dzień"
+    "title": "Twoje Wyniki",
+    "yourBMR": "Twoja PPM",
+    "bmrDesc": "Kalorie spalane przez organizm w spoczynku (bez żadnej aktywności)",
+    "yourTDEE": "Twoja CPM",
+    "tdeeDesc": "Całkowite spalanie kalorii dziennie uwzględniając aktywność fizyczną",
+    "formulaComparison": "Porównanie Formuł",
+    "formulaComparisonDesc": "Różne metody naukowe szacowania PPM",
+    "calorieNeeds": "Dzienne Zapotrzebowanie Kaloryczne",
+    "calorieNeedsDesc": "Kalorie potrzebne w zależności od poziomu aktywności fizycznej",
+    "activityLevel": "Poziom Aktywności",
+    "dailyCalories": "Kalorie Dziennie",
+    "perDay": "dziennie",
+    "basedOn": "W oparciu o formułę",
+    "avgOf": "Średnia z",
+    "formulas_plural": "formuł"
+  },
+
+  "graph": {
+    "title": "Wizualne Porównanie Formuł",
+    "description": "Graficzne zestawienie wyników z różnych formuł",
+    "yAxisLabel": "Kalorie (kcal/dzień)",
+    "xAxisLabel": "Formuła",
+    "compareLabel": "Porównaj",
+    "showGraph": "Pokaż wykres",
+    "hideGraph": "Ukryj wykres",
+    "ppmLabel": "PPM",
+    "cpmLabel": "CPM",
+    "difference": "Różnica",
+    "average": "Średnia",
+    "range": "Zakres"
+  },
+
+  "ppmCpmIntegration": {
+    "title": "PPM i CPM - Pełny Obraz Twojego Metabolizmu",
+    "description": "W profesjonalnej dietetyce zawsze analizujemy PPM i CPM razem",
+    "ppmSection": "PPM (Podstawowa Przemiana Materii)",
+    "ppmExplanation": "To minimum energii potrzebne do utrzymania życia w spoczynku",
+    "cpmSection": "CPM (Całkowita Przemiana Materii)",
+    "cpmExplanation": "To PPM pomnożone przez Twój poziom aktywności - rzeczywiste spalanie kalorii",
+    "relationship": "Relacja: CPM = PPM × Współczynnik Aktywności"
+  },
+
+  "info": {
+    "whatIsBMR": "Czym jest PPM?",
+    "bmrExplanation": "Podstawowa Przemiana Materii (PPM) to minimalna ilość energii (kalorii), której potrzebuje organizm do utrzymania podstawowych funkcji życiowych w spoczynku: oddychanie, krążenie krwi, produkcja komórek, przetwarzanie składników odżywczych.",
+    "whatIsTDEE": "Czym jest CPM?",
+    "tdeeExplanation": "Całkowita Przemiana Materii (CPM) to PPM pomnożona przez współczynnik aktywności fizycznej. Reprezentuje całkowitą liczbę kalorii spalanych w typowym dniu.",
+    "howToUse": "Jak wykorzystać te wyniki?",
+    "useCase1": "Utrzymanie wagi: Spożywaj kalorie = CPM",
+    "useCase2": "Odchudzanie: Spożywaj 300-500 kcal mniej niż CPM",
+    "useCase3": "Przyrost masy/mięśni: Spożywaj 300-500 kcal więcej niż CPM",
+    "accuracy": "Dokładność Formuł",
+    "accuracyNote": "Formuły mają margines błędu ±10%. Mifflin-St Jeor jest najdokładniejsza dla ogólnej populacji. Katch-McArdle jest lepsza przy znanej kompozycji ciała."
+  },
+
+  "tips": {
+    "title": "Przydatne Wskazówki",
+    "tip1": "Czynniki zwiększające PPM: większa masa mięśniowa, młodszy wiek, płeć męska, genetyka, gorączka, ciąża",
+    "tip2": "Czynniki zmniejszające PPM: starszy wiek, bardzo restrykcyjne diety, utrata masy mięśniowej, niedoczynność tarczycy",
+    "tip3": "Trening siłowy zwiększa masę mięśniową, a tym samym PPM w długim okresie",
+    "tip4": "Ekstremalne diety (< 1000 kcal/dzień) obniżają metabolizm jako mechanizm obronny organizmu",
+    "tip5": "PPM może się różnić nawet o 20% między osobami o podobnych parametrach"
+  },
+
+  "disclaimer": {
+    "title": "⚠️ Ważne: Ograniczenia",
+    "point1": "Te formuły są szacunkami opartymi na średnich populacyjnych",
+    "point2": "Nie uwzględniają specyficznych schorzeń (tarczyca, PCOS, itp.)",
+    "point3": "Rzeczywiste spalanie energii może się różnić ±10-20% między osobami",
+    "point4": "Skonsultuj się z dietetykiem lub lekarzem w celu spersonalizowanego planu",
+    "point5": "Nie zalecane dla osób poniżej 15 roku życia bez nadzoru specjalisty"
+  },
+
+  "healthAuthority": "Źródło: WHO, NFZ (Narodowy Fundusz Zdrowia), IŻŻ (Instytut Żywności i Żywienia)",
+
+  "relatedCalculators": {
+    "title": "Powiązane Kalkulatory",
+    "bmi": "Kalkulator BMI",
+    "bodyFat": "Kalkulator Tkanki Tłuszczowej",
+    "tdee": "Kalkulator CPM",
+    "macro": "Kalkulator Makroskładników",
+    "calorie": "Kalkulator Kalorii",
+    "idealWeight": "Kalkulator Idealnej Wagi"
   }
 }

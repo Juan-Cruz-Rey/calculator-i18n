@@ -1,34 +1,178 @@
 {
   "title": "Calculateur de MB (Métabolisme de Base)",
-  "description": "Calculez votre métabolisme de base",
-  "metaDescription": "Calculateur de MB gratuit - Calculez votre Métabolisme de Base (calories brûlées au repos) en utilisant les formules de Mifflin-St Jeor, Harris-Benedict et Katch-McArdle.",
+  "description": "Calculez votre métabolisme de base et vos besoins caloriques quotidiens",
+  "metaDescription": "Calculateur de MB gratuit - Calculez votre Métabolisme de Base (calories brûlées au repos) en utilisant les formules de Mifflin-St Jeor, Harris-Benedict et Katch-McArdle. Inclut le calcul de DET.",
+  "keywords": "MB, métabolisme de base, calculateur MB, calories au repos, dépense énergétique totale, DET, besoins caloriques, calculateur métabolisme, formule Mifflin, Harris-Benedict, Katch-McArdle, perte de poids, calories quotidiennes, profil sportif",
+
+  "terminology": {
+    "bmr": "MB",
+    "bmrFull": "Métabolisme de Base",
+    "tdee": "DET",
+    "tdeeFull": "Dépense Énergétique Totale",
+    "calories": "calories",
+    "perDay": "par jour",
+    "kcal": "kcal",
+    "kcalPerDay": "kcal/jour"
+  },
+
   "form": {
     "title": "Entrez vos informations",
     "ageLabel": "Âge",
     "agePlaceholder": "Entrez votre âge (15-80)",
+    "ageHelp": "L'âge affecte votre métabolisme de base",
     "genderLabel": "Sexe",
+    "genderMale": "Homme",
+    "genderFemale": "Femme",
     "heightLabel": "Taille",
     "heightPlaceholder": "Entrez votre taille",
     "weightLabel": "Poids",
     "weightPlaceholder": "Entrez votre poids",
-    "bodyFatLabel": "Pourcentage de Graisse Corporelle (Optionnel)",
-    "bodyFatPlaceholder": "ex: 20",
-    "bodyFatHelp": "Optionnel : Entrez votre % de graisse corporelle pour un calcul plus précis"
+    "bodyFatLabel": "Pourcentage de Masse Grasse (Facultatif)",
+    "bodyFatPlaceholder": "Ex : 20",
+    "bodyFatHelp": "Facultatif : Entrez votre pourcentage de masse grasse pour un calcul Katch-McArdle plus précis",
+    "activityLabel": "Niveau d'Activité Physique",
+    "calculateButton": "Calculer MB",
+    "calculating": "Calcul en cours...",
+    "resetButton": "Réinitialiser"
   },
+
   "activity": {
-    "sedentary": "Sédentaire (peu ou pas d'exercice)",
-    "light": "Léger (exercice 1-3 fois/semaine)",
-    "moderate": "Modéré (exercice 4-5 fois/semaine)",
-    "active": "Actif (exercice quotidien ou intense 3-4 fois/semaine)",
-    "veryActive": "Très actif (exercice intense 6-7 fois/semaine)",
-    "extraActive": "Extrêmement actif (exercice très intense quotidien et travail physique)"
+    "title": "Sélectionnez votre niveau d'activité",
+    "sedentary": "Sédentaire",
+    "sedentaryDesc": "Peu ou pas d'exercice, travail de bureau",
+    "light": "Léger",
+    "lightDesc": "Exercice léger 1-3 fois/semaine",
+    "moderate": "Modéré",
+    "moderateDesc": "Exercice modéré 4-5 fois/semaine",
+    "active": "Actif",
+    "activeDesc": "Exercice quotidien ou intense 3-4 fois/semaine",
+    "veryActive": "Très actif",
+    "veryActiveDesc": "Exercice intense 6-7 fois/semaine",
+    "extraActive": "Extrêmement actif",
+    "extraActiveDesc": "Exercice très intense quotidien + travail physique",
+    "multiplier": "Multiplicateur"
   },
+
+  "athleteProfiles": {
+    "title": "Profils Sportifs",
+    "description": "Sélectionnez le profil qui correspond le mieux à votre niveau d'entraînement",
+    "sedentaire": "Sédentaire",
+    "sedentaireDesc": "Aucune activité physique régulière, mode de vie assis",
+    "sedentaireMultiplier": "MB × 1,2",
+    "actif": "Actif",
+    "actifDesc": "Activité physique modérée, marche régulière, sport occasionnel",
+    "actifMultiplier": "MB × 1,375 - 1,55",
+    "sportif": "Sportif",
+    "sportifDesc": "Entraînement régulier 4-6 fois/semaine, sport compétitif amateur",
+    "sportifMultiplier": "MB × 1,725",
+    "athlete": "Athlète",
+    "athleteDesc": "Entraînement intensif quotidien, sport de haut niveau, préparation physique intensive",
+    "athleteMultiplier": "MB × 1,9 - 2,4",
+    "note": "Ces profils tiennent compte de l'intensité et de la fréquence de votre pratique sportive",
+    "recommendation": "Pour les sportifs et athlètes, consultez un nutritionniste du sport pour un plan personnalisé"
+  },
+
+  "formulas": {
+    "title": "Comparaison des Formules",
+    "description": "Différentes formules scientifiques pour calculer votre MB",
+    "mifflinStJeor": "Mifflin-St Jeor (1990)",
+    "mifflinDesc": "Formule la plus précise et recommandée - Utilisée par l'Académie de Nutrition et Diététique",
+    "mifflinFormulaMale": "MB = (10 × poids en kg) + (6,25 × taille en cm) - (5 × âge) + 5",
+    "mifflinFormulaFemale": "MB = (10 × poids en kg) + (6,25 × taille en cm) - (5 × âge) - 161",
+    "harrisBenedict": "Harris-Benedict (1984 révisée)",
+    "harrisDesc": "Formule traditionnelle révisée - Largement utilisée en clinique",
+    "harrisFormulaMale": "MB = 13,397 × poids + 4,799 × taille - 5,677 × âge + 88,362",
+    "harrisFormulaFemale": "MB = 9,247 × poids + 3,098 × taille - 4,330 × âge + 447,593",
+    "katchMcArdle": "Katch-McArdle",
+    "katchDesc": "Basée sur la masse maigre - Plus précise si vous connaissez votre pourcentage de masse grasse",
+    "katchFormula": "MB = 370 + (21,6 × masse maigre en kg)",
+    "katchNote": "Nécessite le pourcentage de masse grasse",
+    "recommended": "✓ Recommandée",
+    "mostAccurate": "La plus précise",
+    "requiresBodyFat": "Nécessite % masse grasse"
+  },
+
   "results": {
     "title": "Vos Résultats",
     "yourBMR": "Votre MB",
-    "bmrDesc": "Calories que votre corps brûle au repos",
-    "formulas": "Comparaison des Formules",
-    "calorieNeeds": "Besoins Caloriques par Niveau d'Activité",
-    "calorieNeedsDesc": "Calories quotidiennes nécessaires selon votre niveau d'activité physique"
+    "bmrDesc": "Calories que votre corps brûle au repos complet (24 heures sans activité)",
+    "yourTDEE": "Votre DET",
+    "tdeeDesc": "Calories totales que vous brûlez quotidiennement incluant votre activité physique",
+    "formulaComparison": "Comparaison des Formules",
+    "formulaComparisonDesc": "Différentes méthodes scientifiques pour estimer votre MB",
+    "calorieNeeds": "Besoins Caloriques Quotidiens",
+    "calorieNeedsDesc": "Calories nécessaires selon votre niveau d'activité physique",
+    "activityLevel": "Niveau d'Activité",
+    "dailyCalories": "Calories Quotidiennes",
+    "perDay": "par jour",
+    "basedOn": "Basé sur la formule",
+    "avgOf": "Moyenne de",
+    "formulas_plural": "formules"
+  },
+
+  "deficitTable": {
+    "title": "Tableau de Déficit Calorique pour la Perte de Poids",
+    "description": "Réduisez ces calories de votre DET pour perdre du poids sainement",
+    "goal": "Objectif de Perte",
+    "deficit": "Déficit Quotidien",
+    "calories": "Calories Quotidiennes",
+    "timeFrame": "Temps Estimé",
+    "mild": "Léger (0,25 kg/semaine)",
+    "moderate": "Modéré (0,5 kg/semaine)",
+    "aggressive": "Agressif (0,75 kg/semaine)",
+    "veryAggressive": "Très Agressif (1 kg/semaine)",
+    "warning": "⚠️ Ne réduisez pas plus de 1000 kcal/jour",
+    "minCalories": "Ne consommez jamais moins de 1200 kcal/jour (femmes) ou 1500 kcal/jour (hommes)",
+    "disclaimer": "Consultez un nutritionniste pour un plan personnalisé"
+  },
+
+  "graph": {
+    "title": "Comparaison Visuelle des Formules",
+    "yAxisLabel": "Calories (kcal/jour)",
+    "compareLabel": "Comparer"
+  },
+
+  "info": {
+    "whatIsBMR": "Qu'est-ce que le MB ?",
+    "bmrExplanation": "Le Métabolisme de Base (MB) est la quantité minimale d'énergie (calories) dont votre corps a besoin pour maintenir les fonctions vitales au repos : respiration, circulation sanguine, production de cellules, traitement des nutriments.",
+    "whatIsTDEE": "Qu'est-ce que le DET ?",
+    "tdeeExplanation": "La Dépense Énergétique Totale (DET) est votre MB multiplié par votre niveau d'activité physique. Elle représente les calories totales que vous brûlez dans une journée typique.",
+    "howToUse": "Comment utiliser ces résultats ?",
+    "useCase1": "Maintenir le poids : Consommez calories = DET",
+    "useCase2": "Perdre du poids : Consommez 300-500 kcal de moins que DET",
+    "useCase3": "Prendre du poids/muscle : Consommez 300-500 kcal de plus que DET",
+    "accuracy": "Précision des Formules",
+    "accuracyNote": "Les formules ont une marge d'erreur de ±10%. Mifflin-St Jeor est la plus précise pour la population générale. Katch-McArdle est supérieure si vous connaissez votre composition corporelle."
+  },
+
+  "tips": {
+    "title": "Conseils Utiles",
+    "tip1": "Facteurs qui augmentent le MB : plus de masse musculaire, âge plus jeune, sexe masculin, génétique, fièvre, grossesse",
+    "tip2": "Facteurs qui diminuent le MB : âge plus élevé, régimes très restrictifs, perte de masse musculaire, hypothyroïdie",
+    "tip3": "L'entraînement en force augmente votre masse musculaire et donc votre MB à long terme",
+    "tip4": "Les régimes extrêmes (< 1000 kcal/jour) réduisent votre métabolisme comme mécanisme de survie",
+    "tip5": "Le MB représente environ 60-75% de votre dépense énergétique totale quotidienne",
+    "tip6": "Pour les sportifs, l'apport protéique optimal se situe entre 1,6-2,2g par kg de poids corporel"
+  },
+
+  "disclaimer": {
+    "title": "⚠️ Important : Limitations",
+    "point1": "Ces formules sont des estimations basées sur des moyennes de population",
+    "point2": "Elles ne tiennent pas compte de conditions médicales spécifiques (thyroïde, SOPK, etc.)",
+    "point3": "La dépense énergétique réelle peut varier de ±10-20% entre les individus",
+    "point4": "Consultez un nutritionniste ou médecin pour un plan personnalisé",
+    "point5": "Non recommandé pour les moins de 15 ans sans supervision professionnelle"
+  },
+
+  "healthAuthority": "Source : OMS (Organisation Mondiale de la Santé), ANSES, Ministère de la Santé",
+
+  "relatedCalculators": {
+    "title": "Calculateurs Associés",
+    "bmi": "Calculateur d'IMC",
+    "bodyFat": "Calculateur de Masse Grasse",
+    "tdee": "Calculateur de DET",
+    "macro": "Calculateur de Macronutriments",
+    "calorie": "Calculateur de Calories",
+    "idealWeight": "Calculateur de Poids Idéal"
   }
 }

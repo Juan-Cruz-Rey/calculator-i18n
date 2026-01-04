@@ -1,34 +1,146 @@
 {
-  "title": "BMR Kalkylator (Basal Metabolisk Hastighet)",
-  "description": "Beräkna your basal metabolic rate",
-  "metaDescription": "Gratis BMR Kalkylator - Beräkna your Basal Metabolisk Hastighet (calories burned at rest) using Mifflin-St Jeor, Harris-Benedict, and Katch-McArdle formulas.",
+  "title": "Basalmetabolism Kalkylator (BMR)",
+  "description": "Beräkna din basalmetabolism och dagliga kaloribehov",
+  "metaDescription": "Gratis BMR-kalkylator - Beräkna din basalmetabolism (kalorier i vila) med Mifflin-St Jeor, Harris-Benedict och Katch-McArdle formler. Inkluderar TDEE-beräkning.",
+  "keywords": "BMR, basalmetabolism, BMR-kalkylator, kalorier i vila, total energiförbrukning, TDEE, kaloribehov, metabolismkalkylator, Mifflin-St Jeor, Harris-Benedict, viktminskning, dagliga kalorier",
+
+  "terminology": {
+    "bmr": "BMR",
+    "bmrFull": "Basalmetabolism",
+    "tdee": "TEF",
+    "tdeeFull": "Total energiförbrukning",
+    "calories": "kalorier",
+    "perDay": "per dag",
+    "kcal": "kcal",
+    "kcalPerDay": "kcal/dag"
+  },
+
   "form": {
-    "title": "Ange your information",
+    "title": "Ange dina uppgifter",
     "ageLabel": "Ålder",
     "agePlaceholder": "Ange din ålder (15-80)",
+    "ageHelp": "Ålder påverkar din basalmetabolism",
     "genderLabel": "Kön",
+    "genderMale": "Man",
+    "genderFemale": "Kvinna",
     "heightLabel": "Längd",
     "heightPlaceholder": "Ange din längd",
     "weightLabel": "Vikt",
     "weightPlaceholder": "Ange din vikt",
-    "bodyFatLabel": "Kropp Fett Percentage (Optional)",
-    "bodyFatPlaceholder": "t.ex. 20",
-    "bodyFatHelp": "Optional: Ange your body fat % for a more accurate calculation"
+    "bodyFatLabel": "Kroppsfett Procent (Valfritt)",
+    "bodyFatPlaceholder": "T.ex. 20",
+    "bodyFatHelp": "Valfritt: Ange din kroppsfett % för mer exakt Katch-McArdle beräkning",
+    "activityLabel": "Fysisk Aktivitetsnivå",
+    "calculateButton": "Beräkna BMR",
+    "calculating": "Beräknar...",
+    "resetButton": "Återställ"
   },
+
   "activity": {
-    "sedentary": "Stillasittande (lite eller ingen träning)",
-    "light": "Lätt (träning 1-3 gånger/vecka)",
-    "moderate": "Måttlig (träning 4-5 gånger/vecka)",
-    "active": "Active (daily träning or intense träning 3-4 gånger/vecka)",
-    "veryActive": "Very active (intense träning 6-7 gånger/vecka)",
-    "extraActive": "Extra active (very intense daily träning & physical job)"
+    "title": "Välj din aktivitetsnivå",
+    "sedentary": "Stillasittande",
+    "sedentaryDesc": "Lite eller ingen motion, kontorsarbete",
+    "light": "Lätt",
+    "lightDesc": "Lätt träning 1-3 gånger/vecka",
+    "moderate": "Måttlig",
+    "moderateDesc": "Måttlig träning 4-5 gånger/vecka",
+    "active": "Aktiv",
+    "activeDesc": "Daglig träning eller intensiv träning 3-4 gånger/vecka",
+    "veryActive": "Mycket aktiv",
+    "veryActiveDesc": "Intensiv träning 6-7 gånger/vecka",
+    "extraActive": "Extra aktiv",
+    "extraActiveDesc": "Mycket intensiv daglig träning + fysiskt arbete",
+    "multiplier": "Multiplikator"
   },
+
+  "formulas": {
+    "title": "Formeljämförelse",
+    "description": "Olika vetenskapliga formler för att beräkna din BMR",
+    "mifflinStJeor": "Mifflin-St Jeor (1990)",
+    "mifflinDesc": "Mest exakta moderna formel - Används av Academy of Nutrition and Dietetics",
+    "mifflinFormulaMale": "BMR = (10 × vikt i kg) + (6.25 × längd i cm) - (5 × ålder) + 5",
+    "mifflinFormulaFemale": "BMR = (10 × vikt i kg) + (6.25 × längd i cm) - (5 × ålder) - 161",
+    "harrisBenedict": "Harris-Benedict (1984 reviderad)",
+    "harrisDesc": "Traditionell reviderad formel - Används brett i klinisk praxis",
+    "harrisFormulaMale": "BMR = 13.397 × vikt + 4.799 × längd - 5.677 × ålder + 88.362",
+    "harrisFormulaFemale": "BMR = 9.247 × vikt + 3.098 × längd - 4.330 × ålder + 447.593",
+    "katchMcArdle": "Katch-McArdle",
+    "katchDesc": "Baserad på fettfri kroppsmassa - Mer exakt om du känner din kroppsfett %",
+    "katchFormula": "BMR = 370 + (21.6 × fettfri kroppsmassa i kg)",
+    "katchNote": "Kräver kroppsfett procent",
+    "recommended": "✓ Rekommenderad",
+    "mostAccurate": "Mest exakt",
+    "requiresBodyFat": "Kräver kroppsfett %"
+  },
+
   "results": {
-    "title": "Din Resultat",
+    "title": "Dina Resultat",
     "yourBMR": "Din BMR",
-    "bmrDesc": "Kalorier your body burns at rest",
-    "formulas": "Formel Comparison",
-    "calorieNeeds": "Kalori Needs by Aktivitet Nivå",
-    "calorieNeedsDesc": "Daglig calories needed baserat på your physical activity level"
+    "bmrDesc": "Kalorier din kropp bränner i fullständig vila (24 timmar utan aktivitet)",
+    "yourTDEE": "Din TEF",
+    "tdeeDesc": "Totalt antal kalorier du bränner dagligen inklusive fysisk aktivitet",
+    "formulaComparison": "Formeljämförelse",
+    "formulaComparisonDesc": "Olika vetenskapliga metoder för att uppskatta din BMR",
+    "calorieNeeds": "Dagligt Kaloribehov",
+    "calorieNeedsDesc": "Kalorier som behövs baserat på din fysiska aktivitetsnivå",
+    "activityLevel": "Aktivitetsnivå",
+    "dailyCalories": "Dagliga Kalorier",
+    "perDay": "per dag",
+    "basedOn": "Baserat på",
+    "avgOf": "Medelvärde av",
+    "formulas_plural": "formler"
+  },
+
+  "graph": {
+    "title": "Visuell Formeljämförelse",
+    "yAxisLabel": "Kalorier (kcal/dag)",
+    "compareLabel": "Jämför"
+  },
+
+  "privacy": {
+    "title": "Integritet",
+    "note": "Alla beräkningar utförs lokalt i din webbläsare. Inga personuppgifter lagras eller skickas till servrar."
+  },
+
+  "info": {
+    "whatIsBMR": "Vad är BMR?",
+    "bmrExplanation": "Basalmetabolism (BMR) är den minsta mängd energi (kalorier) din kropp behöver för att upprätthålla vitala funktioner i vila: andning, blodcirkulation, cellproduktion, näringsbearbetning.",
+    "whatIsTDEE": "Vad är TEF?",
+    "tdeeExplanation": "Total energiförbrukning (TEF) är din BMR multiplicerat med din fysiska aktivitetsnivå. Det representerar de totala kalorierna du bränner under en typisk dag.",
+    "howToUse": "Hur använder man dessa resultat?",
+    "useCase1": "Behålla vikt: Konsumera kalorier = TEF",
+    "useCase2": "Gå ner i vikt: Konsumera 300-500 kcal mindre än TEF",
+    "useCase3": "Gå upp i vikt/muskler: Konsumera 300-500 kcal mer än TEF",
+    "accuracy": "Formelexakthet",
+    "accuracyNote": "Formler har en felmarginal på ±10%. Mifflin-St Jeor är mest exakt för den allmänna befolkningen. Katch-McArdle är överlägsen om du känner din kroppssammansättning."
+  },
+
+  "tips": {
+    "title": "Användbara Tips",
+    "tip1": "Faktorer som ökar BMR: mer muskelmassa, yngre ålder, manligt kön, genetik, feber, graviditet",
+    "tip2": "Faktorer som minskar BMR: högre ålder, mycket restriktiva dieter, muskelförlust, hypotyreos",
+    "tip3": "Styrketräning ökar muskelmassa och därmed din BMR på lång sikt",
+    "tip4": "Extrema dieter (< 1000 kcal/dag) minskar din metabolism som en överlevnadsmekanism"
+  },
+
+  "disclaimer": {
+    "title": "⚠️ Viktigt: Begränsningar",
+    "point1": "Dessa formler är uppskattningar baserade på populationsgenomsnitt",
+    "point2": "De tar inte hänsyn till specifika medicinska tillstånd (sköldkörtel, PCOS, etc.)",
+    "point3": "Faktisk energiförbrukning kan variera ±10-20% mellan individer",
+    "point4": "Konsultera en nutritionist eller läkare för en personlig plan",
+    "point5": "Rekommenderas inte för personer under 15 år utan professionell övervakning"
+  },
+
+  "healthAuthority": "Källa: WHO (Världshälsoorganisationen), Folkhälsomyndigheten, Livsmedelsverket",
+
+  "relatedCalculators": {
+    "title": "Relaterade Kalkylatorer",
+    "bmi": "BMI-kalkylator",
+    "bodyFat": "Kroppsfett Kalkylator",
+    "tdee": "TDEE-kalkylator",
+    "macro": "Makro Kalkylator",
+    "calorie": "Kalori Kalkylator",
+    "idealWeight": "Idealvikt Kalkylator"
   }
 }

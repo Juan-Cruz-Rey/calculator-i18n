@@ -1,34 +1,141 @@
 {
   "title": "BMR Calculator (Basal Metabolic Rate)",
-  "description": "Calculate your basal metabolic rate",
-  "metaDescription": "Free BMR Calculator - Calculate your Basal Metabolic Rate (calories burned at rest) using Mifflin-St Jeor, Harris-Benedict, and Katch-McArdle formulas.",
+  "description": "Calculate your basal metabolic rate and daily calorie needs",
+  "metaDescription": "Free BMR Calculator - Calculate your Basal Metabolic Rate (calories burned at rest) using Mifflin-St Jeor, Harris-Benedict, and Katch-McArdle formulas. Includes TDEE calculation.",
+  "keywords": "BMR, basal metabolic rate, BMR calculator, calories at rest, total daily energy expenditure, TDEE, calorie needs, metabolism calculator, Mifflin-St Jeor, Harris-Benedict, weight loss, daily calories",
+
+  "terminology": {
+    "bmr": "BMR",
+    "bmrFull": "Basal Metabolic Rate",
+    "tdee": "TDEE",
+    "tdeeFull": "Total Daily Energy Expenditure",
+    "calories": "calories",
+    "perDay": "per day",
+    "kcal": "kcal",
+    "kcalPerDay": "kcal/day"
+  },
+
   "form": {
     "title": "Enter your information",
     "ageLabel": "Age",
     "agePlaceholder": "Enter your age (15-80)",
+    "ageHelp": "Age affects your basal metabolic rate",
     "genderLabel": "Gender",
+    "genderMale": "Male",
+    "genderFemale": "Female",
     "heightLabel": "Height",
     "heightPlaceholder": "Enter your height",
     "weightLabel": "Weight",
     "weightPlaceholder": "Enter your weight",
     "bodyFatLabel": "Body Fat Percentage (Optional)",
     "bodyFatPlaceholder": "e.g., 20",
-    "bodyFatHelp": "Optional: Enter your body fat % for a more accurate calculation"
+    "bodyFatHelp": "Optional: Enter your body fat % for more accurate Katch-McArdle calculation",
+    "activityLabel": "Physical Activity Level",
+    "calculateButton": "Calculate BMR",
+    "calculating": "Calculating...",
+    "resetButton": "Reset"
   },
+
   "activity": {
-    "sedentary": "Sedentary (little or no exercise)",
-    "light": "Light (exercise 1-3 times/week)",
-    "moderate": "Moderate (exercise 4-5 times/week)",
-    "active": "Active (daily exercise or intense exercise 3-4 times/week)",
-    "veryActive": "Very active (intense exercise 6-7 times/week)",
-    "extraActive": "Extra active (very intense daily exercise & physical job)"
+    "title": "Select your activity level",
+    "sedentary": "Sedentary",
+    "sedentaryDesc": "Little or no exercise, desk job",
+    "light": "Light",
+    "lightDesc": "Light exercise 1-3 times/week",
+    "moderate": "Moderate",
+    "moderateDesc": "Moderate exercise 4-5 times/week",
+    "active": "Active",
+    "activeDesc": "Daily exercise or intense exercise 3-4 times/week",
+    "veryActive": "Very active",
+    "veryActiveDesc": "Intense exercise 6-7 times/week",
+    "extraActive": "Extra active",
+    "extraActiveDesc": "Very intense daily exercise & physical job",
+    "multiplier": "Multiplier"
   },
+
+  "formulas": {
+    "title": "Formula Comparison",
+    "description": "Different scientific formulas to calculate your BMR",
+    "mifflinStJeor": "Mifflin-St Jeor (1990)",
+    "mifflinDesc": "Most accurate modern formula - Used by the Academy of Nutrition and Dietetics",
+    "mifflinFormulaMale": "BMR = (10 × weight in kg) + (6.25 × height in cm) - (5 × age) + 5",
+    "mifflinFormulaFemale": "BMR = (10 × weight in kg) + (6.25 × height in cm) - (5 × age) - 161",
+    "harrisBenedict": "Harris-Benedict (1984 revised)",
+    "harrisDesc": "Traditional revised formula - Widely used in clinical practice",
+    "harrisFormulaMale": "BMR = 13.397 × weight + 4.799 × height - 5.677 × age + 88.362",
+    "harrisFormulaFemale": "BMR = 9.247 × weight + 3.098 × height - 4.330 × age + 447.593",
+    "katchMcArdle": "Katch-McArdle",
+    "katchDesc": "Based on lean body mass - More accurate if you know your body fat %",
+    "katchFormula": "BMR = 370 + (21.6 × lean body mass in kg)",
+    "katchNote": "Requires body fat percentage",
+    "recommended": "✓ Recommended",
+    "mostAccurate": "Most accurate",
+    "requiresBodyFat": "Requires body fat %"
+  },
+
   "results": {
     "title": "Your Results",
     "yourBMR": "Your BMR",
-    "bmrDesc": "Calories your body burns at rest",
-    "formulas": "Formula Comparison",
-    "calorieNeeds": "Calorie Needs by Activity Level",
-    "calorieNeedsDesc": "Daily calories needed based on your physical activity level"
+    "bmrDesc": "Calories your body burns at complete rest (24 hours without activity)",
+    "yourTDEE": "Your TDEE",
+    "tdeeDesc": "Total calories you burn daily including physical activity",
+    "formulaComparison": "Formula Comparison",
+    "formulaComparisonDesc": "Different scientific methods to estimate your BMR",
+    "calorieNeeds": "Daily Calorie Needs",
+    "calorieNeedsDesc": "Calories needed based on your physical activity level",
+    "activityLevel": "Activity Level",
+    "dailyCalories": "Daily Calories",
+    "perDay": "per day",
+    "basedOn": "Based on",
+    "avgOf": "Average of",
+    "formulas_plural": "formulas"
+  },
+
+  "graph": {
+    "title": "Visual Formula Comparison",
+    "yAxisLabel": "Calories (kcal/day)",
+    "compareLabel": "Compare"
+  },
+
+  "info": {
+    "whatIsBMR": "What is BMR?",
+    "bmrExplanation": "Basal Metabolic Rate (BMR) is the minimum amount of energy (calories) your body needs to maintain vital functions at rest: breathing, blood circulation, cell production, nutrient processing.",
+    "whatIsTDEE": "What is TDEE?",
+    "tdeeExplanation": "Total Daily Energy Expenditure (TDEE) is your BMR multiplied by your physical activity level. It represents the total calories you burn in a typical day.",
+    "howToUse": "How to use these results?",
+    "useCase1": "Maintain weight: Consume calories = TDEE",
+    "useCase2": "Lose weight: Consume 300-500 kcal less than TDEE",
+    "useCase3": "Gain weight/muscle: Consume 300-500 kcal more than TDEE",
+    "accuracy": "Formula Accuracy",
+    "accuracyNote": "Formulas have a margin of error of ±10%. Mifflin-St Jeor is most accurate for the general population. Katch-McArdle is superior if you know your body composition."
+  },
+
+  "tips": {
+    "title": "Helpful Tips",
+    "tip1": "Factors that increase BMR: more muscle mass, younger age, male gender, genetics, fever, pregnancy",
+    "tip2": "Factors that decrease BMR: older age, very restrictive diets, muscle mass loss, hypothyroidism",
+    "tip3": "Strength training increases muscle mass and therefore your BMR in the long term",
+    "tip4": "Extreme diets (< 1000 kcal/day) reduce your metabolism as a survival mechanism"
+  },
+
+  "disclaimer": {
+    "title": "⚠️ Important: Limitations",
+    "point1": "These formulas are estimates based on population averages",
+    "point2": "They don't consider specific medical conditions (thyroid, PCOS, etc.)",
+    "point3": "Actual energy expenditure can vary ±10-20% between individuals",
+    "point4": "Consult with a nutritionist or doctor for a personalized plan",
+    "point5": "Not recommended for those under 15 without professional supervision"
+  },
+
+  "healthAuthority": "Source: WHO (World Health Organization), NIH, USDA",
+
+  "relatedCalculators": {
+    "title": "Related Calculators",
+    "bmi": "BMI Calculator",
+    "bodyFat": "Body Fat Calculator",
+    "tdee": "TDEE Calculator",
+    "macro": "Macro Calculator",
+    "calorie": "Calorie Calculator",
+    "idealWeight": "Ideal Weight Calculator"
   }
 }
