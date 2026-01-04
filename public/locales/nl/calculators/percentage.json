@@ -10,7 +10,11 @@
     "isWhatPercent": "X is wat % van Y",
     "isPercentOfWhat": "X is Y% van wat",
     "percentageChange": "% Verandering",
-    "percentageDifference": "% Verschil"
+    "percentageDifference": "% Verschil",
+    "addTax": "BTW Toevoegen",
+    "removeTax": "BTW Verwijderen",
+    "discount": "Korting",
+    "reverseDiscount": "Oorspronkelijke Prijs"
   },
   "forms": {
     "percentOf": {
@@ -37,6 +41,34 @@
       "title": "Percentageverschil tussen X en Y",
       "label1": "Eerste Waarde",
       "label2": "Tweede Waarde"
+    },
+    "addTax": {
+      "title": "BTW Toevoegen aan Basisprijs",
+      "label1": "Basisprijs (€)",
+      "label2": "BTW (%)",
+      "selectLabel": "BTW-tarief",
+      "customLabel": "Aangepast BTW-tarief (%)"
+    },
+    "removeTax": {
+      "title": "BTW Verwijderen uit Totaalprijs",
+      "label1": "Totaalprijs (€)",
+      "label2": "BTW (%)",
+      "selectLabel": "Gebruikt BTW-tarief",
+      "customLabel": "Aangepast BTW-tarief (%)"
+    },
+    "discount": {
+      "title": "Prijs na Korting Berekenen",
+      "label1": "Oorspronkelijke Prijs (€)",
+      "label2": "Korting (%)",
+      "selectLabel": "Gangbare Kortingen",
+      "customLabel": "Aangepaste Korting (%)"
+    },
+    "reverseDiscount": {
+      "title": "Oorspronkelijke Prijs uit Kortingsprijs Bepalen",
+      "label1": "Kortingsprijs (€)",
+      "label2": "Korting (%)",
+      "selectLabel": "Toegepaste Korting",
+      "customLabel": "Aangepaste Korting (%)"
     }
   },
   "results": {

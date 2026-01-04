@@ -10,7 +10,11 @@
     "isWhatPercent": "X est quel % de Y",
     "isPercentOfWhat": "X est Y% de quoi",
     "percentageChange": "Variation %",
-    "percentageDifference": "Différence %"
+    "percentageDifference": "Différence %",
+    "addTax": "Ajouter TVA",
+    "removeTax": "Retirer TVA",
+    "discount": "Remise",
+    "reverseDiscount": "Prix Original"
   },
   "forms": {
     "percentOf": {
@@ -37,6 +41,34 @@
       "title": "Différence en Pourcentage entre X et Y",
       "label1": "Première Valeur",
       "label2": "Deuxième Valeur"
+    },
+    "addTax": {
+      "title": "Ajouter la TVA au Prix de Base",
+      "label1": "Prix de Base (€)",
+      "label2": "TVA (%)",
+      "selectLabel": "Taux de TVA",
+      "customLabel": "TVA Personnalisée (%)"
+    },
+    "removeTax": {
+      "title": "Retirer la TVA du Prix Total",
+      "label1": "Prix Total (€)",
+      "label2": "TVA (%)",
+      "selectLabel": "Taux de TVA Utilisé",
+      "customLabel": "TVA Personnalisée (%)"
+    },
+    "discount": {
+      "title": "Calculer le Prix après Remise",
+      "label1": "Prix Original (€)",
+      "label2": "Remise (%)",
+      "selectLabel": "Remises Courantes",
+      "customLabel": "Remise Personnalisée (%)"
+    },
+    "reverseDiscount": {
+      "title": "Trouver le Prix Original à partir du Prix Réduit",
+      "label1": "Prix Réduit (€)",
+      "label2": "Remise (%)",
+      "selectLabel": "Remise Appliquée",
+      "customLabel": "Remise Personnalisée (%)"
     }
   },
   "results": {

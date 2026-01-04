@@ -10,7 +10,11 @@
     "isWhatPercent": "X is what % of Y",
     "isPercentOfWhat": "X is Y% of what",
     "percentageChange": "% Change",
-    "percentageDifference": "% Difference"
+    "percentageDifference": "% Difference",
+    "addTax": "Add Tax",
+    "removeTax": "Remove Tax",
+    "discount": "Discount",
+    "reverseDiscount": "Original Price"
   },
   "forms": {
     "percentOf": {
@@ -37,6 +41,34 @@
       "title": "Percentage Difference between X and Y",
       "label1": "First Value",
       "label2": "Second Value"
+    },
+    "addTax": {
+      "title": "Add Tax to Base Price",
+      "label1": "Base Price ($)",
+      "label2": "Tax Rate (%)",
+      "selectLabel": "Common Tax Rates",
+      "customLabel": "Custom Tax Rate (%)"
+    },
+    "removeTax": {
+      "title": "Remove Tax from Total Price",
+      "label1": "Total Price ($)",
+      "label2": "Tax Rate (%)",
+      "selectLabel": "Tax Rate Used",
+      "customLabel": "Custom Tax Rate (%)"
+    },
+    "discount": {
+      "title": "Calculate Price After Discount",
+      "label1": "Original Price ($)",
+      "label2": "Discount (%)",
+      "selectLabel": "Common Discounts",
+      "customLabel": "Custom Discount (%)"
+    },
+    "reverseDiscount": {
+      "title": "Find Original Price from Discounted Price",
+      "label1": "Discounted Price ($)",
+      "label2": "Discount (%)",
+      "selectLabel": "Discount Applied",
+      "customLabel": "Custom Discount (%)"
     }
   },
   "results": {

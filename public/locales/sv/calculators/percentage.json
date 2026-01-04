@@ -1,47 +1,79 @@
 {
-  "title": "Percentage Calculator",
-  "description": "Calculate percentages, percentage change, and percentage difference",
-  "metaDescription": "Free Percentage Calculator - Calculate percentages, percentage change, and percentage difference. Solve what is X% of Y, X is what % of Y, and more.",
+  "title": "Procenträknare",
+  "description": "Beräkna procent, procentuell förändring och procentuell skillnad",
+  "metaDescription": "Gratis Procenträknare - Beräkna procent, procentuell förändring och procentuell skillnad. Lös vad är X% av Y, X är hur många % av Y och mer.",
   "form": {
-    "title": "Choose Calculation Type"
+    "title": "Välj Beräkningstyp"
   },
   "tabs": {
-    "percentOf": "X% of Y",
-    "isWhatPercent": "X is what % of Y",
-    "isPercentOfWhat": "X is Y% of what",
-    "percentageChange": "% Change",
-    "percentageDifference": "% Difference"
+    "percentOf": "X% av Y",
+    "isWhatPercent": "X är hur många % av Y",
+    "isPercentOfWhat": "X är Y% av vad",
+    "percentageChange": "% Förändring",
+    "percentageDifference": "% Skillnad",
+    "addTax": "Lägg till Moms",
+    "removeTax": "Ta bort Moms",
+    "discount": "Rabatt",
+    "reverseDiscount": "Ursprungligt Pris"
   },
   "forms": {
     "percentOf": {
-      "title": "What is X% of Y?",
-      "label1": "Percentage (X)",
-      "label2": "Value (Y)"
+      "title": "Vad är X% av Y?",
+      "label1": "Procent (X)",
+      "label2": "Värde (Y)"
     },
     "isWhatPercent": {
-      "title": "X is what % of Y?",
-      "label1": "Value (X)",
-      "label2": "Total (Y)"
+      "title": "X är hur många % av Y?",
+      "label1": "Värde (X)",
+      "label2": "Totalt (Y)"
     },
     "isPercentOfWhat": {
-      "title": "X is Y% of what?",
-      "label1": "Value (X)",
-      "label2": "Percentage (Y)"
+      "title": "X är Y% av vad?",
+      "label1": "Värde (X)",
+      "label2": "Procent (Y)"
     },
     "percentageChange": {
-      "title": "Percentage Change from X to Y",
-      "label1": "Old Value",
-      "label2": "New Value"
+      "title": "Procentuell Förändring från X till Y",
+      "label1": "Gammalt Värde",
+      "label2": "Nytt Värde"
     },
     "percentageDifference": {
-      "title": "Percentage Difference between X and Y",
-      "label1": "First Value",
-      "label2": "Second Value"
+      "title": "Procentuell Skillnad mellan X och Y",
+      "label1": "Första Värdet",
+      "label2": "Andra Värdet"
+    },
+    "addTax": {
+      "title": "Lägg till Moms till Grundpris",
+      "label1": "Grundpris (kr)",
+      "label2": "Moms (%)",
+      "selectLabel": "Momssats",
+      "customLabel": "Anpassad Moms (%)"
+    },
+    "removeTax": {
+      "title": "Ta bort Moms från Totalpris",
+      "label1": "Totalpris (kr)",
+      "label2": "Moms (%)",
+      "selectLabel": "Använd Momssats",
+      "customLabel": "Anpassad Moms (%)"
+    },
+    "discount": {
+      "title": "Beräkna Pris efter Rabatt",
+      "label1": "Ursprungligt Pris (kr)",
+      "label2": "Rabatt (%)",
+      "selectLabel": "Vanliga Rabatter",
+      "customLabel": "Anpassad Rabatt (%)"
+    },
+    "reverseDiscount": {
+      "title": "Hitta Ursprungligt Pris från Rabatterat Pris",
+      "label1": "Rabatterat Pris (kr)",
+      "label2": "Rabatt (%)",
+      "selectLabel": "Tillämpad Rabatt",
+      "customLabel": "Anpassad Rabatt (%)"
     }
   },
   "results": {
-    "title": "Result",
-    "resultLabel": "Answer",
-    "formulaLabel": "Calculation"
+    "title": "Resultat",
+    "resultLabel": "Svar",
+    "formulaLabel": "Beräkning"
   }
 }

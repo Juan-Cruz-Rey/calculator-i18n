@@ -3,7 +3,11 @@ export type PercentageCalculationType =
   | 'isWhatPercent' // X is what % of Y?
   | 'isPercentOfWhat' // X is Y% of what?
   | 'percentageChange' // Percentage increase/decrease from X to Y
-  | 'percentageDifference'; // Percentage difference between X and Y
+  | 'percentageDifference' // Percentage difference between X and Y
+  | 'addTax' // Add tax to base price (price + tax%)
+  | 'removeTax' // Remove tax from total price (find base price)
+  | 'discount' // Calculate final price after discount
+  | 'reverseDiscount'; // Find original price from discounted price
 
 export interface PercentageInput {
   calculationType: PercentageCalculationType;
@@ -127,6 +131,69 @@ export function applyPercentageDecrease(value: number, percent: number): number 
 }
 
 /**
+ * Add tax to a base price
+ * Example: 100 with 21% tax = 121
+ */
+export function calculateAddTax(basePrice: number, taxPercent: number): PercentageResult {
+  const taxAmount = (basePrice * taxPercent) / 100;
+  const totalPrice = basePrice + taxAmount;
+
+  return {
+    result: parseFloat(totalPrice.toFixed(2)),
+    formula: `${basePrice} + (${basePrice} × ${taxPercent}%) = ${basePrice} + ${taxAmount.toFixed(2)} = ${totalPrice.toFixed(2)}`,
+    explanation: `Base: ${basePrice.toFixed(2)} | Tax (${taxPercent}%): ${taxAmount.toFixed(2)} | Total: ${totalPrice.toFixed(2)}`,
+  };
+}
+
+/**
+ * Remove tax from total price to find base price
+ * Example: 121 with 21% tax = 100 base price
+ */
+export function calculateRemoveTax(totalPrice: number, taxPercent: number): PercentageResult {
+  const basePrice = totalPrice / (1 + taxPercent / 100);
+  const taxAmount = totalPrice - basePrice;
+
+  return {
+    result: parseFloat(basePrice.toFixed(2)),
+    formula: `${totalPrice} / (1 + ${taxPercent}%) = ${totalPrice} / ${(1 + taxPercent / 100).toFixed(4)} = ${basePrice.toFixed(2)}`,
+    explanation: `Total: ${totalPrice.toFixed(2)} | Tax (${taxPercent}%): ${taxAmount.toFixed(2)} | Base: ${basePrice.toFixed(2)}`,
+  };
+}
+
+/**
+ * Calculate final price after discount
+ * Example: 100 with 20% discount = 80
+ */
+export function calculateDiscount(originalPrice: number, discountPercent: number): PercentageResult {
+  const discountAmount = (originalPrice * discountPercent) / 100;
+  const finalPrice = originalPrice - discountAmount;
+
+  return {
+    result: parseFloat(finalPrice.toFixed(2)),
+    formula: `${originalPrice} - (${originalPrice} × ${discountPercent}%) = ${originalPrice} - ${discountAmount.toFixed(2)} = ${finalPrice.toFixed(2)}`,
+    explanation: `Original: ${originalPrice.toFixed(2)} | Discount (${discountPercent}%): -${discountAmount.toFixed(2)} | Final: ${finalPrice.toFixed(2)}`,
+  };
+}
+
+/**
+ * Find original price from discounted price
+ * Example: 80 after 20% discount = 100 original
+ */
+export function calculateReverseDiscount(
+  discountedPrice: number,
+  discountPercent: number
+): PercentageResult {
+  const originalPrice = discountedPrice / (1 - discountPercent / 100);
+  const discountAmount = originalPrice - discountedPrice;
+
+  return {
+    result: parseFloat(originalPrice.toFixed(2)),
+    formula: `${discountedPrice} / (1 - ${discountPercent}%) = ${discountedPrice} / ${(1 - discountPercent / 100).toFixed(4)} = ${originalPrice.toFixed(2)}`,
+    explanation: `Final: ${discountedPrice.toFixed(2)} | Discount (${discountPercent}%): ${discountAmount.toFixed(2)} | Original: ${originalPrice.toFixed(2)}`,
+  };
+}
+
+/**
  * Main calculation function that routes to the appropriate calculator
  */
 export function calculatePercentage(input: PercentageInput): PercentageResult {
@@ -159,6 +226,30 @@ export function calculatePercentage(input: PercentageInput): PercentageResult {
         throw new Error('Second value is required for percentageDifference calculation');
       }
       return calculatePercentageDifference(value1, value2);
+
+    case 'addTax':
+      if (value2 === undefined) {
+        throw new Error('Second value is required for addTax calculation');
+      }
+      return calculateAddTax(value1, value2);
+
+    case 'removeTax':
+      if (value2 === undefined) {
+        throw new Error('Second value is required for removeTax calculation');
+      }
+      return calculateRemoveTax(value1, value2);
+
+    case 'discount':
+      if (value2 === undefined) {
+        throw new Error('Second value is required for discount calculation');
+      }
+      return calculateDiscount(value1, value2);
+
+    case 'reverseDiscount':
+      if (value2 === undefined) {
+        throw new Error('Second value is required for reverseDiscount calculation');
+      }
+      return calculateReverseDiscount(value1, value2);
 
     default:
       throw new Error('Invalid calculation type');

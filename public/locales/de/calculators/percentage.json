@@ -10,7 +10,11 @@
     "isWhatPercent": "X ist wieviel % von Y",
     "isPercentOfWhat": "X ist Y% von was",
     "percentageChange": "% Änderung",
-    "percentageDifference": "% Differenz"
+    "percentageDifference": "% Differenz",
+    "addTax": "MwSt hinzufügen",
+    "removeTax": "MwSt entfernen",
+    "discount": "Rabatt",
+    "reverseDiscount": "Originalpreis"
   },
   "forms": {
     "percentOf": {
@@ -37,6 +41,34 @@
       "title": "Prozentuale Differenz zwischen X und Y",
       "label1": "Erster Wert",
       "label2": "Zweiter Wert"
+    },
+    "addTax": {
+      "title": "MwSt zum Grundpreis hinzufügen",
+      "label1": "Grundpreis (€)",
+      "label2": "MwSt (%)",
+      "selectLabel": "MwSt-Satz",
+      "customLabel": "Benutzerdefinierte MwSt (%)"
+    },
+    "removeTax": {
+      "title": "MwSt vom Gesamtpreis entfernen",
+      "label1": "Gesamtpreis (€)",
+      "label2": "MwSt (%)",
+      "selectLabel": "Verwendeter MwSt-Satz",
+      "customLabel": "Benutzerdefinierte MwSt (%)"
+    },
+    "discount": {
+      "title": "Preis nach Rabatt berechnen",
+      "label1": "Originalpreis (€)",
+      "label2": "Rabatt (%)",
+      "selectLabel": "Übliche Rabatte",
+      "customLabel": "Benutzerdefinierter Rabatt (%)"
+    },
+    "reverseDiscount": {
+      "title": "Originalpreis aus rabattiertem Preis ermitteln",
+      "label1": "Rabattierter Preis (€)",
+      "label2": "Rabatt (%)",
+      "selectLabel": "Angewendeter Rabatt",
+      "customLabel": "Benutzerdefinierter Rabatt (%)"
     }
   },
   "results": {

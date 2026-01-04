@@ -1,38 +1,79 @@
 {
   "title": "Kalkulator Procentów",
-  "description": "Oblicz procenty, zwiększ lub zmniejsz wartość o procent",
-  "metaDescription": "Darmowy kalkulator procentów - Oblicz procenty, zmiany procentowe, zwiększ lub zmniejsz wartość o procent. Proste obliczenia procentowe.",
+  "description": "Oblicz procenty, zmiany procentowe i różnice procentowe",
+  "metaDescription": "Darmowy Kalkulator Procentów - Oblicz procenty, zmiany procentowe i różnice procentowe. Rozwiąż ile to jest X% z Y, X to ile % z Y i więcej.",
   "form": {
-    "title": "Wybierz rodzaj obliczeń",
-    "whatIs": "Ile to jest X% z Y?",
-    "xPercent": "Procent (X)",
-    "xPercentPlaceholder": "Wprowadź procent",
-    "ofValue": "z wartości (Y)",
-    "ofValuePlaceholder": "Wprowadź wartość",
-    "isWhat": "X to ile procent Y?",
-    "value1": "Wartość (X)",
-    "value1Placeholder": "Wprowadź wartość",
-    "value2": "z wartości (Y)",
-    "value2Placeholder": "Wprowadź wartość całkowitą",
-    "change": "Jaka jest zmiana procentowa z X na Y?",
-    "oldValue": "Stara wartość (X)",
-    "oldValuePlaceholder": "Wartość początkowa",
-    "newValue": "Nowa wartość (Y)",
-    "newValuePlaceholder": "Wartość końcowa"
+    "title": "Wybierz Typ Obliczenia"
+  },
+  "tabs": {
+    "percentOf": "X% z Y",
+    "isWhatPercent": "X to ile % z Y",
+    "isPercentOfWhat": "X to Y% czego",
+    "percentageChange": "% Zmiana",
+    "percentageDifference": "% Różnica",
+    "addTax": "Dodaj VAT",
+    "removeTax": "Usuń VAT",
+    "discount": "Zniżka",
+    "reverseDiscount": "Cena Oryginalna"
+  },
+  "forms": {
+    "percentOf": {
+      "title": "Ile to jest X% z Y?",
+      "label1": "Procent (X)",
+      "label2": "Wartość (Y)"
+    },
+    "isWhatPercent": {
+      "title": "X to ile % z Y?",
+      "label1": "Wartość (X)",
+      "label2": "Suma (Y)"
+    },
+    "isPercentOfWhat": {
+      "title": "X to Y% czego?",
+      "label1": "Wartość (X)",
+      "label2": "Procent (Y)"
+    },
+    "percentageChange": {
+      "title": "Zmiana Procentowa z X na Y",
+      "label1": "Stara Wartość",
+      "label2": "Nowa Wartość"
+    },
+    "percentageDifference": {
+      "title": "Różnica Procentowa między X a Y",
+      "label1": "Pierwsza Wartość",
+      "label2": "Druga Wartość"
+    },
+    "addTax": {
+      "title": "Dodaj VAT do Ceny Bazowej",
+      "label1": "Cena Bazowa (zł)",
+      "label2": "VAT (%)",
+      "selectLabel": "Stawka VAT",
+      "customLabel": "Niestandardowy VAT (%)"
+    },
+    "removeTax": {
+      "title": "Usuń VAT z Ceny Całkowitej",
+      "label1": "Cena Całkowita (zł)",
+      "label2": "VAT (%)",
+      "selectLabel": "Zastosowana Stawka VAT",
+      "customLabel": "Niestandardowy VAT (%)"
+    },
+    "discount": {
+      "title": "Oblicz Cenę po Zniżce",
+      "label1": "Cena Oryginalna (zł)",
+      "label2": "Zniżka (%)",
+      "selectLabel": "Popularne Zniżki",
+      "customLabel": "Niestandardowa Zniżka (%)"
+    },
+    "reverseDiscount": {
+      "title": "Znajdź Cenę Oryginalną ze Zniżkowej Ceny",
+      "label1": "Cena Zniżkowa (zł)",
+      "label2": "Zniżka (%)",
+      "selectLabel": "Zastosowana Zniżka",
+      "customLabel": "Niestandardowa Zniżka (%)"
+    }
   },
   "results": {
     "title": "Wynik",
-    "result": "Wynik",
-    "calculation": "Obliczenie",
-    "percentageChange": "Zmiana procentowa",
-    "increase": "Wzrost",
-    "decrease": "Spadek"
-  },
-  "common": {
-    "title": "Typowe Obliczenia Procentowe",
-    "taxTip": "Podatek i Napiwek",
-    "discount": "Zniżka",
-    "markup": "Narzut",
-    "change": "Zmiana Procentowa"
+    "resultLabel": "Odpowiedź",
+    "formulaLabel": "Obliczenie"
   }
 }

@@ -1,7 +1,13 @@
 ---
 import { t, type Locale } from '@/utils/i18n';
+import { percentageRegionalConfig, getTaxRates, getCommonDiscounts } from '@/config/percentage-regional';
 
 const { lang } = Astro.props as { lang: Locale };
+
+// Get regional configuration for tax rates and discounts
+const config = percentageRegionalConfig[lang] || percentageRegionalConfig.en;
+const taxRates = getTaxRates(lang);
+const commonDiscounts = getCommonDiscounts(lang);
 ---
 
 <div class="percentage-calculator">
@@ -24,6 +30,18 @@ const { lang } = Astro.props as { lang: Locale };
       </button>
       <button class="tab-btn" data-type="percentageDifference">
         {t('percentage.tabs.percentageDifference', lang)}
+      </button>
+      <button class="tab-btn" data-type="addTax">
+        {t('percentage.tabs.addTax', lang)}
+      </button>
+      <button class="tab-btn" data-type="removeTax">
+        {t('percentage.tabs.removeTax', lang)}
+      </button>
+      <button class="tab-btn" data-type="discount">
+        {t('percentage.tabs.discount', lang)}
+      </button>
+      <button class="tab-btn" data-type="reverseDiscount">
+        {t('percentage.tabs.reverseDiscount', lang)}
       </button>
     </div>
 
@@ -193,6 +211,186 @@ const { lang } = Astro.props as { lang: Locale };
         <button type="reset" class="btn-secondary">{t('common.reset', lang)}</button>
       </div>
     </form>
+
+    <!-- Form 6: Add Tax -->
+    <form id="form-addTax" class="calc-form">
+      <h3>{t('percentage.forms.addTax.title', lang)}</h3>
+      <div class="form-row">
+        <div class="form-group">
+          <label for="addTax-price">{t('percentage.forms.addTax.label1', lang)}</label>
+          <input
+            type="number"
+            id="addTax-price"
+            name="value1"
+            step="0.01"
+            required
+            placeholder="100"
+          />
+        </div>
+        <div class="form-group">
+          <label for="addTax-rate-select">{t('percentage.forms.addTax.selectLabel', lang)}</label>
+          <select id="addTax-rate-select" class="tax-rate-select">
+            <option value="">{t('percentage.forms.addTax.customLabel', lang)}</option>
+            {taxRates.map((tax) => (
+              <option value={tax.rate}>{tax.label} ({tax.rate}%)</option>
+            ))}
+          </select>
+        </div>
+      </div>
+      <div class="form-row">
+        <div class="form-group">
+          <label for="addTax-rate">{t('percentage.forms.addTax.label2', lang)}</label>
+          <input
+            type="number"
+            id="addTax-rate"
+            name="value2"
+            step="0.01"
+            required
+            placeholder="21"
+          />
+          <span class="unit">%</span>
+        </div>
+      </div>
+      <div class="form-actions">
+        <button type="submit" class="btn-primary">{t('common.calculate', lang)}</button>
+        <button type="reset" class="btn-secondary">{t('common.reset', lang)}</button>
+      </div>
+    </form>
+
+    <!-- Form 7: Remove Tax -->
+    <form id="form-removeTax" class="calc-form">
+      <h3>{t('percentage.forms.removeTax.title', lang)}</h3>
+      <div class="form-row">
+        <div class="form-group">
+          <label for="removeTax-price">{t('percentage.forms.removeTax.label1', lang)}</label>
+          <input
+            type="number"
+            id="removeTax-price"
+            name="value1"
+            step="0.01"
+            required
+            placeholder="121"
+          />
+        </div>
+        <div class="form-group">
+          <label for="removeTax-rate-select">{t('percentage.forms.removeTax.selectLabel', lang)}</label>
+          <select id="removeTax-rate-select" class="tax-rate-select">
+            <option value="">{t('percentage.forms.removeTax.customLabel', lang)}</option>
+            {taxRates.map((tax) => (
+              <option value={tax.rate}>{tax.label} ({tax.rate}%)</option>
+            ))}
+          </select>
+        </div>
+      </div>
+      <div class="form-row">
+        <div class="form-group">
+          <label for="removeTax-rate">{t('percentage.forms.removeTax.label2', lang)}</label>
+          <input
+            type="number"
+            id="removeTax-rate"
+            name="value2"
+            step="0.01"
+            required
+            placeholder="21"
+          />
+          <span class="unit">%</span>
+        </div>
+      </div>
+      <div class="form-actions">
+        <button type="submit" class="btn-primary">{t('common.calculate', lang)}</button>
+        <button type="reset" class="btn-secondary">{t('common.reset', lang)}</button>
+      </div>
+    </form>
+
+    <!-- Form 8: Discount -->
+    <form id="form-discount" class="calc-form">
+      <h3>{t('percentage.forms.discount.title', lang)}</h3>
+      <div class="form-row">
+        <div class="form-group">
+          <label for="discount-price">{t('percentage.forms.discount.label1', lang)}</label>
+          <input
+            type="number"
+            id="discount-price"
+            name="value1"
+            step="0.01"
+            required
+            placeholder="100"
+          />
+        </div>
+        <div class="form-group">
+          <label for="discount-select">{t('percentage.forms.discount.selectLabel', lang)}</label>
+          <select id="discount-select" class="discount-select">
+            <option value="">{t('percentage.forms.discount.customLabel', lang)}</option>
+            {commonDiscounts.map((discount) => (
+              <option value={discount}>{discount}%</option>
+            ))}
+          </select>
+        </div>
+      </div>
+      <div class="form-row">
+        <div class="form-group">
+          <label for="discount-rate">{t('percentage.forms.discount.label2', lang)}</label>
+          <input
+            type="number"
+            id="discount-rate"
+            name="value2"
+            step="0.01"
+            required
+            placeholder="20"
+          />
+          <span class="unit">%</span>
+        </div>
+      </div>
+      <div class="form-actions">
+        <button type="submit" class="btn-primary">{t('common.calculate', lang)}</button>
+        <button type="reset" class="btn-secondary">{t('common.reset', lang)}</button>
+      </div>
+    </form>
+
+    <!-- Form 9: Reverse Discount -->
+    <form id="form-reverseDiscount" class="calc-form">
+      <h3>{t('percentage.forms.reverseDiscount.title', lang)}</h3>
+      <div class="form-row">
+        <div class="form-group">
+          <label for="reverseDiscount-price">{t('percentage.forms.reverseDiscount.label1', lang)}</label>
+          <input
+            type="number"
+            id="reverseDiscount-price"
+            name="value1"
+            step="0.01"
+            required
+            placeholder="80"
+          />
+        </div>
+        <div class="form-group">
+          <label for="reverseDiscount-select">{t('percentage.forms.reverseDiscount.selectLabel', lang)}</label>
+          <select id="reverseDiscount-select" class="discount-select">
+            <option value="">{t('percentage.forms.reverseDiscount.customLabel', lang)}</option>
+            {commonDiscounts.map((discount) => (
+              <option value={discount}>{discount}%</option>
+            ))}
+          </select>
+        </div>
+      </div>
+      <div class="form-row">
+        <div class="form-group">
+          <label for="reverseDiscount-rate">{t('percentage.forms.reverseDiscount.label2', lang)}</label>
+          <input
+            type="number"
+            id="reverseDiscount-rate"
+            name="value2"
+            step="0.01"
+            required
+            placeholder="20"
+          />
+          <span class="unit">%</span>
+        </div>
+      </div>
+      <div class="form-actions">
+        <button type="submit" class="btn-primary">{t('common.calculate', lang)}</button>
+        <button type="reset" class="btn-secondary">{t('common.reset', lang)}</button>
+      </div>
+    </form>
   </div>
 
   <div class="calculator-results" id="results" style="display: none;" role="region" aria-live="polite" aria-atomic="true">
@@ -310,6 +508,21 @@ const { lang } = Astro.props as { lang: Locale };
 
   .form-group input[type="number"]:focus {
     border-color: var(--primary-color);
+  }
+
+  .form-group select {
+    width: 100%;
+    padding: 0.75rem;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-size: 1rem;
+    background-color: white;
+    cursor: pointer;
+  }
+
+  .form-group select:focus {
+    border-color: var(--primary-color);
+    outline: none;
   }
 
   .unit {
@@ -461,6 +674,40 @@ const { lang } = Astro.props as { lang: Locale };
 
   let currentType: PercentageCalculationType = 'percentOf';
 
+  // Handle tax rate select dropdowns
+  const taxSelects = document.querySelectorAll('.tax-rate-select');
+  taxSelects.forEach((select) => {
+    select.addEventListener('change', (e) => {
+      const target = e.target as HTMLSelectElement;
+      const value = target.value;
+
+      // Find the corresponding input field
+      const formId = target.id.replace('-select', '');
+      const input = document.getElementById(formId) as HTMLInputElement;
+
+      if (input && value) {
+        input.value = value;
+      }
+    });
+  });
+
+  // Handle discount select dropdowns
+  const discountSelects = document.querySelectorAll('.discount-select');
+  discountSelects.forEach((select) => {
+    select.addEventListener('change', (e) => {
+      const target = e.target as HTMLSelectElement;
+      const value = target.value;
+
+      // Find the corresponding input field
+      const formId = target.id.replace('-select', '-rate');
+      const input = document.getElementById(formId) as HTMLInputElement;
+
+      if (input && value) {
+        input.value = value;
+      }
+    });
+  });
+
   // Handle tab switching
   tabs.forEach(tab => {
     tab.addEventListener('click', () => {
@@ -519,8 +766,14 @@ const { lang } = Astro.props as { lang: Locale };
 
     // Format the result value
     let displayValue = result.result.toString();
+
+    // Add % suffix for percentage results
     if (currentType === 'isWhatPercent' || currentType === 'percentageChange' || currentType === 'percentageDifference') {
       displayValue += '%';
+    }
+    // Add currency formatting for monetary results
+    else if (currentType === 'addTax' || currentType === 'removeTax' || currentType === 'discount' || currentType === 'reverseDiscount') {
+      displayValue = result.result.toFixed(2);
     }
 
     resultValue.textContent = displayValue;

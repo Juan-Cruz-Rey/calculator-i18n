@@ -10,7 +10,11 @@
     "isWhatPercent": "X, Y का कितना %",
     "isPercentOfWhat": "X किसका Y% है",
     "percentageChange": "% परिवर्तन",
-    "percentageDifference": "% अंतर"
+    "percentageDifference": "% अंतर",
+    "addTax": "GST जोड़ें",
+    "removeTax": "GST हटाएं",
+    "discount": "छूट",
+    "reverseDiscount": "मूल मूल्य"
   },
   "forms": {
     "percentOf": {
@@ -37,6 +41,34 @@
       "title": "X और Y के बीच प्रतिशत अंतर",
       "label1": "पहला मान",
       "label2": "दूसरा मान"
+    },
+    "addTax": {
+      "title": "मूल मूल्य में GST जोड़ें",
+      "label1": "मूल मूल्य (₹)",
+      "label2": "GST (%)",
+      "selectLabel": "GST दर",
+      "customLabel": "कस्टम GST (%)"
+    },
+    "removeTax": {
+      "title": "कुल मूल्य से GST हटाएं",
+      "label1": "कुल मूल्य (₹)",
+      "label2": "GST (%)",
+      "selectLabel": "उपयोग की गई GST दर",
+      "customLabel": "कस्टम GST (%)"
+    },
+    "discount": {
+      "title": "छूट के बाद मूल्य की गणना करें",
+      "label1": "मूल मूल्य (₹)",
+      "label2": "छूट (%)",
+      "selectLabel": "सामान्य छूट",
+      "customLabel": "कस्टम छूट (%)"
+    },
+    "reverseDiscount": {
+      "title": "छूट वाले मूल्य से मूल मूल्य ज्ञात करें",
+      "label1": "छूट वाला मूल्य (₹)",
+      "label2": "छूट (%)",
+      "selectLabel": "लागू छूट",
+      "customLabel": "कस्टम छूट (%)"
     }
   },
   "results": {

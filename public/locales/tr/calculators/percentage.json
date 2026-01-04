@@ -10,7 +10,11 @@
     "isWhatPercent": "X, Y'nin %kaçıdır",
     "isPercentOfWhat": "X, neyin Y%'sidir",
     "percentageChange": "% Değişim",
-    "percentageDifference": "% Fark"
+    "percentageDifference": "% Fark",
+    "addTax": "KDV Ekle",
+    "removeTax": "KDV Çıkar",
+    "discount": "İndirim",
+    "reverseDiscount": "Orijinal Fiyat"
   },
   "forms": {
     "percentOf": {
@@ -37,6 +41,34 @@
       "title": "X ve Y Arasındaki Yüzde Fark",
       "label1": "İlk Değer",
       "label2": "İkinci Değer"
+    },
+    "addTax": {
+      "title": "Taban Fiyata KDV Ekle",
+      "label1": "Taban Fiyat (₺)",
+      "label2": "KDV (%)",
+      "selectLabel": "KDV Oranı",
+      "customLabel": "Özel KDV (%)"
+    },
+    "removeTax": {
+      "title": "Toplam Fiyattan KDV Çıkar",
+      "label1": "Toplam Fiyat (₺)",
+      "label2": "KDV (%)",
+      "selectLabel": "Kullanılan KDV Oranı",
+      "customLabel": "Özel KDV (%)"
+    },
+    "discount": {
+      "title": "İndirimli Fiyatı Hesapla",
+      "label1": "Orijinal Fiyat (₺)",
+      "label2": "İndirim (%)",
+      "selectLabel": "Yaygın İndirimler",
+      "customLabel": "Özel İndirim (%)"
+    },
+    "reverseDiscount": {
+      "title": "İndirimli Fiyattan Orijinal Fiyatı Bul",
+      "label1": "İndirimli Fiyat (₺)",
+      "label2": "İndirim (%)",
+      "selectLabel": "Uygulanan İndirim",
+      "customLabel": "Özel İndirim (%)"
     }
   },
   "results": {

@@ -1,47 +1,79 @@
 {
-  "title": "Percentage Calculator",
-  "description": "Calculate percentages, percentage change, and percentage difference",
-  "metaDescription": "Free Percentage Calculator - Calculate percentages, percentage change, and percentage difference. Solve what is X% of Y, X is what % of Y, and more.",
+  "title": "Калькулятор Процентов",
+  "description": "Рассчитайте проценты, процентное изменение и процентную разницу",
+  "metaDescription": "Бесплатный Калькулятор Процентов - Рассчитайте проценты, процентное изменение и процентную разницу. Решите что такое X% от Y, X это сколько % от Y и многое другое.",
   "form": {
-    "title": "Choose Calculation Type"
+    "title": "Выберите Тип Расчета"
   },
   "tabs": {
-    "percentOf": "X% of Y",
-    "isWhatPercent": "X is what % of Y",
-    "isPercentOfWhat": "X is Y% of what",
-    "percentageChange": "% Change",
-    "percentageDifference": "% Difference"
+    "percentOf": "X% от Y",
+    "isWhatPercent": "X это сколько % от Y",
+    "isPercentOfWhat": "X это Y% от чего",
+    "percentageChange": "% Изменение",
+    "percentageDifference": "% Разница",
+    "addTax": "Добавить НДС",
+    "removeTax": "Убрать НДС",
+    "discount": "Скидка",
+    "reverseDiscount": "Исходная Цена"
   },
   "forms": {
     "percentOf": {
-      "title": "What is X% of Y?",
-      "label1": "Percentage (X)",
-      "label2": "Value (Y)"
+      "title": "Что такое X% от Y?",
+      "label1": "Процент (X)",
+      "label2": "Значение (Y)"
     },
     "isWhatPercent": {
-      "title": "X is what % of Y?",
-      "label1": "Value (X)",
-      "label2": "Total (Y)"
+      "title": "X это сколько % от Y?",
+      "label1": "Значение (X)",
+      "label2": "Итого (Y)"
     },
     "isPercentOfWhat": {
-      "title": "X is Y% of what?",
-      "label1": "Value (X)",
-      "label2": "Percentage (Y)"
+      "title": "X это Y% от чего?",
+      "label1": "Значение (X)",
+      "label2": "Процент (Y)"
     },
     "percentageChange": {
-      "title": "Percentage Change from X to Y",
-      "label1": "Old Value",
-      "label2": "New Value"
+      "title": "Процентное Изменение от X к Y",
+      "label1": "Старое Значение",
+      "label2": "Новое Значение"
     },
     "percentageDifference": {
-      "title": "Percentage Difference between X and Y",
-      "label1": "First Value",
-      "label2": "Second Value"
+      "title": "Процентная Разница между X и Y",
+      "label1": "Первое Значение",
+      "label2": "Второе Значение"
+    },
+    "addTax": {
+      "title": "Добавить НДС к Базовой Цене",
+      "label1": "Базовая Цена (₽)",
+      "label2": "НДС (%)",
+      "selectLabel": "Ставка НДС",
+      "customLabel": "Пользовательский НДС (%)"
+    },
+    "removeTax": {
+      "title": "Убрать НДС из Общей Цены",
+      "label1": "Общая Цена (₽)",
+      "label2": "НДС (%)",
+      "selectLabel": "Использованная Ставка НДС",
+      "customLabel": "Пользовательский НДС (%)"
+    },
+    "discount": {
+      "title": "Рассчитать Цену после Скидки",
+      "label1": "Исходная Цена (₽)",
+      "label2": "Скидка (%)",
+      "selectLabel": "Распространенные Скидки",
+      "customLabel": "Пользовательская Скидка (%)"
+    },
+    "reverseDiscount": {
+      "title": "Найти Исходную Цену из Цены со Скидкой",
+      "label1": "Цена со Скидкой (₽)",
+      "label2": "Скидка (%)",
+      "selectLabel": "Примененная Скидка",
+      "customLabel": "Пользовательская Скидка (%)"
     }
   },
   "results": {
-    "title": "Result",
-    "resultLabel": "Answer",
-    "formulaLabel": "Calculation"
+    "title": "Результат",
+    "resultLabel": "Ответ",
+    "formulaLabel": "Расчет"
   }
 }

@@ -10,7 +10,11 @@
     "isWhatPercent": "X es qué % de Y",
     "isPercentOfWhat": "X es Y% de qué",
     "percentageChange": "Cambio %",
-    "percentageDifference": "Diferencia %"
+    "percentageDifference": "Diferencia %",
+    "addTax": "Añadir IVA",
+    "removeTax": "Quitar IVA",
+    "discount": "Descuento",
+    "reverseDiscount": "Precio Original"
   },
   "forms": {
     "percentOf": {
@@ -37,6 +41,34 @@
       "title": "Diferencia Porcentual entre X e Y",
       "label1": "Primer Valor",
       "label2": "Segundo Valor"
+    },
+    "addTax": {
+      "title": "Añadir IVA al Precio Base",
+      "label1": "Precio Base (€)",
+      "label2": "IVA (%)",
+      "selectLabel": "Tipo de IVA",
+      "customLabel": "IVA Personalizado (%)"
+    },
+    "removeTax": {
+      "title": "Quitar IVA del Precio Total",
+      "label1": "Precio Total (€)",
+      "label2": "IVA (%)",
+      "selectLabel": "Tipo de IVA",
+      "customLabel": "IVA Personalizado (%)"
+    },
+    "discount": {
+      "title": "Calcular Precio con Descuento",
+      "label1": "Precio Original (€)",
+      "label2": "Descuento (%)",
+      "selectLabel": "Descuento Común",
+      "customLabel": "Descuento Personalizado (%)"
+    },
+    "reverseDiscount": {
+      "title": "Calcular Precio Original desde Precio con Descuento",
+      "label1": "Precio con Descuento (€)",
+      "label2": "Descuento (%)",
+      "selectLabel": "Descuento Aplicado",
+      "customLabel": "Descuento Personalizado (%)"
     }
   },
   "results": {
