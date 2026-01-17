@@ -360,23 +360,27 @@ if (isAsian) {
   .category-moderate-thinness,
   .category-mild-thinness,
   .category-underweight {
-    @apply bg-info text-info-content;
+    background-color: oklch(var(--in));
+    color: oklch(var(--inc));
   }
 
   .category-normal {
-    @apply bg-success text-success-content;
+    background-color: oklch(var(--su));
+    color: oklch(var(--suc));
   }
 
   .category-pre-obese,
   .category-overweight {
-    @apply bg-warning text-warning-content;
+    background-color: oklch(var(--wa));
+    color: oklch(var(--wac));
   }
 
   .category-obese-i,
   .category-obese-ii,
   .category-obese-iii,
   .category-obese {
-    @apply bg-error text-error-content;
+    background-color: oklch(var(--er));
+    color: oklch(var(--erc));
   }
 
   /* Reduced motion */
