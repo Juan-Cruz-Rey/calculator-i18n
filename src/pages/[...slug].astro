@@ -1,22 +1,9 @@
 ---
 /**
- * Dynamic routing for all calculator pages
+ * Dynamic routing for all calculator pages - Blog-style layout
  *
  * This file handles ALL calculator URLs across all languages using Astro's
- * [...slug] pattern. It generates static paths for every calculator in every
- * supported language, then renders the appropriate MDX content.
- *
- * URL Examples:
- * - Spanish (default): /calculadoras/imc/
- * - English: /en/calculators/bmi/
- * - German: /de/rechner/bmi/
- * - French: /fr/calculatrices/imc/
- *
- * Benefits:
- * - Single source of truth for calculator pages
- * - Adding a new calculator = update config + create MDX files
- * - Adding a new language = update config + create MDX files
- * - SEO-preserved: URLs remain identical to current structure
+ * [...slug] pattern. Now with a professional blog-style presentation.
  */
 
 import type { GetStaticPaths } from 'astro';
@@ -28,13 +15,9 @@ import { getSlug } from '@/config/routes';
 
 export const getStaticPaths = (async () => {
   const paths = [];
-
-  // Get all available MDX entries
   const allEntries = await getCollection('calculators');
 
-  // Generate paths only for calculators that have MDX files
   for (const entry of allEntries) {
-    // Parse the entry id: "lang/calculator-id.mdx"
     const [lang, calcFile] = entry.id.split('/');
     const calculatorId = calcFile.replace('.mdx', '') as CalculatorId;
 
@@ -43,13 +26,10 @@ export const getStaticPaths = (async () => {
 
     const slug = getSlug(calculatorId, lang as Locale);
 
-    // Build the full path based on language
     let fullPath: string;
     if (lang === defaultLocale) {
-      // English (default) has no language prefix
       fullPath = `${langConfig.folder}/${slug}`;
     } else {
-      // Other languages include language code
       fullPath = `${lang}/${langConfig.folder}/${slug}`;
     }
 
@@ -65,21 +45,108 @@ export const getStaticPaths = (async () => {
   return paths;
 }) satisfies GetStaticPaths;
 
-// Get props from getStaticPaths
 const { lang, calculatorId } = Astro.props;
 
-// Load the MDX content for this calculator in this language
 const allEntries = await getCollection('calculators');
 const entry = allEntries.find(e => e.id === `${lang}/${calculatorId}.mdx`);
 
 if (!entry) {
-  // This should never happen in production since getStaticPaths only generates
-  // paths for calculators that have MDX files
   throw new Error(`MDX content not found for ${lang}/${calculatorId}`);
 }
 
 const { Content } = await entry.render();
-const { title, metaDescription: description } = entry.data;
+const { title, metaDescription: description, category } = entry.data;
+
+// Translations for UI elements
+const translations = {
+  en: {
+    category: 'Category',
+    updated: 'Last Updated',
+    readTime: 'min read',
+    share: 'Share',
+    relatedCalculators: 'Related Calculators'
+  },
+  es: {
+    category: 'Categoría',
+    updated: 'Actualizado',
+    readTime: 'min de lectura',
+    share: 'Compartir',
+    relatedCalculators: 'Calculadoras Relacionadas'
+  },
+  pt: {
+    category: 'Categoria',
+    updated: 'Atualizado',
+    readTime: 'min de leitura',
+    share: 'Compartilhar',
+    relatedCalculators: 'Calculadoras Relacionadas'
+  },
+  fr: {
+    category: 'Catégorie',
+    updated: 'Mis à jour',
+    readTime: 'min de lecture',
+    share: 'Partager',
+    relatedCalculators: 'Calculatrices Connexes'
+  },
+  de: {
+    category: 'Kategorie',
+    updated: 'Aktualisiert',
+    readTime: 'Min. Lesezeit',
+    share: 'Teilen',
+    relatedCalculators: 'Verwandte Rechner'
+  },
+  it: {
+    category: 'Categoria',
+    updated: 'Aggiornato',
+    readTime: 'min di lettura',
+    share: 'Condividi',
+    relatedCalculators: 'Calcolatrici Correlate'
+  },
+  hi: {
+    category: 'श्रेणी',
+    updated: 'अपडेट किया गया',
+    readTime: 'मिनट पढ़ें',
+    share: 'शेयर करें',
+    relatedCalculators: 'संबंधित कैलकुलेटर'
+  },
+  pl: {
+    category: 'Kategoria',
+    updated: 'Zaktualizowano',
+    readTime: 'min czytania',
+    share: 'Udostępnij',
+    relatedCalculators: 'Powiązane Kalkulatory'
+  },
+  nl: {
+    category: 'Categorie',
+    updated: 'Bijgewerkt',
+    readTime: 'min leestijd',
+    share: 'Delen',
+    relatedCalculators: 'Gerelateerde Rekenmachines'
+  },
+  tr: {
+    category: 'Kategori',
+    updated: 'Güncellendi',
+    readTime: 'dk okuma',
+    share: 'Paylaş',
+    relatedCalculators: 'İlgili Hesap Makineleri'
+  },
+  sv: {
+    category: 'Kategori',
+    updated: 'Uppdaterad',
+    readTime: 'min läsning',
+    share: 'Dela',
+    relatedCalculators: 'Relaterade Kalkylatorer'
+  },
+  ru: {
+    category: 'Категория',
+    updated: 'Обновлено',
+    readTime: 'мин чтения',
+    share: 'Поделиться',
+    relatedCalculators: 'Связанные Калькуляторы'
+  },
+};
+
+const t = translations[lang] || translations.en;
+const currentDate = new Date().toLocaleDateString(lang, { year: 'numeric', month: 'long', day: 'numeric' });
 ---
 
 <BaseLayout
@@ -89,90 +156,236 @@ const { title, metaDescription: description } = entry.data;
   calculator={calculatorId}
   isCalculatorPage={true}
 >
-  <div class="container">
-    <div class="calculator-page">
-      <div class="content-wrapper">
-        <Content />
+  <!-- Article Header -->
+  <article class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
+    <!-- Breadcrumbs -->
+    <nav class="breadcrumbs text-sm mb-6">
+      <ul class="flex items-center gap-2 text-base-content/60">
+        <li><a href="/" class="hover:text-primary transition-colors">Home</a></li>
+        <li class="opacity-50">/</li>
+        <li><a href="/calculators/" class="hover:text-primary transition-colors">Calculators</a></li>
+        <li class="opacity-50">/</li>
+        <li class="text-base-content font-medium">{title}</li>
+      </ul>
+    </nav>
+
+    <!-- Article Meta -->
+    <div class="flex flex-wrap items-center gap-3 mb-6">
+      {category && (
+        <span class="badge badge-primary badge-lg gap-2">
+          <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M7 7h.01M7 3h5c.512 0 1.024.195 1.414.586l7 7a2 2 0 010 2.828l-7 7a2 2 0 01-2.828 0l-7-7A1.994 1.994 0 013 12V7a4 4 0 014-4z" />
+          </svg>
+          {category}
+        </span>
+      )}
+      <span class="text-sm text-base-content/60 flex items-center gap-2">
+        <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z" />
+        </svg>
+        {t.updated}: {currentDate}
+      </span>
+      <span class="text-sm text-base-content/60 flex items-center gap-2">
+        <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" />
+        </svg>
+        5 {t.readTime}
+      </span>
+    </div>
+
+    <!-- Main Content -->
+    <div class="prose prose-lg max-w-none mb-12">
+      <Content />
+    </div>
+
+    <!-- Share Section -->
+    <div class="divider"></div>
+    <div class="flex flex-wrap items-center justify-between gap-4 py-6">
+      <div class="text-sm font-semibold text-base-content/70">{t.share}:</div>
+      <div class="flex gap-2">
+        <button
+          onclick="window.open(`https://twitter.com/intent/tweet?url=${encodeURIComponent(window.location.href)}&text=${encodeURIComponent(document.title)}`, '_blank', 'width=550,height=420')"
+          class="btn btn-circle btn-outline btn-sm"
+          aria-label="Share on Twitter"
+        >
+          <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="currentColor" viewBox="0 0 24 24">
+            <path d="M23 3a10.9 10.9 0 01-3.14 1.53 4.48 4.48 0 00-7.86 3v1A10.66 10.66 0 013 4s-4 9 5 13a11.64 11.64 0 01-7 2c9 5 20 0 20-11.5a4.5 4.5 0 00-.08-.83A7.72 7.72 0 0023 3z"/>
+          </svg>
+        </button>
+        <button
+          onclick="window.open(`https://www.facebook.com/sharer/sharer.php?u=${encodeURIComponent(window.location.href)}`, '_blank', 'width=550,height=420')"
+          class="btn btn-circle btn-outline btn-sm"
+          aria-label="Share on Facebook"
+        >
+          <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="currentColor" viewBox="0 0 24 24">
+            <path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/>
+          </svg>
+        </button>
+        <button
+          onclick="window.open(`https://www.linkedin.com/shareArticle?mini=true&url=${encodeURIComponent(window.location.href)}&title=${encodeURIComponent(document.title)}`, '_blank', 'width=550,height=420')"
+          class="btn btn-circle btn-outline btn-sm"
+          aria-label="Share on LinkedIn"
+        >
+          <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="currentColor" viewBox="0 0 24 24">
+            <path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/>
+          </svg>
+        </button>
+        <button
+          onclick="navigator.clipboard.writeText(window.location.href).then(() => alert('Link copied!'))"
+          class="btn btn-circle btn-outline btn-sm"
+          aria-label="Copy link"
+        >
+          <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 16H6a2 2 0 01-2-2V6a2 2 0 012-2h8a2 2 0 012 2v2m-6 12h8a2 2 0 002-2v-8a2 2 0 00-2-2h-8a2 2 0 00-2 2v8a2 2 0 002 2z" />
+          </svg>
+        </button>
       </div>
+    </div>
+  </article>
+
+  <!-- Related Calculators CTA -->
+  <div class="bg-base-200 py-12 mt-12">
+    <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+      <h2 class="text-2xl font-bold mb-4">{t.relatedCalculators}</h2>
+      <p class="text-base-content/70 mb-6">Explore more calculators to help with your health and fitness goals</p>
+      <a href="/calculators/" class="btn btn-primary btn-lg">
+        View All Calculators
+        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 ml-2" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 7l5 5m0 0l-5 5m5-5H6" />
+        </svg>
+      </a>
     </div>
   </div>
 </BaseLayout>
 
-<style>
-  .container {
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 2rem 1rem;
+<style is:global>
+  /* Blog-style prose styling for MDX content */
+  .prose {
+    color: oklch(var(--bc));
   }
 
-  .calculator-page {
-    display: flex;
-    flex-direction: column;
-    gap: 2rem;
-  }
-
-  .content-wrapper {
-    line-height: 1.6;
-  }
-
-  .content-wrapper :global(h1) {
+  .prose h1 {
     font-size: 2.5rem;
-    margin-bottom: 1rem;
-    color: #1a202c;
+    font-weight: 800;
     line-height: 1.2;
+    margin-bottom: 1.5rem;
+    color: oklch(var(--bc));
   }
 
-  /* Mobile responsive heading */
-  @media (max-width: 768px) {
-    .content-wrapper :global(h1) {
-      font-size: 1.875rem; /* 30px */
-    }
-  }
-
-  .content-wrapper :global(h2) {
+  .prose h2 {
     font-size: 2rem;
-    margin-top: 2rem;
+    font-weight: 700;
+    line-height: 1.3;
+    margin-top: 2.5rem;
     margin-bottom: 1rem;
-    color: #2d3748;
+    color: oklch(var(--p));
+    border-bottom: 2px solid oklch(var(--p) / 0.2);
+    padding-bottom: 0.5rem;
   }
 
-  .content-wrapper :global(h3) {
+  .prose h3 {
     font-size: 1.5rem;
-    margin-top: 1.5rem;
-    margin-bottom: 0.75rem;
-    color: #4a5568;
-  }
-
-  .content-wrapper :global(p) {
-    margin-bottom: 1rem;
-    color: #4a5568;
-  }
-
-  .content-wrapper :global(ul),
-  .content-wrapper :global(ol) {
-    margin-bottom: 1rem;
-    padding-left: 1.5rem;
-  }
-
-  .content-wrapper :global(li) {
-    margin-bottom: 0.5rem;
-  }
-
-  .content-wrapper :global(table) {
-    width: 100%;
-    border-collapse: collapse;
-    margin-bottom: 1rem;
-  }
-
-  .content-wrapper :global(th),
-  .content-wrapper :global(td) {
-    padding: 0.75rem;
-    border: 1px solid #e2e8f0;
-    text-align: left;
-  }
-
-  .content-wrapper :global(th) {
-    background-color: #f7fafc;
     font-weight: 600;
+    line-height: 1.4;
+    margin-top: 2rem;
+    margin-bottom: 0.75rem;
+    color: oklch(var(--s));
+  }
+
+  .prose h4 {
+    font-size: 1.25rem;
+    font-weight: 600;
+    margin-top: 1.5rem;
+    margin-bottom: 0.5rem;
+    color: oklch(var(--bc));
+  }
+
+  .prose p {
+    margin-bottom: 1.25rem;
+    line-height: 1.75;
+    color: oklch(var(--bc) / 0.8);
+  }
+
+  .prose ul, .prose ol {
+    margin-bottom: 1.25rem;
+    padding-left: 1.75rem;
+  }
+
+  .prose li {
+    margin-bottom: 0.5rem;
+    line-height: 1.75;
+  }
+
+  .prose ul > li {
+    list-style-type: disc;
+  }
+
+  .prose ol > li {
+    list-style-type: decimal;
+  }
+
+  .prose strong {
+    font-weight: 600;
+    color: oklch(var(--p));
+  }
+
+  .prose a {
+    color: oklch(var(--p));
+    text-decoration: underline;
+    transition: color 0.2s;
+  }
+
+  .prose a:hover {
+    color: oklch(var(--pf));
+  }
+
+  .prose hr {
+    margin: 2rem 0;
+    border: 0;
+    border-top: 2px solid oklch(var(--bc) / 0.1);
+  }
+
+  .prose blockquote {
+    border-left: 4px solid oklch(var(--p));
+    padding-left: 1rem;
+    margin: 1.5rem 0;
+    font-style: italic;
+    color: oklch(var(--bc) / 0.7);
+  }
+
+  .prose code {
+    background: oklch(var(--b2));
+    padding: 0.2rem 0.4rem;
+    border-radius: 0.25rem;
+    font-size: 0.875em;
+    font-family: 'Courier New', monospace;
+  }
+
+  .prose pre {
+    background: oklch(var(--b2));
+    padding: 1rem;
+    border-radius: 0.5rem;
+    overflow-x: auto;
+    margin: 1.5rem 0;
+  }
+
+  .prose pre code {
+    background: none;
+    padding: 0;
+  }
+
+  /* Responsive typography */
+  @media (max-width: 768px) {
+    .prose h1 {
+      font-size: 2rem;
+    }
+
+    .prose h2 {
+      font-size: 1.5rem;
+    }
+
+    .prose h3 {
+      font-size: 1.25rem;
+    }
   }
 </style>
