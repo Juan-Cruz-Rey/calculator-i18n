@@ -149,9 +149,7 @@ const t = translations[lang] || translations.en;
 const currentDate = new Date().toLocaleDateString(lang, { year: 'numeric', month: 'long', day: 'numeric' });
 
 // Get language-specific paths
-import { languageConfig } from '@/config/languages';
-const homePathBase = languageConfig[lang].path;
-const homePath = homePathBase !== '' ? `/${homePathBase}/` : '/';
+const homePath = lang === defaultLocale ? '/' : `/${lang}/`;
 
 // Calculator index page paths for each language
 const calculatorsIndexPaths: Record<Locale, string> = {
